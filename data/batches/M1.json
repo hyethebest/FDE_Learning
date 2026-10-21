@@ -1,0 +1,3904 @@
+[
+  {
+    "id": "FDE-M1-001",
+    "module": "M1",
+    "topic": "大模型/部署与精调",
+    "type": "single",
+    "stem": "将已有模型部署成在线服务与对它进行精调，主要区别是什么？",
+    "options": {
+      "A": "部署以任务样本更新权重，精调只开放访问地址",
+      "B": "部署改变输出格式，精调只增加上下文",
+      "C": "部署与精调都只建立知识索引",
+      "D": "部署使模型可被调用，精调针对任务继续优化模型"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "在线部署与精调训练是不同动作：前者提供服务，后者改善特定任务表现。",
+    "distractors": {
+      "A": "训练与部署职责颠倒",
+      "B": "精调不只是增加上下文",
+      "C": "二者均不等于索引构建"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/109354",
+        "title": "大模型广场",
+        "section": "概述",
+        "fact": "在线部署与精调训练是不同动作：前者提供服务，后者改善特定任务表现。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-002",
+    "module": "M1",
+    "topic": "大模型/垂直任务优化",
+    "type": "single",
+    "stem": "一个通用模型能对话，但专业分类效果不足。精调的直接目标是什么？",
+    "options": {
+      "A": "为请求补齐用户对话历史",
+      "B": "把在线服务暴露为可调用API",
+      "C": "改善模型在特定任务上的表现",
+      "D": "让模型每次读取更多召回片段"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "精调针对垂直场景和特定任务优化模型能力；训练完成仍需验证实际表现。",
+    "distractors": {
+      "D": "这是检索上下文增强",
+      "A": "这是对话输入组织",
+      "B": "这是部署与接入"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/109354",
+        "title": "大模型广场",
+        "section": "发起部署和精调",
+        "fact": "精调针对垂直场景和特定任务优化模型能力；训练完成仍需验证实际表现。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-003",
+    "module": "M1",
+    "topic": "大模型/下游任务",
+    "type": "single",
+    "stem": "以下哪一项属于官方所列大模型下游任务？",
+    "options": {
+      "A": "对训练文件做格式校验",
+      "B": "内容创作",
+      "C": "为文本建立相似度向量索引",
+      "D": "按负载给推理服务扩容"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "大模型广场列举多轮对话、逻辑推理、内容创作等下游任务，区别于基础设施操作。",
+    "distractors": {
+      "C": "属于检索基础处理",
+      "D": "属于服务运维",
+      "A": "属于数据准备而非下游应用任务"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/109354",
+        "title": "大模型广场",
+        "section": "概述",
+        "fact": "大模型广场列举多轮对话、逻辑推理、内容创作等下游任务，区别于基础设施操作。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-004",
+    "module": "M1",
+    "topic": "大模型/监督样本",
+    "type": "single",
+    "stem": "监督微调的对话样本中，assistant角色提供什么？",
+    "options": {
+      "A": "期望模型学习的回答内容",
+      "B": "检索系统返回的候选片段列表",
+      "C": "用户本轮输入的任务问题",
+      "D": "系统预设的角色与行为要求"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "监督微调样本用user表示用户输入，用assistant表示模型回答，构成学习示例。",
+    "distractors": {
+      "B": "这是外部知识上下文",
+      "C": "输入对应user",
+      "D": "角色设定对应system"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "title": "内置大模型训练数据格式说明",
+        "section": "监督微调（SFT）数据",
+        "fact": "监督微调样本用user表示用户输入，用assistant表示模型回答，构成学习示例。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-19"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-005",
+    "module": "M1",
+    "topic": "大模型/角色设定",
+    "type": "single",
+    "stem": "对话训练数据中的system角色主要表示什么？",
+    "options": {
+      "A": "本轮用户提出的问题",
+      "B": "模型在该轮生成的回答",
+      "C": "检索服务返回的证据片段",
+      "D": "系统角色设定"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "官方训练数据格式中system承载角色设定信息，user和assistant承载问答内容。",
+    "distractors": {
+      "A": "应标作user",
+      "B": "应标作assistant",
+      "C": "外部证据不等同系统角色设定"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "title": "内置大模型训练数据格式说明",
+        "section": "监督微调（SFT）数据",
+        "fact": "官方训练数据格式中system承载角色设定信息，user和assistant承载问答内容。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-19"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-006",
+    "module": "M1",
+    "topic": "大模型/多轮样本",
+    "type": "single",
+    "stem": "为什么多轮对话训练样本要保留消息的角色与先后顺序？",
+    "options": {
+      "A": "把所有多轮内容当成无角色文档",
+      "B": "保证模型仅需学习最后一个问题而无需回答",
+      "C": "让样本表达连续的用户输入与模型回复",
+      "D": "让系统消息覆盖所有用户历史"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "messages用于描述多角色的连续互动；角色和顺序共同表达对话上下文，这是由数据结构作出的推理。",
+    "distractors": {
+      "D": "系统角色不抹除历史",
+      "A": "多角色互动需要区分角色",
+      "B": "SFT需要回答样本"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "title": "内置大模型训练数据格式说明",
+        "section": "监督微调（SFT）数据",
+        "fact": "messages用于描述多角色的连续互动；角色和顺序共同表达对话上下文，这是由数据结构作出的推理。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-19"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-007",
+    "module": "M1",
+    "topic": "大模型/模型选择维度",
+    "type": "single",
+    "stem": "初步了解一个模型能做什么，应该优先关注哪类标签？",
+    "options": {
+      "A": "只看是否支持流式返回",
+      "B": "任务类型与语言能力",
+      "C": "仅以参数规模判断是否适配",
+      "D": "只依据API计费单价选择"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "官方模型标签按任务、语言、框架等维度分类；判断能力应关注与业务任务相关的标签。",
+    "distractors": {
+      "C": "规模不能替代任务语言信息",
+      "D": "成本不是唯一能力证据",
+      "A": "流式是返回方式而非任务能力"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/109354",
+        "title": "大模型广场",
+        "section": "浏览内置大模型",
+        "fact": "官方模型标签按任务、语言、框架等维度分类；判断能力应关注与业务任务相关的标签。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-008",
+    "module": "M1",
+    "topic": "大模型/训练与上下文",
+    "type": "single",
+    "stem": "把检索到的制度片段加入本次提问，属于什么机制？",
+    "options": {
+      "A": "为生成提供外部上下文",
+      "B": "用问题答案样本更新模型参数",
+      "C": "将该制度永久编码进模型权重",
+      "D": "重新发起预训练以学习全文"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "RAG把召回内容作为当前生成的上下文；这与另行发起精调训练属于不同环节。",
+    "distractors": {
+      "B": "这是训练机制",
+      "C": "提供上下文不代表更新权重",
+      "D": "RAG不需每次预训练"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "title": "什么是知识库？",
+        "section": "知识检索流程",
+        "fact": "RAG把召回内容作为当前生成的上下文；这与另行发起精调训练属于不同环节。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-09-22"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-009",
+    "module": "M1",
+    "topic": "Token/基本单位",
+    "type": "single",
+    "stem": "Token在大语言模型中首先是什么？",
+    "options": {
+      "A": "文本编码后在磁盘中的字节单位",
+      "B": "每轮对话消耗的固定计费次数",
+      "C": "模型可训练参数的最小计量单位",
+      "D": "模型处理文本的基本单位"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Token是文本处理单位，常用于衡量模型处理量；它并不固定对应一句中文。",
+    "distractors": {
+      "A": "字节与分词单位不同",
+      "B": "一轮Token随内容变化",
+      "C": "参数量和Token量不同"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104495",
+        "title": "词汇表",
+        "section": "Token",
+        "fact": "Token是文本处理单位，常用于衡量模型处理量；它并不固定对应一句中文。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-10-09"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-010",
+    "module": "M1",
+    "topic": "Token/中文切分",
+    "type": "single",
+    "stem": "对中文文本的Token数量，哪种理解正确？",
+    "options": {
+      "A": "标点只影响排版而不参与切分",
+      "B": "一个词无论内容都对应固定Token数",
+      "C": "字、词或标点可能对应一个或多个Token",
+      "D": "中文一字始终等于一个Token"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "官方词汇表说明中文切分可能以字、词、标点等形式体现，不能机械按字数等同。",
+    "distractors": {
+      "D": "不能固定一字一词元",
+      "A": "标点可能对应Token",
+      "B": "词与Token也不固定对应"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104495",
+        "title": "词汇表",
+        "section": "Token",
+        "fact": "官方词汇表说明中文切分可能以字、词、标点等形式体现，不能机械按字数等同。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-10-09"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-011",
+    "module": "M1",
+    "topic": "Token/输入输出",
+    "type": "single",
+    "stem": "一次调用报告输入800Token、输出200Token，总量为多少？",
+    "options": {
+      "A": "600Token，要扣除回复复用的输入",
+      "B": "1000Token",
+      "C": "800Token，输出不进入总量",
+      "D": "200Token，只有生成才算Token"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Usage区分输入、输出与总量；题设给出的两部分相加为1000Token。",
+    "distractors": {
+      "C": "Usage包括输出",
+      "D": "Usage包括输入",
+      "A": "总量不是输入减输出"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/101838",
+        "title": "数据结构",
+        "section": "Usage",
+        "fact": "Usage区分输入、输出与总量；题设给出的两部分相加为1000Token。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-12"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-012",
+    "module": "M1",
+    "topic": "Token/历史开销",
+    "type": "single",
+    "stem": "多轮请求再次携带完整历史消息，哪部分预算会受到影响？",
+    "options": {
+      "A": "输入Token预算",
+      "B": "只增加输出Token而不影响输入",
+      "C": "历史发过一次后再传入也不计入输入",
+      "D": "只影响长期记忆存储条数"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "多轮调用把历史消息放入请求；这些文本属于输入，必须计入输入上下文预算。",
+    "distractors": {
+      "B": "历史是请求输入",
+      "C": "再次携带仍是输入内容",
+      "D": "会话输入与持久记忆不同"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/111007",
+        "title": "混元OpenAI兼容接口相关调用示例",
+        "section": "多轮对话(chat completions)",
+        "fact": "多轮调用把历史消息放入请求；这些文本属于输入，必须计入输入上下文预算。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-04-27"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-013",
+    "module": "M1",
+    "topic": "Token/上下文窗口",
+    "type": "single",
+    "stem": "模型限制输入与输出Token总长度时，预留输出空间意味着什么？",
+    "options": {
+      "A": "只要限制输出，输入即可无限增大",
+      "B": "只需统计用户文本，不统计历史",
+      "C": "检索片段作为外部内容无需占预算",
+      "D": "不能让输入占满全部上下文额度"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "接口说明输入和输出总长度受上下文长度限制，因此输入预算应留出回复空间。",
+    "distractors": {
+      "A": "窗口约束总长度",
+      "B": "历史也作为输入",
+      "C": "送入模型的片段占上下文"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/111007",
+        "title": "混元OpenAI兼容接口相关调用示例",
+        "section": "OpenAI兼容参数",
+        "fact": "接口说明输入和输出总长度受上下文长度限制，因此输入预算应留出回复空间。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-04-27"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-014",
+    "module": "M1",
+    "topic": "Token/最大回复",
+    "type": "single",
+    "stem": "最大回复Token参数直接约束什么？",
+    "options": {
+      "A": "当前模型允许的输入总长度",
+      "B": "一次会话可保存的长期记忆量",
+      "C": "本次生成内容的长度上限",
+      "D": "本次检索返回的最大文档数"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "最大回复Token用来控制模型生成长度，不能用它直接控制检索时间或模型规模。",
+    "distractors": {
+      "D": "这是检索数量",
+      "A": "参数定义是回复长度",
+      "B": "记忆保存不是回复长度"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "title": "大模型节点",
+        "section": "模型",
+        "fact": "最大回复Token用来控制模型生成长度，不能用它直接控制检索时间或模型规模。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-015",
+    "module": "M1",
+    "topic": "Token/输入输出口径",
+    "type": "single",
+    "stem": "日志中的PromptTokens与CompletionTokens分别表示什么？",
+    "options": {
+      "A": "检索命中文档数与引用文档数",
+      "B": "输入Token与输出Token",
+      "C": "提示词版本数与完成的任务数",
+      "D": "模型权重数量与训练样本数量"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "官方Usage结构分别记录输入、输出和总Token，统计时应区分处理方向。",
+    "distractors": {
+      "C": "是Token统计非任务统计",
+      "D": "不是训练规模统计",
+      "A": "不是检索文档计数"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/101838",
+        "title": "数据结构",
+        "section": "Usage",
+        "fact": "官方Usage结构分别记录输入、输出和总Token，统计时应区分处理方向。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-12"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-016",
+    "module": "M1",
+    "topic": "Token/额度与事实性",
+    "type": "single",
+    "stem": "仅把最大回复Token增大，是否足以让回答更准确？",
+    "options": {
+      "A": "不能，它控制长度而非事实依据",
+      "B": "能，放宽长度会自动补齐缺失证据",
+      "C": "能，输出更长就等同检索更全面",
+      "D": "能，长度参数同时控制事实核验强度"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "最大回复Token的定义是长度上限；由此不能推出事实校验、知识更新或工具执行保证。",
+    "distractors": {
+      "B": "长度不补知识",
+      "C": "输出长度不等于检索范围",
+      "D": "该参数未定义事实核验功能"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "title": "大模型节点",
+        "section": "模型",
+        "fact": "最大回复Token的定义是长度上限；由此不能推出事实校验、知识更新或工具执行保证。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-017",
+    "module": "M1",
+    "topic": "Token/推理开销",
+    "type": "single",
+    "stem": "Agentic RAG多次反思检索相较简单RAG，为什么要关注Token消耗？",
+    "options": {
+      "A": "反思只改变排序，不增加模型处理",
+      "B": "检索工具成功后生成不再消耗Token",
+      "C": "多轮检索把输入自动压缩到零",
+      "D": "多轮处理通常带来更多模型调用内容"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "官方提示Agentic RAG通常消耗更多Token；应结合反思次数与实际任务权衡。",
+    "distractors": {
+      "A": "反思是额外模型处理",
+      "B": "仍需生成回答",
+      "C": "不存在输入自动为零机制"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "title": "Agentic RAG",
+        "section": "适用场景",
+        "fact": "官方提示Agentic RAG通常消耗更多Token；应结合反思次数与实际任务权衡。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-21"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-018",
+    "module": "M1",
+    "topic": "Token/向量化也有消耗",
+    "type": "single",
+    "stem": "某接口只返回Embedding数值向量，没有输出自然语言，是否就可以断定没有Token处理量？",
+    "options": {
+      "A": "可以，所有向量模型只按文件页数处理",
+      "B": "可以，文本转向量会跳过模型输入处理",
+      "C": "不能，官方向量接口仍返回Token消耗统计",
+      "D": "可以，只有聊天回复才会处理Token"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "GetEmbedding的输出结构同时包含向量结果和Token消耗量；无自然语言回复不等于无文本处理。",
+    "distractors": {
+      "D": "官方有Token消耗返回",
+      "A": "该接口输入为文本并统计Token",
+      "B": "向量模型仍需处理输入"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1772/115343",
+        "title": "获取特征向量",
+        "section": "输出参数",
+        "fact": "GetEmbedding的输出结构同时包含向量结果和Token消耗量；无自然语言回复不等于无文本处理。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-05-25"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-019",
+    "module": "M1",
+    "topic": "提示词/系统角色",
+    "type": "single",
+    "stem": "希望模型长期保持技术支持角色和简洁语气，应主要写入哪类提示词？",
+    "options": {
+      "A": "仅降低最大回复Token",
+      "B": "系统提示词",
+      "C": "每次靠用户问题临时重申全部角色",
+      "D": "仅增加检索召回数量"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "系统提示词设定角色、行为模式和输出风格，用于提供预置任务指令。",
+    "distractors": {
+      "C": "可行但不是预置系统角色机制",
+      "D": "检索数不设置角色",
+      "A": "长度限制不定义身份语气"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "title": "大模型节点",
+        "section": "系统提示词",
+        "fact": "系统提示词设定角色、行为模式和输出风格，用于提供预置任务指令。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-020",
+    "module": "M1",
+    "topic": "提示词/用户请求",
+    "type": "single",
+    "stem": "“请把这段会议记录归纳成三项行动”主要属于什么？",
+    "options": {
+      "A": "本轮用户提示词",
+      "B": "模型预设的长期身份设定",
+      "C": "知识片段向量化时的输出",
+      "D": "长期记忆自动总结出的偏好"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "用户提示词承载具体请求或问题；题设是一项当前输入的处理任务。",
+    "distractors": {
+      "B": "这是本轮具体任务而非角色",
+      "C": "不是向量结果",
+      "D": "不属于自动记忆提取"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "title": "大模型节点",
+        "section": "用户提示词",
+        "fact": "用户提示词承载具体请求或问题；题设是一项当前输入的处理任务。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-021",
+    "module": "M1",
+    "topic": "提示词/明确性",
+    "type": "single",
+    "stem": "“写得好一点”与“用三条列出结论，每条附依据”相比，后者优点是什么？",
+    "options": {
+      "A": "把业务事实自动写入训练权重",
+      "B": "替模型指定每个输出Token的精确概率",
+      "C": "保证输出符合格式就等同事实正确",
+      "D": "明确可执行的输出要求"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "明确的角色和输出要求更利于模型遵循预期；它不等于知识补充或正确性保证。",
+    "distractors": {
+      "A": "指令不等于训练",
+      "B": "自然语言要求不是概率表",
+      "C": "格式和事实正确性不同"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "title": "大模型节点",
+        "section": "系统提示词",
+        "fact": "明确的角色和输出要求更利于模型遵循预期；它不等于知识补充或正确性保证。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-022",
+    "module": "M1",
+    "topic": "提示词/行为规则可复用",
+    "type": "single",
+    "stem": "把一次回答缺少依据的问题总结成后续同类问题都遵守的要求，是哪种思路？",
+    "options": {
+      "A": "只增大检索片段数量以代替行为规则",
+      "B": "直接认定已完成全参数微调",
+      "C": "将反馈转为可复用行为准则",
+      "D": "把一次错误答案永久保存为标准回复"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "调优准则把反馈转为自然语言行为要求，用于指导后续同类回答，而非机械复述原答案。",
+    "distractors": {
+      "D": "应提取通用要求非固化错误",
+      "A": "检索数量不表达行为要求",
+      "B": "文档机制是自然语言准则"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "功能概述",
+        "fact": "调优准则把反馈转为自然语言行为要求，用于指导后续同类回答，而非机械复述原答案。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-023",
+    "module": "M1",
+    "topic": "提示词/依据缺失",
+    "type": "single",
+    "stem": "提示词要求引用条款，但检索没有找到相关条款，正确行为是什么？",
+    "options": {
+      "A": "省略出处但保持确定语气",
+      "B": "说明依据未找到，不编造编号或条文",
+      "C": "推测最可能条款并给出确定编号",
+      "D": "引用同一文档内任意条款完成格式"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "官方调优准则示例明确：缺少条款依据时说明缺失，不能为满足输出格式而编造。",
+    "distractors": {
+      "C": "推测不能当作真实依据",
+      "D": "引用需与结论相关",
+      "A": "缺证时应说明局限"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "功能概述",
+        "fact": "官方调优准则示例明确：缺少条款依据时说明缺失，不能为满足输出格式而编造。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-024",
+    "module": "M1",
+    "topic": "提示词/角色与协作",
+    "type": "single",
+    "stem": "“所有成员完成后由负责人合并结果”约束的是哪一层？",
+    "options": {
+      "A": "团队协作规则",
+      "B": "只约束某个子Agent的专业执行步骤",
+      "C": "只定义检索工具输入参数",
+      "D": "仅决定最终回答的文档格式"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "约束多个Agent如何配合的要求属于团队规则；单个Agent执行方法则放入其提示词。",
+    "distractors": {
+      "B": "题设约束多个成员配合",
+      "C": "不是工具调用契约",
+      "D": "还涉及成员完成与汇总关系"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "title": "多Agent协同",
+        "section": "各配置项的职责与边界",
+        "fact": "约束多个Agent如何配合的要求属于团队规则；单个Agent执行方法则放入其提示词。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-025",
+    "module": "M1",
+    "topic": "提示词/成员描述",
+    "type": "single",
+    "stem": "给子Agent写名称和描述，首要帮助主Agent判断什么？",
+    "options": {
+      "A": "它必须输出的每个字是什么",
+      "B": "主Agent如何替它执行所有步骤",
+      "C": "它拥有的数据库记录是否已全部复制",
+      "D": "什么任务适合交给该成员"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "名称和描述说明成员擅长、适用与不处理的范围，帮助路由；执行细节由提示词承担。",
+    "distractors": {
+      "A": "描述用于成员路由非逐字答案",
+      "B": "子Agent可独立执行",
+      "C": "成员描述不负责复制数据"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "title": "多Agent协同",
+        "section": "各配置项的职责与边界",
+        "fact": "名称和描述说明成员擅长、适用与不处理的范围，帮助路由；执行细节由提示词承担。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-026",
+    "module": "M1",
+    "topic": "提示词/产物规范",
+    "type": "single",
+    "stem": "报告结构十分复杂且需被多个任务复用，官方建议可把规范封装为什么？",
+    "options": {
+      "A": "把规范全部混入工具返回值",
+      "B": "仅靠模型默认风格无需显式约束",
+      "C": "产物规范Skill",
+      "D": "为每个任务复制一份完整聊天历史"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "复杂且可复用的产物结构和质量规范可封装为Skill，由负责交付的Agent使用。",
+    "distractors": {
+      "D": "历史不是规范模块",
+      "A": "工具结果不是清晰规范入口",
+      "B": "复杂规范应明确表达"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "title": "多Agent协同",
+        "section": "各配置项的职责与边界",
+        "fact": "复杂且可复用的产物结构和质量规范可封装为Skill，由负责交付的Agent使用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-027",
+    "module": "M1",
+    "topic": "提示词/生图输入",
+    "type": "single",
+    "stem": "在文生图中补充“俯视构图、木质桌面、暖色光”，主要改变什么？",
+    "options": {
+      "A": "决定每次输出固定使用同一随机种子",
+      "B": "生成图像的内容与视觉要求",
+      "C": "直接指定图像模型的训练集",
+      "D": "只限制图片文件大小而不影响内容"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "文生图提示词可描述主体、材质、场景、风格和取景方式，以引导图像生成。",
+    "distractors": {
+      "C": "描述不设训练集",
+      "D": "这些词表达视觉内容",
+      "A": "没有指定随机种子"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/106530",
+        "title": "混元生图Prompt指南",
+        "section": "物品类Prompt模板参考",
+        "fact": "文生图提示词可描述主体、材质、场景、风格和取景方式，以引导图像生成。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-04-27"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-028",
+    "module": "M1",
+    "topic": "提示词/任务输入与角色",
+    "type": "single",
+    "stem": "“你是摘要助手”和“总结以下文章”应如何理解？",
+    "options": {
+      "A": "前者设定角色，后者提出具体任务",
+      "B": "前者是本轮待处理材料，后者是长期记忆",
+      "C": "前者控制检索数量，后者控制模型温度",
+      "D": "两句都意味着模型已经完成摘要"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "系统角色描述和用户具体任务在语义上分工不同，组合后共同指导模型处理输入。",
+    "distractors": {
+      "B": "角色不是材料，任务不是记忆",
+      "C": "自然语言语义不同于参数",
+      "D": "指令不等于已执行结果"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "title": "大模型节点",
+        "section": "系统提示词、用户提示词",
+        "fact": "系统角色描述和用户具体任务在语义上分工不同，组合后共同指导模型处理输入。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-029",
+    "module": "M1",
+    "topic": "提示词/工具描述",
+    "type": "single",
+    "stem": "工具的名称、描述及输入输出定义，为什么需要清晰？",
+    "options": {
+      "A": "工具描述能代替实际接口的实现",
+      "B": "只写工具名即可免除参数定义",
+      "C": "描述清晰就保证任何外部调用成功",
+      "D": "帮助智能体在合适上下文中选择并调用工具"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "工具描述和参数定义是智能体理解、选择、调用能力的重要接口；不代表权限或稳定性保证。",
+    "distractors": {
+      "A": "仍需实际实现",
+      "B": "输入输出契约仍重要",
+      "C": "服务可用性是另一问题"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "title": "连接器与工具介绍",
+        "section": "自定义工具",
+        "fact": "工具描述和参数定义是智能体理解、选择、调用能力的重要接口；不代表权限或稳定性保证。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-030",
+    "module": "M1",
+    "topic": "提示词/适用范围",
+    "type": "single",
+    "stem": "某条规则只针对合同问答，为什么提示词中应写明适用场景？",
+    "options": {
+      "A": "为了把所有问题都改写成合同问题",
+      "B": "为了让规则自动替代全部现有要求",
+      "C": "避免把局部业务要求错误推广到所有回答",
+      "D": "为了让模型忽略合同内容"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "官方建议说明在什么情况下应如何做，避免特定场景要求泛化到所有回答。",
+    "distractors": {
+      "D": "目标是准确应用要求",
+      "A": "不是强制改变任务",
+      "B": "新要求仍要检查与已有规则冲突"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "如何写清楚调优要求",
+        "fact": "官方建议说明在什么情况下应如何做，避免特定场景要求泛化到所有回答。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-031",
+    "module": "M1",
+    "topic": "Embedding/数值表示",
+    "type": "single",
+    "stem": "文本Embedding的直接产物是什么？",
+    "options": {
+      "A": "输出与问题相关性排序后的文档名",
+      "B": "表示文本的数值向量",
+      "C": "为每段文本生成最终问答回复",
+      "D": "仅返回命中文档的文件路径"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Embedding将文本转成数值向量，用于检索等任务；它与答案生成是不同能力。",
+    "distractors": {
+      "C": "这是生成模型任务",
+      "D": "不是数值表示",
+      "A": "这是检索或重排结果"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1772/115343",
+        "title": "获取特征向量",
+        "section": "接口描述",
+        "fact": "Embedding将文本转成数值向量，用于检索等任务；它与答案生成是不同能力。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-05-25"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-032",
+    "module": "M1",
+    "topic": "Embedding/检索输入角色",
+    "type": "single",
+    "stem": "为什么向量检索中要区分查询文本与文档文本？",
+    "options": {
+      "A": "两者承担不同检索角色，显式区分有助效果",
+      "B": "查询文本不需要做数值表示",
+      "C": "文档向量与查询向量不需用于同一检索任务",
+      "D": "文本角色只影响账号认证，不影响检索"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "官方Embedding接口建议检索任务区分query和document，以改善检索效果。",
+    "distractors": {
+      "B": "query也可向量化",
+      "C": "二者为检索匹配服务",
+      "D": "接口建议区分以改善效果"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1772/115343",
+        "title": "获取特征向量",
+        "section": "输入参数/TextType",
+        "fact": "官方Embedding接口建议检索任务区分query和document，以改善检索效果。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-05-25"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-033",
+    "module": "M1",
+    "topic": "Embedding/对称任务",
+    "type": "single",
+    "stem": "在聚类、分类等对称任务中，官方对文本类型的说明是什么？",
+    "options": {
+      "A": "仍必须把所有样本分成用户和助手角色",
+      "B": "对称任务不允许输入文档文本",
+      "C": "必须为每个样本另建一个查询模型",
+      "D": "可以采用默认document类型，无需特意区分query"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Embedding接口将聚类、分类视为对称任务，可不特别区分查询与文档角色。",
+    "distractors": {
+      "A": "这是对话角色非TextType",
+      "B": "默认可使用document",
+      "C": "文档未要求逐样本建模"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1772/115343",
+        "title": "获取特征向量",
+        "section": "输入参数/TextType",
+        "fact": "Embedding接口将聚类、分类视为对称任务，可不特别区分查询与文档角色。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-05-25"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-034",
+    "module": "M1",
+    "topic": "检索/重排序作用",
+    "type": "single",
+    "stem": "已有一批候选片段但顺序不佳，重排序直接处理什么？",
+    "options": {
+      "A": "为每段文本生成特征向量",
+      "B": "把省略的用户问题补成完整查询",
+      "C": "问题与候选片段的相关性排序",
+      "D": "从原始文档中识别版面阅读顺序"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Rerank根据query与候选片段的相关性调整顺序，帮助更相关内容优先进入后续处理。",
+    "distractors": {
+      "D": "这是文档解析",
+      "A": "这是Embedding",
+      "B": "这是多轮改写"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/106206",
+        "title": "原子能力",
+        "section": "重排序",
+        "fact": "Rerank根据query与候选片段的相关性调整顺序，帮助更相关内容优先进入后续处理。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-05-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-035",
+    "module": "M1",
+    "topic": "检索/指代消解",
+    "type": "single",
+    "stem": "用户先问“介绍产品X”，随后问“它支持什么格式”，多轮改写主要解决什么？",
+    "options": {
+      "A": "将用户问题直接存为永久偏好",
+      "B": "把“它”关联到产品X并补全查询",
+      "C": "对相关片段按相似度二次排序",
+      "D": "将产品名转成文档向量"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "多轮改写结合对话历史做指代消解和省略补全，使当前检索语句更完整。",
+    "distractors": {
+      "C": "这是重排序",
+      "D": "这是向量化",
+      "A": "本轮指代不等于长期偏好"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/106206",
+        "title": "原子能力",
+        "section": "多轮改写",
+        "fact": "多轮改写结合对话历史做指代消解和省略补全，使当前检索语句更完整。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-05-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-036",
+    "module": "M1",
+    "topic": "检索/文档解析",
+    "type": "single",
+    "stem": "在RAG导入阶段，把复杂文件转成按阅读顺序组织的内容，属于什么？",
+    "options": {
+      "A": "文档解析",
+      "B": "按问题筛选已索引的相关片段",
+      "C": "将候选片段按相关性重排",
+      "D": "根据已召回上下文生成最终回答"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "文档解析识别表格、段落等元素并整理阅读顺序，为后续知识处理提供输入。",
+    "distractors": {
+      "B": "这是检索",
+      "C": "这是重排",
+      "D": "这是生成"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/106206",
+        "title": "原子能力",
+        "section": "文档解析",
+        "fact": "文档解析识别表格、段落等元素并整理阅读顺序，为后续知识处理提供输入。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-05-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-037",
+    "module": "M1",
+    "topic": "检索/语义拆分",
+    "type": "single",
+    "stem": "为什么将长文档拆成语义片段有助RAG？",
+    "options": {
+      "A": "让每个切片都复制完整文档以免遗漏",
+      "B": "仅按上传顺序分配用户权限",
+      "C": "在每次检索时重新训练生成模型",
+      "D": "为检索召回和后续阅读理解提供适合的片段单位"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "语义拆分的结果可用于片段召回和阅读理解，目的是改善知识处理粒度。",
+    "distractors": {
+      "A": "失去切片粒度意义",
+      "B": "切分不是权限分配",
+      "C": "拆分不是模型训练"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/106206",
+        "title": "原子能力",
+        "section": "文档解析拆分",
+        "fact": "语义拆分的结果可用于片段召回和阅读理解，目的是改善知识处理粒度。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-05-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-038",
+    "module": "M1",
+    "topic": "检索/召回定义",
+    "type": "single",
+    "stem": "用户提问后，返回相关知识切片的过程叫做什么？",
+    "options": {
+      "A": "根据反馈优化模型任务权重",
+      "B": "把调试配置发布成线上版本",
+      "C": "召回",
+      "D": "把召回证据组织为最终自然语言答案"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "召回指检索模块从知识范围中返回与问题相关的内容，是RAG流程中的一环。",
+    "distractors": {
+      "D": "这是生成",
+      "A": "这是训练调整",
+      "B": "这是发布"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "功能说明",
+        "fact": "召回指检索模块从知识范围中返回与问题相关的内容，是RAG流程中的一环。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-039",
+    "module": "M1",
+    "topic": "检索/召回与生成分离",
+    "type": "single",
+    "stem": "召回测试找到正确片段，就能证明完整回答必然正确吗？",
+    "options": {
+      "A": "能，因为只要找到一个片段就覆盖全部问题",
+      "B": "不能，召回结果只验证检索环节",
+      "C": "能，因为召回率与回答正确率完全相同",
+      "D": "能，因为候选片段无需再被模型处理"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "召回测试检查知识能否检索到；由流程可知，后续模型怎样利用证据仍是另一问题。",
+    "distractors": {
+      "C": "指标针对不同环节",
+      "D": "后续仍需生成或利用内容",
+      "A": "复杂问题可能需多证据"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "功能说明",
+        "fact": "召回测试检查知识能否检索到；由流程可知，后续模型怎样利用证据仍是另一问题。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-040",
+    "module": "M1",
+    "topic": "检索/结果可观察性",
+    "type": "single",
+    "stem": "召回结果同时展示片段内容、相似度与来源，有什么意义？",
+    "options": {
+      "A": "能检查取回的内容及其出处是否符合问题",
+      "B": "可以把最高相似度直接当成事实可信度",
+      "C": "可以跳过片段内容只检查文件数量",
+      "D": "可以自动断定所有未召回知识都不存在"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "召回结果提供内容与来源等线索，有助判断检索相关性；分值不能自动成为事实证明。",
+    "distractors": {
+      "B": "相关性不等于真实性",
+      "C": "内容是检查的重要对象",
+      "D": "无召回可能由配置造成"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "功能说明",
+        "fact": "召回结果提供内容与来源等线索，有助判断检索相关性；分值不能自动成为事实证明。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-041",
+    "module": "M1",
+    "topic": "检索/关键词与语义",
+    "type": "single",
+    "stem": "官方知识检索流程支持哪种召回方式？",
+    "options": {
+      "A": "只能要求用户问题与文档逐字相同",
+      "B": "只依据文档上传时间选最新一篇",
+      "C": "始终把全部文档全文交给模型而不筛选",
+      "D": "关键词或语义检索"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "知识库可用关键词或语义方式取回相关内容块，为大模型提供上下文。",
+    "distractors": {
+      "A": "语义检索不要求逐字一致",
+      "B": "相关性不是只看上传时间",
+      "C": "检索是召回相关内容块"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "title": "什么是知识库？",
+        "section": "知识检索流程",
+        "fact": "知识库可用关键词或语义方式取回相关内容块，为大模型提供上下文。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-09-22"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-042",
+    "module": "M1",
+    "topic": "检索/向量与应用范围",
+    "type": "single",
+    "stem": "除了文本检索，官方还列举Embedding可用于什么？",
+    "options": {
+      "A": "直接生成带来源的完整问答结论",
+      "B": "无需下游算法即可保证所有分类正确",
+      "C": "信息推荐与知识挖掘",
+      "D": "直接完成事务提交并更新业务账本"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Embedding的数值表示可服务文本检索、推荐和知识挖掘；这不等于自动业务执行。",
+    "distractors": {
+      "D": "向量不是事务执行",
+      "A": "向量不等于生成答案",
+      "B": "表示能力不保证任务全对"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1772/115343",
+        "title": "获取特征向量",
+        "section": "接口描述",
+        "fact": "Embedding的数值表示可服务文本检索、推荐和知识挖掘；这不等于自动业务执行。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-05-25"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-043",
+    "module": "M1",
+    "topic": "RAG/基本含义",
+    "type": "single",
+    "stem": "RAG中的“增强”主要指什么？",
+    "options": {
+      "A": "只生成答案之后再找看似相关的引用",
+      "B": "用检索到的外部知识增强生成上下文",
+      "C": "通过新增训练样本即时修改基础模型权重",
+      "D": "每次将整个企业知识库全文塞入提示词"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "RAG通过召回相关知识，给LLM提供业务上下文，再结合这些内容生成回答。",
+    "distractors": {
+      "C": "RAG主要增强上下文",
+      "D": "通常检索相关块非全部全文",
+      "A": "证据应参与生成而非事后装饰"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "title": "什么是知识库？",
+        "section": "知识检索流程",
+        "fact": "RAG通过召回相关知识，给LLM提供业务上下文，再结合这些内容生成回答。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-09-22"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-044",
+    "module": "M1",
+    "topic": "RAG/执行顺序",
+    "type": "single",
+    "stem": "知识导入后，一次典型RAG回答的主要顺序是什么？",
+    "options": {
+      "A": "检索相关内容，再基于上下文生成",
+      "B": "直接生成结论后再按结论反向挑证据",
+      "C": "先微调模型权重再回答每个实时问题",
+      "D": "跳过检索，把向量数组直接展示为答案"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "官方流程先处理知识，再按问题召回内容，最后进行上下文增强生成。",
+    "distractors": {
+      "B": "应先取相关上下文",
+      "C": "典型RAG不每次微调",
+      "D": "向量非用户答案"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "title": "什么是知识库？",
+        "section": "知识检索流程",
+        "fact": "官方流程先处理知识，再按问题召回内容，最后进行上下文增强生成。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-09-22"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-045",
+    "module": "M1",
+    "topic": "RAG/Agentic反思",
+    "type": "single",
+    "stem": "Agentic RAG发现首次检索信息不完整时，主要机制是什么？",
+    "options": {
+      "A": "无论结果如何都固定使用首次召回内容",
+      "B": "只重排已有结果但不允许再次检索",
+      "C": "把缺失内容依据模型语言习惯补成事实",
+      "D": "评估结果后调整策略并继续检索"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Agentic RAG可反思相关性和完整性，动态调整检索策略并多轮迭代。",
+    "distractors": {
+      "A": "不符合迭代反思",
+      "B": "反思可触发再检索",
+      "C": "不能用编造补证据"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "title": "Agentic RAG",
+        "section": "传统RAG vs Agentic RAG",
+        "fact": "Agentic RAG可反思相关性和完整性，动态调整检索策略并多轮迭代。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-21"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-046",
+    "module": "M1",
+    "topic": "RAG/成本速度权衡",
+    "type": "single",
+    "stem": "一个简单单文档问题更重视响应速度，官方建议优先考虑什么？",
+    "options": {
+      "A": "用复杂多Agent互相质询替代每次检索",
+      "B": "只回答模型自身知识而不使用文档",
+      "C": "传统RAG",
+      "D": "无论难度都使用最大反思轮数"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "官方对简单知识问答建议传统RAG，通常响应更快、成本更低。",
+    "distractors": {
+      "D": "不符合速度成本目标",
+      "A": "简单问题未必需要协调",
+      "B": "题设仍是文档知识问答"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "title": "Agentic RAG",
+        "section": "适用场景",
+        "fact": "官方对简单知识问答建议传统RAG，通常响应更快、成本更低。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-21"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-047",
+    "module": "M1",
+    "topic": "RAG/知识图谱特色",
+    "type": "single",
+    "stem": "GraphRAG与只匹配文本的检索思路相比，重点增加什么？",
+    "options": {
+      "A": "只把多个文档按文件名串起来",
+      "B": "实体、属性、关系组织及关联推理",
+      "C": "只把向量检索的TopK数量调大",
+      "D": "只增加提示词长度而不组织关系"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "GraphRAG结合图谱关系与语义检索，支持跨文档、多跳关联推理。",
+    "distractors": {
+      "C": "数量变化不是图谱核心",
+      "D": "核心是实体关系组织",
+      "A": "文件顺序不表达语义关系"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "title": "知识图谱GraphRAG",
+        "section": "什么是GraphRAG",
+        "fact": "GraphRAG结合图谱关系与语义检索，支持跨文档、多跳关联推理。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-12"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-048",
+    "module": "M1",
+    "topic": "知识图谱/实体",
+    "type": "single",
+    "stem": "在“设备A属于工厂B”的图谱中，设备A最适合表示为什么？",
+    "options": {
+      "A": "实体",
+      "B": "“属于”这一关联谓词",
+      "C": "设备的某个额定功率数值",
+      "D": "一段未识别对象的原始切片"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "实体是可独立存在的对象，设备、组织等都可作为图谱节点。",
+    "distractors": {
+      "B": "谓词对应关系",
+      "C": "特征值对应属性",
+      "D": "实体是可独立对象非任意片段"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "title": "知识图谱GraphRAG",
+        "section": "GraphSchema",
+        "fact": "实体是可独立存在的对象，设备、组织等都可作为图谱节点。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-12"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-049",
+    "module": "M1",
+    "topic": "知识图谱/属性",
+    "type": "single",
+    "stem": "“设备A的额定功率为5千瓦”中，额定功率主要是哪类知识？",
+    "options": {
+      "A": "设备A与工厂B之间的归属关系",
+      "B": "设备A这一独立对象本身",
+      "C": "问题与文档的相似度分数",
+      "D": "描述设备特征的属性"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "属性描述实体具备的特征，题设的额定功率是设备的特征信息。",
+    "distractors": {
+      "A": "这是关系",
+      "B": "这是实体",
+      "C": "这是检索度量"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "title": "知识图谱GraphRAG",
+        "section": "GraphSchema",
+        "fact": "属性描述实体具备的特征，题设的额定功率是设备的特征信息。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-12"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-050",
+    "module": "M1",
+    "topic": "知识图谱/关系",
+    "type": "single",
+    "stem": "“工程师甲维护设备A”中，维护最适合表示为什么？",
+    "options": {
+      "A": "设备A的额定功率属性",
+      "B": "两个实体各自的文档来源",
+      "C": "连接实体的关系",
+      "D": "工程师甲这一对象的唯一标识"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "关系表达实体之间的语义联系；这里把工程师与设备连接起来。",
+    "distractors": {
+      "D": "维护表达对象间联系",
+      "A": "功率是属性而非该谓词",
+      "B": "来源与关系语义不同"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "title": "知识图谱GraphRAG",
+        "section": "GraphSchema",
+        "fact": "关系表达实体之间的语义联系；这里把工程师与设备连接起来。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-12"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-051",
+    "module": "M1",
+    "topic": "知识图谱/三元组",
+    "type": "single",
+    "stem": "哪一项符合关系三元组的基本表达？",
+    "options": {
+      "A": "工程师甲—设备A—维护",
+      "B": "工程师甲—维护—设备A",
+      "C": "工程师甲—设备A—工厂B",
+      "D": "维护—设备A—工程师甲"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "关系三元组采用实体、关系、实体的结构，能表达对象间的语义关联。",
+    "distractors": {
+      "C": "中间缺少关系谓词",
+      "D": "主体位置放成了关系",
+      "A": "谓词应位于关系位置"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "title": "知识图谱GraphRAG",
+        "section": "三元组",
+        "fact": "关系三元组采用实体、关系、实体的结构，能表达对象间的语义关联。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-12"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-052",
+    "module": "M1",
+    "topic": "知识图谱/节点和边",
+    "type": "single",
+    "stem": "图谱可视化中，边主要表示什么？",
+    "options": {
+      "A": "节点之间的关系",
+      "B": "原始文档在硬盘中的地址",
+      "C": "该实体文本的Embedding全部维度",
+      "D": "实体自身所有属性值的拼接"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "图由节点与边构成，节点对应实体或属性，边表达它们之间的关系。",
+    "distractors": {
+      "B": "边表示语义联系非存储位置",
+      "C": "向量表示不是图谱边",
+      "D": "属性可为节点，边表达联系"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "title": "知识图谱GraphRAG",
+        "section": "图（Graph）",
+        "fact": "图由节点与边构成，节点对应实体或属性，边表达它们之间的关系。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-12"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-053",
+    "module": "M1",
+    "topic": "记忆/个性化用途",
+    "type": "single",
+    "stem": "模型在后续对话沿用用户偏好的输出格式，长期记忆主要发挥什么作用？",
+    "options": {
+      "A": "把所有历史消息每次逐字原样重放",
+      "B": "永久覆盖模型系统指令中的所有规则",
+      "C": "让相同模型的全部用户共享偏好",
+      "D": "提供持续的个性化上下文"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "长期记忆从历史互动沉淀相关信息，在后续作为上下文，减少重复交代背景。",
+    "distractors": {
+      "A": "记忆可整理为关键信息",
+      "B": "记忆是上下文非覆盖所有规则",
+      "C": "用户偏好应区分"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134719",
+        "title": "智能工作台的长期记忆",
+        "section": "功能概述",
+        "fact": "长期记忆从历史互动沉淀相关信息，在后续作为上下文，减少重复交代背景。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-13"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-054",
+    "module": "M1",
+    "topic": "记忆/当前关注",
+    "type": "single",
+    "stem": "长期记忆摘要中的“当前关注”主要记录什么？",
+    "options": {
+      "A": "每轮回答所有Token的逐字列表",
+      "B": "模型从训练语料学到的普遍知识",
+      "C": "近期正在处理的重点问题",
+      "D": "对所有话题都不变的基础身份"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "官方把当前关注用于描述近期重点事项，与偏好和近期进展等分区区分。",
+    "distractors": {
+      "D": "当前关注强调近期重点",
+      "A": "摘要不是逐字Token记录",
+      "B": "个人关注不是模型通用知识"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134719",
+        "title": "智能工作台的长期记忆",
+        "section": "记忆内容",
+        "fact": "官方把当前关注用于描述近期重点事项，与偏好和近期进展等分区区分。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-13"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-055",
+    "module": "M1",
+    "topic": "记忆/摘要可校准",
+    "type": "single",
+    "stem": "AI自动整理的记忆有误时，合理的概念是什么？",
+    "options": {
+      "A": "改错只能重新训练底层模型",
+      "B": "记忆需要可查看和校准，并非天然正确",
+      "C": "记忆由AI生成所以不允许校正",
+      "D": "一旦进入摘要就自动完成事实核验"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "官方记忆功能允许用户编辑摘要，使记忆符合实际；自动提取仍需校准。",
+    "distractors": {
+      "C": "官方支持手动编辑",
+      "D": "摘要不是事实认证",
+      "A": "可直接编辑记忆"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134719",
+        "title": "智能工作台的长期记忆",
+        "section": "记忆内容",
+        "fact": "官方记忆功能允许用户编辑摘要，使记忆符合实际；自动提取仍需校准。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-13"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-056",
+    "module": "M1",
+    "topic": "记忆/新隔离维度",
+    "type": "single",
+    "stem": "依据2026年9月记忆库文档，长期记忆的隔离维度是什么？",
+    "options": {
+      "A": "记忆库与终端用户",
+      "B": "应用ID与终端用户，任何跨应用都不可共享",
+      "C": "仅记忆库，不再区分终端用户",
+      "D": "仅会话ID，每次新会话必然清空"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "新文档明确按记忆库×终端用户隔离，不能沿用旧文档把应用ID视为唯一共享边界。",
+    "distractors": {
+      "B": "这是旧规则，当前支持同库共享",
+      "C": "同库仍按用户隔离",
+      "D": "长期记忆不只限单次会话"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "title": "记忆库",
+        "section": "功能介绍前说明",
+        "fact": "新文档明确按记忆库×终端用户隔离，不能沿用旧文档把应用ID视为唯一共享边界。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-057",
+    "module": "M1",
+    "topic": "记忆/共享条件",
+    "type": "single",
+    "stem": "同一用户使用两个绑定同一记忆库的应用，记忆的关系是什么？",
+    "options": {
+      "A": "必然按应用隔离而不能共享",
+      "B": "该库全部用户都能继承同一份个人偏好",
+      "C": "只有当前会话中刚写入的信息才能一致",
+      "D": "在该库范围内保持一致"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "同一用户在共享同一记忆库的应用间使用一致记忆；不同用户仍相互独立。",
+    "distractors": {
+      "A": "新文档支持同库同用户一致",
+      "B": "不同用户仍独立",
+      "C": "不是只共享本轮内容"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "title": "记忆库",
+        "section": "功能介绍前说明",
+        "fact": "同一用户在共享同一记忆库的应用间使用一致记忆；不同用户仍相互独立。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-058",
+    "module": "M1",
+    "topic": "记忆/关闭与删除",
+    "type": "single",
+    "stem": "关闭长期记忆与删除既有记忆是否相同？",
+    "options": {
+      "A": "关闭必然解除所有应用绑定",
+      "B": "关闭仅暂停写入但继续自动加载记忆",
+      "C": "不同，关闭停止读写但保留已积累内容",
+      "D": "相同，关闭会立即清空存储内容"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "新记忆库文档说明关闭后不读不写，已存记忆保留，绑定关系也不受开关影响。",
+    "distractors": {
+      "D": "文档明确保留数据",
+      "A": "开关不影响绑定",
+      "B": "关闭后不读不写"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "title": "记忆库",
+        "section": "应用中开启长期记忆",
+        "fact": "新记忆库文档说明关闭后不读不写，已存记忆保留，绑定关系也不受开关影响。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-059",
+    "module": "M1",
+    "topic": "记忆/历史和记忆区别",
+    "type": "single",
+    "stem": "对话历史与长期记忆在概念上有什么区别？",
+    "options": {
+      "A": "长期记忆就是用户本轮问题的别名",
+      "B": "历史是交互记录，长期记忆是从互动中沉淀并供后续使用的信息",
+      "C": "长期记忆必定保存全部逐字历史",
+      "D": "对话历史和长期记忆只能存在一项"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "长期记忆提取偏好等关键信息成为摘要；它不应被简单等同于全部逐字聊天记录。",
+    "distractors": {
+      "C": "记忆可以是提取摘要",
+      "D": "二者职责不同可同时存在",
+      "A": "记忆包含先前沉淀信息"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134719",
+        "title": "智能工作台的长期记忆",
+        "section": "记忆内容",
+        "fact": "长期记忆提取偏好等关键信息成为摘要；它不应被简单等同于全部逐字聊天记录。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-13"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-061",
+    "module": "M1",
+    "topic": "多模态/图生文",
+    "type": "single",
+    "stem": "图生文能力的典型输入输出组合是什么？",
+    "options": {
+      "A": "输入文本，输出新生成的图像",
+      "B": "输入语音，输出语音识别文本",
+      "C": "输入文本，输出用于检索的向量",
+      "D": "输入图片和文本，输出文本"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "官方图生文示例将图片与文字作为输入，由模型理解后生成文字描述或回答。",
+    "distractors": {
+      "A": "这是文生图",
+      "B": "这是语音识别",
+      "C": "这是Embedding"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/111007",
+        "title": "混元OpenAI兼容接口相关调用示例",
+        "section": "图生文",
+        "fact": "官方图生文示例将图片与文字作为输入，由模型理解后生成文字描述或回答。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-04-27"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-062",
+    "module": "M1",
+    "topic": "多模态/文生图",
+    "type": "single",
+    "stem": "“根据文字描述生成一张产品海报”属于什么？",
+    "options": {
+      "A": "从已有图库挑出相似图片",
+      "B": "把文字编码成数值检索向量",
+      "C": "文生图",
+      "D": "对已有图像内容生成文字解释"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "文生图把文本描述转成图像，提示词用于表达期望内容和风格。",
+    "distractors": {
+      "D": "这是图生文",
+      "A": "这是图像检索",
+      "B": "这是文本Embedding"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/106530",
+        "title": "混元生图Prompt指南",
+        "section": "概述",
+        "fact": "文生图把文本描述转成图像，提示词用于表达期望内容和风格。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-04-27"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-063",
+    "module": "M1",
+    "topic": "多模态/输入能力依赖",
+    "type": "single",
+    "stem": "节点能接受图片或音频，是否意味着任何选用模型都能理解它们？",
+    "options": {
+      "A": "是，提高输出Token上限即可获得音频理解",
+      "B": "否，输入支持取决于所选模型能力",
+      "C": "是，统一节点会自动补齐模型缺少的模态",
+      "D": "是，将图片路径写入文本就等于模型看过图像"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "大模型节点的多模态输入依赖模型能力，应匹配视觉或音频等相应能力。",
+    "distractors": {
+      "C": "节点不创造模型能力",
+      "D": "路径不必然提供可理解图片内容",
+      "A": "长度参数不增加模态"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "title": "大模型节点",
+        "section": "多模态输入",
+        "fact": "大模型节点的多模态输入依赖模型能力，应匹配视觉或音频等相应能力。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-064",
+    "module": "M1",
+    "topic": "多模态/视觉理解与生成",
+    "type": "single",
+    "stem": "视觉输入除了用于图片理解，还能做什么？",
+    "options": {
+      "A": "作为图片生成的参考输入",
+      "B": "作为所有模型都支持的强制训练样本",
+      "C": "直接替代用户的全部文本任务要求",
+      "D": "把视觉输入永久写进模型权重"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "官方说明视觉输入可用于视觉理解或图片生成参考；输入模态与管理权限是不同层次。",
+    "distractors": {
+      "B": "输入不等于训练且依赖模型",
+      "C": "任务仍可需要文字说明",
+      "D": "调用输入不等于权重更新"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "title": "大模型节点",
+        "section": "视觉输入",
+        "fact": "官方说明视觉输入可用于视觉理解或图片生成参考；输入模态与管理权限是不同层次。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-065",
+    "module": "M1",
+    "topic": "多模态/音频任务差异",
+    "type": "single",
+    "stem": "语音识别与语音合成分别更接近哪种方向？",
+    "options": {
+      "A": "从文本生成图像，与从图像生成文本",
+      "B": "将音频存储成文件，与计算文件大小",
+      "C": "从文本提取实体，与给候选文档重排",
+      "D": "从音频识别内容，与生成语音"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "官方将语音识别、音频理解、语音合成列为不同模型能力标签；识别与生成应按任务方向区分。",
+    "distractors": {
+      "A": "这是图文任务方向",
+      "B": "文件操作不等于语音理解生成",
+      "C": "这是文本与检索任务"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "title": "大模型节点",
+        "section": "音频输入",
+        "fact": "官方将语音识别、音频理解、语音合成列为不同模型能力标签；识别与生成应按任务方向区分。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-066",
+    "module": "M1",
+    "topic": "多模态/生成与检索",
+    "type": "single",
+    "stem": "给图像生成模型一段画面描述，和从图片库检索相似图片，有何区别？",
+    "options": {
+      "A": "两者都会以相同方式更新模型权重",
+      "B": "两者都只按文件名匹配而不使用语义",
+      "C": "前者生成图像，后者寻找已有内容",
+      "D": "前者只返回已有图库对象，后者才生成新图"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "文生图由描述引导生成视觉内容；检索则查找已有对象，二者输出来源不同。",
+    "distractors": {
+      "D": "生成与检索方向颠倒",
+      "A": "两者不等于训练",
+      "B": "生成按描述而非只匹配名称"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/106530",
+        "title": "混元生图Prompt指南",
+        "section": "概述",
+        "fact": "文生图由描述引导生成视觉内容；检索则查找已有对象，二者输出来源不同。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-04-27"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-067",
+    "module": "M1",
+    "topic": "多模态/图片传递形式",
+    "type": "single",
+    "stem": "依据混元兼容接口的图生文说明，需要给模型提供JPEG图片时，哪种做法符合图像输入要求？",
+    "options": {
+      "A": "只传图像Embedding向量到文本字段替代图片",
+      "B": "使用受支持的图片链接或带正确媒体前缀的base64图像内容",
+      "C": "只把本地文件名写成文字而不提供图像内容",
+      "D": "把JPEG二进制当作普通自然语言段落提交"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "图生文接口支持图片URL或base64图像，base64需使用对应媒体格式；普通文件名与向量不是该图像输入。",
+    "distractors": {
+      "C": "文件名不提供可读取图片",
+      "D": "普通文本字段不等于规范图像载荷",
+      "A": "该接口图像字段不以文本向量替代"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/111007",
+        "title": "混元OpenAI兼容接口相关调用示例",
+        "section": "图生文",
+        "fact": "图生文接口支持图片URL或base64图像，base64需使用对应媒体格式；普通文件名与向量不是该图像输入。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-04-27"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-068",
+    "module": "M1",
+    "topic": "Agent/能力构成",
+    "type": "multiple",
+    "stem": "从AI Agent定义出发，以下哪些属于可承担的任务范畴？",
+    "options": {
+      "A": "自动执行业务流程",
+      "B": "辅助业务分析",
+      "C": "按任务作出决策",
+      "D": "必然拥有无限制系统权限"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "官方将流程执行、业务分析和自主决策列为Agent任务，但“能执行”不代表无限授权。",
+    "distractors": {
+      "D": "任务能力不能推导无限权限"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104495",
+        "title": "词汇表",
+        "section": "AI Agent",
+        "fact": "官方将流程执行、业务分析和自主决策列为Agent任务，但“能执行”不代表无限授权。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-10-09"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-069",
+    "module": "M1",
+    "topic": "Agent/语言与行动",
+    "type": "multiple",
+    "stem": "对一个仅生成文本的模型接入实际业务工具后，哪些区别值得把握？",
+    "options": {
+      "A": "可以调用系统完成具体操作",
+      "B": "生成一段工具调用参数就等于外部操作已经成功",
+      "C": "工具结果会自动写入模型永久权重",
+      "D": "可以查询外部业务数据"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "工具与连接器提供实际系统调用路径；模型生成调用请求、工具执行结果和模型训练是不同环节。",
+    "distractors": {
+      "B": "请求与实际返回需区分",
+      "C": "接收工具结果不等于训练权重"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "title": "连接器与工具介绍",
+        "section": "核心概念",
+        "fact": "工具与连接器提供实际系统调用路径；模型生成调用请求、工具执行结果和模型训练是不同环节。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-070",
+    "module": "M1",
+    "topic": "Agent/MCP定位",
+    "type": "multiple",
+    "stem": "关于MCP的概念，哪些说法正确？",
+    "options": {
+      "A": "它就是某个大模型的训练参数",
+      "B": "它等同于所有工具已自动获授权",
+      "C": "它是面向LLM应用的开放协议",
+      "D": "它统一连接外部数据源和工具的接口"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "MCP解决工具与数据接入规范问题；协议本身不等于模型参数或业务授权。",
+    "distractors": {
+      "A": "协议不是权重",
+      "B": "仍要完成授权配置"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "title": "连接器与工具介绍",
+        "section": "自定义连接器",
+        "fact": "MCP解决工具与数据接入规范问题；协议本身不等于模型参数或业务授权。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-071",
+    "module": "M1",
+    "topic": "Agent/工具与连接器",
+    "type": "multiple",
+    "stem": "哪些描述正确区分工具和连接器？",
+    "options": {
+      "A": "连接器只能读文件名不能操作数据",
+      "B": "连接器偏向接入外部系统的数据与操作",
+      "C": "工具可提供独立通用处理能力",
+      "D": "每个工具都必须对应一个长期登录的SaaS账号"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "连接器强调系统接入，工具强调原子处理能力；两者都是智能体能力扩展方式。",
+    "distractors": {
+      "D": "通用工具不必长期连接业务系统",
+      "A": "连接器可提供查询和写入等操作"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "title": "连接器与工具介绍",
+        "section": "核心概念",
+        "fact": "连接器强调系统接入，工具强调原子处理能力；两者都是智能体能力扩展方式。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-072",
+    "module": "M1",
+    "topic": "Agent/主从分工",
+    "type": "multiple",
+    "stem": "默认单向委派机制中，主Agent负责哪些工作？",
+    "options": {
+      "A": "理解意图并分派任务",
+      "B": "整合结果并统一回复",
+      "C": "要求子Agent彼此直接通信",
+      "D": "把所有任务都交给用户手工完成"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "单向委派以主Agent为调度中心，子Agent完成后返回，结果由主Agent整合。",
+    "distractors": {
+      "C": "默认机制不支持成员直接通信",
+      "D": "不是把任务外包回用户"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "title": "多Agent协同",
+        "section": "单向委派机制/工作原理",
+        "fact": "单向委派以主Agent为调度中心，子Agent完成后返回，结果由主Agent整合。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-073",
+    "module": "M1",
+    "topic": "Agent/并行与协作",
+    "type": "multiple",
+    "stem": "关于单向委派和团队协作，哪些理解正确？",
+    "options": {
+      "A": "需要成员交叉质询时可考虑团队协作",
+      "B": "开启团队能力就必须每轮组队",
+      "C": "并行任务意味着子Agent天然直接通信",
+      "D": "独立子任务可并行委派"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "并行分工与成员直接通信是不同维度；团队机制适合需要相互补证或协调的任务。",
+    "distractors": {
+      "B": "是否组队还由任务和规则决定",
+      "C": "默认委派仍由主Agent中转"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "title": "多Agent协同",
+        "section": "快速选择、单向委派机制",
+        "fact": "并行分工与成员直接通信是不同维度；团队机制适合需要相互补证或协调的任务。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-074",
+    "module": "M1",
+    "topic": "Agent/协调成本",
+    "type": "multiple",
+    "stem": "多Agent团队协作的成本判断，哪些合理？",
+    "options": {
+      "A": "成员越多成本必定越低",
+      "B": "多Agent数量是答案真实性的证明",
+      "C": "通信和协调可能增加Token消耗",
+      "D": "简单任务不应为多Agent而强行组队"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "团队通信产生额外调用，应在多角色互动确有价值时使用；数量本身不证明正确。",
+    "distractors": {
+      "A": "成员增加通常有额外开销",
+      "B": "真实与否仍取决于证据与判断"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "title": "多Agent协同",
+        "section": "快速选择",
+        "fact": "团队通信产生额外调用，应在多角色互动确有价值时使用；数量本身不证明正确。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-075",
+    "module": "M1",
+    "topic": "Agent/成员选择信号",
+    "type": "multiple",
+    "stem": "设计一个可被正确调度的子Agent，哪些信息应讲清楚？",
+    "options": {
+      "A": "把所有执行细节塞入名称而省略职责描述",
+      "B": "擅长处理的任务范围",
+      "C": "不处理的任务边界",
+      "D": "只写与其他成员完全相同的笼统描述"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "名称与描述应明确适用和不适用范围，使主Agent能根据任务作出选择。",
+    "distractors": {
+      "D": "同质描述不利于区分职责",
+      "A": "名称描述应说明何时选择，执行方法放提示词"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "title": "多Agent协同",
+        "section": "各配置项的职责与边界",
+        "fact": "名称与描述应明确适用和不适用范围，使主Agent能根据任务作出选择。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-076",
+    "module": "M1",
+    "topic": "Agent/可调用契约",
+    "type": "multiple",
+    "stem": "自定义工具为了被智能体可靠理解，应明确哪些内容？",
+    "options": {
+      "A": "能力描述",
+      "B": "输入和输出参数",
+      "C": "调用方式",
+      "D": "只写“万能工具”而不提供参数"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "工具要清楚定义名称描述、输入输出及调用方式，智能体才能在相应上下文选择它。",
+    "distractors": {
+      "D": "模糊名称不能替代调用契约"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "title": "连接器与工具介绍",
+        "section": "自定义工具",
+        "fact": "工具要清楚定义名称描述、输入输出及调用方式，智能体才能在相应上下文选择它。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-077",
+    "module": "M1",
+    "topic": "Agent/工作流关系",
+    "type": "multiple",
+    "stem": "从机制上看，固定工作流与自主Agent有哪些差异？",
+    "options": {
+      "A": "自主Agent可规划执行路径",
+      "B": "自主意味着必然无须工具",
+      "C": "固定流程意味着不能包含模型处理",
+      "D": "工作流可预先组织步骤"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "四模式文档区分固定流程执行和模型自主规划；两种机制都可与工具或模型能力组合。",
+    "distractors": {
+      "B": "自主Agent仍可调用工具",
+      "C": "工作流可包含模型节点"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "四种模式描述",
+        "fact": "四模式文档区分固定流程执行和模型自主规划；两种机制都可与工具或模型能力组合。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-078",
+    "module": "M1",
+    "topic": "生成/温度方向",
+    "type": "multiple",
+    "stem": "关于温度参数，哪些说法符合官方解释？",
+    "options": {
+      "A": "降低温度会强制模型只引用知识库",
+      "B": "升高温度等同于增大上下文窗口",
+      "C": "升高温度通常增加选择随机性",
+      "D": "降低温度通常使输出更保守稳定"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "温度控制生成随机性；知识来源约束和上下文容量是不同维度。",
+    "distractors": {
+      "A": "温度不直接限制证据来源",
+      "B": "随机性参数不改变窗口大小"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "title": "大模型节点",
+        "section": "模型",
+        "fact": "温度控制生成随机性；知识来源约束和上下文容量是不同维度。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-079",
+    "module": "M1",
+    "topic": "生成/TopP方向",
+    "type": "multiple",
+    "stem": "关于Top_P，哪些判断正确？",
+    "options": {
+      "A": "它直接设定知识库文档数",
+      "B": "较小值倾向保守选择",
+      "C": "较大值可能增加多样性",
+      "D": "较大值可能引入不相关词"
+    },
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Top_P控制内容生成的多样性；增大可能丰富表达，也可能引入不相关内容。",
+    "distractors": {
+      "A": "知识规模是另一维度"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "title": "大模型节点",
+        "section": "模型",
+        "fact": "Top_P控制内容生成的多样性；增大可能丰富表达，也可能引入不相关内容。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-080",
+    "module": "M1",
+    "topic": "训练/预训练与监督数据",
+    "type": "multiple",
+    "stem": "依据官方训练数据说明，预训练文本与监督对话数据有哪些区别？",
+    "options": {
+      "A": "预训练示例用text表示无标签文本",
+      "B": "监督微调用messages表示多角色互动",
+      "C": "预训练必须每条都有人工回答标签",
+      "D": "所有任务的样本结构必然完全一致"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "官方分别规定无标签文本的预训练格式与多角色对话的SFT格式，数据结构服务不同训练目标。",
+    "distractors": {
+      "C": "预训练部分定义为无标签文本",
+      "D": "文档区分不同任务格式"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "title": "内置大模型训练数据格式说明",
+        "section": "预训练（PT）数据、监督微调（SFT）数据",
+        "fact": "官方分别规定无标签文本的预训练格式与多角色对话的SFT格式，数据结构服务不同训练目标。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-19"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-081",
+    "module": "M1",
+    "topic": "生成/训练数据任务区分",
+    "type": "multiple",
+    "stem": "官方训练文档区分了哪些训练数据任务？",
+    "options": {
+      "A": "文本生成模型的预训练",
+      "B": "Embedding的检索或语义相似度任务",
+      "C": "全部任务只能用同一种无角色原始字符串",
+      "D": "文本生成模型的监督微调"
+    },
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "训练数据格式随模型类型与任务变化，文档单列SFT、预训练、Embedding检索与相似度。",
+    "distractors": {
+      "C": "文档明确有不同任务格式"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "title": "内置大模型训练数据格式说明",
+        "section": "总体说明",
+        "fact": "训练数据格式随模型类型与任务变化，文档单列SFT、预训练、Embedding检索与相似度。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-19"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-082",
+    "module": "M1",
+    "topic": "Agent/调用与结果消息",
+    "type": "multiple",
+    "stem": "在官方含工具调用的训练样本中，哪些理解正确？",
+    "options": {
+      "A": "工具调用指令本身就证明操作成功",
+      "B": "工具返回消息与用户最初请求可以不加区分地互换",
+      "C": "tool_call表示选择工具及调用参数",
+      "D": "tool表示工具实际返回内容"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "工具调用描述要执行什么，工具结果记录执行返回；请求与结果必须区分，不能凭调用断定成功。",
+    "distractors": {
+      "A": "调用计划不等于成功结果",
+      "B": "角色分别表达请求和观察"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "title": "内置大模型训练数据格式说明",
+        "section": "含工具调用的数据集",
+        "fact": "工具调用描述要执行什么，工具结果记录执行返回；请求与结果必须区分，不能凭调用断定成功。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-19"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-083",
+    "module": "M1",
+    "topic": "提示词/要求拆分",
+    "type": "multiple",
+    "stem": "团队要写多项不同场景的行为准则，哪些方式符合官方写作建议？",
+    "options": {
+      "A": "只保留一次回答好坏评价而不写具体做法",
+      "B": "每条尽量聚焦一项要求",
+      "C": "不同场景可拆开维护",
+      "D": "把所有场景要求合并成一条不区分条件的长规则"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "官方建议聚焦单项要求并按场景分开，便于检查维护；这不同于只评价答案质量。",
+    "distractors": {
+      "D": "混在一起不利于范围和维护",
+      "A": "评价不能替代执行要求"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "如何写清楚调优要求",
+        "fact": "官方建议聚焦单项要求并按场景分开，便于检查维护；这不同于只评价答案质量。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-084",
+    "module": "M1",
+    "topic": "提示词/要求冲突检查",
+    "type": "multiple",
+    "stem": "新增行为要求时，哪些检查符合官方建议？",
+    "options": {
+      "A": "适用范围是否明确",
+      "B": "是否与已有要求冲突",
+      "C": "是否清晰可执行",
+      "D": "新要求越多越好，不必检查相互矛盾"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "调优准则启用前应检查清晰性、范围和冲突；规则数量本身不是改进效果的证明。",
+    "distractors": {
+      "D": "冲突会导致执行目标不清"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "管理操作/说明",
+        "fact": "调优准则启用前应检查清晰性、范围和冲突；规则数量本身不是改进效果的证明。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-085",
+    "module": "M1",
+    "topic": "提示词/视觉描述要素",
+    "type": "multiple",
+    "stem": "文生图提示词可用哪些信息引导画面？",
+    "options": {
+      "A": "材质与构图",
+      "B": "视觉风格",
+      "C": "只提高输出文字Token上限以指定镜头角度",
+      "D": "主体与场景"
+    },
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "官方生图指南围绕主体、细节、场景、风格和镜头组织描述；这些是内容指令而非长度参数。",
+    "distractors": {
+      "C": "文字长度上限不能指定镜头视角"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/106530",
+        "title": "混元生图Prompt指南",
+        "section": "人物、风景及物品类Prompt模板参考",
+        "fact": "官方生图指南围绕主体、细节、场景、风格和镜头组织描述；这些是内容指令而非长度参数。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-04-27"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-086",
+    "module": "M1",
+    "topic": "检索/模型链路分工",
+    "type": "multiple",
+    "stem": "下面哪些概念配对正确？",
+    "options": {
+      "A": "QueryRewrite—结合历史补全查询",
+      "B": "Rerank—自动审批业务权限",
+      "C": "Embedding—文本向量表示",
+      "D": "Rerank—候选相关性排序"
+    },
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "这些原子能力分别处理表示、排序和问题完整性，组成检索链路的不同环节。",
+    "distractors": {
+      "B": "权限审批不是排序功能"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/106206",
+        "title": "原子能力",
+        "section": "embedding、多轮改写、重排序",
+        "fact": "这些原子能力分别处理表示、排序和问题完整性，组成检索链路的不同环节。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-05-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-087",
+    "module": "M1",
+    "topic": "检索/索引准备",
+    "type": "multiple",
+    "stem": "知识导入与处理阶段包含哪些操作？",
+    "options": {
+      "A": "对每位用户自动授予全部文档权限",
+      "B": "切分内容",
+      "C": "建立索引",
+      "D": "向量化"
+    },
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "官方将切分、索引和向量化列为知识处理环节；处理知识不等于授予访问权限。",
+    "distractors": {
+      "A": "数据处理和权限控制不能混同"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "title": "什么是知识库？",
+        "section": "知识检索流程",
+        "fact": "官方将切分、索引和向量化列为知识处理环节；处理知识不等于授予访问权限。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-09-22"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-088",
+    "module": "M1",
+    "topic": "RAG/反思与重排区别",
+    "type": "multiple",
+    "stem": "关于Agentic RAG中反思与重排，哪些正确？",
+    "options": {
+      "A": "反思评估信息是否足够并决定是否再检索",
+      "B": "重排调整已召回文档的相关性顺序",
+      "C": "重排必须重新抓取全部原始文档",
+      "D": "反思只允许修改最终措辞，不能改变检索策略"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "反思控制迭代检索决策，重排序优化候选顺序；它们解决不同问题。",
+    "distractors": {
+      "C": "重排针对已有候选",
+      "D": "反思可调整策略并再次检索"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "title": "Agentic RAG",
+        "section": "配置反思模型、配置重排序模型",
+        "fact": "反思控制迭代检索决策，重排序优化候选顺序；它们解决不同问题。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-21"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-089",
+    "module": "M1",
+    "topic": "RAG/适合迭代的问题",
+    "type": "multiple",
+    "stem": "哪些问题特征更符合Agentic RAG的能力方向？",
+    "options": {
+      "A": "需要按多项条件筛选证据",
+      "B": "需要交叉验证多个知识源",
+      "C": "只要求最快返回已知单条FAQ且不重视其他信息",
+      "D": "需要整合多份文档"
+    },
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "官方将多文档整合、条件筛选、交叉验证列为适用场景；简单问答可优先传统RAG。",
+    "distractors": {
+      "C": "简单场景优先速度成本较低的方案"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "title": "Agentic RAG",
+        "section": "适用场景",
+        "fact": "官方将多文档整合、条件筛选、交叉验证列为适用场景；简单问答可优先传统RAG。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-21"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-090",
+    "module": "M1",
+    "topic": "图谱/两类三元组",
+    "type": "multiple",
+    "stem": "关于关系三元组和属性三元组，哪些表述符合官方定义？",
+    "options": {
+      "A": "属性三元组的末项必须是另一个独立实体",
+      "B": "两类三元组都不能表示实体特征",
+      "C": "关系三元组表达实体与实体的语义联系",
+      "D": "属性三元组用has_attribute描述实体特征"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "官方区分实体间关系和实体属性表达，属性三元组的关系默认为has_attribute。",
+    "distractors": {
+      "A": "末项可以是属性",
+      "B": "属性三元组正用于描述特征"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "title": "知识图谱GraphRAG",
+        "section": "三元组",
+        "fact": "官方区分实体间关系和实体属性表达，属性三元组的关系默认为has_attribute。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-12"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-091",
+    "module": "M1",
+    "topic": "图谱/属性建模边界",
+    "type": "multiple",
+    "stem": "依据GraphSchema概念，哪些建模判断正确？",
+    "options": {
+      "A": "所有关系都必须限定为“相似于”",
+      "B": "实体可以独立存在",
+      "C": "属性用于补充描述实体特征",
+      "D": "属性之间不直接构成关系"
+    },
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "实体、属性、关系有不同职责；文档说明属性补充实体，不与其他属性直接构成关系。",
+    "distractors": {
+      "A": "关系可表达属于、用于等语义"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "title": "知识图谱GraphRAG",
+        "section": "GraphSchema",
+        "fact": "实体、属性、关系有不同职责；文档说明属性补充实体，不与其他属性直接构成关系。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-12"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-092",
+    "module": "M1",
+    "topic": "记忆/摘要演进",
+    "type": "multiple",
+    "stem": "对自动生成的长期记忆摘要，哪些理解符合官方说明？",
+    "options": {
+      "A": "摘要会随使用情况更新",
+      "B": "分区与内容并非永远固定",
+      "C": "用户可以手动编辑使其符合实际",
+      "D": "一旦形成摘要就停止从后续互动更新"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "摘要由AI持续整理更新，用户也可校准；它是随互动演进的信息，而非一次性定稿。",
+    "distractors": {
+      "D": "文档明确持续变化"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134719",
+        "title": "智能工作台的长期记忆",
+        "section": "记忆内容",
+        "fact": "摘要由AI持续整理更新，用户也可校准；它是随互动演进的信息，而非一次性定稿。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-13"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-093",
+    "module": "M1",
+    "topic": "上下文/当前问题与历史",
+    "type": "multiple",
+    "stem": "关于SYS.UserQuery和SYS.ChatHistory的概念，哪些正确？",
+    "options": {
+      "A": "后者表示对话历史",
+      "B": "二者都只表示长期记忆摘要",
+      "C": "读取历史就代表模型已经更新训练权重",
+      "D": "前者表示本轮对话内容"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "变量说明把本轮输入和历史记录分开，便于组织模型上下文；使用上下文不等于模型训练。",
+    "distractors": {
+      "B": "这两个变量不等于SYS.Memory",
+      "C": "读取上下文不表示权重更新"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122457",
+        "title": "变量说明",
+        "section": "应用级变量/系统变量",
+        "fact": "变量说明把本轮输入和历史记录分开，便于组织模型上下文；使用上下文不等于模型训练。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-094",
+    "module": "M1",
+    "topic": "记忆/冷启动与校准",
+    "type": "multiple",
+    "stem": "官方记忆库支持人工新增、编辑和导入记忆，能帮助哪些工作？",
+    "options": {
+      "A": "将个人记忆直接转换为所有模型通用权重",
+      "B": "让导入内容跳过用户隔离而全员共享",
+      "C": "在缺少对话积累时补充初始背景",
+      "D": "校正已经沉淀的错误记忆"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "官方列出冷启动加速与记忆校准用途；记忆管理改变可用背景，不等同训练或取消隔离。",
+    "distractors": {
+      "A": "记忆不是模型权重",
+      "B": "仍按记忆库与用户隔离"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "title": "记忆库",
+        "section": "功能介绍前说明",
+        "fact": "官方列出冷启动加速与记忆校准用途；记忆管理改变可用背景，不等同训练或取消隔离。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-095",
+    "module": "M1",
+    "topic": "多模态/理解任务分类",
+    "type": "multiple",
+    "stem": "以下哪些属于理解输入内容的任务，而非生成新图片？",
+    "options": {
+      "A": "根据一句话绘制全新插画",
+      "B": "根据图表图片回答趋势问题",
+      "C": "从录音中识别说话内容",
+      "D": "解释给定图片中的对象"
+    },
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "视觉、音频理解针对已有输入；文生图则根据描述产生图像，任务方向不同。",
+    "distractors": {
+      "A": "最后一项是生成任务"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "title": "大模型节点",
+        "section": "多模态输入",
+        "fact": "视觉、音频理解针对已有输入；文生图则根据描述产生图像，任务方向不同。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-096",
+    "module": "M1",
+    "topic": "Embedding/正负样本",
+    "type": "multiple",
+    "stem": "依据官方Embedding检索训练样本，哪些理解正确？",
+    "options": {
+      "A": "正样本文档与查询相关",
+      "B": "负样本文档用于表示与查询不相关的内容",
+      "C": "包含查询关键词的负样本必须自动改为正样本",
+      "D": "与查询不相关的文档也应统一当正样本"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "检索训练数据把相关文档列作positives，不相关文档列作negatives，用于表达检索匹配目标。",
+    "distractors": {
+      "C": "相关性不等于词面命中，应依据文档是否回答查询来标注",
+      "D": "会混淆学习信号"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "title": "内置大模型训练数据格式说明",
+        "section": "检索（IR）任务数据",
+        "fact": "检索训练数据把相关文档列作positives，不相关文档列作negatives，用于表达检索匹配目标。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-19"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-097",
+    "module": "M1",
+    "topic": "检索/证据获取故障",
+    "type": "multiple",
+    "stem": "答案缺少关键证据时，哪些原因可能出在召回阶段？",
+    "options": {
+      "A": "切分不合理导致预期片段无法召回",
+      "B": "召回数量或匹配阈值不适合该问题",
+      "C": "最终答案措辞生硬必然说明知识库没有该内容",
+      "D": "所需内容未导入"
+    },
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "召回测试用于发现内容、切分及检索配置问题；语言表达问题不能直接证明知识缺失。",
+    "distractors": {
+      "C": "措辞属于生成表现，需检查召回才能判断"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "使用场景",
+        "fact": "召回测试用于发现内容、切分及检索配置问题；语言表达问题不能直接证明知识缺失。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-098",
+    "module": "M1",
+    "topic": "幻觉/相关性与真实性",
+    "type": "multiple",
+    "stem": "看到一个相似度很高的知识片段，哪些判断仍然必要？",
+    "options": {
+      "A": "高相似度必然保证推理正确",
+      "B": "有分数就无需读取片段内容",
+      "C": "它是否真正回答当前问题",
+      "D": "其来源内容是否支持拟给出的结论"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "召回结果展示内容、分数和来源，是检查证据的线索；相关性分数不替代对结论支持性的判断。",
+    "distractors": {
+      "A": "相关性不保证后续推理",
+      "B": "仍需核对具体内容"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "功能说明",
+        "fact": "召回结果展示内容、分数和来源，是检查证据的线索；相关性分数不替代对结论支持性的判断。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-099",
+    "module": "M1",
+    "topic": "幻觉/自动化反馈边界",
+    "type": "multiple",
+    "stem": "从评测反馈自动生成行为准则后，官方为什么要求审核再启用？",
+    "options": {
+      "A": "只要自动生成就应影响全部应用",
+      "B": "需要检查生成内容是否符合目标",
+      "C": "必要时先编辑再采用",
+      "D": "自动生成天然不存在错误"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "自动生成准则先待启用，人工检查修改后才作用于当前应用；自动化不取消审查。",
+    "distractors": {
+      "D": "仍需审核说明非天然可靠",
+      "A": "准则作用于当前应用"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "检查并启用准则",
+        "fact": "自动生成准则先待启用，人工检查修改后才作用于当前应用；自动化不取消审查。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-100",
+    "module": "M1",
+    "topic": "RAG/零轮反思",
+    "type": "multiple",
+    "stem": "Agentic RAG把反思轮数设置为0时，哪些理解符合官方说明？",
+    "options": {
+      "A": "仍执行一次标准检索",
+      "B": "不进行自我反思迭代",
+      "C": "完全不检索，只使用模型自身知识",
+      "D": "先自动多轮检索，再隐藏反思过程"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "官方说明0轮退化为标准检索，仅做一次检索且不自我反思；0不是关闭知识检索。",
+    "distractors": {
+      "C": "仍有一次检索",
+      "D": "并非隐藏多轮过程"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "title": "Agentic RAG",
+        "section": "配置检索设置",
+        "fact": "官方说明0轮退化为标准检索，仅做一次检索且不自我反思；0不是关闭知识检索。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-21"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M1-101",
+    "module": "M1",
+    "topic": "Embedding/STS监督分数含义",
+    "type": "single",
+    "stem": "在Embedding的语义文本相似度（STS）训练中，为一对句子提供的监督分数主要表达什么？",
+    "options": {
+      "A": "两句话在语义上的相似程度",
+      "B": "两句话共享字符占比，无需考虑表达含义",
+      "C": "生成模型输出下一Token的概率",
+      "D": "其中一句所述事实经过核验后的可信程度"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "官方STS训练格式将两个句子配成一组，并提供两句之间的语义相似性分数。该标签训练的是语义接近程度：措辞不同也可能含义接近；相似度标签不能替代事实核验，也不是生成下一个Token的概率。",
+    "distractors": {
+      "B": "字符重合是表面形式，STS的监督目标是语义相似性，而非只数共有字符。",
+      "C": "下一Token概率属于生成预测，与句子对的语义相似性监督标签不同。",
+      "D": "语义相似性不等于事实可信度，句子是否真实需要独立证据核验。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "title": "内置大模型训练数据格式说明",
+        "section": "Embedding模型数据格式/语义文本相似度（STS）任务数据",
+        "fact": "STS样本包含两个句子，positive_scores提供这两个句子的语义相似性分数。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-19"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": [
+        "固定种子审计替换题；待独立AI审校，不代表人工专家审校。"
+      ]
+    }
+  }
+]

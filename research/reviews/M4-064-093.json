@@ -1,0 +1,562 @@
+[
+  {
+    "id": "FDE-M4-064",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "接口契约答案正确，但其余三项为伪称实时、写欢迎语、随机参数，无法检验接口封装判断；改为完整契约中的易漏鉴权或字段映射方案。"
+    ],
+    "reason": "接口契约答案正确，但其余三项为伪称实时、写欢迎语、随机参数，无法检验接口封装判断；改为完整契约中的易漏鉴权或字段映射方案。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117855"
+    ],
+    "contentHash": "62d7c039cf1a25c20a1401931c912d3ec9f8216bde9d716747a3d9e62a9e7ab7",
+    "stem": "客户给出“查询余额”接口地址，但未给入参、返回字段和鉴权说明。FDE应先做什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-065",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "描述职责正确，但三项均是模糊或空描述的同义错误，选项缺乏可比较性；应比较具体但范围或副作用不清的描述。"
+    ],
+    "reason": "描述职责正确，但三项均是模糊或空描述的同义错误，选项缺乏可比较性；应比较具体但范围或副作用不清的描述。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117855"
+    ],
+    "contentHash": "8fa3cd03b5507ef95ffe90a138fd31131d0d582dddd4f489bae8b99abc015fba",
+    "stem": "同一应用有“查申请”和“取消申请”工具。哪种描述最利于正确选择？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-066",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "官方创建工具流程包含鉴权配置、入参及输出测试；题设调用链验证使结果契约检查成立。"
+    ],
+    "reason": "官方创建工具流程包含鉴权配置、入参及输出测试；题设调用链验证使结果契约检查成立。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117855"
+    ],
+    "contentHash": "45c715416e3c1c22212f3f8a390846741c75001ecc25a6eae2f36136239e9bdf",
+    "stem": "接口封装Demo已填完表单。哪些证据还应取得后才能认为调用链验证充分？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-067",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "MCP初始化、工具发现与调用有官方明确要求；把普通HTTP/JSON误当MCP是可识别协议误区。"
+    ],
+    "reason": "MCP初始化、工具发现与调用有官方明确要求；把普通HTTP/JSON误当MCP是可识别协议误区。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115873"
+    ],
+    "contentHash": "e5cb54a105cd725df62dee97f48c63917e119e1acec7bbabaa4428521f7cc34a",
+    "stem": "客户只提供普通JSON接口，称把接口名改为MCP即可接入。哪项判断正确？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-068",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "空工具列表不等于可调用业务能力事实正确，但其它选项自动创造工具、换图标和无工具证明成功均无诊断价值；需比较认证、发现、调用三阶段证据。"
+    ],
+    "reason": "空工具列表不等于可调用业务能力事实正确，但其它选项自动创造工具、换图标和无工具证明成功均无诊断价值；需比较认证、发现、调用三阶段证据。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115873"
+    ],
+    "contentHash": "c74dce3470139b58f6e2c44e842bd099567d8e5ea37591c8e3eacba047b93d74",
+    "stem": "MCP服务已接入，但工具列表为空。方案里怎样解释最准确？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-069",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "服务URL、接入方式、请求头及协议工具发现调用均有来源支持，接入材料边界明确。"
+    ],
+    "reason": "服务URL、接入方式、请求头及协议工具发现调用均有来源支持，接入材料边界明确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115873"
+    ],
+    "contentHash": "557bf66047818b6a582478d5c69c19e3395a9adb5b0bc04256aae0a37e8798e1",
+    "stem": "客户准备交付MCP服务让ADP调用。哪些材料与能力直接相关？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-070",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "需要登录的网页不支持直接抓取事实正确，但与M6-064同一登录前提及替代路径目标高度重复，且三个干扰均明显不可行；应替换为有独立约束的导入方案比较。"
+    ],
+    "reason": "需要登录的网页不支持直接抓取事实正确，但与M6-064同一登录前提及替代路径目标高度重复，且三个干扰均明显不可行；应替换为有独立约束的导入方案比较。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "90fa825e29af0bbdbc15bd0876fc7eba87666f7b44e6d6ecfdde6deb7f79f854",
+    "stem": "客户要把需登录才能访问的内部网页直接作为网页文件导入。按当前文档，应怎样设计？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-071",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "异步内容爬取限制有证据，但图片化、永不支持任何网页、短URL均不构成合理干扰；改为静态正文与异步正文或文件导入的可比较路径。"
+    ],
+    "reason": "异步内容爬取限制有证据，但图片化、永不支持任何网页、短URL均不构成合理干扰；改为静态正文与异步正文或文件导入的可比较路径。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "521848ce388ae5bcea8d2f9cd1809311cf974787f1355a94bb38d799ebcb54a2",
+    "stem": "目标网页正文通过异步加载显示，客户要求直接爬取形成知识库。最应披露哪个限制？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-072",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "格式、单sheet单表及空行结构建议有官方依据，答案集合是实质表格准备项。"
+    ],
+    "reason": "格式、单sheet单表及空行结构建议有官方依据，答案集合是实质表格准备项。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "340d7e4a98ec22120f42cc56871e0cace66b6a80d7a9d8ec78d27925dd417d8c",
+    "stem": "客户准备把多个杂乱表格导入作为知识。哪些整理与文档建议一致？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-073",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "应用默认知识库与平台级知识库共享范围有直接证据，避免维护三份使选择唯一。"
+    ],
+    "reason": "应用默认知识库与平台级知识库共享范围有直接证据，避免维护三份使选择唯一。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "1b2692c71a3d4e9bdd173c4aa07558e31bd05d9b1b77722f1964ec1fac610252",
+    "stem": "三个应用都需引用同一份制度资料，客户不想维护三份副本。优先考虑什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-074",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "知识资料和实际系统操作分层正确，是由知识库用途推出的合理工程判断；建议追加115872工具接入文档加强写操作能力证据。"
+    ],
+    "reason": "知识资料和实际系统操作分层正确，是由知识库用途推出的合理工程判断；建议追加115872工具接入文档加强写操作能力证据。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "310ebe9ae44770b008811234164c4aa50eb4d2aaf49a18c9ce7c0ed713cf7740",
+    "stem": "客户已经导入“如何更新地址”的说明文档，问是否因此能实际修改业务系统地址。最准确回答是？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-075",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "文档、问答、结构化数据的资源类型映射有官方支持；用评估接入而非承诺任意台账自动接入，边界合理。"
+    ],
+    "reason": "文档、问答、结构化数据的资源类型映射有官方支持；用评估接入而非承诺任意台账自动接入，边界合理。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "bc742263692e41dc6415ae756492ae679e838e7f324dfc8846909a70619ee7a0",
+    "stem": "客户现有资料包括长手册、经批准的常见问答、结构化台账。哪些映射合理？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-076",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "问答对适用性正确，但删答案、只加长度、只记问题均非合理候选；与首批问答口径题实质重复，须加入不同知识资产的真实选择约束。"
+    ],
+    "reason": "问答对适用性正确，但删答案、只加长度、只记问题均非合理候选；与首批问答口径题实质重复，须加入不同知识资产的真实选择约束。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "37ae83c9c9264c0d222c07a1895b0589670ee443358e226007191bf034430fb6",
+    "stem": "客户对少量高频问题已有经过确认的标准答案，希望优先保持口径。哪种知识资产更合适？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-077",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "导入后生成前提准确，但宣布已生成、随机FAQ、只输文件名均非可信工作方案；需要真实导入状态或权限故障情境。"
+    ],
+    "reason": "导入后生成前提准确，但宣布已生成、随机FAQ、只输文件名均非可信工作方案；需要真实导入状态或权限故障情境。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "c37dfafa2546ba9ed985bd3e95b7a80917c9116f34674932d6a0fbaf48f9cb8e",
+    "stem": "客户仅把文档放在自己电脑上，就要求平台从中生成问答。应先完成什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-078",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "冲突核验和采纳事实准确，但与M6-108及M6-069/070同一自动问答采用目标重复，仅组合已有考点；须形成独立情境决定因素。"
+    ],
+    "reason": "冲突核验和采纳事实准确，但与M6-108及M6-069/070同一自动问答采用目标重复，仅组合已有考点；须形成独立情境决定因素。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "bfd853fda93b2d9b70b7caa2006073dd1aeef1ae57acb0e447c72872cd743024",
+    "stem": "自动生成的一批问答将用于客户Demo，哪些准备合理？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-079",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已独立复核2026-09-15记忆文档：适配类型记忆库和终端用户共同决定共享边界，同用户同兼容库可跨应用共享；题目日期及答案正确。"
+    ],
+    "reason": "已独立复核2026-09-15记忆文档：适配类型记忆库和终端用户共同决定共享边界，同用户同兼容库可跨应用共享；题目日期及答案正确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "234c9c8fcda11030a94772802c66a8ee1b2de867e79ec00532e0903a8546f16f",
+    "stem": "依据2026-09-15记忆库文档，同一用户在两个标准模式应用中需要一致偏好。可评估什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-080",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "新记忆文档明确切换绑定仅切换读写范围，不自动迁移旧库数据；对自动迁移误解纠正准确。"
+    ],
+    "reason": "新记忆文档明确切换绑定仅切换读写范围，不自动迁移旧库数据；对自动迁移误解纠正准确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "ff08ce0781da86132022118b119be5b467061ad38cb6e6c5302a2009b284aaed",
+    "stem": "客户把应用从旧记忆库切换到新库，希望原记录自动搬过去。哪项说法准确？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-081",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "Claw与其余三种模式分别适配两类记忆库，跨类型不能绑定；同企业并不取消该限制。"
+    ],
+    "reason": "Claw与其余三种模式分别适配两类记忆库，跨类型不能绑定；同企业并不取消该限制。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "5ddf5a8d655e8a6a9797e0f6e91b18cde1c06966a5324ded59708197741dbb45",
+    "stem": "客户打算让Claw应用与标准应用直接共用一个记忆库。按2026-09-15说明，哪些判断正确？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-082",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "GraphRAG多跳关联能力正确，但字符统计、删除关系和问候模板三个干扰全无可比性；应比较普通RAG、多轮检索及图谱的成本和数据前提。"
+    ],
+    "reason": "GraphRAG多跳关联能力正确，但字符统计、删除关系和问候模板三个干扰全无可比性；应比较普通RAG、多轮检索及图谱的成本和数据前提。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128202"
+    ],
+    "contentHash": "246bab999cbc530fe9f5d28bee907c4548f85c8890b299f7672e9257b6c25a4b",
+    "stem": "客户核心问题需要跨材料追踪“对象—隶属—关联对象”的多跳关系，并展示关联依据。哪条能力值得评估？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-083",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "实体关系属性Schema准备有依据，但三个干扰是统一所有名称、假定全懂、按钮颜色，不能考察图谱建模；替换为具体建模粒度与关系方向方案。"
+    ],
+    "reason": "实体关系属性Schema准备有依据，但三个干扰是统一所有名称、假定全懂、按钮颜色，不能考察图谱建模；替换为具体建模粒度与关系方向方案。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128202"
+    ],
+    "contentHash": "aa7943f9aa0eca3dcf6ecb389758e4dea5d4c9f19a44f054b81b98866b7f5a6f",
+    "stem": "客户想分析项目、人员与责任关系。构建图谱前最应明确什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-084",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "图谱抽取、路径和来源切片均与关系解释直接相关；节点总数不能单独解释特定结论。"
+    ],
+    "reason": "图谱抽取、路径和来源切片均与关系解释直接相关；节点总数不能单独解释特定结论。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128202"
+    ],
+    "contentHash": "e0cd3ce38f90716eaa201f239fcb226e5bbebc9e0188067db8e9db86940867e2",
+    "stem": "客户关心关联结论能否解释。哪些展示直接支撑这个目标？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-085",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "解析结构答案正确，但其余三项全是外观名称，与知识处理无关，属于明显答案题；应在解析模型、切片、嵌入、召回之间设置可诊断比较。"
+    ],
+    "reason": "解析结构答案正确，但其余三项全是外观名称，与知识处理无关，属于明显答案题；应在解析模型、切片、嵌入、召回之间设置可诊断比较。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/127312"
+    ],
+    "contentHash": "b796dfc47f248659022afc36dabb8878e9932ed112a3967767c62a5bc517bd1d",
+    "stem": "客户资料主要是含表格和公式的PDF，首轮Demo需要验证可检索内容质量。应先关注哪个环节？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-086",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "官方模型配置说明非空知识库不能直接切换向量模型；题目仅说规划数据处理与重建验证，未虚构自动迁移机制。"
+    ],
+    "reason": "官方模型配置说明非空知识库不能直接切换向量模型；题目仅说规划数据处理与重建验证，未虚构自动迁移机制。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/127312"
+    ],
+    "contentHash": "d0a3633b33ef38f15e4673a8a2c145a6371e8f9ead56e6ef4584f3e68240490c",
+    "stem": "已导入很多文档的知识库拟切换向量模型，客户要求不做任何数据准备直接切换。最准确判断是？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-087",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "解析保留结构、向量模型向量化及问答生成三个职责有官方依据，未混淆生成模型和向量模型。"
+    ],
+    "reason": "解析保留结构、向量模型向量化及问答生成三个职责有官方依据，未混淆生成模型和向量模型。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/127312"
+    ],
+    "contentHash": "0fc929422da5b76407572eae4f2b3277a7e0b340ff1937f90f41232544cc57ff",
+    "stem": "客户把文档解析、向量处理和生成问答都理解成同一个步骤。哪些澄清有依据？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-088",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "编码元数据事实有支持，但语气、删除编码、加无关材料均不合理；且与M6元数据编码题实质目标重复，应加入可比较的字段/标签/查询约束。"
+    ],
+    "reason": "编码元数据事实有支持，但语气、删除编码、加无关材料均不合理；且与M6元数据编码题实质目标重复，应加入可比较的字段/标签/查询约束。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "d2b7712fa3f240dab514ddc8fb7a247747c5c7ada41143cdf83f52f11abd49d7",
+    "stem": "大量说明书编码只有一两位不同，用户按编码提问，语义检索经常混淆。方案优先评估什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-089",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "标签加元数据的大方向正确，但“限制到指定产品线”不能省略未标标签知识仍可能召回的官方112704例外；补全部相关知识已标标签的前提或改写范围承诺。"
+    ],
+    "reason": "标签加元数据的大方向正确，但“限制到指定产品线”不能省略未标标签知识仍可能召回的官方112704例外；补全部相关知识已标标签的前提或改写范围承诺。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "309011cdcc986ed871d6df73125d4b45ceccade5d7fe6d5355a3612d725ee858",
+    "stem": "客户要求先限制到指定产品线，再在范围内优先命中某个编码。最合适的组合是？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-090",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "直接套用官方未出现在正文中的课程分类例，仅把课程名称替换为新员工；与M6-071同一分类元数据目标重合，应改独立应用约束和决策。"
+    ],
+    "reason": "直接套用官方未出现在正文中的课程分类例，仅把课程名称替换为新员工；与M6-071同一分类元数据目标重合，应改独立应用约束和决策。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "dbda78c2fe9e0c273b4002f92b016364e89452c6d50a9ca19ba2791ed0ca4806",
+    "stem": "客户会按“新员工课程”提问，但资料正文没有这一分类名称。哪些准备合理？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-091",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "Skill描述应写用途及何时使用事实正确，但其它三项都是空泛描述的同义变体，缺少真实可比较描述；重写触发过宽和适用条件不足的干扰。"
+    ],
+    "reason": "Skill描述应写用途及何时使用事实正确，但其它三项都是空泛描述的同义变体，缺少真实可比较描述；重写触发过宽和适用条件不足的干扰。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134602"
+    ],
+    "contentHash": "561be631bca2cf440bf4606f6104c93013933c625ce3fb6491d4bfe525d1a730",
+    "stem": "客户要把一套稳定的资料整理方法复用给智能体。Skill描述怎样写更适合调用识别？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-092",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "references按需引用事实正确，但无引用自动加载、全转图片、删除细节都是明显无效方案；需要比较主文件篇幅、显式引用与分层加载的真实组织策略。"
+    ],
+    "reason": "references按需引用事实正确，但无引用自动加载、全转图片、删除细节都是明显无效方案；需要比较主文件篇幅、显式引用与分层加载的真实组织策略。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134602"
+    ],
+    "contentHash": "159973860160ed3f04cbb1827a667c5e9c07a8d1bc472f364b33c7b7f0b58b68",
+    "stem": "一套Skill说明很长，客户又希望按需提供详细参考。怎样组织较合适？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-093",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "官方Skill规范包含相对路径、环境兼容和网络条件，题目未保证脚本在任何环境运行。"
+    ],
+    "reason": "官方Skill规范包含相对路径、环境兼容和网络条件，题目未保证脚本在任何环境运行。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134602"
+    ],
+    "contentHash": "5c61a1ec916b387805742f989974ea62d79ee67da4e19b0ab999570482f9ea80",
+    "stem": "客户提交的Skill依赖脚本、特定运行环境和网络服务。哪些信息应在方案中明确？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  }
+]

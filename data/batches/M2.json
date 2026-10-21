@@ -1,0 +1,2748 @@
+[
+  {
+    "id": "FDE-M2-001",
+    "module": "M2",
+    "topic": "定位/平台类别",
+    "type": "single",
+    "stem": "向客户概括ADP时，哪种定位最准确？",
+    "options": {
+      "A": "仅提供基础模型预训练与参数托管的平台",
+      "B": "只存储企业文档而不参与应用构建的知识库",
+      "C": "只管理API密钥而不承载智能体逻辑的网关",
+      "D": "面向企业的AI应用开发平台"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "ADP围绕业务搭建智能体应用，并提供接入和运营能力，其范围超出单一模型或知识存储。",
+    "distractors": {
+      "A": "ADP重点是企业AI应用而非单一训练环节",
+      "B": "还组合模型流程和工具",
+      "C": "还提供开发与运营能力"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "title": "产品概述",
+        "section": "产品概述",
+        "fact": "ADP围绕业务搭建智能体应用，并提供接入和运营能力，其范围超出单一模型或知识存储。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-002",
+    "module": "M2",
+    "topic": "定位/使用者范围",
+    "type": "single",
+    "stem": "业务团队没有大量编码人员，是否因此不能使用ADP？",
+    "options": {
+      "A": "不能，所有模式都要求自行训练大模型",
+      "B": "只能阅读知识库，不能配置应用",
+      "C": "不一定，平台面向业务和技术团队，优先可视化配置",
+      "D": "不能，必须先手写完整Agent调度代码"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "官方明确业务和技术团队都可基于LLM搭建应用，采用零代码或低代码优先方式。",
+    "distractors": {
+      "D": "平台支持可视化配置",
+      "A": "不要求先自行训练",
+      "B": "业务用户也可构建应用"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "title": "产品概述",
+        "section": "产品概述、产品优势",
+        "fact": "官方明确业务和技术团队都可基于LLM搭建应用，采用零代码或低代码优先方式。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-003",
+    "module": "M2",
+    "topic": "定位/业务系统集成",
+    "type": "single",
+    "stem": "ADP应用建成后，与企业现有系统是什么关系？",
+    "options": {
+      "A": "智能体只能通过控制台调试窗给最终用户使用",
+      "B": "可经API、SDK及渠道集成接入现有工作场景",
+      "C": "所有现有系统必须迁入ADP内部才可接入",
+      "D": "业务数据只能静态复制到提示词，不能连接接口"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "ADP提供多种集成方式，使智能体进入已有业务系统，不要求推倒重建全部系统。",
+    "distractors": {
+      "C": "可集成已有系统",
+      "D": "连接器和API支持系统接入",
+      "A": "支持多发布渠道"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "title": "产品概述",
+        "section": "产品概述",
+        "fact": "ADP提供多种集成方式，使智能体进入已有业务系统，不要求推倒重建全部系统。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-004",
+    "module": "M2",
+    "topic": "定位/从聊天到任务",
+    "type": "single",
+    "stem": "客户现有机器人只返回预写答案，想进一步调用系统查单。ADP相关价值是什么？",
+    "options": {
+      "A": "通过工具和连接器把对话延伸为业务操作",
+      "B": "把订单操作手册导入知识库即等于实际查单",
+      "C": "只增加更多固定问答对即可实时操作系统",
+      "D": "用模型自身知识生成订单状态，无需数据接口"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "连接器与工具让智能体查询数据、调用系统和执行任务，超越题设机器人仅回复文本的范围。",
+    "distractors": {
+      "B": "操作说明不是实时接口",
+      "C": "固定知识不能替代实时系统能力",
+      "D": "订单状态需业务数据支持"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "title": "连接器与工具介绍",
+        "section": "概述",
+        "fact": "连接器与工具让智能体查询数据、调用系统和执行任务，超越题设机器人仅回复文本的范围。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-005",
+    "module": "M2",
+    "topic": "定位/模型开放性",
+    "type": "single",
+    "stem": "ADP产品层面支持多模型与自建模型接入，意味着什么？",
+    "options": {
+      "A": "多模型接入表示所有套餐拥有完全相同权益",
+      "B": "开放模型生态表示任意模型都无需适配即可运行",
+      "C": "接入模型后无需评测任务适配效果",
+      "D": "可按需求接入模型，但具体权益仍要核对套餐"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "产品概述描述开放模型生态；套餐文档又区分具体权益，能力存在不代表每个账号均可用。",
+    "distractors": {
+      "A": "套餐文档区分三方模型支持",
+      "B": "需按平台接入能力配置",
+      "C": "仍需验证业务效果"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "title": "产品概述",
+        "section": "灵活的模型与开放生态",
+        "fact": "产品概述描述开放模型生态；套餐文档又区分具体权益，能力存在不代表每个账号均可用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-15"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "title": "套餐版本说明",
+        "section": "功能对比",
+        "fact": "不同套餐在应用开发和三方模型接入等方面的功能范围有差别。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-006",
+    "module": "M2",
+    "topic": "定位/端到端价值",
+    "type": "single",
+    "stem": "为什么ADP不宜被等同为“一个模型调用接口”？",
+    "options": {
+      "A": "ADP仅把文档转换为向量后结束服务",
+      "B": "ADP只负责转发模型请求而不提供应用运营",
+      "C": "它还覆盖应用配置、调试、评测、发布和运营",
+      "D": "ADP只在模型之前添加一段系统提示词"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "ADP的一站式框架贯穿应用全生命周期，模型调用是其中的能力环节。",
+    "distractors": {
+      "D": "还有流程、知识、评测等",
+      "A": "还有生成与应用链路",
+      "B": "有运营管理能力"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "title": "产品概述",
+        "section": "完整的一站式开发与运营框架",
+        "fact": "ADP的一站式框架贯穿应用全生命周期，模型调用是其中的能力环节。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-007",
+    "module": "M2",
+    "topic": "定位/知识效果来源",
+    "type": "single",
+    "stem": "认为“换一个大模型就能解决所有企业问答问题”，主要忽略什么？",
+    "options": {
+      "A": "检索只是存储目录，与生成上下文无关",
+      "B": "文档理解、检索和上下文质量也影响效果",
+      "C": "只有模型输出长度决定答案是否正确",
+      "D": "导入文档后切分和召回不会影响答案"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "官方指出问答效果还取决于文档理解、信息检索和可靠答案生成，不能只归因于模型。",
+    "distractors": {
+      "C": "长度不等于事实正确",
+      "D": "文档理解检索均影响",
+      "A": "召回提供生成上下文"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "title": "产品概述",
+        "section": "更精准的对话效果",
+        "fact": "官方指出问答效果还取决于文档理解、信息检索和可靠答案生成，不能只归因于模型。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-008",
+    "module": "M2",
+    "topic": "定位/低代码边界",
+    "type": "single",
+    "stem": "如何正确理解ADP的零代码/低代码优先？",
+    "options": {
+      "A": "多数功能可视化配置，复杂场景可补充代码",
+      "B": "所有业务无需定义任何流程即可自动交付",
+      "C": "复杂需求不能使用任何自定义代码",
+      "D": "可视化配置会自动免除系统接入授权"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "低代码优先降低开发门槛，但官方仍允许复杂场景补充代码，业务逻辑也需清楚表达。",
+    "distractors": {
+      "B": "仍需表达业务逻辑",
+      "C": "官方允许补代码",
+      "D": "权限仍需配置"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "title": "产品概述",
+        "section": "完整的一站式开发与运营框架",
+        "fact": "低代码优先降低开发门槛，但官方仍允许复杂场景补充代码，业务逻辑也需清楚表达。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-009",
+    "module": "M2",
+    "topic": "标准模式/双模型核心",
+    "type": "single",
+    "stem": "标准模式在严肃知识问答中的主要机制是什么？",
+    "options": {
+      "A": "主Agent把每个问题固定拆给多个子Agent",
+      "B": "每轮都由模型自由选择任意执行路径",
+      "C": "所有用户对话只由唯一指定工作流处理",
+      "D": "预设处理流程与思考、生成双模型协同"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "四模式文档把标准模式定位为预设流程和双模型协同，以支持稳定精确的知识问答。",
+    "distractors": {
+      "A": "是多智能体分工机制",
+      "B": "这是偏自主规划特点",
+      "C": "这是单工作流特点"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "模式描述/标准模式",
+        "fact": "四模式文档把标准模式定位为预设流程和双模型协同，以支持稳定精确的知识问答。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-010",
+    "module": "M2",
+    "topic": "标准模式/轻量起步",
+    "type": "single",
+    "stem": "希望先上线一个轻量知识助手，后续逐步增加知识和提示词能力，官方推荐的起步方向是什么？",
+    "options": {
+      "A": "只要需要知识就必须使用单工作流",
+      "B": "只能先创建Claw，再切换回标准模式",
+      "C": "标准模式",
+      "D": "因后续可能变复杂必须先配置完整多Agent团队"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "使用流程将标准模式描述为从简单智能体起步并按需扩展的方式，适合渐进式建设。",
+    "distractors": {
+      "D": "可从最小能力起步",
+      "A": "标准可支持知识问答",
+      "B": "Claw不能切换回标准"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/126433",
+        "title": "使用流程",
+        "section": "第二步：创建应用并选择模式",
+        "fact": "使用流程将标准模式描述为从简单智能体起步并按需扩展的方式，适合渐进式建设。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-03"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-011",
+    "module": "M2",
+    "topic": "单工作流/全对话入口",
+    "type": "single",
+    "stem": "单工作流模式最突出的执行约束是什么？",
+    "options": {
+      "A": "只能执行单节点，不能包含分支",
+      "B": "用指定工作流响应所有用户对话",
+      "C": "只有命中某个意图时才进入指定流程，其余自由回答",
+      "D": "由主Agent临时决定每轮是否忽略流程"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "单工作流模式以特定工作流处理所有对话，使业务步骤保持完整和标准化。",
+    "distractors": {
+      "C": "定义是所有对话均由指定流程响应",
+      "D": "偏离其固定入口约束",
+      "A": "一个流程可以有多个节点分支"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "模式描述/单工作流模式",
+        "fact": "单工作流模式以特定工作流处理所有对话，使业务步骤保持完整和标准化。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-012",
+    "module": "M2",
+    "topic": "单工作流/目标条件",
+    "type": "single",
+    "stem": "哪种需求最直接符合单工作流模式的定位？",
+    "options": {
+      "A": "业务目标明确且操作顺序统一",
+      "B": "每轮必须自主编写代码且路径无法事先定义",
+      "C": "多个专家需要自由交叉质询并反复改分工",
+      "D": "仅希望模型在多个工具之间自由探索而无统一流程"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "官方将单工作流模式用于目标明确、流程统一的企业服务；选型依据是执行结构。",
+    "distractors": {
+      "B": "更符合自主执行环境需求",
+      "C": "更符合协同规划需求",
+      "D": "与操作流程统一不同"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "模式描述/单工作流模式",
+        "fact": "官方将单工作流模式用于目标明确、流程统一的企业服务；选型依据是执行结构。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-013",
+    "module": "M2",
+    "topic": "MultiAgent/主动权",
+    "type": "single",
+    "stem": "Multi-Agent模式与标准模式的重要差异是什么？",
+    "options": {
+      "A": "双模型分别思考与生成就构成完整多智能体团队",
+      "B": "必须用同一指定工作流处理所有用户对话",
+      "C": "只要上传多个知识库就形成多个Agent",
+      "D": "更多由模型自主规划路径并灵活调用工具"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Multi-Agent把更多对话主动权交给模型，强调灵活规划与协同；不能仅按模型数判断。",
+    "distractors": {
+      "A": "标准也有双模型而不等同多Agent",
+      "B": "这是单工作流模式",
+      "C": "知识库数量不等于Agent数量"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "模式描述/Multi-Agent模式",
+        "fact": "Multi-Agent把更多对话主动权交给模型，强调灵活规划与协同；不能仅按模型数判断。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-014",
+    "module": "M2",
+    "topic": "MultiAgent/团队分工",
+    "type": "single",
+    "stem": "一项任务需要研究、计算、审查、写作分工，产品概述如何描述Multi-Agent的价值？",
+    "options": {
+      "A": "把多个知识库名称列出即可形成专家团队",
+      "B": "仅让多个终端用户共享一个聊天窗口",
+      "C": "可配置不同职责的子智能体协作完成任务",
+      "D": "只把一个模型调用复制多次而不区分职责"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Multi-Agent适合单个智能体难以完成的复杂任务，通过分工协作整合结果。",
+    "distractors": {
+      "D": "协作强调分工整合",
+      "A": "知识库不是Agent",
+      "B": "多用户不等于多智能体"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "title": "产品概述",
+        "section": "产品能力",
+        "fact": "Multi-Agent适合单个智能体难以完成的复杂任务，通过分工协作整合结果。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-015",
+    "module": "M2",
+    "topic": "Claw/独立执行环境",
+    "type": "single",
+    "stem": "任务必须自主编写运行代码，并读写过程文件，哪种模式特征最贴合？",
+    "options": {
+      "A": "单工作流只设置大模型提示词，不添加代码或文件处理能力",
+      "B": "Claw的独立工作空间",
+      "C": "标准模式只增加思考模型的输出Token",
+      "D": "Multi-Agent仅增加子Agent数量而不配置执行环境"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Claw提供独立工作空间用于代码执行与文件读写，适合较复杂的自主任务。",
+    "distractors": {
+      "C": "长度不提供代码环境",
+      "D": "人数不等于独立执行空间",
+      "A": "提示词本身不提供执行代码的工作空间"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "title": "什么是Claw模式？",
+        "section": "关键概念/工作空间",
+        "fact": "Claw提供独立工作空间用于代码执行与文件读写，适合较复杂的自主任务。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-016",
+    "module": "M2",
+    "topic": "模式/当前全集",
+    "type": "single",
+    "stem": "依据当前考试指南及产品文档，ADP的四种应用模式是哪组？",
+    "options": {
+      "A": "标准、单工作流、Multi-Agent、Claw",
+      "B": "标准、单工作流、Multi-Agent、知识库检索模式",
+      "C": "标准、工作流、插件、Skills",
+      "D": "Chatbot、RAG、Embedding、Rerank"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "当前文档明确四种应用模式，Claw已经包含在模式范围内，不能沿用旧三模式列表。",
+    "distractors": {
+      "B": "知识检索是能力而非替代Claw的模式",
+      "C": "插件与Skills不是模式",
+      "D": "混淆架构与原子能力"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "模式描述",
+        "fact": "当前文档明确四种应用模式，Claw已经包含在模式范围内，不能沿用旧三模式列表。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-017",
+    "module": "M2",
+    "topic": "模式切换/Claw迁出",
+    "type": "single",
+    "stem": "已创建的Claw应用希望改用标准模式，官方要求是什么？",
+    "options": {
+      "A": "清空所有Skills后即可原地切换",
+      "B": "保留知识库并修改模式字段即可原地切换",
+      "C": "把思考生成模型配齐就会自动转换",
+      "D": "另建相应模式应用"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Claw与其他模式配置结构差异较大，不支持直接模式切换；需要新建应用。",
+    "distractors": {
+      "A": "不因清空能力解除模式限制",
+      "B": "Claw不支持原地互切",
+      "C": "配置模型不等于模式转换"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "说明",
+        "fact": "Claw与其他模式配置结构差异较大，不支持直接模式切换；需要新建应用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-018",
+    "module": "M2",
+    "topic": "模式切换/Claw迁入",
+    "type": "single",
+    "stem": "现有标准模式应用希望使用Claw模式专属能力，应如何处理？",
+    "options": {
+      "A": "从模式卡片直接切到Claw并保留全部配置",
+      "B": "打开长期记忆即可获得独立代码空间",
+      "C": "新建Claw应用",
+      "D": "把Claw专属Skills挂入标准模式后自动升级"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "标准、单工作流、Multi-Agent均不支持直接切换至Claw，需另建Claw模式应用。",
+    "distractors": {
+      "D": "标准不因此转换为Claw",
+      "A": "官方不支持直接切换",
+      "B": "记忆不提供执行环境"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "说明",
+        "fact": "标准、单工作流、Multi-Agent均不支持直接切换至Claw，需另建Claw模式应用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-019",
+    "module": "M2",
+    "topic": "模式切换/非Claw互转",
+    "type": "single",
+    "stem": "不涉及Claw时，哪些模式可以按需要互相切换？",
+    "options": {
+      "A": "四模式之间都可互切且设置自动继承",
+      "B": "标准、单工作流、Multi-Agent",
+      "C": "标准和Claw可以互切，但Multi-Agent不能",
+      "D": "只有单工作流能切换，其余都是永久固定"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "三种非Claw应用之间可切换，但各模式配置的继承规则仍需单独检查。",
+    "distractors": {
+      "C": "Claw不支持互切",
+      "D": "非Claw三者均支持",
+      "A": "Claw受限且配置不互相继承"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "应用模式切换",
+        "fact": "三种非Claw应用之间可切换，但各模式配置的继承规则仍需单独检查。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-020",
+    "module": "M2",
+    "topic": "模式切换/配置独立性",
+    "type": "single",
+    "stem": "从标准模式切到Multi-Agent后，可否假设提示词和模型配置全部自动沿用？",
+    "options": {
+      "A": "不可以，各模式配置不相互继承",
+      "B": "可以，模式切换只影响界面布局",
+      "C": "可以，只要原模式已经发布就强制继承",
+      "D": "可以，所有模式始终共享同一提示词配置"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "官方说明模式切换时提示词、模型等应用配置不互相继承，各模式设置相互独立。",
+    "distractors": {
+      "B": "模式具有不同配置",
+      "C": "发布状态不改变继承规则",
+      "D": "各模式设置相互独立"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "应用模式切换",
+        "fact": "官方说明模式切换时提示词、模型等应用配置不互相继承，各模式设置相互独立。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-021",
+    "module": "M2",
+    "topic": "模式切换/资产范围",
+    "type": "single",
+    "stem": "非Claw模式互切时，知识库和工作流范围总体会怎样？",
+    "options": {
+      "A": "知识和工作流资产随模式切换全部删除",
+      "B": "资产保留就意味着所有启用配置完全继承",
+      "C": "工作流自动转成知识库问答对",
+      "D": "范围保持，具体使用方式随模式不同"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "模式切换保留知识库和工作流范围及管理状态，但实际启用路径由目标模式决定。",
+    "distractors": {
+      "A": "范围保留",
+      "B": "使用路径及模式设置仍有差异",
+      "C": "不会这样自动转换"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "应用模式切换",
+        "fact": "模式切换保留知识库和工作流范围及管理状态，但实际启用路径由目标模式决定。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-022",
+    "module": "M2",
+    "topic": "Claw/Skills区别",
+    "type": "single",
+    "stem": "四模式比较中，原生添加Skills的能力属于哪种模式？",
+    "options": {
+      "A": "标准模式原生支持与Claw相同Skills挂载",
+      "B": "单工作流模式本身就是Skills容器",
+      "C": "Claw",
+      "D": "Multi-Agent原生Skills与Claw完全相同"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "官方模式对比把Skills列为Claw能力；不能将它与其他模式的工具或工作流能力混同。",
+    "distractors": {
+      "D": "模式对比不支持该说法",
+      "A": "标准模式不支持该原生能力",
+      "B": "工作流节点不等于Skills挂载"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "title": "什么是Claw模式？",
+        "section": "与其他模式的区别",
+        "fact": "官方模式对比把Skills列为Claw能力；不能将它与其他模式的工具或工作流能力混同。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-023",
+    "module": "M2",
+    "topic": "Claw/工具配额计数",
+    "type": "single",
+    "stem": "Claw中添加一个含多个操作工具的连接器时，工具数量上限如何统计？",
+    "options": {
+      "A": "每个连接器固定只计一个，不论包含多少工具",
+      "B": "连接器以工具为单位计入工具数量上限",
+      "C": "连接器完全不占工具数量，只占Skills数量",
+      "D": "每个连接器操作都被计为一个子Agent"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "官方区分连接器与其中的工具，连接器按工具计入工具上限；不能把一个集成入口误当一个能力单元。",
+    "distractors": {
+      "A": "官方按工具计数",
+      "C": "连接器计入工具上限，不是Skills配额",
+      "D": "工具不是Agent实体"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "title": "什么是Claw模式？",
+        "section": "关键概念/连接器与工具",
+        "fact": "官方区分连接器与其中的工具，连接器按工具计入工具上限；不能把一个集成入口误当一个能力单元。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-024",
+    "module": "M2",
+    "topic": "Claw/工作流组合",
+    "type": "single",
+    "stem": "“Claw自主运行，所以不能调用工作流”为什么不成立？",
+    "options": {
+      "A": "Claw可把工作流作为工具按需调用",
+      "B": "Claw必须改成单工作流模式后才能用流程",
+      "C": "Claw只支持阅读流程说明而不能执行流程",
+      "D": "Claw调用工作流后所有后续对话永久绑定该流程"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "Claw文档FAQ明确支持添加工作流作为工具，由Agent在运行中按需调用。",
+    "distractors": {
+      "B": "不需要转换且不能直接转换",
+      "C": "可把流程作为工具调用",
+      "D": "按需调用不是永久绑定"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "title": "什么是Claw模式？",
+        "section": "常见问题/Claw模式是否支持工作流",
+        "fact": "Claw文档FAQ明确支持添加工作流作为工具，由Agent在运行中按需调用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-025",
+    "module": "M2",
+    "topic": "Claw/创建入口",
+    "type": "single",
+    "stem": "已在智能工作台探索需求，想沉淀为Claw应用，官方提供什么路径？",
+    "options": {
+      "A": "将原标准应用直接切换为Claw",
+      "B": "先导出工作台聊天记录，再导入为训练集才可创建",
+      "C": "只能创建临时文件，不能沉淀应用",
+      "D": "从完成卡前往应用开发"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Claw可从应用开发直接新建，也可从工作台对话完成后的入口进入应用开发。",
+    "distractors": {
+      "A": "Claw不能由标准直接切换",
+      "B": "无先训练要求",
+      "C": "有前往应用开发入口"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "title": "什么是Claw模式？",
+        "section": "创建方式选择",
+        "fact": "Claw可从应用开发直接新建，也可从工作台对话完成后的入口进入应用开发。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-026",
+    "module": "M2",
+    "topic": "Claw/模型与成员",
+    "type": "single",
+    "stem": "Claw应用中各子Agent的模型选择，官方描述是什么？",
+    "options": {
+      "A": "只允许主Agent有模型，子Agent仅保存文本",
+      "B": "不同模型意味着必须拆成多个独立应用",
+      "C": "可独立选择不同模型",
+      "D": "子Agent必须共享主Agent模型且不能调整"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Claw关键概念说明子Agent可独立选模型，使成员能力配置适应不同职责。",
+    "distractors": {
+      "D": "可独立选择",
+      "A": "子Agent也承载模型",
+      "B": "同一应用可配置不同成员模型"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "title": "什么是Claw模式？",
+        "section": "关键概念/模型",
+        "fact": "Claw关键概念说明子Agent可独立选模型，使成员能力配置适应不同职责。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-027",
+    "module": "M2",
+    "topic": "组件/插件与工具",
+    "type": "single",
+    "stem": "API概览中Plugin与Tool的关系是什么？",
+    "options": {
+      "A": "Plugin与应用是同一对象，不能有多个工具",
+      "B": "一个Plugin可包含一个或多个具体Tool",
+      "C": "一个Tool包含若干无输入输出的Plugin",
+      "D": "Plugin注册后其中全部Tool自动永久授权给每个Agent"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Plugin代表外部服务的一组工具，Tool是具体可调用能力，Agent显式绑定所需工具。",
+    "distractors": {
+      "C": "包含关系和工具契约错误",
+      "D": "文档要求显式绑定工具",
+      "A": "Plugin代表工具集合非应用"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/133868",
+        "title": "概览",
+        "section": "核心概念",
+        "fact": "Plugin代表外部服务的一组工具，Tool是具体可调用能力，Agent显式绑定所需工具。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-13"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-028",
+    "module": "M2",
+    "topic": "组件/自定义扩展入口",
+    "type": "single",
+    "stem": "预置能力没有覆盖企业内部业务接口时，ADP的扩展路径是什么？",
+    "options": {
+      "A": "创建自定义连接器或工具",
+      "B": "只能把接口描述写进提示词，不可执行",
+      "C": "必须等待内置广场收录后才能任何接入",
+      "D": "只能把所有业务接口重写成训练样本"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "平台支持把企业自有系统与API封装成自定义连接器或工具，扩展能力边界。",
+    "distractors": {
+      "B": "支持自定义连接器工具",
+      "C": "预置不足仍可自定义",
+      "D": "接口封装不等于训练数据"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "title": "连接器与工具介绍",
+        "section": "自定义连接器、自定义工具",
+        "fact": "平台支持把企业自有系统与API封装成自定义连接器或工具，扩展能力边界。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-029",
+    "module": "M2",
+    "topic": "组件/API封装",
+    "type": "single",
+    "stem": "自定义API类型工具采用什么思路？",
+    "options": {
+      "A": "只需自然语言描述接口，不必有可调用HTTP服务",
+      "B": "只能保存API返回样例，不能真正发起请求",
+      "C": "API类型只能使用MCP格式，不支持OpenAPI",
+      "D": "通过标准输入输出结构以HTTP调用功能"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "API类型工具基于OpenAPI3.0定义输入输出并通过HTTP交互；标准化不等于取消认证。",
+    "distractors": {
+      "A": "仍需实际接口",
+      "B": "工具用于实际调用",
+      "C": "文档明确OpenAPI3.0"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "title": "连接器与工具介绍",
+        "section": "自定义工具/API",
+        "fact": "API类型工具基于OpenAPI3.0定义输入输出并通过HTTP交互；标准化不等于取消认证。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-030",
+    "module": "M2",
+    "topic": "组件/代码工具",
+    "type": "single",
+    "stem": "ADP自定义工具中的“代码”类型主要用于什么？",
+    "options": {
+      "A": "把自然语言提示词存入数据库作为工具返回",
+      "B": "仅把接口文档翻译为Markdown而不能执行函数",
+      "C": "用Python函数提供可调用能力",
+      "D": "用Python片段重新训练所有调用模型"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "文档把代码工具定义为基于Python环境编写函数并提供API服务。",
+    "distractors": {
+      "D": "代码工具是函数服务",
+      "A": "不等于单纯提示词存储",
+      "B": "支持函数编写和调用"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "title": "连接器与工具介绍",
+        "section": "自定义工具/代码",
+        "fact": "文档把代码工具定义为基于Python环境编写函数并提供API服务。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-031",
+    "module": "M2",
+    "topic": "组件/应用工具调用边界",
+    "type": "single",
+    "stem": "把已发布应用封装成工具时，文档指出什么调用边界？",
+    "options": {
+      "A": "所有工具调用都自动开启新的独立聊天会话并持续追问",
+      "B": "仅支持单轮调用，不支持多轮对话",
+      "C": "支持透明继承被封装应用的无限多轮状态",
+      "D": "封装后无需发布原应用即可直接作为正式工具"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "应用类型工具可复用已发布应用，但官方明确限制为单轮调用。",
+    "distractors": {
+      "C": "官方限定单轮",
+      "D": "基于已发布应用构建",
+      "A": "不能推断多轮交互"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "title": "连接器与工具介绍",
+        "section": "自定义工具/应用",
+        "fact": "应用类型工具可复用已发布应用，但官方明确限制为单轮调用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-032",
+    "module": "M2",
+    "topic": "Skills/三类来源",
+    "type": "single",
+    "stem": "Skills广场的三种类别是哪组？",
+    "options": {
+      "A": "内置、企业共享、自定义",
+      "B": "仅按文档、图像、音频分成三类来源",
+      "C": "按标准、单工作流、Multi-Agent划分技能来源",
+      "D": "按模型、知识库、工作流划分三类Skill身份"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "官方按来源和共享范围将Skills分成内置、企业共享、自定义三类。",
+    "distractors": {
+      "B": "这是场景分类非来源分类",
+      "C": "应用模式不是Skills类别",
+      "D": "不是官方三类技能"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "title": "Skills介绍",
+        "section": "Skills的三种类别",
+        "fact": "官方按来源和共享范围将Skills分成内置、企业共享、自定义三类。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-033",
+    "module": "M2",
+    "topic": "Skills/自定义范围",
+    "type": "single",
+    "stem": "成员在某工作空间导入自定义Skill，默认可见范围是什么？",
+    "options": {
+      "A": "自动向企业全部空间开放，无需共享审批",
+      "B": "仅创建者本人可见，任何同空间成员都不可用",
+      "C": "默认可被任何外部企业复用",
+      "D": "当前导入空间"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "自定义Skills仅在当前空间可见和使用；扩散到企业需经共享审批。",
+    "distractors": {
+      "A": "企业共享另需审批",
+      "B": "文档范围是当前空间",
+      "C": "不自动跨企业开放"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "title": "Skills介绍",
+        "section": "Skills的三种类别",
+        "fact": "自定义Skills仅在当前空间可见和使用；扩散到企业需经共享审批。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-034",
+    "module": "M2",
+    "topic": "Skills/企业共享关系",
+    "type": "single",
+    "stem": "企业共享Skill通常从哪里产生？",
+    "options": {
+      "A": "所有内置Skill修改名称后自动成为企业共享",
+      "B": "管理员只需创建一个同名知识库即完成共享",
+      "C": "已上架自定义Skill经审批升级",
+      "D": "尚未上架的自定义包直接跨空间分发即可成为共享"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "企业共享由已上架自定义Skill发起审批并通过后形成，属于组织内复用机制。",
+    "distractors": {
+      "D": "需要先上架并经审批",
+      "A": "内置和企业共享来源不同",
+      "B": "知识库不是技能共享机制"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "title": "Skills介绍",
+        "section": "Skills的三种类别",
+        "fact": "企业共享由已上架自定义Skill发起审批并通过后形成，属于组织内复用机制。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-035",
+    "module": "M2",
+    "topic": "知识库/组件定位",
+    "type": "single",
+    "stem": "知识库与智能体应用的关系，哪项最准确？",
+    "options": {
+      "A": "应用会把所有知识自动训练进模型参数",
+      "B": "知识库为应用提供知识上下文，应用组合模型和能力对外服务",
+      "C": "上传知识后不需要模型或应用逻辑即可对外完整交付",
+      "D": "知识库只存文件名，不能提供生成上下文"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "知识库负责知识处理与召回，应用使用这些知识完成业务问答；二者职责不同。",
+    "distractors": {
+      "C": "知识库是组件不是完整交付",
+      "D": "可召回内容作为上下文",
+      "A": "检索不等于权重训练"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "title": "什么是知识库？",
+        "section": "知识检索流程",
+        "fact": "知识库负责知识处理与召回，应用使用这些知识完成业务问答；二者职责不同。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-09-22"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-036",
+    "module": "M2",
+    "topic": "知识库/三类知识",
+    "type": "single",
+    "stem": "ADP知识库文档将知识分为哪些类型？",
+    "options": {
+      "A": "文档、问答、数据库",
+      "B": "只有纯文本，表格与问答都必须转换成模型权重",
+      "C": "只有用户画像与长期记忆两种",
+      "D": "仅支持训练集、验证集、测试集三种"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "知识库支持文档、成对问答和结构化数据库等知识类型，这是数据类型分类。",
+    "distractors": {
+      "B": "文档问答数据库均受支持",
+      "C": "记忆与知识类型不同",
+      "D": "这是训练数据集分法"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "title": "什么是知识库？",
+        "section": "知识库数据类型",
+        "fact": "知识库支持文档、成对问答和结构化数据库等知识类型，这是数据类型分类。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-09-22"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-037",
+    "module": "M2",
+    "topic": "知识库/默认与共享",
+    "type": "single",
+    "stem": "应用自带默认知识库与可复用的平台知识库，关键区别是什么？",
+    "options": {
+      "A": "默认库可被任意其他应用直接共用",
+      "B": "共享知识库必须每个应用各复制一份才能引用",
+      "C": "应用和知识库严格一对一，不能额外添加",
+      "D": "默认库限当前应用，可额外引用平台知识库复用内容"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "默认知识库属于当前应用；通过额外引用知识库支持跨应用知识复用。",
+    "distractors": {
+      "A": "默认库限当前应用",
+      "B": "引用支持复用",
+      "C": "可额外添加平台知识库"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "title": "什么是知识库？",
+        "section": "知识库层级说明",
+        "fact": "默认知识库属于当前应用；通过额外引用知识库支持跨应用知识复用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-09-22"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-038",
+    "module": "M2",
+    "topic": "工作台/即用定位",
+    "type": "single",
+    "stem": "员工希望直接描述任务并获得交付物，不先手工搭智能体，ADP哪项能力符合？",
+    "options": {
+      "A": "先把每个工作步骤全部手工编排再发任务",
+      "B": "只能在已发布应用列表中选择不可修改的固定答案",
+      "C": "智能工作台",
+      "D": "仅使用模型广场直接调参，无法使用工具"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "智能工作台面向企业员工，能自动规划任务并执行流程，开箱即用。",
+    "distractors": {
+      "D": "工作台可组合多种能力",
+      "A": "定位是无需先手工搭建",
+      "B": "能自动规划任务"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130637",
+        "title": "对话功能概述",
+        "section": "功能概述前说明",
+        "fact": "智能工作台面向企业员工，能自动规划任务并执行流程，开箱即用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-22"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-039",
+    "module": "M2",
+    "topic": "工作台/历史任务",
+    "type": "single",
+    "stem": "任务列表相对于单次临时输出，提供什么价值？",
+    "options": {
+      "A": "保存任务意味着已自动发布成应用",
+      "B": "回看完整任务对话流程和交付物",
+      "C": "只存最终一句回复而不保存流程",
+      "D": "任务完成后生成文件只能在当前轮查看"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "任务列表保留执行过的任务、流程与产物，便于继续查看和优化；不等于质量认证。",
+    "distractors": {
+      "C": "列表含完整对话流程",
+      "D": "可回看交付物下载",
+      "A": "任务历史不等于发布应用"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130637",
+        "title": "对话功能概述",
+        "section": "任务列表",
+        "fact": "任务列表保留执行过的任务、流程与产物，便于继续查看和优化；不等于质量认证。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-22"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-040",
+    "module": "M2",
+    "topic": "工作台/工作区",
+    "type": "single",
+    "stem": "智能工作台中的工作区主要承载什么？",
+    "options": {
+      "A": "代码与产物文件的预览、编辑等操作",
+      "B": "只展示模型思考文本而不支持文件管理",
+      "C": "用于改写所有底层模型权重",
+      "D": "只存用户提示词模板，不支持代码执行"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "工作区是代码创建执行与修改的环境，并支持产物文件预览和下载等操作。",
+    "distractors": {
+      "B": "有文件预览下载等",
+      "C": "不是模型训练环境定义",
+      "D": "可创建执行修改代码"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130637",
+        "title": "对话功能概述",
+        "section": "工作区",
+        "fact": "工作区是代码创建执行与修改的环境，并支持产物文件预览和下载等操作。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-22"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-041",
+    "module": "M2",
+    "topic": "工作台/应用构建关系",
+    "type": "single",
+    "stem": "智能工作台是否只能完成办公任务，不能帮助开发ADP应用？",
+    "options": {
+      "A": "是，只能直接办公，不能创建任何应用对象",
+      "B": "是，只能给手工配置建议而不能修改配置",
+      "C": "是，工作流搭建只能在画布逐个拖拽完成",
+      "D": "不是，它也支持对话式应用构建与调优"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "对话式应用开发能力可用自然语言创建配置应用、搭建工作流、评测和分析记录。",
+    "distractors": {
+      "A": "文档支持应用构建",
+      "B": "支持实际配置修改",
+      "C": "支持对话生成修改工作流"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/137902",
+        "title": "对话式应用开发与调优",
+        "section": "支持的能力范围",
+        "fact": "对话式应用开发能力可用自然语言创建配置应用、搭建工作流、评测和分析记录。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-21"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-042",
+    "module": "M2",
+    "topic": "工作台/开发模式覆盖",
+    "type": "single",
+    "stem": "对话式应用开发与调优支持创建哪些模式？",
+    "options": {
+      "A": "只支持标准与单工作流，不支持Multi-Agent",
+      "B": "只能编辑已发布应用，不能新建",
+      "C": "当前四种模式均在能力范围内，具体受账号权益影响",
+      "D": "只能创建Claw，旧模式只读"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "该文档列出标准、单工作流、Multi-Agent、Claw四模式；实际使用还需套餐权限匹配。",
+    "distractors": {
+      "D": "文档覆盖四模式",
+      "A": "明确含Multi-Agent",
+      "B": "支持从零创建"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/137902",
+        "title": "对话式应用开发与调优",
+        "section": "支持的能力范围",
+        "fact": "该文档列出标准、单工作流、Multi-Agent、Claw四模式；实际使用还需套餐权限匹配。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-21"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "title": "套餐版本说明",
+        "section": "功能对比",
+        "fact": "不同套餐在应用开发和三方模型接入等方面的功能范围有差别。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-043",
+    "module": "M2",
+    "topic": "接入/API与界面",
+    "type": "single",
+    "stem": "团队希望批量构建Claw应用并嵌入已有产品，应考虑什么接入方式？",
+    "options": {
+      "A": "必须让每个终端用户调用管理接口创建应用",
+      "B": "API接入，可将创建配置发布等流程代码化",
+      "C": "只允许对话API，不提供创建配置发布能力",
+      "D": "API方式只能管理单个固定应用且不能自动化"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "API概览将自动化、批量管理和现有产品集成列为代码接入场景。",
+    "distractors": {
+      "C": "文档支持全流程API",
+      "D": "适合自动化批量管理",
+      "A": "开发者与终端使用者分离"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/133868",
+        "title": "概览",
+        "section": "接入方式",
+        "fact": "API概览将自动化、批量管理和现有产品集成列为代码接入场景。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-13"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-044",
+    "module": "M2",
+    "topic": "接入/应用与Agent",
+    "type": "single",
+    "stem": "在ADP API概念中，Application与Agent如何区分？",
+    "options": {
+      "A": "应用是对外服务单位，Agent是承载能力配置的内部组成",
+      "B": "Application只是对话记录，Agent才是发布版本",
+      "C": "每个Agent都是独立企业工作空间",
+      "D": "应用只能保存一个模型名称，不能组织能力"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "官方概念表中应用对外提供服务，Agent承载指令、模型、Skill、工具等配置。",
+    "distractors": {
+      "B": "应用是服务单位非记录",
+      "C": "空间与Agent不同",
+      "D": "应用可组织能力配置"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/133868",
+        "title": "概览",
+        "section": "核心概念",
+        "fact": "官方概念表中应用对外提供服务，Agent承载指令、模型、Skill、工具等配置。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-13"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-045",
+    "module": "M2",
+    "topic": "套餐/能力与权益",
+    "type": "single",
+    "stem": "产品介绍写支持某能力，客户就能在任意套餐使用吗？",
+    "options": {
+      "A": "能，套餐仅影响名字不影响功能范围",
+      "B": "能，有PU余额就能调用全部未开通功能",
+      "C": "能，创建应用会自动把账号升级到最高版本",
+      "D": "不能，应核对套餐功能范围和有效状态"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "套餐文档明确不同版本的权益与功能范围不同，产品总体能力不能直接等同账号可用范围。",
+    "distractors": {
+      "A": "套餐存在功能差异",
+      "B": "资源与功能权益不同",
+      "C": "创建不代表自动升配"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "title": "套餐版本说明",
+        "section": "套餐版本、功能对比",
+        "fact": "套餐文档明确不同版本的权益与功能范围不同，产品总体能力不能直接等同账号可用范围。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-046",
+    "module": "M2",
+    "topic": "套餐/SkillPlan边界",
+    "type": "single",
+    "stem": "依据当前套餐文档，仅看到Skill Plan支持智能工作台，能否推断它支持应用创建与发布？",
+    "options": {
+      "A": "能，SkillPlan所有功能都等同企业版",
+      "B": "能，只限制可用Token，不限制创建发布",
+      "C": "不能，该版工作台不含应用创建发布能力",
+      "D": "能，工作台和完整应用开发权益必然一一对应"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "功能对比表对Skill Plan工作台限定不含应用创建发布，资源余额与功能权益是两回事。",
+    "distractors": {
+      "D": "文档明确排除",
+      "A": "版本功能不同",
+      "B": "有功能范围边界"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "title": "套餐版本说明",
+        "section": "功能对比",
+        "fact": "功能对比表对Skill Plan工作台限定不含应用创建发布，资源余额与功能权益是两回事。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-047",
+    "module": "M2",
+    "topic": "套餐/Claw模式与ClawPro",
+    "type": "single",
+    "stem": "为什么不能把“Claw模式应用”和“ClawPro一键部署”完全等同？",
+    "options": {
+      "A": "支持Claw模式的套餐必定包含新购ClawPro权益",
+      "B": "文档将其列为不同能力，ClawPro另有停止新购说明",
+      "C": "ClawPro停止新购意味着Claw模式应用也全部停止",
+      "D": "所有ClawPro部署文档都可直接当作Claw模式配置指南"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "套餐表单列应用开发中的Claw模式与ClawPro，并说明ClawPro新购边界；概念不能混用。",
+    "distractors": {
+      "C": "应用开发仍含Claw",
+      "D": "两能力应分别读文档",
+      "A": "文档明确ClawPro新购边界"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "title": "套餐版本说明",
+        "section": "套餐版本、功能对比",
+        "fact": "套餐表单列应用开发中的Claw模式与ClawPro，并说明ClawPro新购边界；概念不能混用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-048",
+    "module": "M2",
+    "topic": "模式/MultiAgent工作流编排边界",
+    "type": "multiple",
+    "stem": "根据模式切换表，Multi-Agent使用工作流的哪些理解正确？",
+    "options": {
+      "A": "选择工作流编排作为协同方式后可添加单个工作流",
+      "B": "只要空间有工作流，全部流程就会自动成为协同主流程",
+      "C": "切换模式后工作流设置和发布状态保持不变",
+      "D": "可同时添加任意数量工作流作为该协同主流程"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "模式切换表保留工作流资产，但Multi-Agent需选择工作流编排协同方式才支持添加单个工作流。",
+    "distractors": {
+      "B": "资产存在不等于已选协同配置",
+      "D": "表中限定单个工作流"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "应用模式切换/工作流管理",
+        "fact": "模式切换表保留工作流资产，但Multi-Agent需选择工作流编排协同方式才支持添加单个工作流。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-049",
+    "module": "M2",
+    "topic": "模式/标准与单工作流取舍",
+    "type": "multiple",
+    "stem": "比较标准模式与单工作流模式时，哪些是有效判断依据？",
+    "options": {
+      "A": "是否以严肃知识问答及预设双模型流程为核心",
+      "B": "单工作流不能含知识处理",
+      "C": "标准模式不能加入复杂流程",
+      "D": "是否要求所有请求按指定流程处理"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "A描述标准模式的严肃问答与双模型预设流程；D描述单工作流对所有请求使用指定流程。标准模式可添加工作流，单工作流也可含知识处理节点。",
+    "distractors": {
+      "B": "单工作流可使用知识节点",
+      "C": "标准模式支持添加工作流"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "模式描述、应用模式切换",
+        "fact": "A描述标准模式的严肃问答与双模型预设流程；D描述单工作流对所有请求使用指定流程。标准模式可添加工作流，单工作流也可含知识处理节点。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-050",
+    "module": "M2",
+    "topic": "MultiAgent/转交关系生效",
+    "type": "multiple",
+    "stem": "参考Multi-Agent快速入门，添加多个Agent后，哪些配置关系正确？",
+    "options": {
+      "A": "新建子Agent后，主Agent无需配置关系便能自动转交给所有成员",
+      "B": "必须与主Agent配置转交关系，才可分配任务到相应子Agent",
+      "C": "转交描述帮助模型判断职责与转交时机",
+      "D": "只需填写对用户的欢迎语，就能替代Agent转交关系"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "快速入门明确创建多个Agent不会立即生效，需要配置与主Agent的转交关系；转交描述用于判断角色作用与交接时机。",
+    "distractors": {
+      "A": "新增实体不等于已连通转交关系",
+      "D": "欢迎语不是协同关系配置"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122573",
+        "title": "基于Multi-Agent模式创建脱口秀素材创作助手",
+        "section": "设置转交描述、设置Agent转交关系",
+        "fact": "快速入门明确创建多个Agent不会立即生效，需要配置与主Agent的转交关系；转交描述用于判断角色作用与交接时机。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-051",
+    "module": "M2",
+    "topic": "单工作流/结束与回复职责",
+    "type": "multiple",
+    "stem": "网页内容总结助手示例中，回复节点和结束节点的职责有哪些？",
+    "options": {
+      "A": "结束节点输出作为工作流结果变量",
+      "B": "只配置结束节点输出，就等同于已向用户展示内容",
+      "C": "要向用户呈现内容，需要配置回复节点",
+      "D": "回复节点的文字必然成为所有后续节点的系统提示词"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "该示例区分工作流返回结果与对话展示：结束节点产生输出变量，回复节点承担用户可见的回复。",
+    "distractors": {
+      "B": "文档要求用户可见输出需添加回复节点",
+      "D": "回复是对话输出，不能推定为后续系统提示词"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122572",
+        "title": "基于单工作流模式创建网页内容总结助手",
+        "section": "编排回复节点、编排结束节点",
+        "fact": "该示例区分工作流返回结果与对话展示：结束节点产生输出变量，回复节点承担用户可见的回复。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-052",
+    "module": "M2",
+    "topic": "Claw/动态配置作用域",
+    "type": "multiple",
+    "stem": "Claw开启“允许在对话中动态修改配置”后，哪些说法正确？",
+    "options": {
+      "A": "调用方可通过API按用户或按会话调整Agent配置",
+      "B": "每次切换模型都必须改应用配置并重新发布",
+      "C": "可动态更换模型、安装卸载Skills、绑定插件工具",
+      "D": "设置只影响开发页显示，API运行时配置仍不可改变"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "高级设置开放运行时用户级或会话级配置，官方列出模型、Skills和插件工具的动态调整，并明确无需改应用配置或重新发布。",
+    "distractors": {
+      "B": "动态配置路径明确无需重发应用",
+      "D": "功能直接支持API运行时调整"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "title": "什么是Claw模式？",
+        "section": "关键概念/高级设置",
+        "fact": "高级设置开放运行时用户级或会话级配置，官方列出模型、Skills和插件工具的动态调整，并明确无需改应用配置或重新发布。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-053",
+    "module": "M2",
+    "topic": "模式/切换保留项",
+    "type": "multiple",
+    "stem": "非Claw三模式互切时，哪些基本信息保持不变？",
+    "options": {
+      "A": "应用头像",
+      "B": "开场白",
+      "C": "各模式角色指令自动合并为一份",
+      "D": "应用名称"
+    },
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "模式切换表明确保留应用基本信息，但角色指令等应用设置相互独立。",
+    "distractors": {
+      "C": "指令不会自动合并继承"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "应用模式切换/应用信息设置",
+        "fact": "模式切换表明确保留应用基本信息，但角色指令等应用设置相互独立。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-054",
+    "module": "M2",
+    "topic": "模式/知识消费路径",
+    "type": "multiple",
+    "stem": "切到目标模式后，哪些知识使用方式符合模式差异表？",
+    "options": {
+      "A": "所有模式无需任何相关配置都自动使用全部知识",
+      "B": "切模式会把知识管理资产清空再重建",
+      "C": "单工作流中通过知识相关节点使用知识",
+      "D": "Multi-Agent选择知识库问答工具启用知识问答"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "知识管理资产保持，消费路径依模式而定；单工作流和Multi-Agent的知识入口不同。",
+    "distractors": {
+      "A": "有相应节点或工具配置要求",
+      "B": "资产范围与状态保留"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "title": "智能体应用及其四种模式",
+        "section": "应用模式切换/知识管理",
+        "fact": "知识管理资产保持，消费路径依模式而定；单工作流和Multi-Agent的知识入口不同。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-055",
+    "module": "M2",
+    "topic": "Claw/智能辅助配置与调试",
+    "type": "multiple",
+    "stem": "Claw开发页的智能辅助设置与调试有哪些区别？",
+    "options": {
+      "A": "智能辅助设置可用自然语言协助优化配置",
+      "B": "辅助生成配置完成，即等于已通过测试并发布",
+      "C": "调试区域用于发起测试对话，并支持模型对比调试",
+      "D": "模型对比调试会直接同步更新线上已发布版本的默认模型"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "智能辅助设置负责对话式配置优化；调试阶段使用测试对话验证功能并可比较模型，发布是后续动作。",
+    "distractors": {
+      "B": "配置、调试、发布为不同步骤",
+      "D": "调试验证与显式发布是不同阶段，对比调试不能等同于更新线上版本"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "title": "什么是Claw模式？",
+        "section": "关键概念/智能辅助设置、核心工作流程",
+        "fact": "智能辅助设置负责对话式配置优化；调试阶段使用测试对话验证功能并可比较模型，发布是后续动作。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-056",
+    "module": "M2",
+    "topic": "工具/可调用契约",
+    "type": "multiple",
+    "stem": "将内部能力封装为自定义工具时，官方描述的可配置契约包括哪些？",
+    "options": {
+      "A": "工具名称、描述、输入参数",
+      "B": "只记录接口地址，模型无需知道能力描述",
+      "C": "输出参数和调用方式",
+      "D": "仅上传操作说明就已完成API函数服务封装"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "自定义工具需定义名称描述、输入输出参数和调用方式，以便模型在合适上下文选择调用。",
+    "distractors": {
+      "B": "官方明确工具描述和参数契约",
+      "D": "说明文档不替代实际可调用能力"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "title": "连接器与工具介绍",
+        "section": "自定义工具",
+        "fact": "自定义工具需定义名称描述、输入输出参数和调用方式，以便模型在合适上下文选择调用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-057",
+    "module": "M2",
+    "topic": "组件/MCP与API关系",
+    "type": "multiple",
+    "stem": "ADP自定义扩展中，哪些说法正确？",
+    "options": {
+      "A": "API类型工具可采用OpenAPI定义",
+      "B": "只要支持MCP就不能再支持HTTP API工具",
+      "C": "MCP是一种应用模式，和Claw并列",
+      "D": "MCP可用于标准化接入外部工具与数据源"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "文档同时列出MCP与API等接入方式；它们属于扩展协议或封装方式，不是四种模式名称。",
+    "distractors": {
+      "B": "两类方式可共存",
+      "C": "MCP是协议而非应用模式"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "title": "连接器与工具介绍",
+        "section": "自定义连接器、自定义工具",
+        "fact": "文档同时列出MCP与API等接入方式；它们属于扩展协议或封装方式，不是四种模式名称。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-058",
+    "module": "M2",
+    "topic": "工具/第三方服务评估责任",
+    "type": "multiple",
+    "stem": "使用广场第三方连接器前，哪些决策符合官方注意事项？",
+    "options": {
+      "A": "根据自己的业务需要选择和甄别服务",
+      "B": "第三方一旦被收录，其数据保护责任全部转移给平台",
+      "C": "注意传输的数据保护，并评估相应使用风险",
+      "D": "平台收录即可替代企业对稳定性适用性的判断"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "官方说明第三方功能由合作伙伴提供，平台无法完全担保其安全性稳定性；使用者应自行甄别并注意数据保护。",
+    "distractors": {
+      "B": "收录没有转移全部数据保护责任",
+      "D": "官方仍要求按需选择甄别"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "title": "连接器与工具介绍",
+        "section": "注意/第三方服务质量",
+        "fact": "官方说明第三方功能由合作伙伴提供，平台无法完全担保其安全性稳定性；使用者应自行甄别并注意数据保护。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-059",
+    "module": "M2",
+    "topic": "Skills/能力复用范围",
+    "type": "multiple",
+    "stem": "哪些说法符合Skills的能力定位？",
+    "options": {
+      "A": "企业共享意味着向全互联网公开源代码",
+      "B": "为智能体提供专业处理能力",
+      "C": "自定义Skill可以满足个性化需求",
+      "D": "Skill本质上必须是一个独立对外应用"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "Skills是能力扩展模块，可内置或自定义；共享范围由企业与空间规则约束。",
+    "distractors": {
+      "D": "模块不等于独立应用",
+      "A": "企业共享不是公网开源"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "title": "Skills介绍",
+        "section": "相关概念定义",
+        "fact": "Skills是能力扩展模块，可内置或自定义；共享范围由企业与空间规则约束。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-060",
+    "module": "M2",
+    "topic": "Skills/场景与来源两个维度",
+    "type": "multiple",
+    "stem": "寻找合同审核Skill时，如何理解广场的分类维度？",
+    "options": {
+      "A": "财税法务描述使用场景",
+      "B": "内置或自定义描述来源，不等同于业务场景",
+      "C": "归入财税法务就必然是自定义Skill",
+      "D": "归入内置Skill后就不再属于任何场景分类"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Skills文档分别给出来源类别与场景体系；合同审核在财税法务场景，来源类别不能由场景直接推定。",
+    "distractors": {
+      "C": "来源与场景是不同分类维度",
+      "D": "内置技能也覆盖不同场景"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "title": "Skills介绍",
+        "section": "Skills的三种类别、Skills广场的分类体系",
+        "fact": "Skills文档分别给出来源类别与场景体系；合同审核在财税法务场景，来源类别不能由场景直接推定。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-061",
+    "module": "M2",
+    "topic": "定位/运行监控指标",
+    "type": "multiple",
+    "stem": "产品概述列出的运行监控指标包括哪些？",
+    "options": {
+      "A": "请求量和成功率",
+      "B": "延迟和Token消耗",
+      "C": "所有答案事实正确率由请求成功率直接等价表示",
+      "D": "Token消耗量可直接替代用户问题解决效果"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "官方监控指标涵盖请求规模、技术成功率、延迟和Token消耗；这些运行指标不等于答案质量与任务解决效果。",
+    "distractors": {
+      "C": "请求成功不证明回答事实正确",
+      "D": "资源用量与任务效果不是同一指标"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "title": "产品概述",
+        "section": "企业级安全、性能与可观测性",
+        "fact": "官方监控指标涵盖请求规模、技术成功率、延迟和Token消耗；这些运行指标不等于答案质量与任务解决效果。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-062",
+    "module": "M2",
+    "topic": "定位/试点路径",
+    "type": "multiple",
+    "stem": "依据产品概述，哪些做法符合从PoC走向业务落地的思路？",
+    "options": {
+      "A": "围绕业务效率与知识服务目标建设",
+      "B": "先一次替换所有系统再考虑需求是否匹配",
+      "C": "基于已有文档与系统建立小场景试点",
+      "D": "验证后逐步扩展业务流程"
+    },
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "官方建议从知识助手或客服等小场景起步，再扩展到更多业务流程，形成落地闭环。",
+    "distractors": {
+      "B": "全量替换不是其建议路径"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "title": "产品概述",
+        "section": "产品能力/说明",
+        "fact": "官方建议从知识助手或客服等小场景起步，再扩展到更多业务流程，形成落地闭环。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-15"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-063",
+    "module": "M2",
+    "topic": "工作台/产物边界",
+    "type": "multiple",
+    "stem": "关于智能工作台交付物，哪些操作被文档支持？",
+    "options": {
+      "A": "预览文件即等同已经部署到企业生产环境",
+      "B": "预览生成文件",
+      "C": "下载单个或全部文件",
+      "D": "将产物保存到知识库"
+    },
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "工作区支持预览下载和知识库保存；生成文件与生产部署是不同状态。",
+    "distractors": {
+      "A": "本地产物预览不等于线上发布"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130637",
+        "title": "对话功能概述",
+        "section": "工作区",
+        "fact": "工作区支持预览下载和知识库保存；生成文件与生产部署是不同状态。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-22"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-064",
+    "module": "M2",
+    "topic": "工作台/输入和资源",
+    "type": "multiple",
+    "stem": "智能工作台执行任务时，可以使用哪些已配置输入或资源？",
+    "options": {
+      "A": "用户上传的文件",
+      "B": "权限范围内的企业知识库",
+      "C": "已启用且在授权范围内的连接器",
+      "D": "无需接入即可读取任意企业的全部数据"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "工作台可组合上传资料、企业知识和连接器；数据范围仍受接入与权限限定。",
+    "distractors": {
+      "D": "文档强调权限与授权范围"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130637",
+        "title": "对话功能概述",
+        "section": "对话功能",
+        "fact": "工作台可组合上传资料、企业知识和连接器；数据范围仍受接入与权限限定。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-22"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-065",
+    "module": "M2",
+    "topic": "工作台/开发闭环范围",
+    "type": "multiple",
+    "stem": "哪些工作属于对话式应用开发与调优的支持范围？",
+    "options": {
+      "A": "生成评测集并执行评测",
+      "B": "分析历史对话记录",
+      "C": "凡是工作台说“完成”就跳过配置检查",
+      "D": "搭建或修改工作流"
+    },
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "该功能覆盖构建、验证和运营分析；文档仍要求进入详情查看改动并验证后发布。",
+    "distractors": {
+      "C": "自动化不能替代确认结果"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/137902",
+        "title": "对话式应用开发与调优",
+        "section": "支持的能力范围、确认结果并调优",
+        "fact": "该功能覆盖构建、验证和运营分析；文档仍要求进入详情查看改动并验证后发布。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-21"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-066",
+    "module": "M2",
+    "topic": "工作台/草稿线上边界",
+    "type": "multiple",
+    "stem": "使用智能工作台修改应用后，哪些说法正确？",
+    "options": {
+      "A": "线上用户一定立即使用所有新配置",
+      "B": "调试结果相同就证明草稿和线上版本永远一致",
+      "C": "构建结果可以先停留在草稿态",
+      "D": "调试可能使用待发布配置"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "文档提醒调试使用草稿，而客户访问发布配置；有未发布改动时两者可能不同。",
+    "distractors": {
+      "A": "需要显式发布",
+      "B": "版本可能存在差异"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/137902",
+        "title": "对话式应用开发与调优",
+        "section": "典型场景、注意事项",
+        "fact": "文档提醒调试使用草稿，而客户访问发布配置；有未发布改动时两者可能不同。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-21"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-067",
+    "module": "M2",
+    "topic": "接入/开发与使用角色",
+    "type": "multiple",
+    "stem": "Claw API接入时，哪些角色判断正确？",
+    "options": {
+      "A": "用户能对话就必然能修改应用配置",
+      "B": "开发者构建配置和发布应用",
+      "C": "使用者通过对话接口与应用交互",
+      "D": "所有终端用户必须持有开发者管理密钥"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "开发管理与终端对话是不同角色和接口范围，官方强调两者权限操作范围隔离。",
+    "distractors": {
+      "D": "对话采用应用级鉴权标识",
+      "A": "对话权限不等于管理权限"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/133868",
+        "title": "概览",
+        "section": "开发者与使用者",
+        "fact": "开发管理与终端对话是不同角色和接口范围，官方强调两者权限操作范围隔离。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-13"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-068",
+    "module": "M2",
+    "topic": "接入/可视化与代码",
+    "type": "multiple",
+    "stem": "对于控制台可视化和API接入，哪些判断合理？",
+    "options": {
+      "A": "可视化适合快速验证和非开发人员配置",
+      "B": "API适合自动化及已有产品集成",
+      "C": "二者可按需要选择或组合",
+      "D": "采用API就不能再使用控制台查看配置"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "官方把可视化和API列为两种可按需组合的方式，区别在操作接口和适用工作方式。",
+    "distractors": {
+      "D": "文档没有互斥限制"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/133868",
+        "title": "概览",
+        "section": "接入方式",
+        "fact": "官方把可视化和API列为两种可按需组合的方式，区别在操作接口和适用工作方式。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-13"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-069",
+    "module": "M2",
+    "topic": "套餐/有效期内PU用尽",
+    "type": "multiple",
+    "stem": "企业版套餐仍在有效期内，但PU资源已用尽。哪些判断符合套餐文档？",
+    "options": {
+      "A": "有效期尚未结束，因此可以继续无资源运行",
+      "B": "PU耗尽本身会导致无法使用产品",
+      "C": "可以考虑增购预付费资源包",
+      "D": "把有效期延长即可自动证明当前PU余额已恢复"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "文档将PU耗尽与套餐到期分别说明，企业版支持增购预付费资源包；有效期充足不能替代可用PU。",
+    "distractors": {
+      "A": "资源耗尽是独立停止使用条件",
+      "D": "续期状态不能代替资源余额确认"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "title": "套餐版本说明",
+        "section": "版本升级与到期/PU资源用尽",
+        "fact": "文档将PU耗尽与套餐到期分别说明，企业版支持增购预付费资源包；有效期充足不能替代可用PU。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M2-070",
+    "module": "M2",
+    "topic": "套餐/升级与到期时间",
+    "type": "multiple",
+    "stem": "从专业版补差价升级到企业版，套餐版本文档支持哪些结论？",
+    "options": {
+      "A": "套餐到期时间保持不变",
+      "B": "升级后续费设置保持不变",
+      "C": "升级自动从当天重新计算一个完整订阅周期",
+      "D": "升级只增加PU数量，功能版本仍保持专业版"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "官方升级定义是补差价改变套餐版本，原到期时间与续费设置不变；升级不等于重新开始订阅周期。",
+    "distractors": {
+      "C": "文档明确到期时间不变",
+      "D": "升级改变套餐版本"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "title": "套餐版本说明",
+        "section": "版本升级与到期/升级",
+        "fact": "官方升级定义是补差价改变套餐版本，原到期时间与续费设置不变；升级不等于重新开始订阅周期。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "foundations_modes",
+      "reviewer": null,
+      "notes": []
+    }
+  }
+]

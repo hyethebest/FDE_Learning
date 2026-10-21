@@ -1,0 +1,37 @@
+{
+  "total": 1000,
+  "errors": [],
+  "nearDuplicates": [],
+  "counts": {
+    "M1/multiple": 33,
+    "M1/single": 67,
+    "M2/multiple": 23,
+    "M2/single": 47,
+    "M3/multiple": 73,
+    "M3/single": 147,
+    "M4/multiple": 84,
+    "M4/single": 166,
+    "M5/multiple": 50,
+    "M5/single": 100,
+    "M6/multiple": 37,
+    "M6/single": 73,
+    "M7/multiple": 33,
+    "M7/single": 67
+  },
+  "answerDistribution": {
+    "D": 160,
+    "C": 174,
+    "B": 162,
+    "A": 171,
+    "A/B/C": 46,
+    "A/D": 22,
+    "C/D": 40,
+    "B/C": 34,
+    "A/B": 28,
+    "B/C/D": 33,
+    "A/B/D": 37,
+    "A/C/D": 40,
+    "A/C": 31,
+    "B/D": 22
+  }
+}

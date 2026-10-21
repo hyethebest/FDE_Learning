@@ -1,0 +1,250 @@
+[
+  {
+    "id": "FDE-M4-070",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "修订已比较公开URL、下载中转与授权存储路径，直接取数且不公开两项约束决定COS授权导入。"
+    ],
+    "reason": "修订已比较公开URL、下载中转与授权存储路径，直接取数且不公开两项约束决定COS授权导入。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "6d3dc4c0d52598757ead49f623d480b8b87da112323d1cd92d9ea9d1d95ebb7b",
+    "stem": "客户资料已保存在 COS，要求演示直接从该存储选取文档，且不把对象改成公开网页。合适的准备是什么？",
+    "answer": [
+      "D"
+    ],
+    "revision": 3,
+    "supersedesHash": "c03aaeb3ae67708fa3becda73256fe1777df5ae4cc089fdd3c6d6e8bef472c77"
+  },
+  {
+    "id": "FDE-M4-128",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已改AppKey与连接Token生命周期混淆，换请求ID或复制参数不重签凭证的错误具体，答案有官方支持。"
+    ],
+    "reason": "已改AppKey与连接Token生命周期混淆，换请求ID或复制参数不重签凭证的错误具体，答案有官方支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129365"
+    ],
+    "contentHash": "013d274666a07ebfd533a4baa0d4ba6b480d97d4c5bcebcc60c3f7ff28cf8d44",
+    "stem": "接入代码把第一次取得的 WebSocket Token 当成 AppKey 长期保存，用于每次新连接。正确的修改是哪项？",
+    "answer": [
+      "B"
+    ],
+    "revision": 3,
+    "supersedesHash": "d76e130953da9741f51c8a70de5c88b79b7e88dee773d938532f7cf7dd85aa3f"
+  },
+  {
+    "id": "FDE-M4-132",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "独立核112876区分上传图片问答与召回图文阅读两条模型职责，两类输入分别验收合理。"
+    ],
+    "reason": "独立核112876区分上传图片问答与召回图文阅读两条模型职责，两类输入分别验收合理。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112876"
+    ],
+    "contentHash": "f33534e95a1d674944d42809cc4577d1cfc05c17da4fcbe67f6180c154de9425",
+    "stem": "标准模式助手既回答用户刚上传的照片，又需理解检索到的图文知识片段。哪些模型职责应区分？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "revision": 3,
+    "supersedesHash": "827494170eb9c9e0d1e1c842c27326108152954727d0583f029645331e83a020"
+  },
+  {
+    "id": "FDE-M4-136",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "改后与相邻已过137实质完全相同：异步选项卡等待输入，需要接口提交选择继续；新增外部页面和轮询只是同一缺环的叙述。需换为任务取消状态、并发排队或不同异步组合约束。"
+    ],
+    "reason": "改后与相邻已过137实质完全相同：异步选项卡等待输入，需要接口提交选择继续；新增外部页面和轮询只是同一缺环的叙述。需换为任务取消状态、并发排队或不同异步组合约束。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/126856"
+    ],
+    "contentHash": "31c385794ef2dd101ee6e93e2bd280c343e8672aefcdb02317e65098b081bd3b",
+    "stem": "外部页面只实现创建异步任务和读最终结果，而流程中有选项卡。“等待输入”使结果始终未完成，缺少哪一环？",
+    "answer": [
+      "B"
+    ],
+    "revision": 3,
+    "supersedesHash": "5d9fdb6bdc1bb6168b8fae79279e6d2affb706c4a8537506ea263767c126c074"
+  },
+  {
+    "id": "FDE-M4-139",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已核Prompt改写职责处理指代省略，故障在问题语义还原而非解析或生成长度；与038显式前序变量组织是不同实现层。"
+    ],
+    "reason": "已核Prompt改写职责处理指代省略，故障在问题语义还原而非解析或生成长度；与038显式前序变量组织是不同实现层。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112876"
+    ],
+    "contentHash": "29b3e904160679fc487bfcf0042a741412dcf0f691a42893699cc53092c85806",
+    "stem": "标准模式用户先指定比较方案乙，下一轮说“它比上一个贵多少”。资料和数值均存在，却检索到无关主题。设计首先应补哪类能力验证？",
+    "answer": [
+      "C"
+    ],
+    "revision": 3,
+    "supersedesHash": "c867165d245a20f6049ad59b4584f27070b794fc9aa4c654eeaa85c5e2853020"
+  },
+  {
+    "id": "FDE-M4-140",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已核模板变量定义一致及插入替换机制，共用结构与主题读者变化的维护目标支持答案。"
+    ],
+    "reason": "已核模板变量定义一致及插入替换机制，共用结构与主题读者变化的维护目标支持答案。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/120901"
+    ],
+    "contentHash": "453a0b99d4ad3c1dcf7026ca96d5ccc6865b9e6d509a7977ea8945721b53131b",
+    "stem": "多个部门共用同一报告结构，仅主题和读者不同。为避免复制时漏改部门信息，哪种组织最合适？",
+    "answer": [
+      "B"
+    ],
+    "revision": 3,
+    "supersedesHash": "2caaef6cba9b24bbe93774a2e84b86b9592c7bcfccab1a4676954b8bd992c9af"
+  },
+  {
+    "id": "FDE-M4-141",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "仍与140同一“固定框架保存模板+变化部分填变量以免带旧客户信息”决策，没有独立故障或约束，不能仅改成多选集合计独立题。"
+    ],
+    "reason": "仍与140同一“固定框架保存模板+变化部分填变量以免带旧客户信息”决策，没有独立故障或约束，不能仅改成多选集合计独立题。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/120901"
+    ],
+    "contentHash": "4cec5d6d4bf468334a695fd56a4c2805c729ffa28e0bcb8e584f8878a951bbe6",
+    "stem": "团队希望复用稳定的写作规范，但各次任务材料不同。哪些设计恰当？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "revision": 3,
+    "supersedesHash": "288fe7fbc08e4aa40775a133abb067f4a4c1cc040973cdbca1defa879f0c11ff"
+  },
+  {
+    "id": "FDE-M4-143",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "新情境定位正确证据缺候选，重排序仅处理已有集合，回查候选输入是正确组件边界推理。"
+    ],
+    "reason": "新情境定位正确证据缺候选，重排序仅处理已有集合，回查候选输入是正确组件边界推理。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123554"
+    ],
+    "contentHash": "c76d81c5aa5e1737329b0caa542b58bbf5f3e6636765ffdaae3291756df10686",
+    "stem": "方案是“检索候选→重排序→生成”，测试发现正确文档根本没进候选。哪项判断最准确？",
+    "answer": [
+      "C"
+    ],
+    "revision": 3,
+    "supersedesHash": "abc7851edcec89af21d0ed8d479147eb53893f867d1ab8b076f7f494b54c0be5"
+  },
+  {
+    "id": "FDE-M4-144",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已换9/18时效检索来源并明确结束后不可检索策略，修复旧概览无条件到期承诺；边界验收与上传时间区别有支持。"
+    ],
+    "reason": "已换9/18时效检索来源并明确结束后不可检索策略，修复旧概览无条件到期承诺；边界验收与上传时间区别有支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138380"
+    ],
+    "contentHash": "ed013898cf77105e1a1cfcda6066896067b2a2c26320ab8d40438cf099673ad9",
+    "stem": "内部通知只允许在有效期内用于当前答复，配置已明确设置结束日期后的策略为“不可被检索”。哪些验收结论成立？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "revision": 3,
+    "supersedesHash": "6934d6b982741271933707cea06b9684c9e1c767f3c4ff0b1f53840648adcd56"
+  },
+  {
+    "id": "FDE-M4-145",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "Claw独立工作空间可自主运行代码有直接证据；交付实际清洗文件与仅给建议的验收对象不同，未承诺任意数据环境自动成功。"
+    ],
+    "reason": "Claw独立工作空间可自主运行代码有直接证据；交付实际清洗文件与仅给建议的验收对象不同，未承诺任意数据环境自动成功。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/131653"
+    ],
+    "contentHash": "e056d5dcc5f8c35e0bdb38ba4ef7d2e907b6bbef686b30048b540f32ad1fea1d",
+    "stem": "客户明确要得到清洗后的文件和图表，任务步骤可能随数据变化，允许自主编写运行代码。哪条方案最贴合该执行需求？",
+    "answer": [
+      "A"
+    ],
+    "revision": 3,
+    "supersedesHash": "13664db62e4ae3c020a1d90084721013e036bdb83889c3d7524fbf88642a9d86"
+  },
+  {
+    "id": "FDE-M4-146",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "标准模式思考模型负责意图识别的职责明确，正确任务内部回答正常使故障分层成立。"
+    ],
+    "reason": "标准模式思考模型负责意图识别的职责明确，正确任务内部回答正常使故障分层成立。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112876"
+    ],
+    "contentHash": "28c79bd801a45a1035b8f0fd2b77bcc8d2c9ca56a29088cd6a0ed1dc278252dd",
+    "stem": "标准模式应用每次都选错任务类别，但进入正确任务后回答质量正常。优先关注哪一层模型职责？",
+    "answer": [
+      "D"
+    ],
+    "revision": 3,
+    "supersedesHash": "123ea86526c07dddc8334fb2546999e5ee06357f0ac3ad043f5b20d57cf92277"
+  },
+  {
+    "id": "FDE-M4-147",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "官方数据分析示例确有覆盖原数据确认、缺数据不编造及字段口径要求；题目讨论写入约束，没有把提示词当强制安全机制。"
+    ],
+    "reason": "官方数据分析示例确有覆盖原数据确认、缺数据不编造及字段口径要求；题目讨论写入约束，没有把提示词当强制安全机制。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/131653"
+    ],
+    "contentHash": "e9cfc0dcf37b26b65a1358bfe49652144083d2eb9f3eed1731796c43f2a346f1",
+    "stem": "客户要求自主分析文件，同时不允许无确认覆盖原数据，缺少数据时也不能编造结论。哪些内容应写入执行约束？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "revision": 3,
+    "supersedesHash": "cd85e5903d8d2c80b83580ff24ba2b0a629974a1e5f980e8fe669008129a01d2"
+  }
+]

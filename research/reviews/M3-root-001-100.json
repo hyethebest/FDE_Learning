@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "FDE-M3-001",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "删除前必须解除应用引用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "3f39eef61a07eb58bb0912f4dfb7694dcf69b22c25d31b4809ea702e7bf5c8e6"
+  },
+  {
+    "id": "FDE-M3-002",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "文档对比任务在知识库维度独立。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "f9a1ca9d9d116f33d3ad8840fa5534ce71735b481b3f0a8d06205edd44cd5757"
+  },
+  {
+    "id": "FDE-M3-003",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "已完成状态代表学习完成。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "9c6746b338f6faaec0e8b6606c5d84b9f789fe3689fe31a6dd638796fcefb852"
+  },
+  {
+    "id": "FDE-M3-004",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "名称与描述为建库基础字段。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "e8fe97f23e815904625f78c9131707acabfa83905408ddbe50fcdcba70c5edf4"
+  },
+  {
+    "id": "FDE-M3-005",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "支持文档、问答、数据库知识。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "3277bf9ebc19dc48dfe0999a142a02ddf5dda5b9a44a6dea77766ab918230c0a"
+  },
+  {
+    "id": "FDE-M3-006",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "网页需无需授权且非异步正文。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "fa469f0826f32aef5b1b3100872ecfd39f3ad41ee34a6190077247e9d315e77d"
+  },
+  {
+    "id": "FDE-M3-007",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "网页更新频率决定后续同步。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "411d7dcd07ac47ef522bc66b411ffe2c4f7e844e0c93e3f11ae31b0d5f048ad0"
+  },
+  {
+    "id": "FDE-M3-008",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "引用文档功能控制来源在线查看。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "3a61e58a0508d31daddaec2d8a9788c1a1db5429d2a3c21ded547374890e813c"
+  },
+  {
+    "id": "FDE-M3-009",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "调试域与正式域范围区分准确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "a8279b2b679d69136dffc8b6b094416e093a7951cc304352ad960a275ba4471a"
+  },
+  {
+    "id": "FDE-M3-010",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "到期知识失效；题目未声称删除原文件。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "9a542c4c4971297e0fdedc26fd76f5f5f06d85bd4f30a70d4332e8d92d1980d3"
+  },
+  {
+    "id": "FDE-M3-011",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "导入路径和处理过程有文档支持。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "8d80e7ce841461a2e378e3b6bd59a03208418c9c006d69153a4cddf2056bc0e5"
+  },
+  {
+    "id": "FDE-M3-012",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "生效范围直接控制两域。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "fd23053733eec3bc410bb9249ecc5f81714a32a17889e632683633a546f3ba3c"
+  },
+  {
+    "id": "FDE-M3-013",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "相似问以同一答案维护表达变体。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "3e853e467708363c3d96323e0a6dfc5214b8a90d17ed67bf26911d259573f2a0"
+  },
+  {
+    "id": "FDE-M3-014",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "生成待人工核实采纳，不会自动全部入库。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "9408571c002e1f1a7570db62b4b4f9fba67aed8d3c19582faa9fcba687b119d1"
+  },
+  {
+    "id": "FDE-M3-015",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "源文档问答继承到期且不可单独改。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "837a2a6d26721d7ede7654065198561772f4e858bb9a3cc70eec516f0973a6a4"
+  },
+  {
+    "id": "FDE-M3-016",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "同问异答需人工核实合并。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "3f8e9e5b99cf04b49d4e6d80c9a999e1ca385322a63f14c9d73ce2aa51eb84a3"
+  },
+  {
+    "id": "FDE-M3-017",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "关联文档仍需引用文档展示开启。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "c4baefc49fa038024686ccb9def2e553cf2c2a2cc0dcc5b3a92e89be8e35df53"
+  },
+  {
+    "id": "FDE-M3-018",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "手动、导入、从已导入文档生成均可。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "a8dc472c7e50e5c02d9b899706fa33b03e3739aff8e72f9028b19590ec735b0d"
+  },
+  {
+    "id": "FDE-M3-019",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "停用与导出语义准确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "4f5b08369016bc43715b3556dab93c5320c1b0dcd139f2d3a90fa07acabeae39"
+  },
+  {
+    "id": "FDE-M3-020",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "custom_variables需显式标签参数映射。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112704"
+    ],
+    "contentHash": "0ca1e26ff7026cf5097cb014b998b441a8f727d7d2d87bd2e49ec4c2a3f2ec37"
+  },
+  {
+    "id": "FDE-M3-021",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "且关系题干限定已打标签知识，未遗漏无标签例外。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112704"
+    ],
+    "contentHash": "f9e6410ddc9673105771714e307425db0af524a0b2d0b2ba96bbb9e0a7b20d37"
+  },
+  {
+    "id": "FDE-M3-022",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "或关系题干限定已打标签知识。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112704"
+    ],
+    "contentHash": "1377ccf78d44041b8f04d450afe52c0e60529632e769abd3f4c815080c28a912"
+  },
+  {
+    "id": "FDE-M3-023",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "维护参数名与API键需一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112704"
+    ],
+    "contentHash": "b01031827030c8734817c0ca2210344b388b4e6b1c72582db8201545a60e6cee"
+  },
+  {
+    "id": "FDE-M3-024",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "无标签例外和映射不代替鉴权边界准确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112704"
+    ],
+    "contentHash": "742923259b12f44e096c1fbfb80af85769171f414ad08daa1699ef51461a86fa"
+  },
+  {
+    "id": "FDE-M3-025",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "标签及参数映射配置链条完整。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112704"
+    ],
+    "contentHash": "b507f6ed2b88f7107704f84729dfb33698750f61ee659b79fc60b0a90c302d74"
+  },
+  {
+    "id": "FDE-M3-026",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "子片段检索、父片段供模型上下文。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "b2905ec754a42e8a41decbd3fb0e9d218e1537e29c6d3057c8e0d26596d6734e"
+  },
+  {
+    "id": "FDE-M3-027",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "xlsx自定义按行规则，有格式排除证据。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "40f4f2c0f38deffb42ff0581fc75665baf28e9e44721278c99dc36e12ca83581"
+  },
+  {
+    "id": "FDE-M3-028",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "小片段可能破坏语义完整性。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "92021a427118f62bfd50e25745422240894b53523566fadb96593248ea5f70a9"
+  },
+  {
+    "id": "FDE-M3-029",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "与FDE-M6-063相同的手改切片被重切覆盖判断，需改为不同配置目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "dee9592b1e2ec006be7991d3f0dd420c0799553f08c46e729feac85fd6259f8c"
+  },
+  {
+    "id": "FDE-M3-030",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "通用规则参数与表格规则区分准确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "adc7e1d43638f4d7462505a3e080c6e022e51c387ef6c76918abe223bba759fa"
+  },
+  {
+    "id": "FDE-M3-031",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "默认/自定义范围和大小取舍准确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "3a58736e8a4bd465c7c8344ee5efb4613214aa0dcd25919f0f33402481069b72"
+  },
+  {
+    "id": "FDE-M3-032",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "输入变量局限节点内部，需输出引用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112963"
+    ],
+    "contentHash": "abe05e5caeacae0c3198210c85b67dd7e560b99289c93d4c5e5106a259bebf98"
+  },
+  {
+    "id": "FDE-M3-033",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "Token生成长度与检索参数区分。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112963"
+    ],
+    "contentHash": "3b13a97d0667c9089191883f07e61383d64dfd993c085c6d4fc975926a4249ef"
+  },
+  {
+    "id": "FDE-M3-034",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "无文件输出可设JSON自定义字段。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112963"
+    ],
+    "contentHash": "e8d18f64b85cfe5f0ad15cd3a6b54cd4a26add1fa0e688306442f2f7ae540da0"
+  },
+  {
+    "id": "FDE-M3-035",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "GenFiles限制文本/Markdown且不任意自增输出。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112963"
+    ],
+    "contentHash": "2f5c0aa6892e3220ee600ebcd26e00a99cde3d17b2f00012e056182b44928eb0"
+  },
+  {
+    "id": "FDE-M3-036",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "系统/用户提示词及变量引用准确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112963"
+    ],
+    "contentHash": "67be4ec6e4616f84448006183f4b0404096b68b9f411cb85ab60fe3ab8a79edb"
+  },
+  {
+    "id": "FDE-M3-037",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "温度/采样与生成长度分工准确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112963"
+    ],
+    "contentHash": "aba89d7d91d3b831170b24925ba05857f6e3ca44d3045ff80c3a5efe79b0b8fe"
+  },
+  {
+    "id": "FDE-M3-038",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "唯一最匹配对应单选模式。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115747"
+    ],
+    "contentHash": "cd7dd4906fea5eb43194ae82d7762631e568becb59b35f3da9223870c4484aa0"
+  },
+  {
+    "id": "FDE-M3-039",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "多选意图组加其他意图分支。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115747"
+    ],
+    "contentHash": "f67e7a3aeedf1136977d685dc2f3ad6f1379dc7532777f692f93141ef99063b9"
+  },
+  {
+    "id": "FDE-M3-040",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "意图需连接后继路径。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115747"
+    ],
+    "contentHash": "9ad1a4442ff98719c2d525dc31b2a09a4c09eea7800001a55ec540d784986ba3"
+  },
+  {
+    "id": "FDE-M3-041",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "未匹配走其他意图。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115747"
+    ],
+    "contentHash": "7c2928bfe4bd7608e1f305a6f4a3a502527f6fb74a102c27b459a10585cd4164"
+  },
+  {
+    "id": "FDE-M3-042",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "题干限定每个意图的描述配置，而正确项包含意图名称，改成意图定义配置以消除字段边界歧义。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115747"
+    ],
+    "contentHash": "1fdca878af909325d531b170b0c26cba0cdd10355da2cc1b0abce3749a0186e7"
+  },
+  {
+    "id": "FDE-M3-043",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "补充提示词可表达优先级和冲突规则。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115747"
+    ],
+    "contentHash": "f60f1fa1cf1369709df3e14c837d89e19c5e29ed1c1f1433cb95e0654351ac92"
+  },
+  {
+    "id": "FDE-M3-044",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "布尔类型与真假业务目标一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112965"
+    ],
+    "contentHash": "af3d20ccfaae938cd26a5c4edc3e7afa979add7a03e5df22f399d489216b5ebf"
+  },
+  {
+    "id": "FDE-M3-045",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "清晰语义化标签命名有官方建议。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112965"
+    ],
+    "contentHash": "e9dc3d890738baefd52ff78458947b14506a70b38b31bb1b885a3405ce25ec06"
+  },
+  {
+    "id": "FDE-M3-046",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "题干“该节点”缺明确主语，独立抽题时需写大模型标签提取节点。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112965"
+    ],
+    "contentHash": "a5b9d8fb263e04b56a098b0964396925b65f509fbdf394e77738ee79fa022932"
+  },
+  {
+    "id": "FDE-M3-047",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "提取约束/互斥可用补充提示词表达。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112965"
+    ],
+    "contentHash": "3bb2a32adbc67cc9db4dc5c636cd27ec1e724cc0580b34207aa5c3ae840b4bab"
+  },
+  {
+    "id": "FDE-M3-048",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "需在题干写明大模型标签提取节点，避免待提取内容脱离节点上下文。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112965"
+    ],
+    "contentHash": "9e34769499b17279838620f7240f2f03f2edd58ca8d41b6b3b21ba50cca933ee"
+  },
+  {
+    "id": "FDE-M3-049",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "描述和示例辅助模型且不是默认值。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112965"
+    ],
+    "contentHash": "0ad53d0a785a55c3188ccfb62bfc00715d05a50c18c52276a418631af8010b75"
+  },
+  {
+    "id": "FDE-M3-050",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "知识问答检索并生成，区别纯检索。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112964"
+    ],
+    "contentHash": "68ce225de3e7f868eb4556338842e15fd3c1f18517f3023ed4147c4d015b88eb"
+  },
+  {
+    "id": "FDE-M3-051",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "与112964官方设备型号→保修期示例过度相同，需自写不同判断任务，不能直接照搬官方示例。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112964"
+    ],
+    "contentHash": "f512cf74435a91b22deaaf705efeb3a8865471aff0cf67ced050835909a79ebc"
+  },
+  {
+    "id": "FDE-M3-052",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "按知识库配置允许各库不同规则。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112964"
+    ],
+    "contentHash": "f315deabc034dd6a076534ccd678b075150a2390312c5278a9a5e698921a802a"
+  },
+  {
+    "id": "FDE-M3-053",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "核112964注意事项：每库各召回3，并非总3或保证有3。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112964"
+    ],
+    "contentHash": "012f12319827f2fbc414b02b5095e5aacc56f5c9d43a7a9f7f8efe7471b50846"
+  },
+  {
+    "id": "FDE-M3-054",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "混合/语义/重排序改变检索，回复格式不改变召回。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112964"
+    ],
+    "contentHash": "04a4fe0b2da06082ebe5ff33835e7d043d9527e2a19f498879dfbb7504828629"
+  },
+  {
+    "id": "FDE-M3-055",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "模型高级参数与知识设置区分。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112964"
+    ],
+    "contentHash": "48e424dd9291d9526572a3065b868368339fdabf51baa27d116bcd816b38b51a"
+  },
+  {
+    "id": "FDE-M3-056",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "纯知识检索提供原片段给下游。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966"
+    ],
+    "contentHash": "7f0636b147d593e40be5c34cb131b90cdad16286fa93e8412fd101235230715a"
+  },
+  {
+    "id": "FDE-M3-057",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "混合检索为关键词和向量。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966"
+    ],
+    "contentHash": "8b887982b25425fdcc0616c299620b7b5d935a05449addbc60b8ee8f60d3fa95"
+  },
+  {
+    "id": "FDE-M3-058",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "低重叠词适合语义检索。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966"
+    ],
+    "contentHash": "0786dede43711d71c297804ebab236461dfe14003858e4f9a51d37117d644190"
+  },
+  {
+    "id": "FDE-M3-059",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "NL2SQL职责是自然语言转SQL。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966"
+    ],
+    "contentHash": "04f205cc332548cf6ad3e3dca0a69d93ab1129ae5f12f258b67e60df3a1db2d5"
+  },
+  {
+    "id": "FDE-M3-060",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "标签值可固定或引用变量。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966"
+    ],
+    "contentHash": "216cb65385930833b88ddf635f268cea79a9fe133c6859d4a28c2f971c6ccdd6"
+  },
+  {
+    "id": "FDE-M3-061",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "Excel及图谱增强能力伴随潜在耗时。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966"
+    ],
+    "contentHash": "8f949c29db4b8de0a4a68626214a555871a02f6a147827adf1ce7cbdba3db8d0"
+  },
+  {
+    "id": "FDE-M3-062",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "动态选项为array<string>。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115756"
+    ],
+    "contentHash": "f08f2c0f72f49d4ca2705ecd5416471ae3bd1765165101059f4d2195c7230010"
+  },
+  {
+    "id": "FDE-M3-063",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "自然语言选择可语义匹配，否则其他。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115756"
+    ],
+    "contentHash": "51f9ceee541f528d7ba1ddc67d320dd6d714f4bf0cfa1948566fd2da7f731d37"
+  },
+  {
+    "id": "FDE-M3-064",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "动态单分支需后续判断分流。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115756"
+    ],
+    "contentHash": "29372613cb7a8fbd4cfab55ef809d8b618e962a3734268f9e6c04e81f39dd128"
+  },
+  {
+    "id": "FDE-M3-065",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "默认输出含序号及内容。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115756"
+    ],
+    "contentHash": "06c6e52bd114ab69f60e922afdee0af90d29bf4bcfdfcfb74f06081f7940217a"
+  },
+  {
+    "id": "FDE-M3-066",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "错误项自动取消全部后续分支/替代业务接口更新库存明显无关，请改成选项识别机制的可信误解。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115756"
+    ],
+    "contentHash": "6fb6d52c0d65e506a1aa22b2afdf21762ca943b0ff916e903da728b7913492e5"
+  },
+  {
+    "id": "FDE-M3-067",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "选项来源、引导语等配置有依据。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115756"
+    ],
+    "contentHash": "563494511405f485bf0b1c9e98aca882a7b0331700cbb034ebfbc56d2b4f848a"
+  },
+  {
+    "id": "FDE-M3-068",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "循环非空对象数组要求准确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115750"
+    ],
+    "contentHash": "9a3cb6be624e9e0f5c55efefc75642aaa650980ea9b665ad1a14a403e15e7d07"
+  },
+  {
+    "id": "FDE-M3-069",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "Input.Item为当前元素。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115750"
+    ],
+    "contentHash": "bb953ea66ee77fc4d4c43c68ad79be969047f18326c513dcbb1d90ac6c40354a"
+  },
+  {
+    "id": "FDE-M3-070",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "按条件循环支持提前退出。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115750"
+    ],
+    "contentHash": "cd6368aac0eae26077dc2bc1c8c00ecc752d3c003124b0ea7cfd4b18c4b3b56f"
+  },
+  {
+    "id": "FDE-M3-071",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "LoopCount是实际次数。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115750"
+    ],
+    "contentHash": "910d9349c08c85ad8028cb33224ce3deb7bbab34cb2ff8bc0fd033906fc8bff9"
+  },
+  {
+    "id": "FDE-M3-072",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "Loop.Index/Output/ErrorCode/Log语义准确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115750"
+    ],
+    "contentHash": "af4b3387b4cf7b478c0aee6b148dabdc7da3d742b64d2e3e89c453ce8576620a"
+  },
+  {
+    "id": "FDE-M3-073",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "核FAQ明确不支持无限循环；固定输入不随Item变化。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115750"
+    ],
+    "contentHash": "7fc3755b1ca49bd8649e2f38001b5f85d6750cf1ba39db84fa826c1c909ea04d"
+  },
+  {
+    "id": "FDE-M3-074",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "并行上限控制并发执行数。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119290"
+    ],
+    "contentHash": "73eeeecbd541a20deae9c7d86e52340b60d367f12ba80edacee81c98a45b4e28"
+  },
+  {
+    "id": "FDE-M3-075",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "1为串行仍遍历全部任务。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119290"
+    ],
+    "contentHash": "5c21ef11c2bce3e014bc83266a01227270cd893ce4d0bccda209f6f55b24cacd"
+  },
+  {
+    "id": "FDE-M3-076",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "三个干扰均是标量，无法测试批处理支持的数组类型差异；请采用可信但不支持的数组类型并核文档。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119290"
+    ],
+    "contentHash": "29dce3a1f0e97046ed4cefcd9ed6585b89094416e966e963212c4ae4a9e12127"
+  },
+  {
+    "id": "FDE-M3-077",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "批处理不支持提前条件退出。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119290"
+    ],
+    "contentHash": "a5a98a18efe75b5d560700dbf1c71d220b80b7ff8407fa7c76065007ad2e97f4"
+  },
+  {
+    "id": "FDE-M3-078",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "批处理体可选择待发布或已发布子流程及Item。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119290"
+    ],
+    "contentHash": "d1d6adebba40ce3219e3b9ee2a472cfae802485d506a72f2e8952f3cd06d71d3"
+  },
+  {
+    "id": "FDE-M3-079",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "Results为全部执行结果对象数组。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119290"
+    ],
+    "contentHash": "411f21852101a50d8ff00e3aa22f87b2325dce562747f96e4216b780ce016468"
+  },
+  {
+    "id": "FDE-M3-080",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "两语言入口均main。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "contentHash": "d80049f397472a8472a3edae4b856deacb414e32f6b13b57662f91d29a280b4e"
+  },
+  {
+    "id": "FDE-M3-081",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "切语言清空并加载模板，不保留原内容。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "contentHash": "cfe9935f9de971a6125599a35941310131e3ff68c954a5e949a64928bb994323"
+  },
+  {
+    "id": "FDE-M3-082",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "返回需JSON可序列化，set及句柄不能直接返回。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "contentHash": "0ce0cf77895188787a9330c8b405f6f25c8277942ffed339c962f004fd92e62b"
+  },
+  {
+    "id": "FDE-M3-083",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "输入名/代码注释/节点显示名均非输出配置，干扰偏弱；请改成返回字段、输出schema、类型匹配的真实误区。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "contentHash": "2bb60f16c6a7a04108e68b8e4dcd9d59441dfef423f5065525825929880f7099"
+  },
+  {
+    "id": "FDE-M3-084",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "代码支持Python/JS，暂不直接输出文件媒体变量。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "contentHash": "a4ee921b4be8ced0aba4c1a798a878ed9553898e9b61b7072d920cc9c000cf28"
+  },
+  {
+    "id": "FDE-M3-085",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "AI建议可接受/撤回，建议先选全部上下文。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "contentHash": "f4a0cf2c17d6ed8541a8231e5efee847a3332685e65014e0d0e3f4ae95695b19"
+  },
+  {
+    "id": "FDE-M3-086",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "严格数值阈值用精准判断。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "contentHash": "a76daf47553067d5d107d63ffa0c74e4da5184ebbe2c3926c4ab8bf4f014cac7"
+  },
+  {
+    "id": "FDE-M3-087",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "支持前序输出引用或固定值。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "contentHash": "5743e4a0dba6a48187927cfd92ed7891e3e1f5862fd92e0a4569bd7cd18ac983"
+  },
+  {
+    "id": "FDE-M3-088",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "else表示不满足任何if/elseif。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "contentHash": "c2490bb9b774262ac0ab2385d946b81b2f0cf9f259482565b4ea6744322a0522"
+  },
+  {
+    "id": "FDE-M3-089",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "默认业务输出为选择条件序号。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "contentHash": "0d0c969e23ec47ba98db83838f92a7ded8161899e01d8fff9393686e89d11ddd"
+  },
+  {
+    "id": "FDE-M3-090",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "表达式可用与/或组合。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "contentHash": "8b34103bdca225f365534672f6c79ca7b8136d39084941366882fb93668cf11a"
+  },
+  {
+    "id": "FDE-M3-091",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "语义与精准机制区分准确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "contentHash": "cdcccdc0a6e257a6d55a775257a4da6f036e842ddc3ccf265474c4328d55e473"
+  },
+  {
+    "id": "FDE-M3-092",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "文档切分/选项卡/标签与工作流复用明显无关，请改真实复用方案之间的选择。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749"
+    ],
+    "contentHash": "03f7a4a71d612faf94a9a9a26f6e76574cdadfe130cd92fc97bb5b328b68e7a8"
+  },
+  {
+    "id": "FDE-M3-093",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "查看工作流进入被引流程编辑。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749"
+    ],
+    "contentHash": "ea676200749517f433846f5f1746321757500bc5f6bcdb0752e026f8f6ae6bbd"
+  },
+  {
+    "id": "FDE-M3-094",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "引入后不能直接替换工作流。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749"
+    ],
+    "contentHash": "921b883908825c456e597aa89722afa556762f09115af48d70a5ef7aa9c467b2"
+  },
+  {
+    "id": "FDE-M3-095",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "参数由被引子流程定义。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749"
+    ],
+    "contentHash": "5066ddf41f348b8218fd519046a3e25d07d3da2f1694fbaf8ee191fd7bbdee46"
+  },
+  {
+    "id": "FDE-M3-096",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "不存在/彻底删除资源作为状态干扰过弱，请改为引用工作流状态与绑定限制的复合判断，勿虚构状态。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749"
+    ],
+    "contentHash": "1f7b6e1ed459f587287d03bf5437ac3d353586b5ed13a045f74c73c031d7046f"
+  },
+  {
+    "id": "FDE-M3-097",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "输出来自子流程接口且不可任意新增。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749"
+    ],
+    "contentHash": "c455cfcdd0e18d150f78f6994aa15ebb68c9300774b99638c5e7a1efe5a0afd4"
+  },
+  {
+    "id": "FDE-M3-098",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "调用参数由选用工具定义。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115748"
+    ],
+    "contentHash": "2acf4a2c74d652b05208057c327e2c6b8031cb08325adc066b78b3212ee645ab"
+  },
+  {
+    "id": "FDE-M3-099",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "API约定URL参数对应query。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115748"
+    ],
+    "contentHash": "581858357885365ec166ed1c30e8f2811a29e5f43f243a99ecca337cfba7f00c"
+  },
+  {
+    "id": "FDE-M3-100",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "删除节点/用文字说明错误过明显，请用异常重试、异常分支、特定输出、中断之间的机制差别。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115748"
+    ],
+    "contentHash": "1929e51550cd5e70d82aa9121a984eb4a599fd9b7a3d462e6aa601537402397e"
+  }
+]

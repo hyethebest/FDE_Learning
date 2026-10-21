@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "version": "2026.10.09.3",
+  "total": 1000,
+  "counts": {
+    "eligible": 400,
+    "learning_only": 558,
+    "hold": 42
+  },
+  "modules": [
+    {
+      "id": "M1",
+      "name": "AI 与生成式 AI 基础",
+      "quota": 100,
+      "total": 100,
+      "single": 67,
+      "multiple": 33,
+      "eligible": 20,
+      "learning_only": 79,
+      "hold": 1
+    },
+    {
+      "id": "M2",
+      "name": "ADP 产品定位与能力边界",
+      "quota": 70,
+      "total": 70,
+      "single": 47,
+      "multiple": 23,
+      "eligible": 22,
+      "learning_only": 44,
+      "hold": 4
+    },
+    {
+      "id": "M3",
+      "name": "ADP 核心功能与应用搭建",
+      "quota": 220,
+      "total": 220,
+      "single": 147,
+      "multiple": 73,
+      "eligible": 106,
+      "learning_only": 100,
+      "hold": 14
+    },
+    {
+      "id": "M4",
+      "name": "场景理解与方案设计",
+      "quota": 250,
+      "total": 250,
+      "single": 166,
+      "multiple": 84,
+      "eligible": 137,
+      "learning_only": 92,
+      "hold": 21
+    },
+    {
+      "id": "M5",
+      "name": "行业解决方案与案例落地",
+      "quota": 150,
+      "total": 150,
+      "single": 100,
+      "multiple": 50,
+      "eligible": 16,
+      "learning_only": 134,
+      "hold": 0
+    },
+    {
+      "id": "M6",
+      "name": "交付实施、评测与运维",
+      "quota": 110,
+      "total": 110,
+      "single": 73,
+      "multiple": 37,
+      "eligible": 50,
+      "learning_only": 59,
+      "hold": 1
+    },
+    {
+      "id": "M7",
+      "name": "安全合规与责任 AI",
+      "quota": 100,
+      "total": 100,
+      "single": 67,
+      "multiple": 33,
+      "eligible": 49,
+      "learning_only": 50,
+      "hold": 1
+    }
+  ],
+  "eligibleSingle": 305,
+  "eligibleMultiple": 95,
+  "canMake60QuestionPractice": true,
+  "sourceCountHistorical": 119,
+  "note": "通过的是1000条分级记录完整性门禁，不是1000道合格仿真题。"
+}

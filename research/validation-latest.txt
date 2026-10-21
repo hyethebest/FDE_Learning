@@ -1,0 +1,43 @@
+{
+  "total": 693,
+  "errors": [],
+  "nearDuplicates": [
+    {
+      "ids": [
+        "FDE-M3-106",
+        "FDE-M3-107"
+      ],
+      "similarity": 0.667
+    }
+  ],
+  "counts": {
+    "M1/multiple": 33,
+    "M1/single": 67,
+    "M2/multiple": 23,
+    "M2/single": 47,
+    "M3/multiple": 73,
+    "M3/single": 147,
+    "M4/multiple": 31,
+    "M4/single": 62,
+    "M6/multiple": 37,
+    "M6/single": 73,
+    "M7/multiple": 33,
+    "M7/single": 67
+  },
+  "answerDistribution": {
+    "D": 114,
+    "C": 124,
+    "B": 110,
+    "A": 115,
+    "A/B/C": 40,
+    "A/D": 19,
+    "C/D": 23,
+    "B/C": 21,
+    "A/B": 18,
+    "B/C/D": 21,
+    "A/B/D": 25,
+    "A/C/D": 32,
+    "A/C": 17,
+    "B/D": 14
+  }
+}

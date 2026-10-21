@@ -1,0 +1,44 @@
+[
+  {
+    "id": "FDE-M4-080",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与M3-154同为改绑同类型新库后原记忆是否自动迁移，问法和决策相同，需换独立组合任务。"
+    ],
+    "reason": "与M3-154同为改绑同类型新库后原记忆是否自动迁移，问法和决策相同，需换独立组合任务。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "49a3f4d9d50db91ab0556fc1896cf8c2a2a535999a611cea38b01c888952c140",
+    "stem": "客户把应用从旧记忆库切换到新库，希望原记录自动搬过去。哪项说法准确？",
+    "answer": [
+      "D"
+    ],
+    "revision": 8,
+    "supersedesHash": "49a3f4d9d50db91ab0556fc1896cf8c2a2a535999a611cea38b01c888952c140"
+  },
+  {
+    "id": "FDE-M4-081",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与M3-153同为Claw和其他三模式记忆类型不可互绑，新增核对模式选项未形成独立判断任务，需替换。"
+    ],
+    "reason": "与M3-153同为Claw和其他三模式记忆类型不可互绑，新增核对模式选项未形成独立判断任务，需替换。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "5ddf5a8d655e8a6a9797e0f6e91b18cde1c06966a5324ded59708197741dbb45",
+    "stem": "客户打算让Claw应用与标准应用直接共用一个记忆库。按2026-09-15说明，哪些判断正确？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "revision": 8,
+    "supersedesHash": "5ddf5a8d655e8a6a9797e0f6e91b18cde1c06966a5324ded59708197741dbb45"
+  }
+]

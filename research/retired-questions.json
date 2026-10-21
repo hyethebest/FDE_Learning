@@ -1,0 +1,53 @@
+[
+  {
+    "id": "FDE-M1-060",
+    "retiredAt": "2026-10-09",
+    "reason": "固定种子20261009抽样审计发现，与FDE-M3-154重复考查改绑记忆库不自动迁移数据；退役以保持独立学习目标。旧ID不得复用。",
+    "replacedBy": "FDE-M1-101",
+    "contentHash": "d70ec63d3704e224884999fc4fd1bde2d2a67c9bb979cf0e3644e08471816f36",
+    "reviewMethod": "AI独立审校与固定种子抽样审计，非人工专家审校",
+    "question": {
+      "id": "FDE-M1-060",
+      "module": "M1",
+      "topic": "记忆/更换存储范围",
+      "type": "single",
+      "stem": "应用更换到另一个同类型记忆库后，原库数据会怎样？",
+      "options": {
+        "A": "不会自动迁移到新库",
+        "B": "自动将原库全部用户内容合并到新库",
+        "C": "原库数据立即全部删除",
+        "D": "新旧两库被自动双向同步"
+      },
+      "answer": [
+        "A"
+      ],
+      "explanation": "更换记忆库改变应用读写范围，原库内容不会自动迁移，需区分绑定与数据迁移。",
+      "distractors": {
+        "B": "文档明确不自动迁移",
+        "C": "原数据不因更换被清空",
+        "D": "绑定更换不等于同步"
+      },
+      "difficulty": "综合",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/138162",
+          "title": "记忆库",
+          "section": "应用中开启长期记忆",
+          "fact": "更换记忆库改变应用读写范围，原库内容不会自动迁移，需区分绑定与数据迁移。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-09-15"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "foundations_modes",
+        "reviewer": "safety",
+        "notes": [
+          "138162更换同类库不自动迁移原数据。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "d70ec63d3704e224884999fc4fd1bde2d2a67c9bb979cf0e3644e08471816f36"
+      }
+    }
+  }
+]

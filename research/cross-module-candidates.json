@@ -1,0 +1,75 @@
+{
+  "published": 1000,
+  "purpose": "仅筛查候选；同答案不等于同题，同源不等于重复。由审校判断实质认知任务。",
+  "candidates": [
+    {
+      "ids": [
+        "FDE-M1-091",
+        "FDE-M3-197"
+      ],
+      "stems": [
+        "依据GraphSchema概念，哪些建模判断正确？",
+        "GraphSchema需要定义的核心结构是什么？"
+      ],
+      "stemSimilarity": 0.273,
+      "answerSimilarity": 0.1,
+      "sharedSources": [
+        "https://cloud.tencent.com/document/product/1759/128202"
+      ]
+    },
+    {
+      "ids": [
+        "FDE-M1-091",
+        "FDE-M3-202"
+      ],
+      "stems": [
+        "依据GraphSchema概念，哪些建模判断正确？",
+        "哪些是官方列出的GraphSchema配置方式？"
+      ],
+      "stemSimilarity": 0.273,
+      "answerSimilarity": 0.0,
+      "sharedSources": [
+        "https://cloud.tencent.com/document/product/1759/128202"
+      ]
+    },
+    {
+      "ids": [
+        "FDE-M2-019",
+        "FDE-M7-011"
+      ],
+      "stems": [
+        "不涉及Claw时，哪些模式可以按需要互相切换？",
+        "方案依赖 ADP 应用端用户权限实现知识隔离。按核实版本，哪种应用模式明确不支持该能力？"
+      ],
+      "stemSimilarity": 0.0,
+      "answerSimilarity": 0.529,
+      "sharedSources": []
+    },
+    {
+      "ids": [
+        "FDE-M2-022",
+        "FDE-M6-053"
+      ],
+      "stems": [
+        "四模式比较中，原生添加Skills的能力属于哪种模式？",
+        "交付文档介绍调优准则时，适用应用模式应写什么？"
+      ],
+      "stemSimilarity": 0.0,
+      "answerSimilarity": 0.6,
+      "sharedSources": []
+    },
+    {
+      "ids": [
+        "FDE-M2-036",
+        "FDE-M3-196"
+      ],
+      "stems": [
+        "ADP知识库文档将知识分为哪些类型？",
+        "标签名称和值用于哪些知识对象？"
+      ],
+      "stemSimilarity": 0.0,
+      "answerSimilarity": 0.5,
+      "sharedSources": []
+    }
+  ]
+}

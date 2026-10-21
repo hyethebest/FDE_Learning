@@ -1,0 +1,18 @@
+{
+  "questionId": "FDE-M4-178",
+  "changedFields": [
+    "sources[1].fact"
+  ],
+  "oldContentHash": "569f28f50ec8e567135b2580796441741d6569ff69b23580f1b2b7889f40c622",
+  "newContentHash": "76c128072c12d5ef503b96419bc54bd967245265b40fc192a3171cbac004f9af",
+  "oldFact": "多选意图返回全部命中项，需连接后续处理流程。",
+  "newFact": "条件判断支持 if-else 分支，表达式可引用祖先节点输出变量或固定值，并按判断结果路由后续分支。",
+  "sourceUrl": "https://cloud.tencent.com/document/product/1759/112970",
+  "verifiedAt": "2026-10-09",
+  "sourceVersion": "2026-01-16",
+  "unchangedQuestionCount": 249,
+  "validationErrors": [],
+  "reviewScope": "AI代理独立审校；非腾讯官方审校，也非人工专家审校。",
+  "engineeringInference": "将意图集合映射为实际任务并根据业务依赖安排顺序，是由题设推导的工程判断，不是条件节点文档承诺自动编排。",
+  "status": "awaiting_independent_AI_review"
+}

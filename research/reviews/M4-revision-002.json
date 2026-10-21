@@ -1,0 +1,348 @@
+[
+  {
+    "id": "FDE-M4-070",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "COS授权路径事实已独立核实，考点已摆脱旧登录网页重复；但对象名称、空问答库仍非真实取数路径，需比较COS授权、公开URL/下载后本地导入等与“直接且不公开”约束的实际冲突。"
+    ],
+    "reason": "COS授权路径事实已独立核实，考点已摆脱旧登录网页重复；但对象名称、空问答库仍非真实取数路径，需比较COS授权、公开URL/下载后本地导入等与“直接且不公开”约束的实际冲突。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "c03aaeb3ae67708fa3becda73256fe1777df5ae4cc089fdd3c6d6e8bef472c77",
+    "stem": "客户资料已保存在 COS，要求演示直接从该存储选取文档，且不把对象改成公开网页。合适的准备是什么？",
+    "answer": [
+      "D"
+    ],
+    "revision": 2,
+    "supersedesHash": "90fa825e29af0bbdbc15bd0876fc7eba87666f7b44e6d6ecfdde6deb7f79f854"
+  },
+  {
+    "id": "FDE-M4-076",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已改为同义表达单处答案维护的组织决策，明确业务同义且同答案前提；相似问能力有官方证据。"
+    ],
+    "reason": "已改为同义表达单处答案维护的组织决策，明确业务同义且同答案前提；相似问能力有官方证据。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "a143e0bfeed410d440ab88a1afc03f06b1200dc88ea8145f076b91523ebe50d1",
+    "stem": "已确认“怎样停止自动续期”和“不想下期续费如何处理”在业务上完全同义且答案相同。客户希望以后只维护一处答案，应怎样组织？",
+    "answer": [
+      "B"
+    ],
+    "revision": 2,
+    "supersedesHash": "89ff997f54163085575e0977ae6776be94632747190129fb6f32fa7386810da4"
+  },
+  {
+    "id": "FDE-M4-077",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已改为真实解析状态和排期，独立核实仅导入完成可生成问答；上传传输与知识处理阶段区分成立。"
+    ],
+    "reason": "已改为真实解析状态和排期，独立核实仅导入完成可生成问答；上传传输与知识处理阶段区分成立。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "e98555444db5db04537137e1eb90eb54e87ff674676acc29b67fcfd552ec7687",
+    "stem": "客户已上传文档，但平台状态为“解析中”，计划立即从它生成正式问答资产。Demo 排期首先应保留哪一步？",
+    "answer": [
+      "A"
+    ],
+    "revision": 2,
+    "supersedesHash": "6d7b32001c8a9114a417debce7f8e70e838fb7e70e6a9401c2abbf1a676c3fc6"
+  },
+  {
+    "id": "FDE-M4-078",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "独立核实官方从文档生成问答暂不支持表格，导入范围与生成范围不同，分流判断有依据。"
+    ],
+    "reason": "独立核实官方从文档生成问答暂不支持表格，导入范围与生成范围不同，分流判断有依据。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "970bcafc7c08399cc37d62712c5237b5d3d5bc3cd84a372bd467c3b0b259bc76",
+    "stem": "客户提供一份结构化表格和一份长篇文字说明，计划统一使用“从文档生成问答”。哪些方案判断正确？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "revision": 2,
+    "supersedesHash": "bfd853fda93b2d9b70b7caa2006073dd1aeef1ae57acb0e447c72872cd743024"
+  },
+  {
+    "id": "FDE-M4-083",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "修订给出具体实体及负责/隶属两类语义，三种错误建模丢失明确需求，答案不再靠常识排除外观选项。"
+    ],
+    "reason": "修订给出具体实体及负责/隶属两类语义，三种错误建模丢失明确需求，答案不再靠常识排除外观选项。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128202"
+    ],
+    "contentHash": "a1d5ee59556d3d794046ca186f0645e537052899b06f370c2b122c31f32fb0e8",
+    "stem": "客户要求解释“某项目由谁负责、人员属于哪个组”，原始材料具备这些关系。图谱 Schema 应优先表达什么？",
+    "answer": [
+      "C"
+    ],
+    "revision": 2,
+    "supersedesHash": "876e237b5eb78793f4fd77f378e122ed5b0e1c36d11d4c5a58ac964410ad4f32"
+  },
+  {
+    "id": "FDE-M4-089",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已补全部候选正确标标签及明确API范围，未标标签召回例外不再破坏答案；元数据仍为软排序。"
+    ],
+    "reason": "已补全部候选正确标标签及明确API范围，未标标签召回例外不再破坏答案；元数据仍为软排序。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "2aa9c617d7b5888d7941ed8318a80aebd64360d942d7184cf0c2d84fd1d8a790",
+    "stem": "全部候选文档已正确标注产品线标签，客户通过 API 明确传入产品线，要求先限定范围，再优先命中某编码。最合适的组合是？",
+    "answer": [
+      "B"
+    ],
+    "revision": 2,
+    "supersedesHash": "307a644e7dcb03fb12628c7e81cbc19a5b93a5cc66f543037c706f5be0e8cf39"
+  },
+  {
+    "id": "FDE-M4-090",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "新问题为元数据参与检索而不传生成的边界，区别旧分类召回目标；未夸大为所有正文保密机制。"
+    ],
+    "reason": "新问题为元数据参与检索而不传生成的边界，区别旧分类召回目标；未夸大为所有正文保密机制。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "3d1a4a69890188227ec9f7a5fccc77fa33546a02cf71ab0c35ed6f897c28f3ab",
+    "stem": "客户允许用内部分类辅助找文档，但暂不希望把分类字段随知识交给生成模型。哪些设计符合该约束？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "revision": 2,
+    "supersedesHash": "dbda78c2fe9e0c273b4002f92b016364e89452c6d50a9ca19ba2791ed0ca4806"
+  },
+  {
+    "id": "FDE-M4-095",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已独立复核触发器排除人机交互节点工作流；与普通异步工作流可等待输入是不同入口边界，答案正确。"
+    ],
+    "reason": "已独立复核触发器排除人机交互节点工作流；与普通异步工作流可等待输入是不同入口边界，答案正确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "e966b15c034cb2e7ff7228ae332a488baa832f80972ef6ebf49aad28e7aeb71b",
+    "stem": "客户要把已发布启用的流程用于无人值守触发器，但该流程含选项卡等待人工选择。按当前触发器文档，首先应处理什么？",
+    "answer": [
+      "C"
+    ],
+    "revision": 2,
+    "supersedesHash": "19d97954c1e20d2b51da31d505f2c979f560a44e4a8841f2ec774a2193659450"
+  },
+  {
+    "id": "FDE-M4-101",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已明确ADP原生来源并保留目标环境验证，修复无限定导出假设；官方导出限制已核。"
+    ],
+    "reason": "已明确ADP原生来源并保留目标环境验证，修复无限定导出假设；官方导出限制已核。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129563"
+    ],
+    "contentHash": "840d6b79b57af082730cb0818fc0660d10be069048b3376122cc3df1ce389872",
+    "stem": "客户想把 ADP 原生 Skill 迁至另一支持技能包的平台。现阶段哪条路径符合文档且保留验证环节？",
+    "answer": [
+      "A"
+    ],
+    "revision": 2,
+    "supersedesHash": "69091279ad04581124c133c95cca03a2c3bdcd0a9fcbbbaba4c8355347418609"
+  },
+  {
+    "id": "FDE-M4-103",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "明确查找与整理的任务输入前提，描述修订减少职责重叠；来源功能/适用场景作用支持该推理。"
+    ],
+    "reason": "明确查找与整理的任务输入前提，描述修订减少职责重叠；来源功能/适用场景作用支持该推理。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122598"
+    ],
+    "contentHash": "4a4500fc464f3ce548c1d311d140a5904ac98608051657b1f3a9583d0df683ac",
+    "stem": "“资料查找”负责取得带来源的证据，“文稿整理”只重组已给材料。当前两者转交描述都写“处理资料”。最有效的修订是？",
+    "answer": [
+      "C"
+    ],
+    "revision": 2,
+    "supersedesHash": "c5f3966aa2428bff500682212edb2c9344d5872229896fd5d73a37bcca344d78"
+  },
+  {
+    "id": "FDE-M4-106",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "图片尺寸过滤前需保留关键图片有官方直接提示，装饰与电路符号同尺寸产生真实方案取舍。"
+    ],
+    "reason": "图片尺寸过滤前需保留关键图片有官方直接提示，装饰与电路符号同尺寸产生真实方案取舍。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "428058d0a2ff45f6bc2e106190d7c72e33ca07392b89cedd7b3a26effc001bd6",
+    "stem": "资料中的小图片既有装饰图标也有关键电路符号，方案拟按尺寸过滤图片。应先采取哪项设计验证？",
+    "answer": [
+      "D"
+    ],
+    "revision": 2,
+    "supersedesHash": "99816b0d34cf53742a3080ccc26115dd13d574c49f919491ca5d4020a368e751"
+  },
+  {
+    "id": "FDE-M4-109",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "新约束人工确认计划、接受耗时及有限定制一起决定PE适配，干扰均为未满足明确流程的不同方案。"
+    ],
+    "reason": "新约束人工确认计划、接受耗时及有限定制一起决定PE适配，干扰均为未满足明确流程的不同方案。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122553"
+    ],
+    "contentHash": "c5246af69d22cf7f1f6055606e56036c905d2c4fed5ce0178bb6f39acdd53121",
+    "stem": "客户要求先生成计划，人工确认后再分工执行专题报告，可接受较长耗时且不要求自定义全部预置角色。优先验证哪种模式？",
+    "answer": [
+      "A"
+    ],
+    "revision": 2,
+    "supersedesHash": "e71d84b100746900f87427c7554a60e61af82d072e211a96fbf49875ee11942a"
+  },
+  {
+    "id": "FDE-M4-113",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "新干扰改为通用标识符、大章节与按页，检索粒度和生成上下文分离的要求决定父子切分。"
+    ],
+    "reason": "新干扰改为通用标识符、大章节与按页，检索粒度和生成上下文分离的要求决定父子切分。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "e35a6f1c74dfd2af5c04a171ef52a327ba2b32e595f90e53e812cc1d2a3a955b",
+    "stem": "客户想用较小单元定位问题，但回答时保留所在章节的上下文。哪种切分思路最贴合？",
+    "answer": [
+      "A"
+    ],
+    "revision": 2,
+    "supersedesHash": "f0310843f0e1021b66f0565e73917fe1557c405daaeeb6969af5953cf0ed997a"
+  },
+  {
+    "id": "FDE-M4-114",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "多行组成业务记录产生新的粒度约束，与独立行通用检查不同；默认语义及适当多行切分有官方支持。"
+    ],
+    "reason": "多行组成业务记录产生新的粒度约束，与独立行通用检查不同；默认语义及适当多行切分有官方支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "65fd1328c46d2b547b0e5b0b2f3d93fe2bf9b020472d9b29bd1fa6133dbdfbef",
+    "stem": "表格每笔记录由一个主行和两个连续明细行组成，客户要求回答时不丢明细。哪些评审动作合理？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "revision": 2,
+    "supersedesHash": "e307bf9615986449b391014d9497b74e8c007ce9de79b5eae5701f593975bcb7"
+  },
+  {
+    "id": "FDE-M4-118",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "区域继承和多级字段含义被明确，行数不变不能保证语义正确，故障具体且答案唯一。"
+    ],
+    "reason": "区域继承和多级字段含义被明确，行数不变不能保证语义正确，故障具体且答案唯一。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119288"
+    ],
+    "contentHash": "a9a8b7eb496ebc9761847a5c12161d98600ac51b16ae154300eda624b3d4b232",
+    "stem": "一张表用“区域”合并单元格覆盖多行，表头还有两级指标。客户要按区域准确聚合。最应先验证哪项？",
+    "answer": [
+      "D"
+    ],
+    "revision": 2,
+    "supersedesHash": "a4fd0e6a0ecfc00a81711531260c3ecc9f158015fdc6561984dba8e9746670a2"
+  },
+  {
+    "id": "FDE-M4-119",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已补只有文件无直连数据库的前提，语义生成与真正SQL执行不同，表格增强路径有依据。"
+    ],
+    "reason": "已补只有文件无直连数据库的前提，语义生成与真正SQL执行不同，表格增强路径有依据。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119288"
+    ],
+    "contentHash": "4d518457d8d5ae7834e0361d39f40f5579c75184b5d9d04563ab49e2e641a2aa",
+    "stem": "客户只有已正确结构化的表格文件，没有可直连数据库，要求在 ADP 中评估自然语言转 SQL 查询。哪种路径最直接？",
+    "answer": [
+      "C"
+    ],
+    "revision": 2,
+    "supersedesHash": "38a887a14a3222b27a217026ffa3d45759169715f9b31e89d0cb5f83e48ea065"
+  },
+  {
+    "id": "FDE-M4-121",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "新问题围绕不同名不同源而已发布的两文档，自动触发条件不满足但手动支持，官方状态前提完整。"
+    ],
+    "reason": "新问题围绕不同名不同源而已发布的两文档，自动触发条件不满足但手动支持，官方状态前提完整。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116451"
+    ],
+    "contentHash": "b61a899248999470bd8ebfb1383d70d7d271bd6dd2e2554e619378d91b0799ca",
+    "stem": "两份已发布资料内容近似，但名称和网址来源不同，客户要求主动比较差异。应采用哪条路径？",
+    "answer": [
+      "A"
+    ],
+    "revision": 2,
+    "supersedesHash": "3f7a4c641b9e75f3d60d924849e93a02426edbdf99efe77e4a9af087a60d941d"
+  }
+]

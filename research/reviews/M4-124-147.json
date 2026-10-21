@@ -1,0 +1,450 @@
+[
+  {
+    "id": "FDE-M4-124",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "新SSE文档直接区分字符回包频率和模型速度；体验流畅不代表减少Token或加快模型，答案唯一。"
+    ],
+    "reason": "新SSE文档直接区分字符回包频率和模型速度；体验流畅不代表减少Token或加快模型，答案唯一。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129202"
+    ],
+    "contentHash": "828cee6114360fd6147745bbbe108bde984ba0d32bac8ff48be15456590c4710",
+    "stem": "Demo 显示文字经常积攒很久才一起出现，但后端模型总耗时正常。团队准备只调低 StreamingThrottle，应如何描述预期？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-125",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "Incremental=true仍可能text.replace有明确注意；前端须按事件更新而非无条件追加。"
+    ],
+    "reason": "Incremental=true仍可能text.replace有明确注意；前端须按事件更新而非无条件追加。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129202"
+    ],
+    "contentHash": "751b03ed67773b33c172bdad123bd567773b465f8ee504dc3d7a1d0d66565610",
+    "stem": "前端已设置 Incremental=true，设计评审中哪项处理仍不可省略？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-126",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "新接口明确请求ID与会话ID不同，跨用户会话共享会串记录；题目没有把会话ID误作完整权限隔离。"
+    ],
+    "reason": "新接口明确请求ID与会话ID不同，跨用户会话共享会串记录；题目没有把会话ID误作完整权限隔离。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129202"
+    ],
+    "contentHash": "ed3cb8611025966c62784a308fa7b70a915fa3c41bcf5a8b124d6ada261fe2b3",
+    "stem": "一个应用接入多个访客会话，为降低串话和便于定位单次失败，哪些设计符合接口含义？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-127",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已核WebSocket全双工与SSE单向定义，同持续连接双向事件要求决定选项。"
+    ],
+    "reason": "已核WebSocket全双工与SSE单向定义，同持续连接双向事件要求决定选项。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129365"
+    ],
+    "contentHash": "cab17c36a6bd387186b29e0f3f61ebdc30495783a1a489f7c899780765d18e33",
+    "stem": "业务需要在同一持续连接内接收回复并发送交互事件。依据对话接口定位，应优先评估什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-128",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "一次性Token及新连接需重取事实正确，但改模型、附姓名、换知识库均无关Token生命周期，需比较有效期内重用/连接后失效/断线重连等合理策略。"
+    ],
+    "reason": "一次性Token及新连接需重取事实正确，但改模型、附姓名、换知识库均无关Token生命周期，需比较有效期内重用/连接后失效/断线重连等合理策略。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129365"
+    ],
+    "contentHash": "d76e130953da9741f51c8a70de5c88b79b7e88dee773d938532f7cf7dd85aa3f",
+    "stem": "自研客户端计划把第一次获取的 WebSocket Token 永久缓存用于所有新连接。应如何修订？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-129",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "凭证签发、时效与建立连接三个准备阶段有依据，未把取得凭证等同任务完成。"
+    ],
+    "reason": "凭证签发、时效与建立连接三个准备阶段有依据，未把取得凭证等同任务完成。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129365"
+    ],
+    "contentHash": "351debdf1834d662effa066e4f62cdc76bda509b8944757477654820a30bb12e",
+    "stem": "验收范围包括建立 WebSocket 对话通道。哪些项目应列入接入准备？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-130",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "旧接口明示停更且不支持Claw，题设新Claw场景足以决定迁移新版。"
+    ],
+    "reason": "旧接口明示停更且不支持Claw，题设新Claw场景足以决定迁移新版。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/105561"
+    ],
+    "contentHash": "157bb3008218f737d6fd82a8efadd538df75c1a3479b816032fb2c0d19a8b5de",
+    "stem": "2026 年 10 月的新 Claw 接入方案复用了旧版 /v1/qbot/chat/sse 示例。评审应作何决定？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-131",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "2026-12-31下线日期有直接官方公告，2027服务期限要求安排迁移，不以今天成功推断未来可用。"
+    ],
+    "reason": "2026-12-31下线日期有直接官方公告，2027服务期限要求安排迁移，不以今天成功推断未来可用。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/105561"
+    ],
+    "contentHash": "607c0c8bd6f7e67434e113ead21fc4f812d6bc065845bbe1ba3c7e3189416a7c",
+    "stem": "某存量应用仍能通过旧 SSE 返回结果，计划服务到 2027 年。哪项需求记录最必要？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-132",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "只是130/131的旧文档优先级和迁移警告再组合，无新增实现判断；可改新旧事件字段映射或回放兼容验证的具体独立问题。"
+    ],
+    "reason": "只是130/131的旧文档优先级和迁移警告再组合，无新增实现判断；可改新旧事件字段映射或回放兼容验证的具体独立问题。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/105561"
+    ],
+    "contentHash": "827494170eb9c9e0d1e1c842c27326108152954727d0583f029645331e83a020",
+    "stem": "团队发现工具示例引用旧 SSE，而旧 SSE 页面已给出停更和下线警告。哪些处理合理？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-133",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "官方工具输出默认为空且需按返回结构映射，成功请求不等于下游字段可用；事实与故障定位成立。"
+    ],
+    "reason": "官方工具输出默认为空且需按返回结构映射，成功请求不等于下游字段可用；事实与故障定位成立。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112968"
+    ],
+    "contentHash": "bb0d338f18392e08fe1f8dea05168456a76e6fa5437ae5326523fbf0371a7d31",
+    "stem": "工作流能成功请求外部接口，但后续节点无法使用返回的业务字段。方案首先应补齐什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-134",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "题设外部系统只能被动查询，决定轮询而非回调；结束条件有来源明确支持。"
+    ],
+    "reason": "题设外部系统只能被动查询，决定轮询而非回调；结束条件有来源明确支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112968"
+    ],
+    "contentHash": "17fbb3f69fa290bf06c0d98420e903558e081047ce1afc692ffe4b3c44a13ce7",
+    "stem": "外部转换服务只提供“提交任务”和“按任务号查询状态”，不能主动向 ADP 发通知。工具异步方案更适合哪一种？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-135",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "工具流式后台整合完整文本、增量与覆盖解析及内部不实时渲染都有直接正文证据，答案集合正确。"
+    ],
+    "reason": "工具流式后台整合完整文本、增量与覆盖解析及内部不实时渲染都有直接正文证据，答案集合正确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112968"
+    ],
+    "contentHash": "4a48c4692dc564ea655f6eb3a10277bbfbf95a48a17a63039207d1f51c6d43b2",
+    "stem": "某工具节点调用 SSE 服务，需求又要求下游获得完整文本再处理。哪些理解正确？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-136",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "异步方向正确，但知识库类型、页面动画和硬写立即响应三个干扰全不解决需求；应比较同步长连接、任务轮询/回调与并发限制的真实方案。"
+    ],
+    "reason": "异步方向正确，但知识库类型、页面动画和硬写立即响应三个干扰全不解决需求；应比较同步长连接、任务轮询/回调与并发限制的真实方案。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/126856"
+    ],
+    "contentHash": "5d9fdb6bdc1bb6168b8fae79279e6d2affb706c4a8537506ea263767c126c074",
+    "stem": "客户的批量分析耗时较长，前端不能长时间保持连接，允许稍后取结果。哪个架构方向符合需求？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-137",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "异步交互节点等待输入且必须接口提交后继续有明确说明，未误把等待当故障或禁止交互。"
+    ],
+    "reason": "异步交互节点等待输入且必须接口提交后继续有明确说明，未误把等待当故障或禁止交互。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/126856"
+    ],
+    "contentHash": "c2616a54756e76fdaa0dbfe78920af75e9eba2a406374c4a5f14e9ab2904e708",
+    "stem": "异步流程中仍保留一个选项卡，运行到这里进入“等待输入”。正确的 Demo 路径是什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-138",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "任务ID及节点运行详情有来源支持，请求受理与业务结果分阶段验收是合理工程推理。"
+    ],
+    "reason": "任务ID及节点运行详情有来源支持，请求受理与业务结果分阶段验收是合理工程推理。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/126856"
+    ],
+    "contentHash": "7b814cf9fff38ae78a580eed4f98c6bab0535228e1099ba7bc6175f60ad29d66",
+    "stem": "交付异步分析 Demo，哪些证据能帮助确认最终任务确实执行？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-139",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与M6-091同一数据库和第三方模型密钥重配置目标，只换成Demo；其余头像/分类/相同问题无效干扰。请新增迁移依赖优先级或网络契约的独立约束。"
+    ],
+    "reason": "与M6-091同一数据库和第三方模型密钥重配置目标，只换成Demo；其余头像/分类/相同问题无效干扰。请新增迁移依赖优先级或网络契约的独立约束。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "c867165d245a20f6049ad59b4584f27070b794fc9aa4c654eeaa85c5e2853020",
+    "stem": "将带外部数据库和第三方模型的 Demo 打包移交后，对方导入成功但业务能力未恢复。最合理的先行检查是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-140",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "等同M6-042/043已考的新建应用+未发布，组合不产生独立目标，应避免重复计入。"
+    ],
+    "reason": "等同M6-042/043已考的新建应用+未发布，组合不产生独立目标，应避免重复计入。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "2caaef6cba9b24bbe93774a2e84b86b9592c7bcfccab1a4676954b8bd992c9af",
+    "stem": "验收人员导入应用包后直接沿用目标环境既有应用的调用入口，认为导入已覆盖并上线。应如何纠正？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-141",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与M6-041/095网页来源及定时更新不随包迁移的目标重复，保留原内容与恢复更新也已覆盖。"
+    ],
+    "reason": "与M6-041/095网页来源及定时更新不随包迁移的目标重复，保留原内容与恢复更新也已覆盖。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "288fe7fbc08e4aa40775a133abb067f4a4c1cc040973cdbca1defa879f0c11ff",
+    "stem": "源 Demo 依赖定时抓取网页，应用包移交时哪些安排合理？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-142",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "提高阈值收紧召回，噪声与漏召回均需检查，官方支持该权衡；避免把阈值当真实性保证。"
+    ],
+    "reason": "提高阈值收紧召回，噪声与漏召回均需检查，官方支持该权衡；避免把阈值当真实性保证。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123554"
+    ],
+    "contentHash": "bb1d3fab9b83c24e288a5cbda5653a91ccd2a2b72cced8eae333e139f9d67dc8",
+    "stem": "检索 Demo 混入较多低相关片段，团队建议提高匹配度阈值。哪个验收预期较合理？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-143",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "重排序答案正确，但删文档、加答案字数、改名知识库无合理可比性；请比较增加召回数、阈值过滤、跨库排序等真实配置。"
+    ],
+    "reason": "重排序答案正确，但删文档、加答案字数、改名知识库无合理可比性；请比较增加召回数、阈值过滤、跨库排序等真实配置。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123554"
+    ],
+    "contentHash": "abc7851edcec89af21d0ed8d479147eb53893f867d1ab8b076f7f494b54c0be5",
+    "stem": "需要在已召回片段中优先选择最符合当前问题的内容供生成，哪项能力最直接？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-144",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "2026-02旧概览称到期不可读，但2026-09-18时间检索有有效期外仍可检索开关；须明确这里是文档状态“已过期”而非知识有效期，并补最新来源，避免无条件承诺到期读取全部阻断。"
+    ],
+    "reason": "2026-02旧概览称到期不可读，但2026-09-18时间检索有有效期外仍可检索开关；须明确这里是文档状态“已过期”而非知识有效期，并补最新来源，避免无条件承诺到期读取全部阻断。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123554"
+    ],
+    "contentHash": "6934d6b982741271933707cea06b9684c9e1c767f3c4ff0b1f53840648adcd56",
+    "stem": "某内部通知只可供助手使用到指定日期。哪些安排符合文档到期机制？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-145",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "批量评测对一次截图的判断与M6-001可复用验收评测目标重合，截图复制/流畅/挑简单问题干扰也无技术区分度。"
+    ],
+    "reason": "批量评测对一次截图的判断与M6-001可复用验收评测目标重合，截图复制/流畅/挑简单问题干扰也无技术区分度。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "13664db62e4ae3c020a1d90084721013e036bdb83889c3d7524fbf88642a9d86",
+    "stem": "客户要求关键场景能稳定复现，团队只有一次手工对话成功截图。下一步最合适的是？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-146",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "同一提示词对比评测目标已在M6-008/078覆盖，且题干没有限定官方支持对比的标准模式，需另设独立目标并补模式前提。"
+    ],
+    "reason": "同一提示词对比评测目标已在M6-008/078覆盖，且题干没有限定官方支持对比的标准模式，需另设独立目标并补模式前提。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "123ea86526c07dddc8334fb2546999e5ee06357f0ac3ad043f5b20d57cf92277",
+    "stem": "两个候选提示词都能答出样例，客户希望选择更适合相同业务任务的版本。哪种验收方法最有说服力？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-147",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "参考业务字段供评分规则引用及人工标注已经M6-003/005/076/079覆盖，当前只是已有集合拼接；应加入可实际判分的复杂业务规则情境。"
+    ],
+    "reason": "参考业务字段供评分规则引用及人工标注已经M6-003/005/076/079覆盖，当前只是已有集合拼接；应加入可实际判分的复杂业务规则情境。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "cd85e5903d8d2c80b83580ff24ba2b0a629974a1e5f980e8fe669008129a01d2",
+    "stem": "客户要按“必须包含指定业务要点”评估回答，哪些准备是合理的？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  }
+]

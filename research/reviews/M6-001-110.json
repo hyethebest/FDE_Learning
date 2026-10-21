@@ -1,0 +1,2029 @@
+[
+  {
+    "id": "FDE-M6-001",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "来源支持答案，但三项干扰是数量/命名/渠道，与评分任务不构成可信比较；应改用其它评测路径。"
+    ],
+    "reason": "来源支持答案，但三项干扰是数量/命名/渠道，与评分任务不构成可信比较；应改用其它评测路径。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "24faf6b8806028083fc6798739613263539d37ebaf76ecaf226406bbf2cadca8",
+    "stem": "团队已有参考答案，需要批量执行应用并检验结果，应优先建立什么任务？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-002",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已核上传评测集格式，答案唯一；实际属于基础记忆题，建议降低难度。"
+    ],
+    "reason": "已核上传评测集格式，答案唯一；实际属于基础记忆题，建议降低难度。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "17fcc788a70d527febaf2473cf12df7220c5231e35dda29bb5aa230cf0e28dc2",
+    "stem": "将人工整理的验收样本导入应用评测，官方支持哪种文件格式？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-003",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "自定义列事实正确，但目录/头像/二维码三干扰均无关，应改为真实数据字段位置误区。"
+    ],
+    "reason": "自定义列事实正确，但目录/头像/二维码三干扰均无关，应改为真实数据字段位置误区。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "b4119cede3fadc924301f65bef92ef66d160f5a930e2f32120551184876b6ff4",
+    "stem": "某验收集需要保存产品线和参考结论，应放在哪里供评分规则引用？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-004",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "列名不一致是题设明确故障，官方对合并所选评测集有直接要求。"
+    ],
+    "reason": "列名不一致是题设明确故障，官方对合并所选评测集有直接要求。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "723045036ad9b982c089b97abdcf34960870371ff3388df7eaeb6ce809ad41e2",
+    "stem": "两份评测集分别用answer和reference表示同一列，合并运行报错，首先应怎样处理？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-005",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "参考列为空为决定性约束，正确项同时处理参考内容及裁判提示词匹配。"
+    ],
+    "reason": "参考列为空为决定性约束，正确项同时处理参考内容及裁判提示词匹配。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "393e928e7f85bb251a8e9e57a766afb9f6bc267b41d0d1a8499d07a8681ba8d9",
+    "stem": "裁判提示词要求对照reference_output，但该列为空，首先应补什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-006",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "官方代码打分语言有明确记录，答案唯一；建议作为基础题。"
+    ],
+    "reason": "官方代码打分语言有明确记录，答案唯一；建议作为基础题。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "e9bd49d1c4e40860bac5ef8b539a601ca4fa5735377106c03296e0af8f45d4f1",
+    "stem": "验收需要按自定义计算逻辑检查结果，官方代码评分目前支持哪种语言？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-007",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "先批量产出供人工判断与仅输出模式匹配，未把此方式当自动评分。"
+    ],
+    "reason": "先批量产出供人工判断与仅输出模式匹配，未把此方式当自动评分。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "bfc29055dc2706fd6c9eec4d392cccd2e13fdee240e53734e8eef380353966fb",
+    "stem": "项目要先收集全部回答，再由业务专家人工判读，应选择哪种批量方式？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-008",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "多提示词对比能力正确，但其余均为头像/名称/渠道，不构成评测误区。"
+    ],
+    "reason": "多提示词对比能力正确，但其余均为头像/名称/渠道，不构成评测误区。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "e2f63257563ab26bebfeca1fc368222e407b91fa70dbb6247bc56b8879ad7ad1",
+    "stem": "同一标准模式应用想比较两套提示词，最直接的能力是什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-009",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "明确标准模式范围，未把限制错误推广至所有批量输出功能。"
+    ],
+    "reason": "明确标准模式范围，未把限制错误推广至所有批量输出功能。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "1e0e35c9cfd286e0026091c181f159c4ec62da1f1b349742197cb0540431b134",
+    "stem": "团队给单工作流应用开启多模型对比评测，交付文档应先提醒什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-010",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "稍后恢复约束排除删除，暂停排队任务有官方直接依据。"
+    ],
+    "reason": "稍后恢复约束排除删除，暂停排队任务有官方直接依据。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "cacf71b6e8cf5ddb7a55033f96ac920a8d1e3f3b4d8f615df10f4fc470dfc838",
+    "stem": "正在排队的评测不想继续消耗资源，但稍后要恢复，选什么操作？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-011",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "人工标注进入报告事实正确，但三个无关操作使题目无技术区分度。"
+    ],
+    "reason": "人工标注进入报告事实正确，但三个无关操作使题目无技术区分度。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "b986efeff4dfcebf5e8e40c3b0b2002e095cf0edd3118180cb325e5b7ecd1f42",
+    "stem": "业务专家修正了自动评分，应通过什么方式让结果进入报告？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-012",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "报告内容正确，但头像/版本号/容量与质量性能均不匹配，应增合理测量口径干扰。"
+    ],
+    "reason": "报告内容正确，但头像/版本号/容量与质量性能均不匹配，应增合理测量口径干扰。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "e6c662447b7c1d49325428bdac820e976d1b1343416c4f1f3d46a688d2f58ffc",
+    "stem": "验收方同时要看质量和响应表现，优先查看哪项？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-013",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "冻结测试期间知识合理，评测页为建议口径；文档概述更强表述不影响该行为建议。"
+    ],
+    "reason": "冻结测试期间知识合理，评测页为建议口径；文档概述更强表述不影响该行为建议。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "f9afc205db73d7166add44c9b6947ecb08d0f717cdf36121d927e9cdaac4a99e",
+    "stem": "连续运行的验收测试中，维护人员准备更改知识库，最妥当的做法是？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-014",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "正确保留Plan-and-Execute完整评测限制，没有误说无需验收。"
+    ],
+    "reason": "正确保留Plan-and-Execute完整评测限制，没有误说无需验收。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "89ab47587f565250c42ed1141379b4b669a2eeeb6ee1d09a7cb1fdf9eec19caf",
+    "stem": "验收计划使用Plan-and-Execute协同的Multi-Agent，评测覆盖应如何描述？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-015",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "先定位检索阶段目标明确，召回测试与最终修辞等候选有能力边界区别。"
+    ],
+    "reason": "先定位检索阶段目标明确，召回测试与最终修辞等候选有能力边界区别。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "ba4c329f1f4cb0c5bdb94568578b5455d119607a00d79cb8a041fa8c69e8f02c",
+    "stem": "回答异常时想先确认正确资料能否被检索，应该运行什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-016",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "测试配置与应用配置隔离准确，直接同步的误区合理。"
+    ],
+    "reason": "测试配置与应用配置隔离准确，直接同步的误区合理。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "d72fdce73aaf6ab28bea75063396a969476567b307ed72dd3964ebda1ad3c981",
+    "stem": "在召回测试中调好了阈值，线上应用配置会怎样？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-017",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "题干已告知资源不可用，答案重复题干；其它全无关。应给症状让考生判断权限/资源/知识前提。"
+    ],
+    "reason": "题干已告知资源不可用，答案重复题干；其它全无关。应给症状让考生判断权限/资源/知识前提。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "92dccde1aa717868194482719f4eaf1017428ef32a4690267fb05169fedf1b49",
+    "stem": "账号可见召回测试，但相关Embedding资源不可用，应先检查什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-018",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "题设区分同名资料，来源与原文入口直接用于溯源；其它项无法辨识文档。"
+    ],
+    "reason": "题设区分同名资料，来源与原文入口直接用于溯源；其它项无法辨识文档。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "2cb6c47a0b5a27c9976711cda3ac498a504165952ee8fb166eb333eee6c65bb1",
+    "stem": "如何区分命中的片段来自正确手册还是相似名称手册？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-019",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "资料更新后未命中，内容与切分检查符合召回诊断，而非盲目扩大模型。"
+    ],
+    "reason": "资料更新后未命中，内容与切分检查符合召回诊断，而非盲目扩大模型。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "e73e4a5111b8d0e79173f8f6e812ee65598735d8498f2686c1289900212924c6",
+    "stem": "刚导入新版规程后，关键问题没有命中预期段落，首先应检查什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-020",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "固定同一问题比较配置减少样本变化，官方对比测试有直接支持。"
+    ],
+    "reason": "固定同一问题比较配置减少样本变化，官方对比测试有直接支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "d81ca95f996022bb5fb986c71b28d73a2ddb04035a48ac221967e084467faaab",
+    "stem": "比较两组检索配置时，怎样避免样本变化干扰判断？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-021",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "最低匹配度过滤规则明确；属于基础能力识别题。"
+    ],
+    "reason": "最低匹配度过滤规则明确；属于基础能力识别题。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "cbfa2ddea855ffb810e588b383b5a2509e2621afc293ca9d2c85b8120ff7f42e",
+    "stem": "某相关文档切片低于检索匹配度阈值，它会如何处理？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-022",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "跨库重排事实正确，但其它为路径/缓存/封面，不是合理检索配置干扰。"
+    ],
+    "reason": "跨库重排事实正确，但其它为路径/缓存/封面，不是合理检索配置干扰。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "6adb71a1c52a5d4436115d48096198d4e9d142684e0db4801bc57dc636fb3aa1",
+    "stem": "多个知识库都有候选片段，想理解最终跨库排序，应检查哪个配置？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-023",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "发布确认能力准确，但反馈总数/套餐/头像均无关，建议与发布历史及生效范围等混淆点比较。"
+    ],
+    "reason": "发布确认能力准确，但反馈总数/套餐/头像均无关，建议与发布历史及生效范围等混淆点比较。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "53227d6fc599b9c9d49622279552a9e63bb3ea94e951488ca743718f433507cd",
+    "stem": "交接时如何核对这次发布涉及了哪些内容？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-024",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "正式变更追溯正确，三个候选是收藏夹/宣传页/剪贴板，应替换为可信日志或版本误区。"
+    ],
+    "reason": "正式变更追溯正确，三个候选是收藏夹/宣传页/剪贴板，应替换为可信日志或版本误区。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "2a3e2c8bff130d0382e58de7bb4c5d4b0aaeb76c11d4d1e84333d90254827476",
+    "stem": "线上回答变化，需要确定某次正式配置变更，应优先查哪里？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-025",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "还原至调试态与线上发布区分准确，是有效生命周期边界题。"
+    ],
+    "reason": "还原至调试态与线上发布区分准确，是有效生命周期边界题。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "5a031b92e071299ebd67ec1c61505973bfcee34eecafd43793f83d031077700d",
+    "stem": "点击旧版本还原到调试态后，线上是否已切回？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-026",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "保留未保存变更避免还原覆盖，选项C含妥善留存，不仅声称保存即可保证备份。"
+    ],
+    "reason": "保留未保存变更避免还原覆盖，选项C含妥善留存，不仅声称保存即可保证备份。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "f768c7ca271f827f76daeeb4a2118f0f144cf53c51001368f7ccf30aa093cf04",
+    "stem": "还原旧版本前，编辑界面有未保存的重要变更，应怎样做？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-027",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "全局依赖被删除是决定性故障，重新配置或移除符合官方处理说明。"
+    ],
+    "reason": "全局依赖被删除是决定性故障，重新配置或移除符合官方处理说明。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "26723ca1fd47443688577355e5ae9eb60c7374c016a6360a57f1a044232c4288",
+    "stem": "回退后某工具失效，发现该全局工具已被删除，应如何处理？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-028",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "知识数据不随应用回退，答案未夸大历史版本恢复能力。"
+    ],
+    "reason": "知识数据不随应用回退，答案未夸大历史版本恢复能力。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "a0415571388e8f61ee2bc74ca39d9780bbe826380acc50df0f82afc2c09fdbc2",
+    "stem": "误删知识条目后，仅还原应用历史版本能恢复知识数据吗？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-029",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "发布前提事实正确，但其余切片/手机/评测集均无关，应改为渠道认证/授权/发布状态排错。"
+    ],
+    "reason": "发布前提事实正确，但其余切片/手机/评测集均无关，应改为渠道认证/授权/发布状态排错。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "f59454aa3ca57fe6e809402ded619a88b6c5e4cd03602c6fec1d084fcd99d87b",
+    "stem": "微信服务号已配置，但应用未发布且不回复消息，先处理什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-030",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "先解绑及安排中断窗口由官方绑定限制支持，题设改绑目标明确。"
+    ],
+    "reason": "先解绑及安排中断窗口由官方绑定限制支持，题设改绑目标明确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "f0929ec73920bcf0e09f5482860d82232eb5bbfe09fe9e3c3e8b4f8c62ef07e4",
+    "stem": "要把某微信账号改绑另一个智能体，交接应考虑什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-031",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "正常轮换与泄露应急有区别，题干限定正常轮换，先新后旧顺序准确。"
+    ],
+    "reason": "正常轮换与泄露应急有区别，题干限定正常轮换，先新后旧顺序准确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "1dcc1da2d5431344e81ccf573187c1b902380e0d42df3a40db676cc92ed41826",
+    "stem": "已接入业务系统的AppKey需正常轮换，合理顺序是？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-032",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "验证码事实准确，但主账号密码/身份证等极端干扰不具备合理比较价值，应区分登录入口。"
+    ],
+    "reason": "验证码事实准确，但主账号密码/身份证等极端干扰不具备合理比较价值，应区分登录入口。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "ab660f6b07077676e453c37483b7fbc08d15b1201c647b27f5ca8749d96f64c9",
+    "stem": "邀请外部验收人员访问分享体验链接，文档说明哪种验证方式？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-033",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "告警事件而非定时报表是决定性约束，Webhook能力有直接支持。"
+    ],
+    "reason": "告警事件而非定时报表是决定性约束，Webhook能力有直接支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "4feff2d713a1b0b30c5bc6e7342a1f05207d9d7c173d9de65a24eb97365982af",
+    "stem": "运维告警到达后才启动智能体分析，应采用哪种触发？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-034",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "题干提示已包含答案，另三项均无关操作，应增加开发/发布版本与触发器执行的真实误区。"
+    ],
+    "reason": "题干提示已包含答案，另三项均无关操作，应增加开发/发布版本与触发器执行的真实误区。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "10fdfe5a6a5ce3bfb75947f94698dd99b5898486fcd391789c41430f85e99c0b",
+    "stem": "定时触发器配置完却提示应用尚未发布，正确处理是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-035",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "ZIP事实正确，但模型名称/截图/二维码不是合理应用包格式干扰。"
+    ],
+    "reason": "ZIP事实正确，但模型名称/截图/二维码不是合理应用包格式干扰。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "03de7c1d4b2c170ada37aaf95b43f304cd6b429382e0ea2ba2317bbaef30aee7",
+    "stem": "客户要跨工作空间迁移应用，官方应用包形式是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-036",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "发布中状态与最新历史版本区别明确，当前版本导出限制有证据。"
+    ],
+    "reason": "发布中状态与最新历史版本区别明确，当前版本导出限制有证据。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "87f4952d5c666db31f996a01bd4d83edd63ef1f55fac384d4e4d96a942150c1c",
+    "stem": "当前版本仍处于发布中，可以直接导出这个发布中版本吗？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-037",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已选工作流的依赖强制随包准确，未误认为所有空间知识必选。"
+    ],
+    "reason": "已选工作流的依赖强制随包准确，未误认为所有空间知识必选。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "3486e89efaebef134731dd2eb72c268a0dfe250d1dbaf4d8aff58750d6448438",
+    "stem": "选择导出工作流后，为什么不能取消其引用知识库的勾选？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-038",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "正确排除数据库表内容及重配连接，未把知识库包当数据库快照。"
+    ],
+    "reason": "正确排除数据库表内容及重配连接，未把知识库包当数据库快照。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "32176ef97223d4509fe5323e8fbea1f7872a1c0989c526db52173b7c7035ef25",
+    "stem": "应用包包含知识库，是否就包含直连数据库的全部数据表内容？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-039",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "工具密码排除事实正确，头像/温度两项及自动授权断言显然无关，需合理凭据迁移误区。"
+    ],
+    "reason": "工具密码排除事实正确，头像/温度两项及自动授权断言显然无关，需合理凭据迁移误区。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "3e76c3e8d57af539dd3e289ae75d990c647feb0460705584018d29dd475ed6f2",
+    "stem": "导入工具后调用失败，源包为何不能直接提供原密码？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-040",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "应用包排除评测资产有依据，需单独交付回答了客户具体要求。"
+    ],
+    "reason": "应用包排除评测资产有依据，需单独交付回答了客户具体要求。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "51ff35008efbc090172834fca5b91509065a8b73873748ca0e2fc17c2641a1da",
+    "stem": "客户要求交付评测集和历史评测结果，仅发应用包是否充分？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-041",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "迁移保留内容却丢更新是独立症状，网页来源重新配置有直接依据。"
+    ],
+    "reason": "迁移保留内容却丢更新是独立症状，网页来源重新配置有直接依据。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "9267677603fb0c8fd5ec5c664c4a40bf95f2560051b11ec7cb0bab52c395d9e2",
+    "stem": "迁移后网页知识内容还在，却不再定时更新，应检查什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-042",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "导入创建副本而非覆盖/合并，真实迁移误区且答案唯一。"
+    ],
+    "reason": "导入创建副本而非覆盖/合并，真实迁移误区且答案唯一。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "f02864eb5ac2bd63f46da94ed7d9564839dc60853eadd0b448bc063cd31dee5b",
+    "stem": "目标环境已有同名应用，导入包会如何处理？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-043",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "导入开发域未发布与线上验收差别准确，存在自动上线这一合理误区。"
+    ],
+    "reason": "导入开发域未发布与线上验收差别准确，存在自动上线这一合理误区。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "1521d933b6d032ba539245afc216389601821ad3ca9e6bef9e77c44d2911f980",
+    "stem": "成功导入目标环境后，能否立即按线上应用验收？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-044",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "权限事实正确，但分辨率/图片/切片不是导出权限合理原因，建议与应用权限层级比较。"
+    ],
+    "reason": "权限事实正确，但分辨率/图片/切片不是导出权限合理原因，建议与应用权限层级比较。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "3d4061e3015a64066973826bbe1c5300a8fa6c51737d50b8748f81b7d12770c1",
+    "stem": "子账号看不到应用包导出操作，首先核查什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-045",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "发布前提事实准确，但命名/分类/模板三项全无关，且与029/034发布前提反复。"
+    ],
+    "reason": "发布前提事实准确，但命名/分类/模板三项全无关，且与029/034发布前提反复。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "contentHash": "ff149f4c747b0eed784196013e2d45c39b82248f69193ded0cee6cd2734d4219",
+    "stem": "新建应用尚未发布，想立即查看正式运营统计，应先完成什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-046",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "官方统计有约10分钟延迟，用于解释即时观测合理；建议题干标文档日期以限定时效。"
+    ],
+    "reason": "官方统计有约10分钟延迟，用于解释即时观测合理；建议题干标文档日期以限定时效。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "contentHash": "6b5aaafd995852c1c40f9aa88d6e7a9a8051d3facc540ed227dd51064a2f4e3f",
+    "stem": "刚完成一次线上调用，运营统计未马上增加，首先应考虑什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-047",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "跨渠道去重限制准确，未把消息数等同人数；正确项唯一。"
+    ],
+    "reason": "跨渠道去重限制准确，未把消息数等同人数；正确项唯一。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "contentHash": "27f5d0e35bf17bc3087ed5046231cbe908fead2c1206245a2294e5e03f77da00",
+    "stem": "同一人从两个渠道访问，汇总用户数可否直接当去重人数？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-048",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "点赞分母口径准确，但注册人数等干扰弱，建议增加总消息数作为合理干扰。"
+    ],
+    "reason": "点赞分母口径准确，但注册人数等干扰弱，建议增加总消息数作为合理干扰。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "contentHash": "6cc20cd4a15a345cf106c9a6d1ef955906df3f5a905d0184ac8975fc18e67ae7",
+    "stem": "点赞率的分母应怎样理解？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-049",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "上下文和调用信息正确，其余壁纸/图标/密码均无关，需合理诊断证据干扰。"
+    ],
+    "reason": "上下文和调用信息正确，其余壁纸/图标/密码均无关，需合理诊断证据干扰。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "contentHash": "de8517a592e53b28bcf9bf8d451f778900eb9d4ab385fffea2ce180ae74bef04",
+    "stem": "用户报错却只提供最后一句话，排查应优先补充什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-050",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "真实对话转回归评测路径有直接支持，明确整理后使用。"
+    ],
+    "reason": "真实对话转回归评测路径有直接支持，明确整理后使用。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "contentHash": "dac79d4283fd079479db5265e04da801b882a7819c5ca388a313e439ba3573a0",
+    "stem": "想将生产真实问题纳入下一次回归评测，应怎样操作？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-051",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "同答案多问法使相似问路径唯一，未要求复制冲突答案。"
+    ],
+    "reason": "同答案多问法使相似问路径唯一，未要求复制冲突答案。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "contentHash": "fd452cebb419fe07bf9e8e59cd9fef74b8a525dccad18f4b565f9e5ea6a10df2",
+    "stem": "多种问法对应同一已有标准答案，修正时更适合什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-052",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "忽略与修正/拒答/重训后果区分清楚，合理概念辨析。"
+    ],
+    "reason": "忽略与修正/拒答/重训后果区分清楚，合理概念辨析。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "contentHash": "110e8dd8d7f41a27fe63749392c6fabf3f1b4089a72ba17b2ad65a4c5ea396da",
+    "stem": "运营人员忽略一条不满意问题，代表什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-053",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "Claw范围正确，但静态网页/直连数据库不是其它应用模式，建议用标准/单工作流/Multi-Agent比较。"
+    ],
+    "reason": "Claw范围正确，但静态网页/直连数据库不是其它应用模式，建议用标准/单工作流/Multi-Agent比较。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "contentHash": "c32c40d0fc772addcec0a1d27613e22a1c0ec19097c39fefe8085081258906b0",
+    "stem": "交付文档介绍调优准则时，适用应用模式应写什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-054",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "生成完成与审核启用状态区分准确，题设运行现象可由此解释。"
+    ],
+    "reason": "生成完成与审核启用状态区分准确，题设运行现象可由此解释。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "contentHash": "c26b9ffaee7f476262a0899bc9c82cd59a78aaa2b7a859093345892ad8c055fa",
+    "stem": "系统从反馈生成了准则，为什么应用仍未遵守？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-055",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "评测和标注均完成的前提准确，可作为基础配置题。"
+    ],
+    "reason": "评测和标注均完成的前提准确，可作为基础配置题。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "contentHash": "67118c2e6338670969ff4e9f88f53660b043e0a04547a102c54a295f52a0782f",
+    "stem": "从评测驱动生成准则前，哪个条件必须满足？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-056",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "只陈述模型Token费用而未声称价格或额度，官方明示支持。"
+    ],
+    "reason": "只陈述模型Token费用而未声称价格或额度，官方明示支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "contentHash": "b0bfcb739f90a60d464119e25a377e9b0cb5878561f7c97a611b0725669dcdf6",
+    "stem": "使用模型自动生成调优准则，应告知什么成本事实？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-057",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "明确规范可人工添加，无需先制造错误，题干具有决定性条件。"
+    ],
+    "reason": "明确规范可人工添加，无需先制造错误，题干具有决定性条件。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "contentHash": "23ddf04311b7a484557413df2442005da70bceeff0815be348b9678978f142f3",
+    "stem": "业务已有明确回答规范，不想先制造一次错误，应该怎样添加？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-058",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "停用保留正文事实准确，但三个候选均非准则管理操作，应比较删除/停用/编辑/待启用。"
+    ],
+    "reason": "停用保留正文事实准确，但三个候选均非准则管理操作，应比较删除/停用/编辑/待启用。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "contentHash": "90369d718748cc70c81dc82fcad8c48873aca412e030d07536cca8cd0e440180",
+    "stem": "某准则暂不适用，但需保留文本供将来复查，应选择什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-059",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "任务完成数量为零不代表有准则，生命周期结果边界清楚。"
+    ],
+    "reason": "任务完成数量为零不代表有准则，生命周期结果边界清楚。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "contentHash": "8462500ea092653d12fa43ed25dbb98e4bb2a822226fa60ba176d16dedd4589d",
+    "stem": "任务显示完成但生成数量为0，该如何理解？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-060",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "具体场景动作较笼统评价更可维护，候选包含过度泛化的合理误区。"
+    ],
+    "reason": "具体场景动作较笼统评价更可维护，候选包含过度泛化的合理误区。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "contentHash": "5d5d984d46672f3b42a328643b8988fb1ecc24f8da9823f2b1f73965ba332530",
+    "stem": "哪条培训示例更适合作为可维护的准则？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-061",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "切片过大事实准确，但三个干扰均为界面或命名，应比较召回阈值/切片边界/重排等诊断。"
+    ],
+    "reason": "切片过大事实准确，但三个干扰均为界面或命名，应比较召回阈值/切片边界/重排等诊断。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "fc2a539b06d111ff16a0e1a3d3a9d6fb759d217d05851f6f0fa5375389a9b537",
+    "stem": "召回片段经常包含大量无关章节，首先应检查什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-062",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "切片过小事实准确，但三个干扰全无关，应加入其它合理RAG诊断候选。"
+    ],
+    "reason": "切片过小事实准确，但三个干扰全无关，应加入其它合理RAG诊断候选。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "77d87e06322ae35fde7db5c019df098f340be85cfb2b4dfad830e10110e4bde2",
+    "stem": "答案缺少前提条件，召回只有孤立半句，优先检查什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-063",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "重新切分覆盖人工干预这一风险有直接证据，答案唯一。"
+    ],
+    "reason": "重新切分覆盖人工干预这一风险有直接证据，答案唯一。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "7b8fc5d4d640a2816c7f10909d93dc77cebd97225419978bd514b800da6052b0",
+    "stem": "已手工修正切片后重新设置切分规则，应提前提示什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-064",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "标准网页导入登录前提准确，没有建议绕登录或把密码写URL。"
+    ],
+    "reason": "标准网页导入登录前提准确，没有建议绕登录或把密码写URL。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "4367ed5f2481f4a65914ab15034022bf59cb16059aafc6f5cb1359d0980d5c83",
+    "stem": "待导入网页必须登录后才可看正文，标准网页导入前提是否满足？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-065",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "四个生效域选项形成合理干扰，测试限定决定仅调试。"
+    ],
+    "reason": "四个生效域选项形成合理干扰，测试限定决定仅调试。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "a48b5205e4b785d8f6ec3ec48895ca2f2f6facc54ef38d09e3daeec6e7a5dd29",
+    "stem": "只准备给测试人员检索的新规程，生效范围应选什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-066",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "学习失败不等于上传完成，状态判断明确；后续建议丰富排障情境。"
+    ],
+    "reason": "学习失败不等于上传完成，状态判断明确；后续建议丰富排障情境。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "dce9f1f0c81d52dd0852ceac5b000eebab35feba38023acfd320f4398c3f841f",
+    "stem": "文档状态为学习失败，交付者能否认定已在正式问答中生效？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-067",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "文档删除不级联删除衍生问答有直接正文支持。"
+    ],
+    "reason": "文档删除不级联删除衍生问答有直接正文支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "024576821ef574e7f62067355ff6d0071972a94d4d6da5433b936b6329a2b4f5",
+    "stem": "删除旧文档后，其生成过的问答是否随之删除？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-068",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "超量失效恢复需手动操作有正文依据；未涉及具体价格配额。"
+    ],
+    "reason": "超量失效恢复需手动操作有正文依据；未涉及具体价格配额。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "b2921ec67372a35ab437e72de02d52e6b3ff5489c24a46bb6d8b565a764452f7",
+    "stem": "购买资源后，原超量失效知识仍未工作，应做什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-069",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "待校验与采纳后生效区别准确，正确项有证据。"
+    ],
+    "reason": "待校验与采纳后生效区别准确，正确项有证据。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "7efae939d1f9bb950ed9f3a008b89b769af1f7cdeef21f2b9ee2945e6966bf6a",
+    "stem": "自动生成的问答进入待校验列表后，应怎样纳入有效知识？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-070",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "冲突合并事实准确，但字体/复制十次/随机选择均明显不合理，需可信冲突处理策略比较。"
+    ],
+    "reason": "冲突合并事实准确，但字体/复制十次/随机选择均明显不合理，需可信冲突处理策略比较。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "e6b731d02c04f1ee681b5b2535499868cee6d1ba81d81c8fa11a7120cfa89d76",
+    "stem": "同一问题生成两个不同答案，交付前应怎样处理？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-071",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "元数据作用正确，但颜色/头像/重复分类三个无关项不符合合理干扰要求。"
+    ],
+    "reason": "元数据作用正确，但颜色/头像/重复分类三个无关项不符合合理干扰要求。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "66b64b06b7cff52cea1e085fca26d24e82782e1b2ca4ddfe5b07bf5c2840d0e7",
+    "stem": "文档分类名未出现在正文，按分类提问召回不佳，需检查什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-072",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "适用时间与上传下载等时间区别准确，与M4-016重复风险需整库去重选择保留。"
+    ],
+    "reason": "适用时间与上传下载等时间区别准确，与M4-016重复风险需整库去重选择保留。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138380"
+    ],
+    "contentHash": "96d88c41df680ad5985ea3bb9f479156e47eafcd4e82cbbb5c5182aaaf735281",
+    "stem": "知识有效时间应按哪种时间填写？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M6-073",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "最新排序不硬排除历史准确，与M4-017高度重合，整库去重需保留独立诊断目标。"
+    ],
+    "reason": "最新排序不硬排除历史准确，与M4-017高度重合，整库去重需保留独立诊断目标。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138380"
+    ],
+    "contentHash": "8d4d0e7872fff1d435bd78a9f0eee0a22ca3329ab75b24502822d4191aa4955a",
+    "stem": "测试“最新”提问时发现历史资料仍入候选，应如何判断？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-074",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "评分方式集合准确，不过最后一个渠道干扰偏弱，可作为基础多选。"
+    ],
+    "reason": "评分方式集合准确，不过最后一个渠道干扰偏弱，可作为基础多选。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "092c07f05d79b14d8e8d6a63b005971e4bb952f444c29068d609752b78a34ae8",
+    "stem": "团队设计自动评分时，官方列明哪些可选方式？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-075",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与003及001反复自定义列/复用常识，没有新增验收约束；建议改为独立采样或覆盖设计题。"
+    ],
+    "reason": "与003及001反复自定义列/复用常识，没有新增验收约束；建议改为独立采样或覆盖设计题。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "f4e3485570cd64e9677bcd681750782b1bb4196eb88279c799b4c19747dce061",
+    "stem": "准备可复用验收集时，哪些做法与官方能力一致？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-076",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与005同样检查参考列和裁判匹配，缺新增约束；应增加不同评分目标的真实冲突。"
+    ],
+    "reason": "与005同样检查参考列和裁判匹配，缺新增约束；应增加不同评分目标的真实冲突。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "ccc1bade16f2891207aa9266915a29b92ea3a30652082c3be2bbdeddfa0a5b47",
+    "stem": "启动大规模裁判模型评分前，哪些检查合理？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-077",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "任务复制、下载与删除不可恢复/标注次数区分清楚，有新管理行为考点。"
+    ],
+    "reason": "任务复制、下载与删除不可恢复/标注次数区分清楚，有新管理行为考点。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "a7d28720baab1879a966e3c1850cb6fe4f217082e17100ed1cddf3a3418ff088",
+    "stem": "为复制一轮验收实验并审阅结果，哪些能力可用？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-078",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "只输出和对比打分区分清楚，重复相同模型限制有正文支持。"
+    ],
+    "reason": "只输出和对比打分区分清楚，重复相同模型限制有正文支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "ae764b01e8daa1b26f62fc85ccb78cce354911518d75160f7c490c602bc673da",
+    "stem": "对于标准模式的多配置比较，哪些说法成立？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-079",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "归档包含配置、原始记录及人工修订可形成证据链；虽复用011/012部分事实，目标为归档完整性。"
+    ],
+    "reason": "归档包含配置、原始记录及人工修订可形成证据链；虽复用011/012部分事实，目标为归档完整性。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "140062edcde331ff0c4855d58f263f835f420a939e6cbfa3383b5335cce23d5e",
+    "stem": "验收归档希望保留可复核资料，哪些官方能力能支撑？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-080",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "权限、资源、知识三类前提有直接支持，集合清楚。"
+    ],
+    "reason": "权限、资源、知识三类前提有直接支持，集合清楚。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "e5e3b360b30b927f7c77e9935cd59d91f052edd9c7d7e6fb1269629a496b04a0",
+    "stem": "开始知识库召回测试前，需要检查哪些条件？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-081",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "内容与配置两个诊断面区别于修辞，检索阶段目标明确；与019/020略有重叠。"
+    ],
+    "reason": "内容与配置两个诊断面区别于修辞，检索阶段目标明确；与019/020略有重叠。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "25b19fa9d8b724ddd8369cebee9ee1a11a6e7a046c14d196607eada68a11b3bd",
+    "stem": "正确片段未被召回时，哪些调查有直接针对性？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-082",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "区分召回与最终答案以及测试配置隔离，交付声明边界清楚。"
+    ],
+    "reason": "区分召回与最终答案以及测试配置隔离，交付声明边界清楚。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "0ea80ac45400ac2bc4834bd94ec5cebf995032ef3ccd9ceb200ac01b92ac9ecc",
+    "stem": "将召回测试结果交给客户时，哪些边界应说明？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-083",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与018同一来源溯源目标且错误项为密码/训练样本，构成明显重复与无效干扰。"
+    ],
+    "reason": "与018同一来源溯源目标且错误项为密码/训练样本，构成明显重复与无效干扰。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "2126d4b0015d851a30a1e6965f4b22b768c2f7595836a619e3d0f41aaa5777da",
+    "stem": "排查错误召回，结果界面提供哪些有用信息？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-084",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "新增默认配置和删除依赖两类回退检查有正文支持，答案集合准确。"
+    ],
+    "reason": "新增默认配置和删除依赖两类回退检查有正文支持，答案集合准确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "da907b3076343b67c619f794df220a5e407cc633394d8605cb7b0cc941fd4e3c",
+    "stem": "旧版本还原到调试态后，哪些情况应进入检查清单？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-085",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "本地配置与知识数据能否回退区分准确，选项具备真实混淆性。"
+    ],
+    "reason": "本地配置与知识数据能否回退区分准确，选项具备真实混淆性。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "82b68c0b3b350b703a2ce15fe09a7d4f6090f1cd8302613a98f58d9b15e93e0f",
+    "stem": "哪些属于文档列明的可回退本地配置？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-086",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "应用发布及服务号认证两个必要前提有证据，认证中误区合理。"
+    ],
+    "reason": "应用发布及服务号认证两个必要前提有证据，认证中误区合理。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "560dd84b439d451ed3562576644832c3820628231145a8b46b806e39a6c5decd",
+    "stem": "微信服务号未回复时，哪些官方前提值得核查？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-087",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "API接入与密钥保护路径有支持，未把二维码当授权。"
+    ],
+    "reason": "API接入与密钥保护路径有支持，未把二维码当授权。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "711223017511a1394f9d73f6a94a5d1febaaabbbdbb7956444940a4c69b2794b",
+    "stem": "将应用接入客户业务系统时，哪些交接做法符合官方说明？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-088",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "定时与事件触发有两个不同决定性业务约束，答案集合明确。"
+    ],
+    "reason": "定时与事件触发有两个不同决定性业务约束，答案集合明确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "9b4f0d1b3bfcd68dd3d528e6dca0161390bde76e0f660a14b3e4d35ddc9aa6b1",
+    "stem": "针对日报与告警两类任务，哪些匹配正确？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-089",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与024同一发布追溯目标，干扰为字数/窗口尺寸；建议改为具体版本差异排查。"
+    ],
+    "reason": "与024同一发布追溯目标，干扰为字数/窗口尺寸；建议改为具体版本差异排查。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "cf879a13bf2d88c01c0e0d70b78503fd2f846f1f0399be21f9dbfea72762052e",
+    "stem": "一轮配置上线后，哪些证据可以帮助运维追溯？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-090",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "运营、渠道、记忆画像均在导出排除项中，基础设置相对照合理。"
+    ],
+    "reason": "运营、渠道、记忆画像均在导出排除项中，基础设置相对照合理。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "230f18867c22ff163fff3637ef0e6ce690268ffef3d376ec5207ba040691c6e0",
+    "stem": "哪些资产不应假定已随应用包交付？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-091",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "目标环境需重配的三类依赖与官方列表一致，未误称复制名称是必要条件。"
+    ],
+    "reason": "目标环境需重配的三类依赖与官方列表一致，未误称复制名称是必要条件。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "47996ff52941d75944673e75883c68f03684ebd6ce735d170908a17c3c8edc0d",
+    "stem": "跨环境导入后，哪些依赖明确要求重新配置？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-092",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "应用设置必选、工作流可选以及依赖随包边界准确。"
+    ],
+    "reason": "应用设置必选、工作流可选以及依赖随包边界准确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "60d9bebce2994aa2921f078e7565e921cd53f9a92ff0f6e7fa1f461c159cdf19",
+    "stem": "选择导出范围时，哪些描述正确？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-093",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与042/043纯重复导入新建及未发布两个事实，无新增判断目标。"
+    ],
+    "reason": "与042/043纯重复导入新建及未发布两个事实，无新增判断目标。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "edf4919219cf94566275971299f343766365d7359598f47081008c0f2aee2678",
+    "stem": "应用包成功导入后，应怎样理解结果？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-094",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "权限与内容安全排除项明确，补足迁移安全配置独立目标。"
+    ],
+    "reason": "权限与内容安全排除项明确，补足迁移安全配置独立目标。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "09fa7aa619328ec8f8d36d2ffa9c410c2bc85358f7523fac6bab6578c4aea6c9",
+    "stem": "避免把应用包当整套环境备份，哪些设置还需单独核查？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-095",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "网页更新和工具密码为两个不同迁移缺口，恢复动作与官方依据匹配。"
+    ],
+    "reason": "网页更新和工具密码为两个不同迁移缺口，恢复动作与官方依据匹配。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "contentHash": "28c78f9678900b07be7efc3860fa9c05c587163a9b29db8060e87f464ee5fc18",
+    "stem": "迁移网页知识和自定义工具时，哪些恢复动作有依据？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-096",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "报告口径中质量指标/消息人数误用属于新增解释风险，正确项有证据。"
+    ],
+    "reason": "报告口径中质量指标/消息人数误用属于新增解释风险，正确项有证据。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "contentHash": "a32386748ae58193c495fb13c95d220a444d2ca890afe2b312577a31f3b3f577",
+    "stem": "用运营面板向客户报告时，哪些口径说明是必要的？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-097",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "上下文、回归导出及用户文档内容不可展示边界准确。"
+    ],
+    "reason": "上下文、回归导出及用户文档内容不可展示边界准确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "contentHash": "ff6aac7f2592d8f2a130a725314c7ea68d3f3e4f515d1a7b2af63aa26216dd88",
+    "stem": "追踪线上失败并建立回归样本，可以使用哪些能力？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-098",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "错误回答是否可加已有相似问取决于已有正确问答，题干未给此前提；补充“已有对应正确答案”或分别限定两情境。"
+    ],
+    "reason": "错误回答是否可加已有相似问取决于已有正确问答，题干未给此前提；补充“已有对应正确答案”或分别限定两情境。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "contentHash": "85a1b1cbe6ce488e82f4a4f702b94fc915cfb608248104d439680ce62cf7cd9a",
+    "stem": "对一条已确认的错误回答，哪些操作可以积累修正后的知识？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-099",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "拒答、忽略与反馈诊断结果区分准确，没有把用户评价当事实证据。"
+    ],
+    "reason": "拒答、忽略与反馈诊断结果区分准确，没有把用户评价当事实证据。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "contentHash": "dbfaaf6702b2c6d992210029d145982b1614de7a7710e983588e1af4a1760f6b",
+    "stem": "培训运营人员时，哪些功能含义讲解正确？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-100",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "三种来源在调优文档明示，基础识别题而非综合难度。"
+    ],
+    "reason": "三种来源在调优文档明示，基础识别题而非综合难度。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "contentHash": "26ef87321d7827cbcf75bd89c5de64520fb8e3c3406c78aaae6d8c4d759c7465",
+    "stem": "哪些属于调优准则的官方来源？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-101",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "启用前冲突审核与启用后验证有直接官方建议，区别生成即生效误区。"
+    ],
+    "reason": "启用前冲突审核与启用后验证有直接官方建议，区别生成即生效误区。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "contentHash": "5d4ee5fe21d4ba79435389cefcfe309f10bbd3cd22072f95fef71e9d5acb32cc",
+    "stem": "启用自动生成准则前后，哪些做法符合官方建议？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-102",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与054/058同样任务完成不等于启用及停用保留，无新增操作约束，近重复。"
+    ],
+    "reason": "与054/058同样任务完成不等于启用及停用保留，无新增操作约束，近重复。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "contentHash": "27edaf6de0e422a5dd9ec242846aa72c19f710847f75955abbe591e81752c682",
+    "stem": "客户混淆任务完成和准则启用，哪些解释正确？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M6-103",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "具体场景、动作及拆分要求有直接依据，拆分维护目标补充060。"
+    ],
+    "reason": "具体场景、动作及拆分要求有直接依据，拆分维护目标补充060。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "contentHash": "3e3004bb803d97754c09b2a8101c3b19ea5fc289f2d4fe87ad8c37ad1ea5bb54",
+    "stem": "怎样提高人工调优准则的可维护性？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-104",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "只是合并061/062切片大小事实，没有独立应用目标；需真实片段案例和取舍。"
+    ],
+    "reason": "只是合并061/062切片大小事实，没有独立应用目标；需真实片段案例和取舍。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "660fc2752444eb378b534c5080f19aa7e574f1a9a35553c80fe0ac03b23b037f",
+    "stem": "制定切分方案时，哪些考虑符合官方原理？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-105",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "表头与数据起点不重叠有正文支持，表格切分目标独立。"
+    ],
+    "reason": "表头与数据起点不重叠有正文支持，表格切分目标独立。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "f8cdf7d4a9022315847718507119e3d6ea08d9b8db29d2210b6e6ff9f7bb94c4",
+    "stem": "按行切分表格前，哪些检查有依据？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-106",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "无需登录及不支持异步加载两个边界准确，动态页面是新增限制。"
+    ],
+    "reason": "无需登录及不支持异步加载两个边界准确，动态页面是新增限制。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "616f5b0211f409f40df505ea23d5e4c3841cdb669ac08b020879a8eb103ed5d7",
+    "stem": "验收网页导入能力时，哪些是官方明确边界？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-107",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "“过期”需区分状态已过期失效与超过知识有效时间但允许检索；9/18时效文档允许后者，当前解析一概而论易误导，需限定状态或补例外。"
+    ],
+    "reason": "“过期”需区分状态已过期失效与超过知识有效时间但允许检索；9/18时效文档允许后者，当前解析一概而论易误导，需限定状态或补例外。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "e6c393a36748819ed49625ec31c8ebcf723b53418eab49cb4b9ef7a8f5d2db13",
+    "stem": "排查“文档存在但答不到”时，哪些状态因素应核查？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-108",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "仅合并069/070采纳与冲突处理，同学习目标重复，无新增交付约束。"
+    ],
+    "reason": "仅合并069/070采纳与冲突处理，同学习目标重复，无新增交付约束。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "753dee8f4524f1c9c3a0cffd3e87b173e7032cbb8beb3183de28268a8143aa21",
+    "stem": "交付自动生成问答前，应完成哪些质量动作？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M6-109",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "软排序与标签概念基本准确，但须补112704未打标签也可召回的例外，避免解释“标签限制候选”被读成完整隔离；跨页差异需说明。"
+    ],
+    "reason": "软排序与标签概念基本准确，但须补112704未打标签也可召回的例外，避免解释“标签限制候选”被读成完整隔离；跨页差异需说明。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "80e31505831815e1d4aeaca4cec3dbaa82785b0803d1dff6fbedc5bf0b25c554",
+    "stem": "交付知识治理说明时，哪些区别正确？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M6-110",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "三种时间意图处理方式准确，答案集合清楚；与072/073部分复用但补无时间意图边界。"
+    ],
+    "reason": "三种时间意图处理方式准确，答案集合清楚；与072/073部分复用但补无时间意图边界。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138380"
+    ],
+    "contentHash": "4aa0aa2ae951807ddea8752b50c0c813b601c489a5fa68bab03426b670126687",
+    "stem": "时效性检索的回归集应区分哪些行为？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  }
+]

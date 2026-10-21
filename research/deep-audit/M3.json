@@ -1,0 +1,5022 @@
+[
+  {
+    "id": "FDE-M3-001",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A符合依赖处理；停服、清空文档或关检索均未解除引用。 原题来源只记访问日期；本轮已读取页面更新时间，建议将来源版本补成报告所列日期（不是事实冲突）。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "section": "删除知识库",
+        "locator": "删除知识库，L93",
+        "shortFact": "被应用引用的库须先解除引用才可删除。",
+        "version": "2025-09-22"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "3f39eef61a07eb58bb0912f4dfb7694dcf69b22c25d31b4809ea702e7bf5c8e6",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-002",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D正确；应用相同、内容相同、标签同名均不足以跨库复用任务。 原题来源只记访问日期；本轮已读取页面更新时间，建议将来源版本补成报告所列日期（不是事实冲突）。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "section": "知识库维度",
+        "locator": "知识库维度，L87",
+        "shortFact": "对比任务和标签按知识库分别管理。",
+        "version": "2025-09-22"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "f9a1ca9d9d116f33d3ad8840fa5534ce71735b481b3f0a8d06205edd44cd5757",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-003",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；解析、审核及学习中都不能代表已经完成入库。 原题来源只记访问日期；本轮已读取页面更新时间，建议将来源版本补成报告所列日期（不是事实冲突）。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "section": "知识内容状态",
+        "locator": "知识内容状态，L89",
+        "shortFact": "导入完成后的内容依生效范围参与问答。",
+        "version": "2025-09-22"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "9c6746b338f6faaec0e8b6606c5d84b9f789fe3689fe31a6dd638796fcefb852",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-004",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B/C成立；切片和召回参数属于后续配置，但题目仅记页面字段。 原题来源只记访问日期；本轮已读取页面更新时间，建议将来源版本补成报告所列日期（不是事实冲突）。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "section": "新建知识库",
+        "locator": "新建知识库，L63",
+        "shortFact": "创建库需填写名称及描述。",
+        "version": "2025-09-22"
+      }
+    ],
+    "difficultyConcern": "仅记创建表单名称/描述，建议保留基础学习，不以进阶题计。",
+    "duplicateGroup": [],
+    "contentHash": "e8fe97f23e815904625f78c9131707acabfa83905408ddbe50fcdcba70c5edf4",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-005",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B/D与正文一致；C混淆优先级和合并下载。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "section": "可下载文档导入",
+        "locator": "可下载文档导入，L226-228",
+        "shortFact": "文件URL与COS路径择一；同时给出时取COS。",
+        "version": "2026-09-16"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "8b3dd0963c1f5a1d4a22a138d97fcc38c2ac7f8fb3931b2d7dcbe4c7bdafba65",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-006",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D符合两项条件；A/B都是登录限制的重复干扰，C考另一明确限制。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "section": "网页链接限制",
+        "locator": "网页链接限制，L139-143",
+        "shortFact": "网页需免登录，异步加载正文暂不支持。",
+        "version": "2026-09-16"
+      }
+    ],
+    "difficultyConcern": "A/B均重复登录限制，两个干扰同质；建议增加可公开但渲染/下载类型差异。",
+    "duplicateGroup": [],
+    "contentHash": "fa469f0826f32aef5b1b3100872ecfd39f3ad41ee34a6190077247e9d315e77d",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-007",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C针对源内容同步；到期、生成模型、召回数不控制抓取周期。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "section": "文档更新频率",
+        "locator": "文档更新频率，L170、258",
+        "shortFact": "网页内容可按设置的周期更新。",
+        "version": "2026-09-16"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "411d7dcd07ac47ef522bc66b411ffe2c4f7e844e0c93e3f11ae31b0d5f048ad0",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-008",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A直接对应功能；其余三个是其他配置维度，难度偏基础。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "section": "文档导入设置",
+        "locator": "文档导入设置，L265",
+        "shortFact": "来源展示开关可在回答末尾提供可查看链接。",
+        "version": "2026-09-16"
+      }
+    ],
+    "difficultyConcern": "题干几乎逐字提示正确开关，其他均不负责展示。",
+    "duplicateGroup": [],
+    "contentHash": "3a61e58a0508d31daddaec2d8a9788c1a1db5429d2a3c21ded547374890e813c",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-009",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "80条可走B；CSV未列为此入口格式，D混淆两种上限。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "section": "网页文件导入",
+        "locator": "网页文件导入，L133-135",
+        "shortFact": "逐条入口20条；批量XLSX上限500条、15MB。",
+        "version": "2026-09-16"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "75e9b5aa62468c0499e2cbdc24c92ce690eed8a8b141b27e1008fc91a79b182c",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-010",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C有正文支持；顺延、改域与只停抓取均无此规则。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "section": "到期时间",
+        "locator": "到期时间，L262-264",
+        "shortFact": "设置到期后知识自动失效。",
+        "version": "2026-09-16"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "9a542c4c4971297e0fdedc26fd76f5f5f06d85bd4f30a70d4332e8d92d1980d3",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-011",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C/D成立；到期不生成新版，网页导入也需解析切分。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "section": "COS导入",
+        "locator": "COS导入，L218-222",
+        "shortFact": "COS导入先授权，并可配置标签等属性。",
+        "version": "2026-09-16"
+      }
+    ],
+    "difficultyConcern": "A自动生成新版、B跳过切分均易排除，多选欠缺同流程竞争项。",
+    "duplicateGroup": [],
+    "contentHash": "8d80e7ce841461a2e378e3b6bd59a03208418c9c006d69153a4cddf2056bc0e5",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-012",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B/C正确；A把不生效解释反了，D沿用旧发布链路。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "section": "文档导入设置",
+        "locator": "文档导入设置，L246-254",
+        "shortFact": "生效范围区分调试与发布，无需应用发布动作。",
+        "version": "2026-09-16"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "fd23053733eec3bc410bb9249ecc5f81714a32a17889e632683633a546f3ba3c",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-013",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B区分来源记录与关联关系，A/C/D混淆二者。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112703",
+        "section": "问答设置",
+        "locator": "问答设置，L227-231",
+        "shortFact": "来源由导入途径确定；关联文档可单独设置。",
+        "version": "2026-02-06"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "8a79ef333f238212ed6189707bfbbdff33fc9110af9804615e933add6ec19621",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-014",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B与状态限制吻合；其余给出不存在的例外或绕行。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112703",
+        "section": "问答状态",
+        "locator": "问答状态，L260",
+        "shortFact": "问答审核中不能编辑。",
+        "version": "2026-02-06"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "b8cb5d680b646fb1fa15290058ffcdcad08c66f4e0f4caa816ca37a7eef5d158",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-015",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；A/B/D分别否定继承或混淆分类与时效。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112703",
+        "section": "问答设置",
+        "locator": "问答设置，L229",
+        "shortFact": "文档生成问答的到期时间随源文档，不能独改。",
+        "version": "2026-02-06"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "837a2a6d26721d7ede7654065198561772f4e858bb9a3cc70eec516f0973a6a4",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-016",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B遵循限制；其他方案不解除层级限制。考的是易变数字，非主要工程判断。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112703",
+        "section": "问答分类",
+        "locator": "问答分类，L184",
+        "shortFact": "分类层数最高10层。",
+        "version": "2026-02-06"
+      }
+    ],
+    "difficultyConcern": "只背10层上限且多个无限/改相似问干扰；建议改分类治理场景。",
+    "duplicateGroup": [],
+    "contentHash": "30f79288b949c36f7145af8cd876b0b1c8597eda380669f7b3e11affc9e07a7e",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-017",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A有依据；标签、永久有效与相似问不替代来源开关。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112703",
+        "section": "关联文档",
+        "locator": "关联文档，L231",
+        "shortFact": "关联文档展示来源以文档开启引用链接为前提。",
+        "version": "2026-02-06"
+      }
+    ],
+    "difficultyConcern": "三个干扰都是与来源展示无关的属性。",
+    "duplicateGroup": [],
+    "contentHash": "c4baefc49fa038024686ccb9def2e553cf2c2a2cc0dcc5b3a92e89be8e35df53",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-018",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B/C成立；D缺少文档已导入前提。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112703",
+        "section": "新建问答",
+        "locator": "新建问答，L48、104",
+        "shortFact": "支持人工、批量及已导入文档生成。",
+        "version": "2026-02-06"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "a8dc472c7e50e5c02d9b899706fa33b03e3739aff8e72f9028b19590ec735b0d",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-019",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B成立；C擅自添加删除副作用，D否定继承限制。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112703",
+        "section": "导出、停用、标签",
+        "locator": "导出、停用、标签，L242、246、254",
+        "shortFact": "问答可导出表格及停用；生成问答继承文档标签。",
+        "version": "2026-02-06"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "4f5b08369016bc43715b3556dab93c5320c1b0dcd139f2d3a90fa07acabeae39",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-020",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D正确；同义命名或仅定义变量不会代替映射。此为检索配置，不能推导身份认证。 适用范围：仅评估检索参数映射/过滤，不声称标签自动认证用户或可替代服务端授权；未把元数据软排序当硬权限。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112704",
+        "section": "参数映射注意事项",
+        "locator": "参数映射注意事项，L96-99",
+        "shortFact": "按API参数检索标签须显式配置映射。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "0ca1e26ff7026cf5097cb014b998b441a8f727d7d2d87bd2e49ec4c2a3f2ec37",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-021",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D成立；题干限定已打标签，故不依赖无标签资料争议。 适用范围：仅评估检索参数映射/过滤，不声称标签自动认证用户或可替代服务端授权；未把元数据软排序当硬权限。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112704",
+        "section": "且关系",
+        "locator": "且关系，L60",
+        "shortFact": "多个标签条件选择且时，已打标签知识需同时匹配。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "f9e6410ddc9673105771714e307425db0af524a0b2d0b2ba96bbb9e0a7b20d37",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-022",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C成立；同名不同值不是命中。题干限定已打标签，规避无标签例外争议。 适用范围：仅评估检索参数映射/过滤，不声称标签自动认证用户或可替代服务端授权；未把元数据软排序当硬权限。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112704",
+        "section": "或关系",
+        "locator": "或关系，L66",
+        "shortFact": "多个标签条件选择或时，任一命中即可。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "1377ccf78d44041b8f04d450afe52c0e60529632e769abd3f4c815080c28a912",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-023",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B正确；中文标签名、另一英文键和request_id都不能代替匹配键。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112704",
+        "section": "API参数名称",
+        "locator": "API参数名称，L88",
+        "shortFact": "映射参数名需与custom_variables键一致。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "b01031827030c8734817c0ca2210344b388b4e6b1c72582db8201545a60e6cee",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-024",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "旧配置页支持A/C，且B身份认证承诺不成立；但新版元数据页138240 L65称未命中标签不进入召回，需界定入口/版本/OnlyRetrievalSelectedLabel，不能给无版本通用答案。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112704",
+        "section": "且/或及单参数",
+        "locator": "且/或及单参数，L60、66、71",
+        "shortFact": "本页明确把未打标签知识包含在可检索集合中。",
+        "version": "2026-02-26"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138240",
+        "section": "元数据与标签检索区别",
+        "locator": "元数据与标签检索区别，L63-67",
+        "shortFact": "元数据为软排序，标签为硬范围；新页称未命中标签不入候选。",
+        "version": "2026-09-18"
+      }
+    ],
+    "difficultyConcern": "无标签知识在两个官方页面的表述不同，须限定版本/接口/选项后再确定答案。",
+    "duplicateGroup": [],
+    "contentHash": "742923259b12f44e096c1fbfb80af85769171f414ad08daa1699ef51461a86fa",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-025",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/C/D成立；提示词不能完成后台映射。与020/023目标重叠，且应强调可信身份来自接入层。 适用范围：仅评估检索参数映射/过滤，不声称标签自动认证用户或可替代服务端授权；未把元数据软排序当硬权限。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112704",
+        "section": "配置步骤",
+        "locator": "配置步骤，L96-99、153-160",
+        "shortFact": "知识标签、参数映射、调用传值构成筛选链路。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": "提示词替代全部后台配置的唯一错误太明显，且组合已有020/023目标。",
+    "duplicateGroup": [],
+    "contentHash": "b507f6ed2b88f7107704f84729dfb33698750f61ee659b79fc60b0a90c302d74",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-026",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D正确，A反转角色，B/C否定父子结构。与M4-113实质相同。 独立目标核查：完全同目标：子片段检索与父片段上下文。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122551",
+        "section": "父子标识符切分",
+        "locator": "父子标识符切分，L162",
+        "shortFact": "以子片段定位，再提供关联父片段上下文。",
+        "version": "2026-08-04"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-026",
+      "FDE-M4-113"
+    ],
+    "contentHash": "b2905ec754a42e8a41decbd3fb0e9d218e1537e29c6d3057c8e0d26596d6734e",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-027",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B适合独立记录；A/C不适用题设文件，D不是内容切分规则。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122551",
+        "section": "切分规则适用类型",
+        "locator": "切分规则适用类型，L43-47",
+        "shortFact": "表格可按行切分；两类标识符自定义不适用XLSX。",
+        "version": "2026-08-04"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "40f4f2c0f38deffb42ff0581fc75665baf28e9e44721278c99dc36e12ca83581",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-028",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D正确；A更接近过大片段问题，B/C作无依据保证。与M6-062同因果目标。 独立目标核查：同因果目标：过小切片造成上下文/前提丢失。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122551",
+        "section": "切片大小取舍",
+        "locator": "切片大小取舍，L30-32",
+        "shortFact": "过小切片可能使语义上下文残缺。",
+        "version": "2026-08-04"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-028",
+      "FDE-M6-062",
+      "FDE-M5-066"
+    ],
+    "contentHash": "92021a427118f62bfd50e25745422240894b53523566fadb96593248ea5f70a9",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-029",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A为文档给出的通常取舍，非所有表格的实测保证；B/C/D不符正文。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122551",
+        "section": "表格格式",
+        "locator": "表格格式，L189-191",
+        "shortFact": "正文比较HTML的Token与Markdown的效果取舍。",
+        "version": "2026-08-04"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "5f8dcf60775e8e5a077f22eec3922de85189c144d36b2baa1ae78aa6a1a6cc3f",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-030",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B/C/D成立；表格起始行属于按行配置，干扰同机制且合理。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122551",
+        "section": "通用标识符切分",
+        "locator": "通用标识符切分，L145-149",
+        "shortFact": "可配置分隔符、片段长度与重叠长度。",
+        "version": "2026-08-04"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "adc7e1d43638f4d7462505a3e080c6e022e51c387ef6c76918abe223bba759fa",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-031",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B成立；C绝对化精度，D忽略表格限制。与026/027部分覆盖但新增默认范围。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122551",
+        "section": "默认与自定义",
+        "locator": "默认与自定义，L39-47",
+        "shortFact": "默认覆盖导入类型；自定义有三种适用范围。",
+        "version": "2026-08-04"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "3a58736e8a4bd465c7c8344ee5efb4613214aa0dcd25919f0f33402481069b72",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-032",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B正确；A/C/D均以不同表述重复同一个错误，辨别力度不足。 独立目标核查：同节点输入局部性；190另有输出向后传递，保留190作代表。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "输入变量",
+        "locator": "输入变量，L55",
+        "shortFact": "节点输入只在节点内生效。",
+        "version": "2026-08-18"
+      }
+    ],
+    "difficultyConcern": "三个“可以”选项都属无条件跨域输入，同一错误重复三次。",
+    "duplicateGroup": [
+      "FDE-M3-190",
+      "FDE-M3-032"
+    ],
+    "contentHash": "abe05e5caeacae0c3198210c85b67dd7e560b99289c93d4c5e5106a259bebf98",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-033",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C正确；其他选项属于历史与检索。与M1-014完全同目标，无新增配置难点。 独立目标核查：完全同目标：最大回复Token控制输出长度。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "模型参数",
+        "locator": "模型参数，L69",
+        "shortFact": "最大回复Token限制生成长度。",
+        "version": "2026-08-18"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-033",
+      "FDE-M1-014"
+    ],
+    "contentHash": "3b13a97d0667c9089191883f07e61383d64dfd993c085c6d4fc975926a4249ef",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-034",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；仅改文本/输入/提示词不建立输出字段，题干有无文件边界。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "输出变量",
+        "locator": "输出变量，L126-128",
+        "shortFact": "无文件输出时JSON支持自定义输出字段。",
+        "version": "2026-08-18"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "e8d18f64b85cfe5f0ad15cd3a6b54cd4a26add1fa0e688306442f2f7ae540da0",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-035",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；B/C与该约束相反，D删去业务结果不符合机制。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "含文件输出",
+        "locator": "含文件输出，L140",
+        "shortFact": "GenFiles输出限制为文本或Markdown且不能自定义输出。",
+        "version": "2026-08-18"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "2f5c0aa6892e3220ee600ebcd26e00a99cde3d17b2f00012e056182b44928eb0",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-036",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/B/C成立，D不是自动变量可见机制。角色/任务重复M1-019/020/028，仅斜杠是新增细节。 独立目标核查：高度重叠：系统角色与用户任务，只有斜杠引用新增。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "系统及用户提示词",
+        "locator": "系统及用户提示词，L104、118",
+        "shortFact": "角色预置和当前任务分置，两者可引用节点输入。",
+        "version": "2026-08-18"
+      }
+    ],
+    "difficultyConcern": "大部分目标复用M1系统/用户提示词，只增加一个斜杠入口。",
+    "duplicateGroup": [
+      "FDE-M3-036",
+      "FDE-M1-019",
+      "FDE-M1-020",
+      "FDE-M1-028"
+    ],
+    "contentHash": "67be4ec6e4616f84448006183f4b0404096b68b9f411cb85ab60fe3ab8a79edb",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-037",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B/D成立；A逆转温度方向，C混淆长度和采样。主要重复M1-078/079。 独立目标核查：相同参数效应，单多题型变化不是新目标。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "模型高级设置",
+        "locator": "模型高级设置，L67-68",
+        "shortFact": "温度和Top_P分别影响随机性与多样性。",
+        "version": "2026-08-18"
+      }
+    ],
+    "difficultyConcern": "重复M1参数基础且C长度参数替代Top_P过弱。",
+    "duplicateGroup": [
+      "FDE-M3-037",
+      "FDE-M1-078",
+      "FDE-M1-079"
+    ],
+    "contentHash": "aba89d7d91d3b831170b24925ba05857f6e3ca44d3045ff80c3a5efe79b0b8fe",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-038",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B满足单一路径，A多选不满足，C/D绕开分类目标。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115747",
+        "section": "意图模式",
+        "locator": "意图模式，L73",
+        "shortFact": "单选返回唯一最契合意图。",
+        "version": "2026-02-10"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "cd7dd4906fea5eb43194ae82d7762631e568becb59b35f3da9223870c4484aa0",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-039",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；其余分别把多选画布误作独立分支或单选。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115747",
+        "section": "意图模式",
+        "locator": "意图模式，L74-75",
+        "shortFact": "多选返回多个意图，画布使用组合及其他分支。",
+        "version": "2026-02-10"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "f67e7a3aeedf1136977d685dc2f3ad6f1379dc7532777f692f93141ef99063b9",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-040",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C有依据；A命名长度、B描述含返回正文、D同例均非合理故障竞争项。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115747",
+        "section": "意图连线",
+        "locator": "意图连线，L104-105",
+        "shortFact": "每个意图需连到后续节点才能触发流程。",
+        "version": "2026-02-10"
+      }
+    ],
+    "difficultyConcern": "A名称更短、B含返回正文、D同一示例均非合理已命中后路由诊断。",
+    "duplicateGroup": [],
+    "contentHash": "9ad1a4442ff98719c2d525dc31b2a09a4c09eea7800001a55ec540d784986ba3",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-041",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D有依据；不是取首个/最差类别或略过节点。建议难度标基础。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115747",
+        "section": "其他意图",
+        "locator": "其他意图，L105",
+        "shortFact": "未命中设定意图时进入其他意图。",
+        "version": "2026-02-10"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "7c2928bfe4bd7608e1f305a6f4a3a502527f6fb74a102c27b459a10585cd4164",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-042",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/B/D正确；C只给URL明显不表达用户目标。与M4-036同准备目标。 独立目标核查：同目标：意图名称、描述、示例支撑路由。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115747",
+        "section": "意图定义",
+        "locator": "意图定义，L78",
+        "shortFact": "定义包括名称、描述和典型示例。",
+        "version": "2026-02-10"
+      }
+    ],
+    "difficultyConcern": "唯一错误只是接口URL不写用户目标，与其余定义字段不平行。",
+    "duplicateGroup": [
+      "FDE-M3-042",
+      "FDE-M4-036"
+    ],
+    "contentHash": "485facdcb912928cb89e551d09cd8c7fab5ce96084db5e50ad566e1a0dbbd7b9",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-043",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/C/D成立；B提示词不取代实际连线。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115747",
+        "section": "补充提示词",
+        "locator": "补充提示词，L110",
+        "shortFact": "可写识别优先级、冲突处理和输出要求。",
+        "version": "2026-02-10"
+      }
+    ],
+    "difficultyConcern": "提示词替代全部连线的唯一错误易直接排除。",
+    "duplicateGroup": [],
+    "contentHash": "f60f1fa1cf1369709df3e14c837d89e19c5e29ed1c1f1433cb95e0654351ac92",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-044",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D与真假量匹配；A/B/C为同类数据类型，基础但有效。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112965",
+        "section": "提取标签类型",
+        "locator": "提取标签类型，L73",
+        "shortFact": "提取字段可设bool等类型。",
+        "version": "2025-12-04"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "af3d20ccfaae938cd26a5c4edc3e7afa979add7a03e5df22f399d489216b5ebf",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-045",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D正确；A/B/C全是无语义且省略说明的近同干扰，无实际命名权衡。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112965",
+        "section": "提取标签",
+        "locator": "提取标签，L72-75",
+        "shortFact": "名称应清楚表达语义，并可补描述和示例。",
+        "version": "2025-12-04"
+      }
+    ],
+    "difficultyConcern": "三个干扰均选择无语义名字且不补说明，无真实竞争。",
+    "duplicateGroup": [],
+    "contentHash": "e9dc3d890738baefd52ff78458947b14506a70b38b31bb1b885a3405ce25ec06",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-046",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；同名输入、中间消息不建立标签输出。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112965",
+        "section": "输出变量",
+        "locator": "输出变量，L95",
+        "shortFact": "输出由提取标签定义，不能任意手加。",
+        "version": "2025-12-04"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "6708b35fe67851c50ae2caa0efdfe0fdafcd63453f553153298fe30f41b72750",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-047",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C支持指定正文范围和互斥；类型/展示文案/Token不是规则位置。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112965",
+        "section": "补充提示词",
+        "locator": "补充提示词，L78",
+        "shortFact": "补充上下文与标签间依赖/互斥要求。",
+        "version": "2025-12-04"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "3bb2a32adbc67cc9db4dc5c636cd27ec1e724cc0580b34207aa5c3ae840b4bab",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-048",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B/C/D正确；唯一错误项把输入限死在一个系统变量，题型偏简单。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112965",
+        "section": "待提取内容",
+        "locator": "待提取内容，L65",
+        "shortFact": "可输入常量、引用变量或混合。",
+        "version": "2025-12-04"
+      }
+    ],
+    "difficultyConcern": "唯一错误把输入锁定一个变量，三正确项近似输入方式枚举。",
+    "duplicateGroup": [],
+    "contentHash": "005e5c27af58e68cc92babf7d0175b9baa448518e3c972a2407621cb1cb2346c",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-049",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B/C成立；示例不是替换全部缺值的默认值，描述不取消名称定义。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112965",
+        "section": "标签描述与示例",
+        "locator": "标签描述与示例，L74-75",
+        "shortFact": "说明及示例帮助模型理解待提取内容。",
+        "version": "2025-12-04"
+      }
+    ],
+    "difficultyConcern": "强制替代全部值、取消字段名称均明显错误，缺少提取效果权衡。",
+    "duplicateGroup": [],
+    "contentHash": "0ad53d0a785a55c3188ccfb62bfc00715d05a50c18c52276a418631af8010b75",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-050",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C正确；三种仅输出其他对象都不表达该节点核心功能。与M4-037同选择目标。 独立目标核查：同目标：检索后生成可读回答选择知识问答节点。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112964",
+        "section": "功能及FAQ",
+        "locator": "功能及FAQ，L37、248",
+        "shortFact": "知识问答会生成答复，检索节点仅返回片段。",
+        "version": "2026-03-31"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-050",
+      "FDE-M4-037"
+    ],
+    "contentHash": "68ce225de3e7f868eb4556338842e15fd3c1f18517f3023ed4147c4d015b88eb",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-051",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C修正数据流；A/B/D不修复检索输入，错误原因与答案闭合。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112964",
+        "section": "用户问题及提示词",
+        "locator": "用户问题及提示词，L66-81",
+        "shortFact": "业务查询填用户问题，格式要求填提示词。",
+        "version": "2026-03-31"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "1acf586b33ad05975cd0b0f47e219ea27d23dfdde7ec5b6a1c4d4d752e87dae8",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-052",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B正确；全局/整体重排设置不建立独立召回配置。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112964",
+        "section": "检索范围",
+        "locator": "检索范围，L100-101",
+        "shortFact": "按知识库可分别配置各库召回规则。",
+        "version": "2026-03-31"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "f315deabc034dd6a076534ccd678b075150a2390312c5278a9a5e698921a802a",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-053",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C是每库上限而非强制数量；A忽略分库阶段，B将上限当最低，D无依据。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112964",
+        "section": "知识库设置注意",
+        "locator": "知识库设置注意，L172-183",
+        "shortFact": "各库独立召回后再受总体数量限制。",
+        "version": "2026-03-31"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "012f12319827f2fbc414b02b5095e5aacc56f5c9d43a7a9f7f8efe7471b50846",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-054",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/B/D正确；Markdown只改回复形式。多项机制并列，深度不足。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112964",
+        "section": "知识库设置",
+        "locator": "知识库设置，L156-168",
+        "shortFact": "策略、阈值与重排序均影响检索。",
+        "version": "2026-03-31"
+      }
+    ],
+    "difficultyConcern": "唯一错误仅修改回复Markdown，不属于检索阶段。",
+    "duplicateGroup": [],
+    "contentHash": "04a4fe0b2da06082ebe5ff33835e7d043d9527e2a19f498879dfbb7504828629",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-055",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/C/D成立，B属于检索量；大部重复033/037，建议学习分类练习。 结构化重复标记为部分/组合重复，不把同主题自动等同同题。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112964",
+        "section": "模型",
+        "locator": "模型，L62",
+        "shortFact": "模型高级设置有温度、Top_P和回复Token。",
+        "version": "2026-03-31"
+      }
+    ],
+    "difficultyConcern": "参数归类重复033/037，建议换实际参数作用故障。",
+    "duplicateGroup": [
+      "FDE-M3-033",
+      "FDE-M3-037",
+      "FDE-M3-055"
+    ],
+    "contentHash": "48e424dd9291d9526572a3065b868368339fdabf51baa27d116bcd816b38b51a",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-056",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D有独立替代官方正文支持；原112966本轮不可读，不用题库fact自证。 本轮改用112964成功读取的官方正文作证，原题112966仍无本轮正文快照；发布前应替换/补充引用。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112964",
+        "section": "常见问题",
+        "locator": "常见问题，L246-248",
+        "shortFact": "知识检索只回片段，知识问答再交模型生成。",
+        "version": "2026-03-31"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "7f0636b147d593e40be5c34cb131b90cdad16286fa93e8412fd101235230715a",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-057",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "这能验证混合概念，但未能验证题干指定的知识检索节点当前配置；112966正文多次Timeout，保持待核。 原发布时有访问记录，但当前正文不可复核；替代页只能证明概念，不证明该特定节点当前配置。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112964",
+        "section": "知识库设置",
+        "locator": "知识库设置，L156",
+        "shortFact": "知识问答的混合检索结合关键词与向量。",
+        "version": "2026-03-31"
+      }
+    ],
+    "difficultyConcern": "须先取得准确版本的官方正文，再审产品行为与干扰项；未确认不等于事实错误。",
+    "duplicateGroup": [],
+    "contentHash": "8b887982b25425fdcc0616c299620b7b5d935a05449addbc60b8ee8f60d3fa95",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-058",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B有替代正文支持；A/C偏词面，D时效与匹配无关，需换同机制干扰。 本轮改用112964成功读取的官方正文作证，原题112966仍无本轮正文快照；发布前应替换/补充引用。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112964",
+        "section": "知识库设置",
+        "locator": "知识库设置，L157",
+        "shortFact": "词面重合少但语义接近可用语义检索。",
+        "version": "2026-03-31"
+      }
+    ],
+    "difficultyConcern": "D文档有效期不影响语义匹配，应改同一检索机制干扰。",
+    "duplicateGroup": [],
+    "contentHash": "0786dede43711d71c297804ebab236461dfe14003858e4f9a51d37117d644190",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-059",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D有替代正文支持；重排、改写和Embedding是相邻但不同机制。 本轮改用112964成功读取的官方正文作证，原题112966仍无本轮正文快照；发布前应替换/补充引用。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112964",
+        "section": "知识库设置",
+        "locator": "知识库设置，L158",
+        "shortFact": "NL2SQL把自然语言查询转成SQL。",
+        "version": "2026-03-31"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "04f205cc332548cf6ad3e3dca0a69d93ab1129ae5f12f258b67e60df3a1db2d5",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-060",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/D可由该工作流节点直接支持；应更换题库来源为成功访问正文，并避免外推所有检索入口。 适用范围：仅评估检索参数映射/过滤，不声称标签自动认证用户或可替代服务端授权；未把元数据软排序当硬权限。 本轮改用112964成功读取的官方正文作证，原题112966仍无本轮正文快照；发布前应替换/补充引用。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112964",
+        "section": "按标签检索",
+        "locator": "按标签检索，L109",
+        "shortFact": "工作流知识问答标签值可固定或引用变量。",
+        "version": "2026-03-31"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "216cb65385930833b88ddf635f268cea79a9fe133c6859d4a28c2f971c6ccdd6",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-061",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/C/D有较新工作流节点正文支持；B零幻觉是过弱绝对干扰。128202旧版称仅标准模式，不可不加版本外推。 本轮改用112964成功读取的官方正文作证，原题112966仍无本轮正文快照；发布前应替换/补充引用。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112964",
+        "section": "知识库设置",
+        "locator": "知识库设置，L159-160",
+        "shortFact": "Excel可查算，图谱按实体关系检索，两者可能增耗时。",
+        "version": "2026-03-31"
+      }
+    ],
+    "difficultyConcern": "唯一错误是“保证零幻觉”，可不懂产品直接排除。",
+    "duplicateGroup": [],
+    "contentHash": "8f949c29db4b8de0a4a68626214a555871a02f6a147827adf1ce7cbdba3db8d0",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-062",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D有依据；字符串、对象、对象数组是合理类型混淆。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115756",
+        "section": "动态选项",
+        "locator": "动态选项，L77",
+        "shortFact": "动态列表来自前序array<string>变量。",
+        "version": "2026-01-13"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "f08f2c0f72f49d4ca2705ecd5416471ae3bd1765165101059f4d2195c7230010",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-063",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C正确；其他项均否定自然语言当前匹配。与M4-022/024覆盖相同选择能力。 独立目标核查：同能力识别：选项卡支持点选及自然语言。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115756",
+        "section": "用户回答",
+        "locator": "用户回答，L126",
+        "shortFact": "可理解用户文字并匹配选项。",
+        "version": "2026-01-13"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-063",
+      "FDE-M4-022",
+      "FDE-M4-024"
+    ],
+    "contentHash": "51f9ceee541f528d7ba1ddc67d320dd6d714f4bf0cfa1948566fd2da7f731d37",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-064",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B有依据；改选项数量/话术不生成画布分支。与M4-023同方案。 独立目标核查：同目标：动态选项之后再路由。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115756",
+        "section": "常见问题",
+        "locator": "常见问题，L137-139",
+        "shortFact": "动态选项单分支，可再接条件或意图节点。",
+        "version": "2026-01-13"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-064",
+      "FDE-M4-023"
+    ],
+    "contentHash": "29372613cb7a8fbd4cfab55ef809d8b618e962a3734268f9e6c04e81f39dd128",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-065",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D正确，但其余只读数组长度/Error/引导语均无法承载所选内容，容易常识排除。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115756",
+        "section": "输出变量",
+        "locator": "输出变量，L95",
+        "shortFact": "业务输出含选项序号和内容。",
+        "version": "2026-01-13"
+      }
+    ],
+    "difficultyConcern": "三个干扰均不含用户选择，题干已直接给出输出对象。",
+    "duplicateGroup": [],
+    "contentHash": "06c6e52bd114ab69f60e922afdee0af90d29bf4bcfdfcfb74f06081f7940217a",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-066",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/C成立；B否定语义，D虚构自动新增。与063半重叠，但追问职责新增。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115756",
+        "section": "模型",
+        "locator": "模型，L63-65",
+        "shortFact": "模型负责识别选项及生成追问。",
+        "version": "2026-01-13"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "7800e2cfbf5cae3c7eaddeb03dc85551b8918f08d72b4036b4e0902d377cdfab",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-067",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/C/D成立；B错误类型已由062单选考查，本题主要叠加UI细节。 结构化重复标记为部分/组合重复，不把同主题自动等同同题。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115756",
+        "section": "引导语及选项配置",
+        "locator": "引导语及选项配置，L69、73-77",
+        "shortFact": "固定或动态列表可配置，引导语能引用输入。",
+        "version": "2026-01-13"
+      }
+    ],
+    "difficultyConcern": "主要重复062类型限制，新增固定选项/斜杠入口仅为清单。",
+    "duplicateGroup": [
+      "FDE-M3-062",
+      "FDE-M3-067"
+    ],
+    "contentHash": "563494511405f485bf0b1c9e98aca882a7b0331700cbb034ebfbc56d2b4f848a",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-068",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B正确；字符串数组与批处理易混，C/D分别缺数组结构和非空前提。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115750",
+        "section": "输入变量与FAQ",
+        "locator": "输入变量与FAQ，L60、190-198",
+        "shortFact": "循环数组要求非空对象数组。",
+        "version": "2026-04-28"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "9a3cb6be624e9e0f5c55efefc75642aaa650980ea9b665ad1a14a403e15e7d07",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-069",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D正确；Input是整体，Index计数，Output为执行结果。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115750",
+        "section": "输入变量",
+        "locator": "输入变量，L60",
+        "shortFact": "Input.Item取得当前数组元素。",
+        "version": "2026-04-28"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "bb953ea66ee77fc4d4c43c68ad79be969047f18326c513dcbb1d90ac6c40354a",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-070",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B正确；遍历/批处理不表达该退出语义，D仅改输出。与077共享退出差异，场景和比较角度近似。 独立目标核查：同二分目标：条件循环可提前退出，批处理遍历全部；保留070作代表。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115750",
+        "section": "循环方式",
+        "locator": "循环方式，L74-78",
+        "shortFact": "按条件方式可根据本轮结果提前退出。",
+        "version": "2026-04-28"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-070",
+      "FDE-M3-077"
+    ],
+    "contentHash": "cd6368aac0eae26077dc2bc1c8c00ecc752d3c003124b0ea7cfd4b18c4b3b56f",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-071",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；其他三个为结果或诊断信息，接口识别有效但基础。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115750",
+        "section": "输出变量",
+        "locator": "输出变量，L110-113",
+        "shortFact": "LoopCount是执行次数，Results是结果集合。",
+        "version": "2026-04-28"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "910d9349c08c85ad8028cb33224ce3deb7bbab34cb2ff8bc0fd033906fc8bff9",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-072",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/C/D有依据；B把实际结果改为尚未执行预测，易排除。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115750",
+        "section": "Loop变量",
+        "locator": "Loop变量，L97-105",
+        "shortFact": "Loop含次数、已执行输出、异常标记和日志。",
+        "version": "2026-04-28"
+      }
+    ],
+    "difficultyConcern": "唯一错误把当前结果说成尚未执行的预测，难度标进阶不符。",
+    "duplicateGroup": [],
+    "contentHash": "af4b3387b4cf7b478c0aee6b148dabdc7da3d742b64d2e3e89c453ce8576620a",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-073",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/D正确；C空数组仍遍历全部语义自相矛盾，且Item与非空重复068/069。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115750",
+        "section": "循环体",
+        "locator": "循环体，L63-71；FAQ L198",
+        "shortFact": "Item逐项传值，其他输入可每轮复用；非无限循环。",
+        "version": "2026-04-28"
+      }
+    ],
+    "difficultyConcern": "空数组仍执行全部元素自相矛盾，其他目标重复068/069。",
+    "duplicateGroup": [],
+    "contentHash": "7fc3755b1ca49bd8649e2f38001b5f85d6750cf1ba39db84fa826c1c909ea04d",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-074",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确；B任务总数有辨别意义，C/D与并发无关，建议加强干扰。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119290",
+        "section": "批处理设置",
+        "locator": "批处理设置，L66",
+        "shortFact": "并行上限决定同时执行的子工作流数量。",
+        "version": "2026-01-26"
+      }
+    ],
+    "difficultyConcern": "Token及输入变量数并非并行控制，需加入队列/批量大小等竞争项。",
+    "duplicateGroup": [],
+    "contentHash": "73eeeecbd541a20deae9c7d86e52340b60d367f12ba80edacee81c98a45b4e28",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-075",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；A把同时数当任务数，B反向，D混淆条件循环。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119290",
+        "section": "批处理设置",
+        "locator": "批处理设置，L66",
+        "shortFact": "上限1时串行遍历。",
+        "version": "2026-01-26"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "5c21ef11c2bce3e014bc83266a01227270cd893ce4d0bccda209f6f55b24cacd",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-076",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；A将循环对象数组限制误套批处理，B/D无类型并发规则。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119290",
+        "section": "批处理数组",
+        "locator": "批处理数组，L72",
+        "shortFact": "批处理接收多种数组类型。",
+        "version": "2026-01-26"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "9f0ca2d1aceca766d1ece7f88bae539d0bc3c56fad1c3a02784caf707e845909",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-077",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D有据；与070核心决定完全同为是否提前终止，仅增加批处理对照。 独立目标核查：同二分目标：条件循环可提前退出，批处理遍历全部；保留070作代表。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119290",
+        "section": "节点功能比较",
+        "locator": "节点功能比较，L37-41",
+        "shortFact": "批处理遍历全部，循环可逐轮条件终止。",
+        "version": "2026-01-26"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-070",
+      "FDE-M3-077"
+    ],
+    "contentHash": "a5a98a18efe75b5d560700dbf1c71d220b80b7ff8407fa7c76065007ad2e97f4",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-078",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/B/C正确；唯一错误D把数组说成必须单个字符串，干扰明显。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119290",
+        "section": "批处理体",
+        "locator": "批处理体，L75-79",
+        "shortFact": "可选待发布或已发布工作流，Item传当前元素。",
+        "version": "2026-01-26"
+      }
+    ],
+    "difficultyConcern": "唯一错误说批处理必须单个字符串且不许数组，明显矛盾。",
+    "duplicateGroup": [],
+    "contentHash": "d1d6adebba40ce3219e3b9ee2a472cfae802485d506a72f2e8952f3cd06d71d3",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-079",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/C/D正确；B最后一次和全部结果的对立是有效基础辨别，不宜标进阶。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119290",
+        "section": "输出变量",
+        "locator": "输出变量，L94",
+        "shortFact": "Results为全部子流程结果组成的对象数组。",
+        "version": "2026-01-26"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "411f21852101a50d8ff00e3aa22f87b2325dce562747f96e4216b780ce016468",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-080",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；其余为同类常见入口名，适合基础接口记忆。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112967",
+        "section": "代码",
+        "locator": "代码，L70",
+        "shortFact": "Python和JavaScript都用main入口。",
+        "version": "2026-06-01"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "d80049f397472a8472a3edae4b856deacb414e32f6b13b57662f91d29a280b4e",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-081",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D正确；A/B/C分别假设独立保存、高亮切换、自动翻译，均与明确行为冲突。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112967",
+        "section": "代码",
+        "locator": "代码，L68",
+        "shortFact": "切换语言会清空编辑器并加载模板。",
+        "version": "2026-06-01"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "cfe9935f9de971a6125599a35941310131e3ff68c954a5e949a64928bb994323",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-082",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D正确；类实例/set/句柄分别是实际不兼容例。与M4-044相同修复目标。 独立目标核查：完全同修复目标：不可序列化结果转JSON可表达结构。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112967",
+        "section": "代码结果",
+        "locator": "代码结果，L72",
+        "shortFact": "结果须能够被JSON序列化。",
+        "version": "2026-06-01"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-082",
+      "FDE-M4-044"
+    ],
+    "contentHash": "0ce0cf77895188787a9330c8b405f6f25c8277942ffed339c962f004fd92e62b",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-083",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D正确；A/B/C只改结果或别的字段不声明total，已覆盖故障链路。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112967",
+        "section": "输出变量",
+        "locator": "输出变量，L156",
+        "shortFact": "业务输出需声明或从运行结果解析填写。",
+        "version": "2026-06-01"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "fa7485387ace0ee82af41c0997fa1c77e8a7df14ee3c16a58620f03efa823f5c",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-084",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B/C成立；D为有依据的能力限制，但A重复082。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112967",
+        "section": "功能与输出",
+        "locator": "功能与输出，L35、72、168",
+        "shortFact": "支持Python/JS，返回须可序列化，不能直接出文件类变量。",
+        "version": "2026-06-01"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "a4ee921b4be8ced0aba4c1a798a878ed9553898e9b61b7072d920cc9c000cf28",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-085",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/C/D正确；B生成即自动发布与当前操作层级无关，建议重写干扰。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112967",
+        "section": "AI代码生成",
+        "locator": "AI代码生成，L151-153",
+        "shortFact": "可接受或撤回建议，完整上下文有帮助。",
+        "version": "2026-06-01"
+      }
+    ],
+    "difficultyConcern": "生成建议自动发布是无关动作，需替换为编辑器实际行为误区。",
+    "duplicateGroup": [],
+    "contentHash": "f4a0cf2c17d6ed8541a8231e5efee847a3332685e65014e0d0e3f4ae95695b19",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-086",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B正确；C相似度不是数值规则，D重试无关。与M4-055/150同阈值路由目标。 独立目标核查：同目标：严格数值阈值选择精准判断。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112970",
+        "section": "条件方式",
+        "locator": "条件方式，L64",
+        "shortFact": "严格比较用精准判断。",
+        "version": "2026-01-16"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-086",
+      "FDE-M4-055",
+      "FDE-M4-150"
+    ],
+    "contentHash": "a76daf47553067d5d107d63ffa0c74e4da5184ebbe2c3926c4ab8bf4f014cac7",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-087",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；后继未执行输出不能读取，B/D不当缩小可用来源。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112970",
+        "section": "条件表达式",
+        "locator": "条件表达式，L62",
+        "shortFact": "可引用祖先节点输出或填写常量。",
+        "version": "2026-01-16"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "5743e4a0dba6a48187927cfd92ed7891e3e1f5862fd92e0a4569bd7cd18ac983",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-088",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C正确；D删除流程是无关动作，A/B也可用基本编程常识排除。与M4-056同兜底目标。 独立目标核查：同目标：前述条件均不满足走else兜底。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112970",
+        "section": "else",
+        "locator": "else，L66",
+        "shortFact": "前面条件均未满足才走else。",
+        "version": "2026-01-16"
+      }
+    ],
+    "difficultyConcern": "D立即删除流程是无关行为；else本身常识化。",
+    "duplicateGroup": [
+      "FDE-M3-088",
+      "FDE-M4-056"
+    ],
+    "contentHash": "c2490bb9b774262ac0ab2385d946b81b2f0cf9f259482565b4ea6744322a0522",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-089",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B正确；配置源码、未执行结果、全条件解释均不是默认输出。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112970",
+        "section": "输出变量",
+        "locator": "输出变量，L131",
+        "shortFact": "默认业务输出是选择的条件序号。",
+        "version": "2026-01-16"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "0d0c969e23ec47ba98db83838f92a7ded8161899e01d8fff9393686e89d11ddd",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-090",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/B/D正确；D只是A/B的泛化表述，C与三项成直接否定，测量效率低。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112970",
+        "section": "设置条件",
+        "locator": "设置条件，L60",
+        "shortFact": "一个条件支持多个表达式与/或组合。",
+        "version": "2026-01-16"
+      }
+    ],
+    "difficultyConcern": "D泛化复述A/B，三正确项不独立。",
+    "duplicateGroup": [],
+    "contentHash": "8b34103bdca225f365534672f6c79ca7b8136d39084941366882fb93668cf11a",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-091",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/B/C正确；A重复086，B空泛，D极端等同两机制，需重写。 结构化重复标记为部分/组合重复，不把同主题自动等同同题。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112970",
+        "section": "模型与判断方式",
+        "locator": "模型与判断方式，L49、64",
+        "shortFact": "语义判断用模型，精准判断服务严格条件。",
+        "version": "2026-01-16"
+      }
+    ],
+    "difficultyConcern": "B匹配要求为空泛建议，A重复086，D完全同机制明显错误。",
+    "duplicateGroup": [
+      "FDE-M3-086",
+      "FDE-M3-091"
+    ],
+    "contentHash": "cdcccdc0a6e257a6d55a775257a4da6f036e842ddc3ccf265474c4328d55e473",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-092",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B正确；复制/写名称/复制字段不建立引用。与M4-046完全相同复用目标。 独立目标核查：完全同目标：集中复用共同逻辑引用子工作流。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115749",
+        "section": "节点功能",
+        "locator": "节点功能，L35",
+        "shortFact": "已有工作流可作为子流程引用复用。",
+        "version": "2026-01-29"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-092",
+      "FDE-M4-046"
+    ],
+    "contentHash": "23b882837db5715c68742a32e2a3f32790613b0fb6496029c552ecfd217c613e",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-093",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B正确；父流程的入参或输出设置都不改子画布。操作入口偏细。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115749",
+        "section": "FAQ",
+        "locator": "FAQ，L105-107",
+        "shortFact": "需通过查看进入子工作流修改内部逻辑。",
+        "version": "2026-01-29"
+      }
+    ],
+    "difficultyConcern": "只记查看入口；三个干扰均是父级数据配置，不是子流程编辑。",
+    "duplicateGroup": [],
+    "contentHash": "ea676200749517f433846f5f1746321757500bc5f6bcdb0752e026f8f6ae6bbd",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-094",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；B/C/D分别附上兼容、同名、同发布状态都不能解除限制。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115749",
+        "section": "FAQ",
+        "locator": "FAQ，L109-111",
+        "shortFact": "节点建成后不支持替换引用工作流。",
+        "version": "2026-01-29"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "921b883908825c456e597aa89722afa556762f09115af48d70a5ef7aa9c467b2",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-095",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；B/C错误合并，D随机推断较弱。与097有接口重叠但输出/值来源新增。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115749",
+        "section": "输入变量",
+        "locator": "输入变量，L61",
+        "shortFact": "输入表由子工作流接口定义，父侧配置值来源。",
+        "version": "2026-01-29"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "5066ddf41f348b8218fd519046a3e25d07d3da2f1694fbaf8ee191fd7bbdee46",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-096",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B/D成立；绑定规则C重复094，发布状态A与078相似但节点对象不同。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115749",
+        "section": "引用工作流",
+        "locator": "引用工作流，L49；FAQ L111",
+        "shortFact": "待发布、已发布皆可引用，创建后不能改绑。",
+        "version": "2026-01-29"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "74e3effa037f225ddf6270c5c5558415859f4230044738b4ab5def697f2e9907",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-097",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/C/D正确；B符合易混“父侧改接口”的错误，范围明确。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115749",
+        "section": "输入输出",
+        "locator": "输入输出，L61-64",
+        "shortFact": "输入可引用或常量；输出来自子流程且不能任增。",
+        "version": "2026-01-29"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "c455cfcdd0e18d150f78f6994aa15ebb68c9300774b99638c5e7a1efe5a0afd4",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-098",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确；C回复节点定义请求、D自动忽略参数明显无关，应重写竞争项。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115748",
+        "section": "输入参数",
+        "locator": "输入参数，L48",
+        "shortFact": "参数定义来自所选工具，值可引用或固定。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": "回复节点定义请求与自动忽略全部参数过弱。",
+    "duplicateGroup": [],
+    "contentHash": "2acf4a2c74d652b05208057c327e2c6b8031cb08325adc066b78b3212ee645ab",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-099",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D正确；B输出、C Error不是请求位置，应换header/path等合理位置干扰。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115748",
+        "section": "输入参数",
+        "locator": "输入参数，L51-53",
+        "shortFact": "query经URL传递，body承载实际内容。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": "输出变量、Error不是HTTP请求位置，建议用header/path/query/body对比。",
+    "duplicateGroup": [],
+    "contentHash": "581858357885365ec166ed1c30e8f2811a29e5f43f243a99ecca337cfba7f00c",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-100",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B唯一同时满足直接固定输出及不中断；C另走异常链路，A仅改次数，D中断。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115748",
+        "section": "异常处理",
+        "locator": "异常处理，L70-85",
+        "shortFact": "输出特定内容可在重试后返回预设值并继续。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "54e1baa6b321115eb9f42fcf608918a0bdbc48fd95e36067302ca8904acf0a70",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-101",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确；B无限重试不符配置，D请求方法与失败分支无关，需强化干扰。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115748",
+        "section": "异常处理",
+        "locator": "异常处理，L85",
+        "shortFact": "执行异常流程会转入配置的异常链路。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": "无限重试、只改请求方法不能成为可信异常流程方案。",
+    "duplicateGroup": [],
+    "contentHash": "43fedf64d198372a2fce0aaa5dd0d1cabc4ff5b7f23d63321648c0c0f8984794",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-102",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C/D正确；A倒置职责，B混淆query。基础但同机制对比有效。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115748",
+        "section": "输入参数",
+        "locator": "输入参数，L51-53",
+        "shortFact": "Header用于请求元信息，Body为业务载荷。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "109f4e6856c2a9f9a5932a35a5b305fa226f8a0c2fa98b409b1438c4cecd984b",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-103",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/C/D成立；B不是工具来源而是参数编辑限制，跨维度干扰较弱。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115748",
+        "section": "节点功能",
+        "locator": "节点功能，L34-36",
+        "shortFact": "支持官方或自建工具，连接器可含多个工具。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": "B参数可编辑性不是来源，选项维度不一致。",
+    "duplicateGroup": [],
+    "contentHash": "330e95ebff5caad93e180247cf9216f189ab73ff2e9e3740ccc96e51c7154eb4",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-104",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "原发布有访问记录；本轮不能用题库fact代替正文。待复核APIKey方式及前缀要求，不断言答案错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112968",
+        "section": "未取得正文：基础信息/FAQ",
+        "locator": "未取得正文：基础信息/FAQ",
+        "shortFact": "本轮访问Timeout，未独立确认Bearer在本节点的具体配置。",
+        "version": "本轮未能独立核实页面版本"
+      }
+    ],
+    "difficultyConcern": "须先取得准确版本的官方正文，再审产品行为与干扰项；未确认不等于事实错误。",
+    "duplicateGroup": [],
+    "contentHash": "2ac8fdb92338adb18d1cb71d9a27da8270e82156198643450f6fc0c8fb0ab530",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-105",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "不能以通用SSE概念证明ADP节点行为，暂缓作为考试题。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112968",
+        "section": "未取得正文：流式调用",
+        "locator": "未取得正文：流式调用",
+        "shortFact": "本轮未核到该节点SSE先拼接再统一输出的官方正文。",
+        "version": "本轮未能独立核实页面版本"
+      }
+    ],
+    "difficultyConcern": "须先取得准确版本的官方正文，再审产品行为与干扰项；未确认不等于事实错误。",
+    "duplicateGroup": [],
+    "contentHash": "d9e029a21a04f1969362e3e082f710485e1247fa47c14baed1ecb68a0468b654",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-106",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "B逻辑合理，仍需验证产品确有该解析配置；不以常识替代官方能力证据。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112968",
+        "section": "未取得正文：流式解析",
+        "locator": "未取得正文：流式解析",
+        "shortFact": "独立分片拼接的工程推理合理，但未核到节点解析方式正文。",
+        "version": "本轮未能独立核实页面版本"
+      }
+    ],
+    "difficultyConcern": "须先取得准确版本的官方正文，再审产品行为与干扰项；未确认不等于事实错误。",
+    "duplicateGroup": [],
+    "contentHash": "ed932e1a789b722f99cd9160f300984ef4430dcc5c9bf4c5df6c339630b01921",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-107",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "C逻辑合理，仍欠当前节点支持证据；与106是同一个增量/覆盖二分目标。 结构化重复标记为部分/组合重复，不把同主题自动等同同题。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112968",
+        "section": "未取得正文：流式解析",
+        "locator": "未取得正文：流式解析",
+        "shortFact": "累计全文需覆盖的推理合理，产品配置正文未获取。",
+        "version": "本轮未能独立核实页面版本"
+      }
+    ],
+    "difficultyConcern": "须先取得准确版本的官方正文，再审产品行为与干扰项；未确认不等于事实错误。",
+    "duplicateGroup": [
+      "FDE-M3-106",
+      "FDE-M3-107"
+    ],
+    "contentHash": "cde2ef5f6027f852330eb50d9859a274e46d276eec236d937bc83e4c00f0effd",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-108",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "A/B/C不能凭旧fact批准；需重获官方正文与版本。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112968",
+        "section": "未取得正文：基础信息导入",
+        "locator": "未取得正文：基础信息导入",
+        "shortFact": "本轮未确认JSON、cURL、YAML导入三种格式。",
+        "version": "本轮未能独立核实页面版本"
+      }
+    ],
+    "difficultyConcern": "须先取得准确版本的官方正文，再审产品行为与干扰项；未确认不等于事实错误。",
+    "duplicateGroup": [],
+    "contentHash": "dfeabec8f567b1309c7bd2b9ac4b25427ec0a54956a2b15565a1ca68a7906018",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-109",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "MCP连接器虽有Header/Query说明，不能外推另一工具节点全部配置。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112968",
+        "section": "未取得正文：APIKey配置",
+        "locator": "未取得正文：APIKey配置",
+        "shortFact": "本轮未确认该工具节点APIKey支持的参数位置。",
+        "version": "本轮未能独立核实页面版本"
+      }
+    ],
+    "difficultyConcern": "须先取得准确版本的官方正文，再审产品行为与干扰项；未确认不等于事实错误。",
+    "duplicateGroup": [],
+    "contentHash": "b4d8465c14bf27b36403bd95da3e448187e141ea955be61c853947777150f572",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-110",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；工具列表和上次结果属于其他阶段，B缺两项。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115873",
+        "section": "服务端要求",
+        "locator": "服务端要求，L65-67",
+        "shortFact": "initialize返回协议版本、能力及服务信息。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "eee966b21b5812bb0bfe08ac4f57dfa9c86745aef86e909d492cef7e3db7fefc",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-111",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D正确；服务描述或名称不能补成工具。与M4-068完全同故障事实。 独立目标核查：完全同事实：MCP接入成功、空tools/list仍无工具。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115873",
+        "section": "工具列表",
+        "locator": "工具列表，L71",
+        "shortFact": "空tools/list可接入但不产生可用工具。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-111",
+      "FDE-M4-068"
+    ],
+    "contentHash": "5bcbb8c6fa1823076468c2685a6bef589ec724a62ac6b82711cc6c6a17adf942",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-112",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D符合正文；resources、prompts和serverInfo都不能代替声明。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115873",
+        "section": "工具能力声明",
+        "locator": "工具能力声明，L69",
+        "shortFact": "工具用途需声明非空tools能力。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "dface8bf9d600837ff23891bbdf015325d377dd7698ca2324366ae2746985ec1",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-113",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B直接修复地址不匹配；超时、tools/list和scope不修改回调。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115873",
+        "section": "OAuth回调",
+        "locator": "OAuth回调，L127-129",
+        "shortFact": "第三方OAuth后台需正确登记ADP回调URL。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "b1e7c817ee257b26ad2ea5bb1396df3b27b9729f45b4c25dd014814cdd028bc3",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-114",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/B/C正确；D健康检查不实现协议，但单一错误项过于明显，且部分重复110/111。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115873",
+        "section": "服务端要求",
+        "locator": "服务端要求，L65-73",
+        "shortFact": "工具MCP服务需完成初始化、列举和调用。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": "健康检查替代所有MCP方法过弱，且初始化/发现与110/111重合。",
+    "duplicateGroup": [],
+    "contentHash": "8f9fcde0b27a14c264c8eae54de918a5319270ea6bf1a887aa6758754471d843",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-115",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/C/D成立；B HTTP200不等于MCP协议完整，但与所问配置项不平行。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115873",
+        "section": "高级设置",
+        "locator": "高级设置，L80-86",
+        "shortFact": "可设请求头、普通请求超时、SSE超时。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": "B把HTTP200等同协议完整，不是与其他项平行的配置。",
+    "duplicateGroup": [],
+    "contentHash": "1831de6b784ff7d38a1785a2f8ad8aad48de4a68fa1271f4e12c2b6f5102b3ec",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-116",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "原发布有访问记录；本轮仅找到其他区域旧插件说明，不能替代本页当前产品版本，暂缓。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117855",
+        "section": "未取得正文：校验工具",
+        "locator": "未取得正文：校验工具",
+        "shortFact": "本轮未读取国内新建工具页的保存前校验要求。",
+        "version": "本轮未能独立核实页面版本"
+      }
+    ],
+    "difficultyConcern": "须先取得准确版本的官方正文，再审产品行为与干扰项；未确认不等于事实错误。",
+    "duplicateGroup": [],
+    "contentHash": "20f757ce5e049ae956de9a55885e31f761787832042e70f837a1a6b580ad27a8",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-117",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "C符合OpenAPI常识，但题干限定ADP导入说明；不得以常识证明具体实现和建议。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117855",
+        "section": "未取得正文：OpenAPI导入",
+        "locator": "未取得正文：OpenAPI导入",
+        "shortFact": "未独立取得ADP对servers字段的推荐规则。",
+        "version": "本轮未能独立核实页面版本"
+      }
+    ],
+    "difficultyConcern": "须先取得准确版本的官方正文，再审产品行为与干扰项；未确认不等于事实错误。",
+    "duplicateGroup": [],
+    "contentHash": "68054bf0073b12940514a1b1185251460957ea976bc62fd54e525a8195506c5e",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-118",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "A机制合理但缺本轮官方正文，保持未核，不推断事实错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117855",
+        "section": "未取得正文：应用封装",
+        "locator": "未取得正文：应用封装",
+        "shortFact": "未独立确认封装单工作流工具的起止节点参数规则。",
+        "version": "本轮未能独立核实页面版本"
+      }
+    ],
+    "difficultyConcern": "须先取得准确版本的官方正文，再审产品行为与干扰项；未确认不等于事实错误。",
+    "duplicateGroup": [],
+    "contentHash": "c25e2b05f33ad1a1f0717b91bde32c26eebf8e50126b2efb84fb6ad7b3e60ced",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-119",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "本题将授权持久化边界作确定结论，必须取得该专门流程正文后才能入模考。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117855",
+        "section": "未取得正文：OAuth校验",
+        "locator": "未取得正文：OAuth校验",
+        "shortFact": "未独立確認校验授权是否一次性且不保存。",
+        "version": "本轮未能独立核实页面版本"
+      }
+    ],
+    "difficultyConcern": "须先取得准确版本的官方正文，再审产品行为与干扰项；未确认不等于事实错误。",
+    "duplicateGroup": [],
+    "contentHash": "b92184dbe4da50ff46d882696ba6b02cdcacae3731006cc1768e042c097d7aea",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-120",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "这些均为产品特定限制；不能从其他工具页推导，需暂缓。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117855",
+        "section": "未取得正文：已发布应用封装",
+        "locator": "未取得正文：已发布应用封装",
+        "shortFact": "未独立取得零上下文、交互节点和Plan-and-Execute封装边界。",
+        "version": "本轮未能独立核实页面版本"
+      }
+    ],
+    "difficultyConcern": "须先取得准确版本的官方正文，再审产品行为与干扰项；未确认不等于事实错误。",
+    "duplicateGroup": [],
+    "contentHash": "858fc416b7bfcd7a61fbc8c6aadc375024bdc8a285c36ce5fa362a7a72681a84",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-121",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "不将常见接口契约原则充当平台确定限制；需正文复核。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117855",
+        "section": "未取得正文：参数编辑",
+        "locator": "未取得正文：参数编辑",
+        "shortFact": "未独立确认封装时名称/类型不可编辑而描述可编辑。",
+        "version": "本轮未能独立核实页面版本"
+      }
+    ],
+    "difficultyConcern": "须先取得准确版本的官方正文，再审产品行为与干扰项；未确认不等于事实错误。",
+    "duplicateGroup": [],
+    "contentHash": "9375787ed3de4d658c69cb40ede3b7980aed34c416d5d9d74727cdec7bec55f7",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-122",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；取消必填、提示词或输出示例不设置实际输入值。 原题来源只记访问日期；本轮已读取页面更新时间，建议将来源版本补成报告所列日期（不是事实冲突）。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117856",
+        "section": "工具设置",
+        "locator": "工具设置，L124-129",
+        "shortFact": "输入默认值配合模型不可见可固定调用参数。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "ffae68b7e3cc5e3624658df4c28dd1ceefdf15db592ac7d5a070f38984e53856",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-123",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D正确；Top_P、GenFiles、LoopCount全属无关阶段，需改为合理传参位置干扰。 原题来源只记访问日期；本轮已读取页面更新时间，建议将来源版本补成报告所列日期（不是事实冲突）。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117856",
+        "section": "引用变量",
+        "locator": "引用变量，L129",
+        "shortFact": "工具API变量可由custom_variables传入。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": "Top_P/GenFiles/LoopCount都是其他阶段，无法作为有竞争力的API变量容器。",
+    "duplicateGroup": [],
+    "contentHash": "d7f9513b26d1d5e74dddaf954d9b43f3958ea3c051ffb5745d5a59482151744b",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-124",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；A只改输入，B只改描述，D改长度都不隐去该输出。 原题来源只记访问日期；本轮已读取页面更新时间，建议将来源版本补成报告所列日期（不是事实冲突）。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117856",
+        "section": "输出参数",
+        "locator": "输出参数，L131",
+        "shortFact": "输出可逐字段选择对模型不可见。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "89a3e5a336dd14d80caf704df004ee9b692df93f9746c6d90a28d77d0792139b",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-125",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确；B知识索引无关，C/D仍未取得新定义，难度基础。 原题来源只记访问日期；本轮已读取页面更新时间，建议将来源版本补成报告所列日期（不是事实冲突）。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117856",
+        "section": "调整工具",
+        "locator": "调整工具，L104",
+        "shortFact": "工具更新操作刷新列表中工具配置。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": "知识索引更新与工具配置无关，题干“更新”直接提示选项A。",
+    "duplicateGroup": [],
+    "contentHash": "308b7c4bbdeefe2a9ec111401efafc886e71076b3e31d277087b895a526007a7",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-126",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B/D成立；C仅名称不保证同等调用效果。与M4-065部分重叠而@入口新增。 原题来源只记访问日期；本轮已读取页面更新时间，建议将来源版本补成报告所列日期（不是事实冲突）。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117856",
+        "section": "提示词添加工具",
+        "locator": "提示词添加工具，L83",
+        "shortFact": "可用@插入已选工具并写用途、触发条件。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "03935830b2cea1ec05e4dd7ca07c3af91059aad4f8f130d0972c021768e2187e",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-127",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/C/D合理；B提示词替代试运行明显不成立，建议给真实排错竞争项。 原题来源只记访问日期；本轮已读取页面更新时间，建议将来源版本补成报告所列日期（不是事实冲突）。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117856",
+        "section": "工作流工具",
+        "locator": "工作流工具，L164、174",
+        "shortFact": "可单独测试；删除定义后节点提示失效。",
+        "version": "2026-05-27"
+      }
+    ],
+    "difficultyConcern": "B提示词声明替代试运行过弱。",
+    "duplicateGroup": [],
+    "contentHash": "90baa4e91e0749158f25c75ed3ac38636f2a99b0f57bef522ac46004ea74de3c",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-128",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D匹配分类；A/B/C为其他相邻任务分类，但只是目录检索记忆。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "场景分类",
+        "locator": "场景分类，L61-67",
+        "shortFact": "平台能力类包含知识运维及应用/流程创建。",
+        "version": "2026-07-14"
+      }
+    ],
+    "difficultyConcern": "只考广场目录名；可改依据功能边界选原生Skill的实际场景。",
+    "duplicateGroup": [],
+    "contentHash": "9342df2d354d912ee63ffab9da5d5a08be3e6a167af545d4efd89e4a864c893e",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-129",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C正确；图片增强、语音识别、格式转换不等同OCR，基础能力区分。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "文字识别",
+        "locator": "文字识别，L67",
+        "shortFact": "该分类面向票据/表单等图文结构提取。",
+        "version": "2026-07-14"
+      }
+    ],
+    "difficultyConcern": "OCR与语音识别/图片增强区分过于直接，保留基础学习。",
+    "duplicateGroup": [],
+    "contentHash": "a96fe3b3204a2dfa9c67dd6ccffab40ee7d32240b5261814ff2a2bfcbaa6f930",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-130",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B正确且未承诺现有任务自动换版；与M7-034同一机制，其他干扰过弱。 独立目标核查：同机制：SkillHub版本自动更新广场；安全复核包装未改变目标。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "内置Skills",
+        "locator": "内置Skills，L37",
+        "shortFact": "SkillHub来源技能新版本由平台更新至广场。",
+        "version": "2026-07-14"
+      }
+    ],
+    "difficultyConcern": "永久不变/重装全部应用等弱干扰且跨模块重复。",
+    "duplicateGroup": [
+      "FDE-M3-130",
+      "FDE-M7-034"
+    ],
+    "contentHash": "5064a664c450c96f36f8f78ea82b8c6fd23dac2d91aec4d3fc370e98896fe3d7",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-131",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确；自定义和企业共享来自成员，未安装本地包不是平台预置。与M2-032类别定义重叠。 独立目标核查：同类别定义的子问题，不提供新配置。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "三种类别",
+        "locator": "三种类别，L37-39",
+        "shortFact": "平台和腾讯生态预置归入内置类。",
+        "version": "2026-07-14"
+      }
+    ],
+    "difficultyConcern": "类别名称识别重复M2基础类别，未新增具体配置。",
+    "duplicateGroup": [
+      "FDE-M3-131",
+      "FDE-M2-032"
+    ],
+    "contentHash": "5f908fff36782e954eeb0664ff422aef57e09843fc610dabc5c495ee953f20bf",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-132",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/B/D成立；C免审是明显错误。重复M2-032/033/034和M7-080主要事实。 独立目标核查：将已有类别/范围/共享来源拼成多选。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "三类关系及安全审核",
+        "locator": "三类关系及安全审核，L44-56",
+        "shortFact": "自定义可经审批共享，内置平台提供，自定义导入要审核。",
+        "version": "2026-07-14"
+      }
+    ],
+    "difficultyConcern": "免安全扫描过弱，且三正确项重复M2及M7共享知识。",
+    "duplicateGroup": [
+      "FDE-M3-132",
+      "FDE-M2-032",
+      "FDE-M2-033",
+      "FDE-M2-034",
+      "FDE-M7-080"
+    ],
+    "contentHash": "ef2808b3484f1d79b3d6ba5bc4add40baa1ac112dd06997b7c681cd6dc4867d4",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-133",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/C/D与当前UI说明吻合；B混淆角色，但纯入口记忆不宜称进阶。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129562",
+        "section": "提交后状态",
+        "locator": "提交后状态，L248-250",
+        "shortFact": "申请人进度/取消入口在Skill详情，审批中心供审批人。",
+        "version": "2026-07-20"
+      }
+    ],
+    "difficultyConcern": "纯UI入口归属，难度进阶失真。",
+    "duplicateGroup": [],
+    "contentHash": "7aed49ac6ee6b908e10eb744532e167d386d0bff8f283fd604a3902d71684666",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-134",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；A否定该路径，B倒置自定义与共享先后，D把安装当创建。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129562",
+        "section": "方式二",
+        "locator": "方式二，L114-118",
+        "shortFact": "可在智能工作台用自然语言创建技能包。",
+        "version": "2026-07-20"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "14fff2c8d4a767bd3f6d2dcab14bfe206ce3aceaab1a4b839e8aecba38a0586a",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-135",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D正确；显示名、版本更新或共享不重新定义标识。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129562",
+        "section": "导入信息注意",
+        "locator": "导入信息注意，L94",
+        "shortFact": "Skill唯一标识提交后不可修改。",
+        "version": "2026-07-20"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "45c916d4370df90ff76a942878d48d964fd13de28ebb1cda6839d30d9217e261",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-136",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；B重复版号、C倒退、D省略均不满足要求。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129562",
+        "section": "导入信息",
+        "locator": "导入信息，L85、95",
+        "shortFact": "同标识版本号必填且唯一，更新需高于最新。",
+        "version": "2026-07-20"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "fbe7ffe4b077a2ac3244f8c11ed3689ca2ff4b11e361f77ef527fce59f23b83d",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-137",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D正确；A/B/C分别否定下载或跳过平台审核。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129562",
+        "section": "获取生成包",
+        "locator": "获取生成包，L160-168",
+        "shortFact": "包可下载审查后导入，两条创建路径仍须审核。",
+        "version": "2026-07-20"
+      }
+    ],
+    "difficultyConcern": "三个干扰全为取消下载或免审核，建议增加生成/导入两路径的真实差异。",
+    "duplicateGroup": [],
+    "contentHash": "a96983e657f4844f89dea221575dfe006306c694810b5b70c71fd8e373b1b43d",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-138",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B/D成立；C自然语言生成并无免审资格。与M7-032有重合，但三项组成仍新增。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129562",
+        "section": "等待安全审核",
+        "locator": "等待安全审核，L98-104",
+        "shortFact": "审核含包格式、YAML及脚本安全扫描。",
+        "version": "2026-07-20"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "e151d3302205a4e5789fdb23f26b11b65e6625e441109aa5e2e563f5cc33f6fd",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-139",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/C正确；查看者或终端使用者不因此具备编辑权。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129562",
+        "section": "谁可以提交",
+        "locator": "谁可以提交，L192-196",
+        "shortFact": "编辑者包括作者及获授编辑权限的空间用户。",
+        "version": "2026-07-20"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "e5d0ec3c1c189c513ad19cc8bd6ebc81619a8f29c554ff87cd8e6af85f89d550",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-140",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "题干明确主规则使C成立；文档内部根目录与FAQ存在兼容差异，不可把本题外推成所有嵌套包必拒绝。 不能据主规则断言FAQ列举的最浅目录兼容导入也必失败。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134602",
+        "section": "主规范L59、91-99；FAQ L223",
+        "locator": "主规范L59、91-99；FAQ L223",
+        "shortFact": "主规则要求根目录入口；FAQ又允许最浅目录兼容。",
+        "version": "2026-07-20"
+      }
+    ],
+    "difficultyConcern": "题干用“主规则”规避同页FAQ兼容差异，仅可用于规则阅读，不能作为实际导入结果保证。",
+    "duplicateGroup": [],
+    "contentHash": "1ff47415abf19b28f8abfd33913026335890365f2d2f4889c7f5921735d6038c",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-141",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B满足规则；A首字符、C大小写及下划线、D连续连字符分别违规。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134602",
+        "section": "name规则",
+        "locator": "name规则，L131-154、249-253",
+        "shortFact": "标识用小写/数字/连字符，首尾和连续连字符受限。",
+        "version": "2026-07-20"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "f1a0d0b3828d875fe5d4ee52b99ad34d05b76b82646e04752fdb7184f7015c19",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-142",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确；B/C/D均只写实施或登记信息。与M4-091同技能识别目标。 独立目标核查：完全同目标：description同时给功能与使用情境。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134602",
+        "section": "description",
+        "locator": "description，L159",
+        "shortFact": "描述宜同时给出功能与使用情境。",
+        "version": "2026-07-20"
+      }
+    ],
+    "difficultyConcern": "只写语言/作者/许可证显然不表达触发情境；跨模块重复。",
+    "duplicateGroup": [
+      "FDE-M3-142",
+      "FDE-M4-091"
+    ],
+    "contentHash": "62a2e371a966d483f3919e28e0a0318ffe45e5f06a842090a997cc3c4dfcf2b9",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-143",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C正确；A/B/D都把按需误作无条件加载/替代入口。与M4-092相同组织目标。 独立目标核查：完全同目标：长参考放references按需引用。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134602",
+        "section": "正文与references",
+        "locator": "正文与references，L180-201",
+        "shortFact": "长细节放参考文件并由正文引用，按需加载。",
+        "version": "2026-07-20"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-143",
+      "FDE-M4-092"
+    ],
+    "contentHash": "18184f5139b7f0056fdecd8fc08b028d755d42588cde62b1a9c7150051c0fee3",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-144",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B/C正确；D虽常见资源却违本平台限制，属于有意义边界题。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134602",
+        "section": "ZIP文件类型",
+        "locator": "ZIP文件类型，L58、205",
+        "shortFact": "包只允许纯文本，二进制图片也被禁止。",
+        "version": "2026-07-20"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "47d0dd2d57dde50eff02432855c20dac9bed24454899cbc15d47390d5d0b4175",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-145",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C/D正确；A/B把可选项设为所有场景强制。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134602",
+        "section": "元数据字段",
+        "locator": "元数据字段，L131、155、172-176",
+        "shortFact": "name与description必填，其余所列字段可选。",
+        "version": "2026-07-20"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "b0d2a08674652ad94ac431b94aa88da0d491d2e764f7f670a14e6a53dccd6a34",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-146",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D正确；A/B/C都将两清单联动，事实与M4-100一致。 独立目标核查：同目标：工作台安装和Claw挂载清单独立。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129563",
+        "section": "Claw技能清单",
+        "locator": "Claw技能清单，L281",
+        "shortFact": "工作台安装列表和应用挂载列表彼此独立。",
+        "version": "2026-09-10"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-146",
+      "FDE-M4-100"
+    ],
+    "contentHash": "3b4788ef17a5592805278372e20289be3285227ae9301a35d322962741a24cb2",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-147",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确；其余夸大到本体、所有应用或所有用户，需加强相近操作竞争项。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129563",
+        "section": "删除已安装技能",
+        "locator": "删除已安装技能，L189-197",
+        "shortFact": "卸载引用不删除广场Skill本体。",
+        "version": "2026-09-10"
+      }
+    ],
+    "difficultyConcern": "三个错误均扩大到其他对象全量删除，缺少合理卸载/删除差异。",
+    "duplicateGroup": [],
+    "contentHash": "621ff76598160aa4b53582c9b175968705455293841b30539431b8f4f81796f7",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-148",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B正确；普通文本不等同资源插入，未挂载/仅工作台安装不完成应用绑定。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129563",
+        "section": "Claw调试调用",
+        "locator": "Claw调试调用，L282-302",
+        "shortFact": "可在@资源菜单插入已配置技能胶囊。",
+        "version": "2026-09-10"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "ee3e70bcf2af6f6924240f7642ccaa8e2794ed38b15a6dbd142d5475a08dbf76",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-149",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；不得扩大成空间或所有应用共享。与应用级ENV语义须明确区分，题干已经限工作台。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129563",
+        "section": "环境变量",
+        "locator": "环境变量，L214、226-228",
+        "shortFact": "工作台密钥按当前用户配置，加密保存且调用时注入。",
+        "version": "2026-09-10"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "720b78bba600faa27b1f5650a58187bbc54d148241921b3e67c72a40a71faf1d",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-150",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B/C/D成立；A忽略外部API凭证。与M4-101同导出路径但包含来源限制。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129563",
+        "section": "导出",
+        "locator": "导出，L331、364、379、387-389",
+        "shortFact": "原生技能可导出ZIP；其他来源去源平台，目标配置另核。",
+        "version": "2026-09-10"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "ab4365d38a40554e82b29a1ae6340cfdb0c5f64ebff4798b7c3ab08dfaded387",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-151",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/B/C正确；D挂载即每轮全运行是明显绝对干扰。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129563",
+        "section": "Claw清单",
+        "locator": "Claw清单，L45-46、252-266",
+        "shortFact": "应用可添加、看版本及移除技能，运行时按需调用。",
+        "version": "2026-09-10"
+      }
+    ],
+    "difficultyConcern": "唯一错误“每轮全部运行”过弱。",
+    "duplicateGroup": [],
+    "contentHash": "0c2d265f127ca6045c39f5d5998ec5c41ba9557a44e38bb5ccce476b4ef306a3",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-152",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；其他选项分别多绑、独占、关闭前提。题干标2026-09-15，旧页面不同隔离描述不适用。 版本优先级：采用138162的2026-09-15新版，不用旧122457“天然应用隔离”描述否定新版库共享。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "section": "绑定规则",
+        "locator": "绑定规则，L71-81",
+        "shortFact": "单应用只能绑定一个兼容类型记忆库。",
+        "version": "2026-09-15"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "99df5fd1d5a84a2574e37335d40b908043e192ff0860a97e3fe1d675db6ba250",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-153",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；用户ID和名称不改变类型，改绑不转型。B同名干扰较弱但A/D有真实混淆价值。 版本优先级：采用138162的2026-09-15新版，不用旧122457“天然应用隔离”描述否定新版库共享。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "section": "记忆库类型",
+        "locator": "记忆库类型，L71-79",
+        "shortFact": "Claw与其他三模式分两类，不互绑或跨类迁移。",
+        "version": "2026-09-15"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "6e349b3b6e444e5dc5c6985283133940f2f7d791a05ae5c380d955d0a941f37c",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-154",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；自动全量复制、持续同步、只切读不切写均不符。旧M1-060已退役，不计当前重复。 版本优先级：采用138162的2026-09-15新版，不用旧122457“天然应用隔离”描述否定新版库共享。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "section": "更换应用记忆库",
+        "locator": "更换应用记忆库，L133",
+        "shortFact": "改绑切换读写范围，不搬旧数据。",
+        "version": "2026-09-15"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "8938c80791ea84886bca6101ec4e46e1b9fe358d8cad8b51b2bf898d34802199",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-155",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C正确；A/B夸大删除/解绑，D只禁写不符。与M1-058完全同题。 独立目标核查：完全同目标：关闭长期记忆停止读写但不删除。 版本优先级：采用138162的2026-09-15新版，不用旧122457“天然应用隔离”描述否定新版库共享。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "section": "开关长期记忆",
+        "locator": "开关长期记忆，L129-133",
+        "shortFact": "关闭后停止读写，保留数据和绑定。",
+        "version": "2026-09-15"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-155",
+      "FDE-M1-058"
+    ],
+    "contentHash": "4bce72d3a3c0ec8c236a8183f6397c4011e0c58b6b6a27eaea2618a9410d3d53",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-156",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/B/D正确；C跨用户共享错误。实质组合M1-056/057，新增题型不构成新目标。 独立目标核查：将库×终端用户及跨绑定应用共享两个既有目标组合。 版本优先级：采用138162的2026-09-15新版，不用旧122457“天然应用隔离”描述否定新版库共享。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "section": "隔离维度",
+        "locator": "隔离维度，L41",
+        "shortFact": "库与终端用户共同确定隔离；同用户同库可跨应用一致。",
+        "version": "2026-09-15"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-156",
+      "FDE-M1-056",
+      "FDE-M1-057"
+    ],
+    "contentHash": "afc2de52283ca1def5fba937da21e3ffc82556b011eb5dc34a0d504c54ac4728",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-157",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B/C正确；A/D只开一侧均不足，需保留Claw限定，题干已满足。 版本优先级：采用138162的2026-09-15新版，不用旧122457“天然应用隔离”描述否定新版库共享。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "section": "摘要开关",
+        "locator": "摘要开关，L136、148、171",
+        "shortFact": "摘要注入需库端生成和应用端引用同时开启。",
+        "version": "2026-09-15"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "1811cd017cfe117986ca8aef93e50bc0dbd3a644a8baf035972e8e7856350cfd",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-158",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D正确；不能把受理当完成、把实例当触发器或AppKey。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "section": "事件触发执行",
+        "locator": "事件触发执行，L325",
+        "shortFact": "返回instance_id只表明受理，并可用于查询。",
+        "version": "2026-08-11"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "ad44eccb9e76d1635155be5f526ea5b86b55b61ec339f88b805a3347307be13f",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-159",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B正确；POST会另触发，体验链接非此接口，实例ID不是鉴权令牌。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "section": "查询执行情况",
+        "locator": "查询执行情况，L328-334",
+        "shortFact": "同URL用GET带实例ID及Bearer查询状态结果。",
+        "version": "2026-08-11"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "bf1f91ba2696efabd7aa4212b37aa0d34b7eee9df3497c1ab71975a4ca2020ae",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-160",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D正确；A/C混淆消息和执行，B假设默认推送目的地。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "section": "公共字段",
+        "locator": "公共字段，L264",
+        "shortFact": "不推送仍调度，记录在日志，无主动消息。",
+        "version": "2026-08-11"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "23479475dc195e6cdb842adf4609431aa6660a3233be7532d52a45af8f80d566",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-161",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D正确；A/B/C均虚构调度改变，基础操作界定。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "section": "管理触发器",
+        "locator": "管理触发器，L356",
+        "shortFact": "立即运行只额外执行一次，不改调度计划。",
+        "version": "2026-08-11"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "7fea29999044ddfa31b28a8f9b706214085ef76759b67bb575e14e73b3fcfe3f",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-162",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/D正确；B低于最小间隔，C否定表达式；应提示时区跟企业设置但本题未涉及。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "section": "定时频率",
+        "locator": "定时频率，L287-300",
+        "shortFact": "支持单次、多日每周、小时间隔及Cron。",
+        "version": "2026-08-11"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "96b1c36d493ddabd08aef5b80e548e7a9c9ed6ce0d51c9f905da34c2748e6209",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-163",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B/D正确；C把暂停等同删除，维护行为界定清楚。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "section": "管理触发器",
+        "locator": "管理触发器，L354-358",
+        "shortFact": "可编辑、暂停、查最近执行；删除立即废URL及Token。",
+        "version": "2026-08-11"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "4574600d72c9d6b43b685c974b1ba88c6d6271e26489775b7e249d2899e3f6ca",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-164",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A直接处理调用冲突；其他三项是真实但不同阶段的设置，干扰合理。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104206",
+        "section": "意图达成优先级",
+        "locator": "意图达成优先级，L289-291",
+        "shortFact": "问答和工作流高度相似时可设优先级。",
+        "version": "2026-07-21"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "587380e65b81c23b0315e27589386e44bc8ba2dab817d512f4e67b55fcf42806",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-165",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B正确且题干不声称跨所有场景性能保证；C/D明显混淆职责或否认差异。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "section": "重排模型",
+        "locator": "重排模型，L126-128",
+        "shortFact": "文档将youtu-rerank定位为轻量快速。",
+        "version": "2026-08-21"
+      }
+    ],
+    "difficultyConcern": "C任意反思模型等同重排、D仅名称不同容易排除；建议性能目标与配置约束场景。",
+    "duplicateGroup": [],
+    "contentHash": "717d89898881b2029dae247ae8722b0ea2eb54145390e9a673e2fc88eb2077a6",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-166",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；A/B/D分别混淆推荐区间、下限和默认值，属于版本敏感配置题。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "section": "反思轮数",
+        "locator": "反思轮数，L147-161",
+        "shortFact": "允许0至10轮，默认3，推荐1至3。",
+        "version": "2026-08-21"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "f4f446d1b4b2d2952b09bdfd4f2ec773d192fde5f0a0122bd4581a825b097bde",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-167",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确；B轮数不控集合，C/D分别全量与删除手段的极端错误，需改合理范围配置干扰。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "section": "检索范围",
+        "locator": "检索范围，L132-140",
+        "shortFact": "可选整库或库内指定知识。",
+        "version": "2026-08-21"
+      }
+    ],
+    "difficultyConcern": "提高轮数/删除其余文档/只能全账户均明显不替代范围设置。",
+    "duplicateGroup": [],
+    "contentHash": "11fbbb930aae32777ef4bc783bdac98497916d8d77798176ad719675e49916c0",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-168",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/B/C正确；D成本必降且零错是极弱干扰。与M1-017同成本目标。 独立目标核查：同目标：反思检索增Token/耗时成本。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "section": "反思配置",
+        "locator": "反思配置，L153-161",
+        "shortFact": "更多迭代伴随延迟和Token增加，应实测取舍。",
+        "version": "2026-08-21"
+      }
+    ],
+    "difficultyConcern": "必降成本且零错误是极弱干扰，重复M1成本目标。",
+    "duplicateGroup": [
+      "FDE-M3-168",
+      "FDE-M1-017"
+    ],
+    "contentHash": "5d6c46c9b7e07f690d6f508709c13f06a096828b20cf506d54e7f7195ff3e3e0",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-169",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/B/C正确；D混淆轮数与范围。与M4-009同组合分流目标。 独立目标核查：同目标：按复杂度组合传统RAG和Agentic RAG。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "section": "工作流引导",
+        "locator": "工作流引导，L170-182",
+        "shortFact": "可按意图分流，简单问答节点、复杂AgenticRAG工具。",
+        "version": "2026-08-21"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-169",
+      "FDE-M4-009"
+    ],
+    "contentHash": "ec2dbefabaae502d881adbf23f1a4bf0f24c93820d009b9ec928fdb1089b600d",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-170",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D有新版明确依据；旧119195创建教程更新时间更早，不应覆盖退役声明。仅作历史迁移认识。 考纲虽提Schema，但未提供考试冻结版本；已退役操作仅作存量迁移背景，不包装成新建配置要求。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123555",
+        "section": "页首退役声明",
+        "locator": "页首退役声明，L28",
+        "shortFact": "2026-08-27下架旧Schema和检索Agent，存量可继续。",
+        "version": "2026-09-16"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123555",
+        "section": "页首退役声明",
+        "locator": "页首退役声明，L28",
+        "shortFact": "已下架旧Schema和检索Agent；存量可继续，替代方向为Agentic RAG。",
+        "version": "2026-09-16"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "8440c18418a0070f5c9723e694c4fc1bb0b98b016b8d103d5b19bef1a0d797f0",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-171",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D在限定存量语境有依据；A/B/C均擅增条件。退役流程不纳入新建应用常规操作考试池。 考纲虽提Schema，但未提供考试冻结版本；已退役操作仅作存量迁移背景，不包装成新建配置要求。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123555",
+        "section": "结构化数据",
+        "locator": "结构化数据，L30-32",
+        "shortFact": "旧知识库Schema不要求对数据库生成。",
+        "version": "2026-09-16"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123555",
+        "section": "页首退役声明",
+        "locator": "页首退役声明，L28",
+        "shortFact": "已下架旧Schema和检索Agent；存量可继续，替代方向为Agentic RAG。",
+        "version": "2026-09-16"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "bed41031b1f941b9a9e12b0149c4de3aeb8df5110deb34c8aedcadb7c318e35d",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-172",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/B/C符合存量文档描述，D访问凭证完全不同类。历史学习且干扰偏弱。 考纲虽提Schema，但未提供考试冻结版本；已退役操作仅作存量迁移背景，不包装成新建配置要求。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123555",
+        "section": "非结构化文档",
+        "locator": "非结构化文档，L34-40",
+        "shortFact": "旧文档Schema含文件名、摘要及可选标签。",
+        "version": "2026-09-16"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123555",
+        "section": "页首退役声明",
+        "locator": "页首退役声明，L28",
+        "shortFact": "已下架旧Schema和检索Agent；存量可继续，替代方向为Agentic RAG。",
+        "version": "2026-09-16"
+      }
+    ],
+    "difficultyConcern": "数据库访问密钥与结构摘要无关，且属于已退役流程。",
+    "duplicateGroup": [],
+    "contentHash": "dd06a86518d30a984e30cd2c293efbb3fa6ade13c61f8d253fa8a9f08d7f4e87",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-173",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D正确；文档解析、图文理解为不同阶段，B描述本身也错误。与M4-146同故障定位目标。 独立目标核查：同职责：标准模式思考模型负责意图识别。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112876",
+        "section": "标准模式",
+        "locator": "标准模式，L35",
+        "shortFact": "思考模型承担标准模式意图识别。",
+        "version": "2026-05-06"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-173",
+      "FDE-M4-146"
+    ],
+    "contentHash": "2f370f4cbf483cdf38ffedfc275d81c0261e9340fa57582f686c8a5bef667491",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-174",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D正确；Embedding/重排/文档解析不生成最终文本，基础职责识别。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112876",
+        "section": "标准模式",
+        "locator": "标准模式，L37",
+        "shortFact": "生成模型负责阅读理解及答案生成。",
+        "version": "2026-05-06"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "03f5e4054e5595e312ecf128503c8ac04b81e7127d9de26fd468d93cb1ad1325",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-175",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B正确；A是合理近邻混淆，C/D其他阶段。与M4-132部分重复但输入来源辨别明确。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112876",
+        "section": "多模态问答",
+        "locator": "多模态问答，L39-41",
+        "shortFact": "用户上传图片由多模态问答处理，召回图文由阅读理解处理。",
+        "version": "2026-05-06"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "dc502960a51c75a56fff37101dd19c17857ec5f9bfede34a87670e878746baff",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-176",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；其余职责不同，尤其图像问答不等于文档解析。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112876",
+        "section": "实时文档解析",
+        "locator": "实时文档解析，L46",
+        "shortFact": "对话临时上传文档由实时文档解析模型处理。",
+        "version": "2026-05-06"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "0284f3c4bc0e91ff62a1b90753adb824a9182e8a365536f856b0f2dd84a40a66",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-177",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/C/D成立；B把思考模型当存储处理，单一错误过弱；A与178重复。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112876",
+        "section": "模型职责",
+        "locator": "模型职责，L41-45",
+        "shortFact": "改写、图文阅读、一键优化各有对应环节。",
+        "version": "2026-05-06"
+      }
+    ],
+    "difficultyConcern": "思考模型负责全部切片存储不是近邻职责，多个正确项又复用前题。",
+    "duplicateGroup": [],
+    "contentHash": "00a9e92d44ef2c2e2c4d0d8ed5e2a921efc119b855e81dfc44bdb1e7a6d63034",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-178",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B/D正确且同义；A改原文、C取得他人权限均明显无关。与M4-139同指代补全目标。 独立目标核查：同目标：利用上下文改写补全指代。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112876",
+        "section": "Prompt改写",
+        "locator": "Prompt改写，L43",
+        "shortFact": "利用历史补全省略和指代，让当前问题语义完整。",
+        "version": "2026-05-06"
+      }
+    ],
+    "difficultyConcern": "改原文/获他人权限是无关动作；两正确项都表示语义补全。",
+    "duplicateGroup": [
+      "FDE-M3-178",
+      "FDE-M4-139"
+    ],
+    "contentHash": "6fdb3389b5afc4e3384187b7208a4ffb72c8948a176541a40a8e58e827bd265c",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-179",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A符合现行四模式边界；B/C/D分别无依据扩展或绝对禁止。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104206",
+        "section": "编辑应用",
+        "locator": "编辑应用，L46-56",
+        "shortFact": "三种非Claw模式可互切，Claw不参与切换。",
+        "version": "2026-07-21"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "b9bd51852d07d8b18cee643db2d331920d3ce2b06ed70f6aaff8229c5d76bffd",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-180",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B正确；发布、关闭和默认全局共享均不能改变库类型。与M2-037完全同边界。 独立目标核查：同默认知识库仅供当前应用的边界。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104206",
+        "section": "知识",
+        "locator": "知识，L139-143",
+        "shortFact": "默认库仅归当前应用使用。",
+        "version": "2026-07-21"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-180",
+      "FDE-M2-037"
+    ],
+    "contentHash": "7f8cb9923bd02059cbbf6319eed45fb9e16f091e938b134a9070c891336bb573",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-181",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D正确；上下文、召回数量、后置重排不能替代词语映射，干扰同链路且合理。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104206",
+        "section": "同义词设置",
+        "locator": "同义词设置，L250",
+        "shortFact": "检索前用统一名称替换业务别称。",
+        "version": "2026-07-21"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "825224e1e40bdbe936cad24f00c7be2dd7e40ff3ecc7ea4fa40383f11e4ed7b6",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-182",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D正确；A忽视兜底，B利用无关摘要，C无依据关闭配置。两个开关条件清楚。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104206",
+        "section": "图片知识问答",
+        "locator": "图片知识问答，L266-274",
+        "shortFact": "开启相关开关且无相关知识时按兜底设置返回文案。",
+        "version": "2026-07-21"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "f79a97f80946b1a293ce598e580d5faf61cabbd6f68e048af77c1e072f35aeba",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-183",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C/D正确；A抹平默认库差异，B复制并非引用前提。与M2-035/037主要事实相同。 独立目标核查：同可共享库多对多与默认库区别，题型组合。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104206",
+        "section": "知识",
+        "locator": "知识，L141-143",
+        "shortFact": "非默认库可在同主账号下多对多关联应用。",
+        "version": "2026-07-21"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-183",
+      "FDE-M2-035",
+      "FDE-M2-037"
+    ],
+    "contentHash": "67aab1fbf7fab9c845ba46b1e2bc0e7ccd5cf67adb3ce7f9acba0e49c3b2c933",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-184",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C/D成立；C重复178，D重复164，A/B为绝对化干扰，应改独立配置目标。 结构化重复标记为部分/组合重复，不把同主题自动等同同题。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104206",
+        "section": "改写及优先级",
+        "locator": "改写及优先级，L278-291；联网L154",
+        "shortFact": "改写补全历史语义，优先级用于问答/工作流冲突，搜索可收费。",
+        "version": "2026-07-21"
+      }
+    ],
+    "difficultyConcern": "组合164及178已有事实；联网必不收费是绝对化干扰。",
+    "duplicateGroup": [
+      "FDE-M3-164",
+      "FDE-M3-178",
+      "FDE-M3-184"
+    ],
+    "contentHash": "8c55b39cc2b83d2a6ea7bf42f68aae38aa7257218903aef37a595fde2d950f65",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-185",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确；其余分别历史、时间、请求ID，字段名有强提示。与M1-093同概念。 独立目标核查：同系统变量当前输入与历史的定义。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122457",
+        "section": "系统变量表",
+        "locator": "系统变量表，L39",
+        "shortFact": "SYS.UserQuery表示当前轮输入。",
+        "version": "2025-11-18"
+      }
+    ],
+    "difficultyConcern": "字段英文直接暴露语义且重复M1-093。",
+    "duplicateGroup": [
+      "FDE-M3-185",
+      "FDE-M1-093"
+    ],
+    "contentHash": "81e226977c5654d6fb8ad28e7e97b018ae0c7232a5056f490d959f7e6bfca185",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-186",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C支持跨流程笔记；B/D局部，A系统时间不可自定义写入。应保留同终端用户范围说明。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122457",
+        "section": "应用变量",
+        "locator": "应用变量，L42",
+        "shortFact": "APP可在同应用不同工作流间读写。",
+        "version": "2025-11-18"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "f5a85c22b6dfe61015cfd184f4a4dd62684822e63748f8366aa7c951812c1b2b",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-187",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；同名节点输出/生成字段/别名不代表对WF存储赋值。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122457",
+        "section": "工作流变量",
+        "locator": "工作流变量，L48",
+        "shortFact": "WF在开始节点定义，经变量赋值节点更新。",
+        "version": "2025-11-18"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "e3ce77377b8c4abdb1df5a0f30a4a2d919f44990f85933deb641d5b4541ec844",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-188",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B正确；A描述、C request_id、D系统变量均非管理位置，干扰过弱。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122457",
+        "section": "环境变量",
+        "locator": "环境变量，L40",
+        "shortFact": "应用ENV敏感配置在变量与记忆编辑。",
+        "version": "2025-11-18"
+      }
+    ],
+    "difficultyConcern": "参数描述/request_id/系统变量非ENV配置入口，三个干扰偏离。",
+    "duplicateGroup": [],
+    "contentHash": "0b8611babbd6195fed9d4660389c74ce3af3be479769ff280e952dbae74d1a90",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-189",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B/C/D成立；A夸张到跨所有应用。与185/188、M4-201等部分重合但为词汇学习。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122457",
+        "section": "变量表",
+        "locator": "变量表，L39-48",
+        "shortFact": "SYS、ENV、API区分系统、环境和入参；WF限工作流。",
+        "version": "2025-11-18"
+      }
+    ],
+    "difficultyConcern": "A跨所有应用过度绝对，其余只记缩写，适合术语学习。",
+    "duplicateGroup": [],
+    "contentHash": "72e8173e5cd4dfa20bb2c63f92842992cf376b9889e5940a0e36141c65def82a",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-190",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/D正确；B错误全局化，C读取未执行输出不成立。输入目标重复032。 独立目标核查：同节点输入局部性；190另有输出向后传递，保留190作代表。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122457",
+        "section": "节点变量",
+        "locator": "节点变量，L49-50",
+        "shortFact": "输入局部使用，输出向后续节点传递。",
+        "version": "2025-11-18"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-190",
+      "FDE-M3-032"
+    ],
+    "contentHash": "c44dbf0d0292752900641bd3f4c48ae88e3113337f75e47bf7217d914d27478a",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-191",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；D华北是值，B列表也不是字段名，C否认可拆结构。与192同名值区分。 独立目标核查：纯名词换皮的字段名/标准值二分，保留191作代表。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112956",
+        "section": "名词解释",
+        "locator": "名词解释，L33-35",
+        "shortFact": "标签名称是业务字段，标准词是取值。",
+        "version": "2026-01-13"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-191",
+      "FDE-M3-192"
+    ],
+    "contentHash": "28576855e4503c7a46b1c8f27cd45f9b64a95aaafac9cd3b8c4516cefb1f8e4e",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-192",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确；把“区域/华北”换成“等级/高级版”，与191同一学习目标，名词换皮。 独立目标核查：纯名词换皮的字段名/标准值二分，保留191作代表。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112956",
+        "section": "名词解释",
+        "locator": "名词解释，L33-35",
+        "shortFact": "标准词表达字段值。",
+        "version": "2026-01-13"
+      }
+    ],
+    "difficultyConcern": "仅把191地区值换成产品等级值，不能算独立目标。",
+    "duplicateGroup": [
+      "FDE-M3-191",
+      "FDE-M3-192"
+    ],
+    "contentHash": "82ea96d6c1a29f8c09f3f7dac2021eac3aa0f4c87b2b19c9331bdc233ed45ef7",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-193",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；分类和问答相似问不维护该标签值关系，与应用Query同义词设置是不同位置。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112956",
+        "section": "标签同义词",
+        "locator": "标签同义词，L35",
+        "shortFact": "同一标准值可维护同义表达。",
+        "version": "2026-01-13"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "54e16e1b9af2b87114ea65e49e26471628ff421aeb1eb5a90b233a9b6251bd01",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-194",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B正确；其他项均假设系统自动处理引用，不符合正文。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112956",
+        "section": "删除标签",
+        "locator": "删除标签，L88",
+        "shortFact": "被文档或问答使用的标签不能直接删除。",
+        "version": "2026-01-13"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "ef710017c14d450587ffcc918ff22b5d787c813fe30484c4d5d5f8ca08aba449",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-195",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B/D有据；分类自动生成、提示词写入均跨配置层，过于容易排除。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112956",
+        "section": "新增标签",
+        "locator": "新增标签，L51-75",
+        "shortFact": "可手动新建，也可填模板批量导入。",
+        "version": "2026-01-13"
+      }
+    ],
+    "difficultyConcern": "分类自动生成标签/只改提示词入库是弱机制干扰。",
+    "duplicateGroup": [],
+    "contentHash": "5eabc498ae008fbe126bc653d368f190f68ea4f2fcbc5c75674ce9eec120c931",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-196",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B/D正确；MCP签名和模型输出字段不是同类知识对象，难度过低。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112956",
+        "section": "功能简介",
+        "locator": "功能简介，L29",
+        "shortFact": "知识标签可用于文档与问答。",
+        "version": "2026-01-13"
+      }
+    ],
+    "difficultyConcern": "MCP签名和JSON输出字段与知识对象无关。",
+    "duplicateGroup": [],
+    "contentHash": "d2b5dab35683d0a317a829c4849dae73867e928bd9ef6e29f3b941e93f63433f",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-197",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C正确；目录、检索参数、问答对分别是不同结构。与M1-091核心三类知识结构重叠。 独立目标核查：同GraphSchema的实体、属性、关系三类定义。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "GraphSchema",
+        "locator": "GraphSchema，L63-69",
+        "shortFact": "图谱结构定义实体、属性、关系。",
+        "version": "2026-02-12"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-197",
+      "FDE-M1-091"
+    ],
+    "contentHash": "dca08a718cbe452debb41b5d2a064f25f1f2c6c60d314bb7336aeb3d2fff89eb",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-198",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D正确；其余均把保存等同运行构建，三项干扰近似。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "构建设置",
+        "locator": "构建设置，L195、316",
+        "shortFact": "仅保存只暂存配置，构建/更新需另触发。",
+        "version": "2026-02-12"
+      }
+    ],
+    "difficultyConcern": "三错误项均把暂存配置等同实际构建，近同复述。",
+    "duplicateGroup": [],
+    "contentHash": "cf8ab724907fb924c6feb79fced54ac07d2577623be28d060e4dd04873b41233",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-199",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；排序、总量和关系类型不定位事实出处，场景明确。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "节点与关系详情",
+        "locator": "节点与关系详情，L255-258",
+        "shortFact": "参考来源可回查文档名及切片。",
+        "version": "2026-02-12"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "d3c455c37afeb3fc3059f2a70d4de27d37417873972b2e2f43f0707fe9032d38",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-200",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；导入、仅保存、收到提醒都不等同构建完成；与198同保存/执行边界但触发来源不同。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "知识图谱更新",
+        "locator": "知识图谱更新，L261-285",
+        "shortFact": "变更提示后需确认更新，才进入更新中。",
+        "version": "2026-02-12"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "aaf2c0588fd8070043032ec7b1e0c1ee56344891ad4d98baddc5489afcdfd3e0",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-201",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B/C/D成立；A尚未导入网页自动参与明显越界。与其他范围题形式重复，需更贴近范围组合干扰。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "知识范围",
+        "locator": "知识范围，L115-121",
+        "shortFact": "可按全库文档、指定文档或标签选择。",
+        "version": "2026-02-12"
+      }
+    ],
+    "difficultyConcern": "唯一错误未导入远程网页自动参与明显越界。",
+    "duplicateGroup": [],
+    "contentHash": "cacbc42b66a52279a385c9bff4f9490a9f0d4859b6fa4ea731306a906fa8cba4",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-202",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B/C正确；D已退役知识库Schema不是图谱前置依赖，需保留二者不同功能边界。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "图谱结构设置",
+        "locator": "图谱结构设置，L131-176",
+        "shortFact": "模板、自定义、AI扩展均是GraphSchema配置方式。",
+        "version": "2026-02-12"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "f75903a3ccc14304fd4eabc858f66bfd6b2131c23333fcb53f59f05a80cfa55c",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-203",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C正确；仅名/仅向量/无条件覆盖分别缺失主体功能，偏基础。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116451",
+        "section": "功能简介",
+        "locator": "功能简介，L30",
+        "shortFact": "可比较文档内容及衍生问答差异。",
+        "version": "2025-12-29"
+      }
+    ],
+    "difficultyConcern": "只比较文件名、仅向量排序、无条件覆盖均偏离对比，难度基础。",
+    "duplicateGroup": [],
+    "contentHash": "aba7137670670e7ccf07c80684af722ff7024d7c6b05d13d94e11245de8a3abc",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-204",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确；B/D把状态认错，C混淆结果完成与任务执行，适合基础状态学习。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116451",
+        "section": "任务状态",
+        "locator": "任务状态，L70-74",
+        "shortFact": "处理中是异步任务执行阶段的临时状态。",
+        "version": "2025-12-29"
+      }
+    ],
+    "difficultyConcern": "“处理中”含义可从自然语言推得，建议换状态与可用操作组合。",
+    "duplicateGroup": [],
+    "contentHash": "1014bdeed8f762bc3a907b1a3a92f3ac451771eebc7377ce757da727be02e74f",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-205",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B正确；旧输入可继续、保证可比、自动完成都无支持，依赖边界明确。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116451",
+        "section": "任务状态",
+        "locator": "任务状态，L73",
+        "shortFact": "源文档删除会使对比任务失效。",
+        "version": "2025-12-29"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "ec5ce1741f295d71c171f9e2fa2a79789c03dab54a0257369a58fe34c6cfb833",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-206",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确；B/C否定能力，D改名不产生问答内容，干扰明显弱。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116451",
+        "section": "问答操作",
+        "locator": "问答操作，L109、124-126",
+        "shortFact": "能按新文档差异片段生成问答。",
+        "version": "2025-12-29"
+      }
+    ],
+    "difficultyConcern": "改名生成新增问答是无关干扰，其他两错误是直接否定功能。",
+    "duplicateGroup": [],
+    "contentHash": "cc90cb557eb6f2ed34070412af18bc41884262c001a790ed9574015b62e4eaa4",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-207",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A/B/D正确；C比较后必须删两份不是合理近邻操作，建议改写。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116451",
+        "section": "任务处理",
+        "locator": "任务处理，L78-86",
+        "shortFact": "待处理任务可逐条或批量处理并查看差异。",
+        "version": "2025-12-29"
+      }
+    ],
+    "difficultyConcern": "对比后必须删两份文档是无依据且明显错误。",
+    "duplicateGroup": [],
+    "contentHash": "5f667da6bb28de37c70ee69e37b00d7e9178de9d9147046699a1333643325509",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-208",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B/C成立；A/D为绝对否定。B重复206，保留关联仍有新增独立目标。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116451",
+        "section": "问答操作",
+        "locator": "问答操作，L109",
+        "shortFact": "既可按差异生成，也可将删文档问答关联保留文档。",
+        "version": "2025-12-29"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "63d102a3380d7ac5339886bab92e484bff6d6590e359eca9fdda3923141702dc",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-209",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D正确；拼接、随机、末项不符规则。与211/213存在明显覆盖。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117358",
+        "section": "聚合",
+        "locator": "聚合，L46",
+        "shortFact": "组内按顺序返回首个非空变量。",
+        "version": "2025-08-17"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "40ada47f921265dd1438f462cc823a1cc6dfc87f0794bffa0ae1a72475a55240",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-210",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确；B/D任意指定类型，C忽略约束。与M4-054部分重合但类型目标明确。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117358",
+        "section": "聚合",
+        "locator": "聚合，L46",
+        "shortFact": "组类型取首变量，后续只能同类型。",
+        "version": "2025-08-17"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "7637c0acd7ac08eb7d7f6c888b8aad2ed03621e8e0d1f7f168bd82cd2271f1a4",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-211",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C正确；B全拼接不符，D伪造输出错误。与M4-052完全同统一分支出口目标。 独立目标核查：完全同目标：互斥分支聚合为下游统一出口。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117358",
+        "section": "节点功能",
+        "locator": "节点功能，L32",
+        "shortFact": "互斥分支可经组聚合形成统一后续引用。",
+        "version": "2025-08-17"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [
+      "FDE-M3-211",
+      "FDE-M4-052"
+    ],
+    "contentHash": "8f45633ede76374bba245d6d951e3ddf6bff73b3c573f28a47c5b1a8a134aa08",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-212",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B正确；A全自动汇出、C按内容取名、D另增字段均不符合接口定义。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117358",
+        "section": "输出变量",
+        "locator": "输出变量，L49",
+        "shortFact": "业务输出按配置Group生成，不任意新增。",
+        "version": "2025-08-17"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "991cd410490788f45cf5015fd5977ae3938dda38d8ee447a9e16214283b42da4",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-213",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B/D正确；A/C分别否定同类型/首非空规则。与209/210合并重测，仅多Group是新细节。 结构化重复标记为部分/组合重复，不把同主题自动等同同题。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117358",
+        "section": "聚合",
+        "locator": "聚合，L46",
+        "shortFact": "支持多个组，各组独立按顺序取非空值。",
+        "version": "2025-08-17"
+      }
+    ],
+    "difficultyConcern": "把209/210已有规则拼成多选，新增多个组不足以形成独立实质难点。",
+    "duplicateGroup": [
+      "FDE-M3-209",
+      "FDE-M3-210",
+      "FDE-M3-213"
+    ],
+    "contentHash": "9aa0bf4810ac6ced4c79b77437ae976dc634fc3c7e0b08bbc357b83bf288f683",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-214",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/C正确；B把状态当业务值，D无新增输出能力，接口边界明确。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122550",
+        "section": "输出变量",
+        "locator": "输出变量，L50",
+        "shortFact": "isSuccess为布尔成功标识，Error承载错误，不支持任增。",
+        "version": "2025-08-17"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "b000b7373c3544cd6b2117decc91d8e995d1132b77feb4c607e1fe389bb339c3",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-215",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D正确；把全文当值、空串充数、跳过检查均显然背离必填。与216同开关二分目标。 独立目标核查：同一个必填开关的正反重测；两题皆因过弱先学习用途。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112962",
+        "section": "是否必填",
+        "locator": "是否必填，L204",
+        "shortFact": "必填字段缺失会生成追问。",
+        "version": "2026-01-26"
+      }
+    ],
+    "difficultyConcern": "缺失必填值与跳过/空串充数明显相反，需用真实历史值/校验失效场景增强。",
+    "duplicateGroup": [
+      "FDE-M3-215",
+      "FDE-M3-216"
+    ],
+    "contentHash": "06516fbcff6d27e244aa29b90ab326ee62839a6d99d034f91235a254c65b4a03",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-216",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确；与215反面重测同一配置，B/C/D也均极端。 独立目标核查：同一个必填开关的正反重测；两题皆因过弱先学习用途。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112962",
+        "section": "是否必填",
+        "locator": "是否必填，L204",
+        "shortFact": "可选字段未给不因此追问。",
+        "version": "2026-01-26"
+      }
+    ],
+    "difficultyConcern": "同215反面重测必填开关；干扰均极端。",
+    "duplicateGroup": [
+      "FDE-M3-215",
+      "FDE-M3-216"
+    ],
+    "contentHash": "f2babc1b91f11ee1540faa435cfcde5bb77d2a88dff54d4d5f0dbfa2fb04606e",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-217",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C正确；A/B/D均明显弱描述；与M4-021同参数定义目标。 独立目标核查：同目标：概念定义、取值要求和示例指导提取。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112962",
+        "section": "参数描述",
+        "locator": "参数描述，L202",
+        "shortFact": "建议描述字段概念及取值要求。",
+        "version": "2026-01-26"
+      }
+    ],
+    "difficultyConcern": "三个错误项均不提供有效描述，建议真实易混格式要求。",
+    "duplicateGroup": [
+      "FDE-M3-217",
+      "FDE-M4-021"
+    ],
+    "contentHash": "0af7e7ea80f64b15e9d80c0ee1f11b914e8c5596a3a1ff1a0cca3e81df14a8ba",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-218",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C有直接数字规则；其他项只给正常/可选/非空情形，需重写更合理轮次边界干扰。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112962",
+        "section": "异常处理",
+        "locator": "异常处理，L264",
+        "shortFact": "三次问询未收齐必填项可触发异常处理。",
+        "version": "2026-01-26"
+      }
+    ],
+    "difficultyConcern": "三错误均为正常/非必填情形，没比较实际轮数和异常开关。",
+    "duplicateGroup": [],
+    "contentHash": "78bc052695a60536d875b024adad3bd64e25be5302235f4323b40db2af891798",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-219",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/D正确；B/C把示例当真实输入或默认值，基础但同机制区分成立。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112962",
+        "section": "收集示例",
+        "locator": "收集示例，L203",
+        "shortFact": "正例示意可取值，反例示意不应提取值。",
+        "version": "2026-01-26"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "407648002e0b2fb652335b5c59e2b4b85b1bfe01488e1583dd7ddbcf7967c6ed",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  },
+  {
+    "id": "FDE-M3-220",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B/C正确；D所有前序输出自动传入不符默认列举，限定默认范围明确。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112962",
+        "section": "默认上下文",
+        "locator": "默认上下文，L182",
+        "shortFact": "默认传当前输入、历史及当前时间供参数提取。",
+        "version": "2026-01-26"
+      }
+    ],
+    "difficultyConcern": null,
+    "duplicateGroup": [],
+    "contentHash": "6f26195f75d8b095f8cd21c8210fe12ec9e7ab6e78be041c83e14aaf3cd6305a",
+    "reviewer": "foundations_modes (AI，非腾讯或人工专家)",
+    "originalAuthor": "core_features",
+    "verifiedAt": "2026-10-09",
+    "examAlignment": "考纲M3：ADP核心功能与应用搭建（官方指南2026-09-10，知识点占比与考核重点，L64）"
+  }
+]

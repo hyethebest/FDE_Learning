@@ -1,0 +1,917 @@
+{
+  "seed": 20261009,
+  "selection": "每模块按稳定ID排序，Python random.Random(20261009)，依次抽2单选+1多选",
+  "questions": [
+    {
+      "id": "FDE-M1-026",
+      "module": "M1",
+      "topic": "提示词/产物规范",
+      "type": "single",
+      "stem": "报告结构十分复杂且需被多个任务复用，官方建议可把规范封装为什么？",
+      "options": {
+        "A": "把规范全部混入工具返回值",
+        "B": "仅靠模型默认风格无需显式约束",
+        "C": "产物规范Skill",
+        "D": "为每个任务复制一份完整聊天历史"
+      },
+      "answer": [
+        "C"
+      ],
+      "explanation": "复杂且可复用的产物结构和质量规范可封装为Skill，由负责交付的Agent使用。",
+      "distractors": {
+        "D": "历史不是规范模块",
+        "A": "工具结果不是清晰规范入口",
+        "B": "复杂规范应明确表达"
+      },
+      "difficulty": "进阶",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/134193",
+          "title": "多Agent协同",
+          "section": "各配置项的职责与边界",
+          "fact": "复杂且可复用的产物结构和质量规范可封装为Skill，由负责交付的Agent使用。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-08-14"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "foundations_modes",
+        "reviewer": "safety",
+        "notes": [
+          "134193复杂可复用产物规范可封装Skill。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "d77b76a594df50f528964c54d5212f43eb8da863154f8509cdaeef776ae3d28d"
+      }
+    },
+    {
+      "id": "FDE-M1-060",
+      "module": "M1",
+      "topic": "记忆/更换存储范围",
+      "type": "single",
+      "stem": "应用更换到另一个同类型记忆库后，原库数据会怎样？",
+      "options": {
+        "A": "不会自动迁移到新库",
+        "B": "自动将原库全部用户内容合并到新库",
+        "C": "原库数据立即全部删除",
+        "D": "新旧两库被自动双向同步"
+      },
+      "answer": [
+        "A"
+      ],
+      "explanation": "更换记忆库改变应用读写范围，原库内容不会自动迁移，需区分绑定与数据迁移。",
+      "distractors": {
+        "B": "文档明确不自动迁移",
+        "C": "原数据不因更换被清空",
+        "D": "绑定更换不等于同步"
+      },
+      "difficulty": "综合",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/138162",
+          "title": "记忆库",
+          "section": "应用中开启长期记忆",
+          "fact": "更换记忆库改变应用读写范围，原库内容不会自动迁移，需区分绑定与数据迁移。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-09-15"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "foundations_modes",
+        "reviewer": "safety",
+        "notes": [
+          "138162更换同类库不自动迁移原数据。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "d70ec63d3704e224884999fc4fd1bde2d2a67c9bb979cf0e3644e08471816f36"
+      }
+    },
+    {
+      "id": "FDE-M1-076",
+      "module": "M1",
+      "topic": "Agent/可调用契约",
+      "type": "multiple",
+      "stem": "自定义工具为了被智能体可靠理解，应明确哪些内容？",
+      "options": {
+        "A": "能力描述",
+        "B": "输入和输出参数",
+        "C": "调用方式",
+        "D": "只写“万能工具”而不提供参数"
+      },
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "工具要清楚定义名称描述、输入输出及调用方式，智能体才能在相应上下文选择它。",
+      "distractors": {
+        "D": "模糊名称不能替代调用契约"
+      },
+      "difficulty": "基础",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/115872",
+          "title": "连接器与工具介绍",
+          "section": "自定义工具",
+          "fact": "工具要清楚定义名称描述、输入输出及调用方式，智能体才能在相应上下文选择它。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-07-16"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "foundations_modes",
+        "reviewer": "safety",
+        "notes": [
+          "115872工具名称描述输入输出及调用方式均直接支持。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "4995b1c93743e1ace8a0ba4b96b04ccaa3054f59e4548ea09795fe2a8805e2e2"
+      }
+    },
+    {
+      "id": "FDE-M2-022",
+      "module": "M2",
+      "topic": "Claw/Skills区别",
+      "type": "single",
+      "stem": "四模式比较中，原生添加Skills的能力属于哪种模式？",
+      "options": {
+        "A": "标准模式原生支持与Claw相同Skills挂载",
+        "B": "单工作流模式本身就是Skills容器",
+        "C": "Claw",
+        "D": "Multi-Agent原生Skills与Claw完全相同"
+      },
+      "answer": [
+        "C"
+      ],
+      "explanation": "官方模式对比把Skills列为Claw能力；不能将它与其他模式的工具或工作流能力混同。",
+      "distractors": {
+        "D": "模式对比不支持该说法",
+        "A": "标准模式不支持该原生能力",
+        "B": "工作流节点不等于Skills挂载"
+      },
+      "difficulty": "基础",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/134194",
+          "title": "什么是Claw模式？",
+          "section": "与其他模式的区别",
+          "fact": "官方模式对比把Skills列为Claw能力；不能将它与其他模式的工具或工作流能力混同。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-07-15"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "foundations_modes",
+        "reviewer": "safety",
+        "notes": [
+          "134194比较表仅Claw原生支持Skills；题干限定原生能力。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "d12111e76524fc073fa9f2fb7ddf9415fe0a95518782c5c89e658aeed66de6a9"
+      }
+    },
+    {
+      "id": "FDE-M2-006",
+      "module": "M2",
+      "topic": "定位/端到端价值",
+      "type": "single",
+      "stem": "为什么ADP不宜被等同为“一个模型调用接口”？",
+      "options": {
+        "A": "ADP仅把文档转换为向量后结束服务",
+        "B": "ADP只负责转发模型请求而不提供应用运营",
+        "C": "它还覆盖应用配置、调试、评测、发布和运营",
+        "D": "ADP只在模型之前添加一段系统提示词"
+      },
+      "answer": [
+        "C"
+      ],
+      "explanation": "ADP的一站式框架贯穿应用全生命周期，模型调用是其中的能力环节。",
+      "distractors": {
+        "D": "还有流程、知识、评测等",
+        "A": "还有生成与应用链路",
+        "B": "有运营管理能力"
+      },
+      "difficulty": "综合",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/104193",
+          "title": "产品概述",
+          "section": "完整的一站式开发与运营框架",
+          "fact": "ADP的一站式框架贯穿应用全生命周期，模型调用是其中的能力环节。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-06-15"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "foundations_modes",
+        "reviewer": "safety",
+        "notes": [
+          "全生命周期包括配置调试评测发布运营；答案范围与源一致。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "692f78e6422cdb5d1f32c3f7c475e6fd2b12c6d54cdc67d4ad3398c1db253526"
+      }
+    },
+    {
+      "id": "FDE-M2-054",
+      "module": "M2",
+      "topic": "模式/知识消费路径",
+      "type": "multiple",
+      "stem": "切到目标模式后，哪些知识使用方式符合模式差异表？",
+      "options": {
+        "A": "所有模式无需任何相关配置都自动使用全部知识",
+        "B": "切模式会把知识管理资产清空再重建",
+        "C": "单工作流中通过知识相关节点使用知识",
+        "D": "Multi-Agent选择知识库问答工具启用知识问答"
+      },
+      "answer": [
+        "C",
+        "D"
+      ],
+      "explanation": "知识管理资产保持，消费路径依模式而定；单工作流和Multi-Agent的知识入口不同。",
+      "distractors": {
+        "A": "有相应节点或工具配置要求",
+        "B": "资产范围与状态保留"
+      },
+      "difficulty": "综合",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/122549",
+          "title": "智能体应用及其四种模式",
+          "section": "应用模式切换/知识管理",
+          "fact": "知识管理资产保持，消费路径依模式而定；单工作流和Multi-Agent的知识入口不同。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-08-04"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "foundations_modes",
+        "reviewer": "safety",
+        "notes": [
+          "模式表明确单工作流知识节点和Multi-Agent知识问答工具；与021资产保留目标区分。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "38592ea3bfbff9f9d30c927770af892768b4ef26065f724201770fca20419adf"
+      }
+    },
+    {
+      "id": "FDE-M3-205",
+      "module": "M3",
+      "topic": "对比失效原因",
+      "type": "single",
+      "stem": "对比任务相关文档被删除后，任务会怎样？",
+      "options": {
+        "A": "仍保证可比较原始内容",
+        "B": "变为已失效",
+        "C": "继续沿用被删文档的旧任务输入自动生成新比较结果",
+        "D": "自动转成完成状态"
+      },
+      "answer": [
+        "B"
+      ],
+      "explanation": "文档删除会使对比任务失效，因其依赖的原始对象已不存在。",
+      "distractors": {
+        "A": "不保证保留可比较原文。",
+        "C": "任务依赖的原始文档删除会导致失效，不能假定旧输入可继续处理。",
+        "D": "失效不等于成功完成。"
+      },
+      "difficulty": "进阶",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/116451",
+          "title": "文档对比任务",
+          "section": "处理文档对比任务",
+          "fact": "文档删除会使对比任务失效，因其依赖的原始对象已不存在。",
+          "verifiedAt": "2026-10-09",
+          "version": "2025-12-29"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "core_features",
+        "reviewer": "industry_delivery",
+        "notes": [
+          "相关文档删除使依赖它的对比任务失效，不等于正常完成。 已复核修订后同配置阶段干扰，答案与解析一致。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "ec5ce1741f295d71c171f9e2fa2a79789c03dab54a0257369a58fe34c6cfb833"
+      }
+    },
+    {
+      "id": "FDE-M3-176",
+      "module": "M3",
+      "topic": "上传文档解析",
+      "type": "single",
+      "stem": "用户在问答中临时上传文档，其解析由哪类模型负责？",
+      "options": {
+        "A": "实时文档解析模型",
+        "B": "知识库重排序模型",
+        "C": "Prompt改写模型",
+        "D": "多模态问答模型处理图片"
+      },
+      "answer": [
+        "A"
+      ],
+      "explanation": "实时文档解析模型用于对话上传文件的解析，不等于知识候选重排序。",
+      "distractors": {
+        "B": "重排序负责候选排序。",
+        "C": "改写负责问题语义补全。",
+        "D": "本题是文档解析而非用户图片问答。"
+      },
+      "difficulty": "进阶",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/112876",
+          "title": "模型介绍",
+          "section": "标准模式",
+          "fact": "实时文档解析模型用于对话上传文件的解析，不等于知识候选重排序。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-05-06"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "core_features",
+        "reviewer": "industry_delivery",
+        "notes": [
+          "实时文档解析模型专用于对话上传文档，与离线库解析任务区分。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "0284f3c4bc0e91ff62a1b90753adb824a9182e8a365536f856b0f2dd84a40a66"
+      }
+    },
+    {
+      "id": "FDE-M3-091",
+      "module": "M3",
+      "topic": "判断模式分工",
+      "type": "multiple",
+      "stem": "哪些认识符合条件判断文档？",
+      "options": {
+        "A": "严格比较可用精准判断",
+        "B": "模式选择应匹配判断要求",
+        "C": "语义判断使用配置的大模型",
+        "D": "精准判断和语义判断使用完全相同的模型推理过程"
+      },
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "语义与精准两种模式分别服务语义理解与严格条件比较。",
+      "distractors": {
+        "D": "两者用于严格比较与语义理解的机制不同。"
+      },
+      "difficulty": "进阶",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/112970",
+          "title": "条件判断节点",
+          "section": "设置条件与条件配置",
+          "fact": "语义与精准两种模式分别服务语义理解与严格条件比较。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-01-16"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "core_features",
+        "reviewer": "root-independent-review",
+        "notes": [
+          "语义与精准机制区分准确。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "cdcccdc0a6e257a6d55a775257a4da6f036e842ddc3ccf265474c4328d55e473"
+      }
+    },
+    {
+      "id": "FDE-M4-037",
+      "module": "M4",
+      "topic": "直接问答链路",
+      "type": "single",
+      "stem": "客户仅要求根据指定材料返回一段可读解释，无需把片段交给其他模型二次加工。哪个节点更直接？",
+      "options": {
+        "A": "大模型知识问答",
+        "B": "知识检索节点单独返回片段作为最终答案",
+        "C": "大模型节点不接材料直接凭自身知识作答",
+        "D": "参数提取节点仅整理问题中的实体"
+      },
+      "answer": [
+        "A"
+      ],
+      "explanation": "这里同时需要检索知识与生成面向用户的回答，知识问答节点覆盖该目标；若只要片段才更适合检索节点。",
+      "distractors": {
+        "B": "没有完成题设的可读解释生成",
+        "C": "没有使用指定材料",
+        "D": "抽取实体不生成知识解释"
+      },
+      "difficulty": "进阶",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/112964",
+          "title": "大模型知识问答节点",
+          "section": "用户问题及提示词",
+          "fact": "知识问答输出模型生成的回复。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-03-31"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "solution_design",
+        "reviewer": "reviewer",
+        "notes": [
+          "新选项围绕生成解释、纯检索和实体提取比较，指定材料前提保证问答节点最佳。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "a19ea9756d601ae48a013b41f380b1a13275ccacbcd3ee7941c3889f2f267ca0"
+      }
+    },
+    {
+      "id": "FDE-M4-178",
+      "module": "M4",
+      "topic": "多意图之后的执行策略",
+      "type": "single",
+      "stem": "用户一次要求“查询结果并重新生成报告”，两项业务动作都需执行。意图节点已返回两项。下一步方案最需要明确什么？",
+      "options": {
+        "A": "将两个意图压成第一项，仍声称全部完成",
+        "B": "保留两个意图名称但只连接一个默认处理节点",
+        "C": "把多选模式当作已经自动执行了所有业务接口",
+        "D": "如何把意图集合映射为两项实际任务及依赖顺序"
+      },
+      "answer": [
+        "D"
+      ],
+      "explanation": "多意图识别输出集合，真正执行仍需后续流程。若生成报告依赖查询结果，还要落实先后依赖，不能把分类当执行。",
+      "distractors": {
+        "A": "丢失第二个目标",
+        "B": "没有完整处理链",
+        "C": "识别不等于调用业务接口"
+      },
+      "difficulty": "进阶",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/115747",
+          "title": "大模型意图识别节点",
+          "section": "节点功能及意图模式",
+          "fact": "多选意图返回全部命中项，需连接后续处理流程。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-02-10"
+        },
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/112970",
+          "title": "条件判断节点",
+          "section": "设置条件",
+          "fact": "多选意图返回全部命中项，需连接后续处理流程。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-01-16"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "solution_design",
+        "reviewer": "reviewer",
+        "notes": [
+          "多意图组合不可按首个意图丢弃后续任务，正确项要求将各意图落实到任务及依赖；与仅选单意图节点不同。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "569f28f50ec8e567135b2580796441741d6569ff69b23580f1b2b7889f40c622"
+      }
+    },
+    {
+      "id": "FDE-M4-102",
+      "module": "M4",
+      "topic": "指定技能演示",
+      "type": "multiple",
+      "stem": "客户想证明某已安装Skill能完成任务，避免只靠模型猜测要用哪个。哪些演示安排有依据？",
+      "options": {
+        "A": "用具体诉求与该Skill一起发起",
+        "B": "仅展示安装列表就认定任务已完成",
+        "C": "核实最终产物满足该诉求",
+        "D": "在工作台显式选择目标Skill"
+      },
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "explanation": "工作台支持显式选择技能发起任务，之后还应检查产物。安装证据只说明可选，不证明其执行过或适合业务目标。",
+      "distractors": {
+        "B": "列表不证明实际执行和产出"
+      },
+      "difficulty": "综合",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/129563",
+          "title": "使用Skills",
+          "section": "三种使用场景",
+          "fact": "工作台可显式选择已安装Skill调用。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-09-10"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "solution_design",
+        "reviewer": "reviewer",
+        "notes": [
+          "工作台显式选择已装Skill并输入诉求有官方路径，最终产物核验为合理验收要求。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "53abc7f74a35196b8605b1917422f80ae62c7c6ee265b233985bab42e2d4e000"
+      }
+    },
+    {
+      "id": "FDE-M5-042",
+      "module": "M5",
+      "topic": "政务／场景二·夜间政务收件",
+      "type": "single",
+      "stem": "假设夜间收件采用预约服务，页面设计应保留哪项说明？",
+      "options": {
+        "A": "预约入口与适用收件事项",
+        "B": "隐藏服务范围",
+        "C": "宣称所有事项随时无需预约",
+        "D": "把预约当审批结果"
+      },
+      "answer": [
+        "A"
+      ],
+      "explanation": "小宝案例夜间服务实行预约，场景迁移时不能忽略适用范围。 因此，本题应选择“预约入口与适用收件事项”。",
+      "distractors": {
+        "B": "容易造成错误预期",
+        "C": "不符合案例边界",
+        "D": "不同业务步骤"
+      },
+      "difficulty": "进阶",
+      "sources": [
+        {
+          "url": "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice",
+          "title": "政企智能体的三个真实场景",
+          "section": "场景二·夜间政务收件",
+          "fact": "小宝案例夜间服务实行预约，场景迁移时不能忽略适用范围。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-09-09"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "industry_delivery",
+        "reviewer": "core_features",
+        "notes": [
+          "小宝夜间服务实行预约，预约入口和适用事项与案例边界一致，不混同最终审批。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "37b995736871844cb8eb197303b0845da93ae350626a2977fde851494c45e5a7"
+      }
+    },
+    {
+      "id": "FDE-M5-060",
+      "module": "M5",
+      "topic": "制造／两种落地模式",
+      "type": "single",
+      "stem": "假设质检故障现场信息不全，需要边问边补机械和成像线索，哪种方式更贴合？",
+      "options": {
+        "A": "无条件运行同一修复脚本",
+        "B": "只按故障名称套模板结论",
+        "C": "Claw结合质检业务Skill",
+        "D": "固定一次检索后立即定责"
+      },
+      "answer": [
+        "C"
+      ],
+      "explanation": "方案把需专家判断和信息补全的任务放入Claw与业务Skill。 因此，本题应选择“Claw结合质检业务Skill”。",
+      "distractors": {
+        "A": "问题原因尚不清楚",
+        "B": "缺少现场证据",
+        "D": "没有补齐缺失条件"
+      },
+      "difficulty": "进阶",
+      "sources": [
+        {
+          "url": "https://adp.tencent.com/solutions/qc",
+          "title": "工业质检 Agent 解决方案",
+          "section": "两种落地模式",
+          "fact": "方案把需专家判断和信息补全的任务放入Claw与业务Skill。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-10-09访问版本"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "industry_delivery",
+        "reviewer": "core_features",
+        "notes": [
+          "工业方案信息不全的专家任务用Claw及业务Skill，补问与分支推理符合现场情况。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "497bd14c4aa343798b0e60cc09a0f187ef05c9e25040e3d3a20c996e36c0d512"
+      }
+    },
+    {
+      "id": "FDE-M5-071",
+      "module": "M5",
+      "topic": "制造／客户案例·3C摄像头模组",
+      "type": "multiple",
+      "stem": "假设质量团队抽查训练样本，哪些缺陷属于官方案例描述的数据质量问题？",
+      "options": {
+        "A": "漏标与错标",
+        "B": "报告文字风格不一致",
+        "C": "只按数据文件数量判断样本分布均衡",
+        "D": "样本分布偏差"
+      },
+      "answer": [
+        "A",
+        "D"
+      ],
+      "explanation": "官方模组案例将标签和样本分布纳入数据质检。 因此，本题应选择“漏标与错标；样本分布偏差”。",
+      "distractors": {
+        "B": "不是视觉训练数据标注问题",
+        "C": "数量不能证明类别分布"
+      },
+      "difficulty": "综合",
+      "sources": [
+        {
+          "url": "https://adp.tencent.com/solutions/qc",
+          "title": "工业质检 Agent 解决方案",
+          "section": "客户案例·3C摄像头模组",
+          "fact": "官方模组案例将标签和样本分布纳入数据质检。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-10-09访问版本"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "industry_delivery",
+        "reviewer": "core_features",
+        "notes": [
+          "模组数据检查直接含漏标错标与分布，报告风格和文件数量不构成该质量问题判断。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "bdd429774d88c9fb547dec7c87efc3817f6fe66c6604845f7655f793dc768755"
+      }
+    },
+    {
+      "id": "FDE-M6-069",
+      "module": "M6",
+      "topic": "生成校验／从文档生成问答步骤",
+      "type": "single",
+      "stem": "自动生成的问答进入待校验列表后，应怎样纳入有效知识？",
+      "options": {
+        "A": "生成结束即自动全量生效",
+        "B": "只下载生成结果即视为采纳",
+        "C": "只把源文档改名",
+        "D": "人工校验后采纳"
+      },
+      "answer": [
+        "D"
+      ],
+      "explanation": "生成问答需校验，采纳后纳入知识库，未采纳不生效。 因此，本题应选择“人工校验后采纳”。",
+      "distractors": {
+        "A": "还需校验采纳",
+        "B": "下载不等于入库生效",
+        "C": "不控制问答采纳状态"
+      },
+      "difficulty": "基础",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/112703",
+          "title": "问答",
+          "section": "从文档生成问答步骤",
+          "fact": "生成问答需校验，采纳后纳入知识库，未采纳不生效。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-02-06"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "industry_delivery",
+        "reviewer": "core_features",
+        "notes": [
+          "从文档生成问答先校验采纳，未采纳不生效；下载生成结果不等于采纳。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "24586482338af44d87beea07e54596464f403d1ade0048fc90b4ba184a27417c"
+      }
+    },
+    {
+      "id": "FDE-M6-050",
+      "module": "M6",
+      "topic": "评测回流／对话记录",
+      "type": "single",
+      "stem": "想将生产真实问题纳入下一次回归评测，应怎样操作？",
+      "options": {
+        "A": "导出为评测集，整理后上传应用评测",
+        "B": "只导出统计明细总数",
+        "C": "将全部对话无审核直接当正确参考答案",
+        "D": "仅复制应用包"
+      },
+      "answer": [
+        "A"
+      ],
+      "explanation": "运营对话可导出为评测集文件，经修改再导入评测。 因此，本题应选择“导出为评测集，整理后上传应用评测”。",
+      "distractors": {
+        "B": "缺少逐条对话样本",
+        "C": "日志包含错误不能自动当真值",
+        "D": "应用包不包含运营记录"
+      },
+      "difficulty": "进阶",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/104210",
+          "title": "应用运营概述",
+          "section": "对话记录",
+          "fact": "运营对话可导出为评测集文件，经修改再导入评测。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-09-24"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "industry_delivery",
+        "reviewer": "core_features",
+        "notes": [
+          "对话可导出为评测集，经修改上传评测；日志包含错误，不能自动当作参考真值。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "a884f6bcebd69654dbda979d6c2c16e4f82ae9b0ba8f50f44ba312d98cb32a14"
+      }
+    },
+    {
+      "id": "FDE-M6-098",
+      "module": "M6",
+      "topic": "闭环修正／不满意问题",
+      "type": "multiple",
+      "stem": "对于已确认的错误回答，库中已有对应正确答案，或专家可另给标准答案；哪些修正路径可以积累有效知识？",
+      "options": {
+        "A": "添加为已有问答的相似问",
+        "B": "只点忽略即修复答案",
+        "C": "把原错误回答直接采纳为新问答",
+        "D": "添加为新问答"
+      },
+      "answer": [
+        "A",
+        "D"
+      ],
+      "explanation": "专家提供标准答案时可建新问答；已有正确答案时可加相似问扩大覆盖。不能把原错误回答未经校验就采纳。",
+      "distractors": {
+        "B": "忽略只是移除列表项",
+        "C": "未经核验的原错误回答会固化错误，需正确标准答案"
+      },
+      "difficulty": "综合",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/104210",
+          "title": "应用运营概述",
+          "section": "不满意问题",
+          "fact": "不满意问题的修正入口支持新问答与相似问两条知识修复路径。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-09-24"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "industry_delivery",
+        "reviewer": "core_features",
+        "notes": [
+          "修正支持新问答或已有正确答案的相似问；题设已明确正确答案条件，避免采纳原错误回答。 修订后明确不能将原错误答案直接固化为新问答。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "63d6fe3e8f61e7ad5f299ee1799fab18d646ae1dca87f4c80feecc01bcd422a4"
+      }
+    },
+    {
+      "id": "FDE-M7-061",
+      "module": "M7",
+      "topic": "MFA防护范围",
+      "type": "single",
+      "stem": "在云账号安全方案中，MFA 最直接增强哪类动作的保护？",
+      "options": {
+        "A": "替代所有角色和资源授权检查",
+        "B": "阻止任何已认证用户访问错误知识范围",
+        "C": "确保连接器返回的业务数据符合事实",
+        "D": "账号登录和敏感操作的二次校验"
+      },
+      "answer": [
+        "D"
+      ],
+      "explanation": "MFA用于增加身份验证强度，仍需结合合理权限，不能当作内容准确性或数据授权的替代品。",
+      "distractors": {
+        "A": "MFA认证强度不能替代授权。",
+        "B": "认证通过仍可能权限配置过宽。",
+        "C": "MFA不验证业务数据内容。"
+      },
+      "difficulty": "基础",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/598/10592",
+          "title": "安全实践教程",
+          "section": "权限安全/开启 MFA 保护",
+          "fact": "登录和敏感操作可开启二次校验。",
+          "verifiedAt": "2026-10-09",
+          "version": "2025-04-11"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "safety",
+        "reviewer": "foundations_modes",
+        "notes": [
+          "MFA用于登录与敏感操作二次验证，不能替代资源权限或事实正确性。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "db7aa0e6d1c87f29a8d75c15736f2c052c3a3136405e6b7548d2f81a0a23e540"
+      }
+    },
+    {
+      "id": "FDE-M7-005",
+      "module": "M7",
+      "topic": "空间管理员不可改权限",
+      "type": "single",
+      "stem": "团队希望把预置“管理员”角色改成只读角色。文档支持怎样处理？",
+      "options": {
+        "A": "在按角色分配中关闭预置管理员的编辑权限",
+        "B": "不能修改该角色的权限范围",
+        "C": "在按用户分配中覆盖其管理员权限为只读",
+        "D": "删除预置管理员角色再重建只读版本"
+      },
+      "answer": [
+        "B"
+      ],
+      "explanation": "预置角色具有固定全权属性。要实现只读，应选择合适的其他授权配置，而非修改预置角色定义。",
+      "distractors": {
+        "A": "预置管理员不支持修改权限范围。",
+        "C": "管理员成员不能使用按用户分配设置权限。",
+        "D": "预置管理员不可删除。"
+      },
+      "difficulty": "进阶",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/122574",
+          "title": "平台端用户权限",
+          "section": "功能说明/角色管理",
+          "fact": "预置管理员不可编辑或改权限范围。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-07-10"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "safety",
+        "reviewer": "foundations_modes",
+        "notes": [
+          "预置管理员角色不可修改删除，成员不能按用户另配权限，范围清晰。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "3c0460c72ecf49f7750dbac44611984a8c464b0600e562bb06d8ba10246bbd26"
+      }
+    },
+    {
+      "id": "FDE-M7-097",
+      "module": "M7",
+      "topic": "临时文件URL安全接入",
+      "type": "multiple",
+      "stem": "按 ADP 文档解析协议 v1.0，提交 FileUrl 时哪些说法正确？",
+      "options": {
+        "A": "链接必须为服务可访问的HTTPS地址",
+        "B": "为确保可访问，文件必须永久匿名公开",
+        "C": "支持带签名的临时文件链接",
+        "D": "直接提交调用者本地文件绝对路径就满足远程访问要求"
+      },
+      "answer": [
+        "A",
+        "C"
+      ],
+      "explanation": "可访问不等于必须永久公开；临时链接需要给任务保留足够有效时间，不能交付本地路径让远程服务猜测。",
+      "distractors": {
+        "B": "协议支持临时签名URL。",
+        "D": "接口要求可访问HTTPS链接。"
+      },
+      "difficulty": "进阶",
+      "sources": [
+        {
+          "url": "https://cloud.tencent.com/document/product/1759/127284",
+          "title": "ADP 文档解析协议",
+          "section": "提交文档解析任务/请求参数",
+          "fact": "FileUrl需可访问HTTPS，支持签名临时链接。",
+          "verifiedAt": "2026-10-09",
+          "version": "2026-01-07；协议v1.0"
+        }
+      ],
+      "review": {
+        "status": "approved",
+        "author": "safety",
+        "reviewer": "foundations_modes",
+        "notes": [
+          "FileUrl需可访问HTTPS且允许带签名临时链接，不需永久公开。"
+        ],
+        "checkedAt": "2026-10-09",
+        "contentHash": "ac4d07ad898fda09a70c897ab55814d2431967b2973d6f5686af8d328ec51bef"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1140 @@
+[
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/126433",
+    "title": "使用流程",
+    "versions": [
+      "2026-07-03"
+    ],
+    "sections": [
+      "第二至五步"
+    ],
+    "questionIds": [
+      "FDE-M4-001",
+      "FDE-M4-002",
+      "FDE-M4-003",
+      "FDE-M4-156",
+      "FDE-M4-200"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/115872",
+    "title": "连接器与工具介绍",
+    "versions": [
+      "2026-07-16"
+    ],
+    "sections": [
+      "核心概念",
+      "自定义连接器、自定义工具",
+      "连接器",
+      "注意/第三方服务质量",
+      "连接器与自定义工具"
+    ],
+    "questionIds": [
+      "FDE-M4-004",
+      "FDE-M4-005",
+      "FDE-M4-006",
+      "FDE-M4-148",
+      "FDE-M4-151",
+      "FDE-M4-165",
+      "FDE-M4-174",
+      "FDE-M4-217",
+      "FDE-M4-238",
+      "FDE-M4-240",
+      "FDE-M4-249"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/112967",
+    "title": "代码节点",
+    "versions": [
+      "2026-06-01"
+    ],
+    "sections": [
+      "节点功能及代码"
+    ],
+    "questionIds": [
+      "FDE-M4-005",
+      "FDE-M4-040",
+      "FDE-M4-043",
+      "FDE-M4-044",
+      "FDE-M4-045",
+      "FDE-M4-150",
+      "FDE-M4-151",
+      "FDE-M4-163",
+      "FDE-M4-166",
+      "FDE-M4-170",
+      "FDE-M4-182",
+      "FDE-M4-186",
+      "FDE-M4-190",
+      "FDE-M4-197",
+      "FDE-M4-198"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/132211",
+    "title": "Agentic RAG",
+    "versions": [
+      "2026-08-21"
+    ],
+    "sections": [
+      "适用场景及工作流引导"
+    ],
+    "questionIds": [
+      "FDE-M4-007",
+      "FDE-M4-008",
+      "FDE-M4-009",
+      "FDE-M4-154",
+      "FDE-M4-155",
+      "FDE-M4-156"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/123555",
+    "title": "知识库 Schema",
+    "versions": [
+      "2026-09-16"
+    ],
+    "sections": [
+      "下架说明",
+      "注意：生成费用"
+    ],
+    "questionIds": [
+      "FDE-M4-010",
+      "FDE-M4-011",
+      "FDE-M4-012"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/658/137832",
+    "title": "腾讯云 ADP 前沿部署工程师 (FDE) 认证考试指南",
+    "versions": [
+      "2026-09-10"
+    ],
+    "sections": [
+      "知识点占比与考核重点"
+    ],
+    "questionIds": [
+      "FDE-M4-010"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/119291",
+    "title": "数据库",
+    "versions": [
+      "2026-08-21"
+    ],
+    "sections": [
+      "新建数据库及数据表操作"
+    ],
+    "questionIds": [
+      "FDE-M4-013",
+      "FDE-M4-014",
+      "FDE-M4-015",
+      "FDE-M4-151"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/138380",
+    "title": "时效性检索",
+    "versions": [
+      "2026-09-18"
+    ],
+    "sections": [
+      "功能生效逻辑及功能说明"
+    ],
+    "questionIds": [
+      "FDE-M4-016",
+      "FDE-M4-017",
+      "FDE-M4-018",
+      "FDE-M4-144",
+      "FDE-M4-153"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/112962",
+    "title": "参数提取节点",
+    "versions": [
+      "2026-01-26"
+    ],
+    "sections": [
+      "节点功能及收集参数"
+    ],
+    "questionIds": [
+      "FDE-M4-019",
+      "FDE-M4-020",
+      "FDE-M4-021",
+      "FDE-M4-149",
+      "FDE-M4-160",
+      "FDE-M4-163",
+      "FDE-M4-176",
+      "FDE-M4-179",
+      "FDE-M4-187",
+      "FDE-M4-189",
+      "FDE-M4-196"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/115756",
+    "title": "选项卡节点",
+    "versions": [
+      "2026-01-13"
+    ],
+    "sections": [
+      "节点功能及常见问题"
+    ],
+    "questionIds": [
+      "FDE-M4-022",
+      "FDE-M4-023",
+      "FDE-M4-024",
+      "FDE-M4-161",
+      "FDE-M4-196"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/123744",
+    "title": "文件收集节点",
+    "versions": [
+      "2025-09-25"
+    ],
+    "sections": [
+      "文件收集及输出变量"
+    ],
+    "questionIds": [
+      "FDE-M4-025",
+      "FDE-M4-026",
+      "FDE-M4-027",
+      "FDE-M4-162",
+      "FDE-M4-170",
+      "FDE-M4-188"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/126594",
+    "title": "文本收集节点",
+    "versions": [
+      "2025-12-19"
+    ],
+    "sections": [
+      "文本收集节点与参数提取节点的区别"
+    ],
+    "questionIds": [
+      "FDE-M4-028",
+      "FDE-M4-029",
+      "FDE-M4-030",
+      "FDE-M4-160",
+      "FDE-M4-188"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/112963",
+    "title": "大模型节点",
+    "versions": [
+      "2026-08-18"
+    ],
+    "sections": [
+      "模型及多模态输入"
+    ],
+    "questionIds": [
+      "FDE-M4-031",
+      "FDE-M4-032",
+      "FDE-M4-033",
+      "FDE-M4-040",
+      "FDE-M4-162",
+      "FDE-M4-171",
+      "FDE-M4-190",
+      "FDE-M4-191",
+      "FDE-M4-192"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/115747",
+    "title": "大模型意图识别节点",
+    "versions": [
+      "2026-02-10"
+    ],
+    "sections": [
+      "节点功能及意图模式"
+    ],
+    "questionIds": [
+      "FDE-M4-034",
+      "FDE-M4-035",
+      "FDE-M4-036",
+      "FDE-M4-178",
+      "FDE-M4-179",
+      "FDE-M4-180"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/112964",
+    "title": "大模型知识问答节点",
+    "versions": [
+      "2026-03-31"
+    ],
+    "sections": [
+      "用户问题及提示词"
+    ],
+    "questionIds": [
+      "FDE-M4-037",
+      "FDE-M4-038",
+      "FDE-M4-039",
+      "FDE-M4-152"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/112966",
+    "title": "知识检索节点",
+    "versions": [
+      "2026-03-31"
+    ],
+    "sections": [
+      "节点功能及检索规则"
+    ],
+    "questionIds": [
+      "FDE-M4-040",
+      "FDE-M4-041",
+      "FDE-M4-042",
+      "FDE-M4-152",
+      "FDE-M4-155",
+      "FDE-M4-168",
+      "FDE-M4-177",
+      "FDE-M4-191",
+      "FDE-M4-193"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/115749",
+    "title": "工作流节点",
+    "versions": [
+      "2026-01-29"
+    ],
+    "sections": [
+      "节点功能及工作流输入输出"
+    ],
+    "questionIds": [
+      "FDE-M4-046",
+      "FDE-M4-047",
+      "FDE-M4-048",
+      "FDE-M4-165",
+      "FDE-M4-184",
+      "FDE-M4-194",
+      "FDE-M4-199"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/122554",
+    "title": "Agent 节点",
+    "versions": [
+      "2026-02-12"
+    ],
+    "sections": [
+      "节点功能及引用Agent"
+    ],
+    "questionIds": [
+      "FDE-M4-049",
+      "FDE-M4-050",
+      "FDE-M4-051",
+      "FDE-M4-166",
+      "FDE-M4-167",
+      "FDE-M4-168",
+      "FDE-M4-199"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/117358",
+    "title": "变量聚合节点",
+    "versions": [
+      "2025-08-17"
+    ],
+    "sections": [
+      "节点功能及聚合"
+    ],
+    "questionIds": [
+      "FDE-M4-052",
+      "FDE-M4-053",
+      "FDE-M4-054",
+      "FDE-M4-159",
+      "FDE-M4-180",
+      "FDE-M4-186"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/112970",
+    "title": "条件判断节点",
+    "versions": [
+      "2026-01-16"
+    ],
+    "sections": [
+      "设置条件"
+    ],
+    "questionIds": [
+      "FDE-M4-055",
+      "FDE-M4-056",
+      "FDE-M4-057",
+      "FDE-M4-150",
+      "FDE-M4-154",
+      "FDE-M4-158",
+      "FDE-M4-161",
+      "FDE-M4-167",
+      "FDE-M4-178",
+      "FDE-M4-181",
+      "FDE-M4-183",
+      "FDE-M4-185",
+      "FDE-M4-187",
+      "FDE-M4-194"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/115750",
+    "title": "循环节点",
+    "versions": [
+      "2026-04-28"
+    ],
+    "sections": [
+      "循环方式及使用场景建议"
+    ],
+    "questionIds": [
+      "FDE-M4-058",
+      "FDE-M4-059",
+      "FDE-M4-060",
+      "FDE-M4-157",
+      "FDE-M4-158",
+      "FDE-M4-189"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/119290",
+    "title": "批处理节点",
+    "versions": [
+      "2026-01-26"
+    ],
+    "sections": [
+      "节点功能及批处理设置"
+    ],
+    "questionIds": [
+      "FDE-M4-061",
+      "FDE-M4-062",
+      "FDE-M4-063",
+      "FDE-M4-157",
+      "FDE-M4-159",
+      "FDE-M4-197"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/117855",
+    "title": "新建工具",
+    "versions": [
+      "2026-08-20"
+    ],
+    "sections": [
+      "基本信息、配置工具及校验工具"
+    ],
+    "questionIds": [
+      "FDE-M4-064",
+      "FDE-M4-065",
+      "FDE-M4-066",
+      "FDE-M4-149",
+      "FDE-M4-164",
+      "FDE-M4-192",
+      "FDE-M4-200"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/115873",
+    "title": "新建连接器",
+    "versions": [
+      "2026-05-27"
+    ],
+    "sections": [
+      "MCP服务端要求"
+    ],
+    "questionIds": [
+      "FDE-M4-067",
+      "FDE-M4-068",
+      "FDE-M4-069",
+      "FDE-M4-164"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/112702",
+    "title": "文档概述",
+    "versions": [
+      "2026-09-16"
+    ],
+    "sections": [
+      "导入文档与网页限制"
+    ],
+    "questionIds": [
+      "FDE-M4-070",
+      "FDE-M4-071",
+      "FDE-M4-072",
+      "FDE-M4-077"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/123551",
+    "title": "什么是知识库",
+    "versions": [
+      "2025-09-22"
+    ],
+    "sections": [
+      "知识库数据类型与层级",
+      "知识库与应用的关系",
+      "知识库概述"
+    ],
+    "questionIds": [
+      "FDE-M4-073",
+      "FDE-M4-074",
+      "FDE-M4-075",
+      "FDE-M4-169",
+      "FDE-M4-195",
+      "FDE-M4-204",
+      "FDE-M4-220",
+      "FDE-M4-244",
+      "FDE-M4-249"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/112703",
+    "title": "问答",
+    "versions": [
+      "2026-02-06"
+    ],
+    "sections": [
+      "新建问答与从文档生成"
+    ],
+    "questionIds": [
+      "FDE-M4-076",
+      "FDE-M4-078",
+      "FDE-M4-148",
+      "FDE-M4-193"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/138162",
+    "title": "记忆库",
+    "versions": [
+      "2026-09-15"
+    ],
+    "sections": [
+      "隔离维度、类型与绑定规则",
+      "功能介绍",
+      "应用中开启长期记忆",
+      "管理记忆、操作日志、注意事项",
+      "记忆摘要",
+      "导出与批量删除、删除记忆库",
+      "管理记忆、注意事项",
+      "记忆库类型与绑定规则"
+    ],
+    "questionIds": [
+      "FDE-M4-079",
+      "FDE-M4-080",
+      "FDE-M4-081",
+      "FDE-M4-216",
+      "FDE-M4-223",
+      "FDE-M4-234",
+      "FDE-M4-235",
+      "FDE-M4-236",
+      "FDE-M4-241",
+      "FDE-M4-244"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/128202",
+    "title": "知识图谱 GraphRAG",
+    "versions": [
+      "2026-02-12"
+    ],
+    "sections": [
+      "适用场景及图谱构建"
+    ],
+    "questionIds": [
+      "FDE-M4-082",
+      "FDE-M4-083",
+      "FDE-M4-084"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/127312",
+    "title": "知识处理模型设置",
+    "versions": [
+      "2026-01-13"
+    ],
+    "sections": [
+      "知识处理模型说明"
+    ],
+    "questionIds": [
+      "FDE-M4-085",
+      "FDE-M4-086",
+      "FDE-M4-087"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/138240",
+    "title": "元数据设置",
+    "versions": [
+      "2026-09-18"
+    ],
+    "sections": [
+      "使用场景及元数据与标签检索区别"
+    ],
+    "questionIds": [
+      "FDE-M4-088",
+      "FDE-M4-089",
+      "FDE-M4-090",
+      "FDE-M4-153",
+      "FDE-M4-169",
+      "FDE-M4-171"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/134602",
+    "title": "Skills 文件规范",
+    "versions": [
+      "2026-07-20"
+    ],
+    "sections": [
+      "description与目录结构"
+    ],
+    "questionIds": [
+      "FDE-M4-091",
+      "FDE-M4-092",
+      "FDE-M4-093",
+      "FDE-M4-172",
+      "FDE-M4-173",
+      "FDE-M4-174",
+      "FDE-M4-195"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/104209",
+    "title": "应用发布概述",
+    "versions": [
+      "2026-10-09访问版本"
+    ],
+    "sections": [
+      "触发器及服务状态"
+    ],
+    "questionIds": [
+      "FDE-M4-094",
+      "FDE-M4-095",
+      "FDE-M4-096"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/129561",
+    "title": "Skills介绍",
+    "versions": [
+      "2026-07-14"
+    ],
+    "sections": [
+      "Skills的三种类别"
+    ],
+    "questionIds": [
+      "FDE-M4-097",
+      "FDE-M4-098",
+      "FDE-M4-099"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/129563",
+    "title": "使用Skills",
+    "versions": [
+      "2026-09-10"
+    ],
+    "sections": [
+      "三种使用场景"
+    ],
+    "questionIds": [
+      "FDE-M4-100",
+      "FDE-M4-101",
+      "FDE-M4-102",
+      "FDE-M4-173"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/122598",
+    "title": "自由转交",
+    "versions": [
+      "2026-06-15"
+    ],
+    "sections": [
+      "转交描述及转交关系配置"
+    ],
+    "questionIds": [
+      "FDE-M4-103",
+      "FDE-M4-104",
+      "FDE-M4-105"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/122551",
+    "title": "文档切分设置",
+    "versions": [
+      "2026-08-04"
+    ],
+    "sections": [
+      "切分规则及对比"
+    ],
+    "questionIds": [
+      "FDE-M4-106",
+      "FDE-M4-112",
+      "FDE-M4-113",
+      "FDE-M4-114"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/122556",
+    "title": "工作流编排",
+    "versions": [
+      "2026-01-22"
+    ],
+    "sections": [
+      "功能定位及设置方式"
+    ],
+    "questionIds": [
+      "FDE-M4-107",
+      "FDE-M4-108",
+      "FDE-M4-199"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/122553",
+    "title": "Plan-and-Execute协同",
+    "versions": [
+      "2025-09-22"
+    ],
+    "sections": [
+      "功能定位与对话测试"
+    ],
+    "questionIds": [
+      "FDE-M4-109",
+      "FDE-M4-110",
+      "FDE-M4-111"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/119287",
+    "title": "解析切分干预",
+    "versions": [
+      "2025-12-30"
+    ],
+    "sections": [
+      "调整切分结果"
+    ],
+    "questionIds": [
+      "FDE-M4-115",
+      "FDE-M4-116",
+      "FDE-M4-117"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/119288",
+    "title": "智能结构化解析",
+    "versions": [
+      "2025-12-29"
+    ],
+    "sections": [
+      "结构化特征及检索方式"
+    ],
+    "questionIds": [
+      "FDE-M4-118",
+      "FDE-M4-119",
+      "FDE-M4-120"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/116451",
+    "title": "文档对比任务",
+    "versions": [
+      "2025-12-29"
+    ],
+    "sections": [
+      "功能说明及问答操作"
+    ],
+    "questionIds": [
+      "FDE-M4-121",
+      "FDE-M4-122",
+      "FDE-M4-123"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/129202",
+    "title": "对话端接口文档（HTTP SSE）",
+    "versions": [
+      "2026-09-18"
+    ],
+    "sections": [
+      "参数说明及文本事件"
+    ],
+    "questionIds": [
+      "FDE-M4-124",
+      "FDE-M4-125",
+      "FDE-M4-126",
+      "FDE-M4-175",
+      "FDE-M4-177"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/129365",
+    "title": "对话端接口文档（WebSocket）",
+    "versions": [
+      "2026-09-18"
+    ],
+    "sections": [
+      "通道特征与连接Token"
+    ],
+    "questionIds": [
+      "FDE-M4-127",
+      "FDE-M4-128",
+      "FDE-M4-129"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/105561",
+    "title": "对话端接口文档（HTTP SSE，旧版）",
+    "versions": [
+      "2026-06-04"
+    ],
+    "sections": [
+      "下线警告"
+    ],
+    "questionIds": [
+      "FDE-M4-130",
+      "FDE-M4-131"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/112876",
+    "title": "模型介绍",
+    "versions": [
+      "2026-05-06"
+    ],
+    "sections": [
+      "标准模式与Multi-Agent模式"
+    ],
+    "questionIds": [
+      "FDE-M4-132",
+      "FDE-M4-139",
+      "FDE-M4-146"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/112968",
+    "title": "工具节点",
+    "versions": [
+      "2026-01-06"
+    ],
+    "sections": [
+      "调用方式、输出变量与异步调用"
+    ],
+    "questionIds": [
+      "FDE-M4-133",
+      "FDE-M4-134",
+      "FDE-M4-135",
+      "FDE-M4-181",
+      "FDE-M4-182",
+      "FDE-M4-183",
+      "FDE-M4-184",
+      "FDE-M4-185",
+      "FDE-M4-198"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/126856",
+    "title": "工作流的异步调用",
+    "versions": [
+      "2026-02-10"
+    ],
+    "sections": [
+      "适用场景与等待输入"
+    ],
+    "questionIds": [
+      "FDE-M4-136",
+      "FDE-M4-137",
+      "FDE-M4-138",
+      "FDE-M4-175",
+      "FDE-M4-176"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/120901",
+    "title": "提示词模板",
+    "versions": [
+      "2026-02-11"
+    ],
+    "sections": [
+      "变量及复用"
+    ],
+    "questionIds": [
+      "FDE-M4-140",
+      "FDE-M4-141",
+      "FDE-M4-172"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/123554",
+    "title": "知识库设置概览",
+    "versions": [
+      "2026-02-06"
+    ],
+    "sections": [
+      "检索召回设置及文档到期时间"
+    ],
+    "questionIds": [
+      "FDE-M4-142",
+      "FDE-M4-143"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/131653",
+    "title": "基于Claw模式创建数据分析助手",
+    "versions": [
+      "2026-06-30"
+    ],
+    "sections": [
+      "模式定位及提示词"
+    ],
+    "questionIds": [
+      "FDE-M4-145",
+      "FDE-M4-147"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/122457",
+    "title": "变量说明",
+    "versions": [
+      "2025-11-18"
+    ],
+    "sections": [
+      "变量类型、适用范围",
+      "应用级变量",
+      "应用级变量、工作流级变量",
+      "适用范围",
+      "应用级变量、适用范围",
+      "工作流级变量"
+    ],
+    "questionIds": [
+      "FDE-M4-201",
+      "FDE-M4-202",
+      "FDE-M4-203",
+      "FDE-M4-204",
+      "FDE-M4-205",
+      "FDE-M4-206"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/133870",
+    "title": "动态修改 Agent 配置（Claw 模式）",
+    "versions": [
+      "2026-07-13"
+    ],
+    "sections": [
+      "前提1、三动态修改配置",
+      "前提2、绑定用户级Agent到会话",
+      "四透传自定义变量",
+      "三动态修改配置、装卸Skill",
+      "3.2装卸Skill",
+      "3.1更换模型",
+      "获取用户级Agent、绑定会话",
+      "透传自定义变量"
+    ],
+    "questionIds": [
+      "FDE-M4-207",
+      "FDE-M4-208",
+      "FDE-M4-209",
+      "FDE-M4-210",
+      "FDE-M4-211",
+      "FDE-M4-212",
+      "FDE-M4-213",
+      "FDE-M4-214",
+      "FDE-M4-246",
+      "FDE-M4-248",
+      "FDE-M4-250"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/137902",
+    "title": "对话式应用开发与调优",
+    "versions": [
+      "2026-09-21"
+    ],
+    "sections": [
+      "注意事项",
+      "确认结果、发布应用",
+      "确认结果并调优、注意事项",
+      "对话调试与自动调优、确认结果并调优"
+    ],
+    "questionIds": [
+      "FDE-M4-214",
+      "FDE-M4-229",
+      "FDE-M4-231",
+      "FDE-M4-245"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/133868",
+    "title": "概览",
+    "versions": [
+      "2026-07-13"
+    ],
+    "sections": [
+      "核心概念/Plugin与Tool",
+      "核心概念/Conversation",
+      "应用与发布的关系",
+      "开发者与使用者"
+    ],
+    "questionIds": [
+      "FDE-M4-215",
+      "FDE-M4-216",
+      "FDE-M4-224",
+      "FDE-M4-246",
+      "FDE-M4-250"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/119281",
+    "title": "应用端用户权限说明",
+    "versions": [
+      "2026-02-26"
+    ],
+    "sections": [
+      "功能入口",
+      "方案二、接入说明",
+      "工作原理、注意事项",
+      "名词说明、注意事项",
+      "名词说明",
+      "角色管理",
+      "工作原理",
+      "方案二/工作原理、接入说明",
+      "在应用API中传入用户ID、外部权限工作原理"
+    ],
+    "questionIds": [
+      "FDE-M4-217",
+      "FDE-M4-218",
+      "FDE-M4-219",
+      "FDE-M4-220",
+      "FDE-M4-221",
+      "FDE-M4-222",
+      "FDE-M4-223",
+      "FDE-M4-237",
+      "FDE-M4-241",
+      "FDE-M4-247",
+      "FDE-M4-248"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/122574",
+    "title": "平台端用户权限说明",
+    "versions": [
+      "2026-07-10"
+    ],
+    "sections": [
+      "权限说明"
+    ],
+    "questionIds": [
+      "FDE-M4-221"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/138107",
+    "title": "授权凭证",
+    "versions": [
+      "2026-09-14"
+    ],
+    "sections": [
+      "安全说明、常见问题Q2/Q4",
+      "创建凭证、工作流中引用",
+      "凭证类型、自定义连接器/工具凭证共享",
+      "凭证管理、知识库中引用、权限与安全说明",
+      "企业共享凭证、权限与安全说明",
+      "权限与安全说明"
+    ],
+    "questionIds": [
+      "FDE-M4-224",
+      "FDE-M4-225",
+      "FDE-M4-226",
+      "FDE-M4-227",
+      "FDE-M4-228",
+      "FDE-M4-249"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/135538",
+    "title": "知识库召回测试",
+    "versions": [
+      "2026-08-05"
+    ],
+    "sections": [
+      "功能说明、检索策略调优",
+      "配置检索与召回规则",
+      "功能说明、选择知识库范围"
+    ],
+    "questionIds": [
+      "FDE-M4-229",
+      "FDE-M4-230",
+      "FDE-M4-231"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/130637",
+    "title": "对话功能概述",
+    "versions": [
+      "2026-06-22"
+    ],
+    "sections": [
+      "工作区/编辑",
+      "工作区/预览、下载",
+      "工作区",
+      "计费说明"
+    ],
+    "questionIds": [
+      "FDE-M4-232",
+      "FDE-M4-233",
+      "FDE-M4-240",
+      "FDE-M4-243"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/125070",
+    "title": "内容安全",
+    "versions": [
+      "2025-11-14"
+    ],
+    "sections": [
+      "概念定义",
+      "应用安全设置/信息脱敏",
+      "关键词库"
+    ],
+    "questionIds": [
+      "FDE-M4-237",
+      "FDE-M4-238",
+      "FDE-M4-239"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/129200",
+    "title": "套餐版本说明",
+    "versions": [
+      "2026-06-30"
+    ],
+    "sections": [
+      "套餐版本、功能对比、版本升级与到期"
+    ],
+    "questionIds": [
+      "FDE-M4-242"
+    ]
+  },
+  {
+    "url": "https://cloud.tencent.com/document/product/1759/134194",
+    "title": "什么是 Claw 模式？",
+    "versions": [
+      "2026-07-15"
+    ],
+    "sections": [
+      "说明"
+    ],
+    "questionIds": [
+      "FDE-M4-244"
+    ]
+  }
+]

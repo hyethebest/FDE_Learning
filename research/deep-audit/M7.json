@@ -1,0 +1,2023 @@
+[
+  {
+    "id": "FDE-M7-001",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "答案A及排除交集、覆盖规则均由明确合集规则支持。符合M7数据权限，判断任务是识别有效授权来源。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "section": "平台端用户权限",
+        "locator": "功能说明：权限合集，L128–130",
+        "shortFact": "直接授权与角色授权合并。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "40340ba2833cd925366baf9e7c955f30af2f6a84b03411e337c751b242f9bfb5"
+  },
+  {
+    "id": "FDE-M7-002",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A满足审阅而不修改；B超权，C无法查看，D是创建能力。与M4-221双身份控制面的组合任务不同。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "section": "平台端用户权限",
+        "locator": "数据权限表：可查看，L178–181",
+        "shortFact": "可查看允许对话测试，不允许编辑。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "beb4fbcbfaa51f57c35cab094cbd167a7ce8a93abcc0e9cd2ece9ca27a352538"
+  },
+  {
+    "id": "FDE-M7-003",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D直接满足甲乙差异化操作权限；统一可编辑、创建权限、仅同一角色均不能表达所列差异。符合具体越权边界。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "section": "平台端用户权限",
+        "locator": "数据权限：高级自定义，L182、192",
+        "shortFact": "可按应用开关发布、模式切换。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "1da22d4a62eb1e943558bee0843d6ca4ce88f24c2f3971cf26d80f29d3fed1c5"
+  },
+  {
+    "id": "FDE-M7-004",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "答案D有明确例外依据；不能据成员列表推断主账号无权。注意仅描述产品事实，不推荐主账号日常使用。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "section": "平台端用户权限",
+        "locator": "用户管理说明，L60–62",
+        "shortFact": "主账号不列出但有全部权限。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "fa41ecad274323ad7c0bc8a6ff93c4927eb0f6183c4d18f42a0c6d81eb3c8158"
+  },
+  {
+    "id": "FDE-M7-005",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B正确；直接编辑、个人覆盖、删除重建均被文档限制。与69考可管理成员不同。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "section": "平台端用户权限",
+        "locator": "角色管理说明，L87–89；按用户分配L116",
+        "shortFact": "预置管理员权限不可修改。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "3c0460c72ecf49f7750dbac44611984a8c464b0600e562bb06d8ba10246bbd26"
+  },
+  {
+    "id": "FDE-M7-006",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B限定当前空间；A/C扩大到其他空间或云账号，D错误保留访问。权限撤销范围与题干一致。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "section": "平台端用户权限",
+        "locator": "删除用户，L48",
+        "shortFact": "移除成员阻断当前空间访问。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "f9c9a9fceed8b7f351df1f76ba799672b4b450048d395be56f0d0cb4729623d3"
+  },
+  {
+    "id": "FDE-M7-007",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B前置成员关系有正文支持，企业用户不自动属于所有空间；知识库权限或角色名称不能代替成员关系。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "section": "平台端用户权限",
+        "locator": "管理用户，L91",
+        "shortFact": "角色仅可加入当前空间成员。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "baf3e3a143934b876bf32fe2894e535e0d61e05bf7eed4172bfc07f71e3691ff"
+  },
+  {
+    "id": "FDE-M7-008",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B准确区分自己的数据与他人数据；其他选项把该设置外推到自建数据，均被正文排除。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "section": "平台端用户权限",
+        "locator": "数据权限说明，L165–169",
+        "shortFact": "自己创建的数据保持可编辑。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "ad1d4c46e011d1e960d39854486bd7a5d8dda39de891ad2962b79654e62981c1"
+  },
+  {
+    "id": "FDE-M7-009",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C符合查询知识范围而非控制台编辑。平台权限、空间成员、内容审核均不是同一控制面；切中M7越权访问。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "section": "应用端用户权限说明",
+        "locator": "权限功能说明/平台端与应用端，L49–58",
+        "shortFact": "应用端权限控制终端知识访问。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "3cd290baceed82212aa7e2b21ebaa682ac80567829273deb66c42b347561d013"
+  },
+  {
+    "id": "FDE-M7-010",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A有默认规则支持；其余误用默认拒绝、平台权限继承或会话文件边界。说明针对应用已接入知识，不是企业全部知识。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "section": "应用端用户权限说明",
+        "locator": "功能说明，L58；默认角色L115",
+        "shortFact": "未配置时应用用户可访问应用知识。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "1c15002b5550eb90778113d6994203c1a8b9fbad1f3d554f9f5696e1350d737b"
+  },
+  {
+    "id": "FDE-M7-011",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C符合当前模式限制；题干已限定该能力，不能外推为Multi-Agent无法通过自建工具实施任何授权。与M4-217自建受控接口方案任务不同。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "section": "应用端用户权限说明",
+        "locator": "注意事项，L64–66",
+        "shortFact": "Multi-Agent不支持该内置权限。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "60009a27d817192c7d2681742942f0b920a6f1f4b65169b58fb70377f5b3494a"
+  },
+  {
+    "id": "FDE-M7-012",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；交集、最后角色、较小角色均错误。M4-222要求如何撤销已有广权限，新增了处置决策，故未仅因同源判重复。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "section": "应用端用户权限说明",
+        "locator": "角色管理：多个角色，L103、133",
+        "shortFact": "多角色知识范围取并集。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "f9b402441648519d4e4e8eccf3bd50cfbd55aa464fb543e8de5e137775a46c66"
+  },
+  {
+    "id": "FDE-M7-013",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C有精确参数依据；昵称、会话与请求ID不是授权用户主键。属于ADP权限接入所需字段，不是泛CAM冷僻字段。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "section": "应用端用户权限说明",
+        "locator": "用户ID/API接入，L95、158",
+        "shortFact": "API用visitor_biz_id传用户标识。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "3418f0b6f10e3fb90599226e6e63fb7e089370c33554f59f9d97c0c15bf16d84"
+  },
+  {
+    "id": "FDE-M7-014",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D符合源正文顺序；提示词约束或生成后删链接不能替代候选切片授权。符合M7防越权核心。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "section": "应用端用户权限说明",
+        "locator": "外部权限系统交互流程，L181–193",
+        "shortFact": "授权过滤发生于模型接收之前。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "c5b4ef142dabd3b8ed2837b9499df7369527929e494a7732e9ea783ce7f69e1c"
+  },
+  {
+    "id": "FDE-M7-015",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确，B/C错误假设两方案合并，D错误保留旧方案。与73考切换准备清单不同。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "section": "应用端用户权限说明",
+        "locator": "注意事项/方案切换，L209–211",
+        "shortFact": "切换后只有新方案生效。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "465f1c9cb111fc6090b0898d640333b0216c9d6aa2affb5307438f6954b5319b"
+  },
+  {
+    "id": "FDE-M7-016",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B正确，另外三个方案均不能提供两个不同授权主体；不是将显示名当安全主键。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "section": "应用端用户权限说明",
+        "locator": "用户管理，L138–140；API接入L158",
+        "shortFact": "ID须唯一，昵称可重复。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "468d24e8fa451c3d527a651e206bda7c66f62a178c484f53bd959c58a7cbbdcc"
+  },
+  {
+    "id": "FDE-M7-017",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D事实正确且属于M7内容安全；但题干已明说完全不查输出，三个完整答案均带不成立的保证，当前仅适合概念学习。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "section": "内容安全",
+        "locator": "概念定义，L31",
+        "shortFact": "安全识别覆盖输入和输出。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "完整/不完整措辞与绝对保证使答案显著，需改为有可信输出风险链路的情境。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "261c61e9c7a7b9335d28d8d9e05fb0a07a491d93350d6c1d3f6bcac8dbf01421"
+  },
+  {
+    "id": "FDE-M7-018",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B是定义组成；风险回复/脱敏是应用设置，应用角色是权限控制，生成模型不等于审核模型。基础题仍有相关机制干扰。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "section": "内容安全",
+        "locator": "概念定义：安全策略，L34",
+        "shortFact": "策略包括审核模型与关键词。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "b71a2efaefc143c0b9b22a3c38db229b168497272c6d9b6974fad5c63468df3d"
+  },
+  {
+    "id": "FDE-M7-019",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C直接支持；其余把可见开关或发布行为误作关闭底线的证据。题设提供可误判条件，符合风险边界。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "section": "内容安全",
+        "locator": "审核模型：底线风险，L112",
+        "shortFact": "底线审核隐藏且不可关闭。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "ef83e4cb91d12fb3ffe3a2386dc778c627f29ec8abf7ac4107b1acd631b6aa6a"
+  },
+  {
+    "id": "FDE-M7-020",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D符合配置路径；回复文案、词库修改均不能把预设策略变可编辑。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "section": "内容安全",
+        "locator": "系统策略与自定义策略，L59–63",
+        "shortFact": "系统策略不可编辑，可建自定义。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "00e7bdaaed8e4ac44642570627ad7b5a4e55964b3aa8c2accb6e89929e599aae"
+  },
+  {
+    "id": "FDE-M7-021",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D由单库单模式约束推出；不是虚构逐词条模式或自动判断。工程组织方式为基于限制的简单推理。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "section": "内容安全",
+        "locator": "关键词库：匹配模式，L137",
+        "shortFact": "一个词库只能采用一种匹配模式。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "cba02123862b56537c967942882a5bf147e299b2d3f8db9c338efb899f06a788"
+  },
+  {
+    "id": "FDE-M7-022",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A正确；B是合理或/且混淆，但C自动补词、D重复词替代另一词过弱，当前适合学习规则。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "section": "内容安全",
+        "locator": "组合词，L176",
+        "shortFact": "组合需所有词组同时命中。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "仅一个有效干扰项，后三选项中两个不具真实配置含义；进阶标签偏高。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "6b8488c5a70df7a4fa15a4c1e677ab00aa46d040bd9726b66eb99e81069e9b99"
+  },
+  {
+    "id": "FDE-M7-023",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A符合特定处置功能；开场白、提示词约定、无答案兜底分别处理其他状态。考查可操作的风险处置入口。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "section": "内容安全",
+        "locator": "风险处置回复，L191、213",
+        "shortFact": "风险命中后可设置回复文案。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "3957b5779e0863f6f7b0023d5abd695655ef762bca392380cc9e1163eb5a55f7"
+  },
+  {
+    "id": "FDE-M7-024",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C正确且脱敏不同于知识授权；其他选项均不处理字段，当前仅适合入门学习。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "section": "内容安全",
+        "locator": "应用安全设置：信息脱敏，L235–246",
+        "shortFact": "支持手机号等隐私类型脱敏。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "掩盖手机号与脱敏为直接词义对应，温度及权限选项很难混淆。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "a2c38cf941773f26b0f8893ee5c276ade0b32c87c62a29dc7875fc0715ca8881"
+  },
+  {
+    "id": "FDE-M7-025",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C是特殊管理边界；并非管理员自动读出或引用他人密钥，D又忽略删除权。适合M7最小授权。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "section": "授权凭证",
+        "locator": "凭证类型及权限，L70",
+        "shortFact": "管理员可删个人凭证但不能引用。",
+        "version": "2026-09-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "6397dc960f1d029fae9173389805a9081fc80c6588e3b8ecc72509ba99df46df"
+  },
+  {
+    "id": "FDE-M7-026",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D正确；编辑/删除/查看明文分别被正文排除。M4-228的方案也主要靠同一事实，但本题为基础操作边界，列关联风险供全库去重。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "section": "授权凭证",
+        "locator": "企业共享凭证，L71、162",
+        "shortFact": "接收成员仅引用，不能管理秘密。",
+        "version": "2026-09-14"
+      }
+    ],
+    "difficultyConcern": "与M4-228高度同源且判断相近；建议全库只计一个，保留本题作学习卡。",
+    "duplicateGroup": "shared-credential-reference-boundary:M7-026/M4-228",
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "eae0f6b7b528c5c3cf2f32ce4cb1f81f7543e247d1bed00a015b8cadbe212127"
+  },
+  {
+    "id": "FDE-M7-027",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确，其他选项均错误假设发布快照隔离凭证；M4-224进一步要求测试生产拆凭证方案，任务有区别。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "section": "授权凭证",
+        "locator": "凭证管理，L156；常见问题L361",
+        "shortFact": "凭证修改影响已发布引用应用。",
+        "version": "2026-09-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "908879cbe693578deaf46f1644c58fbf048a4234cafe58c86c1ebd11384f6814"
+  },
+  {
+    "id": "FDE-M7-028",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A有直接入口证据；但创建时间、只查一个应用等干扰过弱。与M4-227逐消费路径轮换验证关联而不完全同题。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "section": "授权凭证",
+        "locator": "凭证管理：引用详情，L157、159、328",
+        "shortFact": "变更前可查看凭证引用详情。",
+        "version": "2026-09-14"
+      }
+    ],
+    "difficultyConcern": "直接选入口名，三项均主动省略依赖检查。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "db69afbe42605385a53900f33f23f7ff51b515d63ef4f41c95efc05bd3bec0c6"
+  },
+  {
+    "id": "FDE-M7-029",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D受支持；重发应用、不断重试、改同名工具均不修复授权。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "section": "授权凭证",
+        "locator": "常见问题/凭证失效，L158、330",
+        "shortFact": "失效OAuth可刷新、重授权或更换。",
+        "version": "2026-09-14"
+      }
+    ],
+    "difficultyConcern": "所有错误选项均希望绕过凭证修复，缺乏真实OAuth状态诊断，暂作学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "e837958f88d8ae279470e993266c2f7f0143153f0a99e363a6d98b6c664132cc"
+  },
+  {
+    "id": "FDE-M7-030",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B受支持，A错误声称只有一条，C/D不能满足隔离目的。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "section": "授权凭证",
+        "locator": "权限与安全说明，L326、368",
+        "shortFact": "可按环境建多凭证并清楚命名。",
+        "version": "2026-09-14"
+      }
+    ],
+    "difficultyConcern": "只凭通用命名常识即可选，缺少ADP引用关系或环境故障的判断。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "5d0954920fe840602905a681e2745ab9ce50b38407b5fe544521fb1c8a0dc520"
+  },
+  {
+    "id": "FDE-M7-031",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B是版本迁移重要限制；A/C/D均与切换失效语义冲突。题干已标历史授权与新版，未混用旧新机制。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "section": "授权凭证",
+        "locator": "历史授权迁移，L340",
+        "shortFact": "转换后旧授权失效且不可恢复。",
+        "version": "2026-09-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "352d9b91cb6c7809ccea38ee68310af93be710cf35d475382694b74cf570e4ad"
+  },
+  {
+    "id": "FDE-M7-032",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B事实正确，但与M3-138相同审核步骤识别；M4-099也以该审核门槛为主要答案。应换独立风险判断任务再计分。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "Skills 介绍",
+        "locator": "安全审核机制，L84–88",
+        "shortFact": "自定义技能需格式校验和扫描。",
+        "version": "2026-07-14"
+      }
+    ],
+    "difficultyConcern": "单选只把M3多选审核清单合并成一个正确项，不能算独立题。",
+    "duplicateGroup": "skill-import-scan:M7-032/M3-138/M4-099",
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "c2a40a20fd1b981d9b787a49a54843e77ed4eacbd8960912309c0f3f77c48d76"
+  },
+  {
+    "id": "FDE-M7-033",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A正确，B重复扫描、C不看报告、D免审批均不符。考查导入审核与共享审批的不同阶段，有独立判断。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "Skills 介绍",
+        "locator": "共享Skills/安全审核机制，L55–56、88",
+        "shortFact": "共享沿用报告并由管理员审批。",
+        "version": "2026-07-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "8b32ef4b7f3c927b8f9c86220ea238312e7d1bfac46353bc0b2d53f7e24c9dfe"
+  },
+  {
+    "id": "FDE-M7-034",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A事实成立且未冒称运行任务立即切版；但与M3-130同一自动更新机制选择，安全复核背景没有新增解题约束。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "Skills 介绍",
+        "locator": "Skills的三种类别，L37",
+        "shortFact": "SkillHub更新由平台检测到广场。",
+        "version": "2026-07-14"
+      }
+    ],
+    "difficultyConcern": "正确项独有完整事实和建议，实质同题需替换。",
+    "duplicateGroup": "skillhub-update:M7-034/M3-130",
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "b82608f374757d4500a83ffa869b347a1dd3bc6f4e5768261d40c9256b688ce9"
+  },
+  {
+    "id": "FDE-M7-035",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B受支持；审核不是准确性、业务授权担保。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "Skills 介绍",
+        "locator": "Skills的三种类别/安全审核，L37、84",
+        "shortFact": "内置技能经过安全和质量审核。",
+        "version": "2026-07-14"
+      }
+    ],
+    "difficultyConcern": "A/C是明显过度担保、D漏安全审核；仅能测记住审核口号，进阶标签偏高。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "174014ea03fe588b019974a80d61f434a89ee68a12a614f7dbd934a4674b4299"
+  },
+  {
+    "id": "FDE-M7-036",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B支持；后台持续、只首次读取、永不读正文均是实际可比较的采集边界。符合隐私范围。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "section": "ADP 浏览器助手插件服务协议",
+        "locator": "隐私与数据处理，L62–66",
+        "shortFact": "只有主动发指令时读取当前页。",
+        "version": "2026-06-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "757f32f699a01b0a0056b8ecc1decbb356ea317f2d36ffe5ca1d728dab27a39f"
+  },
+  {
+    "id": "FDE-M7-037",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D是明确存储边界；其他选项错误扩大分发或混淆模型上下文。虽为插件细节，但关系凭证驻留隐私，限基础。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "section": "ADP 浏览器助手插件服务协议",
+        "locator": "隐私与数据处理，L66",
+        "shortFact": "连接Token存于本地浏览器。",
+        "version": "2026-06-10"
+      }
+    ],
+    "difficultyConcern": "只记存放位置，建议标基础；不推断本地存储等于绝无泄露风险。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "2c106964dd027dcb7f3fb01fa14ee0e39709f2c76fa601a61dc0772bcabf1e55"
+  },
+  {
+    "id": "FDE-M7-038",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A违反明文限制，B/C/D均为合规访问。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "section": "ADP 浏览器助手插件服务协议",
+        "locator": "使用限制，L79",
+        "shortFact": "不得绕过网站安全或访问控制。",
+        "version": "2026-06-10"
+      }
+    ],
+    "difficultyConcern": "题干问违反限制，A直接重复“绕过”，无需ADP知识即可答；仅作合规学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "eb54b3ffdd10bc7bd6413a490139105a5d9247a1a456c6b84347c70a65d14991"
+  },
+  {
+    "id": "FDE-M7-039",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B正确，三项保证超出条款；与43识别幻觉概念不同。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "section": "ADP 浏览器助手插件服务协议",
+        "locator": "免责声明/责任限制，L107",
+        "shortFact": "不保证输出准确、完整或合法。",
+        "version": "2026-06-10"
+      }
+    ],
+    "difficultyConcern": "天然、全部、成功即证明等绝对保证过显眼，建议替换为需证据判断的验收承诺。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "1fb16670a7bf0eb9d4cb42ab6aa2524f1c4ca017596b13c5de054f3d4fa4ed93"
+  },
+  {
+    "id": "FDE-M7-040",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D是实际责任边界，不应把浏览器动作当沙箱。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "section": "ADP 浏览器助手插件服务协议",
+        "locator": "自动化操作风险，L48",
+        "shortFact": "真实提交等动作可能无法回滚。",
+        "version": "2026-06-10"
+      }
+    ],
+    "difficultyConcern": "三个干扰分别否认真动作或声称通用沙箱/回滚，明显不可信，暂作学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "a2320a2c775faa622598c31cfabb84f5c97524b6281b6d59b82fc084f16b3209"
+  },
+  {
+    "id": "FDE-M7-041",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D对应维护责任，平台连接不等于环境托管。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "section": "Lighthouse OpenClaw Connector 插件服务协议",
+        "locator": "执行环境管理，L67",
+        "shortFact": "执行环境由用户或授权方维护。",
+        "version": "2026-02-11"
+      }
+    ],
+    "difficultyConcern": "A/B/C均把用户维护责任完全免除，选项过弱，需真实托管边界情境。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "4e9fcab37180ead2f39bb92ec0f166ce007c25b289dc891ab96aa337318a2e42"
+  },
+  {
+    "id": "FDE-M7-042",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C受支持，响应兼容或一次成功都不是许可证明。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "section": "Lighthouse OpenClaw Connector 插件服务协议",
+        "locator": "自定义模型使用与合规责任，L70、73",
+        "shortFact": "使用模型须有授权并遵守合规条件。",
+        "version": "2026-02-11"
+      }
+    ],
+    "difficultyConcern": "只选“授权及合规”即正确，缺少许可范围/数据去向的具体冲突。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "a32cf8258d116f1a44b797215fbf36c27f56e2c24f9de8d3a0cc5434dababb87"
+  },
+  {
+    "id": "FDE-M7-043",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A正确；当前全库检索未发现另题同样要求命名幻觉，故不强行报跨模块重复。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "section": "Lighthouse OpenClaw Connector 插件服务协议",
+        "locator": "自定义模型使用与合规责任，L75",
+        "shortFact": "模型可能产生不准确或误导内容。",
+        "version": "2026-02-11"
+      }
+    ],
+    "difficultyConcern": "流畅但不准确即幻觉的定义题；其余两项否认风险，一项网络故障，进阶难度不成立。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "20103db107cbe44b18bd599182acc2a46a28aff3c9de16d71ce93efb9f62252c"
+  },
+  {
+    "id": "FDE-M7-044",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A受支持；任务成功、终端备份、第三方模型合规不在此保证内。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "section": "Lighthouse OpenClaw Connector 插件服务协议",
+        "locator": "平台职责/运行日志，L95",
+        "shortFact": "平台校验Token并路由授权环境。",
+        "version": "2026-02-11"
+      }
+    ],
+    "difficultyConcern": "三个错误项都是无边界接管或成功担保，当前测排除绝对词而非职责诊断。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "29a5a8a7272eb3c2279635f19d160d4a89ec8e03c23648a1fbce5ffac0a17ced"
+  },
+  {
+    "id": "FDE-M7-045",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A与题设无默认空间准入需求匹配，B/C/D均扩大访问。属于默认权限配置而非泛安全口号。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122570",
+        "section": "企业管理",
+        "locator": "用户访问范围，L50–54",
+        "shortFact": "可设置新用户暂不能访问空间。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "ba19cfd43349fdf8844bb4b520223a0fa8d584d532fcb1e4183776353c0deaf1"
+  },
+  {
+    "id": "FDE-M7-046",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B事实正确；其他三个入口均不是云账号注册。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122570",
+        "section": "企业管理",
+        "locator": "新建用户，L60",
+        "shortFact": "新建企业子账号跳转CAM。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "入口名称记忆且干扰跨完全不同对象，对FDE安全判断贡献低，暂为学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "5a4b0d5e191a0f4dae5663d78b81654ff77b85b22fc91697922ee5a2b81b689c"
+  },
+  {
+    "id": "FDE-M7-047",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C受支持；题面范围是企业管理用户操作而非关闭整个云账户。与6空间移除范围不同。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122570",
+        "section": "企业管理",
+        "locator": "用户管理：删除用户，L93",
+        "shortFact": "可删子账号，不支持删主账号。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "f6d2c7eb47433baa846fd626b6f1ee5fa29f3e36bd54afd0296be4a12c3a7090"
+  },
+  {
+    "id": "FDE-M7-048",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D符合官方组织机制；平台开发资产隔离不同于终端知识ACL。题干未宣称能阻止共同超级管理员。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122569",
+        "section": "企业、工作空间与权限概述",
+        "locator": "什么是工作空间，L38",
+        "shortFact": "不同空间的数据相互隔离。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "f28e0ae0e84784f23bf463e0dbd755961fde34a7bd861e9801b14347ad4a746f"
+  },
+  {
+    "id": "FDE-M7-049",
+    "status": "needs_revision",
+    "examUse": "hold",
+    "rationale": "旧概述能支持C的抽象定义，但升级后的平台权限把按应用发布开关列入高级自定义数据权限，题干没有限定抽象概念或旧版语境，容易与003相冲突。建议改用“新建应用”作为功能权限例子并补新来源；修订前暂停计分。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122569",
+        "section": "企业、工作空间与权限概述",
+        "locator": "权限与用户/权限说明，L49–53",
+        "shortFact": "旧概述用发布举例功能权限。",
+        "version": "2025-11-14"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "section": "平台端用户权限",
+        "locator": "权限升级说明L31；功能权限L134；高级自定义L182",
+        "shortFact": "新版数据权限可按应用控制发布。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "当前版本中操作权限与数据粒度控制可交叠，单纯二分会误导。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "4ec98176d23dcbea6f6ce6a3f6086876084fb3bd092289c04bb12c41e1d3fdd7"
+  },
+  {
+    "id": "FDE-M7-050",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B明确支持；题目辨别成员关系而不是误以为加入一处自动全企业访问。基础题范围清楚。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122569",
+        "section": "企业、工作空间与权限概述",
+        "locator": "权限与用户/用户说明，L61",
+        "shortFact": "一个用户可加入多个空间。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "08db6780c712e5c8967b0390105a5288d20c19f246e79c9b23be52b326a1dd3e"
+  },
+  {
+    "id": "FDE-M7-051",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C正确，未要求用户另购COS或公开文件。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116238",
+        "section": "腾讯云智能体开发平台操作 cos 指南",
+        "locator": "核心差异说明，L35–45",
+        "shortFact": "内置COS借助平台临时密钥授权。",
+        "version": "2026-08-05"
+      }
+    ],
+    "difficultyConcern": "文件扩展名决定身份、主账号共用、无COS鉴权均很弱，机制名记忆为主。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "49427cadfb05786a9c54fe6e66741773de55c16553850dca935a10f1599d1ba2"
+  },
+  {
+    "id": "FDE-M7-052",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D支持，题干提供实际场景错误；A/B/C把后缀、权限大小或申请成功误作场景可交换。旧API场景有明确来源，但应在学习模式展示版本范围。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116238",
+        "section": "腾讯云智能体开发平台操作 cos 指南",
+        "locator": "场景参数/权限不足排查，L64–66、80",
+        "shortFact": "离线上传不可套用realtime。",
+        "version": "2026-08-05"
+      }
+    ],
+    "difficultyConcern": "旧上传流程参数题；公开FDE考纲未明示需记忆该参数，不纳核心模拟计分。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "997a2e54bdcc2846b58679285bfa244993025d3e97c0b5113fae99a3ea6b2850"
+  },
+  {
+    "id": "FDE-M7-053",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C为官方直接排查方向；未说403只可能此原因。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116238",
+        "section": "腾讯云智能体开发平台操作 cos 指南",
+        "locator": "场景配置/403错误，L59、76",
+        "shortFact": "错误参数组合可触发403。",
+        "version": "2026-08-05"
+      }
+    ],
+    "difficultyConcern": "A/B/D是绕过或重试代替检查，缺少参数、身份、对象路径等真实候选原因。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "c3694052cb1bcbac24a1afe7c7660b3287fc6372f24bfe16fa3e5ad36dbc6746"
+  },
+  {
+    "id": "FDE-M7-054",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D字段正确，题干明确旧版API，非版本伪造；但字段英语可直接提示答案且非公开M7重点。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/105050",
+        "section": "获取文件上传临时密钥",
+        "locator": "3.输出参数，L69–72",
+        "shortFact": "ExpiredTime为失效时间戳。",
+        "version": "2026-04-28；旧版 API 2023-11-30"
+      }
+    ],
+    "difficultyConcern": "旧API字段背诵，无ADP权限方案判断，保留为扩展查询卡。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "3ccf45532432387e07b81f69642215d98b1d608739adf654893b7689dbe9eaea"
+  },
+  {
+    "id": "FDE-M7-055",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C为正文特别警示，非必填不等于每种场景可随意省略。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/105050",
+        "section": "获取文件上传临时密钥",
+        "locator": "2.输入参数：BotBizId，L58",
+        "shortFact": "参数组合会改变所得权限。",
+        "version": "2026-04-28；旧版 API 2023-11-30"
+      }
+    ],
+    "difficultyConcern": "属于旧版API参数解释，作为开发扩展学习；FDE公开安全考纲不足以证明会考此字段。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "6a0af361432343d8bb884aa7cfcf037042f24140fad990b4f0b791c77544f179"
+  },
+  {
+    "id": "FDE-M7-056",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D正确；不保证业务合法、提升资源权限或消除幻觉。与99身份字段配对有区别但相关。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/105109",
+        "section": "签名方法 v3",
+        "locator": "签名目的，L51、56–60",
+        "shortFact": "签名用于验证有效密钥持有者。",
+        "version": "2024-12-25；云 API V3 签名说明"
+      }
+    ],
+    "difficultyConcern": "A/B/C都把认证夸大为授权/内容保证，不能构成有效进阶干扰。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "d4996c9043d789a0372d5e43ff62b11373214b3f0f188bf2133803e359127706"
+  },
+  {
+    "id": "FDE-M7-057",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D受支持；服务端不会自动为篡改请求补签后执行。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/105109",
+        "section": "签名方法 v3",
+        "locator": "签名用途：防篡改，L59–60",
+        "shortFact": "参数变化导致签名不符时拒绝。",
+        "version": "2024-12-25；云 API V3 签名说明"
+      }
+    ],
+    "difficultyConcern": "全部干扰都在签名失败后放行，没有真实误判的重签/时间/参数规范化情境。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "5e019a96eccfc49e4aa6acc3f049be3b953ed0f57e3e771278bae328148fbfd1"
+  },
+  {
+    "id": "FDE-M7-058",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D支持；SDK不是公共身份、SecretId独立认证或无限资源授权。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/105109",
+        "section": "签名方法 v3",
+        "locator": "SDK说明，L43、63、222",
+        "shortFact": "SDK封装签名，请求仍需鉴权。",
+        "version": "2024-12-25；云 API V3 签名说明"
+      }
+    ],
+    "difficultyConcern": "三个错误项均取消鉴权核心条件，答案过易。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "7ed01951c12e60f950bec8b978f0c655eb87c7ad77359a562e28fbb8d3e38855"
+  },
+  {
+    "id": "FDE-M7-059",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C符合题设只读任务与M7越权风险；D只限资源却不限制动作是可信近似错误，因此保留基础计分。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/10592",
+        "section": "安全实践教程",
+        "locator": "最小权限原则，L127",
+        "shortFact": "权限应限制为完成任务所需。",
+        "version": "2025-04-11"
+      }
+    ],
+    "difficultyConcern": "常识性基础题，原难度若为进阶应下调；不应替代ADP具体配置题。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "981d011292d2046ff92e4462a42d304d5be11b982dc49a02bc9c5c0a1f19b086"
+  },
+  {
+    "id": "FDE-M7-060",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C支持；只结束会话、仅改密码、只移应用成员均未覆盖现存云访问。属于生命周期权限撤销，干扰可对应实际遗漏。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/10592",
+        "section": "安全实践教程",
+        "locator": "删除或禁用离职管理员，L108；权限回收L59",
+        "shortFact": "离职应收回访问并停用管理员。",
+        "version": "2025-04-11"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "7db27a5ae0bba71a8e9eec511926a8e1624987989c37051a05847f35d5929584"
+  },
+  {
+    "id": "FDE-M7-061",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D事实正确；MFA是认证增强，不替代资源授权、知识范围、内容真实性。没有把MFA误述为权限系统。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/10592",
+        "section": "安全实践教程",
+        "locator": "启用MFA，L142",
+        "shortFact": "MFA加强登录与敏感操作校验。",
+        "version": "2025-04-11"
+      }
+    ],
+    "difficultyConcern": "三个干扰项分别是授权、检索、事实判断，与MFA层次差异太大；建议改为真实双因素保护场景后计分。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "db7aa0e6d1c87f29a8d75c15736f2c052c3a3136405e6b7548d2f81a0a23e540"
+  },
+  {
+    "id": "FDE-M7-062",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A与主子账号升级规则一致；列表、报告、重新启用均不提供原秘密。记录版本生效日充分，当前事实支持。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/96157",
+        "section": "API 密钥升级公告",
+        "locator": "升级说明，L30、35",
+        "shortFact": "SecretKey自指定日期仅创建可见。",
+        "version": "2023-11-28；变更自2023-11-30生效"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "4d33f4cf13587f385da354a769d461b17ae8488467ef530d4188dc76ebd7ae77"
+  },
+  {
+    "id": "FDE-M7-063",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C正确；题干限定清理已有主账号密钥，并未推荐日常使用。禁用不是仅控制新引用或变只读。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/40488",
+        "section": "主账号访问密钥管理",
+        "locator": "禁用访问密钥，L107",
+        "shortFact": "被禁用密钥的调用均被拒绝。",
+        "version": "2026-05-09"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "7d387cde3ee92f232f46cce68aa07a960e918686e552000efc00e4ebd3f4c10b"
+  },
+  {
+    "id": "FDE-M7-064",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C受支持，其他三项混淆业务执行、耗时和内容安全；事实未发现错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/629/56259",
+        "section": "查看操作记录事件详情",
+        "locator": "查看事件详情，L103、117",
+        "shortFact": "CAM异常与API业务异常字段不同。",
+        "version": "2026-07-23"
+      }
+    ],
+    "difficultyConcern": "泛CloudAudit错误字段辨析未在FDE公开考纲列为细目，扩展运维知识仅学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "65df139fd4c9f422e45085223b5048894b6c2d041aea2380ba11411f5d089b6e"
+  },
+  {
+    "id": "FDE-M7-065",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A正确，且已限定受支持事件；但把题干“请求ID”直接选回，缺乏诊断任务。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/629/56259",
+        "section": "查看操作记录事件详情",
+        "locator": "查看操作记录：请求ID筛选，L54、84",
+        "shortFact": "记录可按请求ID筛选。",
+        "version": "2026-07-23"
+      }
+    ],
+    "difficultyConcern": "同词匹配即能答；其他答案都主动放弃已有唯一线索，仅学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "a749d63c967b6b7322e9105f0ad386edcfa139b9712fee6498a7bbf50a34e00b"
+  },
+  {
+    "id": "FDE-M7-066",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A受支持，事件记录与对话日志不等于状态汇总，报告不导出SecretKey。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/65676",
+        "section": "下载安全分析报告",
+        "locator": "操作场景，L31",
+        "shortFact": "凭证报告汇总子账号安全状态。",
+        "version": "2024-12-10"
+      }
+    ],
+    "difficultyConcern": "通用CAM报告名称记忆；题设没有ADP交付中的权限决策，作为扩展。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "e606140117a205fe4108a5de47459359aaa388c07e13d4b6aa7a792659825151"
+  },
+  {
+    "id": "FDE-M7-067",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D正确，角色仍可授权且载体不只一个账号。事实与当前官方文档一致。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/19420",
+        "section": "角色概述",
+        "locator": "什么是角色，L29–31",
+        "shortFact": "角色无固定凭证，承担时用临时凭证。",
+        "version": "2024-10-12"
+      }
+    ],
+    "difficultyConcern": "泛CAM实体定义题，未绑定ADP临时授权使用情境；进阶标签过高，扩展学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "85c5aa06866d022908d43bcc89ff1931b125ba9245fba3e5585e3d78f72f4db9"
+  },
+  {
+    "id": "FDE-M7-068",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B/D分别有独立默认规则支持；A默认拒绝、C默认管理员均错。直接影响新成员上线权限检查，适合M7。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "section": "平台端用户权限",
+        "locator": "按用户分配L104；数据权限默认L167",
+        "shortFact": "新成员有部分功能及他人数据查看权。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "cb62c4029d8d468e5fd8eb76ba8b72567c7ac45861f3ed6f10e6c89b0d8504fc"
+  },
+  {
+    "id": "FDE-M7-069",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/D正确，B要求删角色与不可删冲突，C试图覆盖管理员也不允许。和5考权限范围不相同。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "section": "平台端用户权限",
+        "locator": "角色管理，L89、91；按用户分配L116",
+        "shortFact": "预置角色可加减成员但不可改权限。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "c414beee108b28f8301771202ad63f242d61e08a44fb00f054ce1325bb0cce56"
+  },
+  {
+    "id": "FDE-M7-070",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C/D正确；角色授权消失不表示用户直接授权也被清空，解释用合集规则支撑合理。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "section": "平台端用户权限",
+        "locator": "删除角色L101；授权合集L130",
+        "shortFact": "删角色不可恢复，该角色授权消失。",
+        "version": "2026-07-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "4d846f7f98eeced3f9bfd99f91956b1b169ca61e2c1c971c2690fe2ef8b1e1e3"
+  },
+  {
+    "id": "FDE-M7-071",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C与D实际是同一断言的否定推断和正面重述；事实正确，但多选并未考两个独立判断。与M4-220共享知识但不同受众有相关性。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "section": "应用端用户权限说明",
+        "locator": "注意事项，L199",
+        "shortFact": "各应用的权限配置独立。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": "两个正确选项互相蕴含，可凭一个事实双选；应合并单选或加入真实异同约束。",
+    "duplicateGroup": "per-app-acl-restatement:M7-071",
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "1c0053255669c0ac1f05621514ec881e7148e9bfe6bda141766ad1203d631e58"
+  },
+  {
+    "id": "FDE-M7-072",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C/D是两个必要输入类型；A已生成答案才校验、B不带身份均不符合流程，且未虚构固定JSON字段。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "section": "应用端用户权限说明",
+        "locator": "外部权限交互步骤，L181–193",
+        "shortFact": "请求包含用户信息和候选切片标识。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "4c700abca1ebbe6e74021ec674a7d6a96d9ba12ca6e62e5d8dba134b111bbebb"
+  },
+  {
+    "id": "FDE-M7-073",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B/C正文支持；D错误依靠旧方案并行。M4-219重点为切片映射未验证时的上线决策，此题为官方注意事项清单，相关但非完全同任务。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "section": "应用端用户权限说明",
+        "locator": "注意事项，L203–211",
+        "shortFact": "维护映射，切换前验证并避开高峰。",
+        "version": "2026-02-26"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "761ddb93d0c0dc854e2a5b550bd8029a1e6a30e469ee15e1e5d240d9f3cde761"
+  },
+  {
+    "id": "FDE-M7-074",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/B/D均在正文转换清单；C是精确比较方向，事实与答案一致。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "section": "内容安全",
+        "locator": "模糊匹配处理，L139–151",
+        "shortFact": "含大小写、繁简及空白符归一化。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "唯一错误项与三个转换项形式相反，机械识别即可；建议改为变形词命中诊断。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "d0eed47f558b12a0e7517e6c7e9281e403210c3b8e38f1f4c8840d9e6c53a1ab"
+  },
+  {
+    "id": "FDE-M7-075",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B/C/D确在枚举；A任意商业秘密自动保障无依据，未把有限类型说成全部隐私。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "section": "内容安全",
+        "locator": "信息脱敏：支持类型，L246",
+        "shortFact": "支持证件、银行账户和地址等类型。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "三个短实体名对一个明显无限保障长句，排除无需知道支持列表，仅学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "b20eb55aef63b69164deb286d998e413e0a94c256486339be09f68b48ed8d633"
+  },
+  {
+    "id": "FDE-M7-076",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/C受支持；B不是自由创建，D把审核分类标签误当知识ACL。所用“标签”非CAM授权标签，边界没有混淆。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "section": "内容安全",
+        "locator": "机审标签，L174",
+        "shortFact": "预设标签用于分类统计。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "b9bf6f28c12b4a7f5d5c615bc20b6db5c4f4e25b3c93e1d9addba39018c44fb4"
+  },
+  {
+    "id": "FDE-M7-077",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B/C分别对应两类入口；能引用不等于能共享，且凭证受工具关联限制。属于具体职责差异，可计分。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "section": "授权凭证",
+        "locator": "凭证共享，L261、265–271、284",
+        "shortFact": "自定义工具创建者及内置企业管理员管理。",
+        "version": "2026-09-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "8764451c015da86cab358480bc289b1def1a2ccf600af5d7cf9c0fae0babd484"
+  },
+  {
+    "id": "FDE-M7-078",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B受支持；C混淆授权与订单参数，D误认为跨工具通用池。与M4-225还需完成OAuth授权及业务字段的组合任务有区别。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "section": "授权凭证",
+        "locator": "工作流引用已有凭证，L226–228",
+        "shortFact": "凭证填授权，业务参数仍须配置。",
+        "version": "2026-09-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "7cd5f3ad7e714b64c70c26eecd050fbf55767beab666ef8a358070b39ff5c7bb"
+  },
+  {
+    "id": "FDE-M7-079",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B/C两项边界成立；应用编辑不提供导出密钥权，企业创建也不自动全空间可用。与26仅共享使用/管理权有所区别。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "section": "授权凭证",
+        "locator": "凭证选择L182、205；安全说明L332",
+        "shortFact": "不展示秘密，只列有权引用的本工具凭证。",
+        "version": "2026-09-14"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "09a4c66f62c93fa8e736e71381b14662da774360c367164804d20fd802fe01f4"
+  },
+  {
+    "id": "FDE-M7-080",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B/D事实成立，但分别复用M3-139发起者与M4-097共享审批范围；拼成清单没有新的决策任务，建议替换。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "Skills 介绍",
+        "locator": "Skills的三种类别，L38–39、48",
+        "shortFact": "编辑者申请共享，审批后全企业空间开放。",
+        "version": "2026-07-14"
+      }
+    ],
+    "difficultyConcern": "多选仅拼接已存在知识问答，不能当新增独立练习。",
+    "duplicateGroup": "skill-sharing:M7-080/M3-139/M4-097",
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "31d6e68274c6c5a030aaddffe1c7a7e48fde202eb8d3b891c3746e683402e773"
+  },
+  {
+    "id": "FDE-M7-081",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/B与明确入口一致；技能扫描不是API认证，空间成员身份也不替代密钥。此处是ADP原生插件API密钥，不是建议创建CAM主账号访问密钥。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "Skills 介绍",
+        "locator": "原生Skills鉴权，L75–79",
+        "shortFact": "调用先取API密钥，入口在企业密钥管理。",
+        "version": "2026-07-14"
+      }
+    ],
+    "difficultyConcern": "管理入口记忆较多；保留基础，需在解释强调两类密钥不同以免与CAM建议混淆。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "24c72de8b4355e7796c0759ba37b719de71326965ed97ec7cb187af8f3a17f9b"
+  },
+  {
+    "id": "FDE-M7-082",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/C明确支持；本地Token储存不意味着页面永不传输或立即删除。属于真实数据流隐私判断，与37Token驻留不同。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "section": "ADP 浏览器助手插件服务协议",
+        "locator": "隐私与数据处理，L62、68",
+        "shortFact": "必要页面信息传智能体，按ADP策略处理。",
+        "version": "2026-06-10"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "440daa2ba6fa71d1919ff8b40025e41f75119f96b55d5a648a854859de05ab2f"
+  },
+  {
+    "id": "FDE-M7-083",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/C事实正确，B/D是协议未保证的自动适应和意图精确。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "section": "ADP 浏览器助手插件服务协议",
+        "locator": "风险提示，L51、55",
+        "shortFact": "指令误解和第三方页面变化可影响执行。",
+        "version": "2026-06-10"
+      }
+    ],
+    "difficultyConcern": "两个错误选项均带保证，两个正确项仅陈述风险，责任AI范围虽相关但区分度很弱。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "12cb58e1d0045009cdf54adfcc3df4bc7acf183add74e0133826da6ef67b46a4"
+  },
+  {
+    "id": "FDE-M7-084",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/C支持，连接合法不免除误授权责任。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "section": "Lighthouse OpenClaw Connector 插件服务协议",
+        "locator": "数据与凭证安全责任，L86",
+        "shortFact": "用户管理Token保管、轮转和撤销。",
+        "version": "2026-02-11"
+      }
+    ],
+    "difficultyConcern": "B/D为明显免除安全管理的极端断言，需改成凭证泄漏/交接等实际决策后计分。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "374e9c9348bd5f5f381816047a9f23154a6154a821ebc7e23d192ffb342b5dca"
+  },
+  {
+    "id": "FDE-M7-085",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/C受支持；不主动采集不等于处理自动合规，环境授权不等于任意用户授权。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "section": "Lighthouse OpenClaw Connector 插件服务协议",
+        "locator": "数据与凭证安全责任，L89",
+        "shortFact": "用户须做访问控制、监测、应急。",
+        "version": "2026-02-11"
+      }
+    ],
+    "difficultyConcern": "两个错误项均全称放行，正确项是通用安全清单，当前仅作责任提醒。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "c2ebd454ebdef73ad1573a4e7c864dd5f4e18021fcf3fff123459d665537106c"
+  },
+  {
+    "id": "FDE-M7-086",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/C受支持且日志不等于主动采集全部数据；B/D扩大保证或抹除已列日志。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "section": "Lighthouse OpenClaw Connector 插件服务协议",
+        "locator": "运行风险及平台职责，L92、97",
+        "shortFact": "网络环境可中断，平台保留调度日志。",
+        "version": "2026-02-11"
+      }
+    ],
+    "difficultyConcern": "将故障风险与日志存在两条分离事实拼为多选，错误项绝对词明显，仅学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "88445039eebf164064d3b55446b72adcb9e7b76fc24371664b75abac6e6ec1bb"
+  },
+  {
+    "id": "FDE-M7-087",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/C事实成立，B/D相反；但主要是管理生命周期常识，不直接考权限、隐私或责任AI。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122569",
+        "section": "企业、工作空间与权限概述",
+        "locator": "什么是工作空间，L42",
+        "shortFact": "默认空间初始化创建且不能删除。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "两对相反断言，进阶不成立；若放入别的学习章节更合适。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "c96d06e6f47b95d02788fc914820ada10deea39f31dbd5ff67ea4ea41113411a"
+  },
+  {
+    "id": "FDE-M7-088",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/D通用CAM事实成立，题干主动避免宣称可加入ADP；补充ADP正文明确不支持协作者账号，因此不能把此题包装为ADP身份配置规则。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/13665",
+        "section": "用户类型",
+        "locator": "用户类型，L25–29",
+        "shortFact": "消息接收人仅收消息，协作者仍保留主身份。",
+        "version": "2023-08-25"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122569",
+        "section": "企业、工作空间与权限概述",
+        "locator": "创建工作空间指引注意事项，L103–105",
+        "shortFact": "ADP不支持协作者账号。",
+        "version": "2025-11-14"
+      }
+    ],
+    "difficultyConcern": "通用CAM用户分类扩展，无明确FDE细目支持。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "ea481d816914dd045f95d1e8f187bac4334299d662e1a931a27c01bfb67fc577"
+  },
+  {
+    "id": "FDE-M7-089",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/B支持；组名不授予权限，组仍依赖策略。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/14985",
+        "section": "新建用户组",
+        "locator": "操作场景，L31–33",
+        "shortFact": "同职能子账号可分组并批量授权。",
+        "version": "2024-10-12"
+      }
+    ],
+    "difficultyConcern": "C/D都把加入组当无限权限，明显弱干扰；泛CAM用户组介绍仅扩展学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "7a20b5573c7b467245ce0979d838632030648f09365d8830449330872d126a92"
+  },
+  {
+    "id": "FDE-M7-090",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B/D受支持，A/C未被推出；题干不虚构所有ADP API支持该条件。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/38037",
+        "section": "限制 IP 访问",
+        "locator": "前提条件L36；操作步骤L39–53",
+        "shortFact": "目标产品支持IP限制才可配置。",
+        "version": "2024-10-11"
+      }
+    ],
+    "difficultyConcern": "通用CAM策略适用边界，事实可核但公开FDE未列IP条件实操，扩展学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "a803a13d21cd79485ed09ec7cba2b16ebcf75b640b37792d45e8e1476a0451c2"
+  },
+  {
+    "id": "FDE-M7-091",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/C/D字段定义成立，effect不是执行顺序。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/10603",
+        "section": "元素参考概述",
+        "locator": "4.操作L48–49；5.资源L100–102；6.条件L103–104；7.效力L146–148",
+        "shortFact": "策略分别描述动作、资源、条件与允许拒绝。",
+        "version": "2026-09-20"
+      }
+    ],
+    "difficultyConcern": "CAM JSON语法元素背诵，不能因来源官方就推定FDE会考此细节。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "19d37e0b714688c894c06e272fff695a8c0c2811f67282a2ecccc75af84c9c9a"
+  },
+  {
+    "id": "FDE-M7-092",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/B/D字段确实存在，C状态快照不等于逐次日志。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/65676",
+        "section": "下载安全分析报告",
+        "locator": "报告格式，L54–56",
+        "shortFact": "报告含登录、操作保护及MFA状态。",
+        "version": "2024-12-10"
+      }
+    ],
+    "difficultyConcern": "三个字段名对一个长句绝对能力，形式即可排除；通用报告字段不作FDE计分。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "c247c416630b1f07442cc59d41161a6dc000b7decb75ab880bfaefd8644df5af"
+  },
+  {
+    "id": "FDE-M7-093",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/B受支持，C清空、D换给同名接任者均不符；只涉及显示规则，不保证所有产品完整审计。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/629/56259",
+        "section": "查看操作记录事件详情",
+        "locator": "查看操作记录，L50、52",
+        "shortFact": "删除用户或角色后显示相应ID。",
+        "version": "2026-07-23"
+      }
+    ],
+    "difficultyConcern": "通用审计UI边角细节与公开FDE关联弱，干扰项明显错误。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "7242cba9e8d78ffee1d33c61d3f4b85e4536330cdcbaf90cf98b5d29aa80630e"
+  },
+  {
+    "id": "FDE-M7-094",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/C有正文依据；B购买前提和D任意替桶保权均错。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116238",
+        "section": "腾讯云智能体开发平台操作 cos 指南",
+        "locator": "核心差异/存储归属，L35、41",
+        "shortFact": "内置上传不需购买且不用客户自购桶。",
+        "version": "2026-08-05"
+      }
+    ],
+    "difficultyConcern": "内置存储归属是产品接入边界，主要偏M2/M3；没有额外安全决策，当前保留学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "f92a103d1c6c6dcea711bc519bf75f028b50abe5b69fee05fd98a91f0cf0e3de"
+  },
+  {
+    "id": "FDE-M7-095",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B/C与明确旧版场景相符；A一律公开、D忽略参数均错误。未据变量名臆造匿名访问机制。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/105050",
+        "section": "获取文件上传临时密钥",
+        "locator": "2.输入参数：IsPublic，L62",
+        "shortFact": "旧接口对话图片true，文档false。",
+        "version": "2026-04-28；旧版 API 2023-11-30"
+      }
+    ],
+    "difficultyConcern": "旧版接口参数组合背诵，M7计分不应依赖此冷僻接口细节。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "6aad01a992e6647841b31a324d381b5f2925c0b303b05583537a77b920b05b6a"
+  },
+  {
+    "id": "FDE-M7-096",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/B直接支持，所有请求认证，不存在GET免认证或Body用户名替代Header。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/127284",
+        "section": "ADP 文档解析协议",
+        "locator": "版本信息L43–55；鉴权方式L57–64",
+        "shortFact": "v1.0使用HTTPS及Header Bearer认证。",
+        "version": "2026-01-07；协议v1.0，协议内日期2025-12-23"
+      }
+    ],
+    "difficultyConcern": "具体封装协议基础要求有安全关联，但题干不是部署故障或权限设计；仅扩展学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "c63d146995e1ae4bc99581f705410d87b2871d48371871928e83d0a7bc34ad39"
+  },
+  {
+    "id": "FDE-M7-097",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A/C受支持，永久匿名公开并非前提，本地绝对路径不是远端可读URL。体现可访问与永久公开不同，适合隐私边界计分。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/127284",
+        "section": "ADP 文档解析协议",
+        "locator": "提交任务/请求参数：FileUrl，L87–92",
+        "shortFact": "可访问HTTPS支持签名临时链接。",
+        "version": "2026-01-07；协议v1.0，协议内日期2025-12-23"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "ac4d07ad898fda09a70c897ab55814d2431967b2973d6f5686af8d328ec51bef"
+  },
+  {
+    "id": "FDE-M7-098",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D为正式建议，C由删除接口不可恢复说明支持；题干已完成切换。A可恢复和B删除账号资源均错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/123925",
+        "section": "定期轮转访问密钥（AccessKey）的安全建议",
+        "locator": "密钥轮转操作说明，L60–64",
+        "shortFact": "先换新密钥，禁用旧项观察后删除。",
+        "version": "2025-10-10"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/598/82369",
+        "section": "删除访问密钥",
+        "locator": "1.接口描述，L40–41",
+        "shortFact": "删除密钥不可恢复且永久拒绝该密钥请求。",
+        "version": "2025-09-12；API版本2019-01-16"
+      }
+    ],
+    "difficultyConcern": "基础安全运维题，干扰偏弱但禁用/删除先后及不可逆边界是实际决策。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "36b98460cc9b81b19ee1bb2918a783dd0d4e7f116173235e13c06d07c9a6df82"
+  },
+  {
+    "id": "FDE-M7-099",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A/C配对正确，B标识不能独立认证，D秘密不能当公开昵称。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/40488",
+        "section": "主账号访问密钥管理",
+        "locator": "操作场景，L38–44",
+        "shortFact": "SecretId标识，SecretKey用于身份验证。",
+        "version": "2026-05-09"
+      }
+    ],
+    "difficultyConcern": "通用API密钥词义题，与56同属认证基础但非完全同任务；进阶标签偏高，仅学习。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "7c4a5f18c64383ff5928f467b7e2223b1fc707ccefe391d2afd96b57bb131053"
+  },
+  {
+    "id": "FDE-M7-100",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B/D有官方安全实践支持；A共用主账号、C无差别双凭证均违背最小授权。符合ADP交付团队身份规划，保留基础计分。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/10592",
+        "section": "安全实践教程",
+        "locator": "职责分离L76；凭证种类L78–82",
+        "shortFact": "分离管理职责，只发所需访问凭证。",
+        "version": "2025-04-11"
+      }
+    ],
+    "difficultyConcern": "未见足以排除计分的难度问题；仅按题面判断，未经真实考生测量。",
+    "duplicateGroup": null,
+    "reviewer": "reviewer (independent AI, not human expert or Tencent)",
+    "checkedAt": "2026-10-09",
+    "contentHash": "7d6ab103ab0491dc9f4c450a85b2b2852307aaa8282b272bb82696903bf4d66f"
+  }
+]

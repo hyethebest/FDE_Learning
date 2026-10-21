@@ -1,0 +1,145 @@
+[
+  {
+    "id": "FDE-M3-029",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "已改为表格切片格式质量与Token取舍；独立核122551切分内表格，Markdown质量/HTML更少Token有明确支持。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "5f8dcf60775e8e5a077f22eec3922de85189c144d36b2baa1ae78aa6a1a6cc3f"
+  },
+  {
+    "id": "FDE-M3-042",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "已改意图定义配置，名称/描述/示例均适用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115747"
+    ],
+    "contentHash": "485facdcb912928cb89e551d09cd8c7fab5ce96084db5e50ad566e1a0dbbd7b9"
+  },
+  {
+    "id": "FDE-M3-046",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "补齐标签提取节点主语，答案和配置机制一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112965"
+    ],
+    "contentHash": "6708b35fe67851c50ae2caa0efdfe0fdafcd63453f553153298fe30f41b72750"
+  },
+  {
+    "id": "FDE-M3-048",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "补齐节点上下文，引用/手输/混合均成立。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112965"
+    ],
+    "contentHash": "005e5c27af58e68cc92babf7d0175b9baa448518e3c972a2407621cb1cb2346c"
+  },
+  {
+    "id": "FDE-M3-051",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "新题诊断用户问题、提示词、中间消息错位，原创任务，三个字段职责有依据。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112964"
+    ],
+    "contentHash": "1acf586b33ad05975cd0b0f47e219ea27d23dfdde7ec5b6a1c4d4d752e87dae8"
+  },
+  {
+    "id": "FDE-M3-066",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "干扰改为数字识别限制和自动增选项误解，有实质辨析。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115756"
+    ],
+    "contentHash": "7800e2cfbf5cae3c7eaddeb03dc85551b8918f08d72b4036b4e0902d377cdfab"
+  },
+  {
+    "id": "FDE-M3-076",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "独立重核119290：array<int>/string/object为举例而非封闭枚举，不虚构不支持类型；与循环对象数组条件区分。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119290"
+    ],
+    "contentHash": "9f0ca2d1aceca766d1ece7f88bae539d0bc3c56fad1c3a02784caf707e845909"
+  },
+  {
+    "id": "FDE-M3-083",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "返回JSON不自动形成业务输出schema，补充真实字段及类型误区。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "contentHash": "fa7485387ace0ee82af41c0997fa1c77e8a7df14ee3c16a58620f03efa823f5c"
+  },
+  {
+    "id": "FDE-M3-092",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "原生子流程引用与复制节点/文字标识区别清楚。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749"
+    ],
+    "contentHash": "23b882837db5715c68742a32e2a3f32790613b0fb6496029c552ecfd217c613e"
+  },
+  {
+    "id": "FDE-M3-096",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "首次引用状态和后续不可换绑为不同阶段；正确项B/D无歧义。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749"
+    ],
+    "contentHash": "74e3effa037f225ddf6270c5c5558415859f4230044738b4ab5def697f2e9907"
+  },
+  {
+    "id": "FDE-M3-100",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "异常处理选项已改为实际三路径与重试次数，固定返回且继续的条件唯一。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115748"
+    ],
+    "contentHash": "54e1baa6b321115eb9f42fcf608918a0bdbc48fd95e36067302ca8904acf0a70"
+  }
+]

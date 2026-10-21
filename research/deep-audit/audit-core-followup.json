@@ -1,0 +1,76 @@
+{
+  "version": "2026.10.09.3",
+  "auditCoverage": "1000/1000 each independently reviewed by an AI agent different from the author; not a sample, not a human examiner",
+  "eligibleDefinition": "supported facts and defensible answer set, current version context, reasonable syllabus relevance, no unresolved major item-quality issue or selected cross-bank exclusion; subjective AI judgment, no numerical psychometric cut score",
+  "counts": {
+    "eligible": 400,
+    "learning_only": 558,
+    "hold": 42
+  },
+  "rawModuleEligible": 408,
+  "finalAdditionalDowngrades": 8,
+  "holdPrimaryReasons": {
+    "source_insufficient": [
+      "FDE-M2-029",
+      "FDE-M2-031",
+      "FDE-M2-057",
+      "FDE-M2-058",
+      "FDE-M3-057",
+      "FDE-M3-104",
+      "FDE-M3-105",
+      "FDE-M3-106",
+      "FDE-M3-107",
+      "FDE-M3-108",
+      "FDE-M3-109",
+      "FDE-M3-116",
+      "FDE-M3-117",
+      "FDE-M3-118",
+      "FDE-M3-119",
+      "FDE-M3-120",
+      "FDE-M3-121",
+      "FDE-M4-004",
+      "FDE-M4-006",
+      "FDE-M4-041",
+      "FDE-M4-042",
+      "FDE-M4-064",
+      "FDE-M4-065",
+      "FDE-M4-066",
+      "FDE-M4-133",
+      "FDE-M4-134",
+      "FDE-M4-135",
+      "FDE-M4-164",
+      "FDE-M4-165",
+      "FDE-M4-174",
+      "FDE-M4-181",
+      "FDE-M4-182",
+      "FDE-M4-183",
+      "FDE-M4-184",
+      "FDE-M4-185",
+      "FDE-M4-192",
+      "FDE-M4-238",
+      "FDE-M4-240"
+    ],
+    "version_context_conflict": [
+      "FDE-M3-024",
+      "FDE-M7-049"
+    ],
+    "explanation_reference_error": [
+      "FDE-M1-095"
+    ],
+    "question_answer_scope_mismatch": [
+      "FDE-M6-023"
+    ]
+  },
+  "learningOnlyStatusCounts": {
+    "needs_revision": 175,
+    "supported": 383
+  },
+  "limits": "No official stems or answers have been read. Await user-provided recording. No exam started or attempt consumed.",
+  "hashes": {
+    "data/questions.json": "4359a79ef7bfb53bfabda8906d3a7c8cf128b49a6b25308113a2a42e09f4c53a",
+    "data/quality.json": "5789d1044290261bff2882f0662aa7c32ba4552b69a473a4d09c95470ec32922",
+    "data/manifest.json": "047153d6bfd1797a265457597a4ba1cffcf5c3aeea4682c9902aa1af7f6928d1",
+    "完整证据报告.md": "37e3c7a34f544964fc56721a500690d1d636cd6826c6a3a2c0d389c6735bb29b",
+    "腾讯FDE认证备考题库.zip": "67ec227e46158a9d52073ccb80074d2e7721f31ba3a6c6f7714d5573efd9767e"
+  }
+}

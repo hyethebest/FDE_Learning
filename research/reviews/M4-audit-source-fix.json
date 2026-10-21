@@ -1,0 +1,46 @@
+[
+  {
+    "id": "FDE-M4-178",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "reviewerType": "AI",
+    "notes": [
+      "AI独立复核：已重新联网逐页核对115747与112970正文，第二来源fact现准确描述条件分支、祖先节点输出引用与后续路由，不再错误重复意图多选事实。",
+      "115747的意图模式、输出变量与意图连线说明支持分类结果及后续处理；112970的节点功能/设置条件支持路由机制。题设两项动作均须执行、任务映射及可能依赖顺序属于工程推理，并非文档保证自动执行。",
+      "答案D仍唯一：A/B丢失指定任务，C混淆意图识别与业务执行。本次批准仅对应当前内容哈希，不代表人工专家或腾讯审核，亦不保证全库无残余语义近重复。"
+    ],
+    "reason": "AI独立复核：已重新联网逐页核对115747与112970正文，第二来源fact现准确描述条件分支、祖先节点输出引用与后续路由，不再错误重复意图多选事实。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115747",
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "contentHash": "76c128072c12d5ef503b96419bc54bd967245265b40fc192a3171cbac004f9af",
+    "stem": "用户一次要求“查询结果并重新生成报告”，两项业务动作都需执行。意图节点已返回两项。下一步方案最需要明确什么？",
+    "answer": [
+      "D"
+    ],
+    "supersedesHash": "569f28f50ec8e567135b2580796441741d6569ff69b23580f1b2b7889f40c622",
+    "audit": "fixed-seed-source-support-recheck",
+    "sourceChecks": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115747",
+        "sections": [
+          "节点功能",
+          "意图模式",
+          "意图",
+          "输出变量"
+        ],
+        "result": "支持来源事实；任务依赖为题设工程推理"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112970",
+        "sections": [
+          "节点功能",
+          "设置条件"
+        ],
+        "result": "支持更正后的条件路由事实"
+      }
+    ]
+  }
+]

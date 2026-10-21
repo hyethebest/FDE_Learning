@@ -1,0 +1,68 @@
+[
+  {
+    "id": "FDE-M4-194",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已限定同一应用内两个主流程复用，移除未被来源证明的跨应用范围；公共查询输出与调用方差异策略分层成立。"
+    ],
+    "reason": "已限定同一应用内两个主流程复用，移除未被来源证明的跨应用范围；公共查询输出与调用方差异策略分层成立。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749",
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "contentHash": "d7aefb50ff65751f438e5701e710e89435890bd8a8a4394e2f60765aad7fca8f",
+    "stem": "同一应用内两个主流程复用同一查询子流程，但一个允许无结果时显示备用知识，另一个必须直接告知无记录。哪种边界更利于复用？",
+    "answer": [
+      "D"
+    ],
+    "revision": 7,
+    "supersedesHash": "71f7d475ac2c4aaafb194cd5356553401750cf11ed40dcf3610ad3b8e577d60c"
+  },
+  {
+    "id": "FDE-M4-199",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "追加122556明确支持Agent自由转交以工作流作为工具；限制可调用写入口且保留固定校验符合题设。"
+    ],
+    "reason": "追加122556明确支持Agent自由转交以工作流作为工具；限制可调用写入口且保留固定校验符合题设。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122554",
+      "https://cloud.tencent.com/document/product/1759/115749",
+      "https://cloud.tencent.com/document/product/1759/122556"
+    ],
+    "contentHash": "898fd093316914be112bd6236e490a12cb357d41440a6303a65f628da547dfda",
+    "stem": "客户允许Agent规划查询策略，但所有最终写入都必须走已审定的固定流程，不可直接调用写API。哪种组合最匹配？",
+    "answer": [
+      "C"
+    ],
+    "revision": 7,
+    "supersedesHash": "bef0c6525dbf96498d1ed50c0782908bafadf79a3da7699119339ecf0977d722"
+  },
+  {
+    "id": "FDE-M4-200",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已换桩接口Demo的证据范围判断，结构同构可验证字段/编排但无法证明未访问真实系统的连通权限与业务结果；BCD完整且不再重复148。"
+    ],
+    "reason": "已换桩接口Demo的证据范围判断，结构同构可验证字段/编排但无法证明未访问真实系统的连通权限与业务结果；BCD完整且不再重复148。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/126433",
+      "https://cloud.tencent.com/document/product/1759/117855"
+    ],
+    "contentHash": "a19fca5ef01414390fc8b3a4da47e7427de9cb03b4b07a2123d2bab2c4c54820",
+    "stem": "首轮方案已有真实接口契约，但客户仅授权使用返回结构一致的桩接口，未开放真实业务系统访问。哪些结论符合可证明的范围？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "revision": 7,
+    "supersedesHash": "8df995c52e338413050828b23eee3875613f7f5012421f4a0ca95d2a6fb3d42e"
+  }
+]

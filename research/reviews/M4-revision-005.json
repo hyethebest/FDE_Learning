@@ -1,0 +1,87 @@
+[
+  {
+    "id": "FDE-M4-005",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "新版任务为双系统单位归一再合并排序，区别预置扩展入口；工具取数和代码确定转换有来源支持。"
+    ],
+    "reason": "新版任务为双系统单位归一再合并排序，区别预置扩展入口；工具取数和代码确定转换有来源支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115872",
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "contentHash": "0d3bb2584428ae2a1b79e1d88e5759cded1228256fe61fb6c299885dee2dd6c9",
+    "stem": "客户要合并两个已授权系统的查询结果：甲返回整数“分”，乙返回小数“元”，最终按统一金额排序。哪条链路最完整？",
+    "answer": [
+      "A"
+    ],
+    "revision": 5,
+    "supersedesHash": "f781b22a5a91583d545bf9d342b896753dcaf8f0fbfc82e478aa4271124b7b07"
+  },
+  {
+    "id": "FDE-M4-040",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "新去重任务已独立，但所引112966仅承诺输出片段，没有证明每片段天然提供稳定唯一标识。正确项依赖该标识却题干未给出来源；补“上游已提供经确认的稳定片段ID”或明确自行构建并验证标识的设计前提。"
+    ],
+    "reason": "新去重任务已独立，但所引112966仅承诺输出片段，没有证明每片段天然提供稳定唯一标识。正确项依赖该标识却题干未给出来源；补“上游已提供经确认的稳定片段ID”或明确自行构建并验证标识的设计前提。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966",
+      "https://cloud.tencent.com/document/product/1759/112967",
+      "https://cloud.tencent.com/document/product/1759/112963"
+    ],
+    "contentHash": "13e7fa2bffa81c9292006509ff8faef063f10b299b88e45af0de7b7fc242db1d",
+    "stem": "两轮检索有重叠片段，客户要求报告只计算一次同一证据的出现，并保留出处。哪条处理顺序满足要求？",
+    "answer": [
+      "B"
+    ],
+    "revision": 5,
+    "supersedesHash": "3fae7c32789b314c094f3220ecad0eb65cd2915cc34a1033ee37ca6dc37173e9"
+  },
+  {
+    "id": "FDE-M4-136",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已换取消执行与完成产物处置的边界，独立核126856列明运行中/等待输入/排队可取消，成功不能取消；不再重复137。"
+    ],
+    "reason": "已换取消执行与完成产物处置的边界，独立核126856列明运行中/等待输入/排队可取消，成功不能取消；不再重复137。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/126856"
+    ],
+    "contentHash": "69a08cf6626a0206218a710dbd99820c529d814d79d15af951e14dacaa248ffd",
+    "stem": "客户取消了一批尚未完成的分析任务，方案却承诺可以通过同一个“取消任务”操作撤销已经成功的任务结果。应怎样修订？",
+    "answer": [
+      "B"
+    ],
+    "revision": 5,
+    "supersedesHash": "31c385794ef2dd101ee6e93e2bd280c343e8672aefcdb02317e65098b081bd3b"
+  },
+  {
+    "id": "FDE-M4-141",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "具体audience与reader变量声明不一致是独立故障，官方要求正文与面板变量一致，进入模型前验证替换针对正确层次。"
+    ],
+    "reason": "具体audience与reader变量声明不一致是独立故障，官方要求正文与面板变量一致，进入模型前验证替换针对正确层次。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/120901"
+    ],
+    "contentHash": "36681b741405195a3ea3fe779cc84fcc9590a626e485f1d7489151dd4238bfc5",
+    "stem": "模板正文写{{audience}}，变量面板却只声明 reader，插入后仍留有 audience 占位符。哪些修订直接针对原因？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "revision": 5,
+    "supersedesHash": "4cec5d6d4bf468334a695fd56a4c2805c729ffa28e0bcb8e584f8878a951bbe6"
+  }
+]

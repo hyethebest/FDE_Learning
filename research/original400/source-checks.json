@@ -1,0 +1,129 @@
+{
+  "checkedAt": "2026-10-13",
+  "scope": "重点事实重新读取；不是96个历史URL的全量在线验证",
+  "pages": [
+    {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "title": "考试指南",
+      "pageUpdatedAt": "2026-09-10",
+      "checkedScope": "考试结构与模块占比",
+      "method": "web读取"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/851/109354",
+      "title": "大模型广场",
+      "pageUpdatedAt": "2026-06-04",
+      "checkedScope": "部署与精调",
+      "method": "web读取"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122549",
+      "title": "应用模式",
+      "pageUpdatedAt": "2026-08-04",
+      "checkedScope": "模式切换和配置继承",
+      "method": "web读取"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/123555",
+      "title": "Schema",
+      "pageUpdatedAt": "2026-09-16",
+      "checkedScope": "下架日期及存量使用",
+      "method": "web读取"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112702",
+      "title": "文档",
+      "pageUpdatedAt": "2026-09-16",
+      "checkedScope": "生效范围、导入、到期和删除",
+      "method": "web读取"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122551",
+      "title": "知识切分",
+      "pageUpdatedAt": "2026-08-04",
+      "checkedScope": "父子切片、重新切分和图片过滤",
+      "method": "web读取"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/119281",
+      "title": "应用端权限",
+      "pageUpdatedAt": "2026-02-26",
+      "checkedScope": "模式边界、角色并集及外部核权",
+      "method": "web读取"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/138107",
+      "title": "授权凭证",
+      "pageUpdatedAt": "2026-09-14",
+      "checkedScope": "个人及企业共享引用范围；本次读取部分章节",
+      "method": "web读取"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/134602",
+      "title": "Skill开发格式",
+      "pageUpdatedAt": "2026-07-20",
+      "checkedScope": "ADP格式与二进制限制",
+      "method": "web读取"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/104210",
+      "title": "应用运营",
+      "pageUpdatedAt": "2026-09-24",
+      "checkedScope": "反馈、指标、Claw调优准则",
+      "method": "web读取"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/104209",
+      "title": "应用发布",
+      "pageUpdatedAt": "2026-08-11",
+      "checkedScope": "还原范围、依赖与触发器",
+      "method": "web读取"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/105561",
+      "title": "旧HTTP SSE",
+      "pageUpdatedAt": "2026-06-04",
+      "checkedScope": "旧接口停止更新及下线时间",
+      "method": "web读取"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/301/97822",
+      "title": "大模型服务条款",
+      "pageUpdatedAt": "2025-09-02",
+      "checkedScope": "2.6专业审核与技术告知",
+      "method": "web读取"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/138162",
+      "title": "记忆库",
+      "pageUpdatedAt": "2026-09-15",
+      "checkedScope": "隔离、绑定、摘要、停用及编辑时效",
+      "method": "浏览器可见正文"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/130990",
+      "title": "应用导入导出",
+      "pageUpdatedAt": "2026-06-30",
+      "checkedScope": "排除内容、重配与导入状态",
+      "method": "浏览器可见正文"
+    }
+  ],
+  "courses": [
+    {
+      "url": "https://cloud.tencent.com/edu/learning/course-4742-84529-84539",
+      "method": "浏览器可见课程正文",
+      "pageUpdatedAt": null
+    },
+    {
+      "url": "https://cloud.tencent.com/edu/learning/course-4742-84530-84545",
+      "method": "浏览器可见课程正文",
+      "pageUpdatedAt": null
+    }
+  ],
+  "incomplete": [
+    {
+      "url": "https://cloud.tencent.com/document/product/851/123443",
+      "status": "本次web读取超时，沿用既有来源记录"
+    }
+  ]
+}

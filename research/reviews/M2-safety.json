@@ -1,0 +1,914 @@
+[
+  {
+    "id": "FDE-M2-001",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "产品概述支持企业AI应用开发定位；三个错误项均把平台缩窄为单一组件。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104193"
+    ],
+    "contentHash": "81ebc2749c4b753ac9f06ffb044f446a8f9b3ee510172d81e5e2925e73c51780"
+  },
+  {
+    "id": "FDE-M2-002",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "已核业务/技术团队与可视化优先定位；无先行自训或手写调度要求。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104193"
+    ],
+    "contentHash": "0d598c0ca08bac1e9cf19ee186e2aaca3c7e77613d26111fcf5546a41112ba85"
+  },
+  {
+    "id": "FDE-M2-003",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "API/SDK与渠道集成由产品概述直接支持；不要求整体迁移系统。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104193"
+    ],
+    "contentHash": "9757a03bd404fceed81de146d069fe0fcab7c6048d7da93192a88d497db1585b"
+  },
+  {
+    "id": "FDE-M2-004",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "连接器和工具具备业务查询/操作路径；说明文档和静态问答不等于实时接口。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115872"
+    ],
+    "contentHash": "cd9557671cb849f5638a0629b4bca5c70ddea3d26b81389dcff7cf9d091e8145"
+  },
+  {
+    "id": "FDE-M2-005",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "已补129200套餐功能对比；多模型产品能力与具体账号权益的跨页推理支持完整。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104193",
+      "https://cloud.tencent.com/document/product/1759/129200"
+    ],
+    "contentHash": "332f947cc69aba1e8a18c1d109ae172794b82e33f92cd20b6f1cfd0ea59902da"
+  },
+  {
+    "id": "FDE-M2-006",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "全生命周期包括配置调试评测发布运营；答案范围与源一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104193"
+    ],
+    "contentHash": "692f78e6422cdb5d1f32c3f7c475e6fd2b12c6d54cdc67d4ad3398c1db253526"
+  },
+  {
+    "id": "FDE-M2-007",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "源明确文档理解、检索和可靠生成共同影响效果；答案不能只归因模型。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104193"
+    ],
+    "contentHash": "f1e2630ba7cec7385b991285fe60515416b8408eff6510b02317a6c4e3f51092"
+  },
+  {
+    "id": "FDE-M2-008",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "低代码优先并允许复杂场景补代码；未把可视化等同免授权。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104193"
+    ],
+    "contentHash": "638a7fcdfd878bfa9a1d3ce842ab511f468b9d21a357b2115e3f351b05c680c7"
+  },
+  {
+    "id": "FDE-M2-009",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "四模式表直接支持预设流程/双模型，干扰项分别为其他模式机制。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "51b74e27d533fa6d46f2db8c8a55a981bab4c5a7159f0c93e0633cca1b788c42"
+  },
+  {
+    "id": "FDE-M2-010",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "使用流程支持轻量标准模式原型；题设渐进扩展使答案明确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/126433"
+    ],
+    "contentHash": "d6eef443c15253a2ce3df2e5a76145e5cbcdc8f59d6898b4a036b7f1e0f508bd"
+  },
+  {
+    "id": "FDE-M2-011",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "所有对话走指定工作流是该模式约束，流程可含多节点分支。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "5ba86d4d970eb33593e3f361f834e7c05de68a4fc3d08c6a918317632282f8bf"
+  },
+  {
+    "id": "FDE-M2-012",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "业务目标明确且流程统一与官方定位一致，其他选项偏自主规划。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "93fcf9338b22ef7f7480021117753fa5e2e9d41bf994264bc48759423cdf94d8"
+  },
+  {
+    "id": "FDE-M2-013",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "模式表支持自主路径和工具选择；模型数和知识库数不等于Agent分工。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "ab103c3e79d7377e332667bcf92855114b68f8f8ea7cca130801a5ee623fd04c"
+  },
+  {
+    "id": "FDE-M2-014",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "产品概述支持各职责子智能体协作；与013的自主规划目标区分。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104193"
+    ],
+    "contentHash": "c01e0feaa4853b182a5c988def6e678b532078133bb20612adc69f888af9e5ec"
+  },
+  {
+    "id": "FDE-M2-015",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "已替换命名干扰；提示词、输出长度和Agent数量都不提供Claw独立代码文件环境，答案明确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134194"
+    ],
+    "contentHash": "35e007bda82226e60eddf6ef3248b1efef640bb4d4a3388474aecca74f9eeb95"
+  },
+  {
+    "id": "FDE-M2-016",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "四模式名称与122549当前正文一致，组件与模式混淆可验证。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "90e07639dfa03f07b058ca70ec821ac74bd273522c86b47f769ddc4e4afd65be"
+  },
+  {
+    "id": "FDE-M2-017",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "Claw不能迁出且需新建；配置清空或模型补齐不改变限制。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "bebc0414b05ff91d874a15b41970db1ad28d200e3fa19ed62830aae95530a4be"
+  },
+  {
+    "id": "FDE-M2-018",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "非Claw不能迁入是独立方向规则，官方同页直接明示新建要求。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "c1cadb44347c5c38c423a901e4c2da40a3e255a2feeadd213b16f622ba2f4df6"
+  },
+  {
+    "id": "FDE-M2-019",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "三种非Claw模式支持互切，未错误推及Claw。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "3c7d75f4eb3c445681704acba5ea87464445b5a0fcba3ed5f470aa9996a693b1"
+  },
+  {
+    "id": "FDE-M2-020",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "角色指令与模型配置不继承，和基本应用信息保持有别。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "308a0f64e879fab5d0ea2b67f4cfe9ce70bd927527436e4851fb712ac1000abd"
+  },
+  {
+    "id": "FDE-M2-021",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "知识/工作流管理资产与发布状态保留，但消费和启用路径不同；答案有明确边界。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "d85fb9fb3ffb80261db98e24e0d938941282df078b1a05e78a84456b57abd1ef"
+  },
+  {
+    "id": "FDE-M2-022",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "134194比较表仅Claw原生支持Skills；题干限定原生能力。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134194"
+    ],
+    "contentHash": "d12111e76524fc073fa9f2fb7ddf9415fe0a95518782c5c89e658aeed66de6a9"
+  },
+  {
+    "id": "FDE-M2-023",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "134194连接器与工具条目明确连接器以工具单位计入工具上限；新目标区别集成入口与工具计数。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134194"
+    ],
+    "contentHash": "bf5734d6075921628846cb839510af9bd434f8dad6e68e88adc4ad1e90d64c3d"
+  },
+  {
+    "id": "FDE-M2-024",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "FAQ支持把工作流配置为按需调用工具，不转模式或永久绑定。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134194"
+    ],
+    "contentHash": "f864fce86ad410041431e2a8ff6686419016216cdf22594fabdc990a9b759c73"
+  },
+  {
+    "id": "FDE-M2-025",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "创建方式表支持工作台完成卡入口，未编造训练前置条件。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134194"
+    ],
+    "contentHash": "56fc66439f8ab78099816b915deca91324d849b98738b112d02943ed2b7fbad0"
+  },
+  {
+    "id": "FDE-M2-026",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "关键概念明确子Agent可独立选择模型；不等于不同应用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134194"
+    ],
+    "contentHash": "97836cdfaa90dd8a451ba69bfe8268fbd4a165f773344c4c7a092f002ab0587f"
+  },
+  {
+    "id": "FDE-M2-027",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "API概览明确Plugin含一个或多个Tool并需显式绑定；粒度正确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133868"
+    ],
+    "contentHash": "6ee6eef5bf7676781cc23a79b27aef513eb1131150dc1e8032074f4f7e0ab146"
+  },
+  {
+    "id": "FDE-M2-028",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "连接器/工具文档支持自定义扩展内部接口，不局限预置广场。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115872"
+    ],
+    "contentHash": "c0595a8c68af5c84da3013359f4b2b00bc0602a3789401e948771282fceb27ff"
+  },
+  {
+    "id": "FDE-M2-029",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "API工具基于OpenAPI3.0定义经HTTP交互；区别说明、样例和实际调用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115872"
+    ],
+    "contentHash": "796f764ee07a2947e3d220d31e39e946806f7b50ea8954ff4663e8203cbbb08d"
+  },
+  {
+    "id": "FDE-M2-030",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "代码工具以Python函数服务化，未混同训练或仅文档转换。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115872"
+    ],
+    "contentHash": "556fbfb797716a4ee380e3b3835facdd1707ac773365b145fab2131c2c3682e0"
+  },
+  {
+    "id": "FDE-M2-031",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "应用型工具需已发布且仅单轮，这是源明确限制。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115872"
+    ],
+    "contentHash": "0ab76b31fa5a880361ca5809a86e6ab91f45d6e4cd81fc169627a9e8b3c5c367"
+  },
+  {
+    "id": "FDE-M2-032",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "三类Skill按来源共享范围分，未与场景/模式/模型混淆。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "9c8e32cf5e869adce5fc2d50691d466ba04a613923e87a8df9dcff1ba9d67226"
+  },
+  {
+    "id": "FDE-M2-033",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "自定义Skill限当前导入空间，企业共享需单独审批。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "ebbb1b98a5a7b5706bc961d79a66387e12b64df8d4c8444f4b38a6e8ec865214"
+  },
+  {
+    "id": "FDE-M2-034",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "已上架自定义Skill经审批升级为企业共享，来源链正确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "89f345c2aa2bb2f08882ef9ccc593190352675a18c001a93301f72d4a22d655e"
+  },
+  {
+    "id": "FDE-M2-035",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "知识处理召回提供上下文与应用服务层区分合理；未声称上传自动训练。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "ad40416ed0ffc9c60c0b98806a8c0349aa0f67f6ecaa205b62e36fdf1eb83a41"
+  },
+  {
+    "id": "FDE-M2-036",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "源列文档、问答、数据库三类，和训练切分/记忆类型不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "c25fe1e65bacdc50e492dcd98efe75f280fce67be485bc44262321261565e445"
+  },
+  {
+    "id": "FDE-M2-037",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "默认库只限当前应用，额外平台知识库可复用；与035职责目标区分。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "39b56a1debdc5921cd7bac68da84635f4a15149b9009fb92f454c4e6bd5b2feb"
+  },
+  {
+    "id": "FDE-M2-038",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "工作台内置Agent接受任务并自动拆解，支持开箱即用任务入口。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130637"
+    ],
+    "contentHash": "b1232fddd40c0e9421e0177939de97efe417622d0dd55ab45b69420c1f984718"
+  },
+  {
+    "id": "FDE-M2-039",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "任务列表保存历史完整对话流程和产物，不等于发布应用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130637"
+    ],
+    "contentHash": "bdd1e4c95412a90f3931cac8eebb984c327b27d3805198ebb60272bee64e5bba"
+  },
+  {
+    "id": "FDE-M2-040",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "工作区是代码/文件操作环境，预览编辑等直接支持。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130637"
+    ],
+    "contentHash": "4eba3889d91fa5b3080e51b527f864bdf43e3b67b2979cf2c884df20415d8d74"
+  },
+  {
+    "id": "FDE-M2-041",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "137902支持自然语言应用构建调优，三错误项均误排除其配置能力。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/137902"
+    ],
+    "contentHash": "0e0a52a691efe8f36d0ff038b1157710addc76c1dd4b62a2aca63f426b30b21b"
+  },
+  {
+    "id": "FDE-M2-042",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "137902支持四模式开发，129200补足套餐权益条件；不把平台能力等同所有账号可用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/137902",
+      "https://cloud.tencent.com/document/product/1759/129200"
+    ],
+    "contentHash": "c482f8da349a977b4d5a9a84c94ff1a6d775746b3aab4e224a0736349b696aed"
+  },
+  {
+    "id": "FDE-M2-043",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "API概览明确自动化/批量管理/已有产品集成场景。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133868"
+    ],
+    "contentHash": "ef05aa392dcfb0c64f70aeb68921ef54cb15d2b81ab84aa34bf96e0118dda3e1"
+  },
+  {
+    "id": "FDE-M2-044",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "API概念表区分对外应用与内部Agent配置承载，未引用该页主Agent数量的自相矛盾段落。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133868"
+    ],
+    "contentHash": "62965978071b2c8600244ff763bd610759d3353d094222c581a641962411b1df"
+  },
+  {
+    "id": "FDE-M2-045",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "套餐功能范围和有效期需核对，产品总体能力不等于当前账号权益。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129200"
+    ],
+    "contentHash": "65e088126e2c8580ba5469e0ed27e97deb2a20bcc75470a6dfb04faea1616ab5"
+  },
+  {
+    "id": "FDE-M2-046",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "套餐表明确Skill Plan工作台不含应用创建发布，与PU余额不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129200"
+    ],
+    "contentHash": "d422473bf34c8f8c21ab7cedb84b2b78f57e6553865ad1e4e4fd0c214a94af86"
+  },
+  {
+    "id": "FDE-M2-047",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "套餐表分列Claw模式应用与ClawPro并单独限制新购；没有将ClawPro停售推及全部Claw。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129200"
+    ],
+    "contentHash": "ff75551be62296de61771857f9115be896f5629fa69d09082f6ece4ef320b2a7"
+  },
+  {
+    "id": "FDE-M2-048",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "122549工作流管理行明确Multi-Agent需工作流编排协同才支持单工作流，并保留资产设置及状态。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "ae768753280c21d4706224fae685174155930a12bf02ae21d01e8d8a4a071e89"
+  },
+  {
+    "id": "FDE-M2-049",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "已修正解析指代，A标准双模型、D全部请求固定流程；知识节点和工作流叠加的干扰均有源支持。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "db7d8eaeeb15591a77ef3af461b8bed6ae9007ccb6b46dc63c0c3f525bb1b270"
+  },
+  {
+    "id": "FDE-M2-050",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "122573设置转交关系明确多个Agent需关系连通才生效，描述用于判断职责和转交时机；已改独立配置关系目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122573"
+    ],
+    "contentHash": "097161f34a56ac7d7e3263d7addd8a2aaaaead455bcdfde8727348c909fd97f4"
+  },
+  {
+    "id": "FDE-M2-051",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "122572结束节点明确结果变量与用户可见回复分工，未采用该页连线文字的疑似笔误。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122572"
+    ],
+    "contentHash": "6797bca600382de093e5dec4bf0b60c91133c80e0d6dc095cd0a504f45293ac4"
+  },
+  {
+    "id": "FDE-M2-052",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "134194高级设置支持API按用户或会话动态更换模型/Skills/工具，无须改应用配置或重发，开关前提明确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134194"
+    ],
+    "contentHash": "182d0ba1f8adc6010380a37ad693850edb82a2651d2bfd3b2e7d143474c64858"
+  },
+  {
+    "id": "FDE-M2-053",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "模式表明确名称头像开场白保留，角色指令不继承；此处头像为真实保留字段不是无关干扰。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "a0dce9b494cb80583bd5b3cee3733f6c575372f9af09b6ba2864c5045fabb82e"
+  },
+  {
+    "id": "FDE-M2-054",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "模式表明确单工作流知识节点和Multi-Agent知识问答工具；与021资产保留目标区分。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "contentHash": "38592ea3bfbff9f9d30c927770af892768b4ef26065f724201770fca20419adf"
+  },
+  {
+    "id": "FDE-M2-055",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "134194智能辅助配置、调试、发布是独立流程阶段；D已改为调试同步线上版本的真实边界误区，答案和解析一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134194"
+    ],
+    "contentHash": "55e1e8339d05035eaf13a0b053100b76abb3b610568fac0a9ae49b8402ec5be1"
+  },
+  {
+    "id": "FDE-M2-056",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "115872自定义工具直接列名称描述/输入输出/调用方式，契约封装与仅操作手册有别。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115872"
+    ],
+    "contentHash": "3cbcc3df81ec0dde215daecd3726a19f3e7ae589c18f35ef31b2ac48ba1d5a9d"
+  },
+  {
+    "id": "FDE-M2-057",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "115872同时列API与MCP；MCP协议不等于应用模式，是有效跨组件边界。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115872"
+    ],
+    "contentHash": "4d553d86d7e04d0aa3859a48f32079da0ba9eb215008d4dff9be0de9a540dab8"
+  },
+  {
+    "id": "FDE-M2-058",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "115872注意段要求第三方服务按需甄别和注意数据保护，平台未完全担保服务质量；责任边界与接入功能区分。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115872"
+    ],
+    "contentHash": "a6d345b162ed9752458f0df06457e0c7760dccefdf8fb5d937c86c7c8916a382"
+  },
+  {
+    "id": "FDE-M2-059",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "Skills专业能力模块和自定义能力由源支持；企业内部共享不等于公网公开。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "0c2db64187918831abc3db8cb6dd86a67112eb828d90cb3d0e127ea82648c6a1"
+  },
+  {
+    "id": "FDE-M2-060",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "129561分别列来源三类与使用场景分类，财税法务含合同审核；两个维度可同时成立。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "f64d62a58ca927ad19c6c89e61fcaa3fc9ee50c2efe67f7fce0126d5a2ffcd6b"
+  },
+  {
+    "id": "FDE-M2-061",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "104193可观测性明确请求量/成功率/延迟/Token，运行指标不等于回答事实正确性；已新增独立指标目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104193"
+    ],
+    "contentHash": "748d2bde29a8079022728d00d7cbc26803077edab89909e26f7582b8a76803b4"
+  },
+  {
+    "id": "FDE-M2-062",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "产品概述明确PoC小场景试点到逐步扩展；原系统整体替换不是前提。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104193"
+    ],
+    "contentHash": "54861ff080c01d2ae9b91e68dd8f2a9fe6e1c597148d7b14d8489169259feb65"
+  },
+  {
+    "id": "FDE-M2-063",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "工作区支持预览/下载/保存知识库；预览不等于生产部署，四项边界明确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130637"
+    ],
+    "contentHash": "2a08abbc0b7a203a1a98c67ec25f1cff7a2b025416af1827ce473fb2c6ab834a"
+  },
+  {
+    "id": "FDE-M2-064",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "工作台支持上传文件、授权连接器和权限内知识库，输入资源范围与源一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130637"
+    ],
+    "contentHash": "b7474628f154648dfcc9e11950e1d5bf09dbb517ff0e7b98b728f8dcc5b9f1a5"
+  },
+  {
+    "id": "FDE-M2-065",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "开发调优页明确评测/记录分析/工作流构建；需要查看配置和验证后发布。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/137902"
+    ],
+    "contentHash": "9fc576e44390787eb37c9c3eaf3addfec7d31223fc4d6d76a178cee96f50a3ea"
+  },
+  {
+    "id": "FDE-M2-066",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "源明确调试草稿与线上发布配置可能不同，并支持停在草稿态。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/137902"
+    ],
+    "contentHash": "843337618606940c469669b49a78b5bb2ade10ac1f3013f2c95bf5435a9362b1"
+  },
+  {
+    "id": "FDE-M2-067",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "开发者管理与终端对话接口/鉴权分离，源直接支持，未把终端用户误授管理密钥。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133868"
+    ],
+    "contentHash": "2b49d5f9b403e0833b12dbeaed578cd5b4829d109663e9abb6d65e1461d8fcce"
+  },
+  {
+    "id": "FDE-M2-068",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "API概览明确控制台和API可组合，二者适用工作方式不同；不与043批量场景完全相同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133868"
+    ],
+    "contentHash": "eb99e1d13bd87231c94011593e5d9f21b0f9e471a93c654a04490b7108643c58"
+  },
+  {
+    "id": "FDE-M2-069",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "129200明确PU耗尽无法使用且企业版支持增购，套餐有效期与资源耗尽是独立条件。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129200"
+    ],
+    "contentHash": "4869efea2d7df70983d008d8147ae6ebf2f90285f14c1bac3a853e15365ef420"
+  },
+  {
+    "id": "FDE-M2-070",
+    "status": "approved",
+    "reviewer": "safety",
+    "notes": [
+      "129200升级定义明确仅改变版本、到期和续费设置不变；补差升级不重开完整订阅周期。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129200"
+    ],
+    "contentHash": "b1bcd6ebd5ff6f59d87cd780575fbd9f2542f3722fa9dcd8de2a7e99ef86b0e9"
+  }
+]

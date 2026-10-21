@@ -1,0 +1,2613 @@
+[
+  {
+    "id": "FDE-M5-001",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "活动页债券案例明确指令抓取上传业务系统；题设重复录入的交付目标有直接对应，摘要等未完成目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/act/pro/openclaw-in-adp"
+    ],
+    "contentHash": "f04838fe06b2b441e7dddc33caf3b803aa9918d4d982676a3e4072a47f6d457b",
+    "stem": "假设债券交易员每日从聊天复制交易指令到业务系统，参考官方案例，首要交付目标是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-002",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "产品页华润信托明确自动流程保留人工确认，询价结果本身不是成交授权。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/product/adp"
+    ],
+    "contentHash": "11e5a0eb9f3e3da5d33ec5533dd6bf7bf024454c78b39503a41a3b6c16a4e644",
+    "stem": "假设智能债券助手已生成询价结果，客户要求照搬官方案例交付边界，应保留哪一步？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-003",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "汇小二正文明确央行与外汇局政策底座；权威来源是该题知识获取目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "63143f53af3a44702facb7b480ef5859e8b77ebba8d392b64ea716b90a38bbf9",
+    "stem": "假设出口企业反复问结算政策，金融政策助手的知识底座优先用什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-004",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "已要求替换无关干扰，重读修订后不同检索入口的对照明确，多入口和语音直接解决随时口语咨询。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "6f1cd9ada134b4e8ab9e1d5a00c6d18fd7a001e6535ff7277fe5338344ca014c",
+    "stem": "假设银行客户经理希望随时用口语问跨境政策，参考汇小二哪项交付设计最贴近？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-005",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "时效性正文区分实际有效期与上传时间，历史业务按历史年份而非当前最新解释。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138380"
+    ],
+    "contentHash": "2e44f544c76e28dc4ec7ef8067600caac791cc1119dbdfe813384a7d74a4efc9",
+    "stem": "假设银行需要解释客户2024年的历史业务，库中还有2026年政策，应如何确定检索时段？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-006",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订后题设已给定全量重建，改考新增和既有风险关系的回归验收；128202支持来源查看与迭代，工程推理明确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128202"
+    ],
+    "contentHash": "20dfba453eb5968add732e53f98137d2fb7583035c67184f411c7c6345fb24a0",
+    "stem": "假设金融风控项目确认修改关系定义将导致全量重建，交付团队应如何验证新图谱，才能发现本次变更引入的回归？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-007",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "产品页国投证券确有内部法务文件RAG问答案例；结论未外推自动裁判。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/product/adp"
+    ],
+    "contentHash": "479d82d89a920751492fd9d4bcffe7eada6a8399f501dd02724f9bea747f4a43",
+    "stem": "假设证券公司法务人员找内部审核资料，哪个方案与官方已述案例一致？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-008",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订干扰均为保险知识来源范围，企业确认的代理人业务知识与海港案例的目标一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/product/adp"
+    ],
+    "contentHash": "49c191cd74a296982e9be0192a9429dacee780e4241b27e5cc7eabd7f3c5b6ca",
+    "stem": "假设保险公司要支持代理人查询应知应会，适合优先整理哪类材料？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-009",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "97822服务条款2.6(1)确有专业审核和AI使用及局限告知；题设限定该条款适用而非泛化法律要求。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/301/97822"
+    ],
+    "contentHash": "3b15d06e93617539552feb382ebb0a3047b13d869f85845232dd7f4dfcc8121d",
+    "stem": "假设项目明确采用该大模型服务条款，要向客户提供专业金融咨询，不能省略什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-010",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "112702支持参考来源展示，客户检查原文需要可达来源而非无法定位的摘要。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "b052e13793178daf6c85e1d1138874ba6788be1da05fd6cb00fec62f6dff0a5e",
+    "stem": "假设金融机构已把正式产品说明作为答复依据，客户还要检查原文，应提供什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-011",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "末轮改为提前与到期计息条件不同的错误合并诊断；112703共用答案机制支撑，题设明确规则不同，业务条件不能按措辞近似消除。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "7fe104407b8d5fcfce06ed2b4715ba667eae788e68593d362f3f659c2582cf4e",
+    "stem": "假设“定期提前支取如何计息”与“到期支取如何计息”措辞相近但银行确认计息规则不同，知识运营应怎样处理？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-012",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "104208基准评测允许参考答案比较；业务条款覆盖优先于演示流畅或页面速度。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "0fc0b0e4b94c73f660d5e2c3fbcbddd180106089f2e9ef3c912a6e256f1e7c84",
+    "stem": "假设理财产品知识助手能流畅回答，但业务方担心条款错漏，什么证据更适合验收？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-013",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "活动页同时有指令写入和查询反馈；题目识别读业务与写业务的交付链路变化。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/act/pro/openclaw-in-adp"
+    ],
+    "contentHash": "eb764969d715af397f3d8dcd24901d669238b0dc93804af0f860c751f8ac86b3",
+    "stem": "假设客户已能查询交易进度，却希望助手在后台记录指令，需求的关键变化是什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-014",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "138240产品编码是典型低语义实体线索；题目没有把软排序误当绝对隔离。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "d5259465665b2aafa5a708b770a7041ed4909923ad27ddf2f97529627175a7ab",
+    "stem": "假设产品代码F1008和F1080语义接近，金融知识助手串答说明书，应强化什么线索？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-015",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "政企指标含政策变化后的同步审核时效；训练知识日期与库内新政策维护不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "82226ed2db013bf991a44148259ef05bb69146c17df44543169852ebd7f420f8",
+    "stem": "假设跨境政策助手上线后政策频繁更新，除了答案正确率，还应持续看什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-016",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售官方对不确定权益建议人工核实；假设金融零售权益场景为合理迁移，未声称额外产品规则。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "a36f59bb4d680792f1fb90232413dd2bb9a58f3446d913699897d771fbff6657",
+    "stem": "假设金融零售服务查询账户权益时系统不可用，如何处理未确认的权益数量？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-017",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "104195企业知识助手目的为内部材料搜索与问答，自动贷款和审批不在其直接职责。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104195"
+    ],
+    "contentHash": "903af4e2338b47081a7cc800099810e37693f5b451ea7ae1b4a58efa462ea2b1",
+    "stem": "假设银行新人要从大量内部流程资料中找操作步骤，助手的直接价值是什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-018",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "活动页列持仓、进度及聊天指令上传，题目考完整PoC覆盖；收益和评级不属于该案例链路。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/act/pro/openclaw-in-adp"
+    ],
+    "contentHash": "5dbc45ffcff6b9931c1d76504d0f09926e3dec233013e9f1601fa2588433b6cb",
+    "stem": "假设借鉴智能债券助手做PoC，哪些业务链路与官方案例有直接联系？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-019",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "汇小二建设总结明示官方来源、持续更新、多入口；三者对应跨境政策服务的内容和触达。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "690fcb4ed0a556605c9132287418d6884bb628ae786bfe6630a5358e755f2730",
+    "stem": "假设规划跨境金融政策助手，哪些方面可借鉴案例？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-020",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "末轮改为两笔交易混单验收；活动页指令抓取写入为事实基础，逐笔方向金额与原始来源一致为明确工程推理，非再考审核告知。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/act/pro/openclaw-in-adp"
+    ],
+    "contentHash": "4b8dd9a32bbd67f99885a9ac8075a6c11a7bdeb7cde07dd89b526d4f4b4fcdc4",
+    "stem": "假设债券助手将聊天中的两笔不同方向交易整理后送入业务系统，PoC要验证信息提取没有混单，应检查哪些内容？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-021",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "132211支持复杂证据交叉验证及额外资源成本，验收覆盖质量与性能而非只认反思越多越好。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132211"
+    ],
+    "contentHash": "a2d97ef299d677c83728acac735df13e3602564b6bf44a40f73aeee848969abf",
+    "stem": "假设金融研究助手对复杂资料启用Agentic RAG，哪些验收维度应同时考虑？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-022",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "138380将历史明确时间与最新意图区分处理，设计两类验收样本有依据，不把上传日期当有效期。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138380"
+    ],
+    "contentHash": "a622425534096e3d9b1bedea9907b4485aa3cba3704455df427261e5fbad70da",
+    "stem": "假设金融政策库保留历年版本，哪些问法需要在验收中分开设计？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-023",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "产品页海港案例有产品智问、代理人应知应会；多业务矩阵不等于重大赔付无人决策。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/product/adp"
+    ],
+    "contentHash": "70918328cd31f922b5798b04da90fe49145fdea97c5a0611a44408398197d46a",
+    "stem": "假设保险企业将多个业务知识助手分期上线，哪些场景在官方案例中已有对应方向？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-024",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "104208允许人工标注及复用样本，专业纠错应留下可复测证据，不能删除样本粉饰评分。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "eade2f228588af3f08ffad9e5481908365c7b839f3171f8f369e6bea5c6bc963",
+    "stem": "假设自动评分高，但专家指出金融术语含义被曲解，哪些处理合理？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-025",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "138240支持标签与元数据分工；题设已限定完整打标并提示无标签知识边界，没有宣称标签即全部授权。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "00cb39b73e9860801ef4ba272db49ccb702147e7e3546c76ef0408dbb3e8a50c",
+    "stem": "假设所有相关知识均已完整打标签且已核验检索范围配置，金融资料按产品线隔离又需区分相近产品代码，哪些设计含义正确？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-026",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "政企公积金案例明示核验、查询、签署链路，升级办理的缺口不是多写政策答案。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "2b237392f0aa58801585fdcfbacd6da7aa41ca89488b07e53d8229be63a75b5b",
+    "stem": "假设公积金助手从咨询升级为退休提取办理，关键补齐什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-027",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "小宝案例服务时间错位，夜间标准收件对应明确需求，不推出全自动审批。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "ad7b2f652e8add449b91ff21952eacf6b5408d658d8ce7e853a3367d31ef566f",
+    "stem": "假设企业只能下班后递交材料，优先解决的服务缺口是什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-028",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "原文仅承诺收件及回执，答案明确审批另循业务流程，属于不超出事实的边界推理。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "7f02080e0a3b38f5d450a6e5a1e4de2750ef6ca77637d9f4a8fd1f4c70eaf104",
+    "stem": "假设机器人已经打印收件回执，应如何对外说明？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-029",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "官方首批场景建议高频、清晰、可标准化；预算有限的试点选择有可验证业务基础。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "03b86c87bc3ed63b1eb608daa16fe3f6475b698bce62c42dda46e582aeb33db8",
+    "stem": "假设首期预算有限，哪个事项更适合先试点？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-030",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "政企FAQ允许先问答导办再接关键系统，分期交付不等于已完成办理闭环。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "6574abcb84f8e02c0c6973b137a58bf47e478ba619f8e58a34652793dd0af9eb",
+    "stem": "假设预约和签署系统尚未打通，政务助手可以怎样分期交付？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-031",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "指标章节要求咨询与办结分开，300/12为原创假设数值，统计解释无产品额度外推。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "445a698482838641a9f990ffdbbcde908fcfa5ae8f9f5e26063095afa16ca1b9",
+    "stem": "假设报告有300次咨询、12笔办结，正确的业务表达是什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-032",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "政企FAQ明确审批权益资金需确定系统及人工复核，答案指向实际执行控制。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "44f9d70cea9d1abbcb6e037f6c400ce8abf63f7b3e3747b616dcc9b06495e277",
+    "stem": "假设申请涉及权益变更且答案不确定，应怎样设计最后处理环节？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-033",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "小宝语音引导读证拍照材料步骤可直接支持，降低文字操作门槛没有扩大为无条件替办。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "88d924c2080de97c34eb9903fa5a3706cc97bb03623fc10593b24de1baea66b5",
+    "stem": "假设老年人不熟悉文字输入，针对导办更合适的交互是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-034",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "最终修订改考需求阶段前置部署安全权限审计评估；政企选型第5项直接支持，无再考权威资料来源。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "81a6f6b54916f347d6b3db74f43e3fad45ad6b10d4f2a685fdc5477a4ebb1950",
+    "stem": "假设政务项目要求组织权限隔离并评估私有部署，但团队计划先完成全部模型调优再了解部署约束，FDE应怎样安排？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-035",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "内容有效期依据政策生效而非入库日期，7月9月为原创时间例子，唯一答案成立。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138380"
+    ],
+    "contentHash": "4e986c06702364dd5dbac09f882f6e3f25f1f9911f7321f312db957eef80b963",
+    "stem": "假设政策7月生效、9月才导入，知识有效时间从何时开始更合理？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-036",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "标签硬过滤机制以完整打标为前提，地区严格范围与软排序区分准确；保留授权边界说明。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "3be795fae0ed5369a635a650453c4e27d8f970b0e38e37a3121089b6714f54e2",
+    "stem": "假设所有相关知识均已完整打标签且已核验检索范围配置，不同地区办事政策相似，需按接口传入地区严格限定范围，应使用什么机制？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-037",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "112702正文明确不支持异步网页内容，诊断抓取限制优先于将URL可访问误作正文入库。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "425a48b097adeb00ae5538a7c4cfd3fa451f0d0a8b35ae07ed4ca9566a917fc7",
+    "stem": "假设政策源网页的正文需要异步脚本加载，标准网页抓取未取到，怎样说明？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-038",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "最终版本技术已选定，考控制变量定位年份地区类别哪项遗漏；对应132211组合筛选场景，工程诊断而非重复选型。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132211"
+    ],
+    "contentHash": "7055646dd343ad250c31dead80ba2912cd1e1e7e8d16a4a08e93ca1819563ca8",
+    "stem": "假设补贴助手已采用多轮检索，某测试同时改变年份、地区和企业类别后答案错误。要区分哪个条件未被正确处理，下一组测试怎样设计更有诊断价值？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-039",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "政企指标专列转人工上下文完整性，交接质量不能只按转接数量或礼貌文本评价。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "884ab688b9d9a42ea04f68ccbe96fc14c2bc73de2fc1be9bbdbdb0e99b968b88",
+    "stem": "假设机器人把疑难申请转给工作人员，交接质量要看什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-040",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "最终版本改考端到端业务时长，原文明示从发起到办结；与首响、签署后停留和最快样本不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "f01abc11654f6d93f7eaf7c19211d34951b7d3f0985ed29b2021927db6c9012e",
+    "stem": "假设政务项目统计单笔办理时长，团队只测模型生成答复的耗时，FDE应如何修正验收口径？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-041",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订为文字与图示不同分支的多模态验收，104195能力支持；已不再重复内部资料检索目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104195"
+    ],
+    "contentHash": "13349fbd619cc35f2903b32fb65dea5c22a36973c7997de6c9cb0238a34ad1ba",
+    "stem": "假设内部规程的文字说明与流程图分别表达不同审批分支，首期知识检索验收应怎样设计？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-042",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "小宝夜间服务实行预约，预约入口和适用事项与案例边界一致，不混同最终审批。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "37b995736871844cb8eb197303b0845da93ae350626a2977fde851494c45e5a7",
+    "stem": "假设夜间收件采用预约服务，页面设计应保留哪项说明？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-043",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "政企首批场景准则包括规则、系统接入、异常人工；组合判断比只列知识量有效。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "af64c5c9bebcc78f6641011c3c1715112a6378c586bcdce0143635193a207043",
+    "stem": "假设筛选首批政务业务，哪些条件有利于形成可验证闭环？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-044",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "公积金案例完整列身份、签署、电子凭证，对环节覆盖的多选答案有正文证据。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "f445c78778d8493a022dc504d889215af094d6dd28e4769b714bf9892dd480ea",
+    "stem": "假设设计退休提取闭环，哪些动作属于案例列明的关键业务环节？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-045",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "小宝收件PoC覆盖核验扫描回执，原文没有所有部门审批或完全取消人工承诺。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "5da3a1cb4417bef45728b3b3485e519ef38c6aac06bf92665302df9bbe894c68",
+    "stem": "假设做夜间收件PoC，哪些应作为收件能力验收对象？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-046",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "政企评价从回答质量扩展实际办结、时间与转接体验；三项同时补全业务效果衡量。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "edba5e75a857f781ac07401affede310b0549722391f80f59d7d192cd24802af",
+    "stem": "假设政务助手回答准确但群众仍反复跑腿，哪些指标可补充评价？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-047",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订为永久有效的时间过滤豁免边界；138380支持不被时间排除，未误作必然命中或强制覆盖。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138380"
+    ],
+    "contentHash": "122814a2a32ba23d38a1141d5b34ebdc69bca27a7f734219da8a96d5e5523d7b",
+    "stem": "假设政策库中一份通用办事术语表被设为永久有效，开启时效性检索后，验收人员对其处理哪些理解正确？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-048",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "政企FAQ明确标准问题智能体优先、复杂高风险人工，选项责任分工正确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "1eddbac679edade0d3cc09ebfe4e0577c6dc76ae10a2a50b754c6104c7280173",
+    "stem": "假设政务单位规划窗口人员与智能体分工，哪些安排符合官方建议？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-049",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订为多个知识库元数据设置独立及异步更新，138240注意事项直接支持，非同名配置继承。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "d0727049530f2813edf04c16d156cc92d01b7296a086e5a6f3010fe2604afa6f",
+    "stem": "假设省级指南库与市级办事库分别维护，工程师只在省库启用了事项分类元数据。哪些上线判断正确？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-050",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "政企系统连接正文列核验、电子签、业务和人工，完整交付依赖不是单提示词或生成号码。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "contentHash": "688d338820daa54a7bf4a79be9f983e39ffc7b634050c5c854ac7f86bc719aa2",
+    "stem": "假设把政务Demo扩展成真实办理服务，哪些依赖应纳入整体交付？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-051",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "工业质检方案确将现场制造和算法经验结合为Skill；问题是跨团队经验共同沉淀。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "8c4f9b557af39c3642bb8dc5e44ba30c6edac3aff8dab5e7fd2906b1be3604c4",
+    "stem": "假设产线专家懂缺陷成因，算法组懂训练，但换产品就重新沟通，交付资产应重点沉淀什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-052",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "质检方案交互操作和参数解释可降低现场门槛，购买更大模型不能单独补操作链。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "6d0311a00e18ff0a73c959d1ade05924e1817b4d010da3ad4ac59a272951e149",
+    "stem": "假设现场人员有检测软件却不会解释参数和结果，智能体最直接的切入点是什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-053",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "质检方案设计先明确产品缺陷节拍验收，题目是需求约束识别。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "3ae40180c3e4fb7c290471c0fe7df8363eac7d44b5a8c5fd4c17f783cdba11cb",
+    "stem": "假设一条高速产线要求外观检测，方案确认前最应明确哪组业务约束？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-054",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "质检数据准备含缺陷口径及标注规则；冲突先统一标准而非把互斥标签直接训练。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "4a9948366990ea0bfee69de21bb7c7c3410636be425a5614bcd28cf2730b3fa2",
+    "stem": "假设两名标注员对同类划伤的判定相反，优先补齐什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-055",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "质检方案明确训练验证划分，未参与训练样本的验证不能以训练满分替代。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "d0c0d6228df9f895bead91466e599a7d7aa19e7228442b642746d0abc0c63103",
+    "stem": "假设模型在训练样本上表现好，客户要求证明对未参与训练样本的表现，应提供什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-056",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "模组案例检查漏错标与样本分布，先修数据再验效果对题设错误原因有针对性。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "5978b0a7419923b78d677bff17b724778db840108f1a2253826d33ab801cbfd8",
+    "stem": "假设训练数据检查发现大量漏标和错标，首要改进方向是什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-057",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "锂电案例计数重叠规则与成像角度并举，补充重叠条件证据而非无关正常样本。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "6fefa197905f8cec740357f8641de82ee47a6bd319d84bc3803109547eec47d7",
+    "stem": "假设极耳计数偏差集中发生在重叠图像，调查应优先补充什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-058",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "质检诊断含机械成像数据算法，光源变更不能无证据归咎模型或只加阈值。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "4d5baa180549b8c23b723d72d3dfad9de0009630edc41984c7ba569f8e720235",
+    "stem": "假设缺陷误判突然增多，同时产线更换了光源，合理的原因分析路径是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-059",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "工业方案将重复确定步骤用于工作流，固定上传汇总与开放诊断的任务结构不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "bd6010e4d633e698eca919bee3b98693e3740cc51c5bc6e6e219d03fdff6ca5b",
+    "stem": "假设检测数据上传和固定报告汇总步骤已稳定，应该优先采用什么实施方式？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-060",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "工业方案信息不全的专家任务用Claw及业务Skill，补问与分支推理符合现场情况。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "497bd14c4aa343798b0e60cc09a0f187ef05c9e25040e3d3a20c996e36c0d512",
+    "stem": "假设质检故障现场信息不全，需要边问边补机械和成像线索，哪种方式更贴合？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-061",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "酒品案例复用相似方案支撑换SKU，核对新瓶型差异是明确标示的工程验证而非无条件适用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "86241ebfa43091f3d29aa3b7a00f428b97a81df544c9976bc2c288688bec7402",
+    "stem": "假设酒瓶新SKU需上线，已有相似瓶型方案，复用的正确理解是什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-062",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "结构件案例要求补成像治具与缺陷标准，追问补全后分析与直接猜参数有实质区别。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "28f56cfe464f858ae7ea2315dae5a1e40e11c2a4c2308deb32961a36f79e5f7c",
+    "stem": "假设结构件原因报告缺少治具与缺陷标准信息，报告助手应怎样推进？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-063",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "质检方案Badcase回流、补样本和复测指标构成迭代，删除错误或只测旧集不能覆盖新漏检。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "6d61a267dd4fba6534a6208c255ccff8df0c7b4ee1abe7beed699740945c83f8",
+    "stem": "假设上线后收集到一批新型漏检样本，哪条闭环更符合方案？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-064",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "104195汽车复杂图文手册支持解析检索，题目未把知识助手扩大为自动车辆维修控制。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104195"
+    ],
+    "contentHash": "9ec6e5d362f2e24f88ff0475d4e00a0b6f9d90e60b7308d36625f0d9fd1e2151",
+    "stem": "假设维修人员查询图文汽车操作手册，哪个交付能力直接对应官方应用场景？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-065",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订为分类改名后的异步生效验收；138240更新期间不能修改，等完成再测有直接依据。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "d28a63e5852b8ed0b112c821689051e9eb9b5f34f6d1d8fb6fdf725580dea7f4",
+    "stem": "假设设备维护库把“焊接”分类重命名为“连接工艺”，后台显示元数据更新中，交付人员应怎样安排新名称检索验收？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-066",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "138789切片说明支持语义完整与噪声权衡；工艺多前提需保留上下文，不能逐字或无边界合片。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "3505378480ed7f96fe02752b5f14eb327259f364374426e1dfb51d1da1aed3e6",
+    "stem": "假设工艺手册一段规则含多个必要前提，硬拆成孤立短句后工人误读，应该如何调整？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-067",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "工业方案原因分析需沉淀改进建议及上线检查，针对报告到执行的交付缺口。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "a8644e549630c683ca70cb27308d75c84160a2466af19f99dcb28b531941920a",
+    "stem": "假设原因分析报告已完成，若要形成现场可执行交付，还应沉淀什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-068",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "质检方案跨标注算法工程PM协作，选择数据和工程两端衔接，避免单阶段分数代替整体验收。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "f34aed188500903e6a10ff3312a64fdcddfee9b9f7ce9920aae6938caa076e58",
+    "stem": "假设质检项目跨标注、算法、工程和PM推进，哪些问题应在同一协作流程中衔接？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-069",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "制造缺陷成像和算法标注训练两类经验是工业Skill组合，检查的是资产内容而非仅存模型文件。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "5474dcd94445f86d54b6279ad5ad69242d732769fe7980aa7b54d5d22ff1ee54",
+    "stem": "假设整理企业自己的质检Skill，哪些内容属于可结合的两类经验？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-070",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "末轮改为采集质量先于标注，质检页头皮图像案例明确清晰度补拍标注归档；模糊不能等同无缺陷，预测不作未审真值。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "810bf656035d38fbeeca8edf3e960d3ac6b92274c51142cfe09ac724276e1a8c",
+    "stem": "假设为外观检测项目收集样本，部分图像严重模糊，质检助手尚无法可靠辨识待标区域，哪些处理有助于形成可信数据资产？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-071",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "模组数据检查直接含漏标错标与分布，报告风格和文件数量不构成该质量问题判断。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "bdd429774d88c9fb547dec7c87efc3817f6fe66c6604845f7655f793dc768755",
+    "stem": "假设质量团队抽查训练样本，哪些缺陷属于官方案例描述的数据质量问题？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-072",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "酒品案例异常归类与补拍复检串联，针对样本后续处理而非锂电错误成因再问。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "e4f61ef217b519884cd7e97ac28ab549fd99410be9b7cef9b0c52f3eebc00d9d",
+    "stem": "假设瓶盖检测收集过检漏检样本，哪些后续动作符合案例能力方向？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-073",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "末轮改为总体指标被良品分布掩盖的诊断；模组分布检查和样本补齐复测提供事实依据，分类型验证为清楚标示的验收推理。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "e9c60c9308a9db5b88470d0e0b6a703d774d24e8c045a474c9417d6c5f31d304",
+    "stem": "假设质检模型总体准确率较高，但验收样本几乎全是常见良品，少见缺陷覆盖不足，下一步哪些处理更有依据？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-074",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "质检方案按确定性区分工作流与Claw，题目要求在同项目组合两类处理方式而非全选单模式。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "contentHash": "51e20c794f4c989ad17aafc54b618e18f86dc0da6e1b2c469288fe9069047991",
+    "stem": "假设既有固定数据上传，又有信息不足的异常诊断，哪些拆分合理？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-075",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "汽车手册知识验收需资料定位与图文关系，不外推设备执行安全或无资料覆盖所有型号。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104195"
+    ],
+    "contentHash": "c04cef71f61ec1154c205d4921276467b45ea420f8038ba154e610c9ddd132f1",
+    "stem": "假设维护问答参考图文手册，哪些验收内容与其知识支持定位相符？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-076",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售导购方案强调金牌话术模板结合商品材料，针对跨店新人知识复用而非单一人设。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "8c8f133cd2f597a7b4a5c3d623605e7a9cd8ca2d8dcfa3e4235859ed6c45ba95",
+    "stem": "假设总部有成熟销售话术，新店员却各自发挥，优先形成什么交付物？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-077",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售会员助手关联账户查看权益，动态个人余额不能从通用手册或他人记录推断。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "06705709c7704eeac0bc83a2bcf7c76d7e9da4d3b6ee1ac8bfda31c585d2d370",
+    "stem": "假设会员顾问需回答剩余服务次数，答案应优先来自哪里？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-078",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售会员权益变化需人工确认，题目辨认咨询到权益调整的边界而非查余额来源。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "ab11f10242349238ae4585a7236eaf14bc79de6cea6a00ccb40e58c05dffa29f",
+    "stem": "假设用户要求调整已购套餐权益，按官方案例边界，应怎样处理？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-079",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售复杂请求拆意图、查系统、汇总，三个明确目标不可被单FAQ或随机接口覆盖。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "cec8eedca2dd7d7f135a3ad3a6903e8521e999b4f047ba7ce69f84a63cd4a5c7",
+    "stem": "假设一句话同时问套餐余额、周末预约和活动推荐，如何组织处理？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-080",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售促销资料应带时间渠道门店叠加限制，题设跨店错误承诺对应限制条件缺失。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "e7275c142f71691ca4919919b450ec0324fbcede5a9cc58d2bdfe4609bedd979",
+    "stem": "假设促销回答常误说全国门店通用，知识整理应优先补什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-081",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订为损坏描述不完整的意图置信度分流，零售工作流章节支持，区别接口不可用的权益核实。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "dcb6725d652bb81c0059a77350d80758f53cdd7147ac65b88c4354db809d3bde",
+    "stem": "假设售后助手遇到商品损坏描述不完整，无法可靠区分普通咨询和投诉，流程应采用哪种分流设计？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-082",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售知识层划分公开、内部与需确认，底价不能只靠软排序或混在对客上下文。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "1c6f398096abae4bab8f4d6506fefb6a78dcc7debc6ea9a1d606d2b5e2665083",
+    "stem": "假设同一资料集含公开卖点和内部底价，交付前首先应划分什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-083",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售内容指标含审核通过率及编辑时间，返工问题不能只用生成量评价。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "e9baceba326f7155b3a64a072d470f9f37075876f0af53053679adb10cd4bbe8",
+    "stem": "假设导购文案量增加，但编辑返工明显，哪项指标最能补充判断？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-084",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售首阶段知识接入、生成、审核和回收的闭环四步对应事实，没有要求先接所有系统。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "0572f713e717542dc9ce4102327d4432a2e42c96b0e4d469959542cc45f52fc8",
+    "stem": "假设试点只做导购文案，什么才是首阶段完整闭环？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-085",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售第二阶段连预约等系统并考虑异常，静态预约知识不等于真实可办理能力。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "a6f419f783e16ac0bf092c33236a2ec913a01497729171aa0463f6ce65b73401",
+    "stem": "假设商品问答已稳定，想提供可办理的预约辅助，下一阶段重点是什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-086",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售建议基线与人工对照，门店上线时长差异下总调用数不足以推定业务收益。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "cf3b160ef518f3c4f76de02d501257acf4b942360a6a7b02368002d6a806e021",
+    "stem": "假设两个门店上线时间不同，仅比较总调用量能否证明收益？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-087",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售知识更新应有负责人、审核与失效机制，过期赠品承诺需运营责任链而非调生成参数。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "d1ca78de1b167fd4e10772d1f80e49fc44457866cd071c341f46b770df92b0b2",
+    "stem": "假设活动结束后助手仍承诺赠品，应优先补齐什么运营责任？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-088",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售一线反馈包含不准、缺商品、话术不适；现场反馈是总部评测与实际使用差距的重要证据。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "c56634f54bfc7c65729a26651d7e965b55b46e7e397871b46f4e3c0026e324ec",
+    "stem": "假设总部评测很好但店员认为话术不适用，最有效的反馈来源是什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-089",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订为父子分类均设置元数据后的共同作用，138240明确参考全部已启用分类。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "b53724fa1752a945a8e99e33fc7b5a8f0a044c24050e9abd19847bff763db3f0",
+    "stem": "假设商品知识同时设置“家电”父分类和“清洁设备”子分类为元数据，交付人员应怎样解释这套分类对检索的作用？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-090",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "138789按行与表头设置适用于独立SKU，题设关注行与列义完整，未推断任意表格都应单一方案。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "086fff3f3d333a410493604799253fe45457914bca704b944213215bacf158ab",
+    "stem": "假设商品表每行是独立SKU，切片需要携带列义，哪种准备更匹配？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-091",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "产品页供应商证照OCR及多模态核验并人工复核，不能把识别文字当终身审核资格。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/product/adp"
+    ],
+    "contentHash": "55b435c845a71410859f63de0a229d3d66b67eed86077c5bf0e4625d22b4a9b9",
+    "stem": "假设采购方借鉴供应商资质审核场景，正确的自动化边界是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-092",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售内容初稿来自商品活动品牌并运营审核，未把用户好评作为功效事实。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "e4bda43649607b2076f9436438becb2cf6b0468b8c0f8aa6673b147bd97f9f86",
+    "stem": "假设零售团队生成直播口播初稿，依据与后续环节应怎样安排？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-093",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售导购话术用预算场景偏好及商品资料，组合输入有直接依据，不依赖未经确认疗效。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "64aa0160ba0de70f50f3af4c2aac7e6f564a8f4518faebb538dbfbea7fbf7d31",
+    "stem": "假设设计面向店员的推荐话术，哪些输入有助于匹配实际顾客？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-094",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订干扰为群体平均和活动日历，个体消费偏好与权益才支撑差异触达，非泛常识颜色类干扰。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "8f042dee9070dc9d877d64bfc007c39179cda39bc1d0a7889bb4eb05286a7cd4",
+    "stem": "假设会员运营要从统一群发改为差异化触达，哪些数据有业务意义？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-095",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售明确退款、权益变更、投诉价格等需人工确认；普通公开说明不能同等强制混列。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "1cda38da674d58da6f9ae22eca837ccc2c7ffd752b726a258d6cf2d60387bf26",
+    "stem": "假设助手已能收集售后意图，哪些动作属于官方建议人工确认的范围？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-096",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售产品顾问例区分型号并理解图文，和维护手册一般检索不同，重点为相近型号对客解释。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "f9ff6d2fda3464b6835e2cb02499a76bedcf70eca84decfa284eec05e100ac30",
+    "stem": "假设顾客看不懂复杂设备说明书，哪些能力与官方产品顾问场景相关？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-097",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售售后指标含标准问题解决、异常分流与满意度，覆盖实际服务质量而非仅调用量。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "6176e450390a0a59a25914c46c8d6416fb2f10ccbd8789ae72def79fa9e7ef6f",
+    "stem": "假设售后分流助手要验收，哪些指标比仅看调用量更直接？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-098",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售扩展阶段应用模板和统一知识运营支撑多店复制，不是复制截图或无记录改政策。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "41b487b3b5fa6f78b72cac765ae76061b803b326e928b22692c362caac164922",
+    "stem": "假设试点成熟后向多门店推广，哪些资产有利于减少重复建设？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-099",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售商品资料处理包含规格归类卖点和补全辅助，题目保留人工审核与最终决策边界。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "32e2bb3b81c44072da2e7853866adc3a1d4e75a006f017a74e957824a2064e3e",
+    "stem": "假设供应商资料格式杂乱，AI辅助整理时，哪些工作可以纳入场景？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-100",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "零售系统层支持API插件工作流连接订单库存会员，真实调用与只写提示词不同，无须废弃ERP。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution"
+    ],
+    "contentHash": "91d499c552a0dfb084d0a4895457a18cf9e7b946fdb00941a299b1969f671845",
+    "stem": "假设助手需查订单、库存和会员，可采用哪些接入路径？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-101",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "医疗方案NGES定位医生互动与营销管理，未承诺自主处方和诊断授权。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "48a1c8f7b055bcfc48cd9ad0b2076c1632aacb07ee9b19e338e9d24a9390303e",
+    "stem": "假设药械企业询问NGES能解决什么主问题，应如何定位？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-102",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "代表端语音转结构化访后记录直接解决录入，不能只用销售排名或下一次建议替代本次整理。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "a54b1e4246a315092de5fe9510cc94a0ef3154acafd9ec494a5183afab701d76",
+    "stem": "假设医药代表访后录入负担重，哪项功能最直接对应？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-103",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "NGES访后更新画像和跟进任务，题目针对记录到行动的断点，与102录入负担不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "52cf2d4ba85f11b9d28b010520ba25882cf30e02f4ec900156dd8b1b9333ae05",
+    "stem": "假设访后报告已生成但下一次行动仍靠个人记忆，闭环应补充什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-104",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "NGES学术检索将口语需求匹配专业物料，语义桥接与精确文件标题查找不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "b8fe647901d91f5648d9382ce9e85e4569e8c683d490c391d346de2bbaa9deeb",
+    "stem": "假设一线代表用口语描述临床场景，却不知道材料专业名称，哪项能力适合？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-105",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "阿斯利康案例多源同步与过期清理有正文，保障库内材料治理而非永久同权返回。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "5f7debde6691c931133b0dbb556f5b778f8b509f863a173a82a84ffe7ad4bf25",
+    "stem": "假设学术内容库不断更新，哪项治理方向与官方案例相符？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-106",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "NGES会议照片与LBS验真配合，题目要求复核证据而非单上传时间证明现场地点。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "e6d261f313f282bc1baa9b4a055a7e25d861b028422dd6ea26e3126e83ed36d3",
+    "stem": "假设合规部要核实会议照片与现场地点是否相符，应怎样组织证据？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-107",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "NGES会后纪要解析合规预警及待办直接列明，输出定位管理辅助未外推行政临床审批。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "8614f5e84bb3a961b68f383ceffadd021117403fdf71450f0000610a3784657a",
+    "stem": "假设学术会议结束后有大量转写内容，哪类产出更贴合官方能力？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-108",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "NGES管理层ChatBI提供KPI区域趋势和合规下钻，与单次拜访摘要范围不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "136c77764ca2a49c83149795fa38fac27c7342cc7a3dd84d676cb5c60eeb455f",
+    "stem": "假设区域经理关心销售趋势和业务效能波动，适合哪类交付？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-109",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "产品页患者筛选输出候选及匹配依据，允许复核而非无标准自动入组。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/product/adp"
+    ],
+    "contentHash": "b6e8451cac62f1c6a4919862783a6fd3fc4b54113afa10df6a36b0df80d2f58b",
+    "stem": "假设研究团队使用筛选助手，系统应重点交付什么供复核？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-110",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "产品页病例文书为归集草稿及漏项提示，题目明确真实记录与人工最终签署边界。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/product/adp"
+    ],
+    "contentHash": "02212cd783fd4c48b625c2369c2a385315c51fcfe6a7a2b26fc6b5020a536635",
+    "stem": "假设医务人员试用病历文书助手，正确交付定位是什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-111",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "产品页药物稳定性汇总多批次趋势超标并产草稿，不得以平均掩盖异常或保证注册。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/product/adp"
+    ],
+    "contentHash": "0cb0a75659f083d2034bb284957507a9c6f67c05435a777a03e6eac1ff51afd0",
+    "stem": "假设多批次稳定性试验需要汇总，助手适合辅助什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-112",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "产品页细胞培养多维pH、DO、代谢物分析，题目不凭单批次命名或最终产量认定原因。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/product/adp"
+    ],
+    "contentHash": "3928738e1244650a6f8e568f953e00ab9ac8bfcea95ae35361b0a2dddd8ff225",
+    "stem": "假设某培养批次异常，按官方场景，分析重点应是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-113",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订为企微日常沟通会议入口减少搬运，NGES全域感知正文直接支持，与专业审核边界题去重。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "f726b91e59e9c9c921a4c1221c3d072618582b690cd6808318356d0d2256c4b4",
+    "stem": "假设代表在企微沟通后总要切换多个界面抄写信息，希望减少数据搬运，NGES哪项设计直接对应这一需求？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-114",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "NGES矩阵列合规质检内容二创拜访会议，组合角色不代表无限制临床决策。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "e1deae918bd68d440a60cfa155d812e7235bcf132f5d82befb3b9c40b592b5ba",
+    "stem": "假设医药营销团队拆分专业智能体，哪些职责符合官方矩阵？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-115",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "NGES计划根据目标画像、访后记录风险、跟进形成全周期覆盖，区别单项录入能力识别。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "fa1c86be00bc567544df6790314ac7d7577c5c2c0794c55b2edb332dde351515",
+    "stem": "假设设计拜访前后串联，哪些步骤形成官方所述闭环？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-116",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "NGES会前建会邀请、会中转写互动、会后纪要待办，题目考跨阶段覆盖，无监管授权外推。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "30393204e8080b6373fc10ff3ce39aa438c95e809d0c6a891065495b5214cf92",
+    "stem": "假设会议辅助要覆盖不同阶段，哪些任务与方案一致？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-117",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "NGES管理端含KPI与Agent使用回溯，复盘需业务和应用两类证据，不能凭一次好评归因。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "49aafbecb7e828341c9add63b509b48cd047337bfd4e1c4fef6c55b1a10dc357",
+    "stem": "假设管理层要理解某区域效能下降，哪些证据可用于复盘？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-118",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "患者筛选验收需条件和病历证据逐项一致，独立于109交付输出类型识别，不只追求候选数量。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/product/adp"
+    ],
+    "contentHash": "90ff1ad2f3b552b19571a205986d55ae0939922e3af1f8b54bee4ca64f82f8de",
+    "stem": "假设验证患者筛选辅助结果，哪些检查比只看候选数量更必要？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-119",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "出院小结验收关注原始记录归集和漏项提示，非仅文采；区别110草稿定位的认知任务。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/product/adp"
+    ],
+    "contentHash": "feebb2bfa80f5ee1d3c7f5e97ab4db99647f2a1db6fcd95aa3ae1cb06242230a",
+    "stem": "假设验收自动出院小结草稿，应关注哪些方面？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-120",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "NGES检索列学术物料产品政策法规，不扩展为未授权患者数据或泛常识替代。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/med"
+    ],
+    "contentHash": "7b93402252b8cc358cb250d41ab9900b6d93f962eca85b331d747d7c922fd098",
+    "stem": "假设医学交流助手用于拜访准备和会议筹备，哪些内容属于页面列明的检索对象？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-121",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "教育页明确学伴与学情分析建设中，题目正确保留访问版本状态，未永久否定未来能力。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/edu"
+    ],
+    "contentHash": "2bbfef128a0a41ec7638a6190df49065d7d7c7a5c1d2bea321d24722d22d1da8",
+    "stem": "假设学校据官网编制上线清单，Agent学伴与学情分析应该怎样标注？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-122",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "教育页学用创赛整体定位直接支持课程实训应用创作赛事，不把一个聊天入口等同全流程。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/edu"
+    ],
+    "contentHash": "5ac3fb01db1378bb178c5c914de35a0478b62dd89df5fffc7806995a0dd02ed4",
+    "stem": "假设学校要求从学习AI到开发作品和参赛，哪种理解符合官方定位？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-123",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "教育智能体广场支持师生自建作品发现分发，题目选择载体有正文支持。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/edu"
+    ],
+    "contentHash": "42c315822819c6d81045daee10893199d40d9b41b208881a5136615fe94b531f",
+    "stem": "假设师生自行开发教学助手并希望供校内发现和使用，适合哪个载体？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-124",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "教育赛事团队空间、成员邀请协作编辑对应题设组织载体，共享密码不是该能力。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/edu"
+    ],
+    "contentHash": "37cf12e1b1eaa30df307fa9a00349ee86bad26b405573654493fa55dcdb5dd6d",
+    "stem": "假设学生组队参赛且需协作编辑智能体，交付应配置什么组织载体？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-125",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "教育超级智能体任务规划调度专家工具，统一入口不是静态课程链接目录。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/edu"
+    ],
+    "contentHash": "5311aa42b74ae86d269ec25370aa35861adf3829956ce1fbf99ebc4eed4fe722",
+    "stem": "假设学校想有统一入口按任务调度不同专家助手，官方哪个能力定位最贴合？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-126",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "教育学科大模型与专家Agent服务学科能力培养，区别泛FAQ和仅调语气。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/edu"
+    ],
+    "contentHash": "44bcc316efa8f8e34365d179d33c46caed769213d13148316b06136277c63775",
+    "stem": "假设学院希望突出本学科知识与能力培养，方案方向是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-127",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "教育创作基于ADP全生命周期含评测发布运营，调试一次不足以交付全部阶段。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/edu"
+    ],
+    "contentHash": "88a1eba81c53e095aa5887a63ef9c06b55bbc6035b8d87e67a6061cc1fd57d6e",
+    "stem": "假设教学实训只做到应用调试便宣布完整生命周期已完成，还遗漏什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-128",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订为元数据进入生成上下文的用途选择，138240明确双用途，已不再重复M6分类词补正文任务。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "contentHash": "9a24bed13ef5b1d610c9023d3c09b49a7416b05e2ea06099bde1066bdd235e29",
+    "stem": "假设校内课程材料正文只有实验步骤，适用年级仅存于分类，回答必须同时说明适用年级，应怎样配置这项分类元数据的用途？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-129",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订为第三方平台助手接入，教育页支持多平台兼容；解析保留适配评估，不声称任意平台零配置。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/edu"
+    ],
+    "contentHash": "e96e6a290e061cbecc17d2c6b1fb70572ab7f293a5388c7abca8a295a88c2c4a",
+    "stem": "假设院系已有第三方平台教学助手，希望学校广场作为统一发现入口，依据教育方案应怎样判断？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-130",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订为人工评分口径冲突，104208提供标注工具而非自动替教师裁决，先统一标准为明确工程推理。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "contentHash": "910fafd478c88c481ea626f57a551a2fd2146597cffb74e59747c25afa3e601c",
+    "stem": "假设两位教师对同一课程助手回答给出相反人工评分，项目要形成可信验收记录，下一步最合理的做法是什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-131",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "教育课程中心含观看文档实操，题目选实际学习形式，不把建设中学情分析承诺为已用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/edu"
+    ],
+    "contentHash": "2250f21ce0f6b247d288f59f7b4de06ba980d3d5db13297bf867cf514f92e026",
+    "stem": "假设制定课程中心交付范围，哪些是页面明确描述的学习形式？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-132",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订干扰为静态目录和官方独占，教育广场教学科研专家多类型及师生创作有依据。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/edu"
+    ],
+    "contentHash": "94e200f385d07b2bf0cd02fc95fcbd98097208ee4e11072b6da794160b539752",
+    "stem": "假设学校建设多类型智能体生态，哪些角色方向在页面中列明？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-133",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "教育赛事从报名组队协作到作品上架，题目考组织链路覆盖而非单124协作载体识别。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/edu"
+    ],
+    "contentHash": "e2832ab29c25c1f6ed68c18428a680d4624133d5b3f82bc920d76a192450c22f",
+    "stem": "假设组织校内智能体赛事，哪些环节属于官方方案？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-134",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订干扰限定课程播放或通用问答，教育信息化明确教学管理科研双创赛事范围。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/edu"
+    ],
+    "contentHash": "4ce783a59281f7bb210f8d09f1569906b29e42f165a0ec33942de676e618d349",
+    "stem": "假设学校分校级和院级推进AI应用，哪些业务方向在方案范围内？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-135",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "教育超级入口可调度专家工具知识库自定义资源，须已接入；区别125入口定位判断。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/edu"
+    ],
+    "contentHash": "3a316e7467a2609156b264908c41e76e3d786f9122a31c956f9b21ec0f27b908",
+    "stem": "假设统一入口需要协调多种资源，哪些是页面列明的可调度对象？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-136",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "法务逐条审查需要立场及Playbook，采购双方不同权利目标不能仅用相同模板口径。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "ce1a3d9c3526628d041c221ced50db66311e964c5a20cd1403424db3df8ef4d4",
+    "stem": "假设同一采购合同需分别从买方和卖方视角审查，开始前应明确什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-137",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "法务对比先明确原新版，下载时间文件体积不可靠定义版本方向。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "cf2f5f4bb651dc2e42bd75d8e3f016923493ca6460f396624d66692b381227da",
+    "stem": "假设收到两版合同，要统计新增删除修改，首先应确认什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-138",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "法务风险可追溯保留来源与原文锚点，解决定位复核而非仅给风险级别。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "9aa2609cd317d4c0811bde63eadc49d2e60ca1b117cfaf6602e360ea569d1ea7",
+    "stem": "假设审查报告称第八条有风险，法务要快速复核，最应带什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-139",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "法务Playbook沉淀经验口径与标准，团队复用目标不是仅归档历史报告。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "ad27ab5770be091498de21f8d8f7991754639426613c6317ee98ade2be1727cc",
+    "stem": "假设法务团队希望下次合同审查沿用已确认的条款口径，应如何沉淀？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-140",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "法务结构化清单用于逐项跟进，整体风险分数或相似度不足支持处理动作。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "69d29159a2997564eb5573b18f308a6f41b53958775b4264ec529156e8746f5e",
+    "stem": "假设业务方要逐项处理合同修改建议，什么交付形式更便于跟进？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-141",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "法务支持人工复核后迭代，AI初稿不等于司法结论或最终批准。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "af8c01f65370496092d1e88329c6952ac23a494aa8910829eac46f87d201ef96",
+    "stem": "假设模型给出合同审查初稿，下一步怎样定位人工职责？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-142",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "法务可信依据来自授权资料及法律依据，未授权他项目和网络热度不可替代。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "7269ccdb1bb2929b6c23cdbbe310ec0cc2e9e5a1adfc79b2a52fef3d0844aa8e",
+    "stem": "假设企业问某合同条款的解释，应优先连接哪组材料？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M5-143",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订区分版本差异数与法律业务风险，法务对比和按立场审查为不同能力，推理边界明确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "364d7b8a8d4c76a10d27786fd7795a9ddca61b5cf298ef9666e2121180d836bb",
+    "stem": "假设两版合同对比显示仅修改一处付款条件，业务方认为“改动少所以风险低”，应怎样纠正交付解释？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M5-144",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "最终修订为规则更新后的样本复审，依据Playbook与可迭代风险产物，未声称保存规则会自动回算旧报告。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "54d280cbbb622cb5b70131ce1923cc78090478fb7266db78f3409ec76a501ab2",
+    "stem": "假设法务团队更新Playbook中的责任上限规则，已经生成的旧合同审查报告仍标为原结论，交付人员应怎样验证规则更新的效果？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-145",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "法务统一检索覆盖授权材料外部法律及来源，并能输出研究报告，资料范围与产物要求一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "c79a890be32ca9da5126a8d1980bcb2681bd7ec024a6d8a9012d95c8f2c170d1",
+    "stem": "假设法务研究需整合项目资料和外部法规，哪些产出要求符合方案？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-146",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "法务审查结果字段风险等级锚点依据建议均有正文，任务为完整报告验收不只是138定位一个条文。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "2004e7201907cef85b12443e9b6246b7a38c4da60bc894f2d79b0ce1eb7fb795",
+    "stem": "假设验收逐条审查报告，哪些字段有助于法务实际处理风险？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M5-147",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "法务对比输出增删改统计及标注报告有直接依据，不混同通用合同生成。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "5cff9dcdd3491cd659c6930768436871549ce3fcb0e145bff3013fcb7ab0dae2",
+    "stem": "假设合同从v1修订为v2，哪些输出符合对比任务？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-148",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "法务结构化交付含译文双语及Playbook项目空间资产，技术产物没有法律认证承诺。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "7c662533f4f953ddf899c841fba4799aafb52809c1eb72265b632eb6d9b9a60a",
+    "stem": "假设跨国项目需要翻译与后续审查经验留存，哪些交付资产在方案中列明？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-149",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "修订为不同法务任务分别配置技能，正文明确问答审查对比翻译专门能力；正确项与解析匹配。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "7ce3f6e49b7706d69b17e7bfae7a5b93c76bb5bfbc8f0717c683c0d42cb655c4",
+    "stem": "假设法务工作台按任务组织能力，哪些技能配置符合官方方案？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M5-150",
+    "status": "approved",
+    "reviewer": "core_features",
+    "notes": [
+      "法务工作空间入口保留历史与文件，连续任务上下文不等于自动混用未授权项目。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "contentHash": "dcbffc903cdc0eec7a173da63a6bfd2a12bed90f109421119ecd3c581162725d",
+    "stem": "假设同一法务项目跨多轮处理文件与问题，哪些上下文应在工作空间内衔接？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  }
+]

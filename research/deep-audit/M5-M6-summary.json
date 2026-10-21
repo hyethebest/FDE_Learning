@@ -1,0 +1,56 @@
+{
+  "scope": "M5全部150题及M6全部110题",
+  "reviewer": "solution_design / 独立AI审校，非腾讯官方或人工专家",
+  "date": "2026-10-09",
+  "counts": {
+    "M5": {
+      "learning_only": 134,
+      "eligible": 16
+    },
+    "M6": {
+      "eligible": 55,
+      "learning_only": 54,
+      "hold": 1
+    }
+  },
+  "totalByStatus": {
+    "supported": 259,
+    "needs_revision": 1
+  },
+  "totalByExamUse": {
+    "learning_only": 188,
+    "eligible": 71,
+    "hold": 1
+  },
+  "definitions": {
+    "supported": "题干限定下的产品事实及答案可由所列官方材料支持，或解析明确为合理工程推理；不代表题目质量通过。",
+    "needs_revision": "当前题干/答案/证据范围不一致，需要修改并重新审阅。",
+    "unverified": "未取得足够官方直接证据；本批未使用该标签。",
+    "eligible": "本次AI审计认为可作为模块内基础模拟候选；不是官方真题或难度认证。",
+    "learning_only": "事实可学，但弱干扰、原词泄题、非核心细节或重复判断使其不应计入有效模拟题配额。",
+    "hold": "在修订前不纳入考试及可信题数。",
+    "duplicateGroup": "审阅发现同目标或组合重复的关联记录；不表示组内任意两题完全相同，请结合各题rationale判断。"
+  },
+  "method": [
+    "逐题阅读题干、全部选项、正确答案、解析与干扰项说明。",
+    "直接重新打开题目涉及的23个腾讯官方公开来源，并核对2026-09-10版FDE指南的模块范围。",
+    "未用题目原有review标签作为证据；sourceEvidence由本次读到正文定位填写。",
+    "审计只产出研究报告，未修改题库。",
+    "未登录课程、运行腾讯真实应用或接触真题；无官方/人工专家认定，也未做考生实测区分度统计。"
+  ],
+  "sourceCount": 23,
+  "inputFileSha256": {
+    "M5": "72822d90366ebc717e8b87e8a216b6252200b02c26ac51252ae1ac692d0e7930",
+    "M6": "4cbaf0b8a975733f247ca9e6571fa85ea82c6ca1771ec42de10386a60c09d95f"
+  },
+  "questionHashAlgorithm": "SHA256(JSON of question excluding review; UTF-8, ensure_ascii=False, sort_keys=True, separators=(comma,colon))",
+  "holdItems": [
+    "FDE-M6-023"
+  ],
+  "followUp": [
+    "优先重写弱干扰为同一业务阶段的可比较方案，并加真实限制条件。",
+    "将案例品牌、产品宣传页小细节和当前建设中状态移入阅读补充，不用其数量补齐模拟题。",
+    "重复题组保留一个代表性判断，后续题必须增加实质不同的根因或配置约束。",
+    "重新设计题目后再核事实、答案唯一性及整体考纲配额；不能因初审有来源而恢复为有效题。"
+  ]
+}

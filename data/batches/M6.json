@@ -1,0 +1,4464 @@
+[
+  {
+    "id": "FDE-M6-001",
+    "module": "M6",
+    "topic": "验收评测／基准评测配置",
+    "type": "single",
+    "stem": "团队已有参考答案，需要批量执行应用并检验结果，应优先建立什么任务？",
+    "options": {
+      "A": "只做知识库召回测试",
+      "B": "只运行多模型对比",
+      "C": "基准评测",
+      "D": "只查线上点赞率"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "基准评测可批量运行样本并按参考答案或自定义信息评分。 因此，本题应选择“基准评测”。",
+    "distractors": {
+      "A": "仅检索切片不足以评价应用最终答案",
+      "B": "比较配置不等于按参考答案验收当前应用",
+      "D": "用户评价不能替代逐样本标准答案评测"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "基准评测配置",
+        "fact": "基准评测可批量运行样本并按参考答案或自定义信息评分。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-002",
+    "module": "M6",
+    "topic": "评测数据／上传评测集",
+    "type": "single",
+    "stem": "将人工整理的验收样本导入应用评测，官方支持哪种文件格式？",
+    "options": {
+      "A": "csv",
+      "B": "xlsx",
+      "C": "jsonl",
+      "D": "zip"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "评测集以xlsx上传，知识文件导入能力不能外推到评测集。 因此，本题应选择“xlsx”。",
+    "distractors": {
+      "A": "常见数据格式不等于该评测入口支持的格式",
+      "C": "不能将训练数据格式外推为评测集格式",
+      "D": "这是应用包格式而非评测集文件格式"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "上传评测集",
+        "fact": "评测集以xlsx上传，知识文件导入能力不能外推到评测集。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-003",
+    "module": "M6",
+    "topic": "评测数据／上传评测集",
+    "type": "single",
+    "stem": "某验收集需要保存产品线和参考结论，应放在哪里供评分规则引用？",
+    "options": {
+      "A": "评测集自定义列",
+      "B": "直接写入应用系统提示词",
+      "C": "写在文件名中",
+      "D": "另建未与样本关联的问答库"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "评测集自定义列可存额外信息并作为评分变量。 因此，本题应选择“评测集自定义列”。",
+    "distractors": {
+      "B": "不能作为逐样本的独立评分变量",
+      "C": "文件名不替代自定义列结构",
+      "D": "评分不会因此获得该样本的指定变量"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "上传评测集",
+        "fact": "评测集自定义列可存额外信息并作为评分变量。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-004",
+    "module": "M6",
+    "topic": "评测数据／基准评测配置",
+    "type": "single",
+    "stem": "两份评测集分别用answer和reference表示同一列，合并运行报错，首先应怎样处理？",
+    "options": {
+      "A": "统一评测集列名",
+      "B": "只把两份文件改成相同文件名",
+      "C": "分别新增不同名称的参考列",
+      "D": "在裁判提示词里说明列名不同即可"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "同一次任务所选评测集的列名须一致。 因此，本题应选择“统一评测集列名”。",
+    "distractors": {
+      "B": "系统校验的是列名而非文件名",
+      "C": "仍未保持列结构一致",
+      "D": "不能绕过任务对列名一致性的校验"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "基准评测配置",
+        "fact": "同一次任务所选评测集的列名须一致。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-005",
+    "module": "M6",
+    "topic": "评分方法／裁判模型打分",
+    "type": "single",
+    "stem": "裁判提示词要求对照reference_output，但该列为空，首先应补什么？",
+    "options": {
+      "A": "先降低裁判温度",
+      "B": "将应用输出也当作标准答案",
+      "C": "有效参考答案及匹配的裁判提示词",
+      "D": "仅把提示词重复三次"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "使用参考答案评分时，评测集应提供相应内容，裁判提示词须与数据匹配。 因此，本题应选择“有效参考答案及匹配的裁判提示词”。",
+    "distractors": {
+      "A": "采样参数不能补齐评分依据",
+      "B": "形成自我对照，不能检查与真实参考的差异",
+      "D": "重复说明不解决引用列为空"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "裁判模型打分",
+        "fact": "使用参考答案评分时，评测集应提供相应内容，裁判提示词须与数据匹配。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-006",
+    "module": "M6",
+    "topic": "评分方法／代码打分",
+    "type": "single",
+    "stem": "验收需要按自定义计算逻辑检查结果，官方代码评分目前支持哪种语言？",
+    "options": {
+      "A": "JavaScript",
+      "B": "SQL",
+      "C": "Python",
+      "D": "Shell"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "代码打分支持Python，并可引用查询及自定义列。 因此，本题应选择“Python”。",
+    "distractors": {
+      "A": "文档列明代码评分目前支持Python",
+      "B": "数据库查询语言不是列明的代码评分语言",
+      "D": "脚本环境不能从普通开发能力外推到该入口"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "代码打分",
+        "fact": "代码打分支持Python，并可引用查询及自定义列。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-007",
+    "module": "M6",
+    "topic": "评分方法／仅输出结果不打分",
+    "type": "single",
+    "stem": "项目要先收集全部回答，再由业务专家人工判读，应选择哪种批量方式？",
+    "options": {
+      "A": "规则打分并把所有样本设满分",
+      "B": "裁判评分且把提示词留空",
+      "C": "仅输出结果不打分",
+      "D": "只做召回测试"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "仅输出模式运行评测集并产出回答，不执行自动打分。 因此，本题应选择“仅输出结果不打分”。",
+    "distractors": {
+      "A": "会产生无效分数而非单纯收集",
+      "B": "不满足可解释评分设计",
+      "D": "不能收集应用最终回答"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "仅输出结果不打分",
+        "fact": "仅输出模式运行评测集并产出回答，不执行自动打分。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-008",
+    "module": "M6",
+    "topic": "配置实验／对比评测配置",
+    "type": "single",
+    "stem": "同一标准模式应用想比较两套提示词，最直接的能力是什么？",
+    "options": {
+      "A": "多提示词对比评测",
+      "B": "多模型对比但始终不改变提示词",
+      "C": "只对不同生产日期的点赞率比较",
+      "D": "同时替换知识库和提示词后只测新版本"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "对比评测可在相同任务中比较同一应用的多套提示词。 因此，本题应选择“多提示词对比评测”。",
+    "distractors": {
+      "B": "实验变量与需求不符",
+      "C": "用户和样本不一致，无法隔离提示词效果",
+      "D": "没有保持同一任务下的对照"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "对比评测配置",
+        "fact": "对比评测可在相同任务中比较同一应用的多套提示词。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-009",
+    "module": "M6",
+    "topic": "配置实验／对比评测配置",
+    "type": "single",
+    "stem": "团队给单工作流应用开启多模型对比评测，交付文档应先提醒什么？",
+    "options": {
+      "A": "工作流模式和标准模式完全同等支持",
+      "B": "只要有评测集就可忽略模式",
+      "C": "Plan-and-Execute具有最完整的该评测支持",
+      "D": "该对比功能文档限定标准模式"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "应用评测文档将对比评测功能限定为标准模式。 因此，本题应选择“该对比功能文档限定标准模式”。",
+    "distractors": {
+      "A": "文档明确限定对比功能的模式",
+      "B": "评测数据不改变产品适用范围",
+      "C": "官方另有无法完整评测的提示"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "对比评测配置",
+        "fact": "应用评测文档将对比评测功能限定为标准模式。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-010",
+    "module": "M6",
+    "topic": "运行管理／评测任务管理",
+    "type": "single",
+    "stem": "正在排队的评测不想继续消耗资源，但稍后要恢复，选什么操作？",
+    "options": {
+      "A": "删除后再从原任务恢复",
+      "B": "仅下载当前结果就算暂停",
+      "C": "暂停任务",
+      "D": "停止线上应用服务"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "暂停适用于运行中或排队任务，之后可继续。 因此，本题应选择“暂停任务”。",
+    "distractors": {
+      "A": "删除不可恢复，无法保留原任务继续",
+      "B": "下载并不是任务状态控制",
+      "D": "线上服务状态不等于评测队列状态"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "评测任务管理",
+        "fact": "暂停适用于运行中或排队任务，之后可继续。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-011",
+    "module": "M6",
+    "topic": "结果审查／评测结果标注",
+    "type": "single",
+    "stem": "业务专家修正了自动评分，应通过什么方式让结果进入报告？",
+    "options": {
+      "A": "只在本地另写备注而不回填",
+      "B": "删除争议样本并重跑作为原验收结果",
+      "C": "对运行结果人工标注",
+      "D": "只修改参考答案但保留旧评分为最终结果"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "人工标注会反映在评测报告与下载结果中。 因此，本题应选择“对运行结果人工标注”。",
+    "distractors": {
+      "A": "平台报告无法自动包含未提交的判断",
+      "B": "会改变验收集合而非修正原结果",
+      "D": "未重新评价输出，不能体现专家判定"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "评测结果标注",
+        "fact": "人工标注会反映在评测报告与下载结果中。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-012",
+    "module": "M6",
+    "topic": "验收证据／查看评测报告",
+    "type": "single",
+    "stem": "验收方同时要看质量和响应表现，优先查看哪项？",
+    "options": {
+      "A": "只看对话记录条数",
+      "B": "只看召回片段相似度",
+      "C": "包含打分及性能数据的评测报告",
+      "D": "只看评测任务完成百分比"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "评测报告提供评分结果及性能报告，能支持多维验收。 因此，本题应选择“包含打分及性能数据的评测报告”。",
+    "distractors": {
+      "A": "没有逐样本质量或性能判定",
+      "B": "相似度不是完整回答质量和响应表现",
+      "D": "完成率反映执行进度而非效果"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "查看评测报告",
+        "fact": "评测报告提供评分结果及性能报告，能支持多维验收。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-013",
+    "module": "M6",
+    "topic": "评测可比性／注意事项",
+    "type": "single",
+    "stem": "连续运行的验收测试中，维护人员准备更改知识库，最妥当的做法是？",
+    "options": {
+      "A": "持续修正知识后把前后样本混算",
+      "B": "保持测试期知识稳定，变更后另行评测",
+      "C": "只冻结模型参数但继续新增知识",
+      "D": "每修一次知识就只保留较高分那部分"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "官方评测说明要求避免评测过程中更改知识，以免影响结果。 因此，本题应选择“保持测试期知识稳定，变更后另行评测”。",
+    "distractors": {
+      "A": "样本运行所依据数据不同，破坏可比性",
+      "C": "检索知识仍变化",
+      "D": "选择性留存使验收失真"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "注意事项",
+        "fact": "官方评测说明要求避免评测过程中更改知识，以免影响结果。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-014",
+    "module": "M6",
+    "topic": "复杂模式／注意事项",
+    "type": "single",
+    "stem": "验收计划使用Plan-and-Execute协同的Multi-Agent，评测覆盖应如何描述？",
+    "options": {
+      "A": "该方式由相同入口完整自动验收",
+      "B": "现有应用评测不能完整覆盖该协同方式",
+      "C": "只测主Agent即可等同全部协同路径",
+      "D": "可直接跳过应用验收"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "文档不建议对Plan-and-Execute进行该应用评测，因为无法完整评测。 因此，本题应选择“现有应用评测不能完整覆盖该协同方式”。",
+    "distractors": {
+      "A": "与文档覆盖限制相反",
+      "C": "不能证明子任务链路完整",
+      "D": "覆盖限制需补充验证，不能免除验收"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "注意事项",
+        "fact": "文档不建议对Plan-and-Execute进行该应用评测，因为无法完整评测。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-015",
+    "module": "M6",
+    "topic": "检索诊断／功能说明",
+    "type": "single",
+    "stem": "回答异常时想先确认正确资料能否被检索，应该运行什么？",
+    "options": {
+      "A": "只做应用最终分数比较",
+      "B": "知识库召回测试",
+      "C": "先改生成提示词且不检查片段",
+      "D": "只查看召回配置是否保存"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "召回测试验证提问能否得到预期知识切片。 因此，本题应选择“知识库召回测试”。",
+    "distractors": {
+      "A": "分数不能独立定位检索是否命中",
+      "C": "可能绕过真正的检索问题",
+      "D": "保存配置不证明目标知识已召回"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "功能说明",
+        "fact": "召回测试验证提问能否得到预期知识切片。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-016",
+    "module": "M6",
+    "topic": "实验隔离／功能说明",
+    "type": "single",
+    "stem": "在召回测试中调好了阈值，线上应用配置会怎样？",
+    "options": {
+      "A": "不会自动同步改变",
+      "B": "立即覆盖所有引用该库的应用",
+      "C": "仅发布域自动同步，调试域不变",
+      "D": "测试结束自动生成发布版本"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "召回测试中的规则只对本次测试生效。 因此，本题应选择“不会自动同步改变”。",
+    "distractors": {
+      "B": "测试规则与应用配置分离",
+      "C": "没有此同步行为",
+      "D": "召回测试不是应用发布"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "功能说明",
+        "fact": "召回测试中的规则只对本次测试生效。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-017",
+    "module": "M6",
+    "topic": "检索资源／使用前提",
+    "type": "single",
+    "stem": "套餐、权限和知识导入均正常，但召回测试在模型调用阶段失败，接下来最应检查什么？",
+    "options": {
+      "A": "仅扩大召回上限",
+      "B": "修改生成提示词",
+      "C": "相关模型资源是否可用",
+      "D": "再次申请相同功能权限"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "召回测试依赖Embedding等模型资源。应沿题设失败阶段检查资源。 因此，本题应选择“相关模型资源是否可用”。",
+    "distractors": {
+      "A": "数量不能弥补资源",
+      "B": "故障发生在检索模型调用阶段",
+      "D": "题设已排除权限"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "使用前提",
+        "fact": "召回测试依赖Embedding等模型资源。应沿题设失败阶段检查资源。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-018",
+    "module": "M6",
+    "topic": "召回结果／功能说明",
+    "type": "single",
+    "stem": "如何区分命中的片段来自正确手册还是相似名称手册？",
+    "options": {
+      "A": "只选相似度最高的一条就视为正确",
+      "B": "检查来源和原文入口",
+      "C": "仅核对最终回答的语气",
+      "D": "仅查看文档导入时间"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "召回结果展示片段、分数、来源、类型及原文入口。 因此，本题应选择“检查来源和原文入口”。",
+    "distractors": {
+      "A": "高相似不保证型号来源正确",
+      "C": "不能定位引用资料",
+      "D": "新导入不等于目标手册"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "功能说明",
+        "fact": "召回结果展示片段、分数、来源、类型及原文入口。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-019",
+    "module": "M6",
+    "topic": "内容优化／使用场景",
+    "type": "single",
+    "stem": "刚导入新版规程后，关键问题没有命中预期段落，首先应检查什么？",
+    "options": {
+      "A": "直接加大召回数量而不检查内容",
+      "B": "内容缺失及切分问题",
+      "C": "仅更换裁判模型",
+      "D": "先提高回答温度"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "召回测试可用于发现知识缺失和切分不合理。 因此，本题应选择“内容缺失及切分问题”。",
+    "distractors": {
+      "A": "资料缺失或切坏时增加数量未必有效",
+      "C": "评估器不补全知识",
+      "D": "采样不能修复缺失内容"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "使用场景",
+        "fact": "召回测试可用于发现知识缺失和切分不合理。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-020",
+    "module": "M6",
+    "topic": "检索实验／对比测试",
+    "type": "single",
+    "stem": "比较两组检索配置时，怎样避免样本变化干扰判断？",
+    "options": {
+      "A": "对同一问题并行比较不同配置",
+      "B": "每组改用不同用户问题",
+      "C": "每组换一套知识库再直接归因阈值",
+      "D": "仅以返回片段数量多判定胜出"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "对比测试在同一问题下返回多组配置的召回结果。 因此，本题应选择“对同一问题并行比较不同配置”。",
+    "distractors": {
+      "B": "问题差异混入配置比较",
+      "C": "同时改变知识范围，归因不成立",
+      "D": "数量不代表相关性或有效覆盖"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "对比测试",
+        "fact": "对比测试在同一问题下返回多组配置的召回结果。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-021",
+    "module": "M6",
+    "topic": "阈值诊断／配置检索与召回规则",
+    "type": "single",
+    "stem": "某相关文档切片低于检索匹配度阈值，它会如何处理？",
+    "options": {
+      "A": "保留但仅降低排序",
+      "B": "被过滤",
+      "C": "仍然交给生成模型自行筛选",
+      "D": "若片段来自最新文件则豁免"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "文档检索匹配度规定最低阈值，低于阈值的切片不进入结果。 因此，本题应选择“被过滤”。",
+    "distractors": {
+      "A": "文档阈值是过滤条件，不只是排序权重",
+      "C": "阈值以下不会照常进入召回结果",
+      "D": "文档未给该阈值豁免"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "配置检索与召回规则",
+        "fact": "文档检索匹配度规定最低阈值，低于阈值的切片不进入结果。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-022",
+    "module": "M6",
+    "topic": "排序诊断／配置检索与召回规则",
+    "type": "single",
+    "stem": "多个知识库都有候选片段，想理解最终跨库排序，应检查哪个配置？",
+    "options": {
+      "A": "只看某一库的局部召回数量",
+      "B": "所有知识库共用的重排序模型",
+      "C": "只看生成模型temperature",
+      "D": "只按文档上传顺序推断"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "多知识库召回后，可用共用的重排序模型再排序。 因此，本题应选择“所有知识库共用的重排序模型”。",
+    "distractors": {
+      "A": "不足以解释跨库最终排序",
+      "C": "生成采样不是跨库重排",
+      "D": "最终排序由检索和重排序配置决定"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "配置检索与召回规则",
+        "fact": "多知识库召回后，可用共用的重排序模型再排序。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-023",
+    "module": "M6",
+    "topic": "发布核对／待发布",
+    "type": "single",
+    "stem": "交接时如何核对这次发布涉及了哪些内容？",
+    "options": {
+      "A": "只核对上一次发布历史",
+      "B": "只核对调试回答成功一次",
+      "C": "查看发布确认窗口中的待发布内容数量",
+      "D": "只统计知识库总文档数"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "发布前确认窗口会列出各类待发布内容数量，适合核对变更范围。 因此，本题应选择“查看发布确认窗口中的待发布内容数量”。",
+    "distractors": {
+      "A": "历史不能代表本次待发布范围",
+      "B": "单次回答不能证明全部变更项",
+      "D": "总量不能区分本次待发布内容"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "待发布",
+        "fact": "发布前确认窗口会列出各类待发布内容数量，适合核对变更范围。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-024",
+    "module": "M6",
+    "topic": "版本追溯／发布历史",
+    "type": "single",
+    "stem": "线上回答变化，需要确定某次正式配置变更，应优先查哪里？",
+    "options": {
+      "A": "发布历史的版本记录",
+      "B": "只看运营总点赞率",
+      "C": "只查看当前编辑内容",
+      "D": "只查询模型供应商更新日志"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "发布历史保存每次发布记录，完成发布后生成唯一版本号。 因此，本题应选择“发布历史的版本记录”。",
+    "distractors": {
+      "B": "不能确定哪个版本何时改变配置",
+      "C": "调试态不一定等同历史线上状态",
+      "D": "供应商更新不是本应用发布记录"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "发布历史",
+        "fact": "发布历史保存每次发布记录，完成发布后生成唯一版本号。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-025",
+    "module": "M6",
+    "topic": "回退流程／发布历史与版本还原",
+    "type": "single",
+    "stem": "点击旧版本还原到调试态后，线上是否已切回？",
+    "options": {
+      "A": "尚未，核对后还需发布",
+      "B": "点击还原即已切回生产",
+      "C": "只有知识自动回退，配置不变",
+      "D": "还原后无需复核即可视为验收通过"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "版本还原先覆盖调试配置，经确认发布后才替换线上版本。 因此，本题应选择“尚未，核对后还需发布”。",
+    "distractors": {
+      "B": "还原只覆盖调试配置",
+      "C": "还原对象主要是配置，知识数据不回退",
+      "D": "依赖及默认值仍需核查"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "发布历史与版本还原",
+        "fact": "版本还原先覆盖调试配置，经确认发布后才替换线上版本。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-026",
+    "module": "M6",
+    "topic": "回退保护／发布历史与版本还原",
+    "type": "single",
+    "stem": "还原旧版本前，编辑界面有未保存的重要变更，应怎样做？",
+    "options": {
+      "A": "先还原，未保存内容会自动合并",
+      "B": "导出旧线上应用包便能保存当前未存编辑",
+      "C": "先保存并妥善留存重要变更",
+      "D": "只保存浏览器URL"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "官方要求还原前检查重要未保存变更，避免覆盖。 因此，本题应选择“先保存并妥善留存重要变更”。",
+    "distractors": {
+      "A": "官方提醒可能覆盖，未承诺合并",
+      "B": "包针对已发布历史版本，不保存当前未存编辑",
+      "D": "URL不能保存配置内容"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "发布历史与版本还原",
+        "fact": "官方要求还原前检查重要未保存变更，避免覆盖。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-027",
+    "module": "M6",
+    "topic": "资源依赖／版本还原后异常情况处理",
+    "type": "single",
+    "stem": "回退后某工具失效，发现该全局工具已被删除，应如何处理？",
+    "options": {
+      "A": "重新配置依赖或移除失效组件",
+      "B": "连续点击还原会恢复已删除工具",
+      "C": "重新发布就必然修好依赖",
+      "D": "仅调整工具输入值不重配依赖"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "旧版本引用的全局资源被彻底删除后，回退组件会失效，需要处理依赖。 因此，本题应选择“重新配置依赖或移除失效组件”。",
+    "distractors": {
+      "B": "全局资源不被自动复活",
+      "C": "发布不能重建已删除资源",
+      "D": "失效对象不存在时改入参无效"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "版本还原后异常情况处理",
+        "fact": "旧版本引用的全局资源被彻底删除后，回退组件会失效，需要处理依赖。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-028",
+    "module": "M6",
+    "topic": "回退范围／随版本回退的内容说明",
+    "type": "single",
+    "stem": "误删知识条目后，仅还原应用历史版本能恢复知识数据吗？",
+    "options": {
+      "A": "不能把版本还原当作知识数据恢复",
+      "B": "可恢复所有默认库条目",
+      "C": "共享库数据不回退但默认库数据必回退",
+      "D": "只要该条目曾被检索过就可恢复"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "知识库数据不随应用版本回退，因此交付须另行考虑数据保存。 因此，本题应选择“不能把版本还原当作知识数据恢复”。",
+    "distractors": {
+      "B": "官方将知识数据列为不支持回退",
+      "C": "文档均列为不可回退",
+      "D": "检索历史不构成版本数据快照"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "随版本回退的内容说明",
+        "fact": "知识库数据不随应用版本回退，因此交付须另行考虑数据保存。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-029",
+    "module": "M6",
+    "topic": "渠道验收／发布渠道",
+    "type": "single",
+    "stem": "微信服务号已配置，但应用未发布且不回复消息，先处理什么？",
+    "options": {
+      "A": "只反复保存渠道配置",
+      "B": "完成应用发布",
+      "C": "仅在调试台验证能回复就视为已上线",
+      "D": "先修改知识匹配度"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "应用未发布时渠道状态为未上线，不支持回复消息。 因此，本题应选择“完成应用发布”。",
+    "distractors": {
+      "A": "未满足应用发布前提",
+      "C": "调试效果不等于发布渠道生效",
+      "D": "检索阈值不改变未上线状态"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "发布渠道",
+        "fact": "应用未发布时渠道状态为未上线，不支持回复消息。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-030",
+    "module": "M6",
+    "topic": "渠道切换／发布渠道",
+    "type": "single",
+    "stem": "要把某微信账号改绑另一个智能体，交接应考虑什么？",
+    "options": {
+      "A": "直接在新应用并行绑定同一账号",
+      "B": "先解绑原应用并安排服务中断窗口",
+      "C": "先停止原应用评测就可以免解绑",
+      "D": "只把新应用改成旧应用同名"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "官方说明更换绑定需先解绑，解绑会中断服务。 因此，本题应选择“先解绑原应用并安排服务中断窗口”。",
+    "distractors": {
+      "A": "官方规定一个微信账号绑定一个应用",
+      "C": "评测状态不是渠道绑定关系",
+      "D": "名称不能替代解绑重绑"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "发布渠道",
+        "fact": "官方说明更换绑定需先解绑，解绑会中断服务。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-031",
+    "module": "M6",
+    "topic": "凭据轮换／服务状态",
+    "type": "single",
+    "stem": "已接入业务系统的AppKey需正常轮换，合理顺序是？",
+    "options": {
+      "A": "先删旧密钥再准备新密钥",
+      "B": "两个系统永久混用已怀疑泄露密钥",
+      "C": "只改密钥显示名称",
+      "D": "建新密钥、切换调用、停用并删旧密钥"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "官方推荐先创建并切换新AppKey，再停用删除旧密钥。 因此，本题应选择“建新密钥、切换调用、停用并删旧密钥”。",
+    "distractors": {
+      "A": "会给现有调用引入可避免中断",
+      "B": "风险密钥应及时停用替换",
+      "C": "没有更换实际调用凭据"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "服务状态",
+        "fact": "官方推荐先创建并切换新AppKey，再停用删除旧密钥。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-032",
+    "module": "M6",
+    "topic": "体验交付／服务状态",
+    "type": "single",
+    "stem": "按文档，“分享链接”区别于“立即体验”，外部分享链接采用什么验证？",
+    "options": {
+      "A": "企业微信工作台的手机号验证",
+      "B": "在网页填写AppKey",
+      "C": "邮箱验证码",
+      "D": "腾讯云账号登录"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "立即体验、分享链接与企业微信接入采用不同验证方式，应按交付入口区分。 因此，本题应选择“邮箱验证码”。",
+    "distractors": {
+      "A": "另一接入场景",
+      "B": "API凭据不是此验证方式",
+      "D": "这是立即体验的说明"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "服务状态",
+        "fact": "立即体验、分享链接与企业微信接入采用不同验证方式，应按交付入口区分。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-033",
+    "module": "M6",
+    "topic": "自动运营／触发器",
+    "type": "single",
+    "stem": "运维告警到达后才启动智能体分析，应采用哪种触发？",
+    "options": {
+      "A": "把告警检查放入每天一次定时任务",
+      "B": "只建立普通问答知识",
+      "C": "事件触发Webhook",
+      "D": "让调用方仅写本地日志"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "事件触发通过外部HTTP请求驱动应用执行。 因此，本题应选择“事件触发Webhook”。",
+    "distractors": {
+      "A": "这是轮询，不能直接由到达事件拉起",
+      "B": "没有触发应用执行",
+      "D": "日志不等于发起Webhook请求"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "触发器",
+        "fact": "事件触发通过外部HTTP请求驱动应用执行。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-034",
+    "module": "M6",
+    "topic": "自动运营／触发器",
+    "type": "single",
+    "stem": "定时触发器配置完却提示应用尚未发布，正确处理是什么？",
+    "options": {
+      "A": "只把触发时间改为立即",
+      "B": "复制触发器到同一未发布应用",
+      "C": "先发布上线应用",
+      "D": "只运行调试对话视为触发器已上线"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "触发器基于已发布版本运行，未发布应用不能实际执行触发器。 因此，本题应选择“先发布上线应用”。",
+    "distractors": {
+      "A": "未发布前提仍未满足",
+      "B": "复制不改变上线状态",
+      "D": "调试不等于已发布版本运行"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "触发器",
+        "fact": "触发器基于已发布版本运行，未发布应用不能实际执行触发器。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-035",
+    "module": "M6",
+    "topic": "跨环境交付／应用包导出",
+    "type": "single",
+    "stem": "客户要跨工作空间迁移应用，官方应用包形式是什么？",
+    "options": {
+      "A": "仅导出调用密钥",
+      "B": "仅备份提示词文本",
+      "C": "ZIP应用包",
+      "D": "仅下载知识库文件"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "平台支持导出发布域最新历史版本的ZIP应用包并跨空间、环境导入。 因此，本题应选择“ZIP应用包”。",
+    "distractors": {
+      "A": "密钥不是可导入配置包",
+      "B": "遗漏组件引用和相关配置",
+      "D": "缺少应用设置与工作流等对象"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "应用包导出",
+        "fact": "平台支持导出发布域最新历史版本的ZIP应用包并跨空间、环境导入。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-036",
+    "module": "M6",
+    "topic": "迁移时点／应用包导出",
+    "type": "single",
+    "stem": "当前版本仍处于发布中，可以直接导出这个发布中版本吗？",
+    "options": {
+      "A": "能以临时配置包形式保证导出该版本",
+      "B": "不支持，应待发布完成",
+      "C": "只有取消发布才能导出该发布中版本",
+      "D": "可从对话记录还原成完整包"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "处于发布流程中的版本不支持导出。 因此，本题应选择“不支持，应待发布完成”。",
+    "distractors": {
+      "A": "官方明确发布中版本不支持",
+      "C": "取消不使该版本成为已发布历史",
+      "D": "日志不等于配置导出"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "应用包导出",
+        "fact": "处于发布流程中的版本不支持导出。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-037",
+    "module": "M6",
+    "topic": "迁移依赖／应用包导出",
+    "type": "single",
+    "stem": "选择导出工作流后，为什么不能取消其引用知识库的勾选？",
+    "options": {
+      "A": "导出工作流会自动包含全空间全部知识",
+      "B": "知识库必须先从工作流解绑",
+      "C": "只导出引用名称而忽略关联对象即可保证可用",
+      "D": "引用依赖需随该工作流导出"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "已选工作流所引用工具、知识库必须一起导出。 因此，本题应选择“引用依赖需随该工作流导出”。",
+    "distractors": {
+      "A": "只规定该工作流引用依赖",
+      "B": "会破坏原流程，非导出前提",
+      "C": "违背强制依赖导出规则"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "应用包导出",
+        "fact": "已选工作流所引用工具、知识库必须一起导出。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-038",
+    "module": "M6",
+    "topic": "数据迁移／应用包导出",
+    "type": "single",
+    "stem": "应用包包含知识库，是否就包含直连数据库的全部数据表内容？",
+    "options": {
+      "A": "不包含，需要另行处理数据库连接",
+      "B": "包含数据库全量快照",
+      "C": "会导出所有数据库历史事务",
+      "D": "通过工作流引用就能强制导出数据库内容"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "知识库导出含设置及知识条目，排除直连数据库获取的表内容。 因此，本题应选择“不包含，需要另行处理数据库连接”。",
+    "distractors": {
+      "B": "文档明确排除表内容",
+      "C": "不在应用包内容范围",
+      "D": "引用依赖不取消该排除项"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "应用包导出",
+        "fact": "知识库导出含设置及知识条目，排除直连数据库获取的表内容。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-039",
+    "module": "M6",
+    "topic": "凭据迁移／应用包导出",
+    "type": "single",
+    "stem": "导入工具后调用失败，源包为何不能直接提供原密码？",
+    "options": {
+      "A": "密码保存在工作流变量里可默认完整迁移",
+      "B": "导入者继承源账号所有授权",
+      "C": "ZIP会自动获取目标系统密码",
+      "D": "工具导出内容不含密码"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "连接器与工具配置可导出，但不含密码等信息。 因此，本题应选择“工具导出内容不含密码”。",
+    "distractors": {
+      "A": "不能假定敏感授权随工具导出",
+      "B": "跨环境仍需重新配置相关授权",
+      "C": "没有该机制"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "应用包导出",
+        "fact": "连接器与工具配置可导出，但不含密码等信息。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-040",
+    "module": "M6",
+    "topic": "验收资产／不会被导出的内容",
+    "type": "single",
+    "stem": "客户要求交付评测集和历史评测结果，仅发应用包是否充分？",
+    "options": {
+      "A": "充分，因为应用包是完整环境备份",
+      "B": "只需追加发布版本号即可代替评测资产",
+      "C": "不充分，应另行导出评测资产",
+      "D": "把评测任务名称写入提示词即可迁移"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "应用包不包含评测集、评测设置与结果。 因此，本题应选择“不充分，应另行导出评测资产”。",
+    "distractors": {
+      "A": "应用包有明确排除项",
+      "B": "版本号不包含样本及结果",
+      "D": "名称不能重建评测数据"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "不会被导出的内容",
+        "fact": "应用包不包含评测集、评测设置与结果。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-041",
+    "module": "M6",
+    "topic": "网页知识迁移／需要在目标环境重新配置的内容",
+    "type": "single",
+    "stem": "迁移后网页知识内容还在，却不再定时更新，应检查什么？",
+    "options": {
+      "A": "重新配置网页地址及更新依赖",
+      "B": "重新导入相同ZIP必恢复更新关系",
+      "C": "只增加知识库容量即可恢复抓取",
+      "D": "只把文档设为永久有效"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "网页导出保留内容，不保留网页来源和定时更新能力。 因此，本题应选择“重新配置网页地址及更新依赖”。",
+    "distractors": {
+      "B": "源包未包含该更新能力",
+      "C": "容量不能创建网页来源",
+      "D": "有效期与网页更新关系不同"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "需要在目标环境重新配置的内容",
+        "fact": "网页导出保留内容，不保留网页来源和定时更新能力。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-042",
+    "module": "M6",
+    "topic": "导入行为／应用包导入",
+    "type": "single",
+    "stem": "目标环境已有同名应用，导入包会如何处理？",
+    "options": {
+      "A": "覆盖同名应用并合并旧历史",
+      "B": "拒绝任何同名导入",
+      "C": "创建名称带副本后缀的新应用",
+      "D": "自动只替换同名知识库"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "导入创建新应用，同名时自动加副本后缀。 因此，本题应选择“创建名称带副本后缀的新应用”。",
+    "distractors": {
+      "A": "导入为新建；并非覆盖合并",
+      "B": "系统会自动创建副本名称",
+      "D": "文档说创建应用，非按名称覆盖知识"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "应用包导入",
+        "fact": "导入创建新应用，同名时自动加副本后缀。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-043",
+    "module": "M6",
+    "topic": "上线交接／应用包导入",
+    "type": "single",
+    "stem": "成功导入目标环境后，能否立即按线上应用验收？",
+    "options": {
+      "A": "还需发布到发布域",
+      "B": "导入成功已自动对外发布",
+      "C": "只要源应用发布过目标就直接上线",
+      "D": "仅创建AppKey就必然上线"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "应用包导入开发域后仍未发布，需发布才生效到发布域。 因此，本题应选择“还需发布到发布域”。",
+    "distractors": {
+      "B": "开发域导入后仍未发布",
+      "C": "源发布状态不等于目标状态",
+      "D": "获取凭据不能替代发布流程"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "应用包导入",
+        "fact": "应用包导入开发域后仍未发布，需发布才生效到发布域。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-044",
+    "module": "M6",
+    "topic": "移交权限／权限位",
+    "type": "single",
+    "stem": "子账号看不到应用包导出操作，首先核查什么？",
+    "options": {
+      "A": "是否拥有评测集下载权限即可",
+      "B": "是否知道源应用AppKey",
+      "C": "是否创建过一个知识库",
+      "D": "主账号是否分配导出权限"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "应用包导入导出有独立权限位，子账号需获分配。 因此，本题应选择“主账号是否分配导出权限”。",
+    "distractors": {
+      "A": "导出应用包是独立权限",
+      "B": "调用凭据不等于管理导出权限",
+      "C": "资源创建不自动赋予导出权限"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "权限位",
+        "fact": "应用包导入导出有独立权限位，子账号需获分配。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-045",
+    "module": "M6",
+    "topic": "运营分类／对话记录智能分类",
+    "type": "single",
+    "stem": "已有分类后又产生新未分类对话，再执行智能分类会怎样？",
+    "options": {
+      "A": "只允许手工归档新增记录",
+      "B": "自动全部归到最大类",
+      "C": "增量聚类并与已有分类去重合并",
+      "D": "删除全部旧分类重建"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "新记录可增量聚类与历史分类去重合并，无须每次全量重建。 因此，本题应选择“增量聚类并与已有分类去重合并”。",
+    "distractors": {
+      "A": "官方支持增量聚类",
+      "B": "没有该强制归类规则",
+      "D": "不符合增量合并"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104210",
+        "title": "应用运营概述",
+        "section": "对话记录智能分类",
+        "fact": "新记录可增量聚类与历史分类去重合并，无须每次全量重建。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-046",
+    "module": "M6",
+    "topic": "统计解释／数据分析",
+    "type": "single",
+    "stem": "刚完成一次线上调用，运营统计未马上增加，首先应考虑什么？",
+    "options": {
+      "A": "直接认定所有调用丢失",
+      "B": "把评测任务状态当线上统计",
+      "C": "反复重放相同线上请求补计数",
+      "D": "统计约有10分钟延迟"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "运营统计不是实时数据，文档提示约10分钟延迟。 因此，本题应选择“统计约有10分钟延迟”。",
+    "distractors": {
+      "A": "非实时统计不能支持该结论",
+      "B": "不同数据来源",
+      "C": "可能造成重复调用而不解决延迟"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104210",
+        "title": "应用运营概述",
+        "section": "数据分析",
+        "fact": "运营统计不是实时数据，文档提示约10分钟延迟。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-047",
+    "module": "M6",
+    "topic": "用户计数／数据分析",
+    "type": "single",
+    "stem": "同一人从两个渠道访问，汇总用户数可否直接当去重人数？",
+    "options": {
+      "A": "不能，跨渠道同人暂无法识别去重",
+      "B": "可以，平台已统一全部渠道身份",
+      "C": "只要昵称相同就必然自动合并",
+      "D": "用户数固定等于全部消息数"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "运营用户数暂不能识别同一人在不同渠道的重复访问。 因此，本题应选择“不能，跨渠道同人暂无法识别去重”。",
+    "distractors": {
+      "B": "文档明确暂不能去重",
+      "C": "无该保证",
+      "D": "统计单位不同"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104210",
+        "title": "应用运营概述",
+        "section": "数据分析",
+        "fact": "运营用户数暂不能识别同一人在不同渠道的重复访问。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-048",
+    "module": "M6",
+    "topic": "反馈口径／数据分析",
+    "type": "single",
+    "stem": "点赞率的分母应怎样理解？",
+    "options": {
+      "A": "全部消息数",
+      "B": "所有已评价消息数",
+      "C": "所有对话用户数",
+      "D": "点赞与未评价消息之和"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "文档将点赞占比定义为点赞消息相对所有已评价消息。 因此，本题应选择“所有已评价消息数”。",
+    "distractors": {
+      "A": "未评价消息不在此定义分母中",
+      "C": "用户数不同于评价消息数",
+      "D": "遗漏不满意评价，口径不符"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104210",
+        "title": "应用运营概述",
+        "section": "数据分析",
+        "fact": "文档将点赞占比定义为点赞消息相对所有已评价消息。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-049",
+    "module": "M6",
+    "topic": "日志排障／对话记录",
+    "type": "single",
+    "stem": "用户报错却只提供最后一句话，排查应优先补充什么？",
+    "options": {
+      "A": "只记录最终答案是否流畅",
+      "B": "只收集总Token量",
+      "C": "对话上下文与调用知识库工具等信息",
+      "D": "仅对比两次发布日期"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "对话详情可查看上下文与知识库、工作流、工具调用信息。 因此，本题应选择“对话上下文与调用知识库工具等信息”。",
+    "distractors": {
+      "A": "缺少出错上下文与调用依据",
+      "B": "消耗不能单独定位内容错误",
+      "D": "没有本次实际运行线索"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104210",
+        "title": "应用运营概述",
+        "section": "对话记录",
+        "fact": "对话详情可查看上下文与知识库、工作流、工具调用信息。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-050",
+    "module": "M6",
+    "topic": "评测回流／对话记录",
+    "type": "single",
+    "stem": "想将生产真实问题纳入下一次回归评测，应怎样操作？",
+    "options": {
+      "A": "导出为评测集，整理后上传应用评测",
+      "B": "只导出统计明细总数",
+      "C": "将全部对话无审核直接当正确参考答案",
+      "D": "仅复制应用包"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "运营对话可导出为评测集文件，经修改再导入评测。 因此，本题应选择“导出为评测集，整理后上传应用评测”。",
+    "distractors": {
+      "B": "缺少逐条对话样本",
+      "C": "日志包含错误不能自动当真值",
+      "D": "应用包不包含运营记录"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104210",
+        "title": "应用运营概述",
+        "section": "对话记录",
+        "fact": "运营对话可导出为评测集文件，经修改再导入评测。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-051",
+    "module": "M6",
+    "topic": "问题纠错／修正",
+    "type": "single",
+    "stem": "多种问法对应同一已有标准答案，修正时更适合什么？",
+    "options": {
+      "A": "给每种问法复制互相独立且不维护的答案",
+      "B": "把所有变体都设为拒答",
+      "C": "添加为已有问答的相似问",
+      "D": "仅忽略这些反馈"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "修正支持添加新问答或给已有问答添加相似问。 因此，本题应选择“添加为已有问答的相似问”。",
+    "distractors": {
+      "A": "增加口径漂移风险",
+      "B": "已有正确答案时不应拒绝可答问题",
+      "D": "没有扩展问题匹配覆盖"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104210",
+        "title": "应用运营概述",
+        "section": "修正",
+        "fact": "修正支持添加新问答或给已有问答添加相似问。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-052",
+    "module": "M6",
+    "topic": "反馈处理／忽略",
+    "type": "single",
+    "stem": "运营人员忽略一条不满意问题，代表什么？",
+    "options": {
+      "A": "对应知识答案已被自动修正",
+      "B": "相同语义自动进入拒答",
+      "C": "该问题从不满意列表移除",
+      "D": "该问题及其源文档被一起删除"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "忽略只将问题移出不满意问题列表。 因此，本题应选择“该问题从不满意列表移除”。",
+    "distractors": {
+      "A": "忽略不是纠错",
+      "B": "这是不同操作",
+      "D": "忽略只作用于不满意列表"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104210",
+        "title": "应用运营概述",
+        "section": "忽略",
+        "fact": "忽略只将问题移出不满意问题列表。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-053",
+    "module": "M6",
+    "topic": "调优范围／功能概述",
+    "type": "single",
+    "stem": "交付文档介绍调优准则时，适用应用模式应写什么？",
+    "options": {
+      "A": "所有模式无需差异均支持",
+      "B": "仅单工作流可用",
+      "C": "仅旧知识库检索Agent可用",
+      "D": "Claw模式"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "调优准则用于Claw应用的可复用自然语言行为要求。 因此，本题应选择“Claw模式”。",
+    "distractors": {
+      "A": "当前正文限定Claw",
+      "B": "不符合文档范围",
+      "C": "并非该功能所属模式"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "功能概述",
+        "fact": "调优准则用于Claw应用的可复用自然语言行为要求。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-054",
+    "module": "M6",
+    "topic": "启用流程／准则来源",
+    "type": "single",
+    "stem": "系统从反馈生成了准则，为什么应用仍未遵守？",
+    "options": {
+      "A": "生成任务完成就已经全量生效",
+      "B": "只有再次导出应用包才会启用",
+      "C": "自动生成的准则先待审核启用",
+      "D": "自动生成准则必须先转成问答对"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "评测或调试自动生成准则先进入待启用列表。 因此，本题应选择“自动生成的准则先待审核启用”。",
+    "distractors": {
+      "A": "任务状态不代表准则状态",
+      "B": "文档要求审核并启用而非导出",
+      "D": "两类资产用途不同"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "准则来源",
+        "fact": "评测或调试自动生成准则先进入待启用列表。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-055",
+    "module": "M6",
+    "topic": "评测反馈／前提条件",
+    "type": "single",
+    "stem": "从评测驱动生成准则前，哪个条件必须满足？",
+    "options": {
+      "A": "只完成评测，不必标注",
+      "B": "评测和标注均已完成",
+      "C": "只上传评测集，无需运行",
+      "D": "只写清任务名称即可"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "评测驱动要求对应评测及标注完成。 因此，本题应选择“评测和标注均已完成”。",
+    "distractors": {
+      "A": "文档要求两者完成",
+      "C": "缺少评测与标注依据",
+      "D": "名称不是完成状态"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "前提条件",
+        "fact": "评测驱动要求对应评测及标注完成。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-056",
+    "module": "M6",
+    "topic": "成本告知／前提条件",
+    "type": "single",
+    "stem": "使用模型自动生成调优准则，应告知什么成本事实？",
+    "options": {
+      "A": "生成准则不产生任何模型消耗",
+      "B": "会产生模型Token费用",
+      "C": "只扣知识库容量，不消耗Token",
+      "D": "费用与任何模型选择无关且固定"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "生成准则要调用所选模型，会产生Token消耗费用。 因此，本题应选择“会产生模型Token费用”。",
+    "distractors": {
+      "A": "与文档相反",
+      "C": "生成使用模型",
+      "D": "文档未给该固定结论"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "前提条件",
+        "fact": "生成准则要调用所选模型，会产生Token消耗费用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-057",
+    "module": "M6",
+    "topic": "人工规范／手动添加准则",
+    "type": "single",
+    "stem": "业务已有明确回答规范，不想先制造一次错误，应该怎样添加？",
+    "options": {
+      "A": "必须先创建一轮评测才能写准则",
+      "B": "必须将规范录入问答库才会自动变准则",
+      "C": "只能等线上不满意反馈自动触发",
+      "D": "直接手动输入并保存启用"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "已明确要求可直接手动添加，无需先评测或调试。 因此，本题应选择“直接手动输入并保存启用”。",
+    "distractors": {
+      "A": "人工路径无需此前提",
+      "B": "问答与准则是不同入口",
+      "C": "还有手动入口"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "手动添加准则",
+        "fact": "已明确要求可直接手动添加，无需先评测或调试。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-058",
+    "module": "M6",
+    "topic": "状态管理／准则状态",
+    "type": "single",
+    "stem": "某准则暂不适用，但需保留文本供将来复查，应选择什么？",
+    "options": {
+      "A": "删除准则后保证能自动恢复原文",
+      "B": "只删除生成任务即等同停用准则",
+      "C": "把准则内容留空再启用",
+      "D": "停用准则"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "已停用准则保留内容，不再指导后续行为。 因此，本题应选择“停用准则”。",
+    "distractors": {
+      "A": "文档没有删除恢复保证",
+      "B": "任务与准则分开管理",
+      "C": "失去需要保留的原文"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "准则状态",
+        "fact": "已停用准则保留内容，不再指导后续行为。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-059",
+    "module": "M6",
+    "topic": "生成排障／查看准则生成任务",
+    "type": "single",
+    "stem": "任务显示完成但生成数量为0，该如何理解？",
+    "options": {
+      "A": "已生成准则但默认全部启用",
+      "B": "等同评测得分为0",
+      "C": "任务结束但未产出准则",
+      "D": "需要在已启用列表寻找新增条目"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "完成且数量为0不新增待启用准则，应查看任务详情。 因此，本题应选择“任务结束但未产出准则”。",
+    "distractors": {
+      "A": "数量为0表示未产出",
+      "B": "这里是生成条数而非评测分数",
+      "D": "零产出不会新增准则"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "查看准则生成任务",
+        "fact": "完成且数量为0不新增待启用准则，应查看任务详情。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-060",
+    "module": "M6",
+    "topic": "客户培训／如何写清楚调优要求",
+    "type": "single",
+    "stem": "哪条培训示例更适合作为可维护的准则？",
+    "options": {
+      "A": "回答更专业且永远正确",
+      "B": "所有回答必须列出合同编号",
+      "C": "回答报销问题时列明适用制度版本",
+      "D": "本次回答不满意"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "调优要求应明确场景及具体做法，避免笼统评价。 因此，本题应选择“回答报销问题时列明适用制度版本”。",
+    "distractors": {
+      "A": "缺少可检查的具体动作",
+      "B": "把合同要求错误扩展到所有问题",
+      "D": "评价未转成行为要求"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "如何写清楚调优要求",
+        "fact": "调优要求应明确场景及具体做法，避免笼统评价。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-061",
+    "module": "M6",
+    "topic": "切分诊断／文档切分功能介绍",
+    "type": "single",
+    "stem": "召回片段经常包含大量无关章节，首先应检查什么？",
+    "options": {
+      "A": "只增加最终答案长度",
+      "B": "把全部文档合成一个更大切片",
+      "C": "切片是否过大",
+      "D": "只降低裁判模型温度"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "切片过大会混入无关信息，影响检索精度并增加消耗。 因此，本题应选择“切片是否过大”。",
+    "distractors": {
+      "A": "不解决召回片段中的噪声",
+      "B": "可能进一步扩大噪声",
+      "D": "评估器不改变检索内容"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122551",
+        "title": "文档切分设置",
+        "section": "文档切分功能介绍",
+        "fact": "切片过大会混入无关信息，影响检索精度并增加消耗。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-062",
+    "module": "M6",
+    "topic": "切分诊断／文档切分功能介绍",
+    "type": "single",
+    "stem": "答案缺少前提条件，召回只有孤立半句，优先检查什么？",
+    "options": {
+      "A": "切片是否过小导致上下文破碎",
+      "B": "继续缩短切片以减少Token",
+      "C": "只提高召回匹配阈值",
+      "D": "隐藏引用以减少显示内容"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "切片过小会造成语义不完整，影响生成全面性。 因此，本题应选择“切片是否过小导致上下文破碎”。",
+    "distractors": {
+      "B": "可能进一步损害上下文",
+      "C": "可能过滤更多碎片，不能补语义",
+      "D": "不修复缺失的知识条件"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122551",
+        "title": "文档切分设置",
+        "section": "文档切分功能介绍",
+        "fact": "切片过小会造成语义不完整，影响生成全面性。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-063",
+    "module": "M6",
+    "topic": "变更保护／功能入口",
+    "type": "single",
+    "stem": "已手工修正切片后重新设置切分规则，应提前提示什么？",
+    "options": {
+      "A": "原干预结果会被重新切分覆盖",
+      "B": "原有人工干预自动逐项合并",
+      "C": "新规则只影响未来新增文档",
+      "D": "原切片保持不变只改展示名称"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "重新设置规则会按原文档切分，覆盖既有干预结果。 因此，本题应选择“原干预结果会被重新切分覆盖”。",
+    "distractors": {
+      "B": "文档提示会覆盖",
+      "C": "已导入文档可重设并重切",
+      "D": "规则重设影响实际切分"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122551",
+        "title": "文档切分设置",
+        "section": "功能入口",
+        "fact": "重新设置规则会按原文档切分，覆盖既有干预结果。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-064",
+    "module": "M6",
+    "topic": "接入排障／网页文件导入步骤",
+    "type": "single",
+    "stem": "待导入网页必须登录后才可看正文，标准网页导入前提是否满足？",
+    "options": {
+      "A": "已有个人浏览器登录即可保证平台抓取",
+      "B": "将访问密码写进知识描述即可自动支持",
+      "C": "只要返回HTTP页面就一定得到正文",
+      "D": "不满足无登录授权验证要求"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "网页导入要求目标内容无需登录授权即可访问。 因此，本题应选择“不满足无登录授权验证要求”。",
+    "distractors": {
+      "A": "浏览器会话不等于平台无认证可访问",
+      "B": "不符合该导入前提",
+      "C": "页面可能仍是登录页面"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "title": "文档概述",
+        "section": "网页文件导入步骤",
+        "fact": "网页导入要求目标内容无需登录授权即可访问。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-065",
+    "module": "M6",
+    "topic": "知识范围／文档导入设置",
+    "type": "single",
+    "stem": "只准备给测试人员检索的新规程，生效范围应选什么？",
+    "options": {
+      "A": "仅调试生效",
+      "B": "仅发布生效",
+      "C": "调试发布都生效",
+      "D": "不生效"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "文档可单独设置仅调试生效，控制开发域可检索范围。 因此，本题应选择“仅调试生效”。",
+    "distractors": {
+      "B": "只影响正式域，测试域不能据此检索",
+      "C": "扩大到生产不符合隔离需求",
+      "D": "测试阶段也无法检索"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "title": "文档概述",
+        "section": "文档导入设置",
+        "fact": "文档可单独设置仅调试生效，控制开发域可检索范围。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-066",
+    "module": "M6",
+    "topic": "状态排障／文档操作",
+    "type": "single",
+    "stem": "文档状态为学习失败，交付者能否认定已在正式问答中生效？",
+    "options": {
+      "A": "可以，文件已出现在列表即生效",
+      "B": "可以，发布一次便能忽略学习失败",
+      "C": "不能，应处理学习失败",
+      "D": "只要开启参考来源就能检索"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "学习失败时不能基于该文档在开发域或发布域问答。 因此，本题应选择“不能，应处理学习失败”。",
+    "distractors": {
+      "A": "列表存在不等于学习完成",
+      "B": "发布不能跳过学习失败",
+      "D": "引用展示不能修复知识学习"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "title": "文档概述",
+        "section": "文档操作",
+        "fact": "学习失败时不能基于该文档在开发域或发布域问答。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-067",
+    "module": "M6",
+    "topic": "依赖清理／文档操作",
+    "type": "single",
+    "stem": "删除旧文档后，其生成过的问答是否随之删除？",
+    "options": {
+      "A": "会随源文档全部删除",
+      "B": "会自动转成新文档答案",
+      "C": "不会，应单独检查关联问答",
+      "D": "只有已发布的问答才会一起删除"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "删除文档不会删除由其生成的问答，清理应检查衍生知识。 因此，本题应选择“不会，应单独检查关联问答”。",
+    "distractors": {
+      "A": "官方明确不连带删除",
+      "B": "没有自动改写依据",
+      "D": "官方未规定此例外"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "title": "文档概述",
+        "section": "文档操作",
+        "fact": "删除文档不会删除由其生成的问答，清理应检查衍生知识。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-068",
+    "module": "M6",
+    "topic": "到期恢复／文档概述",
+    "type": "single",
+    "stem": "购买资源后，原超量失效知识仍未工作，应做什么？",
+    "options": {
+      "A": "只等待新资源自动恢复所有知识",
+      "B": "检查并手动批量恢复",
+      "C": "只重新发布应用",
+      "D": "只把文档有效期改为永久"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "超量失效的知识购资源后需要手动恢复。 因此，本题应选择“检查并手动批量恢复”。",
+    "distractors": {
+      "A": "文档要求手动恢复",
+      "C": "发布不能替代失效恢复操作",
+      "D": "容量失效与有效期不同"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "title": "文档概述",
+        "section": "文档概述",
+        "fact": "超量失效的知识购资源后需要手动恢复。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-069",
+    "module": "M6",
+    "topic": "生成校验／从文档生成问答步骤",
+    "type": "single",
+    "stem": "自动生成的问答进入待校验列表后，应怎样纳入有效知识？",
+    "options": {
+      "A": "生成结束即自动全量生效",
+      "B": "只下载生成结果即视为采纳",
+      "C": "只把源文档改名",
+      "D": "人工校验后采纳"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "生成问答需校验，采纳后纳入知识库，未采纳不生效。 因此，本题应选择“人工校验后采纳”。",
+    "distractors": {
+      "A": "还需校验采纳",
+      "B": "下载不等于入库生效",
+      "C": "不控制问答采纳状态"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112703",
+        "title": "问答",
+        "section": "从文档生成问答步骤",
+        "fact": "生成问答需校验，采纳后纳入知识库，未采纳不生效。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-06"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-070",
+    "module": "M6",
+    "topic": "冲突处理／从文档生成问答步骤",
+    "type": "single",
+    "stem": "同一问题生成两个不同答案，交付前应怎样处理？",
+    "options": {
+      "A": "同时保留并交给模型随机决定",
+      "B": "只提高召回数量",
+      "C": "用两个不同分类隐藏冲突",
+      "D": "核对并合并冲突，保留正确答案"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "自动生成问答可能冲突，官方要求合并处理。 因此，本题应选择“核对并合并冲突，保留正确答案”。",
+    "distractors": {
+      "A": "造成业务口径冲突",
+      "B": "更多候选不消除矛盾",
+      "C": "问题相同答案矛盾仍存在"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112703",
+        "title": "问答",
+        "section": "从文档生成问答步骤",
+        "fact": "自动生成问答可能冲突，官方要求合并处理。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-06"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-071",
+    "module": "M6",
+    "topic": "分类排障／功能逻辑",
+    "type": "single",
+    "stem": "文档分类名未出现在正文，按分类提问召回不佳，需检查什么？",
+    "options": {
+      "A": "分类是否作为元数据参与检索",
+      "B": "只给分类改一个更长的名字",
+      "C": "只在目录里移动文档",
+      "D": "只增加问答生成温度"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "普通分类用于治理，作为元数据后才参与相关召回。 因此，本题应选择“分类是否作为元数据参与检索”。",
+    "distractors": {
+      "B": "不改变是否参与检索",
+      "C": "普通分类治理不自动参与召回",
+      "D": "与分类作为元数据无关"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138240",
+        "title": "元数据设置",
+        "section": "功能逻辑",
+        "fact": "普通分类用于治理，作为元数据后才参与相关召回。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者二修：改为同阶段易混干扰项"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-072",
+    "module": "M6",
+    "topic": "定时排障／新建定时触发",
+    "type": "single",
+    "stem": "海外人员发现日报总在本地预期时间外执行，首先核对什么？",
+    "options": {
+      "A": "知识有效期",
+      "B": "模型服务机房时区",
+      "C": "应用所属企业的设置时区",
+      "D": "操作者浏览器时区必定覆盖企业设置"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "定时规则按应用所属企业设置的时区解析，跨地区交付应明确换算。 因此，本题应选择“应用所属企业的设置时区”。",
+    "distractors": {
+      "A": "不决定调度时区",
+      "B": "不是规定解析依据",
+      "D": "官方按企业时区解析"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "新建定时触发",
+        "fact": "定时规则按应用所属企业设置的时区解析，跨地区交付应明确换算。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-073",
+    "module": "M6",
+    "topic": "触发器联调／新建触发器",
+    "type": "single",
+    "stem": "触发成功却无企微推送，发现把事件Webhook填为结果推送地址，应如何修复？",
+    "options": {
+      "A": "仅重新生成事件Token",
+      "B": "提高触发频率",
+      "C": "分别配置事件请求和企微群结果推送地址",
+      "D": "两地址必可互换"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "事件Webhook与企微群推送Webhook是两套独立地址，应分别配置。 因此，本题应选择“分别配置事件请求和企微群结果推送地址”。",
+    "distractors": {
+      "A": "不更改错误目标地址",
+      "B": "重复请求不能修正地址",
+      "D": "输入入口和输出目的地不同"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "新建触发器",
+        "fact": "事件Webhook与企微群推送Webhook是两套独立地址，应分别配置。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-074",
+    "module": "M6",
+    "topic": "验收评测／基准评测配置",
+    "type": "multiple",
+    "stem": "团队设计自动评分时，官方列明哪些可选方式？",
+    "options": {
+      "A": "规则组合评分",
+      "B": "只支持自动模型评分，不支持规则或代码",
+      "C": "裁判模型评分",
+      "D": "Python代码评分"
+    },
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "基准评测支持模型、规则、代码，也可仅输出不打分。 因此，本题应选择“裁判模型评分；规则组合评分；Python代码评分”。",
+    "distractors": {
+      "B": "文档列明多种评分方式"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "基准评测配置",
+        "fact": "基准评测支持模型、规则、代码，也可仅输出不打分。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-075",
+    "module": "M6",
+    "topic": "评测导入／上传评测集",
+    "type": "multiple",
+    "stem": "验收集为25MB的xlsx且有12个自定义列，哪些调整符合文档限制？",
+    "options": {
+      "A": "改扩展名为csv",
+      "B": "加大模型输出长度",
+      "C": "单文件控制在20MB以内",
+      "D": "自定义列控制在10列以内"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "评测集大小上限20MB、自定义列最多10个，题设需同时调整。 因此，本题应选择“单文件控制在20MB以内；自定义列控制在10列以内”。",
+    "distractors": {
+      "A": "该入口支持xlsx",
+      "B": "生成设置不影响导入校验"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "上传评测集",
+        "fact": "评测集大小上限20MB、自定义列最多10个，题设需同时调整。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-076",
+    "module": "M6",
+    "topic": "评分设计／基准评测配置",
+    "type": "multiple",
+    "stem": "一类样本需按固定格式判断，另一类需对照参考进行语义评分，哪些方案成立？",
+    "options": {
+      "A": "所有评分必须同一模型且禁用规则",
+      "B": "仅输出模式自动给上述两类分数",
+      "C": "固定格式使用规则打分",
+      "D": "语义参考使用匹配的裁判提示词"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "评分目标不同可选不同方法，规则与裁判模型均为官方支持方式。 因此，本题应选择“固定格式使用规则打分；语义参考使用匹配的裁判提示词”。",
+    "distractors": {
+      "A": "平台有多种评分方式",
+      "B": "该模式不打分"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "基准评测配置",
+        "fact": "评分目标不同可选不同方法，规则与裁判模型均为官方支持方式。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-077",
+    "module": "M6",
+    "topic": "任务管理／评测任务管理",
+    "type": "multiple",
+    "stem": "为复制一轮验收实验并审阅结果，哪些能力可用？",
+    "options": {
+      "A": "复制任务等于复制全部既有评测结果",
+      "B": "下载运行后的结果",
+      "C": "复制任务保留评测配置",
+      "D": "删除任务后可随时恢复"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "复制可保留基准和对比配置，完成运行后可下载结果。 因此，本题应选择“复制任务保留评测配置；下载运行后的结果”。",
+    "distractors": {
+      "A": "复制保留配置，不应视为原结果的复制",
+      "D": "删除后无法恢复"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "评测任务管理",
+        "fact": "复制可保留基准和对比配置，完成运行后可下载结果。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-078",
+    "module": "M6",
+    "topic": "配置比较／对比评测配置",
+    "type": "multiple",
+    "stem": "对于标准模式的多配置比较，哪些说法成立？",
+    "options": {
+      "A": "只要模型相同就一定允许重复添加",
+      "B": "可只输出多组结果",
+      "C": "可用裁判模型比较结果",
+      "D": "比较功能必然自动判定优劣"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "对比评测支持多结果输出或裁判模型比较评分。 因此，本题应选择“可只输出多组结果；可用裁判模型比较结果”。",
+    "distractors": {
+      "A": "相同配置会提示错误",
+      "D": "可只输出不评分"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "对比评测配置",
+        "fact": "对比评测支持多结果输出或裁判模型比较评分。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-079",
+    "module": "M6",
+    "topic": "报告留存／查看评测报告",
+    "type": "multiple",
+    "stem": "验收归档希望保留可复核资料，哪些官方能力能支撑？",
+    "options": {
+      "A": "人工标注可进入下载结果",
+      "B": "下载文件可查看原始记录",
+      "C": "只归档总分即可重现全部样本结论",
+      "D": "报告包含评测配置及结果"
+    },
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "报告与下载结果提供配置、评分、性能和标注等可复核内容。 因此，本题应选择“报告包含评测配置及结果；下载文件可查看原始记录；人工标注可进入下载结果”。",
+    "distractors": {
+      "C": "总分不足以重现原始样本和配置"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104208",
+        "title": "应用评测",
+        "section": "查看评测报告",
+        "fact": "报告与下载结果提供配置、评分、性能和标注等可复核内容。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-080",
+    "module": "M6",
+    "topic": "诊断准备／使用前提",
+    "type": "multiple",
+    "stem": "开始知识库召回测试前，需要检查哪些条件？",
+    "options": {
+      "A": "相关模型资源可用",
+      "B": "只创建应用名称即可",
+      "C": "套餐与召回测试权限",
+      "D": "知识已导入"
+    },
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "召回测试对套餐客户开放，需要权限、知识以及可用模型资源。 因此，本题应选择“套餐与召回测试权限；知识已导入；相关模型资源可用”。",
+    "distractors": {
+      "B": "缺少知识和资源条件"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "使用前提",
+        "fact": "召回测试对套餐客户开放，需要权限、知识以及可用模型资源。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-081",
+    "module": "M6",
+    "topic": "定位层次／使用场景",
+    "type": "multiple",
+    "stem": "正确片段未被召回时，哪些调查有直接针对性？",
+    "options": {
+      "A": "对比检索策略和重排序设置",
+      "B": "只优化最终回答修辞",
+      "C": "只更换最终输出风格",
+      "D": "检查资料缺失与切分"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "召回测试用于知识内容优化与检索配置调优。 因此，本题应选择“检查资料缺失与切分；对比检索策略和重排序设置”。",
+    "distractors": {
+      "B": "没有定位召回失败",
+      "C": "输出风格不修复召回链路"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "使用场景",
+        "fact": "召回测试用于知识内容优化与检索配置调优。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-082",
+    "module": "M6",
+    "topic": "测试解释／功能说明",
+    "type": "multiple",
+    "stem": "将召回测试结果交给客户时，哪些边界应说明？",
+    "options": {
+      "A": "测试内调参不改变应用配置",
+      "B": "结果主要证明知识是否召回",
+      "C": "一次召回成功保证最终答案永远正确",
+      "D": "测试调整会自动覆盖生产"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "召回测试评估检索，且配置与应用分离；完整回答仍需应用评测。 因此，本题应选择“结果主要证明知识是否召回；测试内调参不改变应用配置”。",
+    "distractors": {
+      "C": "召回不是完整生成验收",
+      "D": "文档明确隔离"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "功能说明",
+        "fact": "召回测试评估检索，且配置与应用分离；完整回答仍需应用评测。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-083",
+    "module": "M6",
+    "topic": "测试配置／对比测试",
+    "type": "multiple",
+    "stem": "进入召回对比模式后，哪些操作符合官方限制？",
+    "options": {
+      "A": "在对比模式内随意改左侧知识库选择",
+      "B": "建立四组配置",
+      "C": "每组分别设置检索召回规则",
+      "D": "各组配置不完全相同"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "对比模式固定基础范围，并配置最多三组不同检索规则。 因此，本题应选择“每组分别设置检索召回规则；各组配置不完全相同”。",
+    "distractors": {
+      "A": "进入后基础范围不可修改",
+      "B": "最多三组"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "title": "知识库召回测试",
+        "section": "对比测试",
+        "fact": "对比模式固定基础范围，并配置最多三组不同检索规则。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-084",
+    "module": "M6",
+    "topic": "还原验收／版本还原后异常情况处理",
+    "type": "multiple",
+    "stem": "旧版本还原到调试态后，哪些情况应进入检查清单？",
+    "options": {
+      "A": "已删除全局依赖可能失效",
+      "B": "还原后线上立即同步且无须发布",
+      "C": "新增配置项可能填默认值",
+      "D": "平台保证恢复一切知识数据"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "回退可能涉及默认值和失效依赖，需核对调试态再发布。 因此，本题应选择“新增配置项可能填默认值；已删除全局依赖可能失效”。",
+    "distractors": {
+      "B": "还原先作用于调试态",
+      "D": "知识数据不回退"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "版本还原后异常情况处理",
+        "fact": "回退可能涉及默认值和失效依赖，需核对调试态再发布。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-085",
+    "module": "M6",
+    "topic": "回退范围／随版本回退的内容说明",
+    "type": "multiple",
+    "stem": "哪些属于文档列明的可回退本地配置？",
+    "options": {
+      "A": "知识库全部知识条目",
+      "B": "工作流画布配置",
+      "C": "模型温度等参数",
+      "D": "Agent提示词"
+    },
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "应用本地模型参数、Agent设置和工作流配置可回退，知识数据不在此范围。 因此，本题应选择“模型温度等参数；Agent提示词；工作流画布配置”。",
+    "distractors": {
+      "A": "数据不支持随版本回退"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "随版本回退的内容说明",
+        "fact": "应用本地模型参数、Agent设置和工作流配置可回退，知识数据不在此范围。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-086",
+    "module": "M6",
+    "topic": "渠道验收／发布渠道",
+    "type": "multiple",
+    "stem": "微信服务号未回复时，哪些官方前提值得核查？",
+    "options": {
+      "A": "渠道认证完成就等同应用已经发布",
+      "B": "应用已发布",
+      "C": "服务号已完成认证",
+      "D": "只要认证中就一定能收消息"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "发布渠道依赖应用上线，服务号还需完成认证。 因此，本题应选择“应用已发布；服务号已完成认证”。",
+    "distractors": {
+      "A": "渠道认证与应用发布是独立条件，均需检查",
+      "D": "认证中的服务号无法接收消息"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "发布渠道",
+        "fact": "发布渠道依赖应用上线，服务号还需完成认证。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-087",
+    "module": "M6",
+    "topic": "接入交接／服务状态",
+    "type": "multiple",
+    "stem": "将应用接入客户业务系统时，哪些交接做法符合官方说明？",
+    "options": {
+      "A": "从服务状态获取接入信息",
+      "B": "在业务系统配置AppKey",
+      "C": "认为二维码可代替所有API鉴权",
+      "D": "把AppKey放进公开前端源码"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "发布后的服务状态提供API接入信息，AppKey需妥善配置和保护。 因此，本题应选择“从服务状态获取接入信息；在业务系统配置AppKey”。",
+    "distractors": {
+      "C": "二维码不是接口凭据",
+      "D": "官方要求避免此暴露"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "服务状态",
+        "fact": "发布后的服务状态提供API接入信息，AppKey需妥善配置和保护。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-088",
+    "module": "M6",
+    "topic": "触发运营／触发器",
+    "type": "multiple",
+    "stem": "针对日报与告警两类任务，哪些匹配正确？",
+    "options": {
+      "A": "事件触发无需外部请求",
+      "B": "周期日报采用定时触发",
+      "C": "外部告警采用事件触发",
+      "D": "未发布应用可照常触发生产任务"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "定时触发按时间规则执行，事件触发由外部HTTP请求驱动。 因此，本题应选择“周期日报采用定时触发；外部告警采用事件触发”。",
+    "distractors": {
+      "A": "Webhook由HTTP请求驱动",
+      "D": "触发基于已发布版本"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "触发器",
+        "fact": "定时触发按时间规则执行，事件触发由外部HTTP请求驱动。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-089",
+    "module": "M6",
+    "topic": "版本差异／随版本回退的内容说明",
+    "type": "multiple",
+    "stem": "回退后检索阈值恢复而共享工具地址未恢复，哪些解释正确？",
+    "options": {
+      "A": "应用回退必恢复所有全局资源",
+      "B": "工具地址不回退说明整个还原失败",
+      "C": "本地检索设置可回退",
+      "D": "工具地址是不可回退的共享设置"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "本地检索参数和共享工具地址的回退规则不同，应按组件范围诊断。 因此，本题应选择“本地检索设置可回退；工具地址是不可回退的共享设置”。",
+    "distractors": {
+      "A": "官方区分本地与共享",
+      "B": "该现象符合回退范围"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104209",
+        "title": "应用发布概述",
+        "section": "随版本回退的内容说明",
+        "fact": "本地检索参数和共享工具地址的回退规则不同，应按组件范围诊断。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-090",
+    "module": "M6",
+    "topic": "迁移清单／不会被导出的内容",
+    "type": "multiple",
+    "stem": "哪些资产不应假定已随应用包交付？",
+    "options": {
+      "A": "对话记录和运营分析",
+      "B": "发布渠道",
+      "C": "长期记忆用户画像",
+      "D": "应用基础设置"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "应用包排除运营、渠道及长期记忆用户画像，交接需单独核查。 因此，本题应选择“对话记录和运营分析；发布渠道；长期记忆用户画像”。",
+    "distractors": {
+      "D": "基础设置属于必选导出项"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "不会被导出的内容",
+        "fact": "应用包排除运营、渠道及长期记忆用户画像，交接需单独核查。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-091",
+    "module": "M6",
+    "topic": "目标配置／需要在目标环境重新配置的内容",
+    "type": "multiple",
+    "stem": "跨环境导入后，哪些依赖明确要求重新配置？",
+    "options": {
+      "A": "已连接三方数据库",
+      "B": "CAM授权工具",
+      "C": "目标环境自动继承源环境的API key",
+      "D": "API key接入第三方模型"
+    },
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "三方数据库、API key模型和CAM授权工具属于目标环境重配内容。 因此，本题应选择“已连接三方数据库；API key接入第三方模型；CAM授权工具”。",
+    "distractors": {
+      "C": "文档要求API key授权第三方模型在目标环境重新配置"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "需要在目标环境重新配置的内容",
+        "fact": "三方数据库、API key模型和CAM授权工具属于目标环境重配内容。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-092",
+    "module": "M6",
+    "topic": "导出范围／应用包导出",
+    "type": "multiple",
+    "stem": "选择导出范围时，哪些描述正确？",
+    "options": {
+      "A": "直连数据库内容必然入包",
+      "B": "工作流依赖可随意取消",
+      "C": "应用设置必选",
+      "D": "工作流可以选入"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "应用设置是必选，工作流可选，已选工作流依赖需完整随包。 因此，本题应选择“应用设置必选；工作流可以选入”。",
+    "distractors": {
+      "A": "文档明确排除",
+      "B": "已选工作流的引用依赖必须导出"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "应用包导出",
+        "fact": "应用设置是必选，工作流可选，已选工作流依赖需完整随包。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-093",
+    "module": "M6",
+    "topic": "包交付检查／应用包导入",
+    "type": "multiple",
+    "stem": "子账号准备导入2.5GB应用包，哪些交付前检查有官方依据？",
+    "options": {
+      "A": "有源应用AppKey即有导入权限",
+      "B": "改后缀为json绕过包限制",
+      "C": "包应满足ZIP且不超过2G",
+      "D": "子账号具备导入权限"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "应用包导入同时有文件限制和独立操作权限，两项需分别满足。 因此，本题应选择“包应满足ZIP且不超过2G；子账号具备导入权限”。",
+    "distractors": {
+      "A": "调用凭据不等于管理授权",
+      "B": "不改变文件大小且非规定格式"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "应用包导入",
+        "fact": "应用包导入同时有文件限制和独立操作权限，两项需分别满足。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-094",
+    "module": "M6",
+    "topic": "迁移边界／不会被导出的内容",
+    "type": "multiple",
+    "stem": "避免把应用包当整套环境备份，哪些设置还需单独核查？",
+    "options": {
+      "A": "应用端权限设置",
+      "B": "应用内容安全设置",
+      "C": "所有引用关系都需手写重建",
+      "D": "所有应用设置均未导出"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "应用包排除端用户权限与内容安全设置，不等于完整环境备份。 因此，本题应选择“应用端权限设置；应用内容安全设置”。",
+    "distractors": {
+      "C": "包包含组件引用关系",
+      "D": "基础应用设置会导出"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "不会被导出的内容",
+        "fact": "应用包排除端用户权限与内容安全设置，不等于完整环境备份。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-095",
+    "module": "M6",
+    "topic": "接入恢复／需要在目标环境重新配置的内容",
+    "type": "multiple",
+    "stem": "迁移网页知识和自定义工具时，哪些恢复动作有依据？",
+    "options": {
+      "A": "重配网页来源以恢复后续更新",
+      "B": "将密码放在知识文档当自动鉴权",
+      "C": "默认原网页更新配置完整保留",
+      "D": "为不随包导出的密码重新配置授权"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "网页更新依赖及工具密码不随包完整迁移，需要安全补配。 因此，本题应选择“重配网页来源以恢复后续更新；为不随包导出的密码重新配置授权”。",
+    "distractors": {
+      "B": "知识内容不等于工具授权",
+      "C": "导出不保留来源和定时更新"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130990",
+        "title": "应用包导出与导入",
+        "section": "需要在目标环境重新配置的内容",
+        "fact": "网页更新依赖及工具密码不随包完整迁移，需要安全补配。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-096",
+    "module": "M6",
+    "topic": "统计验收／数据分析",
+    "type": "multiple",
+    "stem": "用运营面板向客户报告时，哪些口径说明是必要的？",
+    "options": {
+      "A": "点赞占比即所有回答准确率",
+      "B": "消息数等于独立用户数",
+      "C": "跨渠道同人暂不能去重",
+      "D": "统计并非实时"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "文档明确统计延迟及跨渠道去重限制，应避免错误解读。 因此，本题应选择“统计并非实时；跨渠道同人暂不能去重”。",
+    "distractors": {
+      "A": "评价不能等同正确率",
+      "B": "统计单位不同"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104210",
+        "title": "应用运营概述",
+        "section": "数据分析",
+        "fact": "文档明确统计延迟及跨渠道去重限制，应避免错误解读。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-097",
+    "module": "M6",
+    "topic": "排障素材／对话记录",
+    "type": "multiple",
+    "stem": "追踪线上失败并建立回归样本，可以使用哪些能力？",
+    "options": {
+      "A": "查看上下文和组件调用",
+      "B": "只导出统计总数即可复现失败问题",
+      "C": "将对话导出为评测集",
+      "D": "直接查看用户上传文档全文保证可用"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "对话记录能查看调用链并导出为评测集，但有文档展示边界。 因此，本题应选择“查看上下文和组件调用；将对话导出为评测集”。",
+    "distractors": {
+      "B": "总数缺少逐条上下文",
+      "D": "当前记录不支持展示用户文档内容"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104210",
+        "title": "应用运营概述",
+        "section": "对话记录",
+        "fact": "对话记录能查看调用链并导出为评测集，但有文档展示边界。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-098",
+    "module": "M6",
+    "topic": "闭环修正／不满意问题",
+    "type": "multiple",
+    "stem": "对于已确认的错误回答，库中已有对应正确答案，或专家可另给标准答案；哪些修正路径可以积累有效知识？",
+    "options": {
+      "A": "添加为已有问答的相似问",
+      "B": "只点忽略即修复答案",
+      "C": "把原错误回答直接采纳为新问答",
+      "D": "添加为新问答"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "专家提供标准答案时可建新问答；已有正确答案时可加相似问扩大覆盖。不能把原错误回答未经校验就采纳。",
+    "distractors": {
+      "B": "忽略只是移除列表项",
+      "C": "未经核验的原错误回答会固化错误，需正确标准答案"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104210",
+        "title": "应用运营概述",
+        "section": "不满意问题",
+        "fact": "不满意问题的修正入口支持新问答与相似问两条知识修复路径。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-099",
+    "module": "M6",
+    "topic": "客户培训／不满意问题",
+    "type": "multiple",
+    "stem": "培训运营人员时，哪些功能含义讲解正确？",
+    "options": {
+      "A": "用户不满意必然证明知识缺失",
+      "B": "忽略等同删除所有用户数据",
+      "C": "拒答会让同语义问题返回未知问题回复语",
+      "D": "查看上下文可辅助纠错"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "官方分别提供查看、修正、拒答和忽略，操作后果不同。 因此，本题应选择“查看上下文可辅助纠错；拒答会让同语义问题返回未知问题回复语”。",
+    "distractors": {
+      "A": "还需分析上下文与原因",
+      "B": "忽略只移出不满意列表"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104210",
+        "title": "应用运营概述",
+        "section": "不满意问题",
+        "fact": "官方分别提供查看、修正、拒答和忽略，操作后果不同。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-100",
+    "module": "M6",
+    "topic": "反馈来源／准则来源",
+    "type": "multiple",
+    "stem": "哪些属于调优准则的官方来源？",
+    "options": {
+      "A": "知识库每次导入文档都会自动启用新准则",
+      "B": "调试反馈",
+      "C": "评测驱动",
+      "D": "人工输入"
+    },
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "调优准则有评测、调试及人工输入三类来源。 因此，本题应选择“评测驱动；调试反馈；人工输入”。",
+    "distractors": {
+      "A": "知识导入不是文档列明的准则生成启用途径"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "准则来源",
+        "fact": "调优准则有评测、调试及人工输入三类来源。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-101",
+    "module": "M6",
+    "topic": "准则验收／管理操作",
+    "type": "multiple",
+    "stem": "启用自动生成准则前后，哪些做法符合官方建议？",
+    "options": {
+      "A": "启用后重新调试或评测",
+      "B": "启用前检查清晰度和冲突",
+      "C": "任务完成就无需审核",
+      "D": "只要不修改模型就无须复测"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "启用前审查范围和冲突，启用后用测试验证表现。 因此，本题应选择“启用前检查清晰度和冲突；启用后重新调试或评测”。",
+    "distractors": {
+      "C": "自动生成先待启用",
+      "D": "行为准则变化同样需要验证"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "管理操作",
+        "fact": "启用前审查范围和冲突，启用后用测试验证表现。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-102",
+    "module": "M6",
+    "topic": "任务追踪／查看准则生成任务",
+    "type": "multiple",
+    "stem": "核对一次准则生成的模型消耗和来源，哪些任务详情能支持复盘？",
+    "options": {
+      "A": "同一次生成任务已覆盖所有后续应用对话",
+      "B": "仅查看任务完成状态就可解释具体Token消耗",
+      "C": "Token消耗与生成模型",
+      "D": "来源名称与发起完成时间"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "任务详情列出模型、Token、来源与时间，支持复盘生成资源使用。 因此，本题应选择“Token消耗与生成模型；来源名称与发起完成时间”。",
+    "distractors": {
+      "A": "生成任务详情不等于应用全部后续运营记录",
+      "B": "完成状态不提供模型和Token数等资源细节"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "查看准则生成任务",
+        "fact": "任务详情列出模型、Token、来源与时间，支持复盘生成资源使用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-103",
+    "module": "M6",
+    "topic": "编写培训／如何写清楚调优要求",
+    "type": "multiple",
+    "stem": "怎样提高人工调优准则的可维护性？",
+    "options": {
+      "A": "描述具体动作",
+      "B": "仅写回答不准确",
+      "C": "写清适用场景",
+      "D": "不同要求尽量拆开"
+    },
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "官方建议明确场景、具体行为并聚焦一项要求。 因此，本题应选择“写清适用场景；描述具体动作；不同要求尽量拆开”。",
+    "distractors": {
+      "B": "缺少可执行做法"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "title": "调优准则",
+        "section": "如何写清楚调优要求",
+        "fact": "官方建议明确场景、具体行为并聚焦一项要求。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-24"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-104",
+    "module": "M6",
+    "topic": "解析排障／文档图片解析",
+    "type": "multiple",
+    "stem": "HTML手册重要小图被过滤，已同时开启尺寸和名称过滤，哪些判断正确？",
+    "options": {
+      "A": "必须同时满足两个条件",
+      "B": "名称过滤适用所有格式",
+      "C": "符合任一条件即可被过滤",
+      "D": "应核查尺寸是否误覆盖关键图"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "过滤条件是或关系，且名称过滤有格式限制，应检查小图是否被当装饰图排除。 因此，本题应选择“符合任一条件即可被过滤；应核查尺寸是否误覆盖关键图”。",
+    "distractors": {
+      "A": "官方采用或关系",
+      "B": "只适用HTML和Markdown"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122551",
+        "title": "文档切分设置",
+        "section": "文档图片解析",
+        "fact": "过滤条件是或关系，且名称过滤有格式限制，应检查小图是否被当装饰图排除。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-105",
+    "module": "M6",
+    "topic": "表格准备／表格文档",
+    "type": "multiple",
+    "stem": "按行切分表格前，哪些检查有依据？",
+    "options": {
+      "A": "只保留第一片表头，后续片段无需列义",
+      "B": "表头范围应包含必要列义",
+      "C": "将数据起始行设在表头范围内",
+      "D": "数据起始行不与表头重复"
+    },
+    "answer": [
+      "B",
+      "D"
+    ],
+    "explanation": "按行切分可保留表头，并要求数据起点不与表头范围重合。 因此，本题应选择“表头范围应包含必要列义；数据起始行不与表头重复”。",
+    "distractors": {
+      "A": "按行切分每片均包含表头数据，避免字段失去语义",
+      "C": "文档要求切分起始行不与表头范围重复"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122551",
+        "title": "文档切分设置",
+        "section": "表格文档",
+        "fact": "按行切分可保留表头，并要求数据起点不与表头范围重合。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-04"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-106",
+    "module": "M6",
+    "topic": "资料导入／网页文件导入步骤",
+    "type": "multiple",
+    "stem": "验收网页导入能力时，哪些是官方明确边界？",
+    "options": {
+      "A": "URL能打开就必定拿到动态内容",
+      "B": "网页不需登录授权",
+      "C": "任何付费页均能自动绕过",
+      "D": "不支持异步加载内容抓取"
+    },
+    "answer": [
+      "B",
+      "D"
+    ],
+    "explanation": "网页文件导入对可访问性及加载方式有前提。 因此，本题应选择“网页不需登录授权；不支持异步加载内容抓取”。",
+    "distractors": {
+      "A": "异步内容有明确限制",
+      "C": "无此能力且不合要求"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "title": "文档概述",
+        "section": "网页文件导入步骤",
+        "fact": "网页文件导入对可访问性及加载方式有前提。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-16"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-107",
+    "module": "M6",
+    "topic": "知识生命周期／文档操作",
+    "type": "multiple",
+    "stem": "排查文档存在但不能参与问答时，哪些明确状态应重点检查？“已过期”特指平台已过期失效状态，不是超过有效期但勾选仍可检索。",
+    "options": {
+      "A": "仅超过有效时间即必定无法检索，不看是否允许超期检索",
+      "B": "是否学习失败",
+      "C": "是否已过期",
+      "D": "是否停用"
+    },
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "平台已过期失效、停用和学习失败会妨碍问答。应区分已过期失效状态与时效性检索允许超有效期仍被检索的配置，不能仅按日期判定不可用。",
+    "distractors": {
+      "A": "有效时间与失效状态需结合设置判断，题设明确了该区别"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112702",
+        "title": "文档概述",
+        "section": "文档操作",
+        "fact": "过期、停用和学习失败都会妨碍知识参与问答。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-16"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138380",
+        "title": "时效性检索",
+        "section": "配置知识有效时间",
+        "fact": "可配置超过有效时间仍可被检索。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M6-108",
+    "module": "M6",
+    "topic": "生成准备／从文档生成问答步骤",
+    "type": "multiple",
+    "stem": "资料有未导入PDF和已导入xlsx，针对“从文档生成问答”，哪些判断正确？",
+    "options": {
+      "A": "xlsx只要导入就必能生成",
+      "B": "可直接用未导入PDF本地路径生成",
+      "C": "PDF先导入再用于生成",
+      "D": "表格形式暂不支持该生成入口"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "生成问答有源文档导入及格式两项前提，不能只看知识库支持的文件范围。 因此，本题应选择“PDF先导入再用于生成；表格形式暂不支持该生成入口”。",
+    "distractors": {
+      "A": "导入支持不等于生成支持",
+      "B": "要求源资料已导入"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112703",
+        "title": "问答",
+        "section": "从文档生成问答步骤",
+        "fact": "生成问答有源文档导入及格式两项前提，不能只看知识库支持的文件范围。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-06"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-109",
+    "module": "M6",
+    "topic": "元数据交接／使用前提",
+    "type": "multiple",
+    "stem": "将元数据配置交给新知识管理员，哪些准备项必要？",
+    "options": {
+      "A": "必须申请独立元数据权限位",
+      "B": "只具查看权限即可修改",
+      "C": "已有标签或分类可作为来源",
+      "D": "人员具备知识库编辑权限"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "元数据以标签和分类为来源，管理权限跟随知识库，不新增独立权限位。 因此，本题应选择“已有标签或分类可作为来源；人员具备知识库编辑权限”。",
+    "distractors": {
+      "A": "元数据权限跟随知识库",
+      "B": "查看和编辑不同"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138240",
+        "title": "元数据设置",
+        "section": "使用前提",
+        "fact": "元数据以标签和分类为来源，管理权限跟随知识库，不新增独立权限位。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": [
+        "作者三修：按独立审校更换目标或补充限定"
+      ]
+    }
+  },
+  {
+    "id": "FDE-M6-110",
+    "module": "M6",
+    "topic": "时效验收／功能生效逻辑",
+    "type": "multiple",
+    "stem": "时效性检索的回归集应区分哪些行为？",
+    "options": {
+      "A": "无时间意图走常规链路",
+      "B": "明确时间范围会按有效期过滤",
+      "C": "所有问题一律只留最新文件",
+      "D": "最新意图主要进行时间加权"
+    },
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "不同时间意图分别影响过滤、排序或保持常规检索，不能混为一种行为。 因此，本题应选择“明确时间范围会按有效期过滤；无时间意图走常规链路；最新意图主要进行时间加权”。",
+    "distractors": {
+      "C": "不符合三类时间意图处理"
+    },
+    "difficulty": "综合",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138380",
+        "title": "时效性检索",
+        "section": "功能生效逻辑",
+        "fact": "不同时间意图分别影响过滤、排序或保持常规检索，不能混为一种行为。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "industry_delivery",
+      "reviewer": null,
+      "notes": []
+    }
+  }
+]

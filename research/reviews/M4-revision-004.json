@@ -1,0 +1,42 @@
+[
+  {
+    "id": "FDE-M4-005",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "全库对照新增发现：与M2-028均为预置未覆盖内部接口时评估自定义连接器/工具，决定因素及正确行动相同，未新增M4组合设计约束。撤回旧批准，需改独立任务。"
+    ],
+    "reason": "全库对照新增发现：与M2-028均为预置未覆盖内部接口时评估自定义连接器/工具，决定因素及正确行动相同，未新增M4组合设计约束。撤回旧批准，需改独立任务。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115872"
+    ],
+    "contentHash": "f781b22a5a91583d545bf9d342b896753dcaf8f0fbfc82e478aa4271124b7b07",
+    "stem": "客户自有系统没有预置连接器，但能提供标准化接入服务。工程师下一步最应做什么？",
+    "answer": [
+      "C"
+    ],
+    "revision": 4,
+    "supersedesHash": "f781b22a5a91583d545bf9d342b896753dcaf8f0fbfc82e478aa4271124b7b07"
+  },
+  {
+    "id": "FDE-M4-040",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "全库对照新增发现：与M3-056均为下游自有处理需原片段所以选择知识检索，决定因素和节点选择一致。撤回旧批准，需加入多组件或真实约束组合。"
+    ],
+    "reason": "全库对照新增发现：与M3-056均为下游自有处理需原片段所以选择知识检索，决定因素和节点选择一致。撤回旧批准，需加入多组件或真实约束组合。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966"
+    ],
+    "contentHash": "3fae7c32789b314c094f3220ecad0eb65cd2915cc34a1033ee37ca6dc37173e9",
+    "stem": "客户要先取出相关片段，经自定义合并规则处理后再生成结论。首个知识组件选什么更贴合？",
+    "answer": [
+      "C"
+    ],
+    "revision": 4,
+    "supersedesHash": "3fae7c32789b314c094f3220ecad0eb65cd2915cc34a1033ee37ca6dc37173e9"
+  }
+]

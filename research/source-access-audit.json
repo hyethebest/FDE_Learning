@@ -1,0 +1,1219 @@
+{
+  "checkedAt": "2026-10-09",
+  "method": "通过联网工具open逐一读取原116个引用URL；记录工具返回的页面标题、解析行数。不等同实时HTTP 200，也不以可访问性替代逐题事实核对。 已检查错误页：Total lines=1不算成功。 safety追加4个实际新增国内官方URL正文记录；原37140失败记录保留。追加结果与逐题事实映射见research/M7-key-source-recheck.md。",
+  "pages": [
+    {
+      "url": "https://adp.tencent.com/solutions/edu",
+      "status": "parsed_page_returned",
+      "title": "教育行业 AI 智能体解决方案_AI课程·实训平台·教学管理_腾讯云 ADP (https://adp.tencent.com/solutions/edu)",
+      "totalLines": 176,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://adp.tencent.com/solutions/legal",
+      "status": "parsed_page_returned",
+      "title": "企业法务 AI 智能体解决方案_合同审查·合同对比·法务 RAG_腾讯云 ADP (https://adp.tencent.com/solutions/legal)",
+      "totalLines": 177,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://adp.tencent.com/solutions/med",
+      "status": "parsed_page_returned",
+      "title": "医疗医药 AI 智能体解决方案_医生互动管理·医药营销_腾讯云 ADP (https://adp.tencent.com/solutions/med)",
+      "totalLines": 193,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://adp.tencent.com/solutions/qc",
+      "status": "parsed_page_returned",
+      "title": "工业质检 AI 智能体解决方案_外观检测·缺陷分析·质检Agent_腾讯云 ADP (https://adp.tencent.com/solutions/qc)",
+      "totalLines": 232,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice",
+      "status": "parsed_page_returned",
+      "title": "政企智能体如何落地业务办理与夜间收件 - 腾讯云 ADP 最佳实践 (https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice)",
+      "totalLines": 191,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution",
+      "status": "parsed_page_returned",
+      "title": "零售AI助手落地方案：从门店导购到运营提效 (https://adp.tencent.com/zh/blog/retail-ai-assistant-agent-solution)",
+      "totalLines": 316,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/act/pro/openclaw-in-adp",
+      "status": "parsed_page_returned",
+      "title": "腾讯云 ADP 首推行业 FDE 工程师认证 (https://cloud.tencent.com/act/pro/openclaw-in-adp)",
+      "totalLines": 265,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1729/101838",
+      "status": "parsed_page_returned",
+      "title": "腾讯混元大模型 数据结构_腾讯云 (https://cloud.tencent.com/document/product/1729/101838)",
+      "totalLines": 909,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1729/106530",
+      "status": "parsed_page_returned",
+      "title": "腾讯混元大模型 混元生图 Prompt 指南_腾讯云 (https://cloud.tencent.com/document/product/1729/106530)",
+      "totalLines": 147,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1729/111007",
+      "status": "parsed_page_returned",
+      "title": "腾讯混元大模型 混元 OpenAI 兼容接口相关调用示例_腾讯云 (https://cloud.tencent.com/document/product/1729/111007)",
+      "totalLines": 2059,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/104193",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 产品概述_腾讯云 (https://cloud.tencent.com/document/product/1759/104193)",
+      "totalLines": 127,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/104195",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 应用场景_腾讯云 (https://cloud.tencent.com/document/product/1759/104195)",
+      "totalLines": 90,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/104206",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 应用设置概述_腾讯云 (https://cloud.tencent.com/document/product/1759/104206)",
+      "totalLines": 327,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/104208",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 应用评测_腾讯云 (https://cloud.tencent.com/document/product/1759/104208)",
+      "totalLines": 370,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/104209",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 应用发布概述_腾讯云 (https://cloud.tencent.com/document/product/1759/104209)",
+      "totalLines": 441,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/104210",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 应用运营概述_腾讯云 (https://cloud.tencent.com/document/product/1759/104210)",
+      "totalLines": 260,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/104495",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 词汇表_腾讯云 (https://cloud.tencent.com/document/product/1759/104495)",
+      "totalLines": 8880,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/105050",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 获取文件上传临时密钥_腾讯云 (https://cloud.tencent.com/document/product/1759/105050)",
+      "totalLines": 215,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/105109",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 签名方法 v3_腾讯云 (https://cloud.tencent.com/document/product/1759/105109)",
+      "totalLines": 1261,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/105561",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 对话端接口文档（HTTP SSE）_腾讯云 (https://cloud.tencent.com/document/product/1759/105561)",
+      "totalLines": 840,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/106206",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 原子能力_腾讯云 (https://cloud.tencent.com/document/product/1759/106206)",
+      "totalLines": 49,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112702",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 文档概述_腾讯云 (https://cloud.tencent.com/document/product/1759/112702)",
+      "totalLines": 346,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112703",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 问答_腾讯云 (https://cloud.tencent.com/document/product/1759/112703)",
+      "totalLines": 298,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112704",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 知识检索相关设置_腾讯云 (https://cloud.tencent.com/document/product/1759/112704)",
+      "totalLines": 203,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112876",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 模型介绍_腾讯云 (https://cloud.tencent.com/document/product/1759/112876)",
+      "totalLines": 112,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112956",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 知识库标签设置_腾讯云 (https://cloud.tencent.com/document/product/1759/112956)",
+      "totalLines": 128,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112962",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 知识库标签设置_腾讯云 (https://cloud.tencent.com/document/product/1759/112956)",
+      "totalLines": 128,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112963",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 大模型节点_腾讯云 (https://cloud.tencent.com/document/product/1759/112963)",
+      "totalLines": 324,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112964",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 大模型知识问答节点_腾讯云 (https://cloud.tencent.com/document/product/1759/112964)",
+      "totalLines": 269,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112965",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 大模型标签提取节点_腾讯云 (https://cloud.tencent.com/document/product/1759/112965)",
+      "totalLines": 182,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112966",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 知识检索节点_腾讯云 (https://cloud.tencent.com/document/product/1759/112966)",
+      "totalLines": 222,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112967",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 代码节点_腾讯云 (https://cloud.tencent.com/document/product/1759/112967)",
+      "totalLines": 245,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112968",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 工具节点_腾讯云 (https://cloud.tencent.com/document/product/1759/112968)",
+      "totalLines": 859,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/112970",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 条件判断节点_腾讯云 (https://cloud.tencent.com/document/product/1759/112970)",
+      "totalLines": 187,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/115747",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 大模型意图识别节点_腾讯云 (https://cloud.tencent.com/document/product/1759/115747)",
+      "totalLines": 223,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/115748",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 连接器与工具节点_腾讯云 (https://cloud.tencent.com/document/product/1759/115748)",
+      "totalLines": 156,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/115749",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 工作流节点_腾讯云 (https://cloud.tencent.com/document/product/1759/115749)",
+      "totalLines": 132,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/115750",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 循环节点_腾讯云 (https://cloud.tencent.com/document/product/1759/115750)",
+      "totalLines": 219,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/115756",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 选项卡节点_腾讯云 (https://cloud.tencent.com/document/product/1759/115756)",
+      "totalLines": 170,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/115872",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 连接器与工具介绍_腾讯云 (https://cloud.tencent.com/document/product/1759/115872)",
+      "totalLines": 115,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/115873",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 新建连接器_腾讯云 (https://cloud.tencent.com/document/product/1759/115873)",
+      "totalLines": 227,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/116238",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 腾讯云智能体开发平台操作 cos 指南_腾 (https://cloud.tencent.com/document/product/1759/116238)",
+      "totalLines": 101,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/116451",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 文档对比任务_腾讯云 (https://cloud.tencent.com/document/product/1759/116451)",
+      "totalLines": 147,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/117358",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 变量聚合节点_腾讯云 (https://cloud.tencent.com/document/product/1759/117358)",
+      "totalLines": 103,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/117855",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 新建工具_腾讯云 (https://cloud.tencent.com/document/product/1759/117855)",
+      "totalLines": 1071,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/117856",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 使用工具_腾讯云 (https://cloud.tencent.com/document/product/1759/117856)",
+      "totalLines": 278,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/119281",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 应用端用户权限说明_腾讯云 (https://cloud.tencent.com/document/product/1759/119281)",
+      "totalLines": 234,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/119287",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 解析切分干预_腾讯云 (https://cloud.tencent.com/document/product/1759/119287)",
+      "totalLines": 99,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/119288",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 智能结构化解析_腾讯云 (https://cloud.tencent.com/document/product/1759/119288)",
+      "totalLines": 178,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/119290",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 批处理节点_腾讯云 (https://cloud.tencent.com/document/product/1759/119290)",
+      "totalLines": 177,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/119291",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 数据库_腾讯云 (https://cloud.tencent.com/document/product/1759/119291)",
+      "totalLines": 182,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/120901",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 提示词模板_腾讯云 (https://cloud.tencent.com/document/product/1759/120901)",
+      "totalLines": 176,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122457",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 变量说明_腾讯云 (https://cloud.tencent.com/document/product/1759/122457)",
+      "totalLines": 99,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122549",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 智能体应用及其四种模式_腾讯云 (https://cloud.tencent.com/document/product/1759/122549)",
+      "totalLines": 111,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122550",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 变量赋值节点_腾讯云 (https://cloud.tencent.com/document/product/1759/122550)",
+      "totalLines": 102,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122551",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 文档切分设置_腾讯云 (https://cloud.tencent.com/document/product/1759/122551)",
+      "totalLines": 216,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122553",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 Plan-and-Execute 协同_腾 (https://cloud.tencent.com/document/product/1759/122553)",
+      "totalLines": 167,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122554",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 Agent 节点_腾讯云 (https://cloud.tencent.com/document/product/1759/122554)",
+      "totalLines": 215,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122556",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 工作流编排_腾讯云 (https://cloud.tencent.com/document/product/1759/122556)",
+      "totalLines": 135,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122569",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 企业、工作空间与权限概述_腾讯云 (https://cloud.tencent.com/document/product/1759/122569)",
+      "totalLines": 153,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122570",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 企业管理_腾讯云 (https://cloud.tencent.com/document/product/1759/122570)",
+      "totalLines": 121,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122572",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 基于“单工作流模式”创建“网页内容总结助手 (https://cloud.tencent.com/document/product/1759/122572)",
+      "totalLines": 383,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122573",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 基于“Multi-Agent 模式”创建“ (https://cloud.tencent.com/document/product/1759/122573)",
+      "totalLines": 368,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122574",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 平台端用户权限_腾讯云 (https://cloud.tencent.com/document/product/1759/122574)",
+      "totalLines": 221,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/122598",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 自由转交_腾讯云 (https://cloud.tencent.com/document/product/1759/122598)",
+      "totalLines": 239,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/123551",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 什么是知识库？_腾讯云 (https://cloud.tencent.com/document/product/1759/123551)",
+      "totalLines": 133,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/123554",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 知识库设置概览_腾讯云 (https://cloud.tencent.com/document/product/1759/123554)",
+      "totalLines": 180,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/123555",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 知识库 Schema_腾讯云 (https://cloud.tencent.com/document/product/1759/123555)",
+      "totalLines": 101,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/123744",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 文件收集节点_腾讯云 (https://cloud.tencent.com/document/product/1759/123744)",
+      "totalLines": 122,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/125070",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 内容安全_腾讯云 (https://cloud.tencent.com/document/product/1759/125070)",
+      "totalLines": 271,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/126433",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 使用流程_腾讯云 (https://cloud.tencent.com/document/product/1759/126433)",
+      "totalLines": 151,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/126594",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 文本收集节点_腾讯云 (https://cloud.tencent.com/document/product/1759/126594)",
+      "totalLines": 125,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/126856",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 工作流的异步调用_腾讯云 (https://cloud.tencent.com/document/product/1759/126856)",
+      "totalLines": 121,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/127284",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 ADP 文档解析协议_腾讯云 (https://cloud.tencent.com/document/product/1759/127284)",
+      "totalLines": 996,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/127312",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 知识处理模型设置_腾讯云 (https://cloud.tencent.com/document/product/1759/127312)",
+      "totalLines": 106,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/128202",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 知识图谱 GraphRAG_腾讯云 (https://cloud.tencent.com/document/product/1759/128202)",
+      "totalLines": 445,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/128396",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 Lighthouse OpenClaw C (https://cloud.tencent.com/document/product/1759/128396)",
+      "totalLines": 131,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/129200",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 套餐版本说明_腾讯云 (https://cloud.tencent.com/document/product/1759/129200)",
+      "totalLines": 115,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/129202",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 对话端接口文档（HTTP SSE）_腾讯云 (https://cloud.tencent.com/document/product/1759/129202)",
+      "totalLines": 1732,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/129365",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 对话端接口文档（WebSocket）_腾讯 (https://cloud.tencent.com/document/product/1759/129365)",
+      "totalLines": 1823,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/129561",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 Skills 介绍_腾讯云 (https://cloud.tencent.com/document/product/1759/129561)",
+      "totalLines": 109,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/129562",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 新建 Skills_腾讯云 (https://cloud.tencent.com/document/product/1759/129562)",
+      "totalLines": 345,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/129563",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 使用 Skills_腾讯云 (https://cloud.tencent.com/document/product/1759/129563)",
+      "totalLines": 510,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/130637",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 对话功能概述_腾讯云 (https://cloud.tencent.com/document/product/1759/130637)",
+      "totalLines": 320,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/130990",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 应用包导出与导入_腾讯云 (https://cloud.tencent.com/document/product/1759/130990)",
+      "totalLines": 205,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/131653",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 基于“Claw 模式”创建“数据分析助手” (https://cloud.tencent.com/document/product/1759/131653)",
+      "totalLines": 367,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/132211",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 Agentic RAG_腾讯云 (https://cloud.tencent.com/document/product/1759/132211)",
+      "totalLines": 203,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/132714",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 ADP 浏览器助手插件服务协议_腾讯云 (https://cloud.tencent.com/document/product/1759/132714)",
+      "totalLines": 137,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/133868",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 概览_腾讯云 (https://cloud.tencent.com/document/product/1759/133868)",
+      "totalLines": 180,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/133870",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 动态修改 Agent 配置（Claw 模式 (https://cloud.tencent.com/document/product/1759/133870)",
+      "totalLines": 291,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/134193",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 多 Agent 协同_腾讯云 (https://cloud.tencent.com/document/product/1759/134193)",
+      "totalLines": 616,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/134194",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 什么是 Claw 模式？_腾讯云 (https://cloud.tencent.com/document/product/1759/134194)",
+      "totalLines": 124,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/134602",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 Skills 文件规范_腾讯云 (https://cloud.tencent.com/document/product/1759/134602)",
+      "totalLines": 383,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/134719",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 智能工作台的长期记忆_腾讯云 (https://cloud.tencent.com/document/product/1759/134719)",
+      "totalLines": 168,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/135538",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 知识库召回测试_腾讯云 (https://cloud.tencent.com/document/product/1759/135538)",
+      "totalLines": 256,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/137902",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 对话式应用开发与调优_腾讯云 (https://cloud.tencent.com/document/product/1759/137902)",
+      "totalLines": 189,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/138107",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 授权凭证_腾讯云 (https://cloud.tencent.com/document/product/1759/138107)",
+      "totalLines": 389,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/138162",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 记忆库_腾讯云 (https://cloud.tencent.com/document/product/1759/138162)",
+      "totalLines": 311,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/138240",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 元数据设置_腾讯云 (https://cloud.tencent.com/document/product/1759/138240)",
+      "totalLines": 188,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/138380",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 时效性检索_腾讯云 (https://cloud.tencent.com/document/product/1759/138380)",
+      "totalLines": 219,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1759/138789",
+      "status": "parsed_page_returned",
+      "title": "腾讯云智能体开发平台 调优准则_腾讯云 (https://cloud.tencent.com/document/product/1759/138789)",
+      "totalLines": 340,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1772/115343",
+      "status": "parsed_page_returned",
+      "title": "知识引擎原子能力 获取特征向量_腾讯云 (https://cloud.tencent.com/document/product/1772/115343)",
+      "totalLines": 233,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/301/97822",
+      "status": "parsed_page_returned",
+      "title": "政策与规范 大模型服务条款_腾讯云 (https://cloud.tencent.com/document/product/301/97822)",
+      "totalLines": 177,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/598/10592",
+      "status": "parsed_page_returned",
+      "title": "访问管理 安全实践教程_腾讯云 (https://cloud.tencent.com/document/product/598/10592)",
+      "totalLines": 198,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/598/10603",
+      "status": "parsed_page_returned",
+      "title": "访问管理 元素参考概述_腾讯云 (https://cloud.tencent.com/document/product/598/10603)",
+      "totalLines": 257,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/598/13665",
+      "status": "parsed_page_returned",
+      "title": "访问管理 用户类型_腾讯云 (https://cloud.tencent.com/document/product/598/13665)",
+      "totalLines": 52,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/598/14985",
+      "status": "parsed_page_returned",
+      "title": "访问管理 新建用户组_腾讯云 (https://cloud.tencent.com/document/product/598/14985)",
+      "totalLines": 84,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/598/19420",
+      "status": "parsed_page_returned",
+      "title": "访问管理 新建用户组_腾讯云 (https://cloud.tencent.com/document/product/598/14985)",
+      "totalLines": 84,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/598/37140",
+      "status": "fetch_failed",
+      "title": "Internal Error ()",
+      "totalLines": 1,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "error": "Failed to fetch: (400) Timeout fetching; initial returned one error line, not page body",
+      "bodyAvailable": false
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/598/38037",
+      "status": "parsed_page_returned",
+      "title": "访问管理 限制 IP 访问_腾讯云 (https://cloud.tencent.com/document/product/598/38037)",
+      "totalLines": 122,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/598/65676",
+      "status": "parsed_page_returned",
+      "title": "访问管理 下载安全分析报告_腾讯云 (https://cloud.tencent.com/document/product/598/65676)",
+      "totalLines": 92,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/629/56259",
+      "status": "parsed_page_returned",
+      "title": "操作审计 查看操作记录事件详情_腾讯云 (https://cloud.tencent.com/document/product/629/56259)",
+      "totalLines": 188,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "status": "parsed_page_returned",
+      "title": "腾讯云培训认证 腾讯云 ADP 前沿部署工程师 (FDE) 认证 (https://cloud.tencent.com/document/product/658/137832)",
+      "totalLines": 88,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/851/109354",
+      "status": "parsed_page_returned",
+      "title": "腾讯云大模型训推平台TI-ONE 大模型广场_腾讯云 (https://cloud.tencent.com/document/product/851/109354)",
+      "totalLines": 113,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/851/123443",
+      "status": "parsed_page_returned",
+      "title": "腾讯云大模型训推平台TI-ONE 内置大模型训练数据格式说明_腾 (https://cloud.tencent.com/document/product/851/123443)",
+      "totalLines": 359,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/product/adp",
+      "status": "parsed_page_returned",
+      "title": "腾讯智能体开发平台 (https://cloud.tencent.com/product/adp)",
+      "totalLines": 441,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "supportAssessment": "访问结果本身不能证明题目；题目事实支持见对应来源fact/section和独立AI审校记录",
+      "bodyAvailable": true
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/598/96157",
+      "status": "parsed_page_returned",
+      "title": "腾讯云 API 密钥升级公告",
+      "totalLines": 66,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "bodyAvailable": true,
+      "sourceVersion": "2023-11-28 15:41:02",
+      "supportAssessment": "FDE-M7-062：L30/35明确主账号和子账号SecretKey仅创建时查看保存。",
+      "reviewEvidence": "research/M7-key-source-recheck.md"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/598/40488",
+      "status": "parsed_page_returned",
+      "title": "主账号访问密钥管理",
+      "totalLines": 198,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "bodyAvailable": true,
+      "sourceVersion": "2026-05-09 14:18:52",
+      "supportAssessment": "FDE-M7-063：L107禁用主账号密钥拒绝其全部请求；FDE-M7-099：L38/42/44定义API密钥及两字段职责。",
+      "reviewEvidence": "research/M7-key-source-recheck.md"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/598/82369",
+      "status": "parsed_page_returned",
+      "title": "删除访问密钥",
+      "totalLines": 150,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "bodyAvailable": true,
+      "sourceVersion": "2025-09-12 01:18:08",
+      "supportAssessment": "FDE-M7-098：L40—41密钥删除不可恢复；L59指定AccessKeyId。",
+      "reviewEvidence": "research/M7-key-source-recheck.md"
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/598/123925",
+      "status": "parsed_page_returned",
+      "title": "定期轮转访问密钥（AccessKey）的安全建议",
+      "totalLines": 85,
+      "httpStatus": "not_exposed_by_browser_search_tool",
+      "checkedAt": "2026-10-09",
+      "bodyAvailable": true,
+      "sourceVersion": "2025-10-10 14:53:52",
+      "supportAssessment": "FDE-M7-098：L60—64子用户密钥轮转为切换业务、禁用旧密钥、观察后删除。",
+      "reviewEvidence": "research/M7-key-source-recheck.md"
+    }
+  ],
+  "counts": {
+    "parsed_page_returned": 119,
+    "fetch_failed": 1
+  }
+}

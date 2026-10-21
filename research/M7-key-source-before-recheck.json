@@ -1,0 +1,158 @@
+[
+  {
+    "id": "FDE-M7-062",
+    "module": "M7",
+    "topic": "SecretKey保存时机",
+    "type": "single",
+    "stem": "新建子账号 API 密钥后没有保存 SecretKey。文档允许以后通过密钥列表随时查询它吗？",
+    "options": {
+      "A": "不允许，应在创建时妥善保存",
+      "B": "允许，后续SecretId查询页面会一直显示SecretKey",
+      "C": "允许，下载凭证状态报告会给出SecretKey明文",
+      "D": "允许，重新启用旧密钥便会再次展示原SecretKey"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "创建窗口是保存敏感密钥的重要时机；后续可查询的 SecretId 与不可再次查询的 SecretKey 要区分。",
+    "distractors": {
+      "B": "文档已关闭后续查询SecretKey。",
+      "C": "状态报告不等于密钥恢复接口。",
+      "D": "启用操作没有重新展示原秘密的保证。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/37140",
+        "title": "子账号访问密钥管理",
+        "section": "注意/创建子账号 API 密钥",
+        "fact": "SecretKey仅支持创建时保存。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-05-09"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-063",
+    "module": "M7",
+    "topic": "禁用与删除密钥",
+    "type": "single",
+    "stem": "暂时阻止某条子账号 API 密钥继续调用，执行“禁用”会产生什么效果？",
+    "options": {
+      "A": "只阻止新应用引用，已使用的应用仍可继续调用",
+      "B": "仅撤销控制台密码，API访问不受影响",
+      "C": "腾讯云拒绝使用该密钥的请求",
+      "D": "把密钥降为只读，已有读取调用不受影响"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "密钥禁用作用于该凭证的调用资格，操作前应确认依赖，避免误中断服务。",
+    "distractors": {
+      "A": "禁用后拒绝该密钥所有请求。",
+      "B": "API密钥禁用与控制台密码不同。",
+      "D": "禁用不是将策略自动改成只读。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/37140",
+        "title": "子账号访问密钥管理",
+        "section": "禁用/启用子账号 API 密钥",
+        "fact": "禁用后拒绝当前密钥所有请求。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-05-09"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-098",
+    "module": "M7",
+    "topic": "密钥删除生命周期",
+    "type": "multiple",
+    "stem": "准备永久清理一条子账号 API 密钥时，哪些说明符合官方操作流程？",
+    "options": {
+      "A": "密钥删除后可随时恢复原SecretKey以回退业务",
+      "B": "删除某条密钥会自动删除该子账号及其全部资源",
+      "C": "删除后的密钥无法恢复",
+      "D": "未禁用的密钥先执行禁用"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "先确认依赖并禁用，再删除；应把凭证生命周期变更与账号及资源生命周期分开理解。",
+    "distractors": {
+      "A": "删除不可恢复。",
+      "B": "凭证删除与账号资源生命周期不同。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/37140",
+        "title": "子账号访问密钥管理",
+        "section": "删除子账号 API 密钥",
+        "fact": "密钥需先禁用再删除且删除不可恢复。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-05-09"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-099",
+    "module": "M7",
+    "topic": "密钥标识与秘密分工",
+    "type": "multiple",
+    "stem": "关于腾讯云 API 密钥的两个组成字段，下列哪些配对正确？",
+    "options": {
+      "A": "SecretKey用于验证调用者身份",
+      "B": "SecretId本身足以完成所有请求的身份验证，不再需要SecretKey",
+      "C": "SecretId用于标识调用者身份",
+      "D": "SecretKey只作显示用途，可像昵称一样公开"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "标识符与验证秘密承担不同角色；能展示或查询 SecretId 不意味着可公开 SecretKey。",
+    "distractors": {
+      "B": "SecretId是身份标识，不能替代验证秘密。",
+      "D": "SecretKey承担验证作用，必须保护。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/37140",
+        "title": "子账号访问密钥管理",
+        "section": "操作场景/说明",
+        "fact": "SecretId标识调用者，SecretKey用于验证。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-05-09"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  }
+]

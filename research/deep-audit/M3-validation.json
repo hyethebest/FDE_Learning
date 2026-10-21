@@ -1,0 +1,12 @@
+{
+  "count": 220,
+  "uniqueIds": 220,
+  "complete": true,
+  "hashErrors": [],
+  "examUse": {
+    "eligible": 108,
+    "learning_only": 98,
+    "hold": 14
+  },
+  "bankSha256": "832710a592a773401ab870629f0906f92140ac8137e870fa046a155aa5697351"
+}

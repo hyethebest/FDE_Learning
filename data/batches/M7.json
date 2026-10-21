@@ -1,0 +1,3910 @@
+[
+  {
+    "id": "FDE-M7-001",
+    "module": "M7",
+    "topic": "权限合集",
+    "type": "single",
+    "stem": "某成员的个人授权没有发布权限，但其所属普通角色授予了发布权限。依据 ADP 平台权限合并规则，应如何判断？",
+    "options": {
+      "A": "角色授予的权限会进入最终权限合集",
+      "B": "以个人授权为准，角色只补充未配置项",
+      "C": "个人与角色必须同时允许发布",
+      "D": "最后保存的授权覆盖之前授权"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "授权排查要检查用户直接授权与角色授权两条路径；删掉一条授权路径不等于收回了另一条。",
+    "distractors": {
+      "B": "文档采用权限合集，不是个人配置优先。",
+      "C": "这把并集错误理解成双重许可。",
+      "D": "文档没有按修改时间合并的规则。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "title": "平台端用户权限",
+        "section": "功能说明/权限管理",
+        "fact": "用户权限与角色权限取合集。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-002",
+    "module": "M7",
+    "topic": "只读边界",
+    "type": "single",
+    "stem": "审阅人员只需查看他人创建的应用并进行对话测试，不应修改配置。哪个数据权限最匹配？",
+    "options": {
+      "A": "可查看",
+      "B": "可编辑，但约定审阅人员不修改",
+      "C": "无权限，另发一个应用列表链接",
+      "D": "仅保留新建应用功能权限"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "可查看允许观察和对话体验，但不能改应用内容；这适合仅验看效果的审阅者。",
+    "distractors": {
+      "B": "行为约定不能代替只读技术权限。",
+      "C": "无权限者不能因得到列表链接就查看数据。",
+      "D": "创建操作权不能替代对既有应用的数据访问权。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "title": "平台端用户权限",
+        "section": "功能说明/数据权限",
+        "fact": "可查看支持对话体验，不支持编辑。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-003",
+    "module": "M7",
+    "topic": "精细操作授权",
+    "type": "single",
+    "stem": "某位工程师可以发布应用甲，但禁止切换其模式；应用乙还要禁止发布。应优先使用哪个权限能力？",
+    "options": {
+      "A": "将全部应用都设为可编辑后统一限制发布",
+      "B": "只用新建应用功能权限控制现有应用发布",
+      "C": "仅在空间层面分配同一普通角色，不设置数据权限",
+      "D": "按数据配置高级自定义权限"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "需要同时区分应用对象和对象内部操作，应使用数据维度的高级自定义授权。",
+    "distractors": {
+      "A": "可编辑不能按题设区分应用内的不同操作。",
+      "B": "新建应用权限与现有应用内部发布限制不同。",
+      "C": "不能表达应用甲乙的差异化数据操作边界。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "title": "平台端用户权限",
+        "section": "功能说明/数据权限",
+        "fact": "高级自定义可控制数据内具体操作。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-004",
+    "module": "M7",
+    "topic": "主账号权限",
+    "type": "single",
+    "stem": "空间用户列表中没有显示主账号，能否据此判定主账号没有该空间权限？",
+    "options": {
+      "A": "可以，成员列表就是包括主账号在内的完整权限清单",
+      "B": "主账号只能访问默认空间，不包括新空间",
+      "C": "主账号必须被赋予某个空间普通角色才能访问",
+      "D": "不能，主账号仍有企业和空间全部权限"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "列表是否显示与主账号权限不是同一回事，审计不能仅凭空间成员列表推断主账号被隔离。",
+    "distractors": {
+      "A": "文档明确主账号不在列表但保有全权。",
+      "B": "主账号拥有企业和空间全部权限。",
+      "C": "主账号的超级管理员身份不依赖普通角色。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "title": "平台端用户权限",
+        "section": "功能说明/用户管理",
+        "fact": "主账号不列出但拥有全部权限。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-005",
+    "module": "M7",
+    "topic": "空间管理员不可改权限",
+    "type": "single",
+    "stem": "团队希望把预置“管理员”角色改成只读角色。文档支持怎样处理？",
+    "options": {
+      "A": "在按角色分配中关闭预置管理员的编辑权限",
+      "B": "不能修改该角色的权限范围",
+      "C": "在按用户分配中覆盖其管理员权限为只读",
+      "D": "删除预置管理员角色再重建只读版本"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "预置角色具有固定全权属性。要实现只读，应选择合适的其他授权配置，而非修改预置角色定义。",
+    "distractors": {
+      "A": "预置管理员不支持修改权限范围。",
+      "C": "管理员成员不能使用按用户分配设置权限。",
+      "D": "预置管理员不可删除。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "title": "平台端用户权限",
+        "section": "功能说明/角色管理",
+        "fact": "预置管理员不可编辑或改权限范围。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-006",
+    "module": "M7",
+    "topic": "移除空间成员",
+    "type": "single",
+    "stem": "项目结束后从空间的用户管理中删除一名成员，文档明确的直接影响是什么？",
+    "options": {
+      "A": "该用户在所有工作空间的成员关系同时被删除",
+      "B": "该用户无法再访问当前空间",
+      "C": "该用户的腾讯云子账号同时注销",
+      "D": "该用户仍能查看当前空间，只失去编辑能力"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "此操作作用域为当前工作空间；企业用户、其他空间与云账号状态需要分别管理。",
+    "distractors": {
+      "A": "当前空间操作不能外推为全部空间操作。",
+      "C": "空间成员移除不等于云账号注销。",
+      "D": "文档说明删除后不能访问当前空间。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "title": "平台端用户权限",
+        "section": "功能说明/用户管理",
+        "fact": "删除空间成员后无法访问当前空间。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-007",
+    "module": "M7",
+    "topic": "角色成员限制",
+    "type": "single",
+    "stem": "管理员想将尚未加入当前空间的企业用户直接添加到当前空间角色，正确理解是什么？",
+    "options": {
+      "A": "企业用户天然也是所有空间成员，可直接加入角色",
+      "B": "需先使该用户成为当前空间成员",
+      "C": "直接添加后角色会自动授予该用户企业管理员身份",
+      "D": "先授予知识库可编辑权限即可跳过空间成员添加"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "角色用户管理以空间成员为前提，企业用户与空间成员是不同层次。",
+    "distractors": {
+      "A": "企业身份与空间成员关系需要区分。",
+      "C": "角色管理不自动升级企业级身份。",
+      "D": "资源编辑授权不能替代空间成员资格。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "title": "平台端用户权限",
+        "section": "功能说明/角色管理",
+        "fact": "角色仅可添加当前空间成员。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-008",
+    "module": "M7",
+    "topic": "自建数据权限",
+    "type": "single",
+    "stem": "管理员设置某成员对其他人的知识库为只读，这是否同时把该成员自己创建的数据降为只读？",
+    "options": {
+      "A": "会，数据权限设置同时约束该成员创建和他人创建的数据",
+      "B": "不会；文档中的该设置针对他人创建的数据",
+      "C": "会，默认可编辑只持续到第一次权限修改",
+      "D": "会，但仅对该成员之前创建的知识库生效"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "自己创建的数据默认可编辑，题设授权不能被当作统一限制所有者的机制。",
+    "distractors": {
+      "A": "文档明确只针对他人创建的数据。",
+      "C": "没有这种首次修改后失效规则。",
+      "D": "文档未按创建时间划分此规则。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "title": "平台端用户权限",
+        "section": "功能说明/数据权限",
+        "fact": "自建数据可编辑，数据设置针对他人数据。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-009",
+    "module": "M7",
+    "topic": "终端知识隔离",
+    "type": "single",
+    "stem": "HR 助手要限制员工能查询哪些知识，而不是限制谁能在控制台编辑应用，应配置什么？",
+    "options": {
+      "A": "平台端数据权限，限制员工能在控制台看见哪些知识库",
+      "B": "空间成员管理，只要终端用户不是空间成员就不能查知识",
+      "C": "应用端用户权限",
+      "D": "内容安全策略，按风险词替代知识访问授权"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "终端查询权限解决“能检索什么”；平台权限解决“谁能登录和配置”。二者需要分别设计。",
+    "distractors": {
+      "A": "控制台权限不等同于应用终端检索范围。",
+      "B": "应用端用户与空间成员是不同主体。",
+      "D": "内容审核不能代替知识范围授权。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "title": "应用端用户权限说明",
+        "section": "名词说明",
+        "fact": "应用端权限控制终端用户知识范围。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-26"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-010",
+    "module": "M7",
+    "topic": "默认知识开放",
+    "type": "single",
+    "stem": "在尚未启用应用端权限控制的应用里新增知识后，文档给出的默认可访问范围是什么？",
+    "options": {
+      "A": "所有应用端用户可访问该应用全部知识范围",
+      "B": "未配置角色的用户默认看不到任何知识",
+      "C": "应用端用户默认继承其平台数据权限",
+      "D": "只能查询本次会话上传的文件，不能查已有知识"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "上线前要显式检查知识隔离配置；不能把“未设置权限”理解为“已经限制”。",
+    "distractors": {
+      "B": "文档默认范围不是全部拒绝。",
+      "C": "文档没有平台权限自动映射的默认规则。",
+      "D": "默认说明涵盖应用下全部知识范围。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "title": "应用端用户权限说明",
+        "section": "功能入口",
+        "fact": "默认所有终端用户可访问全部知识范围。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-26"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-011",
+    "module": "M7",
+    "topic": "模式安全边界",
+    "type": "single",
+    "stem": "方案依赖 ADP 应用端用户权限实现知识隔离。按核实版本，哪种应用模式明确不支持该能力？",
+    "options": {
+      "A": "标准模式，只能配置平台端权限",
+      "B": "单工作流模式，只能依赖模型自行授权",
+      "C": "Multi-Agent 模式",
+      "D": "所有使用外部权限系统的应用"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "这是产品能力边界，不能因为另一个模式能使用知识库，就推断它支持同一权限机制。",
+    "distractors": {
+      "A": "官方未禁止标准模式使用该能力。",
+      "B": "文档明确的模式例外是Multi-Agent。",
+      "D": "外部系统是正式支持的权限方案之一。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "title": "应用端用户权限说明",
+        "section": "功能入口",
+        "fact": "Multi-Agent 不支持应用端用户权限。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-26"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-012",
+    "module": "M7",
+    "topic": "多角色知识并集",
+    "type": "single",
+    "stem": "某用户的两个角色分别可检索知识库甲和乙，没有其他授权。该用户的知识范围按什么规则形成？",
+    "options": {
+      "A": "甲与乙的交集",
+      "B": "只取最近绑定的一个角色范围",
+      "C": "甲与乙的并集",
+      "D": "采用范围更小的角色作为最终权限"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "添加角色可能扩大知识可见范围，因此新增角色绑定也是需要检查的数据授权变化。",
+    "distractors": {
+      "A": "多个角色按并集而非交集生效。",
+      "B": "没有最近绑定覆盖的规则。",
+      "D": "官方不采用自动最小角色覆盖规则。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "title": "应用端用户权限说明",
+        "section": "方案一/角色管理",
+        "fact": "多个角色的知识权限取并集。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-26"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-013",
+    "module": "M7",
+    "topic": "用户标识对应",
+    "type": "single",
+    "stem": "平台已设置用户 ID 为 emp42；应用 API 应通过哪个参数传入该标识以套用权限？",
+    "options": {
+      "A": "用户展示昵称字段",
+      "B": "当前对话会话ID",
+      "C": "visitor_biz_id",
+      "D": "腾讯云API请求RequestId"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "用户 ID 必须与请求中的 visitor_biz_id 对应；仅显示昵称不足以让权限系统识别授权主体。",
+    "distractors": {
+      "A": "昵称不承担visitor_biz_id的技术标识作用。",
+      "B": "会话标识不能直接替代应用端用户ID。",
+      "D": "请求追踪ID不是终端用户授权主体。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "title": "应用端用户权限说明",
+        "section": "方案一/在应用 API 中传入用户 ID",
+        "fact": "用户ID与visitor_biz_id对应。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-26"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-014",
+    "module": "M7",
+    "topic": "外部授权过滤位置",
+    "type": "single",
+    "stem": "外部权限系统判断候选切片不可访问后，ADP 文档描述的处理是什么？",
+    "options": {
+      "A": "把全部候选切片传给模型，并要求提示词不要引用禁用切片",
+      "B": "生成答案后只删除没有权限的引用链接",
+      "C": "只校验用户能否打开应用，随后保留全部切片",
+      "D": "过滤无权限切片后再送入大模型"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "关键边界是生成前过滤检索结果，而非答案生成后删掉引用链接。",
+    "distractors": {
+      "A": "文档规定生成前过滤，不是依靠提示词自律。",
+      "B": "隐藏引用不能替代不向模型提供无权切片。",
+      "C": "外部方案还判断每个候选切片的权限。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "title": "应用端用户权限说明",
+        "section": "方案二/工作原理",
+        "fact": "仅授权切片送入模型生成答案。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-26"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-015",
+    "module": "M7",
+    "topic": "权限方式切换",
+    "type": "single",
+    "stem": "把某应用从角色权限切换到外部权限系统后，哪个理解符合文档？",
+    "options": {
+      "A": "新方案成为唯一生效的权限方式",
+      "B": "新旧方案并行，取两者权限交集",
+      "C": "新旧方案并行，取两者权限并集",
+      "D": "旧方案持续生效直到下一次重新创建应用"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "迁移时应提前验证新方案；不能依赖旧方案继续兜底。",
+    "distractors": {
+      "B": "文档没有并行求交规则。",
+      "C": "同一应用只生效一种方案。",
+      "D": "切换后的新方案成为唯一生效方式。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "title": "应用端用户权限说明",
+        "section": "注意事项",
+        "fact": "切换后新方式唯一生效。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-26"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-016",
+    "module": "M7",
+    "topic": "用户ID与昵称",
+    "type": "single",
+    "stem": "两名员工在同一应用中昵称相同。怎样建立可区分的权限主体？",
+    "options": {
+      "A": "共用用户ID，通过不同角色名称区分实际提问者",
+      "B": "给两人分配不同用户 ID，昵称可相同",
+      "C": "共用用户ID，依靠会话ID永久区分两人的知识授权",
+      "D": "把唯一昵称作为权限主键，用户ID可重复"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "用户 ID 承担技术标识作用，昵称仅用于展示，不能把两者混淆。",
+    "distractors": {
+      "A": "角色绑定不能消除同应用用户ID必须唯一的要求。",
+      "C": "官方角色方案以用户ID对应visitor_biz_id。",
+      "D": "昵称不要求唯一而用户ID要求唯一。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "title": "应用端用户权限说明",
+        "section": "方案一/绑定用户与角色",
+        "fact": "同应用ID唯一，昵称不要求唯一。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-26"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-017",
+    "module": "M7",
+    "topic": "风险识别覆盖",
+    "type": "single",
+    "stem": "只审核用户输入，完全不检查应用输出，是否完整覆盖 ADP 内容安全定义的作用范围？",
+    "options": {
+      "A": "完整，系统的输入审核通过后即可保证输出无风险",
+      "B": "完整，输出只需加入免责声明即可替代审核",
+      "C": "完整，只审核知识库原文便可覆盖所有生成输出",
+      "D": "不完整，定义同时包含输入和输出"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "风险既可能来自用户请求，也可能来自生成内容；设计检查清单时应涵盖两个方向。",
+    "distractors": {
+      "A": "输入安全不能推出生成内容一定安全。",
+      "B": "免责声明不是输出风险识别。",
+      "C": "生成内容不完全等同于知识库原文。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "title": "内容安全",
+        "section": "概念定义",
+        "fact": "内容安全识别应用输入和输出风险。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-018",
+    "module": "M7",
+    "topic": "策略组成",
+    "type": "single",
+    "stem": "ADP 内容安全策略由哪些核心部分组成？",
+    "options": {
+      "A": "生成模型与系统提示词",
+      "B": "审核模型与关键词",
+      "C": "风险回复文案与隐私脱敏开关",
+      "D": "应用角色与知识库检索范围"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "审核模型负责风险识别，关键词补充指定词语匹配；两者共同构成策略。",
+    "distractors": {
+      "A": "文档定义的是审核模型与关键词，不是生成配置。",
+      "C": "这些属于应用安全设置而非策略定义的两组成部分。",
+      "D": "这些控制知识授权，不组成内容风险策略。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "title": "内容安全",
+        "section": "概念定义",
+        "fact": "安全策略由审核模型和关键词构成。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-019",
+    "module": "M7",
+    "topic": "底线审核不可关闭",
+    "type": "single",
+    "stem": "工程师关闭了自定义策略页面中所有可见审核模型。能否据此承诺没有任何风险审核？",
+    "options": {
+      "A": "可以，可见配置已覆盖所有底线审核模型",
+      "B": "可以，自定义策略优先级高于底线审核",
+      "C": "不能，未展示的底线风险审核仍存在",
+      "D": "可以，发布应用会采用可见开关而忽略隐藏机制"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "界面可配置能力不代表完整安全边界；不可关闭的底线机制不受可见开关全部关闭的影响。",
+    "distractors": {
+      "A": "文档说明底线模型不展示且不能关闭。",
+      "B": "自定义配置不能关闭该底线机制。",
+      "D": "没有发布时绕过底线的规则。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "title": "内容安全",
+        "section": "安全策略/文本审核模型设置",
+        "fact": "底线审核不可关闭且不展示在列表。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-020",
+    "module": "M7",
+    "topic": "系统策略编辑边界",
+    "type": "single",
+    "stem": "要调整内置中敏感策略的模型和关键词，文档支持的路径是什么？",
+    "options": {
+      "A": "在预设系统策略上直接编辑审核模型",
+      "B": "在应用风险回复里填写模型列表以覆盖系统策略",
+      "C": "直接修改关键词库会使全部系统策略同步可编辑",
+      "D": "新建自定义策略进行配置"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "系统策略是预设配置；差异化业务规则应通过自定义策略表达。",
+    "distractors": {
+      "A": "系统自动生成策略不可编辑。",
+      "B": "风险回复是用户提示文案，不改审核配置。",
+      "C": "维护词库不改变系统策略编辑限制。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "title": "内容安全",
+        "section": "安全策略",
+        "fact": "系统策略不可编辑，自定义策略可配置。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-021",
+    "module": "M7",
+    "topic": "词库匹配模式",
+    "type": "single",
+    "stem": "一个业务同时需要精确匹配和模糊匹配词条，按单个词库的限制应如何组织？",
+    "options": {
+      "A": "在同一词库中给每个词条设置不同匹配模式",
+      "B": "同一词库开启模糊后会自动按词条判断是否需要精确",
+      "C": "只更换应用挂载策略即可改变同库各词条匹配模式",
+      "D": "用不同词库分别配置匹配模式"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "需要两类匹配就分开维护词库，避免以为同一词库能逐条选择模式。",
+    "distractors": {
+      "A": "文档规定单库单匹配模式。",
+      "B": "没有这种按词条自动混用规则。",
+      "C": "应用策略选择不解除词库模式限制。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "title": "内容安全",
+        "section": "关键词库",
+        "fact": "每个词库只支持一种匹配模式。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-022",
+    "module": "M7",
+    "topic": "组合词逻辑",
+    "type": "single",
+    "stem": "组合词规则包含“词甲”和“词乙”；输入只命中“词甲”。按文档是否算命中该组合词？",
+    "options": {
+      "A": "不算，必须同时命中各词组",
+      "B": "算，组合中任意一个词出现就成立",
+      "C": "算，未命中的词组会由模型根据语义自动补足",
+      "D": "只要词甲出现两次便替代词乙的命中"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "组合词要求同一段文本满足全部组成项，与独立黑词任一命中不同。",
+    "distractors": {
+      "B": "组合词要求同时命中各个词组。",
+      "C": "官方未定义用模型补全缺失词组的机制。",
+      "D": "重复一个词不等于同时命中各组成词。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "title": "内容安全",
+        "section": "关键词库/新建关键词",
+        "fact": "组合词须同时命中各词组。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-023",
+    "module": "M7",
+    "topic": "风险处置文案",
+    "type": "single",
+    "stem": "应用识别到违规输入后，要向对话用户显示统一处理说明，应配置哪项？",
+    "options": {
+      "A": "风险处置回复",
+      "B": "修改系统开场白，确保所有风险请求都显示开场白",
+      "C": "在角色指令中约定固定回复即可替代风险处置设置",
+      "D": "修改知识库无答案兜底回复"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "该配置控制风险被识别后的对话端提示，不能与审核策略本身或知识处理参数混为一谈。",
+    "distractors": {
+      "B": "开场白不是专门风险命中处置配置。",
+      "C": "模型提示词不能替代该平台风险回复配置。",
+      "D": "知识无答案与内容违规是不同触发条件。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "title": "内容安全",
+        "section": "应用安全设置",
+        "fact": "风险处置回复用于违规输入输出时的对话文案。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-024",
+    "module": "M7",
+    "topic": "脱敏与授权区分",
+    "type": "single",
+    "stem": "客服希望在对话中掩盖用户手机号，应优先检查哪个已公开功能？",
+    "options": {
+      "A": "为用户只分配平台端可查看权限",
+      "B": "启用应用端角色检索范围，但不做字段处理",
+      "C": "应用安全设置中的信息脱敏",
+      "D": "只降低模型温度以减少隐私输出"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "脱敏针对输入输出中的隐私信息。它解决显示与处理中的敏感信息暴露，不能替代用户授权。",
+    "distractors": {
+      "A": "平台操作只读不会自动遮蔽对话手机号。",
+      "B": "知识授权不能替代允许内容中的隐私字段脱敏。",
+      "D": "温度不提供已声明的手机号脱敏机制。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "title": "内容安全",
+        "section": "应用安全设置/信息脱敏",
+        "fact": "信息脱敏支持输入输出隐私信息，包括手机号。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-025",
+    "module": "M7",
+    "topic": "个人凭证管理员边界",
+    "type": "single",
+    "stem": "某普通用户创建了未共享的自定义凭证。空间管理员对它的能力哪项符合文档？",
+    "options": {
+      "A": "可直接引用该凭证，但不可删除",
+      "B": "可读取全部敏感字段后再决定是否授权给自己",
+      "C": "可以删除用于安全管控，但不能引用",
+      "D": "管理员与普通成员一样对该凭证没有任何操作权限"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "管理删除权与使用凭证调用服务的权限是不同能力，不应把管理权限理解为可代用个人授权。",
+    "distractors": {
+      "A": "与文档管理员不可引用、可删除规则相反。",
+      "B": "文档没有管理员明文读取并自授引用的规则。",
+      "D": "管理员具有用于安全管控的删除能力。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "title": "授权凭证",
+        "section": "凭证类型",
+        "fact": "管理员不可引用自定义凭证但可删除。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-026",
+    "module": "M7",
+    "topic": "共享凭证管理边界",
+    "type": "single",
+    "stem": "空间成员使用别人共享来的企业共享凭证时，哪项行为被文档允许？",
+    "options": {
+      "A": "编辑其授权实例以替换共享方账号",
+      "B": "删除该凭证本体以阻止其他空间使用",
+      "C": "查看已共享密钥的完整明文并另行复制保存",
+      "D": "在授权配置中引用该凭证"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "共享给成员的是服务调用能力，凭证内容维护仍有边界，避免共享时扩散敏感密钥。",
+    "distractors": {
+      "A": "被共享方不具有编辑权限。",
+      "B": "被共享方不具有凭证删除管理权。",
+      "C": "共享使用不意味着可见敏感凭证信息。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "title": "授权凭证",
+        "section": "企业共享凭证",
+        "fact": "共享凭证可引用，不可编辑删除。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-027",
+    "module": "M7",
+    "topic": "凭证编辑影响",
+    "type": "single",
+    "stem": "已发布应用仍引用一条统一凭证；保存该凭证的新授权内容后会怎样？",
+    "options": {
+      "A": "已发布应用固定使用旧值，只有重新发布才更新",
+      "B": "只有当前空间尚未发布的应用受影响",
+      "C": "正在使用该凭证的已发布应用也受影响",
+      "D": "已发布应用会自动生成独立凭证副本避免影响"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "凭证并非固定嵌入发布快照的副本，变更前应检查引用依赖，避免线上调用突然改变。",
+    "distractors": {
+      "A": "文档明确统一凭证编辑影响已发布应用。",
+      "B": "文档没有限定影响为未发布应用。",
+      "D": "文档没有自动快照复制的保证。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "title": "授权凭证",
+        "section": "常见问题/Q2",
+        "fact": "编辑凭证影响所有引用应用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-028",
+    "module": "M7",
+    "topic": "凭证删除依赖",
+    "type": "single",
+    "stem": "要删除看似闲置的凭证，最直接的官方检查入口是什么？",
+    "options": {
+      "A": "引用详情",
+      "B": "仅看应用最后一次发布时间判断是否仍依赖",
+      "C": "仅凭凭证创建时间较早就判断已经闲置",
+      "D": "只查当前应用，不必考虑其他引用者"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "凭证被删除后，依赖应用不能继续使用该授权；先检查引用可减少误删影响。",
+    "distractors": {
+      "B": "发布时间不能证明凭证未被当前引用。",
+      "C": "旧凭证仍可能被线上依赖。",
+      "D": "统一凭证可能被多个应用或工作流引用。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "title": "授权凭证",
+        "section": "凭证管理/自定义凭证",
+        "fact": "删除前通过引用详情确认依赖。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-029",
+    "module": "M7",
+    "topic": "凭证失效处置",
+    "type": "single",
+    "stem": "OAuth 凭证失效后，要恢复依赖服务，哪项最符合文档建议？",
+    "options": {
+      "A": "重新发布应用即可无条件恢复过期OAuth授权",
+      "B": "只增加工具重试次数直到旧Token被接受",
+      "C": "保留失效授权，改用同名工具就能自动继承有效身份",
+      "D": "刷新、重新授权或替换失效凭证"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "授权失效属于凭证状态问题，应沿授权链路处理，而非调整生成参数。",
+    "distractors": {
+      "A": "应用发布不能代替刷新或重新授权。",
+      "B": "过期授权需要凭证层处理，不是无限重试。",
+      "C": "工具名称不会修复授权状态。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "title": "授权凭证",
+        "section": "权限与安全说明",
+        "fact": "凭证失效应及时刷新重授权或替换。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-030",
+    "module": "M7",
+    "topic": "生产测试凭证隔离",
+    "type": "single",
+    "stem": "测试和生产使用不同服务账号，最合理的凭证命名与管理方法是什么？",
+    "options": {
+      "A": "同一个工具只能有一条凭证，因此测试生产共用",
+      "B": "清楚标明环境与用途，避免混用",
+      "C": "用创建时间隐式区分，无需可辨识用途",
+      "D": "共享所有凭证到全部空间以减少选择成本"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "清晰标识让维护人员能够识别授权对象；同一个工具可按不同环境建立凭证。",
+    "distractors": {
+      "A": "官方允许按不同环境建立多个凭证。",
+      "C": "官方建议清晰命名避免混用。",
+      "D": "共享范围扩大并不能解决生产测试混用风险。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "title": "授权凭证",
+        "section": "权限与安全说明",
+        "fact": "生产凭证应清晰命名避免测试混用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-031",
+    "module": "M7",
+    "topic": "历史授权迁移",
+    "type": "single",
+    "stem": "工具仍使用历史授权，页面提示切换到新版凭证。迁移计划应特别注意什么？",
+    "options": {
+      "A": "切换仅影响显示方式，旧授权可以随时恢复",
+      "B": "切换后历史授权失效且无法恢复",
+      "C": "新旧授权保持并行直到用户主动删除旧项",
+      "D": "无需重新配置，新版凭证自动继承任意历史授权"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "应先准备新的授权配置与验证计划，不把迁移当作无风险的显示调整。",
+    "distractors": {
+      "A": "历史授权切换后失效且无法恢复。",
+      "C": "文档没有并行保留机制。",
+      "D": "文档要求可进行新版凭证配置，不保证任意自动继承。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "title": "授权凭证",
+        "section": "常见问题/Q1",
+        "fact": "新版切换会使历史授权失效且不可恢复。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-032",
+    "module": "M7",
+    "topic": "自定义Skill审核",
+    "type": "single",
+    "stem": "上传自定义 Skill 后，要正常使用它，需要满足什么条件？",
+    "options": {
+      "A": "成功解压ZIP后即可进入生产使用",
+      "B": "通过自动触发的格式校验和安全扫描",
+      "C": "导入者拥有空间管理员角色就无需扫描",
+      "D": "只需通过企业共享审批，导入阶段不检查"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "自定义内容进入平台使用前有审核门槛，导入成功不等于安全审核成功。",
+    "distractors": {
+      "A": "解压不等于安全审核通过。",
+      "C": "文档没有管理员导入免审例外。",
+      "D": "导入安全审核与企业共享审批是不同步骤。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "title": "Skills 介绍",
+        "section": "安全审核机制",
+        "fact": "自定义Skills导入后审核通过方可使用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-033",
+    "module": "M7",
+    "topic": "企业共享安全报告",
+    "type": "single",
+    "stem": "已上架的自定义 Skill 申请企业共享时，安全报告如何处理？",
+    "options": {
+      "A": "沿用已有报告供企业管理员审批查看",
+      "B": "重新触发完整安全检测，不能复用之前报告",
+      "C": "仅看Skill描述审批，不提供原安全报告",
+      "D": "已有安全报告即可跳过企业共享审批"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "审核报告复用与企业共享审批是不同步骤；不重复扫描不等于无人审批。",
+    "distractors": {
+      "B": "文档明确不重复检测而沿用报告。",
+      "C": "企业管理员可以查看完整安全报告。",
+      "D": "审核报告不能替代企业管理员共享审批。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "title": "Skills 介绍",
+        "section": "安全审核机制",
+        "fact": "企业共享沿用已通过安全报告。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-034",
+    "module": "M7",
+    "topic": "内置Skill版本变更核对",
+    "type": "single",
+    "stem": "团队记录 Skill 版本以便后续安全复核。对于来自 SkillHub 的内置 Skills，应采用哪项符合官方说明的更新假设？",
+    "options": {
+      "A": "平台会检测新版本并自动更新至 Skills 广场，因此复核时应确认当时版本",
+      "B": "首次安装后，Skills 广场中的该技能版本永远冻结不变",
+      "C": "每次发布新版本都必须先由使用企业的管理员执行自定义技能共享审批",
+      "D": "平台不会检测更新，只有用户上传同名ZIP包后广场版本才改变"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "官方说明 SkillHub 来源的内置 Skills 由平台自动检测新版本并更新至广场。因版本可能变化，记录和复核版本是一项基于该机制的安全审查建议；本题不推断已有任务何时切换到新版本。",
+    "distractors": {
+      "B": "官方存在自动检测及广场更新机制，不能假设永久冻结。",
+      "C": "企业共享审批适用于成员的自定义技能共享，不是该内置来源的更新前置条件。",
+      "D": "此来源由平台自动检测更新，无需用户手动操作。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "title": "Skills 介绍",
+        "section": "Skills 的三种类别",
+        "fact": "SkillHub来源的内置Skills由平台自动检测新版本并更新至Skills广场，无需手动操作。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-035",
+    "module": "M7",
+    "topic": "内置Skill安全责任表述",
+    "type": "single",
+    "stem": "交付说明如何准确描述内置 Skills 的上架审核？",
+    "options": {
+      "A": "所有业务任务的最终输出均保证准确",
+      "B": "平台已完成安全审核和质量验证",
+      "C": "所有目标系统的资源访问授权已由平台一并代办",
+      "D": "只做格式校验，不开展安全审核"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "可以陈述已审核这一事实，但不能把它扩大为准确性、资源访问或业务合规的无限保证。",
+    "distractors": {
+      "A": "安全与质量审核不等于全部结果正确保证。",
+      "C": "技能上架不能代替目标系统资源授权。",
+      "D": "官方明确包括安全检测和质量验证。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "title": "Skills 介绍",
+        "section": "Skills 的三种类别",
+        "fact": "内置Skills上架前通过安全及质量验证。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-036",
+    "module": "M7",
+    "topic": "浏览器数据读取触发",
+    "type": "single",
+    "stem": "ADP 浏览器助手何时读取当前页面内容？",
+    "options": {
+      "A": "保持浏览器打开期间持续扫描所有访问页面",
+      "B": "用户主动发送指令时",
+      "C": "仅建立连接时读取一次，以后指令均不再读取",
+      "D": "只读取当前页URL，永不读取正文和结构"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "协议限定主动指令触发读取；不能因安装了扩展就假设所有浏览活动被持续收集。",
+    "distractors": {
+      "A": "协议声明不在后台持续采集浏览数据。",
+      "C": "协议按主动指令执行读取，不是只读一次。",
+      "D": "协议说明可能读取页面文本和元素结构。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "title": "ADP 浏览器助手插件服务协议",
+        "section": "2.5 数据处理与隐私风险",
+        "fact": "主动指令时读取当前页面，不持续后台采集。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-037",
+    "module": "M7",
+    "topic": "浏览器Token存储",
+    "type": "single",
+    "stem": "浏览器助手的连接 Token 按协议保存在哪里？",
+    "options": {
+      "A": "保存在目标业务网站的服务端会话中",
+      "B": "作为第三方工具共享凭证自动分发给其他网站",
+      "C": "仅存在单次推理的模型上下文中，浏览器不保存",
+      "D": "本地浏览器"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "本地保存仍需要妥善保管；存储位置不消除凭证被冒用的风险。",
+    "distractors": {
+      "A": "连接Token按协议仅存本地浏览器。",
+      "B": "协议不会上传至其他第三方。",
+      "C": "协议明确本地浏览器存储。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "title": "ADP 浏览器助手插件服务协议",
+        "section": "2.5 数据处理与隐私风险",
+        "fact": "连接Token仅存本地浏览器。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-038",
+    "module": "M7",
+    "topic": "第三方访问控制",
+    "type": "single",
+    "stem": "浏览器助手遇到第三方网站安全验证或访问限制，哪种方案违反其明确限制？",
+    "options": {
+      "A": "让助手绕过网站安全验证和访问控制",
+      "B": "通过网站允许的正式登录流程获得访问权限",
+      "C": "遇到权限限制后停止并申请合法账号访问",
+      "D": "在第三方允许范围内读取已授权页面内容"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "自动化能力不赋予规避第三方安全机制的权限；交付应尊重目标服务的访问边界。",
+    "distractors": {
+      "B": "正式授权登录不是绕过访问控制。",
+      "C": "合法申请权限与绕过是不同操作。",
+      "D": "授权范围内操作不属于明确禁止的绕过行为。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "title": "ADP 浏览器助手插件服务协议",
+        "section": "2.6 使用限制与合规要求",
+        "fact": "不得绕过第三方安全验证或访问控制。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-039",
+    "module": "M7",
+    "topic": "AI输出责任",
+    "type": "single",
+    "stem": "售前承诺“浏览器助手的 AI 输出天然准确、完整、合法”。应怎样评价？",
+    "options": {
+      "A": "准确，因为官方安全审核等同于输出合法性担保",
+      "B": "超出协议保证范围，不应如此承诺",
+      "C": "准确，平台返回成功状态即可证明事实完整",
+      "D": "准确，使用企业知识就可自动消除全部内容风险"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "交付说明应保留人工核验与业务判断空间，不能把操作成功等同于内容可靠。",
+    "distractors": {
+      "A": "官方没有这种无条件结果保证。",
+      "C": "执行状态不能证明生成内容正确完整。",
+      "D": "知识输入不能推出所有输出均安全准确。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "title": "ADP 浏览器助手插件服务协议",
+        "section": "五/特殊说明事项",
+        "fact": "协议不保证AI输出准确完整合法。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-040",
+    "module": "M7",
+    "topic": "浏览器不可逆操作",
+    "type": "single",
+    "stem": "让浏览器助手自动提交订单时，为什么不能默认“有问题再撤销”？",
+    "options": {
+      "A": "助手只生成操作计划，不会真实提交订单",
+      "B": "所有订单确认都先经平台统一模拟沙箱",
+      "C": "浏览器助手自带适用于所有网站的事务回滚",
+      "D": "部分订单确认等操作可能不可回滚"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "自动化会实施真实操作。高影响动作应在执行前明确意图和授权，不能依赖不存在的通用回滚。",
+    "distractors": {
+      "A": "协议说明可执行真实网页操作。",
+      "B": "协议未承诺目标业务操作都被沙箱模拟。",
+      "C": "没有跨网站通用回滚保证。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "title": "ADP 浏览器助手插件服务协议",
+        "section": "2.1 浏览器操作风险",
+        "fact": "表单提交与订单确认等可能不可撤销。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-041",
+    "module": "M7",
+    "topic": "执行环境责任",
+    "type": "single",
+    "stem": "Lighthouse OpenClaw Connector 连接的执行环境需要修复漏洞和管理配置，协议将这项责任放在哪一方？",
+    "options": {
+      "A": "由ADP统一补丁服务自动接管，用户无需维护",
+      "B": "只由模型服务商负责，因为所有指令来自模型",
+      "C": "连接鉴权成功即视为环境无需再管理",
+      "D": "用户或其授权环境管理方"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "连接通道不等于托管用户执行环境，部署交付仍要落实环境维护职责。",
+    "distractors": {
+      "A": "协议说明执行环境由用户负责。",
+      "B": "模型供应商不因此管理用户执行环境。",
+      "C": "通道认证不能替代环境安全维护。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "title": "Lighthouse OpenClaw Connector 插件服务协议",
+        "section": "2.3 执行环境安全风险",
+        "fact": "执行环境由用户配置管理维护。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-042",
+    "module": "M7",
+    "topic": "自定义模型授权",
+    "type": "single",
+    "stem": "通过 OpenClaw 接入自选第三方模型之前，应核实哪一项？",
+    "options": {
+      "A": "成功调用一次即证明取得完整商业使用权",
+      "B": "只需确认模型响应格式兼容，不必看授权",
+      "C": "模型使用授权及合规条件",
+      "D": "由Connector默认替接入方承担全部模型合规责任"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "用户自选模型的授权需要自己确认，平台连接能力不会替用户获得第三方权益许可。",
+    "distractors": {
+      "A": "连通测试不能证明第三方授权。",
+      "B": "技术兼容与使用授权是两个问题。",
+      "D": "协议明确自选模型责任由用户承担。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "title": "Lighthouse OpenClaw Connector 插件服务协议",
+        "section": "2.4 自定义模型使用与合规责任",
+        "fact": "自定义模型需确认充分授权与合规。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-043",
+    "module": "M7",
+    "topic": "模型幻觉与内容风险",
+    "type": "single",
+    "stem": "OpenClaw 自定义模型生成听起来可信但不准确的内容，属于协议提示的哪类风险？",
+    "options": {
+      "A": "模型幻觉等内容风险",
+      "B": "只要模型成功响应便应当作为已验证事实",
+      "C": "仅为工具连接层网络超时风险",
+      "D": "既然是自定义模型就不适用任何内容风险提示"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "输出流畅不能替代证据核验。协议提醒模型可能产生不准确或误导内容，接入方应管理相关风险。",
+    "distractors": {
+      "B": "响应成功不代表内容可信。",
+      "C": "内容幻觉与网络超时属于不同风险。",
+      "D": "协议特别提示自定义模型内容风险。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "title": "Lighthouse OpenClaw Connector 插件服务协议",
+        "section": "2.4 自定义模型使用与合规责任",
+        "fact": "自定义模型可能产生幻觉或误导内容。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-044",
+    "module": "M7",
+    "topic": "连接通道职责",
+    "type": "single",
+    "stem": "Connector 平台对调度请求承担的已列明职责是什么？",
+    "options": {
+      "A": "校验合法凭证并路由到授权执行环境",
+      "B": "确保第三方网站每个自动化任务都完整成功",
+      "C": "负责把用户终端全部数据纳入统一备份与回滚",
+      "D": "接管用户自定义模型的全部内容合法性判断"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "凭证校验和正确路由是通道职责，不能扩展成目标环境、第三方系统和业务结果的全面保证。",
+    "distractors": {
+      "B": "通道职责不包含该任务成功保证。",
+      "C": "协议未提供全面环境备份回滚职责。",
+      "D": "用户自行接入模型的责任不能转给通道。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "title": "Lighthouse OpenClaw Connector 插件服务协议",
+        "section": "三/调度与鉴权责任",
+        "fact": "平台校验Token并路由至授权环境。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-045",
+    "module": "M7",
+    "topic": "新员工默认访问",
+    "type": "single",
+    "stem": "企业希望新用户初次登录时暂不能访问任何空间，等待分配项目后再加入。应选哪个访问范围？",
+    "options": {
+      "A": "无法访问空间，需管理员手动添加",
+      "B": "默认空间",
+      "C": "给新用户默认绑定空间管理员",
+      "D": "先加入所有空间再按应用逐一撤销查看权限"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "采用等待管理员添加的范围，能够把企业身份建立与空间访问授权分开完成。",
+    "distractors": {
+      "B": "这会允许新用户首次登录访问默认空间。",
+      "C": "管理员授予范围过大，不符合先等待分配。",
+      "D": "不符合题设“初次登录无任何空间访问”目标。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122570",
+        "title": "企业管理",
+        "section": "功能介绍/企业管理设置",
+        "fact": "可设置新用户无空间权限待手动添加。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-046",
+    "module": "M7",
+    "topic": "企业用户创建入口",
+    "type": "single",
+    "stem": "企业管理中新建用户会进入哪个官方服务创建腾讯云子账号？",
+    "options": {
+      "A": "在当前空间角色管理中创建一个角色即完成子账号注册",
+      "B": "访问管理 CAM",
+      "C": "在应用端用户权限中录入visitor_biz_id",
+      "D": "在企业共享凭证中创建APIKey条目"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "企业用户管理依托腾讯云子账号体系，空间内角色与云账号创建是不同操作。",
+    "distractors": {
+      "A": "角色分组不等于创建云账号。",
+      "C": "终端用户标识与腾讯云子账号不同。",
+      "D": "保存服务授权不等于建立云身份。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122570",
+        "title": "企业管理",
+        "section": "功能介绍/新建用户",
+        "fact": "新建企业用户进入CAM创建子账号。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-047",
+    "module": "M7",
+    "topic": "主账号删除限制",
+    "type": "single",
+    "stem": "在企业管理的用户管理里，哪种删除边界符合文档？",
+    "options": {
+      "A": "只要当前操作者有管理员权限便可以删除主账号",
+      "B": "只支持移除角色绑定，不支持删除任何子账号",
+      "C": "支持删除子账号，不支持删除主账号",
+      "D": "主账号需先退出所有空间即可在这里删除"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "企业用户清理需区分账号类型，不应把一般子账号删除流程套用于主账号。",
+    "distractors": {
+      "A": "文档明确企业管理不支持删除主账号。",
+      "B": "文档明确支持删除子账号。",
+      "D": "文档没有这种解锁主账号删除的条件。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122570",
+        "title": "企业管理",
+        "section": "功能介绍/删除用户",
+        "fact": "企业管理不支持删除主账号。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-048",
+    "module": "M7",
+    "topic": "工作空间隔离",
+    "type": "single",
+    "stem": "两个项目不应互相看到对方空间中的应用和知识资产，ADP 的组织能力如何支持这一点？",
+    "options": {
+      "A": "同一企业的空间统一暴露全部数据，仅列表分组",
+      "B": "只调整应用端用户角色即可隔离开发者平台数据",
+      "C": "所有成员共享管理员账号，依靠操作规范区分项目",
+      "D": "不同工作空间之间数据隔离"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "工作空间是独立工作区域，项目隔离需要结合空间成员管理实施，不能只靠命名约定。",
+    "distractors": {
+      "A": "官方说明不同空间数据隔离。",
+      "B": "终端知识权限与平台空间数据边界不同。",
+      "C": "共享高权身份不能实现空间授权隔离。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122569",
+        "title": "企业、工作空间与权限概述",
+        "section": "什么是工作空间",
+        "fact": "不同工作空间数据隔离。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-049",
+    "module": "M7",
+    "topic": "功能与数据权限",
+    "type": "single",
+    "stem": "“可以执行发布操作”与“可以访问某个应用”分别属于哪两种权限概念？",
+    "options": {
+      "A": "前者为数据权限，后者为内容风险策略",
+      "B": "前者为应用端知识权限，后者为生成模型权限",
+      "C": "功能权限与数据权限",
+      "D": "两者都仅需控制用户能否登录腾讯云"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "一项描述能做什么，另一项描述能访问哪个资源；设计权限时两者都要核对。",
+    "distractors": {
+      "A": "操作功能和数据资源的定义被混淆。",
+      "B": "平台发布与资源访问不是终端知识检索授权。",
+      "D": "登录资格不等于具体资源和操作授权。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122569",
+        "title": "企业、工作空间与权限概述",
+        "section": "权限与用户/权限说明",
+        "fact": "功能权限管操作，数据权限管资源访问。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-050",
+    "module": "M7",
+    "topic": "成员多空间",
+    "type": "single",
+    "stem": "同一企业用户需要协作两个项目，能否同时加入两个工作空间？",
+    "options": {
+      "A": "不可以，企业用户与工作空间必须一对一",
+      "B": "可以，用户可被添加到多个空间",
+      "C": "可以，但加入第二个空间会自动离开第一个",
+      "D": "只要加入任意空间就自动成为所有空间成员"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "成员关系可按项目配置；有一个空间成员身份不会自动等同于所有空间访问权。",
+    "distractors": {
+      "A": "官方明确允许同一用户加入多个空间。",
+      "C": "文档没有自动互斥成员关系规则。",
+      "D": "多空间可加入不等于自动全空间授权。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122569",
+        "title": "企业、工作空间与权限概述",
+        "section": "权限与用户/用户说明",
+        "fact": "一个用户可加入多个工作空间。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-051",
+    "module": "M7",
+    "topic": "临时存储权限",
+    "type": "single",
+    "stem": "ADP 内置 COS 用哪种机制控制细粒度文件操作权限？",
+    "options": {
+      "A": "客户主账号固定密钥统一用于所有应用文件",
+      "B": "只有控制台登录校验，COS操作无需独立权限匹配",
+      "C": "平台临时密钥",
+      "D": "由文件扩展名直接决定访问者身份"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "文件访问需匹配临时授权范围，不能把平台存储当作所有调用者共享的无边界桶。",
+    "distractors": {
+      "A": "官方采用平台临时密钥细粒度管理。",
+      "B": "后续COS操作需临时密钥权限匹配。",
+      "D": "文件类型参与参数组合但不是身份认证替代。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116238",
+        "title": "腾讯云智能体开发平台操作 cos 指南",
+        "section": "核心差异说明/权限控制",
+        "fact": "内置COS以临时密钥细粒度隔离。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-052",
+    "module": "M7",
+    "topic": "存储参数跨场景",
+    "type": "single",
+    "stem": "将实时对话上传的 TypeKey:realtime 参数照搬到离线知识文档上传，文档如何评价？",
+    "options": {
+      "A": "文件后缀一致就可跨离线和实时场景复用",
+      "B": "实时参数比离线参数权限更低，因此任意混用安全",
+      "C": "只要申请成功，临时密钥可用于任意上传场景",
+      "D": "禁止跨场景混用，应按实际场景配置"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "临时密钥携带场景约束。复用代码时也必须核对权限参数，而不是照搬另一流程的配置。",
+    "distractors": {
+      "A": "权限场景不只由文件后缀决定。",
+      "B": "文档不定义这种可随意复用的权限包含关系。",
+      "C": "申请成功不等于场景权限完全通用。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116238",
+        "title": "腾讯云智能体开发平台操作 cos 指南",
+        "section": "常见问题",
+        "fact": "离线上传不可混用realtime参数。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-053",
+    "module": "M7",
+    "topic": "存储403排查",
+    "type": "single",
+    "stem": "通过 ADP 内置 COS 上传得到403权限不足，哪项是文档直接提示的排查方向？",
+    "options": {
+      "A": "直接更换为主账号长期密钥绕过临时权限",
+      "B": "不检查参数只增加重试次数直到授权通过",
+      "C": "检查临时密钥参数组合与场景是否匹配",
+      "D": "仅重新发布应用便能保证COS授权参数正确"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "403可能由参数组合导致，先核对所用临时授权是否覆盖当前操作，不应为排错无限扩大权限。",
+    "distractors": {
+      "A": "这不符合内置COS的权限流程。",
+      "B": "固定参数不匹配不是重试能解决的原因。",
+      "D": "发布不自动修复错误临时密钥参数组合。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116238",
+        "title": "腾讯云智能体开发平台操作 cos 指南",
+        "section": "操作流程对比",
+        "fact": "临时密钥参数组合错误可导致403。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-054",
+    "module": "M7",
+    "topic": "临时凭证有效期",
+    "type": "single",
+    "stem": "对旧版 DescribeStorageCredential（2023-11-30）返回值，哪个字段明确表示临时授权失效时间？",
+    "options": {
+      "A": "StartTime",
+      "B": "RequestId",
+      "C": "UploadPath",
+      "D": "ExpiredTime"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "调用方应区分身份、文件参数与有效时间，不应缓存临时凭证作为永久授权。",
+    "distractors": {
+      "A": "StartTime是授权开始时间而非失效时间。",
+      "B": "请求追踪标识不是到期时间。",
+      "C": "上传路径描述存储位置而非有效期。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/105050",
+        "title": "获取文件上传临时密钥",
+        "section": "3. 输出参数",
+        "fact": "ExpiredTime为失效时间Unix秒时间戳。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-04-28；旧版API 2023-11-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-055",
+    "module": "M7",
+    "topic": "可选字段与权限组合",
+    "type": "single",
+    "stem": "旧版 DescribeStorageCredential 中 BotBizId 标注为非必填，为什么不能简单断定所有场景都可省略？",
+    "options": {
+      "A": "字段标为非必填就保证任何参数组合具有相同权限",
+      "B": "省略应用ID会自动授予企业所有应用上传范围",
+      "C": "不同参数组合获取的权限不同",
+      "D": "只要FileType正确，其他字段均不影响权限"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "接口说明特别提示“非必填”不代表当前场景不需要填写，应按操作场景选择组合。",
+    "distractors": {
+      "A": "说明明确不同组合产生不同权限。",
+      "B": "文档没有省略即扩大全企业范围的保证。",
+      "D": "参数组合整体影响授权范围。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/105050",
+        "title": "获取文件上传临时密钥",
+        "section": "2. 输入参数",
+        "fact": "参数非必填不代表场景不需要填写。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-04-28；旧版API 2023-11-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-056",
+    "module": "M7",
+    "topic": "API请求身份",
+    "type": "single",
+    "stem": "腾讯云 API 的 V3 签名为何与访问密钥关联？",
+    "options": {
+      "A": "用于保证请求业务结果一定合法合规",
+      "B": "用于把普通调用者临时提升为资源所有者",
+      "C": "用于确保模型答案内容未出现幻觉",
+      "D": "用于验证请求来自持有有效密钥的主体"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "请求鉴权与生成内容质量是不同层面；签名先解决调用主体及请求可信传输的问题。",
+    "distractors": {
+      "A": "身份验证不保证业务语义合法。",
+      "B": "签名不授予额外资源权限。",
+      "C": "签名不评价AI事实正确性。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/105109",
+        "title": "签名方法 v3",
+        "section": "为什么要进行签名",
+        "fact": "签名用于验证请求者身份。",
+        "verifiedAt": "2026-10-09",
+        "version": "2024-12-25；旧版API栏目"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-057",
+    "module": "M7",
+    "topic": "请求完整性",
+    "type": "single",
+    "stem": "请求参数在传输途中被修改后，与原签名不一致，文档描述的服务端处理是什么？",
+    "options": {
+      "A": "只记录告警但仍按篡改后参数执行",
+      "B": "沿用原授权并自动重新为新参数签名",
+      "C": "仅要求用户稍后重置密码，本次先放行",
+      "D": "拒绝本次请求"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "服务端按接收参数验证签名；不一致说明请求未通过完整性检查，不能继续按原信任执行。",
+    "distractors": {
+      "A": "文档明确拒绝本次请求。",
+      "B": "服务端不替篡改后的请求重新背书。",
+      "C": "签名不一致不能因此放行本次。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/105109",
+        "title": "签名方法 v3",
+        "section": "为什么要进行签名",
+        "fact": "参数篡改导致验证不一致并拒绝。",
+        "verifiedAt": "2026-10-09",
+        "version": "2024-12-25；旧版API栏目"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-058",
+    "module": "M7",
+    "topic": "使用SDK与鉴权",
+    "type": "single",
+    "stem": "选用官方 SDK 调用云 API 后，怎样理解签名工作？",
+    "options": {
+      "A": "SDK内部使用平台公共身份，因此不再需要个人凭证",
+      "B": "只配置SecretId即可，SecretKey永远无需参与",
+      "C": "SDK能调用接口就自动获得所有资源授权",
+      "D": "开发工具可处理签名细节，请求仍需鉴权"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "推荐工具减少手工实现签名的负担，但不改变云 API 对请求身份验证的要求。",
+    "distractors": {
+      "A": "SDK封装不取消调用身份凭证。",
+      "B": "SDK仍需完成规定的凭证签名流程。",
+      "C": "开发工具不扩大账号权限范围。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/105109",
+        "title": "签名方法 v3",
+        "section": "签名方法 v3/概述",
+        "fact": "推荐SDK等工具免手写签名，请求仍验证身份。",
+        "verifiedAt": "2026-10-09",
+        "version": "2024-12-25；旧版API栏目"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-059",
+    "module": "M7",
+    "topic": "最小权限",
+    "type": "single",
+    "stem": "为 ADP 项目编写的运维程序只需读取某项云资源。设计 CAM 授权时最合理的原则是什么？",
+    "options": {
+      "A": "一次授满管理权限，依靠代码约定只执行读取",
+      "B": "读取程序直接共用项目管理员密钥以保持兼容",
+      "C": "只授完成任务所需的最小权限",
+      "D": "只限定资源名称，不限制可执行操作"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "应围绕操作和资源范围授权；程序能运行并不能证明过宽权限合理。",
+    "distractors": {
+      "A": "代码约定不能代替最小权限。",
+      "B": "高权凭证会扩大泄露影响。",
+      "D": "最小权限还应匹配实际所需操作。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/10592",
+        "title": "安全实践教程",
+        "section": "权限安全/最小权限原则",
+        "fact": "仅授执行任务所需权限。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-04-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-060",
+    "module": "M7",
+    "topic": "离职权限回收",
+    "type": "single",
+    "stem": "项目管理员离职后，哪项属于官方安全实践明确要求关注的动作？",
+    "options": {
+      "A": "仅注销当前控制台会话，保留该账号和原访问凭证",
+      "B": "只撤销控制台登录密码，保留原API密钥继续有效",
+      "C": "回收资源访问并禁用或删除其管理员账户",
+      "D": "仅从某个应用协作名单移除，视为云端权限全收回"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "离职处理应回收实际云资源访问权限并禁用或删除管理员账户；单次会话退出、仅处理一类凭证或仅移除应用成员，都不能代表所有云端授权已回收。",
+    "distractors": {
+      "A": "注销一次会话不等于禁用账户或回收资源权限。",
+      "B": "只处理控制台登录不能代表编程访问权限已回收。",
+      "D": "应用或空间移除不等于全云身份回收。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/10592",
+        "title": "安全实践教程",
+        "section": "安全设置概述/身份安全",
+        "fact": "离职时应回收权限并清除管理员账户。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-04-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-061",
+    "module": "M7",
+    "topic": "MFA防护范围",
+    "type": "single",
+    "stem": "在云账号安全方案中，MFA 最直接增强哪类动作的保护？",
+    "options": {
+      "A": "替代所有角色和资源授权检查",
+      "B": "阻止任何已认证用户访问错误知识范围",
+      "C": "确保连接器返回的业务数据符合事实",
+      "D": "账号登录和敏感操作的二次校验"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "MFA用于增加身份验证强度，仍需结合合理权限，不能当作内容准确性或数据授权的替代品。",
+    "distractors": {
+      "A": "MFA认证强度不能替代授权。",
+      "B": "认证通过仍可能权限配置过宽。",
+      "C": "MFA不验证业务数据内容。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/10592",
+        "title": "安全实践教程",
+        "section": "权限安全/开启 MFA 保护",
+        "fact": "登录和敏感操作可开启二次校验。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-04-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-062",
+    "module": "M7",
+    "topic": "SecretKey保存时机",
+    "type": "single",
+    "stem": "新建子账号 API 密钥后没有保存 SecretKey。文档允许以后通过密钥列表随时查询它吗？",
+    "options": {
+      "A": "不允许，应在创建时妥善保存",
+      "B": "允许，后续SecretId查询页面会一直显示SecretKey",
+      "C": "允许，下载凭证状态报告会给出SecretKey明文",
+      "D": "允许，重新启用旧密钥便会再次展示原SecretKey"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "创建窗口是保存敏感密钥的重要时机；后续可查询的 SecretId 与不可再次查询的 SecretKey 要区分。",
+    "distractors": {
+      "B": "文档已关闭后续查询SecretKey。",
+      "C": "状态报告不等于密钥恢复接口。",
+      "D": "启用操作没有重新展示原秘密的保证。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/96157",
+        "title": "腾讯云 API 密钥升级公告",
+        "section": "升级说明",
+        "fact": "自2023年11月30日起，所有主账号和子账号的SecretKey仅在创建时查看保存，关闭后续查询。",
+        "verifiedAt": "2026-10-09",
+        "version": "2023-11-28"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-063",
+    "module": "M7",
+    "topic": "禁用与删除密钥",
+    "type": "single",
+    "stem": "清理一条已有的主账号 API 密钥，计划先暂时阻止它继续调用。执行“禁用”会产生什么效果？",
+    "options": {
+      "A": "只阻止新应用引用，已使用的应用仍可继续调用",
+      "B": "仅撤销控制台密码，API访问不受影响",
+      "C": "腾讯云拒绝使用该密钥的请求",
+      "D": "把密钥降为只读，已有读取调用不受影响"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "禁用会使腾讯云拒绝使用该密钥的所有请求，因此应先确认业务依赖。本题针对已有密钥的清理，不建议为日常工作新建或使用主账号密钥。",
+    "distractors": {
+      "A": "禁用后拒绝该密钥所有请求。",
+      "B": "API密钥禁用与控制台密码不同。",
+      "D": "禁用不是将策略自动改成只读。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/40488",
+        "title": "主账号访问密钥管理",
+        "section": "禁用/启用主账号 API 密钥；操作场景/注意",
+        "fact": "禁用后拒绝当前密钥的所有请求；官方不建议为日常工作创建和使用主账号访问密钥。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-05-09"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-064",
+    "module": "M7",
+    "topic": "鉴权与业务错误区分",
+    "type": "single",
+    "stem": "CloudAudit 事件的 errorCode 非0，而不是仅 apiErrorCode 非0，首先指向哪类异常？",
+    "options": {
+      "A": "主要表明API业务逻辑异常，CAM已经通过",
+      "B": "仅表明调用耗时超过应用自定义阈值",
+      "C": "CAM 权限判断或签名鉴权异常",
+      "D": "表明内容安全审核命中了违规词"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "需区分身份/权限判断失败与后续 API 业务执行失败，二者处理方向不同。",
+    "distractors": {
+      "A": "文档区分errorCode的CAM异常与apiErrorCode业务异常。",
+      "B": "该字段不是应用耗时指标。",
+      "D": "审计鉴权错误不等同于内容审核分类。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/629/56259",
+        "title": "查看操作记录事件详情",
+        "section": "查看事件详情",
+        "fact": "errorCode非0代表CAM判断异常。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-23"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-065",
+    "module": "M7",
+    "topic": "审计请求关联",
+    "type": "single",
+    "stem": "已拿到一次失败调用的请求 ID，要在操作审计支持的记录中定位相应事件，最直接的筛选项是什么？",
+    "options": {
+      "A": "请求 ID",
+      "B": "只按应用展示名称搜索并假定结果唯一",
+      "C": "只查看最后一次登录时间",
+      "D": "仅下载用户凭证状态报告"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "请求 ID 为调用链路关联提供直接线索；能否检索到还应取决于该事件是否被记录。",
+    "distractors": {
+      "B": "应用名称不能直接唯一定位该次调用。",
+      "C": "登录时间不能关联指定API请求。",
+      "D": "状态报告不是逐次操作事件记录。"
+    },
+    "difficulty": "基础",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/629/56259",
+        "title": "查看操作记录事件详情",
+        "section": "查看操作记录",
+        "fact": "操作审计支持请求ID筛选。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-23"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-066",
+    "module": "M7",
+    "topic": "凭证状态审计",
+    "type": "single",
+    "stem": "要统一检查腾讯云子账号的登录密码、访问密钥和安全设置状态，官方提供哪类报告？",
+    "options": {
+      "A": "用户凭证报告",
+      "B": "操作审计单次事件详情",
+      "C": "某一应用的对话日志",
+      "D": "导出全部SecretKey明文列表"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "报告用于观察凭证和安全配置状态并支持合规审计，不应理解为取回所有秘密值。",
+    "distractors": {
+      "B": "事件详情不汇总所有子账号凭证状态。",
+      "C": "应用对话日志不覆盖云身份安全配置。",
+      "D": "状态审计不需要也不是明文秘密清单。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/65676",
+        "title": "下载安全分析报告",
+        "section": "操作场景",
+        "fact": "用户凭证报告包含子账号凭证状态。",
+        "verifiedAt": "2026-10-09",
+        "version": "2024-12-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-067",
+    "module": "M7",
+    "topic": "角色临时身份",
+    "type": "single",
+    "stem": "CAM 角色与普通实体用户的一个重要区别是什么？",
+    "options": {
+      "A": "角色也持有一组永久SecretId和SecretKey供多人共用",
+      "B": "角色无法被授予策略，只能继承用户显示信息",
+      "C": "角色只允许绑定唯一主账号且不能用于产品服务",
+      "D": "角色没有关联的持久密码或访问密钥，担任时使用临时凭证"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "角色把授权角色与固定用户秘密分开，可用于临时访问场景，不能当作长期密钥容器。",
+    "distractors": {
+      "A": "官方描述角色无关联持久凭证。",
+      "B": "角色可以被授予策略。",
+      "C": "官方角色载体不限唯一账号。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/19420",
+        "title": "角色概述",
+        "section": "什么是角色",
+        "fact": "角色是虚拟用户，担任角色获得临时凭证。",
+        "verifiedAt": "2026-10-09",
+        "version": "2024-10-12"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-068",
+    "module": "M7",
+    "topic": "新成员默认授权检查",
+    "type": "multiple",
+    "stem": "新成员首次被加入工作空间后，以下哪些默认行为值得在上线权限检查中确认？",
+    "options": {
+      "A": "默认对空间全部数据均无权限，必须逐项放行",
+      "B": "默认拥有部分功能权限",
+      "C": "默认获得预置管理员角色以便完成初始化",
+      "D": "默认可查看空间内他人创建的数据"
+    },
+    "answer": [
+      "B",
+      "D"
+    ],
+    "explanation": "新成员并非默认全拒绝。交付时应核对实际默认授权与企业的最小访问要求，必要时调整。",
+    "distractors": {
+      "A": "文档明确首次加入有默认他人数据可查看权限。",
+      "C": "新成员默认授权并非管理员角色。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "title": "平台端用户权限",
+        "section": "功能说明/功能权限和数据权限",
+        "fact": "首次加入空间默认部分功能权限及他人数据查看权限。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-069",
+    "module": "M7",
+    "topic": "管理员角色成员管理",
+    "type": "multiple",
+    "stem": "关于预置空间管理员角色的成员管理，下列哪些说法符合文档？",
+    "options": {
+      "A": "可以向该角色添加当前空间成员",
+      "B": "移除成员必须先删除预置管理员角色",
+      "C": "加入管理员角色后可再按用户分配覆盖为只读",
+      "D": "可以从该角色移除用户"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "角色不能修改或删除，不代表成员不能调整。应通过角色成员关系控制谁持有该全权身份。",
+    "distractors": {
+      "B": "角色不可删除而成员可以管理。",
+      "C": "文档说明管理员角色成员不支持该按用户配置。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "title": "平台端用户权限",
+        "section": "功能说明/角色管理",
+        "fact": "预置管理员可添加或移除角色成员。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-070",
+    "module": "M7",
+    "topic": "角色删除影响",
+    "type": "multiple",
+    "stem": "删除一个普通自定义角色前，应确认哪些后果？",
+    "options": {
+      "A": "删除角色自动清空这些用户的所有直接授权",
+      "B": "角色删除仅隐藏名称，其权限继续保留到下次发布",
+      "C": "该角色中的用户不再通过它获得权限",
+      "D": "该角色删除后不可恢复"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "角色删除的直接范围是该角色及其授权贡献；其他授权要单独检查。不可恢复性要求操作前确认用途。",
+    "distractors": {
+      "A": "角色授权贡献与个人直接授权不同。",
+      "B": "文档说明用户不再拥有该角色的权限。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122574",
+        "title": "平台端用户权限",
+        "section": "功能说明/角色管理",
+        "fact": "普通角色删除后不可恢复且失去该角色授权。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-071",
+    "module": "M7",
+    "topic": "应用权限配置作用域",
+    "type": "multiple",
+    "stem": "一个员工在应用甲被限定为只查产品知识。应用乙也面向该员工开放。哪些判断正确？",
+    "options": {
+      "A": "配置在企业级生效，乙直接继承甲的范围",
+      "B": "两个应用使用同一知识库便共用全部用户角色配置",
+      "C": "不能仅凭甲的配置断定乙具有同样隔离",
+      "D": "应用甲与应用乙的权限配置相互独立"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "应用独立配置意味着每个入口都需要检查授权；身份相同并不保证应用侧知识范围配置相同。",
+    "distractors": {
+      "A": "应用端权限按应用独立配置。",
+      "B": "共享知识来源不等于共用应用权限配置。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "title": "应用端用户权限说明",
+        "section": "功能入口/注意事项",
+        "fact": "应用端权限按应用维度独立生效。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-26"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-072",
+    "module": "M7",
+    "topic": "外部权限请求内容",
+    "type": "multiple",
+    "stem": "ADP 召回知识后调用外部权限系统，文档列举的请求信息包括哪些？",
+    "options": {
+      "A": "只传模型生成后的答案文本即可决定切片访问权",
+      "B": "无需传任何用户信息，只用知识库是否公开判断",
+      "C": "当前用户的标识或约定信息",
+      "D": "召回候选切片的标识信息"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "授权系统要把主体与候选资源联系起来；实际字段及鉴权方式仍需与平台方约定。",
+    "distractors": {
+      "A": "该方案在生成前判断候选切片权限。",
+      "B": "协议描述请求包含当前用户信息以便匹配企业规则。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "title": "应用端用户权限说明",
+        "section": "方案二/工作原理",
+        "fact": "外部鉴权请求包含用户信息和候选切片标识。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-26"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-073",
+    "module": "M7",
+    "topic": "角色权限维护与迁移验证",
+    "type": "multiple",
+    "stem": "采用角色控制权限并准备切换方案时，文档要求或建议哪些工作？",
+    "options": {
+      "A": "提前完成新方案配置与验证",
+      "B": "保持用户角色与知识范围映射同步更新",
+      "C": "建议在非高峰时段切换",
+      "D": "切换后可以不验证，因为旧方案会继续并行兜底"
+    },
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "同步映射避免陈旧授权，提前验证与低峰切换减少迁移风险；这不是新旧方案叠加运行的承诺。",
+    "distractors": {
+      "D": "同一应用仅一种方式生效，不能依赖旧规则并行。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/119281",
+        "title": "应用端用户权限说明",
+        "section": "注意事项",
+        "fact": "角色映射需同步；切换前验证并建议低峰执行。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-26"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-074",
+    "module": "M7",
+    "topic": "模糊匹配归一化",
+    "type": "multiple",
+    "stem": "按内容安全文档，模糊匹配处理待审核文本时包括哪些转换？",
+    "options": {
+      "A": "移除空格及特殊符号",
+      "B": "中文繁体转简体",
+      "C": "保留空格与特殊符号，要求词条逐字符相同",
+      "D": "英文字母统一为小写"
+    },
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "模糊词库要考虑归一化后的输入形态，不能照搬依赖大小写或分隔符区别的精确规则。",
+    "distractors": {
+      "C": "模糊归一化会移除这些字符，逐字符匹配更接近精确模式。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "title": "内容安全",
+        "section": "关键词库/模糊匹配",
+        "fact": "模糊匹配包含大小写、繁简及空格符号归一化。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-075",
+    "module": "M7",
+    "topic": "脱敏公开支持范围",
+    "type": "multiple",
+    "stem": "以下哪些信息类型被 ADP 内容安全文档明确列入脱敏支持范围？",
+    "options": {
+      "A": "企业自行标注的任意商业秘密均自动获得同等识别保障",
+      "B": "身份证号",
+      "C": "银行账户",
+      "D": "地址"
+    },
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "已列出的隐私类型可据此配置和验证；不能把有限类型覆盖扩展成一切敏感信息的自动保护。",
+    "distractors": {
+      "A": "文档只列特定隐私类型，没有任意秘密保证。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "title": "内容安全",
+        "section": "应用安全设置/信息脱敏",
+        "fact": "文档脱敏范围包含银行账户、身份证号、地址。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-076",
+    "module": "M7",
+    "topic": "关键词分类与审核方式",
+    "type": "multiple",
+    "stem": "关于关键词命中后的机审标签，下列哪些说法符合文档？",
+    "options": {
+      "A": "用于命中分类和后续统计分析",
+      "B": "用户可以像自定义词库一样自由新建机审标签",
+      "C": "标签由系统预设",
+      "D": "机审标签直接决定用户可检索的知识范围"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "风险分类有助于复盘，不能与用户角色、知识范围等权限标签混用。",
+    "distractors": {
+      "B": "词库可自定义不代表机审标签也可自定义。",
+      "D": "风险分类标签不等于知识授权角色。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/125070",
+        "title": "内容安全",
+        "section": "关键词库/新建关键词",
+        "fact": "机审标签是系统预设分类，支持统计分析。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-077",
+    "module": "M7",
+    "topic": "共享凭证授权入口",
+    "type": "multiple",
+    "stem": "关于连接器/工具凭证共享的管理入口，下列哪些说法正确？",
+    "options": {
+      "A": "能引用共享凭证的成员就自动拥有再次共享管理权",
+      "B": "内置工具的凭证共享由企业管理员统一控制",
+      "C": "自定义工具由创建者在工具详情页共享",
+      "D": "凭证可脱离原连接器单独给任意工具使用"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "共享路径由工具来源决定；不能以能调用一个工具为理由推断拥有它的凭证共享管理权。",
+    "distractors": {
+      "A": "引用权不等于创建者或企业管理员共享权。",
+      "D": "凭证不能脱离连接器或工具独立使用。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "title": "授权凭证",
+        "section": "7. 凭证共享",
+        "fact": "自定义与内置工具使用不同凭证共享管理入口。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-078",
+    "module": "M7",
+    "topic": "凭证引用与业务参数",
+    "type": "multiple",
+    "stem": "在工作流连接器与工具节点选择已有凭证后，下列哪些判断正确？",
+    "options": {
+      "A": "Header、Query、Body等非授权业务参数仍按节点要求配置",
+      "B": "相关授权字段使用被引用凭证信息",
+      "C": "已有凭证会自动填充所有Header、Query、Body业务字段",
+      "D": "所有工具的已有凭证构成一个不受对象限制的公用池"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "统一凭证减少重复授权配置，但不会把节点业务输入也自动补齐。",
+    "distractors": {
+      "C": "授权配置不代替非授权业务参数。",
+      "D": "可引用列表还受当前连接器工具及权限范围约束。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "title": "授权凭证",
+        "section": "6.3 工作流中引用",
+        "fact": "授权字段引用凭证，非授权业务参数仍需配置。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-079",
+    "module": "M7",
+    "topic": "凭证秘密与对象匹配",
+    "type": "multiple",
+    "stem": "团队准备把授权凭证交给业务应用引用。哪些边界符合文档？",
+    "options": {
+      "A": "具有应用可编辑权限就必然可导出所引用密钥明文",
+      "B": "普通引用场景不明文展示敏感密钥",
+      "C": "可选列表仅展示当前工具下有权限引用的凭证",
+      "D": "凭证在同一企业内创建就自动对全部空间可引用"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "引用授权并不意味着公开秘密；工具归属和用户可引用范围共同限制凭证使用。",
+    "distractors": {
+      "A": "可编辑应用不意味着能导出敏感值。",
+      "D": "凭证有可见和可引用范围。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138107",
+        "title": "授权凭证",
+        "section": "6.1 智能工作台中引用/8 权限与安全说明",
+        "fact": "引用不展示敏感密钥且受工具与权限筛选。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-080",
+    "module": "M7",
+    "topic": "企业共享Skills范围与审批",
+    "type": "multiple",
+    "stem": "把已上架的自定义 Skill 推广为企业共享 Skill，哪些步骤或结果符合文档？",
+    "options": {
+      "A": "任何仅有查看权限的成员都可替编辑者发起该Skill共享",
+      "B": "由其编辑者发起企业共享审批",
+      "C": "审核通过即允许其他腾讯云企业直接发现并使用",
+      "D": "审批通过后向本企业所有空间开放"
+    },
+    "answer": [
+      "B",
+      "D"
+    ],
+    "explanation": "扩展复用范围需要明确的企业审批；企业共享不是互联网公开发布。",
+    "distractors": {
+      "A": "官方由其编辑者发起企业共享。",
+      "C": "企业共享没有扩大到其他企业。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "title": "Skills 介绍",
+        "section": "Skills 的三种类别",
+        "fact": "编辑者发起共享审批，通过后企业所有空间可用。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-081",
+    "module": "M7",
+    "topic": "原生Skills API凭证",
+    "type": "multiple",
+    "stem": "调用使用 ADP 插件 API 的原生 Skills 时，哪些描述有官方依据？",
+    "options": {
+      "A": "文档给出的入口为主账号登录后企业管理中的密钥管理",
+      "B": "调用前需获取API密钥",
+      "C": "Skill已通过安全扫描即可免除后续API鉴权",
+      "D": "只要当前用户属于空间成员便无需获取API密钥"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "原生技能审核解决上架可信性，接口密钥解决调用身份；两层要求不能互相替代。",
+    "distractors": {
+      "C": "安全审核不代替调用凭证。",
+      "D": "空间成员身份不替代文档要求的API密钥。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "title": "Skills 介绍",
+        "section": "Skills 的 API 密钥",
+        "fact": "原生Skills调用插件API前需按官方入口获取密钥。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-082",
+    "module": "M7",
+    "topic": "页面数据处理边界",
+    "type": "multiple",
+    "stem": "使用 ADP 浏览器助手读取业务网页时，哪些说法符合协议？",
+    "options": {
+      "A": "对话及页面内容按ADP协议与数据策略存储或清除",
+      "B": "仅在本地浏览器完成所有推理，页面信息绝不传出",
+      "C": "必要页面信息可能传给智能体进行推理",
+      "D": "页面正文一经读取就保证立即删除且不适用ADP数据策略"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "主动触发读取不等于纯浏览器内处理。数据评估应关注推理链路及适用协议，而非自行假设零传输或即时删除。",
+    "distractors": {
+      "B": "必要页面信息可能传输至智能体。",
+      "D": "文档要求按协议和数据策略处理，没有该保证。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "title": "ADP 浏览器助手插件服务协议",
+        "section": "2.5 数据处理与隐私风险",
+        "fact": "必要页面信息传入智能体，数据按ADP约定处理。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-083",
+    "module": "M7",
+    "topic": "浏览器执行与第三方变更",
+    "type": "multiple",
+    "stem": "浏览器自动化任务验收应考虑哪些协议明确提示的风险？",
+    "options": {
+      "A": "第三方页面结构或服务规则变化会影响执行",
+      "B": "网页结构变动后扩展保证自动适配，无需重新验证",
+      "C": "自然语言指令可能被误解",
+      "D": "只要鉴权通过，用户自然语言意图就保证被精确执行"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "用户意图与实际页面状态是两条独立的不确定来源，应分别核对指令表达和环境变化。",
+    "distractors": {
+      "B": "协议没有全部自动适配保证。",
+      "D": "鉴权与AI指令理解准确性不同。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132714",
+        "title": "ADP 浏览器助手插件服务协议",
+        "section": "2.2 指令理解与执行偏差风险/2.3 网页环境与第三方服务风险",
+        "fact": "存在指令误解风险且目标网页不受平台控制。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-06-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-084",
+    "module": "M7",
+    "topic": "授权凭证生命周期责任",
+    "type": "multiple",
+    "stem": "针对 OpenClaw Connector 的Token与密钥管理，用户需承担哪些职责？",
+    "options": {
+      "A": "妥善保管并防止误授权或内部误用",
+      "B": "Token通过合法校验即可免除组织对误授权的管理责任",
+      "C": "管理凭证轮换与撤销",
+      "D": "已建立的连接无需任何凭证撤销机制"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "连接通道只根据合法凭证处理请求，组织必须控制谁能持有、使用和撤销这些凭证。",
+    "distractors": {
+      "B": "合法凭证可能被冒用，管理责任仍在。",
+      "D": "协议明确用户负责撤销等生命周期管理。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "title": "Lighthouse OpenClaw Connector 插件服务协议",
+        "section": "2.6 授权滥用与管理风险",
+        "fact": "用户负责凭证保管、使用、轮换和撤销。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-085",
+    "module": "M7",
+    "topic": "用户数据与隐私管控",
+    "type": "multiple",
+    "stem": "通过 OpenClaw Connector 操作含内部敏感数据的环境，协议提出哪些用户侧管控措施？",
+    "options": {
+      "A": "加强账号权限控制与数据安全监测",
+      "B": "插件不主动采集代表所有用户数据处理均自动合规",
+      "C": "制定数据安全事件应急响应预案",
+      "D": "授权了一个执行环境就视为授权任意用户读取其全部敏感数据"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "“不主动采集”是插件行为声明，不是对执行环境所有数据操作的合规豁免。",
+    "distractors": {
+      "B": "行为声明不免除用户数据责任。",
+      "D": "环境连接授权不能代替具体用户访问控制。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "title": "Lighthouse OpenClaw Connector 插件服务协议",
+        "section": "2.7 数据处理与隐私风险",
+        "fact": "用户需账号权限控制、监测及应急响应预案。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-086",
+    "module": "M7",
+    "topic": "任务失败与日志边界",
+    "type": "multiple",
+    "stem": "以下哪些说法符合 Lighthouse OpenClaw Connector 协议？",
+    "options": {
+      "A": "会记录调度时间、请求标识和调度状态等运行日志",
+      "B": "合法Token校验通过即保证长任务及时完整成功",
+      "C": "网络或执行环境异常可导致任务中断",
+      "D": "不主动采集等价于平台不保存任何调度运行日志"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "不主动采集业务环境数据与保留运行排查日志不是同一个概念；不能将前者解释为无痕运行。",
+    "distractors": {
+      "B": "网络、环境及第三方仍可能使任务失败。",
+      "D": "协议仍列有运行排查日志。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128396",
+        "title": "Lighthouse OpenClaw Connector 插件服务协议",
+        "section": "2.8 中断与失败风险/3.2 日志存储",
+        "fact": "任务可能中断；平台保留调度相关日志。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-02-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-087",
+    "module": "M7",
+    "topic": "默认空间与自定义空间",
+    "type": "multiple",
+    "stem": "关于 ADP 默认工作空间，下列哪些说法符合官方说明？",
+    "options": {
+      "A": "产品初始化时会创建默认工作空间",
+      "B": "企业管理员可以像自定义空间一样删除默认空间",
+      "C": "默认工作空间不支持删除",
+      "D": "默认空间只在管理员手工创建后才存在"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "默认空间有特殊生命周期限制，不能把自定义空间的清理思路直接套用。",
+    "distractors": {
+      "B": "默认空间不支持删除。",
+      "D": "产品初始化会自动建立默认空间。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122569",
+        "title": "企业、工作空间与权限概述",
+        "section": "什么是工作空间",
+        "fact": "默认空间初始化创建且不能删除。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-11-14"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-088",
+    "module": "M7",
+    "topic": "云账号实体类型",
+    "type": "multiple",
+    "stem": "学习通用 CAM 身份体系时，关于消息接收人与协作者，哪些说法正确？（本题不表示这些身份均可加入 ADP 工作空间。）",
+    "options": {
+      "A": "消息接收人仅有消息接收功能",
+      "B": "给消息接收人设置收件渠道即可获得API编程访问",
+      "C": "协作者必须放弃自身主账号身份才能被其他账号授权",
+      "D": "协作者原本拥有自己的主账号身份，可作为另一主账号的子账号"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "在通用 CAM 身份体系中，消息接收人仅接收消息；协作者保留自己的主账号身份，可作为另一主账号的子账号接受授权。具体产品是否支持某类身份，还需核对该产品的接入限制。",
+    "distractors": {
+      "B": "消息接收人只有消息功能。",
+      "C": "官方说明可作为协作者并切换回主账号身份。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/13665",
+        "title": "用户类型",
+        "section": "用户类型",
+        "fact": "消息接收人仅收消息；协作者保留自身主账号身份。",
+        "verifiedAt": "2026-10-09",
+        "version": "2023-08-25"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-089",
+    "module": "M7",
+    "topic": "同职能批量授权",
+    "type": "multiple",
+    "stem": "多个工程师承担相同云资源职责，使用 CAM 用户组有哪些符合官方说明的作用？",
+    "options": {
+      "A": "通过用户组批量关联授权策略",
+      "B": "将相同职能子账号分组管理",
+      "C": "一个组只要叫管理员就自动获得全部资源权限",
+      "D": "组内成员无需关联策略就可以管理主账号全部资源"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "组提供统一管理授权的结构，实际权限仍来自所关联的策略，不能把“已加入组”理解为无限权限。",
+    "distractors": {
+      "C": "组名不会自动替代策略授权。",
+      "D": "组授权范围仍由关联策略决定。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/14985",
+        "title": "新建用户组",
+        "section": "操作场景",
+        "fact": "用户组支持同职能用户分组与批量授权。",
+        "verifiedAt": "2026-10-09",
+        "version": "2024-10-12"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-090",
+    "module": "M7",
+    "topic": "条件访问适用边界",
+    "type": "multiple",
+    "stem": "设计 CAM 来源 IP 限制时，哪些做法有官方依据？",
+    "options": {
+      "A": "CAM支持IP条件就能断定所有ADP接口都一定支持",
+      "B": "在自定义策略条件中配置IP约束",
+      "C": "只限制控制台登录IP便可假定所有API同样受该策略限制",
+      "D": "先确认目标产品支持按IP限制访问"
+    },
+    "answer": [
+      "B",
+      "D"
+    ],
+    "explanation": "来源条件能缩小授权生效范围，但产品是否支持该条件必须先核验；本题不推断 ADP 全接口支持。",
+    "distractors": {
+      "A": "官方前提要求逐产品确认支持情况。",
+      "C": "应按具体产品和策略适用范围验证，不能直接外推。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/38037",
+        "title": "限制 IP 访问",
+        "section": "前提条件/操作步骤",
+        "fact": "IP限制需产品支持并配置策略条件。",
+        "verifiedAt": "2026-10-09",
+        "version": "2024-10-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-091",
+    "module": "M7",
+    "topic": "授权策略元素分工",
+    "type": "multiple",
+    "stem": "审核一条 CAM 自定义策略时，哪些元素含义配对正确？",
+    "options": {
+      "A": "action描述允许或拒绝的操作",
+      "B": "effect用于定义多条策略发生冲突时的执行顺序",
+      "C": "condition描述策略生效约束",
+      "D": "resource描述授权的具体资源"
+    },
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "action、resource 和 condition 分别描述操作、资源和生效约束；effect 表示允许或显式拒绝，不表示多条策略的执行先后顺序。",
+    "distractors": {
+      "B": "effect描述允许或显式拒绝，而非执行顺序。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/10603",
+        "title": "元素参考概述",
+        "section": "4 操作/5 资源/6 生效条件",
+        "fact": "action管操作，resource管资源，condition管条件。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-09-20"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-092",
+    "module": "M7",
+    "topic": "凭证报告信号解读",
+    "type": "multiple",
+    "stem": "用户凭证报告中，哪些字段适合用于检查身份安全设置？",
+    "options": {
+      "A": "OperationProtectionActive",
+      "B": "LoginProtectionActive",
+      "C": "这些字段能代替逐次云API操作日志，重建全部操作过程",
+      "D": "MFADeviceActive"
+    },
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "这些字段反映保护配置是否启用，不能据此重建每次调用的执行内容，需要与操作审计区分。",
+    "distractors": {
+      "C": "配置状态与操作事件是不同证据。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/65676",
+        "title": "下载安全分析报告",
+        "section": "报告格式",
+        "fact": "报告包含MFA、登录保护及操作保护字段。",
+        "verifiedAt": "2026-10-09",
+        "version": "2024-12-10"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-093",
+    "module": "M7",
+    "topic": "审计身份保留线索",
+    "type": "multiple",
+    "stem": "审计列表里的用户或角色后来已被删除，文档描述的显示方式有哪些？",
+    "options": {
+      "A": "已删除子用户显示子用户ID",
+      "B": "已删除角色显示角色ID",
+      "C": "身份删除后所有历史事件中的身份字段都会清空",
+      "D": "历史记录自动归属给接任的同名管理员"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "身份显示名与稳定ID要区分；删除当前身份不代表审计中的历史主体线索自动更换。",
+    "distractors": {
+      "C": "文档说明保留对应ID显示。",
+      "D": "稳定ID不能被同名新身份取代。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/629/56259",
+        "title": "查看操作记录事件详情",
+        "section": "查看操作记录",
+        "fact": "已删除用户和角色在审计中显示相应ID。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-07-23"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-094",
+    "module": "M7",
+    "topic": "内置COS归属边界",
+    "type": "multiple",
+    "stem": "依据 ADP 操作 cos 指南，下列哪些判断正确？",
+    "options": {
+      "A": "该流程不支持把文件上传到客户自购COS",
+      "B": "先自购COS是使用ADP内置上传的必备条件",
+      "C": "使用ADP内置存储无需单独购买COS",
+      "D": "把返回的Bucket替换为自购桶即可保持同样临时权限"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "内置服务的存储归属与授权流程是配套设计，不能把自购桶参数直接替换进去。",
+    "distractors": {
+      "B": "官方明确不需单独购买。",
+      "D": "授权不能任意跨桶迁移。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/116238",
+        "title": "腾讯云智能体开发平台操作 cos 指南",
+        "section": "核心差异说明/存储归属",
+        "fact": "ADP内置COS不需自购且不支持上传到自购COS。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-08-05"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-095",
+    "module": "M7",
+    "topic": "文件上传场景与公开参数",
+    "type": "multiple",
+    "stem": "按旧版 DescribeStorageCredential（2023-11-30）参数说明，哪些组合方向正确？",
+    "options": {
+      "A": "所有文件统一设IsPublic=true最符合最小权限",
+      "B": "文档库文件上传的IsPublic为false",
+      "C": "对话端图片上传的IsPublic为true",
+      "D": "只要申请的是realtime类型，IsPublic就不影响场景"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "IsPublic 应依据官方规定的具体场景配置，不应一律开启，也不能凭参数名猜测全部用途。",
+    "distractors": {
+      "A": "文档明确普通文件使用false。",
+      "D": "实时文件和对话图片的IsPublic取值仍有区别。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/105050",
+        "title": "获取文件上传临时密钥",
+        "section": "2. 输入参数",
+        "fact": "对话图片true，文档库文件false。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-04-28；旧版API 2023-11-30"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-096",
+    "module": "M7",
+    "topic": "解析服务鉴权与传输",
+    "type": "multiple",
+    "stem": "封装符合 ADP 文档解析协议 v1.0 的服务时，哪些安全相关要求在协议中明确？",
+    "options": {
+      "A": "API请求Header携带Bearer Token认证",
+      "B": "使用HTTPS协议",
+      "C": "GET接口都可免认证，只提交接口需要Token",
+      "D": "在请求JSON写入用户名即可替代Authorization Header"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "传输协议和身份认证需要分别满足；示例域名不应被误当成免认证的真实公共服务。",
+    "distractors": {
+      "C": "协议要求所有API请求携带Bearer Token。",
+      "D": "协议指定Header Bearer Token认证。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/127284",
+        "title": "ADP 文档解析协议",
+        "section": "版本信息/鉴权方式",
+        "fact": "解析协议使用HTTPS及Header Bearer Token。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-07；协议v1.0"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-097",
+    "module": "M7",
+    "topic": "临时文件URL安全接入",
+    "type": "multiple",
+    "stem": "按 ADP 文档解析协议 v1.0，提交 FileUrl 时哪些说法正确？",
+    "options": {
+      "A": "链接必须为服务可访问的HTTPS地址",
+      "B": "为确保可访问，文件必须永久匿名公开",
+      "C": "支持带签名的临时文件链接",
+      "D": "直接提交调用者本地文件绝对路径就满足远程访问要求"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "可访问不等于必须永久公开；临时链接需要给任务保留足够有效时间，不能交付本地路径让远程服务猜测。",
+    "distractors": {
+      "B": "协议支持临时签名URL。",
+      "D": "接口要求可访问HTTPS链接。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/127284",
+        "title": "ADP 文档解析协议",
+        "section": "提交文档解析任务/请求参数",
+        "fact": "FileUrl需可访问HTTPS，支持签名临时链接。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-01-07；协议v1.0"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-098",
+    "module": "M7",
+    "topic": "密钥删除生命周期",
+    "type": "multiple",
+    "stem": "轮转子账号 API 密钥，业务已切换至新密钥，准备清理旧密钥。哪些说明符合官方的轮转建议及删除接口说明？",
+    "options": {
+      "A": "密钥删除后可随时恢复原SecretKey以回退业务",
+      "B": "删除某条密钥会自动删除该子账号及其全部资源",
+      "C": "删除后的密钥无法恢复",
+      "D": "先禁用旧密钥，观察业务确认无异常后再删除"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "官方轮转建议是在业务切换后禁用旧密钥，观察业务无异常再删除；删除接口说明密钥删除不可恢复。凭证删除与账号及资源的删除是不同操作。本题考查轮转操作建议，不声称所有删除接口都强制先禁用。",
+    "distractors": {
+      "A": "删除不可恢复。",
+      "B": "凭证删除与账号资源生命周期不同。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/123925",
+        "title": "定期轮转访问密钥（AccessKey）的安全建议",
+        "section": "密钥轮转操作说明",
+        "fact": "先将业务切至新子用户密钥，再禁用旧密钥，观察无异常后删除。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-10-10"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/598/82369",
+        "title": "删除访问密钥",
+        "section": "1. 接口描述；2. 输入参数",
+        "fact": "DeleteAccessKey针对指定AccessKeyId删除访问密钥，删除不可恢复。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-09-12"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-099",
+    "module": "M7",
+    "topic": "密钥标识与秘密分工",
+    "type": "multiple",
+    "stem": "关于腾讯云 API 密钥的两个组成字段，下列哪些配对正确？",
+    "options": {
+      "A": "SecretKey用于验证调用者身份",
+      "B": "SecretId本身足以完成所有请求的身份验证，不再需要SecretKey",
+      "C": "SecretId用于标识调用者身份",
+      "D": "SecretKey只作显示用途，可像昵称一样公开"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "标识符与验证秘密承担不同角色；能展示或查询 SecretId 不意味着可公开 SecretKey。",
+    "distractors": {
+      "B": "SecretId是身份标识，不能替代验证秘密。",
+      "D": "SecretKey承担验证作用，必须保护。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/40488",
+        "title": "主账号访问密钥管理",
+        "section": "操作场景/说明",
+        "fact": "API密钥由SecretId和SecretKey组成；前者标识调用者，后者验证调用者身份。",
+        "verifiedAt": "2026-10-09",
+        "version": "2026-05-09"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  },
+  {
+    "id": "FDE-M7-100",
+    "module": "M7",
+    "topic": "云管理职责分离",
+    "type": "multiple",
+    "stem": "为 ADP 交付团队设计云端管理身份时，哪些符合 CAM 安全实践建议？",
+    "options": {
+      "A": "所有职责统一使用一条共享主账号凭证更符合安全建议",
+      "B": "仅需API访问的主体可只配置编程访问凭证",
+      "C": "每位用户都应同时有控制台密码与API密钥，即使只需一种访问",
+      "D": "将用户管理、权限管理与资源管理职责适当分离"
+    },
+    "answer": [
+      "B",
+      "D"
+    ],
+    "explanation": "职责与访问方式都应围绕实际工作安排，减少不必要的权限和凭证暴露面。",
+    "distractors": {
+      "A": "官方反对共享主账号并建议职责分离。",
+      "C": "官方建议按实际访问需要配置凭证。"
+    },
+    "difficulty": "进阶",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/document/product/598/10592",
+        "title": "安全实践教程",
+        "section": "登录安全/使用不同的子账号管理用户、权限和资源",
+        "fact": "建议职责分离并按编程或控制台需要配置凭证。",
+        "verifiedAt": "2026-10-09",
+        "version": "2025-04-11"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "author": "safety",
+      "reviewer": null,
+      "notes": []
+    }
+  }
+]

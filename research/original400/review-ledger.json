@@ -1,0 +1,5636 @@
+{
+  "summary": {
+    "version": "2026.10.13.3",
+    "date": "2026-10-13",
+    "reviewed": 400,
+    "revised": 118,
+    "retained": 282,
+    "reviewer": "同一助手逐题内容复核；非独立审校",
+    "modules": {
+      "M1": {
+        "reviewed": 20,
+        "revised": 8
+      },
+      "M2": {
+        "reviewed": 22,
+        "revised": 5
+      },
+      "M3": {
+        "reviewed": 106,
+        "revised": 17
+      },
+      "M4": {
+        "reviewed": 137,
+        "revised": 28
+      },
+      "M5": {
+        "reviewed": 16,
+        "revised": 5
+      },
+      "M6": {
+        "reviewed": 50,
+        "revised": 50
+      },
+      "M7": {
+        "reviewed": 49,
+        "revised": 5
+      }
+    },
+    "fieldCounts": {
+      "stem": 46,
+      "explanation": 95,
+      "options": 31,
+      "distractors": 31,
+      "topic": 1
+    },
+    "scope": "全部400题的题干、选项、答案、解析及干扰项理由逐题检查；重点官方页面重新读取，不等于96个历史来源全部再次联网验证。"
+  },
+  "questions": [
+    {
+      "id": "FDE-M1-001",
+      "module": "M1",
+      "topic": "大模型/部署与精调",
+      "decision": "修订",
+      "finding": "区分服务可调用与任务适配效果；部署成功不能证明完成精调。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "7049dc9556a10aa6f82bff8787b112d830c58158adb633455c4263064d811289",
+      "afterHash": "b37bdc2be6e24c1b31220987d7adaedafd14586e41008813efbb5d1a9d7ce433",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/851/109354"
+      ]
+    },
+    {
+      "id": "FDE-M1-004",
+      "module": "M1",
+      "topic": "大模型/监督样本",
+      "decision": "保留",
+      "finding": "保留基础角色题，assistant是监督目标，不能把输入上下文当目标回答。",
+      "changedFields": [],
+      "beforeHash": "31ad0eaf639a2a4d16f180f0f80bfcc2c51b5f5274dbc565f8c397ec3da11b60",
+      "afterHash": "31ad0eaf639a2a4d16f180f0f80bfcc2c51b5f5274dbc565f8c397ec3da11b60",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/851/123443"
+      ]
+    },
+    {
+      "id": "FDE-M1-005",
+      "module": "M1",
+      "topic": "大模型/角色设定",
+      "decision": "修订",
+      "finding": "由角色名记忆改为训练数据排错，区分system与user字段。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "135c37fc6e99addfad3fc7b3438cf3f46c4b1c222a9ce2bd368692294161c30d",
+      "afterHash": "8339d0ff38ffc0a92b99380fd1d9a93ff03063c540ae6641e0fed53fe501a097",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/851/123443"
+      ]
+    },
+    {
+      "id": "FDE-M1-008",
+      "module": "M1",
+      "topic": "大模型/训练与上下文",
+      "decision": "修订",
+      "finding": "补强知识更新不等于权重更新，临时上下文不能承诺永久学会。",
+      "changedFields": [
+        "stem",
+        "options",
+        "explanation",
+        "distractors"
+      ],
+      "beforeHash": "3876cf934bb94053bc2b9d1b1c7330b118aba3699a89b14ea2fe11f460335daa",
+      "afterHash": "4e105e9134324eda710449b2071a271561117af64db3ede11f8e79decd4973a8",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/123551"
+      ]
+    },
+    {
+      "id": "FDE-M1-009",
+      "module": "M1",
+      "topic": "Token/基本单位",
+      "decision": "保留",
+      "finding": "保留Token基础定义，字节、调用次数、参数数量均不是Token定义。",
+      "changedFields": [],
+      "beforeHash": "d48804b0410721737b29cccd7052f5e83443e42f1ecda827487376bf7f1dec68",
+      "afterHash": "d48804b0410721737b29cccd7052f5e83443e42f1ecda827487376bf7f1dec68",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104495"
+      ]
+    },
+    {
+      "id": "FDE-M1-010",
+      "module": "M1",
+      "topic": "Token/中文切分",
+      "decision": "保留",
+      "finding": "保留切分器差异考点，不将中文字符数等同Token数。",
+      "changedFields": [],
+      "beforeHash": "31ef82fb5983f7780c3959b49cb7327438d3346abbbdfdd242638b75e010f1ce",
+      "afterHash": "31ef82fb5983f7780c3959b49cb7327438d3346abbbdfdd242638b75e010f1ce",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104495"
+      ]
+    },
+    {
+      "id": "FDE-M1-012",
+      "module": "M1",
+      "topic": "Token/历史开销",
+      "decision": "修订",
+      "finding": "把计费记忆题改为多轮成本定位，重传历史仍消耗输入预算。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "7eddee4c1e1db2a741477076047611d2f463649786926cf6cb211fc4a139c3fe",
+      "afterHash": "a571d7c9b6aeb3ae141638aed27255f9eb79bd0863f065ab85785887d5b4a927",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1729/111007"
+      ]
+    },
+    {
+      "id": "FDE-M1-013",
+      "module": "M1",
+      "topic": "Token/上下文窗口",
+      "decision": "修订",
+      "finding": "强调历史、检索和当前输入共同占用上下文，并需预留输出。",
+      "changedFields": [
+        "stem",
+        "options",
+        "explanation",
+        "distractors"
+      ],
+      "beforeHash": "1d5c467432085e07bed102fc04f264b241dad4d3819e8c878583582766dc69de",
+      "afterHash": "abaca9f165107109035b2ad607411e75f2e38ebc6cb985231e3046b780bf87eb",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1729/111007"
+      ]
+    },
+    {
+      "id": "FDE-M1-031",
+      "module": "M1",
+      "topic": "Embedding/数值表示",
+      "decision": "保留",
+      "finding": "保留Embedding基础题，向量表示与排序、生成分属不同环节。",
+      "changedFields": [],
+      "beforeHash": "43fa55166d56f2ec7cb30dbb686ed1d0164c30884068cf9847a8bd3896b97f77",
+      "afterHash": "43fa55166d56f2ec7cb30dbb686ed1d0164c30884068cf9847a8bd3896b97f77",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1772/115343"
+      ]
+    },
+    {
+      "id": "FDE-M1-034",
+      "module": "M1",
+      "topic": "检索/重排序作用",
+      "decision": "修订",
+      "finding": "题设已确定召回到了正确片段，下一步才优先考虑重排。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "c581934132128c276e9315e94c339e397463b3a17511b856e20f81c5caab91ae",
+      "afterHash": "ad71696141011135d719dc4b6d993880ad249857555f44cde9b1475718735091",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/106206"
+      ]
+    },
+    {
+      "id": "FDE-M1-035",
+      "module": "M1",
+      "topic": "检索/指代消解",
+      "decision": "保留",
+      "finding": "保留指代消解题，历史参与当前查询不等同长期记忆写入。",
+      "changedFields": [],
+      "beforeHash": "b8fbfe46f668137cbd60cfb2c4875e688b0206815dc5b39b053c07d96072f5d1",
+      "afterHash": "b8fbfe46f668137cbd60cfb2c4875e688b0206815dc5b39b053c07d96072f5d1",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/106206"
+      ]
+    },
+    {
+      "id": "FDE-M1-036",
+      "module": "M1",
+      "topic": "检索/文档解析",
+      "decision": "保留",
+      "finding": "保留解析阶段辨析，适合定位解析与检索的职责差别。",
+      "changedFields": [],
+      "beforeHash": "c17f8d07d47b757b896bd24c4351ce4d2409b17208a33e766dfe4b1c1558f0be",
+      "afterHash": "c17f8d07d47b757b896bd24c4351ce4d2409b17208a33e766dfe4b1c1558f0be",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/106206"
+      ]
+    },
+    {
+      "id": "FDE-M1-038",
+      "module": "M1",
+      "topic": "检索/召回定义",
+      "decision": "保留",
+      "finding": "保留召回定义，不把召回成功等同回答正确。",
+      "changedFields": [],
+      "beforeHash": "804b53ee9be3e4e889b13ee8e70169fc5e68f92c147a1c210487b38ae9ecbe16",
+      "afterHash": "804b53ee9be3e4e889b13ee8e70169fc5e68f92c147a1c210487b38ae9ecbe16",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/135538"
+      ]
+    },
+    {
+      "id": "FDE-M1-045",
+      "module": "M1",
+      "topic": "RAG/Agentic反思",
+      "decision": "修订",
+      "finding": "去除无条件成功暗示，反思迭代有助补足证据但需受轮数成本限制。",
+      "changedFields": [
+        "stem",
+        "options",
+        "explanation",
+        "distractors"
+      ],
+      "beforeHash": "23c3d771b026c28f76eb592ccd4b5ff9c8800106357a19cc678a36341419b1f3",
+      "afterHash": "6afa2d9ac264af75724101288eb2902d8c28b3e86937e1338cc5a99433b529ce",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/132211"
+      ]
+    },
+    {
+      "id": "FDE-M1-059",
+      "module": "M1",
+      "topic": "记忆/历史和记忆区别",
+      "decision": "修订",
+      "finding": "长期记忆是可复用信息，不保证保存逐字历史；实现形式不限定为一种摘要。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "8ab035decb3b846df516bf02ad154e0e1fbf4c2773e4e59118a2a99d202ccc4b",
+      "afterHash": "7a1248df8ab08d5ae22ef249507d7b2465a46426cbc45fd952c8b95995fee29e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/134719"
+      ]
+    },
+    {
+      "id": "FDE-M1-061",
+      "module": "M1",
+      "topic": "多模态/图生文",
+      "decision": "保留",
+      "finding": "保留多模态输入输出基础题，不能以输出文本否认图像输入。",
+      "changedFields": [],
+      "beforeHash": "39979b4f1d233c573078c7079b0df8cf4c922fd90fdebe5dc0b7d95675d5a7c6",
+      "afterHash": "39979b4f1d233c573078c7079b0df8cf4c922fd90fdebe5dc0b7d95675d5a7c6",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1729/111007"
+      ]
+    },
+    {
+      "id": "FDE-M1-069",
+      "module": "M1",
+      "topic": "Agent/语言与行动",
+      "decision": "保留",
+      "finding": "把工具请求、实际执行、成功回执三步分开，AD正确。",
+      "changedFields": [],
+      "beforeHash": "3a9ec6e10a43fd8029cbab489ef386d72f96f36aeb76833252b2c2c3ccd10b45",
+      "afterHash": "3a9ec6e10a43fd8029cbab489ef386d72f96f36aeb76833252b2c2c3ccd10b45",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115872"
+      ]
+    },
+    {
+      "id": "FDE-M1-073",
+      "module": "M1",
+      "topic": "Agent/并行与协作",
+      "decision": "保留",
+      "finding": "保留并行与通信维度差异，开启能力不代表每轮强制组队。",
+      "changedFields": [],
+      "beforeHash": "dfdfc7c8937603ad24abefc6ea0eff25164810dc04b5a950a528b2df0c8d5f7d",
+      "afterHash": "dfdfc7c8937603ad24abefc6ea0eff25164810dc04b5a950a528b2df0c8d5f7d",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/134193"
+      ]
+    },
+    {
+      "id": "FDE-M1-077",
+      "module": "M1",
+      "topic": "Agent/工作流关系",
+      "decision": "保留",
+      "finding": "保留流程与自主规划对比，工作流可以含模型、Agent也可用工具。",
+      "changedFields": [],
+      "beforeHash": "9845a11e61315960613d1fe659e5fca6e572c2bc455f0a788d07685657cfe713",
+      "afterHash": "9845a11e61315960613d1fe659e5fca6e572c2bc455f0a788d07685657cfe713",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122549"
+      ]
+    },
+    {
+      "id": "FDE-M1-088",
+      "module": "M1",
+      "topic": "RAG/反思与重排区别",
+      "decision": "保留",
+      "finding": "反思判断证据是否充足；重排优化候选顺序，二者不能互相替代。",
+      "changedFields": [],
+      "beforeHash": "97ca158bbaa1c064c24cbb067988c0ac3f41f3909155f0d7262293404022b3e2",
+      "afterHash": "97ca158bbaa1c064c24cbb067988c0ac3f41f3909155f0d7262293404022b3e2",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/132211"
+      ]
+    },
+    {
+      "id": "FDE-M2-001",
+      "module": "M2",
+      "topic": "定位/平台类别",
+      "decision": "保留",
+      "finding": "定位需同时包含应用构建与企业接入，不能缩减为单一模型托管。",
+      "changedFields": [],
+      "beforeHash": "81ebc2749c4b753ac9f06ffb044f446a8f9b3ee510172d81e5e2925e73c51780",
+      "afterHash": "81ebc2749c4b753ac9f06ffb044f446a8f9b3ee510172d81e5e2925e73c51780",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104193"
+      ]
+    },
+    {
+      "id": "FDE-M2-003",
+      "module": "M2",
+      "topic": "定位/业务系统集成",
+      "decision": "保留",
+      "finding": "保留集成边界题，既有系统可通过接口接入，无须全部迁移。",
+      "changedFields": [],
+      "beforeHash": "9757a03bd404fceed81de146d069fe0fcab7c6048d7da93192a88d497db1585b",
+      "afterHash": "9757a03bd404fceed81de146d069fe0fcab7c6048d7da93192a88d497db1585b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104193"
+      ]
+    },
+    {
+      "id": "FDE-M2-004",
+      "module": "M2",
+      "topic": "定位/从聊天到任务",
+      "decision": "保留",
+      "finding": "仅导入手册不能取得实时业务状态；应由工具连接实际订单服务。",
+      "changedFields": [],
+      "beforeHash": "cd9557671cb849f5638a0629b4bca5c70ddea3d26b81389dcff7cf9d091e8145",
+      "afterHash": "cd9557671cb849f5638a0629b4bca5c70ddea3d26b81389dcff7cf9d091e8145",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115872"
+      ]
+    },
+    {
+      "id": "FDE-M2-005",
+      "module": "M2",
+      "topic": "定位/模型开放性",
+      "decision": "修订",
+      "finding": "能力存在、套餐权益、模型适配是三个核对层次。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "332f947cc69aba1e8a18c1d109ae172794b82e33f92cd20b6f1cfd0ea59902da",
+      "afterHash": "87ebf6f7feafa6837a2fc9f42dd170b64faccb9d8a3a341fc92b1f7c960e41bd",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104193",
+        "https://cloud.tencent.com/document/product/1759/129200"
+      ]
+    },
+    {
+      "id": "FDE-M2-009",
+      "module": "M2",
+      "topic": "标准模式/双模型核心",
+      "decision": "修订",
+      "finding": "由模式定义改为知识问答场景判断，仍保留标准模式支持工作流的边界。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "51b74e27d533fa6d46f2db8c8a55a981bab4c5a7159f0c93e0633cca1b788c42",
+      "afterHash": "d681294c1a24b53bf95038209c6f25900fd0106a7d3b998302dd30a6eb934313",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122549"
+      ]
+    },
+    {
+      "id": "FDE-M2-011",
+      "module": "M2",
+      "topic": "单工作流/全对话入口",
+      "decision": "修订",
+      "finding": "突出所有对话均经指定流程，与按需触发工作流区分。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "5ba86d4d970eb33593e3f361f834e7c05de68a4fc3d08c6a918317632282f8bf",
+      "afterHash": "1412a534222449c9a14cde0adb33dab6de1b11dce44e50d0ed94631123145d26",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122549"
+      ]
+    },
+    {
+      "id": "FDE-M2-012",
+      "module": "M2",
+      "topic": "单工作流/目标条件",
+      "decision": "修订",
+      "finding": "保留目标明确、步骤统一的选型题，避免用行业名称直接决定模式。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "93fcf9338b22ef7f7480021117753fa5e2e9d41bf994264bc48759423cdf94d8",
+      "afterHash": "ad3366919c20cc82e5b1ffdd81e241c58493557c2351cacbb98a53d841896622",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122549"
+      ]
+    },
+    {
+      "id": "FDE-M2-013",
+      "module": "M2",
+      "topic": "MultiAgent/主动权",
+      "decision": "保留",
+      "finding": "模式选择依据自主规划程度，不能依据模型个数或知识库数量。",
+      "changedFields": [],
+      "beforeHash": "ab103c3e79d7377e332667bcf92855114b68f8f8ea7cca130801a5ee623fd04c",
+      "afterHash": "ab103c3e79d7377e332667bcf92855114b68f8f8ea7cca130801a5ee623fd04c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122549"
+      ]
+    },
+    {
+      "id": "FDE-M2-016",
+      "module": "M2",
+      "topic": "模式/当前全集",
+      "decision": "保留",
+      "finding": "保留四模式全集作为基础锚点，不将工具或RAG当作应用模式。",
+      "changedFields": [],
+      "beforeHash": "90e07639dfa03f07b058ca70ec821ac74bd273522c86b47f769ddc4e4afd65be",
+      "afterHash": "90e07639dfa03f07b058ca70ec821ac74bd273522c86b47f769ddc4e4afd65be",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122549"
+      ]
+    },
+    {
+      "id": "FDE-M2-017",
+      "module": "M2",
+      "topic": "模式切换/Claw迁出",
+      "decision": "保留",
+      "finding": "模式迁移需新建并验证接入，不能通过清空Skills转换Claw。",
+      "changedFields": [],
+      "beforeHash": "bebc0414b05ff91d874a15b41970db1ad28d200e3fa19ed62830aae95530a4be",
+      "afterHash": "bebc0414b05ff91d874a15b41970db1ad28d200e3fa19ed62830aae95530a4be",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122549"
+      ]
+    },
+    {
+      "id": "FDE-M2-020",
+      "module": "M2",
+      "topic": "模式切换/配置独立性",
+      "decision": "修订",
+      "finding": "将配置不继承映射到迁移验收，资源保留与设置继承不能混为一谈。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "308a0f64e879fab5d0ea2b67f4cfe9ce70bd927527436e4851fb712ac1000abd",
+      "afterHash": "cf313aa52270614e6ed0912e800b929072ca6c67dd3465cbbafa7576b0048b7d",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122549"
+      ]
+    },
+    {
+      "id": "FDE-M2-021",
+      "module": "M2",
+      "topic": "模式切换/资产范围",
+      "decision": "保留",
+      "finding": "模式切换保留资产范围，但需要验证目标模式的实际启用路径。",
+      "changedFields": [],
+      "beforeHash": "d85fb9fb3ffb80261db98e24e0d938941282df078b1a05e78a84456b57abd1ef",
+      "afterHash": "d85fb9fb3ffb80261db98e24e0d938941282df078b1a05e78a84456b57abd1ef",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122549"
+      ]
+    },
+    {
+      "id": "FDE-M2-022",
+      "module": "M2",
+      "topic": "Claw/Skills区别",
+      "decision": "保留",
+      "finding": "限定为文档模式对比中的原生Skills挂载，不泛化为其他模式绝不能调用相关服务。",
+      "changedFields": [],
+      "beforeHash": "d12111e76524fc073fa9f2fb7ddf9415fe0a95518782c5c89e658aeed66de6a9",
+      "afterHash": "d12111e76524fc073fa9f2fb7ddf9415fe0a95518782c5c89e658aeed66de6a9",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/134194"
+      ]
+    },
+    {
+      "id": "FDE-M2-024",
+      "module": "M2",
+      "topic": "Claw/工作流组合",
+      "decision": "保留",
+      "finding": "Claw可按需调用工作流工具，调用一次不会把应用永久转成单工作流。",
+      "changedFields": [],
+      "beforeHash": "f864fce86ad410041431e2a8ff6686419016216cdf22594fabdc990a9b759c73",
+      "afterHash": "f864fce86ad410041431e2a8ff6686419016216cdf22594fabdc990a9b759c73",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/134194"
+      ]
+    },
+    {
+      "id": "FDE-M2-027",
+      "module": "M2",
+      "topic": "组件/插件与工具",
+      "decision": "保留",
+      "finding": "保留Plugin与Tool层级关系，注册并不自动授予全部工具使用权。",
+      "changedFields": [],
+      "beforeHash": "6ee6eef5bf7676781cc23a79b27aef513eb1131150dc1e8032074f4f7e0ab146",
+      "afterHash": "6ee6eef5bf7676781cc23a79b27aef513eb1131150dc1e8032074f4f7e0ab146",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133868"
+      ]
+    },
+    {
+      "id": "FDE-M2-035",
+      "module": "M2",
+      "topic": "知识库/组件定位",
+      "decision": "保留",
+      "finding": "知识提供上下文，应用组织模型与服务；导入不能替代权重训练。",
+      "changedFields": [],
+      "beforeHash": "ad40416ed0ffc9c60c0b98806a8c0349aa0f67f6ecaa205b62e36fdf1eb83a41",
+      "afterHash": "ad40416ed0ffc9c60c0b98806a8c0349aa0f67f6ecaa205b62e36fdf1eb83a41",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/123551"
+      ]
+    },
+    {
+      "id": "FDE-M2-037",
+      "module": "M2",
+      "topic": "知识库/默认与共享",
+      "decision": "保留",
+      "finding": "默认库限当前应用，共享复用需额外引用平台知识库。",
+      "changedFields": [],
+      "beforeHash": "39b56a1debdc5921cd7bac68da84635f4a15149b9009fb92f454c4e6bd5b2feb",
+      "afterHash": "39b56a1debdc5921cd7bac68da84635f4a15149b9009fb92f454c4e6bd5b2feb",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/123551"
+      ]
+    },
+    {
+      "id": "FDE-M2-043",
+      "module": "M2",
+      "topic": "接入/API与界面",
+      "decision": "保留",
+      "finding": "管理API可支撑批量构建，终端用户不应被要求取得开发管理凭证。",
+      "changedFields": [],
+      "beforeHash": "ef05aa392dcfb0c64f70aeb68921ef54cb15d2b81ab84aa34bf96e0118dda3e1",
+      "afterHash": "ef05aa392dcfb0c64f70aeb68921ef54cb15d2b81ab84aa34bf96e0118dda3e1",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133868"
+      ]
+    },
+    {
+      "id": "FDE-M2-044",
+      "module": "M2",
+      "topic": "接入/应用与Agent",
+      "decision": "保留",
+      "finding": "保留Application与Agent的层级关系，防止把应用、空间、会话混淆。",
+      "changedFields": [],
+      "beforeHash": "62965978071b2c8600244ff763bd610759d3353d094222c581a641962411b1df",
+      "afterHash": "62965978071b2c8600244ff763bd610759d3353d094222c581a641962411b1df",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133868"
+      ]
+    },
+    {
+      "id": "FDE-M2-049",
+      "module": "M2",
+      "topic": "模式/标准与单工作流取舍",
+      "decision": "保留",
+      "finding": "两种模式都可含知识处理和流程，取舍应看主执行结构。",
+      "changedFields": [],
+      "beforeHash": "db7d8eaeeb15591a77ef3af461b8bed6ae9007ccb6b46dc63c0c3f525bb1b270",
+      "afterHash": "db7d8eaeeb15591a77ef3af461b8bed6ae9007ccb6b46dc63c0c3f525bb1b270",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122549"
+      ]
+    },
+    {
+      "id": "FDE-M2-060",
+      "module": "M2",
+      "topic": "Skills/场景与来源两个维度",
+      "decision": "保留",
+      "finding": "以来源和业务场景分开分类，避免从财税法务推定内置或自定义。",
+      "changedFields": [],
+      "beforeHash": "f64d62a58ca927ad19c6c89e61fcaa3fc9ee50c2efe67f7fce0126d5a2ffcd6b",
+      "afterHash": "f64d62a58ca927ad19c6c89e61fcaa3fc9ee50c2efe67f7fce0126d5a2ffcd6b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129561"
+      ]
+    },
+    {
+      "id": "FDE-M2-067",
+      "module": "M2",
+      "topic": "接入/开发与使用角色",
+      "decision": "保留",
+      "finding": "开发管理与终端对话权限应分离，能对话不代表能改配置。",
+      "changedFields": [],
+      "beforeHash": "2b49d5f9b403e0833b12dbeaed578cd5b4829d109663e9abb6d65e1461d8fcce",
+      "afterHash": "2b49d5f9b403e0833b12dbeaed578cd5b4829d109663e9abb6d65e1461d8fcce",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133868"
+      ]
+    },
+    {
+      "id": "FDE-M3-001",
+      "module": "M3",
+      "topic": "知识库删除依赖",
+      "decision": "保留",
+      "finding": "删除库前需解除引用；停止应用或清空文档不等于解除资源依赖。",
+      "changedFields": [],
+      "beforeHash": "3f39eef61a07eb58bb0912f4dfb7694dcf69b22c25d31b4809ea702e7bf5c8e6",
+      "afterHash": "3f39eef61a07eb58bb0912f4dfb7694dcf69b22c25d31b4809ea702e7bf5c8e6",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/123551"
+      ]
+    },
+    {
+      "id": "FDE-M3-002",
+      "module": "M3",
+      "topic": "知识库作用域",
+      "decision": "保留",
+      "finding": "对比任务有知识库作用域，同一应用引用不扩大任务作用域。",
+      "changedFields": [],
+      "beforeHash": "f9a1ca9d9d116f33d3ad8840fa5534ce71735b481b3f0a8d06205edd44cd5757",
+      "afterHash": "f9a1ca9d9d116f33d3ad8840fa5534ce71735b481b3f0a8d06205edd44cd5757",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/123551"
+      ]
+    },
+    {
+      "id": "FDE-M3-003",
+      "module": "M3",
+      "topic": "知识导入状态",
+      "decision": "修订",
+      "finding": "入库状态与生效范围共同决定可用性，学习中不等于已经完成。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "9c6746b338f6faaec0e8b6606c5d84b9f789fe3689fe31a6dd638796fcefb852",
+      "afterHash": "1683d27d9fd198f681eee6abf7bbb4c1530a622916490a1eaacd8bae7b38af0e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/123551"
+      ]
+    },
+    {
+      "id": "FDE-M3-005",
+      "module": "M3",
+      "topic": "可下载文档接口参数",
+      "decision": "保留",
+      "finding": "FileUrl与CosUrl不合并下载，同时提供时CosUrl优先。",
+      "changedFields": [],
+      "beforeHash": "8b3dd0963c1f5a1d4a22a138d97fcc38c2ac7f8fb3931b2d7dcbe4c7bdafba65",
+      "afterHash": "8b3dd0963c1f5a1d4a22a138d97fcc38c2ac7f8fb3931b2d7dcbe4c7bdafba65",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112702"
+      ]
+    },
+    {
+      "id": "FDE-M3-007",
+      "module": "M3",
+      "topic": "网页更新",
+      "decision": "修订",
+      "finding": "区分抓取更新频率、业务有效期和检索召回配置。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "411d7dcd07ac47ef522bc66b411ffe2c4f7e844e0c93e3f11ae31b0d5f048ad0",
+      "afterHash": "9f863414243c205be1e938e43c027a4c2ad45b71e154dbc643a15a3c355c2b58",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112702"
+      ]
+    },
+    {
+      "id": "FDE-M3-009",
+      "module": "M3",
+      "topic": "批量网页导入约束",
+      "decision": "保留",
+      "finding": "网页批量导入有模板、条数和大小限制，不能将文件支持泛化到csv。",
+      "changedFields": [],
+      "beforeHash": "75e9b5aa62468c0499e2cbdc24c92ce690eed8a8b141b27e1008fc91a79b182c",
+      "afterHash": "75e9b5aa62468c0499e2cbdc24c92ce690eed8a8b141b27e1008fc91a79b182c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112702"
+      ]
+    },
+    {
+      "id": "FDE-M3-010",
+      "module": "M3",
+      "topic": "文档到期",
+      "decision": "保留",
+      "finding": "到期失效控制知识适用性，不能把到期当作自动顺延或仅停止抓取。",
+      "changedFields": [],
+      "beforeHash": "9a542c4c4971297e0fdedc26fd76f5f5f06d85bd4f30a70d4332e8d92d1980d3",
+      "afterHash": "9a542c4c4971297e0fdedc26fd76f5f5f06d85bd4f30a70d4332e8d92d1980d3",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112702"
+      ]
+    },
+    {
+      "id": "FDE-M3-012",
+      "module": "M3",
+      "topic": "知识即时生效",
+      "decision": "保留",
+      "finding": "知识生效范围独立于应用发布，不应统一承诺每次改知识必须重新发应用。",
+      "changedFields": [],
+      "beforeHash": "fd23053733eec3bc410bb9249ecc5f81714a32a17889e632683633a546f3ba3c",
+      "afterHash": "fd23053733eec3bc410bb9249ecc5f81714a32a17889e632683633a546f3ba3c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112702"
+      ]
+    },
+    {
+      "id": "FDE-M3-013",
+      "module": "M3",
+      "topic": "问答来源与关联文档",
+      "decision": "保留",
+      "finding": "来源记录与关联文档可分别维护，后续关联不能改写历史导入方式。",
+      "changedFields": [],
+      "beforeHash": "8a79ef333f238212ed6189707bfbbdff33fc9110af9804615e933add6ec19621",
+      "afterHash": "8a79ef333f238212ed6189707bfbbdff33fc9110af9804615e933add6ec19621",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112703"
+      ]
+    },
+    {
+      "id": "FDE-M3-014",
+      "module": "M3",
+      "topic": "问答审核中编辑限制",
+      "decision": "保留",
+      "finding": "审核中的编辑限制与最终审核结果应区分，不绕过状态规则。",
+      "changedFields": [],
+      "beforeHash": "b8cb5d680b646fb1fa15290058ffcdcad08c66f4e0f4caa816ca37a7eef5d158",
+      "afterHash": "b8cb5d680b646fb1fa15290058ffcdcad08c66f4e0f4caa816ca37a7eef5d158",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112703"
+      ]
+    },
+    {
+      "id": "FDE-M3-015",
+      "module": "M3",
+      "topic": "问答继承属性",
+      "decision": "保留",
+      "finding": "文档生成问答的有效期随源文档，不能独立维护造成冲突。",
+      "changedFields": [],
+      "beforeHash": "837a2a6d26721d7ede7654065198561772f4e858bb9a3cc70eec516f0973a6a4",
+      "afterHash": "837a2a6d26721d7ede7654065198561772f4e858bb9a3cc70eec516f0973a6a4",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112703"
+      ]
+    },
+    {
+      "id": "FDE-M3-018",
+      "module": "M3",
+      "topic": "问答新建路径",
+      "decision": "保留",
+      "finding": "保留三种创建方式和源文档先导入前提。",
+      "changedFields": [],
+      "beforeHash": "a8dc472c7e50e5c02d9b899706fa33b03e3739aff8e72f9028b19590ec735b0d",
+      "afterHash": "a8dc472c7e50e5c02d9b899706fa33b03e3739aff8e72f9028b19590ec735b0d",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112703"
+      ]
+    },
+    {
+      "id": "FDE-M3-019",
+      "module": "M3",
+      "topic": "问答管理动作",
+      "decision": "保留",
+      "finding": "停用影响召回，导出不删除；派生标签受源文档约束。",
+      "changedFields": [],
+      "beforeHash": "4f5b08369016bc43715b3556dab93c5320c1b0dcd139f2d3a90fa07acabeae39",
+      "afterHash": "4f5b08369016bc43715b3556dab93c5320c1b0dcd139f2d3a90fa07acabeae39",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112703"
+      ]
+    },
+    {
+      "id": "FDE-M3-020",
+      "module": "M3",
+      "topic": "API参数映射",
+      "decision": "修订",
+      "finding": "参数传入、标签配置和映射是三步；仅同名或语义相近不能保证过滤。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "0ca1e26ff7026cf5097cb014b998b441a8f727d7d2d87bd2e49ec4c2a3f2ec37",
+      "afterHash": "55c53dbf4369e6d985672016331c962b4a3defa7217dff5df48f57ee5bffd283",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112704"
+      ]
+    },
+    {
+      "id": "FDE-M3-021",
+      "module": "M3",
+      "topic": "标签且关系",
+      "decision": "保留",
+      "finding": "保留且关系的交集逻辑，明确题设对象为已打标签知识。",
+      "changedFields": [],
+      "beforeHash": "f9e6410ddc9673105771714e307425db0af524a0b2d0b2ba96bbb9e0a7b20d37",
+      "afterHash": "f9e6410ddc9673105771714e307425db0af524a0b2d0b2ba96bbb9e0a7b20d37",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112704"
+      ]
+    },
+    {
+      "id": "FDE-M3-022",
+      "module": "M3",
+      "topic": "标签或关系",
+      "decision": "保留",
+      "finding": "保留或关系的匹配逻辑，匹配标签名称还需要匹配取值。",
+      "changedFields": [],
+      "beforeHash": "1377ccf78d44041b8f04d450afe52c0e60529632e769abd3f4c815080c28a912",
+      "afterHash": "1377ccf78d44041b8f04d450afe52c0e60529632e769abd3f4c815080c28a912",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112704"
+      ]
+    },
+    {
+      "id": "FDE-M3-023",
+      "module": "M3",
+      "topic": "参数名称一致性",
+      "decision": "保留",
+      "finding": "API键名应与映射配置一致，展示名称不自动替换技术键名。",
+      "changedFields": [],
+      "beforeHash": "b01031827030c8734817c0ca2210344b388b4e6b1c72582db8201545a60e6cee",
+      "afterHash": "b01031827030c8734817c0ca2210344b388b4e6b1c72582db8201545a60e6cee",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112704"
+      ]
+    },
+    {
+      "id": "FDE-M3-027",
+      "module": "M3",
+      "topic": "表格按行切分",
+      "decision": "修订",
+      "finding": "每行独立的表格适合按行切分，须连同表头保留字段语义。",
+      "changedFields": [
+        "stem",
+        "options",
+        "explanation",
+        "distractors"
+      ],
+      "beforeHash": "40f4f2c0f38deffb42ff0581fc75665baf28e9e44721278c99dc36e12ca83581",
+      "afterHash": "d8b062ecec5cb582cc853fdc3d6558bd6d3ac27797c22da3188e02d27cc543b7",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122551"
+      ]
+    },
+    {
+      "id": "FDE-M3-029",
+      "module": "M3",
+      "topic": "切片内表格格式",
+      "decision": "修订",
+      "finding": "官方文档所述格式取舍不等于任意文本的普遍结论，最终仍用业务样本比较。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "5f8dcf60775e8e5a077f22eec3922de85189c144d36b2baa1ae78aa6a1a6cc3f",
+      "afterHash": "37730b2e9d8258943db2a82aa2bbeaf25e62f0174b29abc7828ecb03b3af4f24",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122551"
+      ]
+    },
+    {
+      "id": "FDE-M3-030",
+      "module": "M3",
+      "topic": "通用切分参数",
+      "decision": "保留",
+      "finding": "保留通用标识符参数，与表格起始行设置区分。",
+      "changedFields": [],
+      "beforeHash": "adc7e1d43638f4d7462505a3e080c6e022e51c387ef6c76918abe223bba759fa",
+      "afterHash": "adc7e1d43638f4d7462505a3e080c6e022e51c387ef6c76918abe223bba759fa",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122551"
+      ]
+    },
+    {
+      "id": "FDE-M3-031",
+      "module": "M3",
+      "topic": "切分策略边界",
+      "decision": "修订",
+      "finding": "规则适配与片段质量分开，片段越大不保证越准。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "3a58736e8a4bd465c7c8344ee5efb4613214aa0dcd25919f0f33402481069b72",
+      "afterHash": "b2cfee31b80daa277980ac5d1b94a6b0fcb8f729908a477be85f228404e62009",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122551"
+      ]
+    },
+    {
+      "id": "FDE-M3-034",
+      "module": "M3",
+      "topic": "结构化输出",
+      "decision": "保留",
+      "finding": "提示词要求JSON与声明可引用字段不同，输出变量需明确定义。",
+      "changedFields": [],
+      "beforeHash": "e8d18f64b85cfe5f0ad15cd3a6b54cd4a26add1fa0e688306442f2f7ae540da0",
+      "afterHash": "e8d18f64b85cfe5f0ad15cd3a6b54cd4a26add1fa0e688306442f2f7ae540da0",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112963"
+      ]
+    },
+    {
+      "id": "FDE-M3-035",
+      "module": "M3",
+      "topic": "文件输出约束",
+      "decision": "保留",
+      "finding": "保留含GenFiles时的输出格式限制，不推断自定义JSON仍然可用。",
+      "changedFields": [],
+      "beforeHash": "2f5c0aa6892e3220ee600ebcd26e00a99cde3d17b2f00012e056182b44928eb0",
+      "afterHash": "2f5c0aa6892e3220ee600ebcd26e00a99cde3d17b2f00012e056182b44928eb0",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112963"
+      ]
+    },
+    {
+      "id": "FDE-M3-038",
+      "module": "M3",
+      "topic": "单选意图模式",
+      "decision": "保留",
+      "finding": "单选意图对应一条最匹配路径，不用并行分支代替业务约束。",
+      "changedFields": [],
+      "beforeHash": "cd7dd4906fea5eb43194ae82d7762631e568becb59b35f3da9223870c4484aa0",
+      "afterHash": "cd7dd4906fea5eb43194ae82d7762631e568becb59b35f3da9223870c4484aa0",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115747"
+      ]
+    },
+    {
+      "id": "FDE-M3-039",
+      "module": "M3",
+      "topic": "多选意图分支",
+      "decision": "保留",
+      "finding": "保留多选意图的分支结构，避免把它当多条单选分支简单复制。",
+      "changedFields": [],
+      "beforeHash": "f67e7a3aeedf1136977d685dc2f3ad6f1379dc7532777f692f93141ef99063b9",
+      "afterHash": "f67e7a3aeedf1136977d685dc2f3ad6f1379dc7532777f692f93141ef99063b9",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115747"
+      ]
+    },
+    {
+      "id": "FDE-M3-041",
+      "module": "M3",
+      "topic": "兜底意图",
+      "decision": "修订",
+      "finding": "必须安排其他意图兜底，不能以第一个业务意图接纳未知请求。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "7c2928bfe4bd7608e1f305a6f4a3a502527f6fb74a102c27b459a10585cd4164",
+      "afterHash": "54b9cfe1fced4cdae16680e12f0fd61aa271dc8d3d9d910d5049ca8fac4896c8",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115747"
+      ]
+    },
+    {
+      "id": "FDE-M3-044",
+      "module": "M3",
+      "topic": "标签类型",
+      "decision": "保留",
+      "finding": "保留bool类型基础，真假判断不应混用任意文本或数字。",
+      "changedFields": [],
+      "beforeHash": "af3d20ccfaae938cd26a5c4edc3e7afa979add7a03e5df22f399d489216b5ebf",
+      "afterHash": "af3d20ccfaae938cd26a5c4edc3e7afa979add7a03e5df22f399d489216b5ebf",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112965"
+      ]
+    },
+    {
+      "id": "FDE-M3-046",
+      "module": "M3",
+      "topic": "标签提取输出",
+      "decision": "保留",
+      "finding": "标签提取的输出由提取标签配置产生，不是随意添加任意字段。",
+      "changedFields": [],
+      "beforeHash": "6708b35fe67851c50ae2caa0efdfe0fdafcd63453f553153298fe30f41b72750",
+      "afterHash": "6708b35fe67851c50ae2caa0efdfe0fdafcd63453f553153298fe30f41b72750",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112965"
+      ]
+    },
+    {
+      "id": "FDE-M3-047",
+      "module": "M3",
+      "topic": "提取约束",
+      "decision": "保留",
+      "finding": "已有文本的提取边界可用补充提示词，不能用Token上限表达标签互斥。",
+      "changedFields": [],
+      "beforeHash": "3bb2a32adbc67cc9db4dc5c636cd27ec1e724cc0580b34207aa5c3ae840b4bab",
+      "afterHash": "3bb2a32adbc67cc9db4dc5c636cd27ec1e724cc0580b34207aa5c3ae840b4bab",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112965"
+      ]
+    },
+    {
+      "id": "FDE-M3-051",
+      "module": "M3",
+      "topic": "知识问答问题与提示词分工",
+      "decision": "保留",
+      "finding": "保留用户问题与格式提示的职责纠错，展示中间消息不替代检索输入。",
+      "changedFields": [],
+      "beforeHash": "1acf586b33ad05975cd0b0f47e219ea27d23dfdde7ec5b6a1c4d4d752e87dae8",
+      "afterHash": "1acf586b33ad05975cd0b0f47e219ea27d23dfdde7ec5b6a1c4d4d752e87dae8",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112964"
+      ]
+    },
+    {
+      "id": "FDE-M3-052",
+      "module": "M3",
+      "topic": "多库规则",
+      "decision": "保留",
+      "finding": "按库分别设定规则，不能用全局召回数量代替差异化配置。",
+      "changedFields": [],
+      "beforeHash": "f315deabc034dd6a076534ccd678b075150a2390312c5278a9a5e698921a802a",
+      "afterHash": "f315deabc034dd6a076534ccd678b075150a2390312c5278a9a5e698921a802a",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112964"
+      ]
+    },
+    {
+      "id": "FDE-M3-053",
+      "module": "M3",
+      "topic": "召回数量含义",
+      "decision": "保留",
+      "finding": "每库最多召回数量不等于跨库总和或强制最少数。",
+      "changedFields": [],
+      "beforeHash": "012f12319827f2fbc414b02b5095e5aacc56f5c9d43a7a9f7f8efe7471b50846",
+      "afterHash": "012f12319827f2fbc414b02b5095e5aacc56f5c9d43a7a9f7f8efe7471b50846",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112964"
+      ]
+    },
+    {
+      "id": "FDE-M3-056",
+      "module": "M3",
+      "topic": "检索与生成分工",
+      "decision": "修订",
+      "finding": "先取原始片段再自有处理时选检索节点，问答节点已包含生成。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "7f0636b147d593e40be5c34cb131b90cdad16286fa93e8412fd101235230715a",
+      "afterHash": "d8858b39a4e01ec4ac1f3d07fe526d50ca0eac0ad541281f88f41b18ee0e6c8f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112966"
+      ]
+    },
+    {
+      "id": "FDE-M3-059",
+      "module": "M3",
+      "topic": "NL2SQL职责",
+      "decision": "保留",
+      "finding": "保留NL2SQL职责，生成SQL后仍需数据库权限与执行结果验证。",
+      "changedFields": [],
+      "beforeHash": "04f205cc332548cf6ad3e3dca0a69d93ab1129ae5f12f258b67e60df3a1db2d5",
+      "afterHash": "04f205cc332548cf6ad3e3dca0a69d93ab1129ae5f12f258b67e60df3a1db2d5",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112966"
+      ]
+    },
+    {
+      "id": "FDE-M3-060",
+      "module": "M3",
+      "topic": "标签值来源",
+      "decision": "保留",
+      "finding": "标签值可固定或引用变量，不能只配置标签名不提供值。",
+      "changedFields": [],
+      "beforeHash": "216cb65385930833b88ddf635f268cea79a9fe133c6859d4a28c2f971c6ccdd6",
+      "afterHash": "216cb65385930833b88ddf635f268cea79a9fe133c6859d4a28c2f971c6ccdd6",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112966"
+      ]
+    },
+    {
+      "id": "FDE-M3-062",
+      "module": "M3",
+      "topic": "选项卡动态变量",
+      "decision": "保留",
+      "finding": "选项来源要求array<string>，返回对象时应先转换所需展示字段。",
+      "changedFields": [],
+      "beforeHash": "f08f2c0f72f49d4ca2705ecd5416471ae3bd1765165101059f4d2195c7230010",
+      "afterHash": "f08f2c0f72f49d4ca2705ecd5416471ae3bd1765165101059f4d2195c7230010",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115756"
+      ]
+    },
+    {
+      "id": "FDE-M3-066",
+      "module": "M3",
+      "topic": "选项卡模型作用",
+      "decision": "保留",
+      "finding": "自然语言选项识别和追问不等于可以自动新增业务选项。",
+      "changedFields": [],
+      "beforeHash": "7800e2cfbf5cae3c7eaddeb03dc85551b8918f08d72b4036b4e0902d377cdfab",
+      "afterHash": "7800e2cfbf5cae3c7eaddeb03dc85551b8918f08d72b4036b4e0902d377cdfab",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115756"
+      ]
+    },
+    {
+      "id": "FDE-M3-068",
+      "module": "M3",
+      "topic": "循环数组类型",
+      "decision": "保留",
+      "finding": "保留循环数组要求，区别于批处理节点可接受的数组类型。",
+      "changedFields": [],
+      "beforeHash": "9a3cb6be624e9e0f5c55efefc75642aaa650980ea9b665ad1a14a403e15e7d07",
+      "afterHash": "9a3cb6be624e9e0f5c55efefc75642aaa650980ea9b665ad1a14a403e15e7d07",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115750"
+      ]
+    },
+    {
+      "id": "FDE-M3-069",
+      "module": "M3",
+      "topic": "循环元素引用",
+      "decision": "保留",
+      "finding": "当前元素与数组整体、索引、最终输出不是同一变量。",
+      "changedFields": [],
+      "beforeHash": "bb953ea66ee77fc4d4c43c68ad79be969047f18326c513dcbb1d90ac6c40354a",
+      "afterHash": "bb953ea66ee77fc4d4c43c68ad79be969047f18326c513dcbb1d90ac6c40354a",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115750"
+      ]
+    },
+    {
+      "id": "FDE-M3-070",
+      "module": "M3",
+      "topic": "提前退出方式",
+      "decision": "保留",
+      "finding": "执行后按条件判断终止，不能用调整Results格式控制循环。",
+      "changedFields": [],
+      "beforeHash": "cd6368aac0eae26077dc2bc1c8c00ecc752d3c003124b0ea7cfd4b18c4b3b56f",
+      "afterHash": "cd6368aac0eae26077dc2bc1c8c00ecc752d3c003124b0ea7cfd4b18c4b3b56f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115750"
+      ]
+    },
+    {
+      "id": "FDE-M3-071",
+      "module": "M3",
+      "topic": "循环计数输出",
+      "decision": "保留",
+      "finding": "实际执行次数读取LoopCount，与结果集合和日志区分。",
+      "changedFields": [],
+      "beforeHash": "910d9349c08c85ad8028cb33224ce3deb7bbab34cb2ff8bc0fd033906fc8bff9",
+      "afterHash": "910d9349c08c85ad8028cb33224ce3deb7bbab34cb2ff8bc0fd033906fc8bff9",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115750"
+      ]
+    },
+    {
+      "id": "FDE-M3-075",
+      "module": "M3",
+      "topic": "批处理串行",
+      "decision": "保留",
+      "finding": "并行度1是串行，不表示只执行首项或允许条件提前退出。",
+      "changedFields": [],
+      "beforeHash": "5c21ef11c2bce3e014bc83266a01227270cd893ce4d0bccda209f6f55b24cacd",
+      "afterHash": "5c21ef11c2bce3e014bc83266a01227270cd893ce4d0bccda209f6f55b24cacd",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119290"
+      ]
+    },
+    {
+      "id": "FDE-M3-076",
+      "module": "M3",
+      "topic": "批处理数组选择",
+      "decision": "保留",
+      "finding": "保留批处理支持不同数组类型，避免把循环节点对象数组约束套用过来。",
+      "changedFields": [],
+      "beforeHash": "9f0ca2d1aceca766d1ece7f88bae539d0bc3c56fad1c3a02784caf707e845909",
+      "afterHash": "9f0ca2d1aceca766d1ece7f88bae539d0bc3c56fad1c3a02784caf707e845909",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119290"
+      ]
+    },
+    {
+      "id": "FDE-M3-079",
+      "module": "M3",
+      "topic": "批处理结果",
+      "decision": "保留",
+      "finding": "Results汇集各项输出，字段取决于被引流程而非固定最后一次结果。",
+      "changedFields": [],
+      "beforeHash": "411f21852101a50d8ff00e3aa22f87b2325dce562747f96e4216b780ce016468",
+      "afterHash": "411f21852101a50d8ff00e3aa22f87b2325dce562747f96e4216b780ce016468",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119290"
+      ]
+    },
+    {
+      "id": "FDE-M3-080",
+      "module": "M3",
+      "topic": "代码入口",
+      "decision": "保留",
+      "finding": "保留代码节点入口函数规则，属于必要接口契约基础。",
+      "changedFields": [],
+      "beforeHash": "d80049f397472a8472a3edae4b856deacb414e32f6b13b57662f91d29a280b4e",
+      "afterHash": "d80049f397472a8472a3edae4b856deacb414e32f6b13b57662f91d29a280b4e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112967"
+      ]
+    },
+    {
+      "id": "FDE-M3-081",
+      "module": "M3",
+      "topic": "语言切换影响",
+      "decision": "保留",
+      "finding": "切换语言会替换编辑内容，保存备份优于假定代码自动转换。",
+      "changedFields": [],
+      "beforeHash": "cfe9935f9de971a6125599a35941310131e3ff68c954a5e949a64928bb994323",
+      "afterHash": "cfe9935f9de971a6125599a35941310131e3ff68c954a5e949a64928bb994323",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112967"
+      ]
+    },
+    {
+      "id": "FDE-M3-083",
+      "module": "M3",
+      "topic": "下游输出字段",
+      "decision": "保留",
+      "finding": "保留业务输出声明与返回对象的区别，返回total仍需可引用的输出定义。",
+      "changedFields": [],
+      "beforeHash": "fa7485387ace0ee82af41c0997fa1c77e8a7df14ee3c16a58620f03efa823f5c",
+      "afterHash": "fa7485387ace0ee82af41c0997fa1c77e8a7df14ee3c16a58620f03efa823f5c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112967"
+      ]
+    },
+    {
+      "id": "FDE-M3-087",
+      "module": "M3",
+      "topic": "条件输入来源",
+      "decision": "修订",
+      "finding": "变量引用要基于已执行祖先，不读取未来分支的未知值。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "5743e4a0dba6a48187927cfd92ed7891e3e1f5862fd92e0a4569bd7cd18ac983",
+      "afterHash": "6f66097d4c2b7ae7eca71f93674e4a7c5bebbe09f3c0e868594e6292f0d242a9",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112970"
+      ]
+    },
+    {
+      "id": "FDE-M3-089",
+      "module": "M3",
+      "topic": "条件输出",
+      "decision": "保留",
+      "finding": "默认输出为选中条件序号，不等同各分支业务结果。",
+      "changedFields": [],
+      "beforeHash": "0d0c969e23ec47ba98db83838f92a7ded8161899e01d8fff9393686e89d11ddd",
+      "afterHash": "0d0c969e23ec47ba98db83838f92a7ded8161899e01d8fff9393686e89d11ddd",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112970"
+      ]
+    },
+    {
+      "id": "FDE-M3-094",
+      "module": "M3",
+      "topic": "引用后更换",
+      "decision": "保留",
+      "finding": "不可直接替换绑定时需新建相应节点并核对输入输出，不能只改名称。",
+      "changedFields": [],
+      "beforeHash": "921b883908825c456e597aa89722afa556762f09115af48d70a5ef7aa9c467b2",
+      "afterHash": "921b883908825c456e597aa89722afa556762f09115af48d70a5ef7aa9c467b2",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115749"
+      ]
+    },
+    {
+      "id": "FDE-M3-095",
+      "module": "M3",
+      "topic": "子流程入参",
+      "decision": "修订",
+      "finding": "子流程契约决定入参，父流程已有变量不会自动合并为子流程接口。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "5066ddf41f348b8218fd519046a3e25d07d3da2f1694fbaf8ee191fd7bbdee46",
+      "afterHash": "1521c3fca7e3f8efe1d53ba7a77707fceb40519562c874de364b999942b05b6a",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115749"
+      ]
+    },
+    {
+      "id": "FDE-M3-096",
+      "module": "M3",
+      "topic": "可引用状态",
+      "decision": "保留",
+      "finding": "可引用待发布和已发布工作流，但创建后绑定不可任意切换。",
+      "changedFields": [],
+      "beforeHash": "74e3effa037f225ddf6270c5c5558415859f4230044738b4ab5def697f2e9907",
+      "afterHash": "74e3effa037f225ddf6270c5c5558415859f4230044738b4ab5def697f2e9907",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115749"
+      ]
+    },
+    {
+      "id": "FDE-M3-097",
+      "module": "M3",
+      "topic": "子流程数据接口",
+      "decision": "保留",
+      "finding": "保留子流程输出和父流程实参传递的边界。",
+      "changedFields": [],
+      "beforeHash": "c455cfcdd0e18d150f78f6994aa15ebb68c9300774b99638c5e7a1efe5a0afd4",
+      "afterHash": "c455cfcdd0e18d150f78f6994aa15ebb68c9300774b99638c5e7a1efe5a0afd4",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115749"
+      ]
+    },
+    {
+      "id": "FDE-M3-100",
+      "module": "M3",
+      "topic": "固定失败返回",
+      "decision": "保留",
+      "finding": "题设要求预设值后继续，输出特定内容与专门异常子流程不同。",
+      "changedFields": [],
+      "beforeHash": "54e1baa6b321115eb9f42fcf608918a0bdbc48fd95e36067302ca8904acf0a70",
+      "afterHash": "54e1baa6b321115eb9f42fcf608918a0bdbc48fd95e36067302ca8904acf0a70",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115748"
+      ]
+    },
+    {
+      "id": "FDE-M3-102",
+      "module": "M3",
+      "topic": "输入参数用途",
+      "decision": "保留",
+      "finding": "Header和Body各有职责，认证位置仍应按具体API协议核实。",
+      "changedFields": [],
+      "beforeHash": "109f4e6856c2a9f9a5932a35a5b305fa226f8a0c2fa98b409b1438c4cecd984b",
+      "afterHash": "109f4e6856c2a9f9a5932a35a5b305fa226f8a0c2fa98b409b1438c4cecd984b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115748"
+      ]
+    },
+    {
+      "id": "FDE-M3-110",
+      "module": "M3",
+      "topic": "MCP初始化返回",
+      "decision": "保留",
+      "finding": "保留初始化三项核心返回，tools/list结果不能替代初始化握手。",
+      "changedFields": [],
+      "beforeHash": "eee966b21b5812bb0bfe08ac4f57dfa9c86745aef86e909d492cef7e3db7fefc",
+      "afterHash": "eee966b21b5812bb0bfe08ac4f57dfa9c86745aef86e909d492cef7e3db7fefc",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115873"
+      ]
+    },
+    {
+      "id": "FDE-M3-112",
+      "module": "M3",
+      "topic": "MCP能力声明",
+      "decision": "保留",
+      "finding": "声明tools是作为工具接入的能力前提，资源或提示词能力不能替代。",
+      "changedFields": [],
+      "beforeHash": "dface8bf9d600837ff23891bbdf015325d377dd7698ca2324366ae2746985ec1",
+      "afterHash": "dface8bf9d600837ff23891bbdf015325d377dd7698ca2324366ae2746985ec1",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115873"
+      ]
+    },
+    {
+      "id": "FDE-M3-113",
+      "module": "M3",
+      "topic": "OAuth回调配置",
+      "decision": "保留",
+      "finding": "明确回调不匹配时先修复重定向配置，超时或Scope调整不对症。",
+      "changedFields": [],
+      "beforeHash": "b1e7c817ee257b26ad2ea5bb1396df3b27b9729f45b4c25dd014814cdd028bc3",
+      "afterHash": "b1e7c817ee257b26ad2ea5bb1396df3b27b9729f45b4c25dd014814cdd028bc3",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115873"
+      ]
+    },
+    {
+      "id": "FDE-M3-122",
+      "module": "M3",
+      "topic": "工具默认值与模型可见",
+      "decision": "修订",
+      "finding": "固定环境参数由配置决定，隐藏模型可见不等于无需真实授权校验。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "ffae68b7e3cc5e3624658df4c28dd1ceefdf15db592ac7d5a070f38984e53856",
+      "afterHash": "cef8bdf2c064f5289ce7276cd1a2173dff6a60a777e2f8c840d0743c2661d23f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/117856"
+      ]
+    },
+    {
+      "id": "FDE-M3-124",
+      "module": "M3",
+      "topic": "工具输出可见性",
+      "decision": "保留",
+      "finding": "输出可见性用于控制模型上下文，关闭输入可见开关不能隐藏返回字段。",
+      "changedFields": [],
+      "beforeHash": "89a3e5a336dd14d80caf704df004ee9b692df93f9746c6d90a28d77d0792139b",
+      "afterHash": "89a3e5a336dd14d80caf704df004ee9b692df93f9746c6d90a28d77d0792139b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/117856"
+      ]
+    },
+    {
+      "id": "FDE-M3-126",
+      "module": "M3",
+      "topic": "提示词工具说明",
+      "decision": "保留",
+      "finding": "工具说明需包括用途和触发条件，名称独特不等于模型理解业务语义。",
+      "changedFields": [],
+      "beforeHash": "03935830b2cea1ec05e4dd7ca07c3af91059aad4f8f130d0972c021768e2187e",
+      "afterHash": "03935830b2cea1ec05e4dd7ca07c3af91059aad4f8f130d0972c021768e2187e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/117856"
+      ]
+    },
+    {
+      "id": "FDE-M3-134",
+      "module": "M3",
+      "topic": "技能自然语言创建",
+      "decision": "保留",
+      "finding": "工作台可对话创建Skill，但生成包仍应审核后使用。",
+      "changedFields": [],
+      "beforeHash": "14fff2c8d4a767bd3f6d2dcab14bfe206ce3aceaab1a4b839e8aecba38a0586a",
+      "afterHash": "14fff2c8d4a767bd3f6d2dcab14bfe206ce3aceaab1a4b839e8aecba38a0586a",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129562"
+      ]
+    },
+    {
+      "id": "FDE-M3-135",
+      "module": "M3",
+      "topic": "技能标识稳定性",
+      "decision": "保留",
+      "finding": "唯一标识与显示名称不同，版本更新不能任意更换身份标识。",
+      "changedFields": [],
+      "beforeHash": "45c916d4370df90ff76a942878d48d964fd13de28ebb1cda6839d30d9217e261",
+      "afterHash": "45c916d4370df90ff76a942878d48d964fd13de28ebb1cda6839d30d9217e261",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129562"
+      ]
+    },
+    {
+      "id": "FDE-M3-136",
+      "module": "M3",
+      "topic": "技能版本迭代",
+      "decision": "保留",
+      "finding": "版本号高于当前最新且唯一，变更说明不同不允许重复版号。",
+      "changedFields": [],
+      "beforeHash": "fbe7ffe4b077a2ac3244f8c11ed3689ca2ff4b11e361f77ef527fce59f23b83d",
+      "afterHash": "fbe7ffe4b077a2ac3244f8c11ed3689ca2ff4b11e361f77ef527fce59f23b83d",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129562"
+      ]
+    },
+    {
+      "id": "FDE-M3-138",
+      "module": "M3",
+      "topic": "创建安全审核步骤",
+      "decision": "保留",
+      "finding": "自然语言生成不能免除格式、元数据和脚本扫描。",
+      "changedFields": [],
+      "beforeHash": "e151d3302205a4e5789fdb23f26b11b65e6625e441109aa5e2e563f5cc33f6fd",
+      "afterHash": "e151d3302205a4e5789fdb23f26b11b65e6625e441109aa5e2e563f5cc33f6fd",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129562"
+      ]
+    },
+    {
+      "id": "FDE-M3-139",
+      "module": "M3",
+      "topic": "企业共享提交者",
+      "decision": "保留",
+      "finding": "共享申请权限来自作者或编辑授权，终端使用权不等于管理权。",
+      "changedFields": [],
+      "beforeHash": "e5d0ec3c1c189c513ad19cc8bd6ebc81619a8f29c554ff87cd8e6af85f89d550",
+      "afterHash": "e5d0ec3c1c189c513ad19cc8bd6ebc81619a8f29c554ff87cd8e6af85f89d550",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129562"
+      ]
+    },
+    {
+      "id": "FDE-M3-141",
+      "module": "M3",
+      "topic": "技能命名字符",
+      "decision": "保留",
+      "finding": "保留name语法检查，不将平台限制扩展为所有第三方技能标准。",
+      "changedFields": [],
+      "beforeHash": "f1a0d0b3828d875fe5d4ee52b99ad34d05b76b82646e04752fdb7184f7015c19",
+      "afterHash": "f1a0d0b3828d875fe5d4ee52b99ad34d05b76b82646e04752fdb7184f7015c19",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/134602"
+      ]
+    },
+    {
+      "id": "FDE-M3-144",
+      "module": "M3",
+      "topic": "技能包允许内容",
+      "decision": "修订",
+      "finding": "题干限定当前ADP文件规范，不能推断其他Skill平台均禁止二进制。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "47d0dd2d57dde50eff02432855c20dac9bed24454899cbc15d47390d5d0b4175",
+      "afterHash": "83d49b4eb7ac6be9e5684fc7679518d5e316d4f85772013c6e28d5c5058acd01",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/134602"
+      ]
+    },
+    {
+      "id": "FDE-M3-145",
+      "module": "M3",
+      "topic": "元数据必填项",
+      "decision": "保留",
+      "finding": "保留YAML必填name和description，其他字段不能一概强制。",
+      "changedFields": [],
+      "beforeHash": "b0d2a08674652ad94ac431b94aa88da0d491d2e764f7f670a14e6a53dccd6a34",
+      "afterHash": "b0d2a08674652ad94ac431b94aa88da0d491d2e764f7f670a14e6a53dccd6a34",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/134602"
+      ]
+    },
+    {
+      "id": "FDE-M3-148",
+      "module": "M3",
+      "topic": "技能显式调用",
+      "decision": "保留",
+      "finding": "资源选择和实际配置需一致，文本提到技能名不代表已挂载。",
+      "changedFields": [],
+      "beforeHash": "ee3e70bcf2af6f6924240f7642ccaa8e2794ed38b15a6dbd142d5475a08dbf76",
+      "afterHash": "ee3e70bcf2af6f6924240f7642ccaa8e2794ed38b15a6dbd142d5475a08dbf76",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129563"
+      ]
+    },
+    {
+      "id": "FDE-M3-149",
+      "module": "M3",
+      "topic": "技能环境变量范围",
+      "decision": "保留",
+      "finding": "用户级密钥配置不会自然扩散到空间其他用户。",
+      "changedFields": [],
+      "beforeHash": "720b78bba600faa27b1f5650a58187bbc54d148241921b3e67c72a40a71faf1d",
+      "afterHash": "720b78bba600faa27b1f5650a58187bbc54d148241921b3e67c72a40a71faf1d",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129563"
+      ]
+    },
+    {
+      "id": "FDE-M3-150",
+      "module": "M3",
+      "topic": "跨平台技能导出",
+      "decision": "保留",
+      "finding": "导出包格式与目标平台接入依赖分开，导出不免除第三方鉴权。",
+      "changedFields": [],
+      "beforeHash": "ab4365d38a40554e82b29a1ae6340cfdb0c5f64ebff4798b7c3ab08dfaded387",
+      "afterHash": "ab4365d38a40554e82b29a1ae6340cfdb0c5f64ebff4798b7c3ab08dfaded387",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129563"
+      ]
+    },
+    {
+      "id": "FDE-M3-152",
+      "module": "M3",
+      "topic": "记忆绑定上限",
+      "decision": "保留",
+      "finding": "明确记忆库文档版本；一个应用绑定一个库，不代表这个库只能被一个应用使用。",
+      "changedFields": [],
+      "beforeHash": "99df5fd1d5a84a2574e37335d40b908043e192ff0860a97e3fe1d675db6ba250",
+      "afterHash": "99df5fd1d5a84a2574e37335d40b908043e192ff0860a97e3fe1d675db6ba250",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138162"
+      ]
+    },
+    {
+      "id": "FDE-M3-153",
+      "module": "M3",
+      "topic": "记忆类型互通",
+      "decision": "保留",
+      "finding": "两类记忆库类型不互通，用户ID相同不改变产品类型限制。",
+      "changedFields": [],
+      "beforeHash": "6e349b3b6e444e5dc5c6985283133940f2f7d791a05ae5c380d955d0a941f37c",
+      "afterHash": "6e349b3b6e444e5dc5c6985283133940f2f7d791a05ae5c380d955d0a941f37c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138162"
+      ]
+    },
+    {
+      "id": "FDE-M3-154",
+      "module": "M3",
+      "topic": "更换记忆库",
+      "decision": "修订",
+      "finding": "改绑改变读写范围，迁移旧数据必须另行设计和验证。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "8938c80791ea84886bca6101ec4e46e1b9fe358d8cad8b51b2bf898d34802199",
+      "afterHash": "b33e3a85c1482e56eafadedeb67528310bfbd72da7820565a69da11390eb79a1",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138162"
+      ]
+    },
+    {
+      "id": "FDE-M3-157",
+      "module": "M3",
+      "topic": "记忆摘要启用条件",
+      "decision": "保留",
+      "finding": "库级生成和应用级引用两层开关都要检查，不能只看一个按钮。",
+      "changedFields": [],
+      "beforeHash": "1811cd017cfe117986ca8aef93e50bc0dbd3a644a8baf035972e8e7856350cfd",
+      "afterHash": "1811cd017cfe117986ca8aef93e50bc0dbd3a644a8baf035972e8e7856350cfd",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138162"
+      ]
+    },
+    {
+      "id": "FDE-M3-158",
+      "module": "M3",
+      "topic": "触发受理与执行完成",
+      "decision": "保留",
+      "finding": "受理成功与业务执行成功分开，应按实例ID跟踪结果。",
+      "changedFields": [],
+      "beforeHash": "ad44eccb9e76d1635155be5f526ea5b86b55b61ec339f88b805a3347307be13f",
+      "afterHash": "ad44eccb9e76d1635155be5f526ea5b86b55b61ec339f88b805a3347307be13f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M3-159",
+      "module": "M3",
+      "topic": "查询触发执行实例",
+      "decision": "保留",
+      "finding": "查询应GET实例状态，再POST会产生新的执行请求而非查询旧任务。",
+      "changedFields": [],
+      "beforeHash": "bf1f91ba2696efabd7aa4212b37aa0d34b7eee9df3497c1ab71975a4ca2020ae",
+      "afterHash": "bf1f91ba2696efabd7aa4212b37aa0d34b7eee9df3497c1ab71975a4ca2020ae",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M3-160",
+      "module": "M3",
+      "topic": "触发器不推送模式",
+      "decision": "保留",
+      "finding": "不推送只影响通知，不等于不执行，应查看执行日志。",
+      "changedFields": [],
+      "beforeHash": "23479475dc195e6cdb842adf4609431aa6660a3233be7532d52a45af8f80d566",
+      "afterHash": "23479475dc195e6cdb842adf4609431aa6660a3233be7532d52a45af8f80d566",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M3-161",
+      "module": "M3",
+      "topic": "触发器立即运行",
+      "decision": "保留",
+      "finding": "立即运行测试不修改原定时规则，手工试跑与计划调度分开。",
+      "changedFields": [],
+      "beforeHash": "7fea29999044ddfa31b28a8f9b706214085ef76759b67bb575e14e73b3fcfe3f",
+      "afterHash": "7fea29999044ddfa31b28a8f9b706214085ef76759b67bb575e14e73b3fcfe3f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M3-162",
+      "module": "M3",
+      "topic": "定时频率配置",
+      "decision": "保留",
+      "finding": "保留频率能力边界，不把任意分钟级计划视为支持。",
+      "changedFields": [],
+      "beforeHash": "96b1c36d493ddabd08aef5b80e548e7a9c9ed6ce0d51c9f905da34c2748e6209",
+      "afterHash": "96b1c36d493ddabd08aef5b80e548e7a9c9ed6ce0d51c9f905da34c2748e6209",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M3-163",
+      "module": "M3",
+      "topic": "触发器管理操作",
+      "decision": "保留",
+      "finding": "编辑、暂停、删除影响不同，删除使原URL和Token失效。",
+      "changedFields": [],
+      "beforeHash": "4574600d72c9d6b43b685c974b1ba88c6d6271e26489775b7e249d2899e3f6ca",
+      "afterHash": "4574600d72c9d6b43b685c974b1ba88c6d6271e26489775b7e249d2899e3f6ca",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M3-164",
+      "module": "M3",
+      "topic": "问答与工作流意图冲突",
+      "decision": "保留",
+      "finding": "意图达成优先级直接针对知识与流程触发冲突，不是模型长度设置。",
+      "changedFields": [],
+      "beforeHash": "587380e65b81c23b0315e27589386e44bc8ba2dab817d512f4e67b55fcf42806",
+      "afterHash": "587380e65b81c23b0315e27589386e44bc8ba2dab817d512f4e67b55fcf42806",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104206"
+      ]
+    },
+    {
+      "id": "FDE-M3-166",
+      "module": "M3",
+      "topic": "AgenticRAG反思轮数与检索行为",
+      "decision": "修订",
+      "finding": "将默认数字记忆改为诊断零反思配置，重点理解是否迭代。",
+      "changedFields": [
+        "topic",
+        "stem",
+        "options",
+        "explanation",
+        "distractors"
+      ],
+      "beforeHash": "f4f446d1b4b2d2952b09bdfd4f2ec773d192fde5f0a0122bd4581a825b097bde",
+      "afterHash": "6ccbdcd54a322dc5a024caedc02ded0c600dee144a37e5c6a83333a264785662",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/132211"
+      ]
+    },
+    {
+      "id": "FDE-M3-174",
+      "module": "M3",
+      "topic": "生成模型职责",
+      "decision": "保留",
+      "finding": "最终组织回复由生成模型完成，向量、解析和重排各服务不同前置环节。",
+      "changedFields": [],
+      "beforeHash": "03f5e4054e5595e312ecf128503c8ac04b81e7127d9de26fd468d93cb1ad1325",
+      "afterHash": "03f5e4054e5595e312ecf128503c8ac04b81e7127d9de26fd468d93cb1ad1325",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112876"
+      ]
+    },
+    {
+      "id": "FDE-M3-175",
+      "module": "M3",
+      "topic": "用户图片理解",
+      "decision": "保留",
+      "finding": "临时图片问答与知识库片段的多模态阅读理解不是同一入口。",
+      "changedFields": [],
+      "beforeHash": "dc502960a51c75a56fff37101dd19c17857ec5f9bfede34a87670e878746baff",
+      "afterHash": "dc502960a51c75a56fff37101dd19c17857ec5f9bfede34a87670e878746baff",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112876"
+      ]
+    },
+    {
+      "id": "FDE-M3-176",
+      "module": "M3",
+      "topic": "上传文档解析",
+      "decision": "保留",
+      "finding": "实时上传文档解析与知识库重排职责不同。",
+      "changedFields": [],
+      "beforeHash": "0284f3c4bc0e91ff62a1b90753adb824a9182e8a365536f856b0f2dd84a40a66",
+      "afterHash": "0284f3c4bc0e91ff62a1b90753adb824a9182e8a365536f856b0f2dd84a40a66",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112876"
+      ]
+    },
+    {
+      "id": "FDE-M3-181",
+      "module": "M3",
+      "topic": "同义词标准化",
+      "decision": "保留",
+      "finding": "稳定行业别称宜配置同义词，不能仅扩大召回后期待语义自动统一。",
+      "changedFields": [],
+      "beforeHash": "825224e1e40bdbe936cad24f00c7be2dd7e40ff3ecc7ea4fa40383f11e4ed7b6",
+      "afterHash": "825224e1e40bdbe936cad24f00c7be2dd7e40ff3ecc7ea4fa40383f11e4ed7b6",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104206"
+      ]
+    },
+    {
+      "id": "FDE-M3-182",
+      "module": "M3",
+      "topic": "图片问答兜底",
+      "decision": "保留",
+      "finding": "已启用知识库图片问答及兜底时，无命中按兜底处理，不绕过边界猜答。",
+      "changedFields": [],
+      "beforeHash": "f79a97f80946b1a293ce598e580d5faf61cabbd6f68e048af77c1e072f35aeba",
+      "afterHash": "f79a97f80946b1a293ce598e580d5faf61cabbd6f68e048af77c1e072f35aeba",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104206"
+      ]
+    },
+    {
+      "id": "FDE-M3-186",
+      "module": "M3",
+      "topic": "跨工作流传值",
+      "decision": "修订",
+      "finding": "应用变量可跨同应用流程使用，但不应据此推断跨用户可共享私密状态。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "f5a85c22b6dfe61015cfd184f4a4dd62684822e63748f8366aa7c951812c1b2b",
+      "afterHash": "06dc3a2211418237c0ae5ef5e6c6739a6e1db95c30d0cee4a0e23ed0e2ad1465",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122457"
+      ]
+    },
+    {
+      "id": "FDE-M3-187",
+      "module": "M3",
+      "topic": "工作流变量赋值",
+      "decision": "保留",
+      "finding": "显式更新WF变量用赋值节点，同名JSON字段不自动覆盖。",
+      "changedFields": [],
+      "beforeHash": "e3ce77377b8c4abdb1df5a0f30a4a2d919f44990f85933deb641d5b4541ec844",
+      "afterHash": "e3ce77377b8c4abdb1df5a0f30a4a2d919f44990f85933deb641d5b4541ec844",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122457"
+      ]
+    },
+    {
+      "id": "FDE-M3-190",
+      "module": "M3",
+      "topic": "节点输入输出区分",
+      "decision": "保留",
+      "finding": "保留输入局部使用和输出供后续节点引用的差别。",
+      "changedFields": [],
+      "beforeHash": "c44dbf0d0292752900641bd3f4c48ae88e3113337f75e47bf7217d914d27478a",
+      "afterHash": "c44dbf0d0292752900641bd3f4c48ae88e3113337f75e47bf7217d914d27478a",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122457"
+      ]
+    },
+    {
+      "id": "FDE-M3-191",
+      "module": "M3",
+      "topic": "标签名称与值",
+      "decision": "保留",
+      "finding": "标签名表达维度，标签值表达该维度的取值。",
+      "changedFields": [],
+      "beforeHash": "28576855e4503c7a46b1c8f27cd45f9b64a95aaafac9cd3b8c4516cefb1f8e4e",
+      "afterHash": "28576855e4503c7a46b1c8f27cd45f9b64a95aaafac9cd3b8c4516cefb1f8e4e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112956"
+      ]
+    },
+    {
+      "id": "FDE-M3-193",
+      "module": "M3",
+      "topic": "标签同义词",
+      "decision": "保留",
+      "finding": "同义词归到标准词，不能把每个别称当独立业务值造成碎片。",
+      "changedFields": [],
+      "beforeHash": "54e16e1b9af2b87114ea65e49e26471628ff421aeb1eb5a90b233a9b6251bd01",
+      "afterHash": "54e16e1b9af2b87114ea65e49e26471628ff421aeb1eb5a90b233a9b6251bd01",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112956"
+      ]
+    },
+    {
+      "id": "FDE-M3-194",
+      "module": "M3",
+      "topic": "被引用标签删除",
+      "decision": "保留",
+      "finding": "有引用标签不能直接删除，先处理依赖再变更知识配置。",
+      "changedFields": [],
+      "beforeHash": "ef710017c14d450587ffcc918ff22b5d787c813fe30484c4d5d5f8ca08aba449",
+      "afterHash": "ef710017c14d450587ffcc918ff22b5d787c813fe30484c4d5d5f8ca08aba449",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112956"
+      ]
+    },
+    {
+      "id": "FDE-M3-199",
+      "module": "M3",
+      "topic": "图谱来源查看",
+      "decision": "修订",
+      "finding": "关系溯源需要边详情证据，图谱统计和类型名不能证明事实。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "d3c455c37afeb3fc3059f2a70d4de27d37417873972b2e2f43f0707fe9032d38",
+      "afterHash": "3d213aa004261d2de461494ce055f7c06f72b46f7221081c5cbcd60171f67057",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/128202"
+      ]
+    },
+    {
+      "id": "FDE-M3-200",
+      "module": "M3",
+      "topic": "图谱更新动作",
+      "decision": "保留",
+      "finding": "新增文档解析完成不等于图谱已经更新，应确认并执行更新任务。",
+      "changedFields": [],
+      "beforeHash": "aaf2c0588fd8070043032ec7b1e0c1ee56344891ad4d98baddc5489afcdfd3e0",
+      "afterHash": "aaf2c0588fd8070043032ec7b1e0c1ee56344891ad4d98baddc5489afcdfd3e0",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/128202"
+      ]
+    },
+    {
+      "id": "FDE-M3-202",
+      "module": "M3",
+      "topic": "图谱Schema配置路径",
+      "decision": "修订",
+      "finding": "GraphSchema与已下架知识库Schema不同，保留手工、模板、AI扩展三种方式。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "f75903a3ccc14304fd4eabc858f66bfd6b2131c23333fcb53f59f05a80cfa55c",
+      "afterHash": "6a0acb0c9bc02213ef0cd4bbfb7c7e18e926473456636aecc19212c6a540a117",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/128202"
+      ]
+    },
+    {
+      "id": "FDE-M3-205",
+      "module": "M3",
+      "topic": "对比失效原因",
+      "decision": "保留",
+      "finding": "删除源文档导致任务失效，不能假定平台永久保存完整输入。",
+      "changedFields": [],
+      "beforeHash": "ec5ce1741f295d71c171f9e2fa2a79789c03dab54a0257369a58fe34c6cfb833",
+      "afterHash": "ec5ce1741f295d71c171f9e2fa2a79789c03dab54a0257369a58fe34c6cfb833",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/116451"
+      ]
+    },
+    {
+      "id": "FDE-M3-208",
+      "module": "M3",
+      "topic": "问答关联保留",
+      "decision": "保留",
+      "finding": "差异问答生成与关联迁移需要显式处理，不因删文档自动完成知识治理。",
+      "changedFields": [],
+      "beforeHash": "63d102a3380d7ac5339886bab92e484bff6d6590e359eca9fdda3923141702dc",
+      "afterHash": "63d102a3380d7ac5339886bab92e484bff6d6590e359eca9fdda3923141702dc",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/116451"
+      ]
+    },
+    {
+      "id": "FDE-M3-209",
+      "module": "M3",
+      "topic": "聚合返回顺序",
+      "decision": "保留",
+      "finding": "按顺序取首个非空值，不是合并或随机选择。",
+      "changedFields": [],
+      "beforeHash": "40ada47f921265dd1438f462cc823a1cc6dfc87f0794bffa0ae1a72475a55240",
+      "afterHash": "40ada47f921265dd1438f462cc823a1cc6dfc87f0794bffa0ae1a72475a55240",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/117358"
+      ]
+    },
+    {
+      "id": "FDE-M3-210",
+      "module": "M3",
+      "topic": "聚合数据类型",
+      "decision": "保留",
+      "finding": "同组类型一致，防止下游收到随路径变化的类型。",
+      "changedFields": [],
+      "beforeHash": "7637c0acd7ac08eb7d7f6c888b8aad2ed03621e8e0d1f7f168bd82cd2271f1a4",
+      "afterHash": "7637c0acd7ac08eb7d7f6c888b8aad2ed03621e8e0d1f7f168bd82cd2271f1a4",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/117358"
+      ]
+    },
+    {
+      "id": "FDE-M3-212",
+      "module": "M3",
+      "topic": "聚合输出字段",
+      "decision": "保留",
+      "finding": "业务输出取决于Group定义，不是把全部祖先变量自动输出。",
+      "changedFields": [],
+      "beforeHash": "991cd410490788f45cf5015fd5977ae3938dda38d8ee447a9e16214283b42da4",
+      "afterHash": "991cd410490788f45cf5015fd5977ae3938dda38d8ee447a9e16214283b42da4",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/117358"
+      ]
+    },
+    {
+      "id": "FDE-M3-214",
+      "module": "M3",
+      "topic": "变量赋值结果判断",
+      "decision": "保留",
+      "finding": "isSuccess为赋值状态而非新业务值，Error用于定位失败。",
+      "changedFields": [],
+      "beforeHash": "b000b7373c3544cd6b2117decc91d8e995d1132b77feb4c607e1fe389bb339c3",
+      "afterHash": "b000b7373c3544cd6b2117decc91d8e995d1132b77feb4c607e1fe389bb339c3",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122550"
+      ]
+    },
+    {
+      "id": "FDE-M3-219",
+      "module": "M3",
+      "topic": "参数示例正反作用",
+      "decision": "保留",
+      "finding": "正例与反例约束可提取范围，反例不是默认值。",
+      "changedFields": [],
+      "beforeHash": "407648002e0b2fb652335b5c59e2b4b85b1bfe01488e1583dd7ddbcf7967c6ed",
+      "afterHash": "407648002e0b2fb652335b5c59e2b4b85b1bfe01488e1583dd7ddbcf7967c6ed",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112962"
+      ]
+    },
+    {
+      "id": "FDE-M3-220",
+      "module": "M3",
+      "topic": "参数节点系统上下文",
+      "decision": "保留",
+      "finding": "默认上下文不包含全部祖先输出，业务变量需要明确选择或引用。",
+      "changedFields": [],
+      "beforeHash": "6f26195f75d8b095f8cd21c8210fe12ec9e7ab6e78be041c83e14aaf3cd6305a",
+      "afterHash": "6f26195f75d8b095f8cd21c8210fe12ec9e7ab6e78be041c83e14aaf3cd6305a",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112962"
+      ]
+    },
+    {
+      "id": "FDE-M4-002",
+      "module": "M4",
+      "topic": "最小验证路径",
+      "decision": "修订",
+      "finding": "首轮Demo应匹配已确认边界，接全系统与多团队编排均超出当前验证目标。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "c31eb8a0b77e43577381dcb581ae9675d263ec3f60a1775f3fc5bbd2e2899199",
+      "afterHash": "10fb6286e2d3f654f5dbd5221bb7cf985822195dfcac1ade88e2114ff7d0cf3a",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/126433"
+      ]
+    },
+    {
+      "id": "FDE-M4-005",
+      "module": "M4",
+      "topic": "多系统返回结构适配",
+      "decision": "修订",
+      "finding": "金额单位转换与字段对齐必须先于排序，字段改名不代表完成口径统一。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "0d3bb2584428ae2a1b79e1d88e5759cded1228256fe61fb6c299885dee2dd6c9",
+      "afterHash": "256706207d849501dd77ac340a94d882bbfa3265d5ad27ca1edfa0fa5f340281",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115872",
+        "https://cloud.tencent.com/document/product/1759/112967"
+      ]
+    },
+    {
+      "id": "FDE-M4-007",
+      "module": "M4",
+      "topic": "复杂知识路线",
+      "decision": "保留",
+      "finding": "检索迭代适配证据不足场景，不能只增加首次候选数当作充分性校验。",
+      "changedFields": [],
+      "beforeHash": "0b2895b59a4c926ed1580c52b4cc3ab18b02c97802c961ba582f2a0bce783f4f",
+      "afterHash": "0b2895b59a4c926ed1580c52b4cc3ab18b02c97802c961ba582f2a0bce783f4f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/132211"
+      ]
+    },
+    {
+      "id": "FDE-M4-010",
+      "module": "M4",
+      "topic": "新旧功能边界",
+      "decision": "修订",
+      "finding": "保留考纲与产品版本冲突，Schema考点仍在考纲但新建方案应核实已下架路径。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "ae595c6a5934a99c438b4254c2ea5c07d50322c10e487783d6ae261b48c9e8a3",
+      "afterHash": "247df5e785d2c77415cf83f7081eabc61d3727b92619e0dfb4e00eed0d80ee49",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/123555",
+        "https://cloud.tencent.com/document/product/658/137832"
+      ]
+    },
+    {
+      "id": "FDE-M4-013",
+      "module": "M4",
+      "topic": "数据形态选型",
+      "decision": "修订",
+      "finding": "按字段聚合优先验证结构化查询，语义召回不能当作精确统计。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "42e0c45d9d51316c616195b09093fc3ec5095b9aea3fefccabf4d34f5bb82b73",
+      "afterHash": "bc035c715e17a73e9670e85cf5f626b5b08315fbd0bc834128c4ba682069b685",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119291"
+      ]
+    },
+    {
+      "id": "FDE-M4-017",
+      "module": "M4",
+      "topic": "最新意图边界",
+      "decision": "保留",
+      "finding": "模糊最新意图影响排序，不等于明确日期的硬过滤。",
+      "changedFields": [],
+      "beforeHash": "1f1787e7f4f75daf9c22fff52b45448b895286f69de108f435b508abb0bdb6ba",
+      "afterHash": "1f1787e7f4f75daf9c22fff52b45448b895286f69de108f435b508abb0bdb6ba",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138380"
+      ]
+    },
+    {
+      "id": "FDE-M4-020",
+      "module": "M4",
+      "topic": "必填与可选",
+      "decision": "修订",
+      "finding": "必填应由业务执行依赖决定，备注可选不代表编号也可缺失。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "299f7dbcc9e4e16c7cc474116c4745a4114e5ed8a8af7eba6124af73ff5afb1f",
+      "afterHash": "771f55794aa49d314e9c8785f74c65cfe24db6a496d8626b2147616cbe167f9b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112962"
+      ]
+    },
+    {
+      "id": "FDE-M4-022",
+      "module": "M4",
+      "topic": "有限选项交互",
+      "decision": "保留",
+      "finding": "界面点选和自然语言选择需要收集节点，分类节点本身不展示选项。",
+      "changedFields": [],
+      "beforeHash": "8ffc1199db03a37e6c474e52740f77c0bcc09967a555c4649e013f06ea78164b",
+      "afterHash": "8ffc1199db03a37e6c474e52740f77c0bcc09967a555c4649e013f06ea78164b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115756"
+      ]
+    },
+    {
+      "id": "FDE-M4-023",
+      "module": "M4",
+      "topic": "动态选项后续路由",
+      "decision": "修订",
+      "finding": "动态选项不自动产生固定分支，应读取选择后明确路由。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "1f82ab482c5383d6747e18066c604f77277b8f62db1a551f548d3b3407901c55",
+      "afterHash": "eef9ba7bbac2b83ebf36d0e8292725e016129836e8e11332b19c519537fd894c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115756"
+      ]
+    },
+    {
+      "id": "FDE-M4-025",
+      "module": "M4",
+      "topic": "按环节收集附件",
+      "decision": "保留",
+      "finding": "分类后按材料需求收集，避免让所有用户上传全部材料。",
+      "changedFields": [],
+      "beforeHash": "da41a33c6f3ccc07ad611258753ad216b68d1f06efe1a108d2253da5951ee0f4",
+      "afterHash": "da41a33c6f3ccc07ad611258753ad216b68d1f06efe1a108d2253da5951ee0f4",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/123744"
+      ]
+    },
+    {
+      "id": "FDE-M4-031",
+      "module": "M4",
+      "topic": "生成任务约束",
+      "decision": "保留",
+      "finding": "已有输入、纯创作任务先验证提示词与输出契约，不为演示增加无关数据依赖。",
+      "changedFields": [],
+      "beforeHash": "075f35def843a6b293d46aeb90068a03e502c9142ef4b3026ac9c2f2187c4686",
+      "afterHash": "075f35def843a6b293d46aeb90068a03e502c9142ef4b3026ac9c2f2187c4686",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112963"
+      ]
+    },
+    {
+      "id": "FDE-M4-032",
+      "module": "M4",
+      "topic": "图片输入选型",
+      "decision": "修订",
+      "finding": "输入模态支持是前提，图片URL不使纯文本模型自然具备视觉理解。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "8d7b456ea8df590c7393644bbf2d7c0557c7bf78268b9d8d2135e8a7edf98b4d",
+      "afterHash": "2fe236e02d44328478ec5aa94208411faf67c1c9c73ce0444ec35576ed4364b8",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112963"
+      ]
+    },
+    {
+      "id": "FDE-M4-034",
+      "module": "M4",
+      "topic": "语义分流",
+      "decision": "保留",
+      "finding": "自由描述先识别目标，再分别处理规则、进度和修改操作。",
+      "changedFields": [],
+      "beforeHash": "68a991f89ab020db82ea0d4d6df700ede333c2124b86a90a96a411e2134e8156",
+      "afterHash": "68a991f89ab020db82ea0d4d6df700ede333c2124b86a90a96a411e2134e8156",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115747"
+      ]
+    },
+    {
+      "id": "FDE-M4-035",
+      "module": "M4",
+      "topic": "复合诉求",
+      "decision": "修订",
+      "finding": "保留否定问法，不能为单一路由丢失明确的组合诉求。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "ff376c045c127972811e250551558151965f954877cec6e0a2dbed34b4822ed1",
+      "afterHash": "8aba7ccb741b4d9f006c0186b4f42ffba3121d7d60c2edf870f8c0ecc87b9992",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115747"
+      ]
+    },
+    {
+      "id": "FDE-M4-038",
+      "module": "M4",
+      "topic": "结构化上下文提问",
+      "decision": "保留",
+      "finding": "最终明确选择比早先提到对象更能限定本轮上下文。",
+      "changedFields": [],
+      "beforeHash": "bd4fe18652ad4d0073ce7e5cdd4fe27af9f6aa8a39445235c0d39b32e721e3e0",
+      "afterHash": "bd4fe18652ad4d0073ce7e5cdd4fe27af9f6aa8a39445235c0d39b32e721e3e0",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112964"
+      ]
+    },
+    {
+      "id": "FDE-M4-040",
+      "module": "M4",
+      "topic": "证据去重与生成输入",
+      "decision": "保留",
+      "finding": "稳定片段ID去重保留证据，不能靠生成文本长度估算独立证据数量。",
+      "changedFields": [],
+      "beforeHash": "1d23f3748cd9387c30cfb693c831333debb3d148ac4cc10d695b14117abd4eba",
+      "afterHash": "1d23f3748cd9387c30cfb693c831333debb3d148ac4cc10d695b14117abd4eba",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112966",
+        "https://cloud.tencent.com/document/product/1759/112967",
+        "https://cloud.tencent.com/document/product/1759/112963"
+      ]
+    },
+    {
+      "id": "FDE-M4-043",
+      "module": "M4",
+      "topic": "确定性计算",
+      "decision": "修订",
+      "finding": "确定公式和舍入规则适合代码校验，模型表达能力不替代确定计算。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "a1b0861141f1959b7ce0b3b5b3863365d5e2a0a66ed2e9fe286e9cadfeaf07db",
+      "afterHash": "158081c35a70f4bd73ef96b53aca57938502504fbc0590343ecb1bc3e970d55b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112967"
+      ]
+    },
+    {
+      "id": "FDE-M4-047",
+      "module": "M4",
+      "topic": "子流程入参",
+      "decision": "修订",
+      "finding": "前置客户编号显式映射子流程入参，避免二次猜值。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "114b85fa34b396c1bd5e1e106363ccb00a88afb296810c18cf0b2ae945680cf0",
+      "afterHash": "592bd487807cc03e7d5cb44ba15ed05069ce3623105dee23a030d754bafbc5d4",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115749"
+      ]
+    },
+    {
+      "id": "FDE-M4-049",
+      "module": "M4",
+      "topic": "固定与自主混合",
+      "decision": "保留",
+      "finding": "固定主流程与自主子任务可组合，不能为自主能力放弃必经步骤。",
+      "changedFields": [],
+      "beforeHash": "d20fc19a672d80b3e502c489d913218880a34983fa7fcc839f61f5be3b6f6a12",
+      "afterHash": "d20fc19a672d80b3e502c489d913218880a34983fa7fcc839f61f5be3b6f6a12",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122554"
+      ]
+    },
+    {
+      "id": "FDE-M4-052",
+      "module": "M4",
+      "topic": "互斥分支出口",
+      "decision": "保留",
+      "finding": "仅一条有效分支时才可用首个非空聚合，多任务不满足此前提。",
+      "changedFields": [],
+      "beforeHash": "ca2d8cad3a44f5d500274d53326ec41a5a2d56fabba4fa9e9f01be5a5d7199f6",
+      "afterHash": "ca2d8cad3a44f5d500274d53326ec41a5a2d56fabba4fa9e9f01be5a5d7199f6",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/117358"
+      ]
+    },
+    {
+      "id": "FDE-M4-055",
+      "module": "M4",
+      "topic": "严格业务规则",
+      "decision": "修订",
+      "finding": "严格小于与材料齐全是两个同时成立的条件，应包括边界500的测试。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "115ea372cf45e09603167403166337f248b34b6ea32fb013c9d98f04e1161949",
+      "afterHash": "850e2d7bdf0b64074679629267ebb3d1cfb546c2fa4c02a09aa0b4b61f918c91",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112970"
+      ]
+    },
+    {
+      "id": "FDE-M4-058",
+      "module": "M4",
+      "topic": "有依赖的重复任务",
+      "decision": "修订",
+      "finding": "前后依赖和提前停止指向循环，不能改成相互独立并行任务。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "6b5548352e9a0a6b88d5fed70591083c7a1492ba1661e88d90c1eb6d5d7bcf4c",
+      "afterHash": "72f2104a8fa8a43253aaeb588cbe8316570152bc19525be93c9d1aa8a9993438",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115750"
+      ]
+    },
+    {
+      "id": "FDE-M4-059",
+      "module": "M4",
+      "topic": "结束条件设计",
+      "decision": "保留",
+      "finding": "完成标准缺失时先约定可观察结果，否则循环次数不能证明质量。",
+      "changedFields": [],
+      "beforeHash": "952b4d28e2b2ed62abe5e3745e3c387dbf36026c324fff3dc83528333ad5c2a5",
+      "afterHash": "952b4d28e2b2ed62abe5e3745e3c387dbf36026c324fff3dc83528333ad5c2a5",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115750"
+      ]
+    },
+    {
+      "id": "FDE-M4-061",
+      "module": "M4",
+      "topic": "独立任务并行",
+      "decision": "修订",
+      "finding": "任务彼此独立可批处理，仍需按项保存状态与结果。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "909107482fe118d000cbf78c5699f7fe3c71d2e5d5e86bfe93e1bf9402ba97ca",
+      "afterHash": "56de48d72bcbc14f4bce1e83cbd902150515a62548423a74661553d0fc324140",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119290"
+      ]
+    },
+    {
+      "id": "FDE-M4-062",
+      "module": "M4",
+      "topic": "并行上限含义",
+      "decision": "修订",
+      "finding": "并行上限限定同时在途数量，不减少待处理总量或保证固定加速比例。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "be34886470886bdff20edda1087ca4d50113d60c92d5e9021dd185a90cf78e76",
+      "afterHash": "2966937b28effc83f04e8b8dea0e7625efc75acb41a94a1defcab3744867f2a8",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119290"
+      ]
+    },
+    {
+      "id": "FDE-M4-067",
+      "module": "M4",
+      "topic": "MCP前置能力",
+      "decision": "保留",
+      "finding": "MCP接入核验协议握手、发现和调用，返回JSON并不足够。",
+      "changedFields": [],
+      "beforeHash": "e5f4dbad3c2e61a511ac659b3847d7434565f6c08cb7d229b330af7e2b6ee225",
+      "afterHash": "e5f4dbad3c2e61a511ac659b3847d7434565f6c08cb7d229b330af7e2b6ee225",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115873"
+      ]
+    },
+    {
+      "id": "FDE-M4-070",
+      "module": "M4",
+      "topic": "知识来源接入路径",
+      "decision": "保留",
+      "finding": "COS授权导入满足非公开对象的场景，不必转为匿名公开。",
+      "changedFields": [],
+      "beforeHash": "6d3dc4c0d52598757ead49f623d480b8b87da112323d1cd92d9ea9d1d95ebb7b",
+      "afterHash": "6d3dc4c0d52598757ead49f623d480b8b87da112323d1cd92d9ea9d1d95ebb7b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112702"
+      ]
+    },
+    {
+      "id": "FDE-M4-077",
+      "module": "M4",
+      "topic": "生成问答的资料就绪性",
+      "decision": "保留",
+      "finding": "上传成功与解析学习完成不同，生成问答前核对可用状态和内容。",
+      "changedFields": [],
+      "beforeHash": "e98555444db5db04537137e1eb90eb54e87ff674676acc29b67fcfd552ec7687",
+      "afterHash": "e98555444db5db04537137e1eb90eb54e87ff674676acc29b67fcfd552ec7687",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112702"
+      ]
+    },
+    {
+      "id": "FDE-M4-080",
+      "module": "M4",
+      "topic": "记忆导入的用户映射",
+      "decision": "保留",
+      "finding": "记忆存在但不可用先核用户身份映射，不能把多用户合为一个主体。",
+      "changedFields": [],
+      "beforeHash": "a70e7e17309e7fcc2e9fd013aa4f44d14b409d57fb61d226508fdf46c8525fa6",
+      "afterHash": "a70e7e17309e7fcc2e9fd013aa4f44d14b409d57fb61d226508fdf46c8525fa6",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138162"
+      ]
+    },
+    {
+      "id": "FDE-M4-082",
+      "module": "M4",
+      "topic": "关系知识需求",
+      "decision": "保留",
+      "finding": "多跳实体关系场景可评估GraphRAG，不能仅列实体标签代替关系追踪。",
+      "changedFields": [],
+      "beforeHash": "58a91af370b0b8501523474cfb003fe896fc21cf1d92180b6c33df9ceba87400",
+      "afterHash": "58a91af370b0b8501523474cfb003fe896fc21cf1d92180b6c33df9ceba87400",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/128202"
+      ]
+    },
+    {
+      "id": "FDE-M4-083",
+      "module": "M4",
+      "topic": "图谱业务建模契约",
+      "decision": "保留",
+      "finding": "关系Schema应表达业务关系类型及属性，共现相似度不足以说明负责与隶属。",
+      "changedFields": [],
+      "beforeHash": "a1d5ee59556d3d794046ca186f0645e537052899b06f370c2b122c31f32fb0e8",
+      "afterHash": "a1d5ee59556d3d794046ca186f0645e537052899b06f370c2b122c31f32fb0e8",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/128202"
+      ]
+    },
+    {
+      "id": "FDE-M4-085",
+      "module": "M4",
+      "topic": "复杂版式准备",
+      "decision": "保留",
+      "finding": "解析保留结构是检索前提，增加召回不能补回未解析公式。",
+      "changedFields": [],
+      "beforeHash": "b087c78e666f1bf07ed3ebe41ace56c84db1468c336b600d0bb522deef0b1f6b",
+      "afterHash": "b087c78e666f1bf07ed3ebe41ace56c84db1468c336b600d0bb522deef0b1f6b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/127312"
+      ]
+    },
+    {
+      "id": "FDE-M4-086",
+      "module": "M4",
+      "topic": "向量模型变更计划",
+      "decision": "保留",
+      "finding": "换向量模型涉及非空库限制与重建，向量维度相同也不保证兼容。",
+      "changedFields": [],
+      "beforeHash": "54287a88defcb2046d991b43f53e3fe045aba0e89ff99fa473c35c613169cf88",
+      "afterHash": "54287a88defcb2046d991b43f53e3fe045aba0e89ff99fa473c35c613169cf88",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/127312"
+      ]
+    },
+    {
+      "id": "FDE-M4-088",
+      "module": "M4",
+      "topic": "近似编码召回",
+      "decision": "保留",
+      "finding": "编码是精确对象线索，元数据可改善匹配；仍应实测近似编码混淆。",
+      "changedFields": [],
+      "beforeHash": "4860a765fb50a8e4f2276c4b78f0ba2a8c0b6d08a811ba5f3cb94590e17f1702",
+      "afterHash": "4860a765fb50a8e4f2276c4b78f0ba2a8c0b6d08a811ba5f3cb94590e17f1702",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138240"
+      ]
+    },
+    {
+      "id": "FDE-M4-089",
+      "module": "M4",
+      "topic": "硬边界与软排序",
+      "decision": "保留",
+      "finding": "完整打标前提下先范围过滤再排序，元数据排序不提供全部授权保证。",
+      "changedFields": [],
+      "beforeHash": "2aa9c617d7b5888d7941ed8318a80aebd64360d942d7184cf0c2d84fd1d8a790",
+      "afterHash": "2aa9c617d7b5888d7941ed8318a80aebd64360d942d7184cf0c2d84fd1d8a790",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138240"
+      ]
+    },
+    {
+      "id": "FDE-M4-094",
+      "module": "M4",
+      "topic": "主动任务触发",
+      "decision": "保留",
+      "finding": "告警输入触发和输出消息是两条接口链，不能混为一个Webhook。",
+      "changedFields": [],
+      "beforeHash": "d76822ddf7b787e0a6c656a5d992849f26f9eb0d431d9b2fbf9ac78108ca2b14",
+      "afterHash": "d76822ddf7b787e0a6c656a5d992849f26f9eb0d431d9b2fbf9ac78108ca2b14",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M4-098",
+      "module": "M4",
+      "topic": "预置与定制选择",
+      "decision": "保留",
+      "finding": "已有Skill可先验证实际契约，内置审核不替代业务效果验收。",
+      "changedFields": [],
+      "beforeHash": "efd8097fe3b15835122eaec0ccda64fa63dc79493310cff7b2e7c1609097a24c",
+      "afterHash": "efd8097fe3b15835122eaec0ccda64fa63dc79493310cff7b2e7c1609097a24c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129561"
+      ]
+    },
+    {
+      "id": "FDE-M4-103",
+      "module": "M4",
+      "topic": "转交职责边界",
+      "decision": "保留",
+      "finding": "转交描述说明何时交接，执行提示词说明如何做；应让职责互补。",
+      "changedFields": [],
+      "beforeHash": "4a4500fc464f3ce548c1d311d140a5904ac98608051657b1f3a9583d0df683ac",
+      "afterHash": "4a4500fc464f3ce548c1d311d140a5904ac98608051657b1f3a9583d0df683ac",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122598"
+      ]
+    },
+    {
+      "id": "FDE-M4-106",
+      "module": "M4",
+      "topic": "文档图片过滤取舍",
+      "decision": "修订",
+      "finding": "过滤小图可能丢关键符号，需按实际解析内容验证。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "428058d0a2ff45f6bc2e106190d7c72e33ca07392b89cedd7b3a26effc001bd6",
+      "afterHash": "a0a86e47a55e0e3edaf782c5987de78c641e0a8b11dea82d862e72b4e5c5b5f9",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122551"
+      ]
+    },
+    {
+      "id": "FDE-M4-107",
+      "module": "M4",
+      "topic": "工作流作为工具",
+      "decision": "修订",
+      "finding": "自由转交工具调用与指定单工作流模式不同，仍需核实流程节点适用性。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "a6840db461425cbc03e8efc75e557f233215f64c6b1d672a400117a9930dab10",
+      "afterHash": "7640abab3e597b89215582c962790d899447b57c6b57be5e6e3d0281f005e2d8",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122556"
+      ]
+    },
+    {
+      "id": "FDE-M4-112",
+      "module": "M4",
+      "topic": "切片粒度取舍",
+      "decision": "修订",
+      "finding": "先保留条件和例外的完整上下文，再用原问法及变式回归。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "aa9fa27ee09f3a5ee542d1d19901a0358129c4d0e1c5bb1dbf12740d3601e0d7",
+      "afterHash": "bc37c7398daff52a819d00d236439437326e5ceaf4ce014f7a44578cc6794f08",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122551"
+      ]
+    },
+    {
+      "id": "FDE-M4-114",
+      "module": "M4",
+      "topic": "表格跨行依赖",
+      "decision": "保留",
+      "finding": "表格记录可跨多行，切分应按语义单元而非一律一行。",
+      "changedFields": [],
+      "beforeHash": "65fd1328c46d2b547b0e5b0b2f3d93fe2bf9b020472d9b29bd1fa6133dbdfbef",
+      "afterHash": "65fd1328c46d2b547b0e5b0b2f3d93fe2bf9b020472d9b29bd1fa6133dbdfbef",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122551"
+      ]
+    },
+    {
+      "id": "FDE-M4-115",
+      "module": "M4",
+      "topic": "人工修正知识",
+      "decision": "修订",
+      "finding": "少量错误片段应对照原文干预，不能用无证据的最终答案覆盖根因。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "e065a7ffd3c84c52cfba60d1c5694d95cbe1fa838cabe396a447277f6073512e",
+      "afterHash": "2d0479f2b62553c7bec62ef6dba8c88ac0009e6a449627b97c09ed7c49bebe39",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119287"
+      ]
+    },
+    {
+      "id": "FDE-M4-118",
+      "module": "M4",
+      "topic": "不规则表格结构化前提",
+      "decision": "保留",
+      "finding": "合并单元格展开需正确继承区域和多级表头，行数一致不足以证明结构正确。",
+      "changedFields": [],
+      "beforeHash": "a9a8b7eb496ebc9761847a5c12161d98600ac51b16ae154300eda624b3d4b232",
+      "afterHash": "a9a8b7eb496ebc9761847a5c12161d98600ac51b16ae154300eda624b3d4b232",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119288"
+      ]
+    },
+    {
+      "id": "FDE-M4-119",
+      "module": "M4",
+      "topic": "文件表格的SQL路径",
+      "decision": "保留",
+      "finding": "无直连库时评估表格检索增强，不能伪造数据库地址或把文本生成冒充SQL执行。",
+      "changedFields": [],
+      "beforeHash": "4d518457d8d5ae7834e0361d39f40f5579c75184b5d9d04563ab49e2e641a2aa",
+      "afterHash": "4d518457d8d5ae7834e0361d39f40f5579c75184b5d9d04563ab49e2e641a2aa",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119288"
+      ]
+    },
+    {
+      "id": "FDE-M4-122",
+      "module": "M4",
+      "topic": "资料与派生问答",
+      "decision": "保留",
+      "finding": "版本替换应核查派生问答关联，否则旧口径可能留存。",
+      "changedFields": [],
+      "beforeHash": "8c07dc1c1e46df508f643814faa85742d60c2fd9dc19b0c94b489b2f54104437",
+      "afterHash": "8c07dc1c1e46df508f643814faa85742d60c2fd9dc19b0c94b489b2f54104437",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/116451"
+      ]
+    },
+    {
+      "id": "FDE-M4-124",
+      "module": "M4",
+      "topic": "接入体验与生成耗时",
+      "decision": "保留",
+      "finding": "流式回包频率影响体验，不证明模型生成速度或Token成本变化。",
+      "changedFields": [],
+      "beforeHash": "828cee6114360fd6147745bbbe108bde984ba0d32bac8ff48be15456590c4710",
+      "afterHash": "828cee6114360fd6147745bbbe108bde984ba0d32bac8ff48be15456590c4710",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129202"
+      ]
+    },
+    {
+      "id": "FDE-M4-125",
+      "module": "M4",
+      "topic": "流式客户端正确性",
+      "decision": "保留",
+      "finding": "增量模式仍可能有text.replace，应按事件语义更新内容。",
+      "changedFields": [],
+      "beforeHash": "751b03ed67773b33c172bdad123bd567773b465f8ee504dc3d7a1d0d66565610",
+      "afterHash": "751b03ed67773b33c172bdad123bd567773b465f8ee504dc3d7a1d0d66565610",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129202"
+      ]
+    },
+    {
+      "id": "FDE-M4-128",
+      "module": "M4",
+      "topic": "连接凭证生命周期",
+      "decision": "保留",
+      "finding": "连接Token与长期AppKey不同，按每次新连接的规则获取。",
+      "changedFields": [],
+      "beforeHash": "013d274666a07ebfd533a4baa0d4ba6b480d97d4c5bcebcc60c3f7ff28cf8d44",
+      "afterHash": "013d274666a07ebfd533a4baa0d4ba6b480d97d4c5bcebcc60c3f7ff28cf8d44",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129365"
+      ]
+    },
+    {
+      "id": "FDE-M4-131",
+      "module": "M4",
+      "topic": "存量接口迁移时点",
+      "decision": "保留",
+      "finding": "保留明确的旧SSE下线时间，并注明接口版本，避免未来兼容承诺。",
+      "changedFields": [],
+      "beforeHash": "607c0c8bd6f7e67434e113ead21fc4f812d6bc065845bbe1ba3c7e3189416a7c",
+      "afterHash": "607c0c8bd6f7e67434e113ead21fc4f812d6bc065845bbe1ba3c7e3189416a7c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/105561"
+      ]
+    },
+    {
+      "id": "FDE-M4-139",
+      "module": "M4",
+      "topic": "多轮需求指代还原",
+      "decision": "修订",
+      "finding": "指代与省略需结合已选对象补全，文档解析和回复字数不解决查询语义。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "29b3e904160679fc487bfcf0042a741412dcf0f691a42893699cc53092c85806",
+      "afterHash": "2058ad8ed35a9937a49783a64f620248cac66a066ccf2eace1d9fbcc5a790c14",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112876"
+      ]
+    },
+    {
+      "id": "FDE-M4-141",
+      "module": "M4",
+      "topic": "模板变量声明与填值故障",
+      "decision": "保留",
+      "finding": "模板变量名一致且填值后检查实际文本，不能依靠温度修复插值错误。",
+      "changedFields": [],
+      "beforeHash": "36681b741405195a3ea3fe779cc84fcc9590a626e485f1d7489151dd4238bfc5",
+      "afterHash": "36681b741405195a3ea3fe779cc84fcc9590a626e485f1d7489151dd4238bfc5",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/120901"
+      ]
+    },
+    {
+      "id": "FDE-M4-144",
+      "module": "M4",
+      "topic": "有效期约束与业务承诺",
+      "decision": "修订",
+      "finding": "明确不可超期检索时测试时间边界，上传时间不能代替业务有效期。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "ed013898cf77105e1a1cfcda6066896067b2a2c26320ab8d40438cf099673ad9",
+      "afterHash": "38d5c2a817e167e24544d76cec5ec54b10403837c85d9f18d51a1771f2626a84",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138380"
+      ]
+    },
+    {
+      "id": "FDE-M4-150",
+      "module": "M4",
+      "topic": "数值判定与表达生成",
+      "decision": "保留",
+      "finding": "数值判断先于回复生成，单位转换与阈值条件需固定规则。",
+      "changedFields": [],
+      "beforeHash": "ab1f7516d699abdeefcf05b723bfe5a8cd409795f427a1c4e2ef811e583943d5",
+      "afterHash": "ab1f7516d699abdeefcf05b723bfe5a8cd409795f427a1c4e2ef811e583943d5",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112967",
+        "https://cloud.tencent.com/document/product/1759/112970"
+      ]
+    },
+    {
+      "id": "FDE-M4-151",
+      "module": "M4",
+      "topic": "当前数据与历史快照比较",
+      "decision": "保留",
+      "finding": "当前与历史需分别取证，再统一对象键和时间口径计算。",
+      "changedFields": [],
+      "beforeHash": "6f48eae7c5c0d14ef9ab944fd53db6f930a80166b2aab39732e4967080cdd807",
+      "afterHash": "6f48eae7c5c0d14ef9ab944fd53db6f930a80166b2aab39732e4967080cdd807",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119291",
+        "https://cloud.tencent.com/document/product/1759/115872",
+        "https://cloud.tencent.com/document/product/1759/112967"
+      ]
+    },
+    {
+      "id": "FDE-M4-152",
+      "module": "M4",
+      "topic": "证据与回复双产物",
+      "decision": "修订",
+      "finding": "归档保存原始片段，不能从生成答案逆推完整原文。",
+      "changedFields": [
+        "options",
+        "distractors"
+      ],
+      "beforeHash": "dd7fd60cc447b283507c1acfcb6d8809f5ac51d63185fb0837c5a2ec09475b79",
+      "afterHash": "beb6a9906992997eebfbab8bd09e351cc36822aca6b7351f48612d8a6513bba2",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112966",
+        "https://cloud.tencent.com/document/product/1759/112964"
+      ]
+    },
+    {
+      "id": "FDE-M4-153",
+      "module": "M4",
+      "topic": "产品对象与时效双约束",
+      "decision": "保留",
+      "finding": "型号、业务有效期和历史查询策略分别配置，不能只按上传时间选资料。",
+      "changedFields": [],
+      "beforeHash": "d2145e08ea3858950e4b8c43fd6d0ba49b91e8873da51c314a9150f571b32a31",
+      "afterHash": "d2145e08ea3858950e4b8c43fd6d0ba49b91e8873da51c314a9150f571b32a31",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138380",
+        "https://cloud.tencent.com/document/product/1759/138240"
+      ]
+    },
+    {
+      "id": "FDE-M4-154",
+      "module": "M4",
+      "topic": "确定入口与自主检索分工",
+      "decision": "保留",
+      "finding": "确定布尔条件先路由，再在需要迭代证据的分支使用Agentic RAG。",
+      "changedFields": [],
+      "beforeHash": "dab9a02165182856c868bce2508973118b9abf674501aa7e7a79281b7f3f1c16",
+      "afterHash": "dab9a02165182856c868bce2508973118b9abf674501aa7e7a79281b7f3f1c16",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/132211",
+        "https://cloud.tencent.com/document/product/1759/112970"
+      ]
+    },
+    {
+      "id": "FDE-M4-155",
+      "module": "M4",
+      "topic": "两类检索任务的成本取舍",
+      "decision": "保留",
+      "finding": "快检索与深检索按任务分流，避免一律增加反思轮数损害时延。",
+      "changedFields": [],
+      "beforeHash": "9c3ead5b81a34100bfd84d5ae8bfb09a92a9f51745028d8600cb90d377d22b0c",
+      "afterHash": "9c3ead5b81a34100bfd84d5ae8bfb09a92a9f51745028d8600cb90d377d22b0c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/132211",
+        "https://cloud.tencent.com/document/product/1759/112966"
+      ]
+    },
+    {
+      "id": "FDE-M4-157",
+      "module": "M4",
+      "topic": "部分依赖任务的混合编排",
+      "decision": "保留",
+      "finding": "不同文件并行、单文件内部依次修正，两层并发与依赖分开。",
+      "changedFields": [],
+      "beforeHash": "416cacb21529eb31b612dae3f3ef60aaf8923eb0c0809688828cb0dc156e4895",
+      "afterHash": "416cacb21529eb31b612dae3f3ef60aaf8923eb0c0809688828cb0dc156e4895",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115750",
+        "https://cloud.tencent.com/document/product/1759/119290"
+      ]
+    },
+    {
+      "id": "FDE-M4-158",
+      "module": "M4",
+      "topic": "循环结束与后续发布",
+      "decision": "保留",
+      "finding": "成功退出和达到上限退出必须分开，不能以循环结束代表通过。",
+      "changedFields": [],
+      "beforeHash": "7996e4b33d3f4774cf00272203f98ea4bfd943168e058a61e82885485f542974",
+      "afterHash": "7996e4b33d3f4774cf00272203f98ea4bfd943168e058a61e82885485f542974",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115750",
+        "https://cloud.tencent.com/document/product/1759/112970"
+      ]
+    },
+    {
+      "id": "FDE-M4-161",
+      "module": "M4",
+      "topic": "显式选择与系统判定",
+      "decision": "保留",
+      "finding": "用户表达偏好与系统数值判断分别由选项卡和条件逻辑承担。",
+      "changedFields": [],
+      "beforeHash": "fe3a58a7344db292f8d10daf983b3f77f7c1892771d56cdd1a24e09a7dfb15de",
+      "afterHash": "fe3a58a7344db292f8d10daf983b3f77f7c1892771d56cdd1a24e09a7dfb15de",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115756",
+        "https://cloud.tencent.com/document/product/1759/112970"
+      ]
+    },
+    {
+      "id": "FDE-M4-162",
+      "module": "M4",
+      "topic": "附件收集与内容理解",
+      "decision": "保留",
+      "finding": "文件到达、视觉理解与输出结构校验缺一不可。",
+      "changedFields": [],
+      "beforeHash": "8b3de879dca6cec70de5c72edb1ba71c0898fe7e18eb8111c4f8ee6fe30b9865",
+      "afterHash": "8b3de879dca6cec70de5c72edb1ba71c0898fe7e18eb8111c4f8ee6fe30b9865",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/123744",
+        "https://cloud.tencent.com/document/product/1759/112963"
+      ]
+    },
+    {
+      "id": "FDE-M4-163",
+      "module": "M4",
+      "topic": "输入表示与业务合法性分层",
+      "decision": "保留",
+      "finding": "字段非空不代表跨字段逻辑有效，日期顺序需独立验证。",
+      "changedFields": [],
+      "beforeHash": "630ec760a4ee7ec5a051532e6e3f601898fb41d131f6e1dfc683354a500f102c",
+      "afterHash": "630ec760a4ee7ec5a051532e6e3f601898fb41d131f6e1dfc683354a500f102c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112962",
+        "https://cloud.tencent.com/document/product/1759/112967"
+      ]
+    },
+    {
+      "id": "FDE-M4-166",
+      "module": "M4",
+      "topic": "自主规划与确定计算",
+      "decision": "保留",
+      "finding": "自主搜索由Agent承担，精确公式由确定计算实现。",
+      "changedFields": [],
+      "beforeHash": "412f6de231a8edafc29a0930c852f84accc4f96641acc100dfb7b4619c4cfaae",
+      "afterHash": "412f6de231a8edafc29a0930c852f84accc4f96641acc100dfb7b4619c4cfaae",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122554",
+        "https://cloud.tencent.com/document/product/1759/112967"
+      ]
+    },
+    {
+      "id": "FDE-M4-167",
+      "module": "M4",
+      "topic": "多专家冲突的输出约束",
+      "decision": "保留",
+      "finding": "多专家冲突需证据核对或明确未决，不以多数或完成顺序替代裁决。",
+      "changedFields": [],
+      "beforeHash": "05ef616fcca980a2bb34edbaec3ee1370fddc5c900d1514fdc76d293c20be890",
+      "afterHash": "05ef616fcca980a2bb34edbaec3ee1370fddc5c900d1514fdc76d293c20be890",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122554",
+        "https://cloud.tencent.com/document/product/1759/112970"
+      ]
+    },
+    {
+      "id": "FDE-M4-168",
+      "module": "M4",
+      "topic": "专家Agent的证据输入",
+      "decision": "保留",
+      "finding": "专家输入和职责显式约束，调用Agent不代表自动拥有全部祖先输出。",
+      "changedFields": [],
+      "beforeHash": "d0a7b6d5db7e0b8eea5cbedb31d2053cb10deb310808bbffc27d193f494a0f0d",
+      "afterHash": "d0a7b6d5db7e0b8eea5cbedb31d2053cb10deb310808bbffc27d193f494a0f0d",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122554",
+        "https://cloud.tencent.com/document/product/1759/112966"
+      ]
+    },
+    {
+      "id": "FDE-M4-169",
+      "module": "M4",
+      "topic": "共享知识库的检索字段变更",
+      "decision": "保留",
+      "finding": "共享库元数据变更需覆盖所有依赖应用的回归，不只测新增需求方。",
+      "changedFields": [],
+      "beforeHash": "90de8dbafbf04065bdc01aa823fe935218eb94238ae1b262a5178f6f617c0005",
+      "afterHash": "90de8dbafbf04065bdc01aa823fe935218eb94238ae1b262a5178f6f617c0005",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138240",
+        "https://cloud.tencent.com/document/product/1759/123551"
+      ]
+    },
+    {
+      "id": "FDE-M4-170",
+      "module": "M4",
+      "topic": "文件信息与业务校验",
+      "decision": "保留",
+      "finding": "先校验文件元信息再调用处理服务，不能仅信口述大小。",
+      "changedFields": [],
+      "beforeHash": "0c81cf282533a0733e30638fbf8930434cfb4cde02b29928b06a1430d50a7c8a",
+      "afterHash": "0c81cf282533a0733e30638fbf8930434cfb4cde02b29928b06a1430d50a7c8a",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/123744",
+        "https://cloud.tencent.com/document/product/1759/112967"
+      ]
+    },
+    {
+      "id": "FDE-M4-171",
+      "module": "M4",
+      "topic": "检索字段与生成解释",
+      "decision": "保留",
+      "finding": "输出要求引用隐藏元数据时，应显式传给生成步骤。",
+      "changedFields": [],
+      "beforeHash": "7ca95b4ffb14e78e04942387ca6e7e4cd056b234a2e8ae22cd408f04172973de",
+      "afterHash": "7ca95b4ffb14e78e04942387ca6e7e4cd056b234a2e8ae22cd408f04172973de",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138240",
+        "https://cloud.tencent.com/document/product/1759/112963"
+      ]
+    },
+    {
+      "id": "FDE-M4-172",
+      "module": "M4",
+      "topic": "方法包与实例指令",
+      "decision": "保留",
+      "finding": "方法与参考放Skill，动态主题用变量，避免按主题复制整包。",
+      "changedFields": [],
+      "beforeHash": "70d70e07faf146df4e789158bac2fcbef4f9ac5f2b3cdb13ec32f80865ef808e",
+      "afterHash": "70d70e07faf146df4e789158bac2fcbef4f9ac5f2b3cdb13ec32f80865ef808e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/134602",
+        "https://cloud.tencent.com/document/product/1759/120901"
+      ]
+    },
+    {
+      "id": "FDE-M4-173",
+      "module": "M4",
+      "topic": "Claw技能依赖与执行故障",
+      "decision": "保留",
+      "finding": "已读指令不证明运行依赖满足，定位到实际脚本环境。",
+      "changedFields": [],
+      "beforeHash": "b0592c5c3500518887b434b261da391eae60097481d2e4e0ce5646b478a3cee7",
+      "afterHash": "b0592c5c3500518887b434b261da391eae60097481d2e4e0ce5646b478a3cee7",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/134602",
+        "https://cloud.tencent.com/document/product/1759/129563"
+      ]
+    },
+    {
+      "id": "FDE-M4-175",
+      "module": "M4",
+      "topic": "任务受理与流式问答区分",
+      "decision": "保留",
+      "finding": "SSE是传输方式，不自动提供后台持久任务或断线结果找回。",
+      "changedFields": [],
+      "beforeHash": "123839d1bb93536e3ce47e8c91849d51eb9d5d087ce1c5c6534e8dfe661d6c81",
+      "afterHash": "123839d1bb93536e3ce47e8c91849d51eb9d5d087ce1c5c6534e8dfe661d6c81",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/126856",
+        "https://cloud.tencent.com/document/product/1759/129202"
+      ]
+    },
+    {
+      "id": "FDE-M4-176",
+      "module": "M4",
+      "topic": "自动任务中的输入准备",
+      "decision": "保留",
+      "finding": "异步长任务前收齐必要信息，否则任务仍需等待人工输入。",
+      "changedFields": [],
+      "beforeHash": "3f08e088df60dcc6159016929915e0d85b00f1577c1450dbcdd425d9ffba046e",
+      "afterHash": "3f08e088df60dcc6159016929915e0d85b00f1577c1450dbcdd425d9ffba046e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/126856",
+        "https://cloud.tencent.com/document/product/1759/112962"
+      ]
+    },
+    {
+      "id": "FDE-M4-177",
+      "module": "M4",
+      "topic": "证据展示的前后端契约",
+      "decision": "保留",
+      "finding": "引用展示需对应当次证据，固定知识库首页不能证明来源正确。",
+      "changedFields": [],
+      "beforeHash": "24c56da0eb3a180a14cc079d6acb6858321cd8257e9859e946edb871aac6e89f",
+      "afterHash": "24c56da0eb3a180a14cc079d6acb6858321cd8257e9859e946edb871aac6e89f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129202",
+        "https://cloud.tencent.com/document/product/1759/112966"
+      ]
+    },
+    {
+      "id": "FDE-M4-178",
+      "module": "M4",
+      "topic": "多意图之后的执行策略",
+      "decision": "保留",
+      "finding": "识别多意图后还需编排实际动作和依赖顺序。",
+      "changedFields": [],
+      "beforeHash": "76c128072c12d5ef503b96419bc54bd967245265b40fc192a3171cbac004f9af",
+      "afterHash": "76c128072c12d5ef503b96419bc54bd967245265b40fc192a3171cbac004f9af",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115747",
+        "https://cloud.tencent.com/document/product/1759/112970"
+      ]
+    },
+    {
+      "id": "FDE-M4-179",
+      "module": "M4",
+      "topic": "分类成功与参数完备区别",
+      "decision": "保留",
+      "finding": "意图已知不代表参数已齐，更新前应追问新值。",
+      "changedFields": [],
+      "beforeHash": "7a30b6d0157b67b67907fce30400f26c3bba55efba26daff7e329269ef807ca9",
+      "afterHash": "7a30b6d0157b67b67907fce30400f26c3bba55efba26daff7e329269ef807ca9",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115747",
+        "https://cloud.tencent.com/document/product/1759/112962"
+      ]
+    },
+    {
+      "id": "FDE-M4-180",
+      "module": "M4",
+      "topic": "意图组合与互斥分支区别",
+      "decision": "保留",
+      "finding": "从单选变多选会改变汇合契约，首个非空不能代表全部结果。",
+      "changedFields": [],
+      "beforeHash": "9fee5e4332b6baa01dadd925b39676c04ddad5349b2dccc185d9e89a09c85065",
+      "afterHash": "9fee5e4332b6baa01dadd925b39676c04ddad5349b2dccc185d9e89a09c85065",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115747",
+        "https://cloud.tencent.com/document/product/1759/117358"
+      ]
+    },
+    {
+      "id": "FDE-M4-186",
+      "module": "M4",
+      "topic": "分支结果类型适配",
+      "decision": "保留",
+      "finding": "同名不等于同类型；金额比较还要保留币种语义。",
+      "changedFields": [],
+      "beforeHash": "e07a3d3b0a38d4629773d5fa4008072fefe11ce4764c43926ff3fbe856e7c2b8",
+      "afterHash": "e07a3d3b0a38d4629773d5fa4008072fefe11ce4764c43926ff3fbe856e7c2b8",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112967",
+        "https://cloud.tencent.com/document/product/1759/117358"
+      ]
+    },
+    {
+      "id": "FDE-M4-187",
+      "module": "M4",
+      "topic": "可选信息与路径必要性",
+      "decision": "保留",
+      "finding": "必填按业务分支设置，不应迫使普通咨询提供无关编号。",
+      "changedFields": [],
+      "beforeHash": "e4a1f0307bef59327e1912c018e5c2ff9888032269d12e5ba05b52130539e122",
+      "afterHash": "e4a1f0307bef59327e1912c018e5c2ff9888032269d12e5ba05b52130539e122",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112962",
+        "https://cloud.tencent.com/document/product/1759/112970"
+      ]
+    },
+    {
+      "id": "FDE-M4-188",
+      "module": "M4",
+      "topic": "附件与口述替代路径",
+      "decision": "保留",
+      "finding": "两种输入先各自解析，再统一输出契约，URL与正文不能当同类内容。",
+      "changedFields": [],
+      "beforeHash": "e89673d2ed5c99b23f00d200979b4a1fd9a11cff141b416fccff4f553f730387",
+      "afterHash": "e89673d2ed5c99b23f00d200979b4a1fd9a11cff141b416fccff4f553f730387",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/123744",
+        "https://cloud.tencent.com/document/product/1759/126594"
+      ]
+    },
+    {
+      "id": "FDE-M4-189",
+      "module": "M4",
+      "topic": "迭代修正中的人工缺口",
+      "decision": "保留",
+      "finding": "只能由用户补充的缺口不能靠增加循环次数自动修好。",
+      "changedFields": [],
+      "beforeHash": "07655994b41554de1c324377038f7acfaeb4de25f5c5eee1a2d4ee73a918eab7",
+      "afterHash": "07655994b41554de1c324377038f7acfaeb4de25f5c5eee1a2d4ee73a918eab7",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115750",
+        "https://cloud.tencent.com/document/product/1759/112962"
+      ]
+    },
+    {
+      "id": "FDE-M4-190",
+      "module": "M4",
+      "topic": "生成结构与程序校验",
+      "decision": "保留",
+      "finding": "提取成功文字不是结构校验，需要解析及必填字段验证。",
+      "changedFields": [],
+      "beforeHash": "a4e708d34a5e68b642d978fbbc202296d9721fae17657f7293f7b28b9a502dbe",
+      "afterHash": "a4e708d34a5e68b642d978fbbc202296d9721fae17657f7293f7b28b9a502dbe",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112963",
+        "https://cloud.tencent.com/document/product/1759/112967"
+      ]
+    },
+    {
+      "id": "FDE-M4-191",
+      "module": "M4",
+      "topic": "检索证据长度与输入容量",
+      "decision": "保留",
+      "finding": "按证据相关性与覆盖整理上下文，增加输出Token不会扩大已受限输入。",
+      "changedFields": [],
+      "beforeHash": "a1185c8dcea1325f52160f0569c189594128d1efe4be848ba07d1b667aaa03b7",
+      "afterHash": "a1185c8dcea1325f52160f0569c189594128d1efe4be848ba07d1b667aaa03b7",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112966",
+        "https://cloud.tencent.com/document/product/1759/112963"
+      ]
+    },
+    {
+      "id": "FDE-M4-193",
+      "module": "M4",
+      "topic": "预设问答与条件性知识",
+      "decision": "保留",
+      "finding": "通用答案不能吞掉明确例外，应补取适用条款再综合。",
+      "changedFields": [],
+      "beforeHash": "fd5b5c08495296a01083aabbc0b395c1c082161f6a079be4da003143589dba9d",
+      "afterHash": "fd5b5c08495296a01083aabbc0b395c1c082161f6a079be4da003143589dba9d",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112703",
+        "https://cloud.tencent.com/document/product/1759/112966"
+      ]
+    },
+    {
+      "id": "FDE-M4-194",
+      "module": "M4",
+      "topic": "复用流程中的调用方差异",
+      "decision": "保留",
+      "finding": "复用子流程返回状态与结果，把各调用方兜底策略留在调用层。",
+      "changedFields": [],
+      "beforeHash": "d7aefb50ff65751f438e5701e710e89435890bd8a8a4394e2f60765aad7fca8f",
+      "afterHash": "d7aefb50ff65751f438e5701e710e89435890bd8a8a4394e2f60765aad7fca8f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115749",
+        "https://cloud.tencent.com/document/product/1759/112970"
+      ]
+    },
+    {
+      "id": "FDE-M4-195",
+      "module": "M4",
+      "topic": "方法依赖与业务知识边界",
+      "decision": "保留",
+      "finding": "稳定方法和部门资料分层，不能把一部门资料默认为通用授权内容。",
+      "changedFields": [],
+      "beforeHash": "385792ec6c7097d1a6342a8348e80bc0b96f28638d6dd68bd54f083a66fe5686",
+      "afterHash": "385792ec6c7097d1a6342a8348e80bc0b96f28638d6dd68bd54f083a66fe5686",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/134602",
+        "https://cloud.tencent.com/document/product/1759/123551"
+      ]
+    },
+    {
+      "id": "FDE-M4-196",
+      "module": "M4",
+      "topic": "选择结果与后续字段关联",
+      "decision": "保留",
+      "finding": "卡片选择需真正驱动对应参数分支，仅改显示文案不足。",
+      "changedFields": [],
+      "beforeHash": "6164ce5e7bfb19833f9ce397de229b7c6b53c5497146fe9503d9c0e12c7e2542",
+      "afterHash": "6164ce5e7bfb19833f9ce397de229b7c6b53c5497146fe9503d9c0e12c7e2542",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/115756",
+        "https://cloud.tencent.com/document/product/1759/112962"
+      ]
+    },
+    {
+      "id": "FDE-M4-197",
+      "module": "M4",
+      "topic": "批处理的部分失败标记",
+      "decision": "保留",
+      "finding": "部分成功需逐项标识与失败说明，不把缺项包装为全部完成。",
+      "changedFields": [],
+      "beforeHash": "ea49703e0b35925b5666eb73fef93c61f833a2836853313463acf94e12905c44",
+      "afterHash": "ea49703e0b35925b5666eb73fef93c61f833a2836853313463acf94e12905c44",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112967",
+        "https://cloud.tencent.com/document/product/1759/119290"
+      ]
+    },
+    {
+      "id": "FDE-M4-198",
+      "module": "M4",
+      "topic": "接口协议成功与业务状态",
+      "decision": "修订",
+      "finding": "HTTP200只说明传输层成功，确认单应以业务结果为依据。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "d779f5e8a0ce0e7414498847aa8090132807d4eed736af704d58b6b3e009add0",
+      "afterHash": "86114bf28c163f0a1bb368cf227fd2a85fc15c9add3a4037a561279c9f1c10c3",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112968",
+        "https://cloud.tencent.com/document/product/1759/112967"
+      ]
+    },
+    {
+      "id": "FDE-M4-201",
+      "module": "M4",
+      "topic": "用户状态与会话状态分层",
+      "decision": "保留",
+      "finding": "应用变量用户范围与工作流会话范围需区分，题设已明确不同Session。",
+      "changedFields": [],
+      "beforeHash": "c05ac91e0f65842738293731053343ba473f491dcd082601e8e850f07afd8344",
+      "afterHash": "c05ac91e0f65842738293731053343ba473f491dcd082601e8e850f07afd8344",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122457"
+      ]
+    },
+    {
+      "id": "FDE-M4-202",
+      "module": "M4",
+      "topic": "调用方属性与流程可变状态",
+      "decision": "保留",
+      "finding": "可信后端上下文与可修改应用状态应分层，不能反向修改仅透传API参数。",
+      "changedFields": [],
+      "beforeHash": "4fbb7649c03b679045c662dfc0c9d15cb8ba02b33a03b6e9cc23127dc239af0b",
+      "afterHash": "4fbb7649c03b679045c662dfc0c9d15cb8ba02b33a03b6e9cc23127dc239af0b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122457"
+      ]
+    },
+    {
+      "id": "FDE-M4-203",
+      "module": "M4",
+      "topic": "规范化输入与原文可追溯",
+      "decision": "保留",
+      "finding": "系统原文保留，新清洗值作为输出，不覆盖审计依据。",
+      "changedFields": [],
+      "beforeHash": "6e87f67366b43b69b4b5b72cafad30cec61f485ea02d010fe876b2349ac48fad",
+      "afterHash": "6e87f67366b43b69b4b5b72cafad30cec61f485ea02d010fe876b2349ac48fad",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122457"
+      ]
+    },
+    {
+      "id": "FDE-M4-204",
+      "module": "M4",
+      "topic": "跨应用资料共享与状态共享",
+      "decision": "保留",
+      "finding": "共享知识不自动共享APP笔记，跨应用同步需单独方案和验收。",
+      "changedFields": [],
+      "beforeHash": "7ded9d1110840b8ce7a266bf3a7fb4697915a6c2f99ff3a063c6e618f9d9b3c3",
+      "afterHash": "7ded9d1110840b8ce7a266bf3a7fb4697915a6c2f99ff3a063c6e618f9d9b3c3",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122457",
+        "https://cloud.tencent.com/document/product/1759/123551"
+      ]
+    },
+    {
+      "id": "FDE-M4-205",
+      "module": "M4",
+      "topic": "共享服务秘密与用户请求属性",
+      "decision": "保留",
+      "finding": "共享secret与每用户地区不能共用可覆盖变量，地区由可信后端传入。",
+      "changedFields": [],
+      "beforeHash": "0758a78e255d08643f6c3cf37c7ec9668e098062089d33758dfce234c406f7ec",
+      "afterHash": "0758a78e255d08643f6c3cf37c7ec9668e098062089d33758dfce234c406f7ec",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122457"
+      ]
+    },
+    {
+      "id": "FDE-M4-206",
+      "module": "M4",
+      "topic": "中间数据对多消费者的契约",
+      "decision": "保留",
+      "finding": "清洗结果须声明输出并显式引用，同名字段不会自动构成数据流。",
+      "changedFields": [],
+      "beforeHash": "c090116a6e386f8c65fdab6f287d9de00b90b854d0482a0499e27544a9c575fc",
+      "afterHash": "c090116a6e386f8c65fdab6f287d9de00b90b854d0482a0499e27544a9c575fc",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122457"
+      ]
+    },
+    {
+      "id": "FDE-M4-207",
+      "module": "M4",
+      "topic": "动态开关发布与运行时变更分界",
+      "decision": "保留",
+      "finding": "动态配置开关需发布生效，运行时模型更新和开关发布是不同层次。",
+      "changedFields": [],
+      "beforeHash": "bf1b3b4f0308105f21ad960a429aa2d2677677053791cc3be1b0b1467e15c855",
+      "afterHash": "bf1b3b4f0308105f21ad960a429aa2d2677677053791cc3be1b0b1467e15c855",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133870"
+      ]
+    },
+    {
+      "id": "FDE-M4-208",
+      "module": "M4",
+      "topic": "个性化模型与全局配置隔离",
+      "decision": "保留",
+      "finding": "用户级Agent和会话绑定隔离个性化能力，不以轮流修改全局模型模拟隔离。",
+      "changedFields": [],
+      "beforeHash": "4c82b1024564abe6e2e652790f4c9cacc2da89ba1e20ed6a94da656c1d117893",
+      "afterHash": "4c82b1024564abe6e2e652790f4c9cacc2da89ba1e20ed6a94da656c1d117893",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133870"
+      ]
+    },
+    {
+      "id": "FDE-M4-209",
+      "module": "M4",
+      "topic": "仅上下文变化的最小接入",
+      "decision": "保留",
+      "finding": "只传上下文无需为每轮复制完整Agent，避免不必要管理动作。",
+      "changedFields": [],
+      "beforeHash": "44614f986ef481329aed9ee5f4f4cb5f6b2a396358776b9535629b58f9b884a6",
+      "afterHash": "44614f986ef481329aed9ee5f4f4cb5f6b2a396358776b9535629b58f9b884a6",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133870"
+      ]
+    },
+    {
+      "id": "FDE-M4-211",
+      "module": "M4",
+      "topic": "局部模型更新与保留其他能力",
+      "decision": "保留",
+      "finding": "UpdateMask仅更新目标字段，空列表可能清除未拟变更的能力。",
+      "changedFields": [],
+      "beforeHash": "31760f1c46333b10a6bb2ebcb0429187cc5c2a6f91d5b84137230e3d6676b19b",
+      "afterHash": "31760f1c46333b10a6bb2ebcb0429187cc5c2a6f91d5b84137230e3d6676b19b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133870"
+      ]
+    },
+    {
+      "id": "FDE-M4-212",
+      "module": "M4",
+      "topic": "技能全量列表与保留约束",
+      "decision": "保留",
+      "finding": "Skills列表全量覆盖，追加时需提交保留集合与新增项。",
+      "changedFields": [],
+      "beforeHash": "11c3a6a46b0d4943186bc42e78ed3faaa9fbd89b149e1de0f2f844be18e218ea",
+      "afterHash": "11c3a6a46b0d4943186bc42e78ed3faaa9fbd89b149e1de0f2f844be18e218ea",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133870"
+      ]
+    },
+    {
+      "id": "FDE-M4-213",
+      "module": "M4",
+      "topic": "多人维护全量配置的需求澄清",
+      "decision": "保留",
+      "finding": "并发全量修改无自动合并保证，应由集成层防止丢失更新。",
+      "changedFields": [],
+      "beforeHash": "9ad7a3e5e72a7d8e5eb4cc6c091c11314615646764962490edd15b4c9d484cae",
+      "afterHash": "9ad7a3e5e72a7d8e5eb4cc6c091c11314615646764962490edd15b4c9d484cae",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133870"
+      ]
+    },
+    {
+      "id": "FDE-M4-214",
+      "module": "M4",
+      "topic": "模型目录与任务验证分层",
+      "decision": "保留",
+      "finding": "平台可用性与任务效果分别验证，模型列表不构成业务验收。",
+      "changedFields": [],
+      "beforeHash": "c0acc0b169e291afdad1338122503863a767324fa5828fa800157155f692485e",
+      "afterHash": "c0acc0b169e291afdad1338122503863a767324fa5828fa800157155f692485e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133870",
+        "https://cloud.tencent.com/document/product/1759/137902"
+      ]
+    },
+    {
+      "id": "FDE-M4-215",
+      "module": "M4",
+      "topic": "插件注册与精确工具绑定",
+      "decision": "保留",
+      "finding": "注册插件与绑定具体Tool分开，最小开放仅查询能力。",
+      "changedFields": [],
+      "beforeHash": "09925c3b173382f47432951b7776b7ab7cb50dcca15cf63855a0cfae47ed7a8d",
+      "afterHash": "09925c3b173382f47432951b7776b7ab7cb50dcca15cf63855a0cfae47ed7a8d",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133868"
+      ]
+    },
+    {
+      "id": "FDE-M4-216",
+      "module": "M4",
+      "topic": "会话上下文与实验独立性",
+      "decision": "保留",
+      "finding": "新会话隔离会话上下文与工作区，还需另核长期记忆跨会话路径。",
+      "changedFields": [],
+      "beforeHash": "06680232e77df7f3b5fba5b87cb435eefeee9a25c4e0ef77391a9a9508fc888b",
+      "afterHash": "06680232e77df7f3b5fba5b87cb435eefeee9a25c4e0ef77391a9a9508fc888b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133868",
+        "https://cloud.tencent.com/document/product/1759/138162"
+      ]
+    },
+    {
+      "id": "FDE-M4-217",
+      "module": "M4",
+      "topic": "保留协作模式时的授权架构替代",
+      "decision": "修订",
+      "finding": "明确业务服务先核权的替代架构，不虚构Multi-Agent内置权限能力。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "619cd8b7abb8c375f089e31f3255bd5c267f71a71e64c0a1813f62090910feb7",
+      "afterHash": "bac127872968f64d17b85c92f0421042d6de39324efce3fa03884567e11abab5",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281",
+        "https://cloud.tencent.com/document/product/1759/115872"
+      ]
+    },
+    {
+      "id": "FDE-M4-218",
+      "module": "M4",
+      "topic": "企业ACL与检索授权链路",
+      "decision": "保留",
+      "finding": "外部ACL先过滤片段再生成，不与角色方式同时叠加。",
+      "changedFields": [],
+      "beforeHash": "d91e3e8dcb3ae94403c0fa17afe65105a74dcf0cb5b84a23baccaf4811138022",
+      "afterHash": "d91e3e8dcb3ae94403c0fa17afe65105a74dcf0cb5b84a23baccaf4811138022",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M4-219",
+      "module": "M4",
+      "topic": "权限迁移与职责切换",
+      "decision": "保留",
+      "finding": "真实切片标识映射必须验证，HTTP成功不能代替授权正确性。",
+      "changedFields": [],
+      "beforeHash": "58736cd270f371606d4e7188fdc433de4f8f56cd5b663271f9a6fc07ba0dd707",
+      "afterHash": "58736cd270f371606d4e7188fdc433de4f8f56cd5b663271f9a6fc07ba0dd707",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M4-220",
+      "module": "M4",
+      "topic": "知识资产复用与各入口授权",
+      "decision": "保留",
+      "finding": "共享知识资产与每应用终端权限分开验证，不自动继承最严格设置。",
+      "changedFields": [],
+      "beforeHash": "6a8ef7af8afda9295e66570788e11bd4548693f7dfc984319f668800393b8c2d",
+      "afterHash": "6a8ef7af8afda9295e66570788e11bd4548693f7dfc984319f668800393b8c2d",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/123551",
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M4-221",
+      "module": "M4",
+      "topic": "平台只读成员与终端使用者分离",
+      "decision": "保留",
+      "finding": "平台审阅者和终端客户属于两个控制面，统一只读角色不能解决全部需求。",
+      "changedFields": [],
+      "beforeHash": "48458f4c1ead34cb99d892bef5e74034fb17482ec6e770d1ca25a9757a78b0c9",
+      "afterHash": "48458f4c1ead34cb99d892bef5e74034fb17482ec6e770d1ca25a9757a78b0c9",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281",
+        "https://cloud.tencent.com/document/product/1759/122574"
+      ]
+    },
+    {
+      "id": "FDE-M4-222",
+      "module": "M4",
+      "topic": "多角色并集与临时访问设计",
+      "decision": "保留",
+      "finding": "窄角色追加不会缩小并集，需移除过宽授权贡献后实测。",
+      "changedFields": [],
+      "beforeHash": "6833b3e9a4158a8d0b98d154d350e6fd852e8f75e4b8ac58277fc75b21592e5a",
+      "afterHash": "6833b3e9a4158a8d0b98d154d350e6fd852e8f75e4b8ac58277fc75b21592e5a",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M4-223",
+      "module": "M4",
+      "topic": "临时停用记忆与保留需求",
+      "decision": "保留",
+      "finding": "暂停记忆读写与知识权限独立，删除不是保留历史的暂停方法。",
+      "changedFields": [],
+      "beforeHash": "a2ee37cbd8ddf0ec4409cc47f45f5c8e604db0da8d37092356441d66109b873f",
+      "afterHash": "a2ee37cbd8ddf0ec4409cc47f45f5c8e604db0da8d37092356441d66109b873f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138162",
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M4-224",
+      "module": "M4",
+      "topic": "测试生产凭证与版本承诺",
+      "decision": "保留",
+      "finding": "环境共用凭证会扩大变更影响，分设凭证并检查引用。",
+      "changedFields": [],
+      "beforeHash": "8a6911d5b50b3bf4e1ed107e92d34f6323b2b69d76abd1ae24744bbeab6280ee",
+      "afterHash": "8a6911d5b50b3bf4e1ed107e92d34f6323b2b69d76abd1ae24744bbeab6280ee",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138107",
+        "https://cloud.tencent.com/document/product/1759/133868"
+      ]
+    },
+    {
+      "id": "FDE-M4-225",
+      "module": "M4",
+      "topic": "凭证授权完成与业务调用完成",
+      "decision": "保留",
+      "finding": "OAuth授权完成与业务Body参数齐备是两项不同前提。",
+      "changedFields": [],
+      "beforeHash": "0f3bfb2870244d4d6a5c70ca06e2591931833650c7705b4eea3f61343df85724",
+      "afterHash": "0f3bfb2870244d4d6a5c70ca06e2591931833650c7705b4eea3f61343df85724",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138107"
+      ]
+    },
+    {
+      "id": "FDE-M4-226",
+      "module": "M4",
+      "topic": "共享工具与共享授权的分离",
+      "decision": "保留",
+      "finding": "工具共享不自动代表个人凭证共享，核对目标空间与凭证范围。",
+      "changedFields": [],
+      "beforeHash": "d1ca5c1d3f51ca19f023e3bce3483da4b3c54cebed0c6c362f23f5fe7d481701",
+      "afterHash": "d1ca5c1d3f51ca19f023e3bce3483da4b3c54cebed0c6c362f23f5fe7d481701",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138107"
+      ]
+    },
+    {
+      "id": "FDE-M4-227",
+      "module": "M4",
+      "topic": "凭证轮换的依赖图设计",
+      "decision": "保留",
+      "finding": "按全部依赖对象验证轮换，单一聊天成功不能覆盖工作流和数据源。",
+      "changedFields": [],
+      "beforeHash": "55733efece26286a5dc691ed1279be8bed02f637211744ce78e87a6c452276f2",
+      "afterHash": "55733efece26286a5dc691ed1279be8bed02f637211744ce78e87a6c452276f2",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138107"
+      ]
+    },
+    {
+      "id": "FDE-M4-228",
+      "module": "M4",
+      "topic": "受控使用密钥与密钥交付区别",
+      "decision": "保留",
+      "finding": "共享可引用凭证可避免下发明文，但仍需验证使用与管理权限边界。",
+      "changedFields": [],
+      "beforeHash": "e260ea1ceb19f9c1b61c271ac5b0cd839c7d52556f87c9608b50de7c16a41f14",
+      "afterHash": "e260ea1ceb19f9c1b61c271ac5b0cd839c7d52556f87c9608b50de7c16a41f14",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138107"
+      ]
+    },
+    {
+      "id": "FDE-M4-229",
+      "module": "M4",
+      "topic": "召回实验与生产配置交接",
+      "decision": "保留",
+      "finding": "测试参数需显式写入应用，再验证并发布，不能凭测试截图视为上线。",
+      "changedFields": [],
+      "beforeHash": "103894f9527a73eba17af3e4b608a89725b995c11c959ba9354ae8a67486d00b",
+      "afterHash": "103894f9527a73eba17af3e4b608a89725b995c11c959ba9354ae8a67486d00b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/135538",
+        "https://cloud.tencent.com/document/product/1759/137902"
+      ]
+    },
+    {
+      "id": "FDE-M4-230",
+      "module": "M4",
+      "topic": "多库召回的总体预算",
+      "decision": "保留",
+      "finding": "每库召回和跨库最终候选预算分开，温度不控制证据条数。",
+      "changedFields": [],
+      "beforeHash": "33219f95804cb41f2574a4964cc07dbf6fe99a017a7b85916de88aec50e46d12",
+      "afterHash": "33219f95804cb41f2574a4964cc07dbf6fe99a017a7b85916de88aec50e46d12",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/135538"
+      ]
+    },
+    {
+      "id": "FDE-M4-231",
+      "module": "M4",
+      "topic": "多库测试上限与组合验证范围",
+      "decision": "保留",
+      "finding": "工具局部容量限制需分组排查，再验证目标应用全范围组合。",
+      "changedFields": [],
+      "beforeHash": "d3578fe40f449ebcaf88be04de03f2bfc1e6d429cba2ed6e42256b792f76b339",
+      "afterHash": "d3578fe40f449ebcaf88be04de03f2bfc1e6d429cba2ed6e42256b792f76b339",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/135538",
+        "https://cloud.tencent.com/document/product/1759/137902"
+      ]
+    },
+    {
+      "id": "FDE-M4-232",
+      "module": "M4",
+      "topic": "人工修订文件与模型上下文一致性",
+      "decision": "保留",
+      "finding": "编辑文件后要让后续读取实际新版，不能假设模型已有上下文被同步改写。",
+      "changedFields": [],
+      "beforeHash": "2b4ccf14cd0d0b21492f1e40b7cd8e4b27684a2da35fa1e6fef7403562af9b9f",
+      "afterHash": "2b4ccf14cd0d0b21492f1e40b7cd8e4b27684a2da35fa1e6fef7403562af9b9f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/130637"
+      ]
+    },
+    {
+      "id": "FDE-M4-233",
+      "module": "M4",
+      "topic": "产物生成与业务上线的验收边界",
+      "decision": "保留",
+      "finding": "工作台预览不等于正式业务部署，需按客户接入运维流程交付。",
+      "changedFields": [],
+      "beforeHash": "59fb653efb3b429f879abd600f305f389b1f5f5ca0d3b35ea9bab6ed63facfe2",
+      "afterHash": "59fb653efb3b429f879abd600f305f389b1f5f5ca0d3b35ea9bab6ed63facfe2",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/130637"
+      ]
+    },
+    {
+      "id": "FDE-M4-234",
+      "module": "M4",
+      "topic": "记忆纠错的在途请求验收",
+      "decision": "保留",
+      "finding": "记录修正与下一轮验收，不承诺在途回答立即重算。",
+      "changedFields": [],
+      "beforeHash": "10eec0d5f7130758154b35326afff0cbce582e620c4971b89a5437455933779a",
+      "afterHash": "10eec0d5f7130758154b35326afff0cbce582e620c4971b89a5437455933779a",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138162"
+      ]
+    },
+    {
+      "id": "FDE-M4-235",
+      "module": "M4",
+      "topic": "共享记忆库的摘要选择性注入",
+      "decision": "保留",
+      "finding": "库级摘要生成与应用引用两层控制，生成消耗和使用范围分别核查。",
+      "changedFields": [],
+      "beforeHash": "6ae278ada007469153630066aee42d068e66919d3bb5793d872a4c2b58726cce",
+      "afterHash": "6ae278ada007469153630066aee42d068e66919d3bb5793d872a4c2b58726cce",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138162"
+      ]
+    },
+    {
+      "id": "FDE-M4-236",
+      "module": "M4",
+      "topic": "共享记忆库退役的依赖和保留",
+      "decision": "保留",
+      "finding": "先导出需保留条目并查全部依赖，再按不可恢复边界退役记忆库。",
+      "changedFields": [],
+      "beforeHash": "a221d8a38fe345e4d73e9030af28e3882ed0f384e0016b54dda012cfbd79e4e8",
+      "afterHash": "a221d8a38fe345e4d73e9030af28e3882ed0f384e0016b54dda012cfbd79e4e8",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138162"
+      ]
+    },
+    {
+      "id": "FDE-M4-237",
+      "module": "M4",
+      "topic": "内容审核与数据授权双重约束",
+      "decision": "修订",
+      "finding": "内容风险审核与知识授权独立；正常措辞也可能提出越权查询。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "7563df0040b545cae10851e09b616ad5159e894c056aa899bf99be564382e701",
+      "afterHash": "fbd9ee5e172779272d25024f9d563c4765397b6c88097fb3c0a38159708c2724",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/125070",
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M4-239",
+      "module": "M4",
+      "topic": "业务专用风险规则与误拦评估",
+      "decision": "保留",
+      "finding": "组合词条件和变形拼写规则需分别设计，且验证正常术语误拦。",
+      "changedFields": [],
+      "beforeHash": "c536dc373c33f027e0e1f46d60b69039fb29ca9767ad48aa0e0486c2ddf0b69e",
+      "afterHash": "c536dc373c33f027e0e1f46d60b69039fb29ca9767ad48aa0e0486c2ddf0b69e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/125070"
+      ]
+    },
+    {
+      "id": "FDE-M4-241",
+      "module": "M4",
+      "topic": "知识权限撤销与其他上下文渠道",
+      "decision": "修订",
+      "finding": "知识权限撤销不代表旧记忆自动清除，需检查全部生成上下文来源。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "8afbbc56925cb04d8a63cdd2f98af491f173a35e7bcff0dd8da8b4e8564ccf87",
+      "afterHash": "1b177028941075989eb7e7c02cb57c7e9c8e703b069f95a9994be2428926d7be",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281",
+        "https://cloud.tencent.com/document/product/1759/138162"
+      ]
+    },
+    {
+      "id": "FDE-M4-242",
+      "module": "M4",
+      "topic": "套餐权益与试点交付形式",
+      "decision": "保留",
+      "finding": "工作台试验与团队应用发布有不同权益前提，PU不自动解锁全部功能。",
+      "changedFields": [],
+      "beforeHash": "0c23d5e427a45828c56d8459a198ce72e245eaa85642b341d1301c93c5716174",
+      "afterHash": "0c23d5e427a45828c56d8459a198ce72e245eaa85642b341d1301c93c5716174",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129200"
+      ]
+    },
+    {
+      "id": "FDE-M4-243",
+      "module": "M4",
+      "topic": "工作台执行成本的估算口径",
+      "decision": "保留",
+      "finding": "成本看模型、工具和执行耗时口径，不能把等用户期间一律算运行。",
+      "changedFields": [],
+      "beforeHash": "77f6b4c91ccfc41627d2a1d23f684d6876315f7d2ee7f2339f1bbef870f1daaa",
+      "afterHash": "77f6b4c91ccfc41627d2a1d23f684d6876315f7d2ee7f2339f1bbef870f1daaa",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/130637"
+      ]
+    },
+    {
+      "id": "FDE-M4-244",
+      "module": "M4",
+      "topic": "模式迁移与多资产兼容清单",
+      "decision": "保留",
+      "finding": "Claw迁移需新建，知识复用与记忆类型兼容需分别核对。",
+      "changedFields": [],
+      "beforeHash": "1abc9aba80708ca163968a167b4b5e27eb4d36ea0d5e40240f717dbf262ada93",
+      "afterHash": "1abc9aba80708ca163968a167b4b5e27eb4d36ea0d5e40240f717dbf262ada93",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/134194",
+        "https://cloud.tencent.com/document/product/1759/138162",
+        "https://cloud.tencent.com/document/product/1759/123551"
+      ]
+    },
+    {
+      "id": "FDE-M4-245",
+      "module": "M4",
+      "topic": "自动生成测试与客户验收条件",
+      "decision": "修订",
+      "finding": "总分高不证明缺字段分支已覆盖，必须加入明确失败样本及期望。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "231b8cbc5db207ccdcde39a70bf450c4a425f86c62bca21947ed1c8cf125d9db",
+      "afterHash": "ffd69d563cc250a6dc1bc480fb8d9a3db4f52b6286104c2cda73e908744798f0",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/137902"
+      ]
+    },
+    {
+      "id": "FDE-M4-246",
+      "module": "M4",
+      "topic": "终端个性化控制与管理接口职责",
+      "decision": "保留",
+      "finding": "终端个性化选择经集成层受控处理，不下发开发者管理密钥。",
+      "changedFields": [],
+      "beforeHash": "c5193b89e74f18432f888a2668b72ee088af38b87f6e09c2f7d925d56052c4c4",
+      "afterHash": "c5193b89e74f18432f888a2668b72ee088af38b87f6e09c2f7d925d56052c4c4",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133868",
+        "https://cloud.tencent.com/document/product/1759/133870"
+      ]
+    },
+    {
+      "id": "FDE-M4-247",
+      "module": "M4",
+      "topic": "外部权限异常行为的待核契约",
+      "decision": "修订",
+      "finding": "文档未说明超时默认行为应约定并测试，不能断言默认拒绝或默认放行。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "be418ba40fd422c7331e85ec22c317b28cc8ce6a8cec31daf629fe60f6d56014",
+      "afterHash": "0ba4014b3e7054b60c4718e6467796f46fe07661c85f2ee9c7674df033402611",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M4-248",
+      "module": "M4",
+      "topic": "可信身份与自报业务属性",
+      "decision": "修订",
+      "finding": "授权身份来自可信认证映射，自报部门仅作业务上下文不授新权限。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "921fbd3a578f92f81bd24e42efbeded355a326078ca9a7149d62fc7381a04727",
+      "afterHash": "ec02e32ab89cd2e7a1fbe83331334a5ad8cc08c13c84d0060d72f37dbaa9cb16",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281",
+        "https://cloud.tencent.com/document/product/1759/133870"
+      ]
+    },
+    {
+      "id": "FDE-M4-249",
+      "module": "M4",
+      "topic": "检索证据与有效业务授权的双验收",
+      "decision": "保留",
+      "finding": "规则问答成功与实际退款执行成功分开，授权修复后验证回执。",
+      "changedFields": [],
+      "beforeHash": "9b18d44f87bddcd6e3a23d08c4b6187c18188cc732d36dfe16eabb23c234f784",
+      "afterHash": "9b18d44f87bddcd6e3a23d08c4b6187c18188cc732d36dfe16eabb23c234f784",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138107",
+        "https://cloud.tencent.com/document/product/1759/115872",
+        "https://cloud.tencent.com/document/product/1759/123551"
+      ]
+    },
+    {
+      "id": "FDE-M4-250",
+      "module": "M4",
+      "topic": "未证实继承行为的升级验收",
+      "decision": "保留",
+      "finding": "旧用户级实例的升级行为未明就列为待核，不从快照推定自动同步或绝无路径。",
+      "changedFields": [],
+      "beforeHash": "da3b6e43d901a3c66b6a96891c4e101c880c0dd458225341d09e94491d1588ee",
+      "afterHash": "da3b6e43d901a3c66b6a96891c4e101c880c0dd458225341d09e94491d1588ee",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/133868",
+        "https://cloud.tencent.com/document/product/1759/133870"
+      ]
+    },
+    {
+      "id": "FDE-M5-008",
+      "module": "M5",
+      "topic": "金融／客户案例·海港人寿",
+      "decision": "修订",
+      "finding": "材料要经业务确认并标明适用范围；营销话术和个人笔记不能替代制度依据。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "49c191cd74a296982e9be0192a9429dacee780e4241b27e5cc7eabd7f3c5b6ca",
+      "afterHash": "497ea62c1684f5cc67e7c5794c91297b5646b37bbd43f343689236e83600bcc3",
+      "sourceUrls": [
+        "https://cloud.tencent.com/product/adp"
+      ]
+    },
+    {
+      "id": "FDE-M5-009",
+      "module": "M5",
+      "topic": "金融／2.6 使用规则",
+      "decision": "修订",
+      "finding": "题目需明确所依据服务条款；专业审核与AI身份及限制告知不能互相替代。",
+      "changedFields": [
+        "stem",
+        "options",
+        "explanation",
+        "distractors"
+      ],
+      "beforeHash": "3b15d06e93617539552feb382ebb0a3047b13d869f85845232dd7f4dfcc8121d",
+      "afterHash": "c4993b70f810dd41198a9abe0d94aea8aaa6aca83027576d5728abb2f90eb684",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/301/97822"
+      ]
+    },
+    {
+      "id": "FDE-M5-011",
+      "module": "M5",
+      "topic": "金融／相似问合并的业务条件",
+      "decision": "保留",
+      "finding": "保留提前与到期计息的适用条件差异，文字相近不代表可合并答案。",
+      "changedFields": [],
+      "beforeHash": "7fe104407b8d5fcfce06ed2b4715ba667eae788e68593d362f3f659c2582cf4e",
+      "afterHash": "7fe104407b8d5fcfce06ed2b4715ba667eae788e68593d362f3f659c2582cf4e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112703"
+      ]
+    },
+    {
+      "id": "FDE-M5-020",
+      "module": "M5",
+      "topic": "金融／交易指令提取验收",
+      "decision": "保留",
+      "finding": "保留逐笔字段与来源对应验收，条数正确不能排除交易混单。",
+      "changedFields": [],
+      "beforeHash": "4b8dd9a32bbd67f99885a9ac8075a6c11a7bdeb7cde07dd89b526d4f4b4fcdc4",
+      "afterHash": "4b8dd9a32bbd67f99885a9ac8075a6c11a7bdeb7cde07dd89b526d4f4b4fcdc4",
+      "sourceUrls": [
+        "https://cloud.tencent.com/act/pro/openclaw-in-adp"
+      ]
+    },
+    {
+      "id": "FDE-M5-025",
+      "module": "M5",
+      "topic": "金融／元数据与标签检索区别",
+      "decision": "保留",
+      "finding": "保留完整打标前提，范围过滤与相关性排序不代替完整访问授权。",
+      "changedFields": [],
+      "beforeHash": "00cb39b73e9860801ef4ba272db49ccb702147e7e3546c76ef0408dbb3e8a50c",
+      "afterHash": "00cb39b73e9860801ef4ba272db49ccb702147e7e3546c76ef0408dbb3e8a50c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138240"
+      ]
+    },
+    {
+      "id": "FDE-M5-031",
+      "module": "M5",
+      "topic": "政务／评估政企智能体，不能只看回答准确率",
+      "decision": "修订",
+      "finding": "增加分母和业务链路意识，咨询量不能证明办结量。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "445a698482838641a9f990ffdbbcde908fcfa5ae8f9f5e26063095afa16ca1b9",
+      "afterHash": "7b59afc03d33e43c04026c292f55dcbd3009b6b26910bca37b37ecad774d38bd",
+      "sourceUrls": [
+        "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+      ]
+    },
+    {
+      "id": "FDE-M5-034",
+      "module": "M5",
+      "topic": "政务／部署约束的前置确认",
+      "decision": "保留",
+      "finding": "保留部署、权限和安全前置评估的交付判断。",
+      "changedFields": [],
+      "beforeHash": "81a6f6b54916f347d6b3db74f43e3fad45ad6b10d4f2a685fdc5477a4ebb1950",
+      "afterHash": "81a6f6b54916f347d6b3db74f43e3fad45ad6b10d4f2a685fdc5477a4ebb1950",
+      "sourceUrls": [
+        "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+      ]
+    },
+    {
+      "id": "FDE-M5-040",
+      "module": "M5",
+      "topic": "政务／办理时长的端到端口径",
+      "decision": "保留",
+      "finding": "保留端到端办结耗时，模型首响无法代表业务完成时间。",
+      "changedFields": [],
+      "beforeHash": "f01abc11654f6d93f7eaf7c19211d34951b7d3f0985ed29b2021927db6c9012e",
+      "afterHash": "f01abc11654f6d93f7eaf7c19211d34951b7d3f0985ed29b2021927db6c9012e",
+      "sourceUrls": [
+        "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+      ]
+    },
+    {
+      "id": "FDE-M5-047",
+      "module": "M5",
+      "topic": "政务／永久有效知识的检索边界",
+      "decision": "保留",
+      "finding": "保留永久有效与相关性两个条件，时间不过滤不等于每问必命中。",
+      "changedFields": [],
+      "beforeHash": "122814a2a32ba23d38a1141d5b34ebdc69bca27a7f734219da8a96d5e5523d7b",
+      "afterHash": "122814a2a32ba23d38a1141d5b34ebdc69bca27a7f734219da8a96d5e5523d7b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138380"
+      ]
+    },
+    {
+      "id": "FDE-M5-049",
+      "module": "M5",
+      "topic": "政务／跨知识库元数据上线检查",
+      "decision": "保留",
+      "finding": "保留知识库配置独立和异步更新边界，避免同名即继承。",
+      "changedFields": [],
+      "beforeHash": "d0727049530f2813edf04c16d156cc92d01b7296a086e5a6f3010fe2604afa6f",
+      "afterHash": "d0727049530f2813edf04c16d156cc92d01b7296a086e5a6f3010fe2604afa6f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138240"
+      ]
+    },
+    {
+      "id": "FDE-M5-061",
+      "module": "M5",
+      "topic": "制造／客户案例·零售酒品外观",
+      "decision": "修订",
+      "finding": "复用的验收单位是新SKU差异；相似瓶型只是起点。",
+      "changedFields": [
+        "stem",
+        "options",
+        "explanation",
+        "distractors"
+      ],
+      "beforeHash": "86241ebfa43091f3d29aa3b7a00f428b97a81df544c9976bc2c288688bec7402",
+      "afterHash": "fc384a8654ae5e2ec21b14f713a8b227d57c71fa864a6dd2e1dd2662e3079278",
+      "sourceUrls": [
+        "https://adp.tencent.com/solutions/qc"
+      ]
+    },
+    {
+      "id": "FDE-M5-065",
+      "module": "M5",
+      "topic": "制造／元数据更新中的验收时机",
+      "decision": "保留",
+      "finding": "保留更新完成后验收，防止把处理中状态误判为检索质量下降。",
+      "changedFields": [],
+      "beforeHash": "d28a63e5852b8ed0b112c821689051e9eb9b5f34f6d1d8fb6fdf725580dea7f4",
+      "afterHash": "d28a63e5852b8ed0b112c821689051e9eb9b5f34f6d1d8fb6fdf725580dea7f4",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138240"
+      ]
+    },
+    {
+      "id": "FDE-M5-128",
+      "module": "M5",
+      "topic": "教育／分类信息用于生成的边界",
+      "decision": "保留",
+      "finding": "保留检索用途与生成用途的区分，输出所需年级应进入模型上下文。",
+      "changedFields": [],
+      "beforeHash": "9a24bed13ef5b1d610c9023d3c09b49a7416b05e2ea06099bde1066bdd235e29",
+      "afterHash": "9a24bed13ef5b1d610c9023d3c09b49a7416b05e2ea06099bde1066bdd235e29",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138240"
+      ]
+    },
+    {
+      "id": "FDE-M5-136",
+      "module": "M5",
+      "topic": "法务／按立场逐条审查",
+      "decision": "修订",
+      "finding": "审查立场和规则需要显式确定，报告模板不能代替业务规则。",
+      "changedFields": [
+        "stem",
+        "options",
+        "explanation",
+        "distractors"
+      ],
+      "beforeHash": "ce1a3d9c3526628d041c221ced50db66311e964c5a20cd1403424db3df8ef4d4",
+      "afterHash": "2c8c26d9fa58e89336f98b7d3d085dd7dcc06404718f2713b9b7bd4654b56315",
+      "sourceUrls": [
+        "https://adp.tencent.com/solutions/legal"
+      ]
+    },
+    {
+      "id": "FDE-M5-143",
+      "module": "M5",
+      "topic": "法务／差异统计与风险评价区别",
+      "decision": "保留",
+      "finding": "保留修改数量与条款影响的区别，单处付款改动也需依据规则判断。",
+      "changedFields": [],
+      "beforeHash": "364d7b8a8d4c76a10d27786fd7795a9ddca61b5cf298ef9666e2121180d836bb",
+      "afterHash": "364d7b8a8d4c76a10d27786fd7795a9ddca61b5cf298ef9666e2121180d836bb",
+      "sourceUrls": [
+        "https://adp.tencent.com/solutions/legal"
+      ]
+    },
+    {
+      "id": "FDE-M5-149",
+      "module": "M5",
+      "topic": "法务／选择专业技能",
+      "decision": "保留",
+      "finding": "保留任务拆分，审查与对比应有不同输出要求，不能只把名称分开。",
+      "changedFields": [],
+      "beforeHash": "7ce3f6e49b7706d69b17e7bfae7a5b93c76bb5bfbc8f0717c683c0d42cb655c4",
+      "afterHash": "7ce3f6e49b7706d69b17e7bfae7a5b93c76bb5bfbc8f0717c683c0d42cb655c4",
+      "sourceUrls": [
+        "https://adp.tencent.com/solutions/legal"
+      ]
+    },
+    {
+      "id": "FDE-M6-003",
+      "module": "M6",
+      "topic": "评测数据／上传评测集",
+      "decision": "修订",
+      "finding": "自定义列需与样本逐行关联，参考结论不能仅写在文件名。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "35fe57c247b8b16b450f655347493f910985d29ea4bafe57f5c500c5b0a46790",
+      "afterHash": "395035e919f93a994712603393574c50802d4641e86c491a31894550df06b0e9",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104208"
+      ]
+    },
+    {
+      "id": "FDE-M6-004",
+      "module": "M6",
+      "topic": "评测数据／基准评测配置",
+      "decision": "修订",
+      "finding": "保留列名一致性排错，同名文件不等于同样本结构。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "f7bbf045fc7355d09059c0811bd3e2837d022c9b78cb71d51e1a023acfd7dc90",
+      "afterHash": "2c0c33d65d7479f6f84e6386eef0f589f6a5e0823f82b77ded92fc581935dc31",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104208"
+      ]
+    },
+    {
+      "id": "FDE-M6-009",
+      "module": "M6",
+      "topic": "配置实验／对比评测配置",
+      "decision": "修订",
+      "finding": "对比评测入口支持范围与项目是否需要验收是两回事；不支持入口仍须另设计验证。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "7609d2fd14f85419ab4b0387d2e4751c72cf961bcedee3cc358feb03da500ef3",
+      "afterHash": "85b8a36b71c1ff2ff21b0f7a68bef589712bac5b5981345b930279e173c4c045",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104208"
+      ]
+    },
+    {
+      "id": "FDE-M6-013",
+      "module": "M6",
+      "topic": "评测可比性／注意事项",
+      "decision": "修订",
+      "finding": "测试必须绑定稳定知识版本；变更后重跑，不能把不同版本分数拼接。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "7855557ef6085afd26d94e4cf0f33d8d2da570a2500d28129274b556154a1942",
+      "afterHash": "cdffe37cd32c2363a8882fddf49b7a1ada29ae9d35ca4f7f0960311ad25efd6b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104208"
+      ]
+    },
+    {
+      "id": "FDE-M6-014",
+      "module": "M6",
+      "topic": "复杂模式／注意事项",
+      "decision": "修订",
+      "finding": "自动入口覆盖不足时补充任务路径、工具与端到端验证，不能仅测主Agent。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "0472b1aeab30d5c6dff2868ac9523833108161e9e66a9bf0544cc8e098da5575",
+      "afterHash": "0e8390740db82dbc38dfc416eac01bc4b1c4fbdf1ea7d50758e6fc8f642306c5",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104208"
+      ]
+    },
+    {
+      "id": "FDE-M6-015",
+      "module": "M6",
+      "topic": "检索诊断／功能说明",
+      "decision": "修订",
+      "finding": "先定位召回还是生成问题，召回测试只验证证据能否取到。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "c4595522be478bceed975654a4a02c95cdc83624b57b2b29e05b454203194cfb",
+      "afterHash": "78f3ecee97325d5ac2d5ac9ce234e94d1f2b1a2a2ce0ddb0a8d39719aa009698",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/135538"
+      ]
+    },
+    {
+      "id": "FDE-M6-016",
+      "module": "M6",
+      "topic": "实验隔离／功能说明",
+      "decision": "修订",
+      "finding": "调参试验与正式配置分离；有效参数需显式应用并回归验证。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "a09bd3712445bec6dec3a07a4005c6b7665a439726f9218ae96807797740099b",
+      "afterHash": "32980a6e4caa6db647bfb5bc213b88edf1db0a83b2b008516cddcdaab43bbce2",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/135538"
+      ]
+    },
+    {
+      "id": "FDE-M6-020",
+      "module": "M6",
+      "topic": "检索实验／对比测试",
+      "decision": "修订",
+      "finding": "固定问题和知识版本比较，避免用不同样本为阈值效果背书。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "42be88b56c5219ac4381a4a6abe80b22855b9cb35e0386aed0027a54de7ee23f",
+      "afterHash": "b01727984a478646a4d82f0e92aba1cc847136bf5caf599c23e944a882622b44",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/135538"
+      ]
+    },
+    {
+      "id": "FDE-M6-021",
+      "module": "M6",
+      "topic": "阈值诊断／配置检索与召回规则",
+      "decision": "修订",
+      "finding": "阈值是候选过滤条件，先检查阈值前后结果再决定是否放宽。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "4f3e435711ed2e3317de30f0012c762977360fae74a28f95c84faa6c5ec35e28",
+      "afterHash": "98ceef26b1fcc9ec3a284c73f0aa230a7a1c01dc33637a85902fe3f33e331125",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/135538"
+      ]
+    },
+    {
+      "id": "FDE-M6-024",
+      "module": "M6",
+      "topic": "版本追溯／发布历史",
+      "decision": "修订",
+      "finding": "发布历史用于追溯配置版本；知识、共享工具和凭证还要分别核对。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "64441f3e15ba854dda101922df0f3d9fd671498a2ea45ca653395658c00b5c82",
+      "afterHash": "036470f957b2ae212efcbaffb7669138b3a12c0a1c4f50b2cb568f903a2a41c5",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M6-025",
+      "module": "M6",
+      "topic": "回退流程／发布历史与版本还原",
+      "decision": "修订",
+      "finding": "恢复调试态后要核对依赖、回归并发布，点击还原不等于生产回退。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "5855a7e115a8a16b175a57d85c2c3ba06d1c1420e384c022ee452b1430ba9768",
+      "afterHash": "553c8a0e4d85bdd082a4ef1ef789b9a89540638362158b01d6d756ef8627e31c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M6-026",
+      "module": "M6",
+      "topic": "回退保护／发布历史与版本还原",
+      "decision": "修订",
+      "finding": "保留未保存变更保护，导出旧线上包不能保存当前未保存编辑。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "21db339b359c894df0d4c8a7cba5927389139f9a16d6c17ae3b22646eea3f10b",
+      "afterHash": "29bdf8d2313a671ed698c3b039df94344c7bd498a86dcf2d28cfc748120474b1",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M6-027",
+      "module": "M6",
+      "topic": "资源依赖／版本还原后异常情况处理",
+      "decision": "修订",
+      "finding": "保留全局依赖删除的回退边界，还原快照不会凭空恢复已删除工具。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "c1daf6fe408780b9fc85e84ef8e0f942cc5c76fce3d92cc5f2fa130fabd7fbe1",
+      "afterHash": "9f561d18dc692633f99cb8cc17694711108317e6edb8ba98985fbb8abc88b97e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M6-028",
+      "module": "M6",
+      "topic": "回退范围／随版本回退的内容说明",
+      "decision": "修订",
+      "finding": "知识数据需单独备份或重建，应用版本不等于全量知识快照。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "7f5525ce8648f7c86a7c46bff61b477a61f2235404572dd5e447bf66f2593b5a",
+      "afterHash": "d47a5df583a047b83aa9966530485a2f871e0265ebbe9ce26234b6759df53bbc",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M6-030",
+      "module": "M6",
+      "topic": "渠道切换／发布渠道",
+      "decision": "修订",
+      "finding": "保留绑定迁移导致服务中断的交付安排。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "4dc98b6e68a3789582fcaa33434a1f9b992943abdb092d9bd5edf2fb545f1ca3",
+      "afterHash": "1373b1d22d3314177c29dec120be6ea618a5be01312fb4a2bd6eeebd554d7f0d",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M6-036",
+      "module": "M6",
+      "topic": "迁移时点／应用包导出",
+      "decision": "修订",
+      "finding": "发布中版本不能直接导出，发布状态需先稳定。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "2c47bd5cf5dd27b71ed6bdac8ac01f262828c2972399c51790c8b18949ee3c27",
+      "afterHash": "f56435d0126d739c112ccafd75f7e192a57200ec7aebf1f96f6f17b5a74d0cb9",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/130990"
+      ]
+    },
+    {
+      "id": "FDE-M6-037",
+      "module": "M6",
+      "topic": "迁移依赖／应用包导出",
+      "decision": "修订",
+      "finding": "工作流导出要随附引用依赖，但不代表全空间知识都被导出。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "0b3be938a5ab63c6e622605215844436ef7953ae81c71c164d8c11074090e5b1",
+      "afterHash": "52b378d4445376c24676cd8879a21b911f75be0c195911c471bb575eb4b41647",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/130990"
+      ]
+    },
+    {
+      "id": "FDE-M6-038",
+      "module": "M6",
+      "topic": "数据迁移／应用包导出",
+      "decision": "修订",
+      "finding": "数据库连接配置和实际表内容不同，应用包不能当数据库备份。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "38a63e9d2386910d9c340a582f3c8b75dade80704c5ace3f8b7cd2b92e8cd003",
+      "afterHash": "9d5926ddce0c50666099c3ca60b7b6468596145eda828e16fde580fe273530e0",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/130990"
+      ]
+    },
+    {
+      "id": "FDE-M6-041",
+      "module": "M6",
+      "topic": "网页知识迁移／需要在目标环境重新配置的内容",
+      "decision": "修订",
+      "finding": "迁移验收不仅看内容是否存在，也验证来源连接与后续更新。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "648f1a3e9700c3e7dd34f53913a757f848e7993ce225571e2c8e25de708a9f78",
+      "afterHash": "e0d4a98a509c8b24d8aa87efec6cdb3e18493c52be39786875387ec5a492ff63",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/130990"
+      ]
+    },
+    {
+      "id": "FDE-M6-042",
+      "module": "M6",
+      "topic": "导入行为／应用包导入",
+      "decision": "修订",
+      "finding": "保留导入同名不覆盖的行为，名称相同不能证明已替换线上服务。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "d637832bc303ff87eeea0e842a8d2528a8d74e220622cb313b894478b84fbba7",
+      "afterHash": "60309d13f21accd949b4b623f90bf023860f18baf52cf210d731d971c01a4bc8",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/130990"
+      ]
+    },
+    {
+      "id": "FDE-M6-043",
+      "module": "M6",
+      "topic": "上线交接／应用包导入",
+      "decision": "修订",
+      "finding": "导入到开发域后需核对依赖和权限，再发布并做正式链路验收。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "3f6d078dcdfe8290c0e8f5c5a3cee57b4ccb367553f7b850e8f511dc4e6dc4d8",
+      "afterHash": "6117fadef58f854f5d5a619b9a77b6b0649e25c0b65573b2902818be83611ee6",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/130990"
+      ]
+    },
+    {
+      "id": "FDE-M6-045",
+      "module": "M6",
+      "topic": "运营分类／对话记录智能分类",
+      "decision": "修订",
+      "finding": "增量聚类只整理反馈，不代表完成问题修复和回归。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "442b915dd6a8b235ec5da363738bfee4cce1ac39f683dc83e661092b9ce6fd0f",
+      "afterHash": "1b9360f461ae0745138794f05cfbd71a8d90fbc872b6f0f5fcbb6fd01d40e28e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104210"
+      ]
+    },
+    {
+      "id": "FDE-M6-047",
+      "module": "M6",
+      "topic": "用户计数／数据分析",
+      "decision": "修订",
+      "finding": "跨渠道统计口径要先定义，同一昵称不能证明完成身份去重。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "275f5578dd160f00f496e7554f31d81123a08a6abb9e9dfc5341c794aa1762e9",
+      "afterHash": "670c63d6863244b9bc88ff1b34febd4efd2125b94a997e635850bf36fca87697",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104210"
+      ]
+    },
+    {
+      "id": "FDE-M6-048",
+      "module": "M6",
+      "topic": "反馈口径／数据分析",
+      "decision": "修订",
+      "finding": "用数值场景检查分母，点赞率不应把未评价当负面或正面。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "cc9319f482da573bc26d1ce5817e418934001cff932dd456df2df37dea31316e",
+      "afterHash": "4ec679d29851dfd61b057cf3173d3e212426cbe8d37b6f4afbb4889dbedf7c7e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104210"
+      ]
+    },
+    {
+      "id": "FDE-M6-050",
+      "module": "M6",
+      "topic": "评测回流／对话记录",
+      "decision": "修订",
+      "finding": "真实问题需脱敏、去重、补期望与边界；原模型答案不能直接当标准答案。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "a884f6bcebd69654dbda979d6c2c16e4f82ae9b0ba8f50f44ba312d98cb32a14",
+      "afterHash": "dff36fdcfec61ed3e632434b56da1de7323260ba4d67d79773051e608754959c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104210"
+      ]
+    },
+    {
+      "id": "FDE-M6-052",
+      "module": "M6",
+      "topic": "反馈处理／忽略",
+      "decision": "修订",
+      "finding": "忽略仅变更列表状态；如果根因未修复，同类问题仍会复发。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "f34a01d4770a2a2e9a757296c88ec7d1a86d6cd2eed00efbd65319b151d19cb4",
+      "afterHash": "5e5673a33a80a40cfbe870d0ce21e6b68ffb2469adc681e88ecb320579a2ea5e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104210"
+      ]
+    },
+    {
+      "id": "FDE-M6-054",
+      "module": "M6",
+      "topic": "启用流程／准则来源",
+      "decision": "修订",
+      "finding": "自动建议先审核，再启用和回归；生成完成不代表上线生效。 补充Claw适用范围，避免把调优准则泛化到所有模式。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "325c993d0799fea49649633d5f52cfced8d37ae56aa32c55aa6b3fc73622c56c",
+      "afterHash": "db235e3b1b5f26cd4cda3a07c70fed796d36cc16e3cb5e8dcbf438b0f0578d3b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138789"
+      ]
+    },
+    {
+      "id": "FDE-M6-055",
+      "module": "M6",
+      "topic": "评测反馈／前提条件",
+      "decision": "修订",
+      "finding": "已完成标注是评测驱动生成准则的前提，不能用未判定结果直接学习。 补充Claw适用范围，避免把调优准则泛化到所有模式。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "45996977a9e84f09ac44a71a1c0f4f8eeeadfa17be2d93b91be18e2d6b981a24",
+      "afterHash": "2fd549cb0abe0d5ee0a4b74e6c8a0fb088fb4ea29eb09e6194028bc0774fd401",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138789"
+      ]
+    },
+    {
+      "id": "FDE-M6-057",
+      "module": "M6",
+      "topic": "人工规范／手动添加准则",
+      "decision": "修订",
+      "finding": "明确规范可手动配置，但启用后仍需回归与冲突检查。 补充Claw适用范围，避免把调优准则泛化到所有模式。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "ebaea63698fc4c2bbb283b2cb9e668172d1977cd83d45013d84f2af1a1e1d9bb",
+      "afterHash": "9b8bf1d94c855d6bee6cd8d00153de74d182fa44b86c707d671165669b527c97",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138789"
+      ]
+    },
+    {
+      "id": "FDE-M6-058",
+      "module": "M6",
+      "topic": "状态管理／准则状态",
+      "decision": "修订",
+      "finding": "保留停用和删除的区别，暂不生效不要求销毁原文。 补充Claw适用范围，避免把调优准则泛化到所有模式。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "17a07baa7ad67c91aebfbf15dbae136e08fa35eeadf08aa783459bc17e287934",
+      "afterHash": "41b3cac0217ee6347879e868e7f5e1382f336bf32911678add2a775f7c07c471",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138789"
+      ]
+    },
+    {
+      "id": "FDE-M6-060",
+      "module": "M6",
+      "topic": "客户培训／如何写清楚调优要求",
+      "decision": "修订",
+      "finding": "规范要有场景、依据和可验收行为，不要求所有问题机械输出合同编号。 补充Claw适用范围，避免把调优准则泛化到所有模式。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "455fedb68bd7523a331ab5c809040cb4b213ff1b2dd468d7c36316627a2de109",
+      "afterHash": "b4f49fac804ed04d28e064cdcb53867fe0743ff0fb181b95810d864f5d29de67",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138789"
+      ]
+    },
+    {
+      "id": "FDE-M6-063",
+      "module": "M6",
+      "topic": "变更保护／功能入口",
+      "decision": "修订",
+      "finding": "切分重建会覆盖人工干预，变更前保存差异，后续回归关键片段。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "b73d6e8203ca5835d63617ceab919af12ec40c0334765219ca992e2a004bd917",
+      "afterHash": "fdeb694cf2cb00407c7eb00c0cb4fd433b8fa38457fa187874989adb763cc6f8",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122551"
+      ]
+    },
+    {
+      "id": "FDE-M6-065",
+      "module": "M6",
+      "topic": "知识范围／文档导入设置",
+      "decision": "修订",
+      "finding": "仅调试域只是环境范围，不等于所有用户均已有独立授权。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "978db62dbf5a4cce30530e1efae391e2375a68d1aa49f28aecbdc9ef4dba658f",
+      "afterHash": "5b54c8eef15335e8785e8ae4877acf2e4dc6423d1c8c1103c067bd6fd1ced829",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112702"
+      ]
+    },
+    {
+      "id": "FDE-M6-067",
+      "module": "M6",
+      "topic": "依赖清理／文档操作",
+      "decision": "修订",
+      "finding": "旧文档与衍生问答需联动核查，否则可能继续返回旧口径。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "3a5a38a60efa0a53c8c036bc0bbbbe91b94909670cff97b78100f4dbabecf960",
+      "afterHash": "60b39fa3332fd7e9b5e9c17bc29c9eeb9e64b5be7ba60f807af9465276970866",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112702"
+      ]
+    },
+    {
+      "id": "FDE-M6-068",
+      "module": "M6",
+      "topic": "到期恢复／文档概述",
+      "decision": "修订",
+      "finding": "购入容量和恢复失效知识是不同步骤，先检查状态再操作。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "6ba6883677a9e78114bb9644d213f7c683ed9e870515f5f097e30fdc5bd8ae30",
+      "afterHash": "5651f3fe119d962a07315ac6d34b1f4f9998e00787f9850fc88c7604729aca65",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112702"
+      ]
+    },
+    {
+      "id": "FDE-M6-072",
+      "module": "M6",
+      "topic": "定时排障／新建定时触发",
+      "decision": "修订",
+      "finding": "计划时间要按企业时区理解，跨地区交接应写明换算。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "3f63a6f79a61caefabe8eb4b474cdc4b1781651f4b34c947766c5ad2c49304ca",
+      "afterHash": "0b1613d92010cce3ae7c4a82eb19220fad4910159388d23e72d0b249130f4841",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M6-073",
+      "module": "M6",
+      "topic": "触发器联调／新建触发器",
+      "decision": "修订",
+      "finding": "事件输入与结果推送是两条链路，触发成功不代表消息送达。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "2e84b6035abc0d7c2913078d7b814c34ff27ddc26250f1066c91b36990dac7bd",
+      "afterHash": "48e0819763c47529c5f4b5f3641f42e98353c6ab1f98dc0e1ad40b2fad26655e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M6-077",
+      "module": "M6",
+      "topic": "任务管理／评测任务管理",
+      "decision": "修订",
+      "finding": "保留复制配置与下载运行结果的区别，复制任务不会复制既有结果。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "da58a1851d5f14bf474bd215661efd22d937c1e46a4649d91a00398561701548",
+      "afterHash": "160c5785c74554d3acde3cdcb80ba1cf74e70ab27ddc7dc8b65b55fd21606dbf",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104208"
+      ]
+    },
+    {
+      "id": "FDE-M6-078",
+      "module": "M6",
+      "topic": "配置比较／对比评测配置",
+      "decision": "修订",
+      "finding": "仅输出与裁判评分是两种配置，自动输出不等于已得出优劣结论。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "ae764b01e8daa1b26f62fc85ccb78cce354911518d75160f7c490c602bc673da",
+      "afterHash": "d42b2c3165af838ad6cd6a76c17077cc870b16b548c6b88940593b2b3bce20c1",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104208"
+      ]
+    },
+    {
+      "id": "FDE-M6-083",
+      "module": "M6",
+      "topic": "测试配置／对比测试",
+      "decision": "修订",
+      "finding": "保留固定基础范围比较检索参数的前提，避免把换库效果误判为规则效果。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "95189375d8fc39d839533c666a45c6b8d2310994d65ebf44f898575f6eb47348",
+      "afterHash": "00a8e12d19566ea5e130a8d54dacdc7669f5b2309ebfc4b6d7933708f53d3ba1",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/135538"
+      ]
+    },
+    {
+      "id": "FDE-M6-085",
+      "module": "M6",
+      "topic": "回退范围／随版本回退的内容说明",
+      "decision": "修订",
+      "finding": "保留本地配置与知识数据的恢复范围差异。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "82b68c0b3b350b703a2ce15fe09a7d4f6090f1cd8302613a98f58d9b15e93e0f",
+      "afterHash": "db9b51118553b5d94e743d902b5e56ad386c480c07eae7f9a105251c9ca714b1",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M6-089",
+      "module": "M6",
+      "topic": "版本差异／随版本回退的内容说明",
+      "decision": "修订",
+      "finding": "保留共享资源与本地参数的版本边界，工具地址未回退不代表所有恢复失败。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "0e10e52d7f920ac5161b3e3dc024d732aeee9eedec44f0b2f5649077cb49e1e3",
+      "afterHash": "77932ff2b54baff4fe44d012859c231eee3d61029edfe23074caae7533e88e24",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104209"
+      ]
+    },
+    {
+      "id": "FDE-M6-090",
+      "module": "M6",
+      "topic": "迁移清单／不会被导出的内容",
+      "decision": "修订",
+      "finding": "应用包不等于全套运行环境，渠道、画像和运营数据需单独交接。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "230f18867c22ff163fff3637ef0e6ce690268ffef3d376ec5207ba040691c6e0",
+      "afterHash": "c3d1b9ed9e406cac597ce39116fb180dadff4ce87603920cdd15b2d80e93b523",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/130990"
+      ]
+    },
+    {
+      "id": "FDE-M6-091",
+      "module": "M6",
+      "topic": "目标配置／需要在目标环境重新配置的内容",
+      "decision": "修订",
+      "finding": "迁移后需验证凭证及接口，不得假定源环境API密钥自动继承。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "e7ff802fc655841e4ddc003e7bfc93f0790e7643c1dea5940960010582361461",
+      "afterHash": "54393abfd64a96108a43267088a00bc97c73192c5e2bfee6e48fc429d5659910",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/130990"
+      ]
+    },
+    {
+      "id": "FDE-M6-094",
+      "module": "M6",
+      "topic": "迁移边界／不会被导出的内容",
+      "decision": "修订",
+      "finding": "内容安全与应用端权限不随包交付时，上线必须补配并验证。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "09fa7aa619328ec8f8d36d2ffa9c410c2bc85358f7523fac6bab6578c4aea6c9",
+      "afterHash": "366e9bf6a4b3e13e09578aecab5765ffee66675939857e10105a96ee65befef0",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/130990"
+      ]
+    },
+    {
+      "id": "FDE-M6-097",
+      "module": "M6",
+      "topic": "排障素材／对话记录",
+      "decision": "修订",
+      "finding": "失败复现需输入、上下文和组件调用，统计总数不足以复现。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "90048bcc277d8c2ce6bbf7554cc6bc9ca89a9b883844f8fd133a673960a55e4f",
+      "afterHash": "57bc7ba6c23eda230611d55ea1f6de7f0dc70a7efe81fbdae11ead18b988817d",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/104210"
+      ]
+    },
+    {
+      "id": "FDE-M6-104",
+      "module": "M6",
+      "topic": "解析排障／文档图片解析",
+      "decision": "修订",
+      "finding": "过滤条件为或，需检查关键图片是否被尺寸规则误排除。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "c1562704c6ec1d5a646faf8cb606fad45f6d7480418644001a9949c5a264f81e",
+      "afterHash": "1400103b62ddb3b481872248a13cb8ea20373245b0c458b355a04a7abd3c1d38",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122551"
+      ]
+    },
+    {
+      "id": "FDE-M6-107",
+      "module": "M6",
+      "topic": "知识生命周期／文档操作",
+      "decision": "修订",
+      "finding": "区分平台已过期失效状态与时效性检索配置，避免按一个日期武断判断。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "784ee1478db683629a043e8b20fc99c96ef8b30da29a20d997cf6f45b3153b3f",
+      "afterHash": "0992d7b9163776266b2ae04e76e70581fa94df79d3793c6e5d5ee8eb64419e06",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112702",
+        "https://cloud.tencent.com/document/product/1759/138380"
+      ]
+    },
+    {
+      "id": "FDE-M6-108",
+      "module": "M6",
+      "topic": "生成准备／从文档生成问答步骤",
+      "decision": "修订",
+      "finding": "保留文档导入与生成问答格式限制两项前提。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "2390df6d4d206c0f20e605dfb3ad69dc2ed3a704a61fd845c4da531a1b20546f",
+      "afterHash": "28cac85b8240ec256eb8358c34e4a5fe36c419aa0fdfe86ac10482818237d75c",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/112703"
+      ]
+    },
+    {
+      "id": "FDE-M6-109",
+      "module": "M6",
+      "topic": "元数据交接／使用前提",
+      "decision": "修订",
+      "finding": "元数据配置需编辑权限及既有来源，不应凭空增设独立权限位。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "f7b37cce7d9aaf131d21f7910e3988aa09d8207b2669229c457ad7148935c9d2",
+      "afterHash": "9fac6a3d1b156595b22d9b6bb92c5ed4cab976ba4d8fa99127ee7ffbf6cf235d",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138240"
+      ]
+    },
+    {
+      "id": "FDE-M7-001",
+      "module": "M7",
+      "topic": "权限合集",
+      "decision": "保留",
+      "finding": "直接授权与角色授权取合集，撤权应核对全部授权路径。",
+      "changedFields": [],
+      "beforeHash": "40340ba2833cd925366baf9e7c955f30af2f6a84b03411e337c751b242f9bfb5",
+      "afterHash": "40340ba2833cd925366baf9e7c955f30af2f6a84b03411e337c751b242f9bfb5",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122574"
+      ]
+    },
+    {
+      "id": "FDE-M7-002",
+      "module": "M7",
+      "topic": "只读边界",
+      "decision": "保留",
+      "finding": "查看权限适合验看与对话测试，不应以约定不修改替代权限限制。",
+      "changedFields": [],
+      "beforeHash": "beb4fbcbfaa51f57c35cab094cbd167a7ce8a93abcc0e9cd2ece9ca27a352538",
+      "afterHash": "beb4fbcbfaa51f57c35cab094cbd167a7ce8a93abcc0e9cd2ece9ca27a352538",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122574"
+      ]
+    },
+    {
+      "id": "FDE-M7-003",
+      "module": "M7",
+      "topic": "精细操作授权",
+      "decision": "保留",
+      "finding": "不同对象和对象内部动作需高级自定义授权，单一空间角色不足以表达差异。",
+      "changedFields": [],
+      "beforeHash": "1da22d4a62eb1e943558bee0843d6ca4ce88f24c2f3971cf26d80f29d3fed1c5",
+      "afterHash": "1da22d4a62eb1e943558bee0843d6ca4ce88f24c2f3971cf26d80f29d3fed1c5",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122574"
+      ]
+    },
+    {
+      "id": "FDE-M7-004",
+      "module": "M7",
+      "topic": "主账号权限",
+      "decision": "保留",
+      "finding": "主账号有特殊权限，成员列表不能独立证明它已被隔离。",
+      "changedFields": [],
+      "beforeHash": "fa41ecad274323ad7c0bc8a6ff93c4927eb0f6183c4d18f42a0c6d81eb3c8158",
+      "afterHash": "fa41ecad274323ad7c0bc8a6ff93c4927eb0f6183c4d18f42a0c6d81eb3c8158",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122574"
+      ]
+    },
+    {
+      "id": "FDE-M7-005",
+      "module": "M7",
+      "topic": "空间管理员不可改权限",
+      "decision": "保留",
+      "finding": "预置管理员角色不能改只读，应调整成员与授权方案。",
+      "changedFields": [],
+      "beforeHash": "3c0460c72ecf49f7750dbac44611984a8c464b0600e562bb06d8ba10246bbd26",
+      "afterHash": "3c0460c72ecf49f7750dbac44611984a8c464b0600e562bb06d8ba10246bbd26",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122574"
+      ]
+    },
+    {
+      "id": "FDE-M7-006",
+      "module": "M7",
+      "topic": "移除空间成员",
+      "decision": "保留",
+      "finding": "空间删除成员只影响该空间，其他空间和云账号需分别回收。",
+      "changedFields": [],
+      "beforeHash": "f9c9a9fceed8b7f351df1f76ba799672b4b450048d395be56f0d0cb4729623d3",
+      "afterHash": "f9c9a9fceed8b7f351df1f76ba799672b4b450048d395be56f0d0cb4729623d3",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122574"
+      ]
+    },
+    {
+      "id": "FDE-M7-007",
+      "module": "M7",
+      "topic": "角色成员限制",
+      "decision": "保留",
+      "finding": "空间角色成员必须先是空间成员，企业身份不自动授全空间访问。",
+      "changedFields": [],
+      "beforeHash": "baf3e3a143934b876bf32fe2894e535e0d61e05bf7eed4172bfc07f71e3691ff",
+      "afterHash": "baf3e3a143934b876bf32fe2894e535e0d61e05bf7eed4172bfc07f71e3691ff",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122574"
+      ]
+    },
+    {
+      "id": "FDE-M7-008",
+      "module": "M7",
+      "topic": "自建数据权限",
+      "decision": "保留",
+      "finding": "他人数据权限设置不统一限制本人创建数据，所有者路径需另查。",
+      "changedFields": [],
+      "beforeHash": "ad1d4c46e011d1e960d39854486bd7a5d8dda39de891ad2962b79654e62981c1",
+      "afterHash": "ad1d4c46e011d1e960d39854486bd7a5d8dda39de891ad2962b79654e62981c1",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122574"
+      ]
+    },
+    {
+      "id": "FDE-M7-009",
+      "module": "M7",
+      "topic": "终端知识隔离",
+      "decision": "保留",
+      "finding": "终端知识权限与平台编辑权限解决不同主体和操作边界。",
+      "changedFields": [],
+      "beforeHash": "3cd290baceed82212aa7e2b21ebaa682ac80567829273deb66c42b347561d013",
+      "afterHash": "3cd290baceed82212aa7e2b21ebaa682ac80567829273deb66c42b347561d013",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M7-010",
+      "module": "M7",
+      "topic": "默认知识开放",
+      "decision": "保留",
+      "finding": "默认开放应作为上线检查项，未配权限不是默认拒绝。",
+      "changedFields": [],
+      "beforeHash": "1c15002b5550eb90778113d6994203c1a8b9fbad1f3d554f9f5696e1350d737b",
+      "afterHash": "1c15002b5550eb90778113d6994203c1a8b9fbad1f3d554f9f5696e1350d737b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M7-011",
+      "module": "M7",
+      "topic": "模式安全边界",
+      "decision": "修订",
+      "finding": "限定2026-02-26文档所述内置权限能力；不泛化为Multi-Agent项目无法通过其他设计隔离数据。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "60009a27d817192c7d2681742942f0b920a6f1f4b65169b58fb70377f5b3494a",
+      "afterHash": "adaa07b27fecb3480b54d92aed76f1cdc43a42e1978e317371173d2923935bfb",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M7-012",
+      "module": "M7",
+      "topic": "多角色知识并集",
+      "decision": "保留",
+      "finding": "多个角色取并集，追加角色可能扩大可见范围。",
+      "changedFields": [],
+      "beforeHash": "f9b402441648519d4e4e8eccf3bd50cfbd55aa464fb543e8de5e137775a46c66",
+      "afterHash": "f9b402441648519d4e4e8eccf3bd50cfbd55aa464fb543e8de5e137775a46c66",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M7-013",
+      "module": "M7",
+      "topic": "用户标识对应",
+      "decision": "修订",
+      "finding": "visitor_biz_id对应权限主体，但服务端应保证它代表已认证用户。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "3418f0b6f10e3fb90599226e6e63fb7e089370c33554f59f9d97c0c15bf16d84",
+      "afterHash": "ad0bafe8f802800cbda036c86ab2689364547aeee0fee4e3b9140dcb9b1660b2",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M7-014",
+      "module": "M7",
+      "topic": "外部授权过滤位置",
+      "decision": "修订",
+      "finding": "无权片段必须在进入模型前过滤，事后删引用无法撤回已暴露上下文。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "c5b4ef142dabd3b8ed2837b9499df7369527929e494a7732e9ea783ce7f69e1c",
+      "afterHash": "ed1ade02006a94fda415ad085845719fb1e1af284f7406ccfff6005c99f5b1c7",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M7-015",
+      "module": "M7",
+      "topic": "权限方式切换",
+      "decision": "保留",
+      "finding": "迁移后新方案唯一生效，不能以旧方案继续兜底而跳过验收。",
+      "changedFields": [],
+      "beforeHash": "465f1c9cb111fc6090b0898d640333b0216c9d6aa2affb5307438f6954b5319b",
+      "afterHash": "465f1c9cb111fc6090b0898d640333b0216c9d6aa2affb5307438f6954b5319b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M7-016",
+      "module": "M7",
+      "topic": "用户ID与昵称",
+      "decision": "保留",
+      "finding": "用户ID唯一、昵称可重名，不能用会话ID代替稳定权限主体。",
+      "changedFields": [],
+      "beforeHash": "468d24e8fa451c3d527a651e206bda7c66f62a178c484f53bd959c58a7cbbdcc",
+      "afterHash": "468d24e8fa451c3d527a651e206bda7c66f62a178c484f53bd959c58a7cbbdcc",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M7-018",
+      "module": "M7",
+      "topic": "策略组成",
+      "decision": "保留",
+      "finding": "内容审核模型与关键词是策略核心，风险回复与知识授权是另外配置。",
+      "changedFields": [],
+      "beforeHash": "b71a2efaefc143c0b9b22a3c38db229b168497272c6d9b6974fad5c63468df3d",
+      "afterHash": "b71a2efaefc143c0b9b22a3c38db229b168497272c6d9b6974fad5c63468df3d",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/125070"
+      ]
+    },
+    {
+      "id": "FDE-M7-019",
+      "module": "M7",
+      "topic": "底线审核不可关闭",
+      "decision": "保留",
+      "finding": "可见审核开关不代表底线审核全貌，不应承诺完全无审核。",
+      "changedFields": [],
+      "beforeHash": "ef83e4cb91d12fb3ffe3a2386dc778c627f29ec8abf7ac4107b1acd631b6aa6a",
+      "afterHash": "ef83e4cb91d12fb3ffe3a2386dc778c627f29ec8abf7ac4107b1acd631b6aa6a",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/125070"
+      ]
+    },
+    {
+      "id": "FDE-M7-020",
+      "module": "M7",
+      "topic": "系统策略编辑边界",
+      "decision": "保留",
+      "finding": "系统策略不可改时通过自定义策略配置，不通过回复文案覆盖模型。",
+      "changedFields": [],
+      "beforeHash": "00e7bdaaed8e4ac44642570627ad7b5a4e55964b3aa8c2accb6e89929e599aae",
+      "afterHash": "00e7bdaaed8e4ac44642570627ad7b5a4e55964b3aa8c2accb6e89929e599aae",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/125070"
+      ]
+    },
+    {
+      "id": "FDE-M7-021",
+      "module": "M7",
+      "topic": "词库匹配模式",
+      "decision": "保留",
+      "finding": "同库统一匹配模式，需要两种规则应分库维护。",
+      "changedFields": [],
+      "beforeHash": "cba02123862b56537c967942882a5bf147e299b2d3f8db9c338efb899f06a788",
+      "afterHash": "cba02123862b56537c967942882a5bf147e299b2d3f8db9c338efb899f06a788",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/125070"
+      ]
+    },
+    {
+      "id": "FDE-M7-023",
+      "module": "M7",
+      "topic": "风险处置文案",
+      "decision": "保留",
+      "finding": "风险处置回复是命中后的用户提示，不等于审核策略或无知识兜底。",
+      "changedFields": [],
+      "beforeHash": "3957b5779e0863f6f7b0023d5abd695655ef762bca392380cc9e1163eb5a55f7",
+      "afterHash": "3957b5779e0863f6f7b0023d5abd695655ef762bca392380cc9e1163eb5a55f7",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/125070"
+      ]
+    },
+    {
+      "id": "FDE-M7-025",
+      "module": "M7",
+      "topic": "个人凭证管理员边界",
+      "decision": "保留",
+      "finding": "删除管控权与使用个人凭证是不同授权，管理员不自动获得代用权。",
+      "changedFields": [],
+      "beforeHash": "6397dc960f1d029fae9173389805a9081fc80c6588e3b8ecc72509ba99df46df",
+      "afterHash": "6397dc960f1d029fae9173389805a9081fc80c6588e3b8ecc72509ba99df46df",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138107"
+      ]
+    },
+    {
+      "id": "FDE-M7-027",
+      "module": "M7",
+      "topic": "凭证编辑影响",
+      "decision": "修订",
+      "finding": "共享凭证变更影响已发布依赖，需先查看引用范围再验证调用。",
+      "changedFields": [
+        "stem",
+        "explanation"
+      ],
+      "beforeHash": "908879cbe693578deaf46f1644c58fbf048a4234cafe58c86c1ebd11384f6814",
+      "afterHash": "2bb923400028bf14e4c264d49e5300ac1cad347b120ab2a5c6f27b8fcd955b22",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138107"
+      ]
+    },
+    {
+      "id": "FDE-M7-031",
+      "module": "M7",
+      "topic": "历史授权迁移",
+      "decision": "保留",
+      "finding": "授权迁移具有旧授权失效且不可恢复的边界，应先备齐新配置与验证计划。",
+      "changedFields": [],
+      "beforeHash": "352d9b91cb6c7809ccea38ee68310af93be710cf35d475382694b74cf570e4ad",
+      "afterHash": "352d9b91cb6c7809ccea38ee68310af93be710cf35d475382694b74cf570e4ad",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138107"
+      ]
+    },
+    {
+      "id": "FDE-M7-033",
+      "module": "M7",
+      "topic": "企业共享安全报告",
+      "decision": "保留",
+      "finding": "复用安全报告不免除企业共享审批，扫描与授权审批不是同一环。",
+      "changedFields": [],
+      "beforeHash": "8b32ef4b7f3c927b8f9c86220ea238312e7d1bfac46353bc0b2d53f7e24c9dfe",
+      "afterHash": "8b32ef4b7f3c927b8f9c86220ea238312e7d1bfac46353bc0b2d53f7e24c9dfe",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129561"
+      ]
+    },
+    {
+      "id": "FDE-M7-036",
+      "module": "M7",
+      "topic": "浏览器数据读取触发",
+      "decision": "保留",
+      "finding": "协议按主动指令触发读取，不把安装扩展等同持续读取所有页面。",
+      "changedFields": [],
+      "beforeHash": "757f32f699a01b0a0056b8ecc1decbb356ea317f2d36ffe5ca1d728dab27a39f",
+      "afterHash": "757f32f699a01b0a0056b8ecc1decbb356ea317f2d36ffe5ca1d728dab27a39f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/132714"
+      ]
+    },
+    {
+      "id": "FDE-M7-037",
+      "module": "M7",
+      "topic": "浏览器Token存储",
+      "decision": "保留",
+      "finding": "本地Token存储仍是敏感凭证，不等于模型上下文临时值或对外共享值。",
+      "changedFields": [],
+      "beforeHash": "2c106964dd027dcb7f3fb01fa14ee0e39709f2c76fa601a61dc0772bcabf1e55",
+      "afterHash": "2c106964dd027dcb7f3fb01fa14ee0e39709f2c76fa601a61dc0772bcabf1e55",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/132714"
+      ]
+    },
+    {
+      "id": "FDE-M7-045",
+      "module": "M7",
+      "topic": "新员工默认访问",
+      "decision": "保留",
+      "finding": "企业身份建立与工作空间访问分开，可采用待管理员添加机制。",
+      "changedFields": [],
+      "beforeHash": "ba19cfd43349fdf8844bb4b520223a0fa8d584d532fcb1e4183776353c0deaf1",
+      "afterHash": "ba19cfd43349fdf8844bb4b520223a0fa8d584d532fcb1e4183776353c0deaf1",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122570"
+      ]
+    },
+    {
+      "id": "FDE-M7-047",
+      "module": "M7",
+      "topic": "主账号删除限制",
+      "decision": "保留",
+      "finding": "主账号删除限制与子账号清理不同，退出空间不能绕过该限制。",
+      "changedFields": [],
+      "beforeHash": "f6d2c7eb47433baa846fd626b6f1ee5fa29f3e36bd54afd0296be4a12c3a7090",
+      "afterHash": "f6d2c7eb47433baa846fd626b6f1ee5fa29f3e36bd54afd0296be4a12c3a7090",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122570"
+      ]
+    },
+    {
+      "id": "FDE-M7-048",
+      "module": "M7",
+      "topic": "工作空间隔离",
+      "decision": "保留",
+      "finding": "工作空间隔离针对平台资产，不能仅配置终端角色替代开发侧隔离。",
+      "changedFields": [],
+      "beforeHash": "f28e0ae0e84784f23bf463e0dbd755961fde34a7bd861e9801b14347ad4a746f",
+      "afterHash": "f28e0ae0e84784f23bf463e0dbd755961fde34a7bd861e9801b14347ad4a746f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122569"
+      ]
+    },
+    {
+      "id": "FDE-M7-050",
+      "module": "M7",
+      "topic": "成员多空间",
+      "decision": "保留",
+      "finding": "可加入多个空间，但一个空间身份不自动授其他空间访问。",
+      "changedFields": [],
+      "beforeHash": "08db6780c712e5c8967b0390105a5288d20c19f246e79c9b23be52b326a1dd3e",
+      "afterHash": "08db6780c712e5c8967b0390105a5288d20c19f246e79c9b23be52b326a1dd3e",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122569"
+      ]
+    },
+    {
+      "id": "FDE-M7-059",
+      "module": "M7",
+      "topic": "最小权限",
+      "decision": "保留",
+      "finding": "最小权限同时看资源和动作，共享管理员密钥不能替代授权设计。",
+      "changedFields": [],
+      "beforeHash": "981d011292d2046ff92e4462a42d304d5be11b982dc49a02bc9c5c0a1f19b086",
+      "afterHash": "981d011292d2046ff92e4462a42d304d5be11b982dc49a02bc9c5c0a1f19b086",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/598/10592"
+      ]
+    },
+    {
+      "id": "FDE-M7-060",
+      "module": "M7",
+      "topic": "离职权限回收",
+      "decision": "保留",
+      "finding": "离职回收关注实际访问权限与账户，单次退出或只改密码不足。",
+      "changedFields": [],
+      "beforeHash": "7db27a5ae0bba71a8e9eec511926a8e1624987989c37051a05847f35d5929584",
+      "afterHash": "7db27a5ae0bba71a8e9eec511926a8e1624987989c37051a05847f35d5929584",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/598/10592"
+      ]
+    },
+    {
+      "id": "FDE-M7-062",
+      "module": "M7",
+      "topic": "SecretKey保存时机",
+      "decision": "保留",
+      "finding": "创建时保存SecretKey，后续SecretId查询不能替代密钥保存。",
+      "changedFields": [],
+      "beforeHash": "4d33f4cf13587f385da354a769d461b17ae8488467ef530d4188dc76ebd7ae77",
+      "afterHash": "4d33f4cf13587f385da354a769d461b17ae8488467ef530d4188dc76ebd7ae77",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/598/96157"
+      ]
+    },
+    {
+      "id": "FDE-M7-063",
+      "module": "M7",
+      "topic": "禁用与删除密钥",
+      "decision": "保留",
+      "finding": "禁用使旧密钥请求被拒绝，需先核对业务依赖；本题不鼓励新建主账号密钥。",
+      "changedFields": [],
+      "beforeHash": "7d387cde3ee92f232f46cce68aa07a960e918686e552000efc00e4ebd3f4c10b",
+      "afterHash": "7d387cde3ee92f232f46cce68aa07a960e918686e552000efc00e4ebd3f4c10b",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/598/40488"
+      ]
+    },
+    {
+      "id": "FDE-M7-068",
+      "module": "M7",
+      "topic": "新成员默认授权检查",
+      "decision": "保留",
+      "finding": "新成员并非默认全拒绝，应按实际默认权限检查最小授权。",
+      "changedFields": [],
+      "beforeHash": "cb62c4029d8d468e5fd8eb76ba8b72567c7ac45861f3ed6f10e6c89b0d8504fc",
+      "afterHash": "cb62c4029d8d468e5fd8eb76ba8b72567c7ac45861f3ed6f10e6c89b0d8504fc",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122574"
+      ]
+    },
+    {
+      "id": "FDE-M7-069",
+      "module": "M7",
+      "topic": "管理员角色成员管理",
+      "decision": "保留",
+      "finding": "预置角色定义固定，但成员可增删，两种维护操作不混淆。",
+      "changedFields": [],
+      "beforeHash": "c414beee108b28f8301771202ad63f242d61e08a44fb00f054ce1325bb0cce56",
+      "afterHash": "c414beee108b28f8301771202ad63f242d61e08a44fb00f054ce1325bb0cce56",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122574"
+      ]
+    },
+    {
+      "id": "FDE-M7-070",
+      "module": "M7",
+      "topic": "角色删除影响",
+      "decision": "保留",
+      "finding": "删除角色只移除其授权贡献，直接授权需另查，且角色不可恢复。",
+      "changedFields": [],
+      "beforeHash": "4d846f7f98eeced3f9bfd99f91956b1b169ca61e2c1c971c2690fe2ef8b1e1e3",
+      "afterHash": "4d846f7f98eeced3f9bfd99f91956b1b169ca61e2c1c971c2690fe2ef8b1e1e3",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/122574"
+      ]
+    },
+    {
+      "id": "FDE-M7-072",
+      "module": "M7",
+      "topic": "外部权限请求内容",
+      "decision": "保留",
+      "finding": "授权决策需主体与资源标识；只看答案内容无法完成生成前访问控制。",
+      "changedFields": [],
+      "beforeHash": "4c700abca1ebbe6e74021ec674a7d6a96d9ba12ca6e62e5d8dba134b111bbebb",
+      "afterHash": "4c700abca1ebbe6e74021ec674a7d6a96d9ba12ca6e62e5d8dba134b111bbebb",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M7-073",
+      "module": "M7",
+      "topic": "角色权限维护与迁移验证",
+      "decision": "保留",
+      "finding": "映射保持同步、迁移提前验证、低峰切换，不能期待旧新方案并行兜底。",
+      "changedFields": [],
+      "beforeHash": "761ddb93d0c0dc854e2a5b550bd8029a1e6a30e469ee15e1e5d240d9f3cde761",
+      "afterHash": "761ddb93d0c0dc854e2a5b550bd8029a1e6a30e469ee15e1e5d240d9f3cde761",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/119281"
+      ]
+    },
+    {
+      "id": "FDE-M7-076",
+      "module": "M7",
+      "topic": "关键词分类与审核方式",
+      "decision": "保留",
+      "finding": "机审标签用于风险分类，不能当作用户知识权限标签。",
+      "changedFields": [],
+      "beforeHash": "b9bf6f28c12b4a7f5d5c615bc20b6db5c4f4e25b3c93e1d9addba39018c44fb4",
+      "afterHash": "b9bf6f28c12b4a7f5d5c615bc20b6db5c4f4e25b3c93e1d9addba39018c44fb4",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/125070"
+      ]
+    },
+    {
+      "id": "FDE-M7-077",
+      "module": "M7",
+      "topic": "共享凭证授权入口",
+      "decision": "保留",
+      "finding": "共享入口和管理权依工具来源区分，可引用不等于可再共享。",
+      "changedFields": [],
+      "beforeHash": "8764451c015da86cab358480bc289b1def1a2ccf600af5d7cf9c0fae0babd484",
+      "afterHash": "8764451c015da86cab358480bc289b1def1a2ccf600af5d7cf9c0fae0babd484",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138107"
+      ]
+    },
+    {
+      "id": "FDE-M7-078",
+      "module": "M7",
+      "topic": "凭证引用与业务参数",
+      "decision": "保留",
+      "finding": "凭证填充授权字段，业务参数仍需配置，不能假设自动补齐全部请求。",
+      "changedFields": [],
+      "beforeHash": "7cd5f3ad7e714b64c70c26eecd050fbf55767beab666ef8a358070b39ff5c7bb",
+      "afterHash": "7cd5f3ad7e714b64c70c26eecd050fbf55767beab666ef8a358070b39ff5c7bb",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138107"
+      ]
+    },
+    {
+      "id": "FDE-M7-079",
+      "module": "M7",
+      "topic": "凭证秘密与对象匹配",
+      "decision": "保留",
+      "finding": "引用不等于读出秘密，工具归属和授权范围共同限制可引用列表。",
+      "changedFields": [],
+      "beforeHash": "09a4c66f62c93fa8e736e71381b14662da774360c367164804d20fd802fe01f4",
+      "afterHash": "09a4c66f62c93fa8e736e71381b14662da774360c367164804d20fd802fe01f4",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/138107"
+      ]
+    },
+    {
+      "id": "FDE-M7-081",
+      "module": "M7",
+      "topic": "原生Skills API凭证",
+      "decision": "修订",
+      "finding": "原生Skills依赖API鉴权，扫描合格不替代调用身份；文档入口不应解读为每个终端用户须持主账号密钥。",
+      "changedFields": [
+        "explanation"
+      ],
+      "beforeHash": "24c72de8b4355e7796c0759ba37b719de71326965ed97ec7cb187af8f3a17f9b",
+      "afterHash": "0d3d14e0bb2446428a34c876613462b1104dc09d4780253d5146c37c1049c142",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/129561"
+      ]
+    },
+    {
+      "id": "FDE-M7-082",
+      "module": "M7",
+      "topic": "页面数据处理边界",
+      "decision": "保留",
+      "finding": "浏览器主动读取不等于数据不出本地，需核对推理链路和适用存储清除规则。",
+      "changedFields": [],
+      "beforeHash": "440daa2ba6fa71d1919ff8b40025e41f75119f96b55d5a648a854859de05ab2f",
+      "afterHash": "440daa2ba6fa71d1919ff8b40025e41f75119f96b55d5a648a854859de05ab2f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/132714"
+      ]
+    },
+    {
+      "id": "FDE-M7-097",
+      "module": "M7",
+      "topic": "临时文件URL安全接入",
+      "decision": "保留",
+      "finding": "临时HTTPS链接与永久公开不同，应让服务在有效期内访问所需文件。",
+      "changedFields": [],
+      "beforeHash": "ac4d07ad898fda09a70c897ab55814d2431967b2973d6f5686af8d328ec51bef",
+      "afterHash": "ac4d07ad898fda09a70c897ab55814d2431967b2973d6f5686af8d328ec51bef",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/1759/127284"
+      ]
+    },
+    {
+      "id": "FDE-M7-098",
+      "module": "M7",
+      "topic": "密钥删除生命周期",
+      "decision": "保留",
+      "finding": "先禁用观察再删除是轮转建议，删除不可恢复但不等于删除账户资源。",
+      "changedFields": [],
+      "beforeHash": "36b98460cc9b81b19ee1bb2918a783dd0d4e7f116173235e13c06d07c9a6df82",
+      "afterHash": "36b98460cc9b81b19ee1bb2918a783dd0d4e7f116173235e13c06d07c9a6df82",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/598/123925",
+        "https://cloud.tencent.com/document/product/598/82369"
+      ]
+    },
+    {
+      "id": "FDE-M7-100",
+      "module": "M7",
+      "topic": "云管理职责分离",
+      "decision": "保留",
+      "finding": "职责和访问方式按任务拆分，只需API的主体不必附加控制台凭证。",
+      "changedFields": [],
+      "beforeHash": "7d6ab103ab0491dc9f4c450a85b2b2852307aaa8282b272bb82696903bf4d66f",
+      "afterHash": "7d6ab103ab0491dc9f4c450a85b2b2852307aaa8282b272bb82696903bf4d66f",
+      "sourceUrls": [
+        "https://cloud.tencent.com/document/product/598/10592"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "FDE-M7-001",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "直接配置与角色权限按合集生效，三个优先级/交集误区均能被来源排除。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122574"
+    ],
+    "contentHash": "40340ba2833cd925366baf9e7c955f30af2f6a84b03411e337c751b242f9bfb5"
+  },
+  {
+    "id": "FDE-M7-002",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "数据可查看与编辑、发布权区分准确，场景只读目标明确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122574"
+    ],
+    "contentHash": "beb4fbcbfaa51f57c35cab094cbd167a7ce8a93abcc0e9cd2ece9ca27a352538"
+  },
+  {
+    "id": "FDE-M7-003",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "高级配置支持逐应用操作授权，普通可编辑不足以表达题设范围。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122574"
+    ],
+    "contentHash": "1da22d4a62eb1e943558bee0843d6ca4ce88f24c2f3971cf26d80f29d3fed1c5"
+  },
+  {
+    "id": "FDE-M7-004",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "主账号虽不显示于空间用户列表，仍有企业及空间全部权限。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122574"
+    ],
+    "contentHash": "fa41ecad274323ad7c0bc8a6ff93c4927eb0f6183c4d18f42a0c6d81eb3c8158"
+  },
+  {
+    "id": "FDE-M7-005",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "预置管理员角色不可修改删除，成员不能按用户另配权限，范围清晰。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122574"
+    ],
+    "contentHash": "3c0460c72ecf49f7750dbac44611984a8c464b0600e562bb06d8ba10246bbd26"
+  },
+  {
+    "id": "FDE-M7-006",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "删除空间成员只限制当前空间，不等于删除云账号或全部空间资格。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122574"
+    ],
+    "contentHash": "f9c9a9fceed8b7f351df1f76ba799672b4b450048d395be56f0d0cb4729623d3"
+  },
+  {
+    "id": "FDE-M7-007",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "角色成员需先是当前空间用户，企业用户身份不自动满足成员要求。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122574"
+    ],
+    "contentHash": "baf3e3a143934b876bf32fe2894e535e0d61e05bf7eed4172bfc07f71e3691ff"
+  },
+  {
+    "id": "FDE-M7-008",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "数据授权针对他人创建资源，自建数据仍可编辑，符合源说明。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122574"
+    ],
+    "contentHash": "ad1d4c46e011d1e960d39854486bd7a5d8dda39de891ad2962b79654e62981c1"
+  },
+  {
+    "id": "FDE-M7-009",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "平台操作者与应用终端用户分开，终端知识范围需应用端权限机制。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "3cd290baceed82212aa7e2b21ebaa682ac80567829273deb66c42b347561d013"
+  },
+  {
+    "id": "FDE-M7-010",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "未配置应用端权限时默认开放应用全部知识，答案无范围扩大。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "1c15002b5550eb90778113d6994203c1a8b9fbad1f3d554f9f5696e1350d737b"
+  },
+  {
+    "id": "FDE-M7-011",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "官方明确Multi-Agent暂不支持该权限功能，题目未外推Claw能力。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "60009a27d817192c7d2681742942f0b920a6f1f4b65169b58fb70377f5b3494a"
+  },
+  {
+    "id": "FDE-M7-012",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "多个应用角色按知识权限并集生效，与平台管理角色不同目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "f9b402441648519d4e4e8eccf3bd50cfbd55aa464fb543e8de5e137775a46c66"
+  },
+  {
+    "id": "FDE-M7-013",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "用户ID对应visitor_biz_id，未混同会话或请求追踪标识。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "3418f0b6f10e3fb90599226e6e63fb7e089370c33554f59f9d97c0c15bf16d84"
+  },
+  {
+    "id": "FDE-M7-014",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "外部权限过滤在召回后生成前执行，禁止把无权内容先提供给模型。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "c5b4ef142dabd3b8ed2837b9499df7369527929e494a7732e9ea783ce7f69e1c"
+  },
+  {
+    "id": "FDE-M7-015",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "同一应用只有一种权限方式生效，无并行旧规则兜底保证。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "465f1c9cb111fc6090b0898d640333b0216c9d6aa2affb5307438f6954b5319b"
+  },
+  {
+    "id": "FDE-M7-016",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "用户ID唯一而昵称可重复，区别于请求字段映射目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "468d24e8fa451c3d527a651e206bda7c66f62a178c484f53bd959c58a7cbbdcc"
+  },
+  {
+    "id": "FDE-M7-017",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "内容安全覆盖输入与输出，输入安全不构成输出安全证明。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070"
+    ],
+    "contentHash": "261c61e9c7a7b9335d28d8d9e05fb0a07a491d93350d6c1d3f6bcac8dbf01421"
+  },
+  {
+    "id": "FDE-M7-018",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "审核模型与关键词是策略组成，其他应用/知识设置不是该定义。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070"
+    ],
+    "contentHash": "b71a2efaefc143c0b9b22a3c38db229b168497272c6d9b6974fad5c63468df3d"
+  },
+  {
+    "id": "FDE-M7-019",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "隐藏底线模型不可关闭，可见配置全关也不能绕过。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070"
+    ],
+    "contentHash": "ef83e4cb91d12fb3ffe3a2386dc778c627f29ec8abf7ac4107b1acd631b6aa6a"
+  },
+  {
+    "id": "FDE-M7-020",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "系统策略不可编辑，需自定义策略调整审核配置。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070"
+    ],
+    "contentHash": "00e7bdaaed8e4ac44642570627ad7b5a4e55964b3aa8c2accb6e89929e599aae"
+  },
+  {
+    "id": "FDE-M7-021",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "单个词库只支持一种匹配模式，分库满足双模式要求。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070"
+    ],
+    "contentHash": "cba02123862b56537c967942882a5bf147e299b2d3f8db9c338efb899f06a788"
+  },
+  {
+    "id": "FDE-M7-022",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "组合词需同时命中各部分，非任一词命中即可。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070"
+    ],
+    "contentHash": "6b8488c5a70df7a4fa15a4c1e677ab00aa46d040bd9726b66eb99e81069e9b99"
+  },
+  {
+    "id": "FDE-M7-023",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "命中风险的回复由应用风险回复控制，非欢迎语或知识无答案。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070"
+    ],
+    "contentHash": "3957b5779e0863f6f7b0023d5abd695655ef762bca392380cc9e1163eb5a55f7"
+  },
+  {
+    "id": "FDE-M7-024",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "手机号隐私脱敏不同于知识权限和模型温度，源明确支持。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070"
+    ],
+    "contentHash": "a2c38cf941773f26b0f8893ee5c276ade0b32c87c62a29dc7875fc0715ca8881"
+  },
+  {
+    "id": "FDE-M7-025",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "个人凭证仅本人可见编辑引用；管理员不可引用但可删除。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "6397dc960f1d029fae9173389805a9081fc80c6588e3b8ecc72509ba99df46df"
+  },
+  {
+    "id": "FDE-M7-026",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "被共享方可引用而不能编辑删除或查看敏感值，规则一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "eae0f6b7b528c5c3cf2f32ce4cb1f81f7543e247d1bed00a015b8cadbe212127"
+  },
+  {
+    "id": "FDE-M7-027",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "统一凭证修改影响引用方包括已发布应用，不能假设线上快照隔离。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "908879cbe693578deaf46f1644c58fbf048a4234cafe58c86c1ebd11384f6814"
+  },
+  {
+    "id": "FDE-M7-028",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "编辑删除前应看引用详情，创建时间和发布状态不能证明无依赖。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "db69afbe42605385a53900f33f23f7ff51b515d63ef4f41c95efc05bd3bec0c6"
+  },
+  {
+    "id": "FDE-M7-029",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "OAuth失效按刷新或重新授权处理，应用重发不修复服务授权。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "e837958f88d8ae279470e993266c2f7f0143153f0a99e363a6d98b6c664132cc"
+  },
+  {
+    "id": "FDE-M7-030",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "同工具可配置多环境凭证，明确名称有助于避免环境混用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "5d0954920fe840602905a681e2745ab9ce50b38407b5fe544521fb1c8a0dc520"
+  },
+  {
+    "id": "FDE-M7-031",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "历史授权手动切换新版凭证后旧授权失效且不可恢复。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "352d9b91cb6c7809ccea38ee68310af93be710cf35d475382694b74cf570e4ad"
+  },
+  {
+    "id": "FDE-M7-032",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "自定义Skill导入包括格式校验和安全扫描，区别于共享审批。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "c2a40a20fd1b981d9b787a49a54843e77ed4eacbd8960912309c0f3f77c48d76"
+  },
+  {
+    "id": "FDE-M7-033",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "企业共享沿用原安全报告且仍需企业审批，未误称再次全量扫描。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "8b32ef4b7f3c927b8f9c86220ea238312e7d1bfac46353bc0b2d53f7e24c9dfe"
+  },
+  {
+    "id": "FDE-M7-034",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "复审通过：已改为SkillHub来源内置技能的自动检测与广场更新机制，避免与M2空间可见范围重复；安全复核建议明确标为推理，未声称任务自动切版本。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "b82608f374757d4500a83ffa869b347a1dd3bc6f4e5768261d40c9256b688ce9"
+  },
+  {
+    "id": "FDE-M7-035",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "内置Skill已审核不等于一切输出正确或目标系统已获授权。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "174014ea03fe588b019974a80d61f434a89ee68a12a614f7dbd934a4674b4299"
+  },
+  {
+    "id": "FDE-M7-036",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "浏览器页面读取由用户指令触发，协议否认后台持续采集。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132714"
+    ],
+    "contentHash": "757f32f699a01b0a0056b8ecc1decbb356ea317f2d36ffe5ca1d728dab27a39f"
+  },
+  {
+    "id": "FDE-M7-037",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "连接Token按协议存于本地浏览器，未臆造后台同步。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132714"
+    ],
+    "contentHash": "2c106964dd027dcb7f3fb01fa14ee0e39709f2c76fa601a61dc0772bcabf1e55"
+  },
+  {
+    "id": "FDE-M7-038",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "协议禁止绕过第三方访问控制，正常授权访问与绕过边界清楚。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132714"
+    ],
+    "contentHash": "eb54b3ffdd10bc7bd6413a490139105a5d9247a1a456c6b84347c70a65d14991"
+  },
+  {
+    "id": "FDE-M7-039",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "AI输出无准确完整无误的保证，执行成功与内容核验不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132714"
+    ],
+    "contentHash": "1fb16670a7bf0eb9d4cb42ab6aa2524f1c4ca017596b13c5de054f3d4fa4ed93"
+  },
+  {
+    "id": "FDE-M7-040",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "真实浏览器操作可能不可逆，协议未承诺全站回滚。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132714"
+    ],
+    "contentHash": "a2320a2c775faa622598c31cfabb84f5c97524b6281b6d59b82fc084f16b3209"
+  },
+  {
+    "id": "FDE-M7-041",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "协议2.3明确用户维护执行环境，连接通道不接管补丁配置责任。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128396"
+    ],
+    "contentHash": "4e9fcab37180ead2f39bb92ec0f166ce007c25b289dc891ab96aa337318a2e42"
+  },
+  {
+    "id": "FDE-M7-042",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "自选模型须确认授权，接口连通性不证明商业授权成立。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128396"
+    ],
+    "contentHash": "a32cf8258d116f1a44b797215fbf36c27f56e2c24f9de8d3a0cc5434dababb87"
+  },
+  {
+    "id": "FDE-M7-043",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "协议2.4列模型幻觉等内容风险，与网络超时不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128396"
+    ],
+    "contentHash": "20103db107cbe44b18bd599182acc2a46a28aff3c9de16d71ce93efb9f62252c"
+  },
+  {
+    "id": "FDE-M7-044",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "平台校验凭证并路由到授权环境，不保证目标业务结果。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128396"
+    ],
+    "contentHash": "29a5a8a7272eb3c2279635f19d160d4a89ec8e03c23648a1fbce5ffac0a17ced"
+  },
+  {
+    "id": "FDE-M7-045",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "首次用户可设置无空间访问等管理员添加，符合源选项。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122570"
+    ],
+    "contentHash": "ba19cfd43349fdf8844bb4b520223a0fa8d584d532fcb1e4183776353c0deaf1"
+  },
+  {
+    "id": "FDE-M7-046",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "企业用户创建转到CAM，应用端用户ID和角色不是云账号。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122570"
+    ],
+    "contentHash": "5a4b0d5e191a0f4dae5663d78b81654ff77b85b22fc91697922ee5a2b81b689c"
+  },
+  {
+    "id": "FDE-M7-047",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "企业管理可删除子账号而不支持删除主账号。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122570"
+    ],
+    "contentHash": "f6d2c7eb47433baa846fd626b6f1ee5fa29f3e36bd54afd0296be4a12c3a7090"
+  },
+  {
+    "id": "FDE-M7-048",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "空间是独立工作区并隔离数据，非仅列表分组。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122569"
+    ],
+    "contentHash": "f28e0ae0e84784f23bf463e0dbd755961fde34a7bd861e9801b14347ad4a746f"
+  },
+  {
+    "id": "FDE-M7-049",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "功能权限决定可执行操作，数据权限决定可访问资源。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122569"
+    ],
+    "contentHash": "4ec98176d23dcbea6f6ce6a3f6086876084fb3bd092289c04bb12c41e1d3fdd7"
+  },
+  {
+    "id": "FDE-M7-050",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "同一成员可加入多个空间，但不是自动加入所有空间。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122569"
+    ],
+    "contentHash": "08db6780c712e5c8967b0390105a5288d20c19f246e79c9b23be52b326a1dd3e"
+  },
+  {
+    "id": "FDE-M7-051",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "内置COS采用平台临时密钥并在操作时匹配权限。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116238"
+    ],
+    "contentHash": "49427cadfb05786a9c54fe6e66741773de55c16553850dca935a10f1599d1ba2"
+  },
+  {
+    "id": "FDE-M7-052",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "明确禁止实时/离线参数跨场景混用，未臆造权限包含关系。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116238"
+    ],
+    "contentHash": "997a2e54bdcc2846b58679285bfa244993025d3e97c0b5113fae99a3ea6b2850"
+  },
+  {
+    "id": "FDE-M7-053",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "临时密钥组合错误可致403，重试或发布无法替代检查。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116238"
+    ],
+    "contentHash": "c3694052cb1bcbac24a1afe7c7660b3287fc6372f24bfe16fa3e5ad36dbc6746"
+  },
+  {
+    "id": "FDE-M7-054",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "明确限定旧版2023-11-30，ExpiredTime为失效时间字段。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/105050"
+    ],
+    "contentHash": "3ccf45532432387e07b81f69642215d98b1d608739adf654893b7689dbe9eaea"
+  },
+  {
+    "id": "FDE-M7-055",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "旧版可选BotBizId不表示所有场景可省略，不同组合权限不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/105050"
+    ],
+    "contentHash": "6a0af361432343d8bb884aa7cfcf037042f24140fad990b4f0b791c77544f179"
+  },
+  {
+    "id": "FDE-M7-056",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "V3签名验证持有效密钥主体，不授予额外业务权限。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/105109"
+    ],
+    "contentHash": "d4996c9043d789a0372d5e43ff62b11373214b3f0f188bf2133803e359127706"
+  },
+  {
+    "id": "FDE-M7-057",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "请求篡改造成签名不一致时拒绝，符合完整性验证说明。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/105109"
+    ],
+    "contentHash": "5e019a96eccfc49e4aa6acc3f049be3b953ed0f57e3e771278bae328148fbfd1"
+  },
+  {
+    "id": "FDE-M7-058",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "SDK封装签名细节仍需凭证与鉴权，不扩大授权范围。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/105109"
+    ],
+    "contentHash": "7ed01951c12e60f950bec8b978f0c655eb87c7ad77359a562e28fbb8d3e38855"
+  },
+  {
+    "id": "FDE-M7-059",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "最小权限按实际资源操作配置，代码约束不能替代授权。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/10592"
+    ],
+    "contentHash": "981d011292d2046ff92e4462a42d304d5be11b982dc49a02bc9c5c0a1f19b086"
+  },
+  {
+    "id": "FDE-M7-060",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "复审通过：离职资源回收和管理员禁用删除符合安全实践；三个干扰分别是单次会话、单一凭证、单应用成员的不完整撤权。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/10592"
+    ],
+    "contentHash": "7db27a5ae0bba71a8e9eec511926a8e1624987989c37051a05847f35d5929584"
+  },
+  {
+    "id": "FDE-M7-061",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "MFA用于登录与敏感操作二次验证，不能替代资源权限或事实正确性。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/10592"
+    ],
+    "contentHash": "db7aa0e6d1c87f29a8d75c15736f2c052c3a3136405e6b7548d2f81a0a23e540"
+  },
+  {
+    "id": "FDE-M7-062",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "SecretKey仅创建时保存，后续关闭查询，SecretId和秘密区分准确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/37140"
+    ],
+    "contentHash": "9f77ca9878258a9688359c440a46c36f16532ba5dcfe829f06c32db5e607f6fa"
+  },
+  {
+    "id": "FDE-M7-063",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "禁用密钥拒绝其请求，区别于降成只读或控制台密码撤销。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/37140"
+    ],
+    "contentHash": "15fec0116dd29ecfbd006a7f60f38eb6c82999963a945f0e05b07add08fa8ffc"
+  },
+  {
+    "id": "FDE-M7-064",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "errorCode对应CAM/签名鉴权异常，apiErrorCode对应业务执行异常。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/629/56259"
+    ],
+    "contentHash": "65df139fd4c9f422e45085223b5048894b6c2d041aea2380ba11411f5d089b6e"
+  },
+  {
+    "id": "FDE-M7-065",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "操作审计支持请求ID检索，同时保留事件须被记录前提。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/629/56259"
+    ],
+    "contentHash": "a749d63c967b6b7322e9105f0ad386edcfa139b9712fee6498a7bbf50a34e00b"
+  },
+  {
+    "id": "FDE-M7-066",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "用户凭证报告汇总凭证与安全配置状态，不是明文秘密或逐条操作日志。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/65676"
+    ],
+    "contentHash": "e606140117a205fe4108a5de47459359aaa388c07e13d4b6aa7a792659825151"
+  },
+  {
+    "id": "FDE-M7-067",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "CAM角色是虚拟身份，无持久密码/密钥，担任时获得临时凭证。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/19420"
+    ],
+    "contentHash": "85c5aa06866d022908d43bcc89ff1931b125ba9245fba3e5585e3d78f72f4db9"
+  },
+  {
+    "id": "FDE-M7-068",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "平台成员初始有部分功能和他人数据查看权，不是默认全拒绝/管理员。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122574"
+    ],
+    "contentHash": "cb62c4029d8d468e5fd8eb76ba8b72567c7ac45861f3ed6f10e6c89b0d8504fc"
+  },
+  {
+    "id": "FDE-M7-069",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "管理员角色权限不可变但成员可增删，与005的权限范围目标不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122574"
+    ],
+    "contentHash": "c414beee108b28f8301771202ad63f242d61e08a44fb00f054ce1325bb0cce56"
+  },
+  {
+    "id": "FDE-M7-070",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "删除普通角色不可恢复且成员失去该角色贡献，不抹掉其他直接授权。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122574"
+    ],
+    "contentHash": "4d846f7f98eeced3f9bfd99f91956b1b169ca61e2c1c971c2690fe2ef8b1e1e3"
+  },
+  {
+    "id": "FDE-M7-071",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "应用端权限在每个应用独立设置，共享知识不等于共用授权配置。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "1c0053255669c0ac1f05621514ec881e7148e9bfe6bda141766ad1203d631e58"
+  },
+  {
+    "id": "FDE-M7-072",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "外部权限请求包括用户和候选内容标识，以支持生成前过滤。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "4c700abca1ebbe6e74021ec674a7d6a96d9ba12ca6e62e5d8dba134b111bbebb"
+  },
+  {
+    "id": "FDE-M7-073",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "权限切换需核对角色映射并低峰操作，不依赖旧规则同时生效。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "761ddb93d0c0dc854e2a5b550bd8029a1e6a30e469ee15e1e5d240d9f3cde761"
+  },
+  {
+    "id": "FDE-M7-074",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "模糊匹配有大小写、繁简与空白等归一化，非逐字精确匹配。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070"
+    ],
+    "contentHash": "d0eed47f558b12a0e7517e6c7e9281e403210c3b8e38f1f4c8840d9e6c53a1ab"
+  },
+  {
+    "id": "FDE-M7-075",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "文档列银行账号、身份证、地址等脱敏类型，不能推成任意商业秘密保证。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070"
+    ],
+    "contentHash": "b20eb55aef63b69164deb286d998e413e0a94c256486339be09f68b48ed8d633"
+  },
+  {
+    "id": "FDE-M7-076",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "机审风险标签为预置，词库自定义不等于标签或知识授权可任意定义。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070"
+    ],
+    "contentHash": "b9bf6f28c12b4a7f5d5c615bc20b6db5c4f4e25b3c93e1d9addba39018c44fb4"
+  },
+  {
+    "id": "FDE-M7-077",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "自定义工具创建者与内置工具企业管理员的共享入口职责明确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "8764451c015da86cab358480bc289b1def1a2ccf600af5d7cf9c0fae0babd484"
+  },
+  {
+    "id": "FDE-M7-078",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "统一凭证处理授权，不替代Header/Query/Body中的业务参数。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "7cd5f3ad7e714b64c70c26eecd050fbf55767beab666ef8a358070b39ff5c7bb"
+  },
+  {
+    "id": "FDE-M7-079",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "引用列表限制当前工具和权限范围，应用编辑权不解锁敏感值。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "09a4c66f62c93fa8e736e71381b14662da774360c367164804d20fd802fe01f4"
+  },
+  {
+    "id": "FDE-M7-080",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "共享须由编辑者发起审批且范围为本企业所有空间，未扩大到公网。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "31d6e68274c6c5a030aaddffe1c7a7e48fde202eb8d3b891c3746e683402e773"
+  },
+  {
+    "id": "FDE-M7-081",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "ADP原生Skills需平台插件API密钥，安全审核不替代调用鉴权。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "24c72de8b4355e7796c0759ba37b719de71326965ed97ec7cb187af8f3a17f9b"
+  },
+  {
+    "id": "FDE-M7-082",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "必要页面信息可传至智能体并按数据协议处理，非纯本地或保证即时删除。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132714"
+    ],
+    "contentHash": "440daa2ba6fa71d1919ff8b40025e41f75119f96b55d5a648a854859de05ab2f"
+  },
+  {
+    "id": "FDE-M7-083",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "第三方页面变化和自然语言歧义可导致失败，合法鉴权不保证执行准确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132714"
+    ],
+    "contentHash": "12cb58e1d0045009cdf54adfcc3df4bc7acf183add74e0133826da6ef67b46a4"
+  },
+  {
+    "id": "FDE-M7-084",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "接入方管理凭证保管使用轮换撤销，合法请求也可能源于泄露凭证。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128396"
+    ],
+    "contentHash": "374e9c9348bd5f5f381816047a9f23154a6154a821ebc7e23d192ffb342b5dca"
+  },
+  {
+    "id": "FDE-M7-085",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "执行环境用户数据仍需账号控制、监测和应急预案，不主动采集不免除管理责任。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128396"
+    ],
+    "contentHash": "c2ebd454ebdef73ad1573a4e7c864dd5f4e18021fcf3fff123459d665537106c"
+  },
+  {
+    "id": "FDE-M7-086",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "协议保留调度日志并提示网络环境导致失败，不保证任务成功或零日志。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128396"
+    ],
+    "contentHash": "88445039eebf164064d3b55446b72adcb9e7b76fc24371664b75abac6e6ec1bb"
+  },
+  {
+    "id": "FDE-M7-087",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "初始化自动创建默认空间且不可删除，其他空间管理须区分。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122569"
+    ],
+    "contentHash": "c96d06e6f47b95d02788fc914820ada10deea39f31dbd5ff67ea4ea41113411a"
+  },
+  {
+    "id": "FDE-M7-088",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "复审通过：题干限定通用CAM并明确不外推ADP空间接入；消息接收人和协作者事实与598/13665一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/13665"
+    ],
+    "contentHash": "ea481d816914dd045f95d1e8f187bac4334299d662e1a931a27c01bfb67fc577"
+  },
+  {
+    "id": "FDE-M7-089",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "用户组按相同职能聚合并批量授权，名称本身不授予策略。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/14985"
+    ],
+    "contentHash": "7a20b5573c7b467245ce0979d838632030648f09365d8830449330872d126a92"
+  },
+  {
+    "id": "FDE-M7-090",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "IP条件依赖具体产品支持，未将通用CAM能力推成全部ADP端点保证。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/38037"
+    ],
+    "contentHash": "a803a13d21cd79485ed09ec7cba2b16ebcf75b640b37792d45e8e1476a0451c2"
+  },
+  {
+    "id": "FDE-M7-091",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "复审通过：解析已改为effect定义allow/deny而不表示执行顺序，答案与来源元素定义一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/10603"
+    ],
+    "contentHash": "19d37e0b714688c894c06e272fff695a8c0c2811f67282a2ecccc75af84c9c9a"
+  },
+  {
+    "id": "FDE-M7-092",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "凭证报告的登录/操作/MFA状态有明确定义，不能代替实际操作记录。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/65676"
+    ],
+    "contentHash": "c247c416630b1f07442cc59d41161a6dc000b7decb75ab880bfaefd8644df5af"
+  },
+  {
+    "id": "FDE-M7-093",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "已删除子用户和角色以ID保留显示线索，不用同名新身份替代。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/629/56259"
+    ],
+    "contentHash": "7242cba9e8d78ffee1d33c61d3f4b85e4536330cdcbaf90cf98b5d29aa80630e"
+  },
+  {
+    "id": "FDE-M7-094",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "题干限定内置COS路径，源不需自购存储且不能任意换自购桶。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116238"
+    ],
+    "contentHash": "f92a103d1c6c6dcea711bc519bf75f028b50abe5b69fee05fd98a91f0cf0e3de"
+  },
+  {
+    "id": "FDE-M7-095",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "限定旧版接口，文件false、对话图片true，不能混同实时文件。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/105050"
+    ],
+    "contentHash": "6aad01a992e6647841b31a324d381b5f2925c0b303b05583537a77b920b05b6a"
+  },
+  {
+    "id": "FDE-M7-096",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "解析协议v1.0使用HTTPS和Header Bearer，未混同腾讯云V3签名。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/127284"
+    ],
+    "contentHash": "c63d146995e1ae4bc99581f705410d87b2871d48371871928e83d0a7bc34ad39"
+  },
+  {
+    "id": "FDE-M7-097",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "FileUrl需可访问HTTPS且允许带签名临时链接，不需永久公开。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/127284"
+    ],
+    "contentHash": "ac4d07ad898fda09a70c897ab55814d2431967b2973d6f5686af8d328ec51bef"
+  },
+  {
+    "id": "FDE-M7-098",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "密钥删除需先禁用且不可恢复，凭证生命周期不同于云账号资源。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/37140"
+    ],
+    "contentHash": "199127a0cb775802d9687ca9be09cb0a78ac8e711f1e115a410a3a26d79f6e3c"
+  },
+  {
+    "id": "FDE-M7-099",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "SecretId标识、SecretKey验证身份，未当作可公开展示的秘密。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/37140"
+    ],
+    "contentHash": "f8665ed68b2a8294e2e5bee62af9e9da602a45c8b6e52184f368a8456febca70"
+  },
+  {
+    "id": "FDE-M7-100",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "notes": [
+      "云安全实践建议用户/权限/资源职责分开，并按控制台或API实际需求配置凭证。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/10592"
+    ],
+    "contentHash": "7d6ab103ab0491dc9f4c450a85b2b2852307aaa8282b272bb82696903bf4d66f"
+  }
+]

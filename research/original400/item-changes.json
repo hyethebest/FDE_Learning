@@ -1,0 +1,3304 @@
+[
+  {
+    "id": "FDE-M1-001",
+    "module": "M1",
+    "topic": "大模型/部署与精调",
+    "decision": "修订",
+    "finding": "区分服务可调用与任务适配效果；部署成功不能证明完成精调。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "7049dc9556a10aa6f82bff8787b112d830c58158adb633455c4263064d811289",
+    "afterHash": "b37bdc2be6e24c1b31220987d7adaedafd14586e41008813efbb5d1a9d7ce433",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/851/109354"
+    ],
+    "before": {
+      "stem": "将已有模型部署成在线服务与对它进行精调，主要区别是什么？",
+      "explanation": "在线部署与精调训练是不同动作：前者提供服务，后者改善特定任务表现。"
+    },
+    "after": {
+      "stem": "某团队已获得模型服务地址，但合同字段抽取仍不稳定，准备使用标注样本继续训练。如何区分这两项工作？",
+      "explanation": "在线部署与精调训练是不同动作：前者提供服务，后者改善特定任务表现。 判断要点：区分服务可调用与任务适配效果；部署成功不能证明完成精调。"
+    }
+  },
+  {
+    "id": "FDE-M1-005",
+    "module": "M1",
+    "topic": "大模型/角色设定",
+    "decision": "修订",
+    "finding": "由角色名记忆改为训练数据排错，区分system与user字段。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "135c37fc6e99addfad3fc7b3438cf3f46c4b1c222a9ce2bd368692294161c30d",
+    "afterHash": "8339d0ff38ffc0a92b99380fd1d9a93ff03063c540ae6641e0fed53fe501a097",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/851/123443"
+    ],
+    "before": {
+      "stem": "对话训练数据中的system角色主要表示什么？",
+      "explanation": "官方训练数据格式中system承载角色设定信息，user和assistant承载问答内容。"
+    },
+    "after": {
+      "stem": "训练样本把“你是售后助手，资料不足需说明无法确认”混入了每轮用户问题。这类全局角色要求应表达什么信息？",
+      "explanation": "官方训练数据格式中system承载角色设定信息，user和assistant承载问答内容。 判断要点：由角色名记忆改为训练数据排错，区分system与user字段。"
+    }
+  },
+  {
+    "id": "FDE-M1-008",
+    "module": "M1",
+    "topic": "大模型/训练与上下文",
+    "decision": "修订",
+    "finding": "补强知识更新不等于权重更新，临时上下文不能承诺永久学会。",
+    "changedFields": [
+      "stem",
+      "options",
+      "explanation",
+      "distractors"
+    ],
+    "beforeHash": "3876cf934bb94053bc2b9d1b1c7330b118aba3699a89b14ea2fe11f460335daa",
+    "afterHash": "4e105e9134324eda710449b2071a271561117af64db3ede11f8e79decd4973a8",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "before": {
+      "stem": "把检索到的制度片段加入本次提问，属于什么机制？",
+      "options": {
+        "A": "为生成提供外部上下文",
+        "B": "用问题答案样本更新模型参数",
+        "C": "将该制度永久编码进模型权重",
+        "D": "重新发起预训练以学习全文"
+      },
+      "explanation": "RAG把召回内容作为当前生成的上下文；这与另行发起精调训练属于不同环节。",
+      "distractors": {
+        "B": "这是训练机制",
+        "C": "提供上下文不代表更新权重",
+        "D": "RAG不需每次预训练"
+      }
+    },
+    "after": {
+      "stem": "新制度刚生效，工程师将检索到的适用条款放入本轮模型请求，尚未启动任何训练任务。这一步属于什么机制？",
+      "options": {
+        "A": "为生成提供外部上下文",
+        "B": "用问题答案样本更新模型参数",
+        "C": "把检索索引中的片段直接视为模型已学入的参数",
+        "D": "重新发起预训练以学习全文"
+      },
+      "explanation": "RAG把召回内容作为当前生成的上下文；这与另行发起精调训练属于不同环节。 判断要点：补强知识更新不等于权重更新，临时上下文不能承诺永久学会。",
+      "distractors": {
+        "B": "这是训练机制",
+        "C": "检索索引在模型外部，进入上下文不等于权重更新。",
+        "D": "RAG不需每次预训练"
+      }
+    }
+  },
+  {
+    "id": "FDE-M1-012",
+    "module": "M1",
+    "topic": "Token/历史开销",
+    "decision": "修订",
+    "finding": "把计费记忆题改为多轮成本定位，重传历史仍消耗输入预算。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "7eddee4c1e1db2a741477076047611d2f463649786926cf6cb211fc4a139c3fe",
+    "afterHash": "a571d7c9b6aeb3ae141638aed27255f9eb79bd0863f065ab85785887d5b4a927",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1729/111007"
+    ],
+    "before": {
+      "stem": "多轮请求再次携带完整历史消息，哪部分预算会受到影响？",
+      "explanation": "多轮调用把历史消息放入请求；这些文本属于输入，必须计入输入上下文预算。"
+    },
+    "after": {
+      "stem": "客服助手单轮回复长度不变，但对话越长输入消耗越高；请求仍附带完整历史。首先应关注哪部分预算？",
+      "explanation": "多轮调用把历史消息放入请求；这些文本属于输入，必须计入输入上下文预算。 判断要点：把计费记忆题改为多轮成本定位，重传历史仍消耗输入预算。"
+    }
+  },
+  {
+    "id": "FDE-M1-013",
+    "module": "M1",
+    "topic": "Token/上下文窗口",
+    "decision": "修订",
+    "finding": "强调历史、检索和当前输入共同占用上下文，并需预留输出。",
+    "changedFields": [
+      "stem",
+      "options",
+      "explanation",
+      "distractors"
+    ],
+    "beforeHash": "1d5c467432085e07bed102fc04f264b241dad4d3819e8c878583582766dc69de",
+    "afterHash": "abaca9f165107109035b2ad607411e75f2e38ebc6cb985231e3046b780bf87eb",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1729/111007"
+    ],
+    "before": {
+      "stem": "模型限制输入与输出Token总长度时，预留输出空间意味着什么？",
+      "options": {
+        "A": "只要限制输出，输入即可无限增大",
+        "B": "只需统计用户文本，不统计历史",
+        "C": "检索片段作为外部内容无需占预算",
+        "D": "不能让输入占满全部上下文额度"
+      },
+      "explanation": "接口说明输入和输出总长度受上下文长度限制，因此输入预算应留出回复空间。",
+      "distractors": {
+        "A": "窗口约束总长度",
+        "B": "历史也作为输入",
+        "C": "送入模型的片段占上下文"
+      }
+    },
+    "after": {
+      "stem": "接口按输入与输出总Token限制上下文。团队准备把长手册片段和全部历史填满输入窗口，最需要纠正哪项预算判断？",
+      "options": {
+        "A": "按窗口长度配置全部输入，再依赖输出上限自动避免超限",
+        "B": "只需统计用户文本，不统计历史",
+        "C": "检索片段作为外部内容无需占预算",
+        "D": "不能让输入占满全部上下文额度"
+      },
+      "explanation": "接口说明输入和输出总长度受上下文长度限制，因此输入预算应留出回复空间。 判断要点：强调历史、检索和当前输入共同占用上下文，并需预留输出。",
+      "distractors": {
+        "A": "输入与输出共享总预算，应事先留出输出空间，不能只设回复上限。",
+        "B": "历史也作为输入",
+        "C": "送入模型的片段占上下文"
+      }
+    }
+  },
+  {
+    "id": "FDE-M1-034",
+    "module": "M1",
+    "topic": "检索/重排序作用",
+    "decision": "修订",
+    "finding": "题设已确定召回到了正确片段，下一步才优先考虑重排。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "c581934132128c276e9315e94c339e397463b3a17511b856e20f81c5caab91ae",
+    "afterHash": "ad71696141011135d719dc4b6d993880ad249857555f44cde9b1475718735091",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/106206"
+    ],
+    "before": {
+      "stem": "已有一批候选片段但顺序不佳，重排序直接处理什么？",
+      "explanation": "Rerank根据query与候选片段的相关性调整顺序，帮助更相关内容优先进入后续处理。"
+    },
+    "after": {
+      "stem": "召回日志显示正确政策片段已在候选集中，却排在多条弱相关材料后。此时引入重排序主要处理什么？",
+      "explanation": "Rerank根据query与候选片段的相关性调整顺序，帮助更相关内容优先进入后续处理。 判断要点：题设已确定召回到了正确片段，下一步才优先考虑重排。"
+    }
+  },
+  {
+    "id": "FDE-M1-045",
+    "module": "M1",
+    "topic": "RAG/Agentic反思",
+    "decision": "修订",
+    "finding": "去除无条件成功暗示，反思迭代有助补足证据但需受轮数成本限制。",
+    "changedFields": [
+      "stem",
+      "options",
+      "explanation",
+      "distractors"
+    ],
+    "beforeHash": "23c3d771b026c28f76eb592ccd4b5ff9c8800106357a19cc678a36341419b1f3",
+    "afterHash": "6afa2d9ac264af75724101288eb2902d8c28b3e86937e1338cc5a99433b529ce",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/132211"
+    ],
+    "before": {
+      "stem": "Agentic RAG发现首次检索信息不完整时，主要机制是什么？",
+      "options": {
+        "A": "无论结果如何都固定使用首次召回内容",
+        "B": "只重排已有结果但不允许再次检索",
+        "C": "把缺失内容依据模型语言习惯补成事实",
+        "D": "评估结果后调整策略并继续检索"
+      },
+      "explanation": "Agentic RAG可反思相关性和完整性，动态调整检索策略并多轮迭代。",
+      "distractors": {
+        "A": "不符合迭代反思",
+        "B": "反思可触发再检索",
+        "C": "不能用编造补证据"
+      }
+    },
+    "after": {
+      "stem": "跨文档问答首次只找到条件、没找到例外条款。Agentic RAG相较固定一次检索可采用什么机制补足证据？",
+      "options": {
+        "A": "无论结果如何都固定使用首次召回内容",
+        "B": "只重排已有结果但不允许再次检索",
+        "C": "只让生成模型换一种说法回答，不补查缺失证据",
+        "D": "评估结果后调整策略并继续检索"
+      },
+      "explanation": "Agentic RAG可反思相关性和完整性，动态调整检索策略并多轮迭代。 判断要点：去除无条件成功暗示，反思迭代有助补足证据但需受轮数成本限制。",
+      "distractors": {
+        "A": "不符合迭代反思",
+        "B": "反思可触发再检索",
+        "C": "改写措辞不补充例外条款的依据，不能解决证据不足。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M1-059",
+    "module": "M1",
+    "topic": "记忆/历史和记忆区别",
+    "decision": "修订",
+    "finding": "长期记忆是可复用信息，不保证保存逐字历史；实现形式不限定为一种摘要。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "8ab035decb3b846df516bf02ad154e0e1fbf4c2773e4e59118a2a99d202ccc4b",
+    "afterHash": "7a1248df8ab08d5ae22ef249507d7b2465a46426cbc45fd952c8b95995fee29e",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/134719"
+    ],
+    "before": {
+      "explanation": "长期记忆提取偏好等关键信息成为摘要；它不应被简单等同于全部逐字聊天记录。"
+    },
+    "after": {
+      "explanation": "对话历史记录交互过程；长期记忆保留并在后续交互中使用有价值的信息，例如偏好、事实或摘要。它不等于全部逐字聊天记录，具体存储和引用机制取决于产品配置。"
+    }
+  },
+  {
+    "id": "FDE-M2-005",
+    "module": "M2",
+    "topic": "定位/模型开放性",
+    "decision": "修订",
+    "finding": "能力存在、套餐权益、模型适配是三个核对层次。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "332f947cc69aba1e8a18c1d109ae172794b82e33f92cd20b6f1cfd0ea59902da",
+    "afterHash": "87ebf6f7feafa6837a2fc9f42dd170b64faccb9d8a3a341fc92b1f7c960e41bd",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104193",
+      "https://cloud.tencent.com/document/product/1759/129200"
+    ],
+    "before": {
+      "options": {
+        "A": "多模型接入表示所有套餐拥有完全相同权益",
+        "B": "开放模型生态表示任意模型都无需适配即可运行",
+        "C": "接入模型后无需评测任务适配效果",
+        "D": "可按需求接入模型，但具体权益仍要核对套餐"
+      },
+      "distractors": {
+        "A": "套餐文档区分三方模型支持",
+        "B": "需按平台接入能力配置",
+        "C": "仍需验证业务效果"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "多模型接入表示所有套餐拥有完全相同权益",
+        "B": "把某模型在产品列表出现视为当前租户已完成接入",
+        "C": "接入模型后无需评测任务适配效果",
+        "D": "可按需求接入模型，但具体权益仍要核对套餐"
+      },
+      "distractors": {
+        "A": "套餐文档区分三方模型支持",
+        "B": "产品能力列表不等于当前账号已获相应权限或完成配置。",
+        "C": "仍需验证业务效果"
+      }
+    }
+  },
+  {
+    "id": "FDE-M2-009",
+    "module": "M2",
+    "topic": "标准模式/双模型核心",
+    "decision": "修订",
+    "finding": "由模式定义改为知识问答场景判断，仍保留标准模式支持工作流的边界。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "51b74e27d533fa6d46f2db8c8a55a981bab4c5a7159f0c93e0633cca1b788c42",
+    "afterHash": "d681294c1a24b53bf95038209c6f25900fd0106a7d3b998302dd30a6eb934313",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "before": {
+      "stem": "标准模式在严肃知识问答中的主要机制是什么？",
+      "explanation": "四模式文档把标准模式定位为预设流程和双模型协同，以支持稳定精确的知识问答。"
+    },
+    "after": {
+      "stem": "企业知识助手要求稳定回答制度问题，并可在必要时触发已定义流程。采用标准模式时，知识问答主要依托什么机制？",
+      "explanation": "四模式文档把标准模式定位为预设流程和双模型协同，以支持稳定精确的知识问答。 判断要点：由模式定义改为知识问答场景判断，仍标准模式支持工作流的边界。"
+    }
+  },
+  {
+    "id": "FDE-M2-011",
+    "module": "M2",
+    "topic": "单工作流/全对话入口",
+    "decision": "修订",
+    "finding": "突出所有对话均经指定流程，与按需触发工作流区分。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "5ba86d4d970eb33593e3f361f834e7c05de68a4fc3d08c6a918317632282f8bf",
+    "afterHash": "1412a534222449c9a14cde0adb33dab6de1b11dce44e50d0ed94631123145d26",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "before": {
+      "stem": "单工作流模式最突出的执行约束是什么？",
+      "explanation": "单工作流模式以特定工作流处理所有对话，使业务步骤保持完整和标准化。"
+    },
+    "after": {
+      "stem": "报修助手要求每轮都遵循统一的收集、核验和响应步骤。单工作流模式满足这一要求的关键约束是什么？",
+      "explanation": "单工作流模式以特定工作流处理所有对话，使业务步骤保持完整和标准化。 判断要点：突出所有对话均经指定流程，与按需触发工作流区分。"
+    }
+  },
+  {
+    "id": "FDE-M2-012",
+    "module": "M2",
+    "topic": "单工作流/目标条件",
+    "decision": "修订",
+    "finding": "保留目标明确、步骤统一的选型题，避免用行业名称直接决定模式。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "93fcf9338b22ef7f7480021117753fa5e2e9d41bf994264bc48759423cdf94d8",
+    "afterHash": "ad3366919c20cc82e5b1ffdd81e241c58493557c2351cacbb98a53d841896622",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "before": {
+      "options": {
+        "A": "业务目标明确且操作顺序统一",
+        "B": "每轮必须自主编写代码且路径无法事先定义",
+        "C": "多个专家需要自由交叉质询并反复改分工",
+        "D": "仅希望模型在多个工具之间自由探索而无统一流程"
+      },
+      "distractors": {
+        "B": "更符合自主执行环境需求",
+        "C": "更符合协同规划需求",
+        "D": "与操作流程统一不同"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "业务目标明确且操作顺序统一",
+        "B": "任务步骤需随外部证据不断重规划，尚无统一处理路径",
+        "C": "多个专家需要自由交叉质询并反复改分工",
+        "D": "仅希望模型在多个工具之间自由探索而无统一流程"
+      },
+      "distractors": {
+        "B": "缺少题设所需固定结构，应先核清路径或评估自主规划方式。",
+        "C": "更符合协同规划需求",
+        "D": "与操作流程统一不同"
+      }
+    }
+  },
+  {
+    "id": "FDE-M2-020",
+    "module": "M2",
+    "topic": "模式切换/配置独立性",
+    "decision": "修订",
+    "finding": "将配置不继承映射到迁移验收，资源保留与设置继承不能混为一谈。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "308a0f64e879fab5d0ea2b67f4cfe9ce70bd927527436e4851fb712ac1000abd",
+    "afterHash": "cf313aa52270614e6ed0912e800b929072ca6c67dd3465cbbafa7576b0048b7d",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/122549"
+    ],
+    "before": {
+      "stem": "从标准模式切到Multi-Agent后，可否假设提示词和模型配置全部自动沿用？",
+      "explanation": "官方说明模式切换时提示词、模型等应用配置不互相继承，各模式设置相互独立。"
+    },
+    "after": {
+      "stem": "团队将标准模式应用切换为Multi-Agent，仍看到原知识库。能否据此认定提示词和模型配置也全部沿用？",
+      "explanation": "官方说明模式切换时提示词、模型等应用配置不互相继承，各模式设置相互独立。 判断要点：将配置不继承映射到迁移验收，资源与设置继承不能混为一谈。"
+    }
+  },
+  {
+    "id": "FDE-M3-003",
+    "module": "M3",
+    "topic": "知识导入状态",
+    "decision": "修订",
+    "finding": "入库状态与生效范围共同决定可用性，学习中不等于已经完成。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "9c6746b338f6faaec0e8b6606c5d84b9f789fe3689fe31a6dd638796fcefb852",
+    "afterHash": "1683d27d9fd198f681eee6abf7bbb4c1530a622916490a1eaacd8bae7b38af0e",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "before": {
+      "stem": "文档上传后，判断其完成入库、可按配置范围生效的状态是？",
+      "explanation": "知识状态达到导入完成后才可生效。上传成功不等于解析、审核及学习全部完成。"
+    },
+    "after": {
+      "stem": "手册已上传，团队准备验证其在调试域的回答。首先应确认文档到达哪个完成入库的状态，再核对生效范围？",
+      "explanation": "知识状态达到导入完成后才可生效。上传成功不等于解析、审核及学习全部完成。 判断要点：入库状态与生效范围共同决定可用性，学习中不等于已经完成。"
+    }
+  },
+  {
+    "id": "FDE-M3-007",
+    "module": "M3",
+    "topic": "网页更新",
+    "decision": "修订",
+    "finding": "区分抓取更新频率、业务有效期和检索召回配置。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "411d7dcd07ac47ef522bc66b411ffe2c4f7e844e0c93e3f11ae31b0d5f048ad0",
+    "afterHash": "9f863414243c205be1e938e43c027a4c2ad45b71e154dbc643a15a3c355c2b58",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "before": {
+      "stem": "已抓取的网页希望定期同步，应配置哪个选项？",
+      "explanation": "网页导入后可配置文档更新频率。该设置用于内容同步，而非生成风格。"
+    },
+    "after": {
+      "stem": "客服发现已导入官网页面仍保留上周内容，希望后续定期同步网页。应优先核对哪个文档选项？",
+      "explanation": "网页导入后可配置文档更新频率。该设置用于内容同步，而非生成风格。 判断要点：区分抓取更新频率、业务有效期和检索召回配置。"
+    }
+  },
+  {
+    "id": "FDE-M3-020",
+    "module": "M3",
+    "topic": "API参数映射",
+    "decision": "修订",
+    "finding": "参数传入、标签配置和映射是三步；仅同名或语义相近不能保证过滤。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "0ca1e26ff7026cf5097cb014b998b441a8f727d7d2d87bd2e49ec4c2a3f2ec37",
+    "afterHash": "55c53dbf4369e6d985672016331c962b4a3defa7217dff5df48f57ee5bffd283",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112704"
+    ],
+    "before": {
+      "stem": "只传custom_variables而未设置标签映射，能否直接按该参数限制知识检索？",
+      "explanation": "标签范围过滤要求建立API参数与标签名称映射，并传入对应参数值。"
+    },
+    "after": {
+      "stem": "调用端已传custom_variables中的部门值，但仍召回其他部门材料。检查发现未建立参数与标签映射，能否认为传参已经完成范围控制？",
+      "explanation": "标签范围过滤要求建立API参数与标签名称映射，并传入对应参数值。 判断要点：参数传入、标签配置和映射是三步；仅同名或语义相近不能保证过滤。"
+    }
+  },
+  {
+    "id": "FDE-M3-027",
+    "module": "M3",
+    "topic": "表格按行切分",
+    "decision": "修订",
+    "finding": "每行独立的表格适合按行切分，须连同表头保留字段语义。",
+    "changedFields": [
+      "stem",
+      "options",
+      "explanation",
+      "distractors"
+    ],
+    "beforeHash": "40f4f2c0f38deffb42ff0581fc75665baf28e9e44721278c99dc36e12ca83581",
+    "afterHash": "d8b062ecec5cb582cc853fdc3d6558bd6d3ac27797c22da3188e02d27cc543b7",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "before": {
+      "stem": "每行是独立商品记录的xlsx，需自定义按记录切分，适合哪个规则？",
+      "options": {
+        "A": "父子标识符切分",
+        "B": "按行切分",
+        "C": "通用标识符切分",
+        "D": "把每个sheet名称作为完整知识内容"
+      },
+      "explanation": "按行切分用于表格，可指定表头、数据起始行及切分行数。",
+      "distractors": {
+        "A": "父子规则排除xlsx等表格。",
+        "C": "通用规则排除xlsx等表格。",
+        "D": "sheet名不包含实际记录知识。"
+      }
+    },
+    "after": {
+      "stem": "商品xlsx中每行是一条完整SKU记录，当前切片混入相邻商品内容。若要按独立记录自定义切分，应选哪种规则？",
+      "options": {
+        "A": "父子标识符切分",
+        "B": "按行切分",
+        "C": "通用标识符切分",
+        "D": "先把所有商品行合并成一段文本，再按固定字符数切分"
+      },
+      "explanation": "按行切分用于表格，可指定表头、数据起始行及切分行数。 判断要点：每行独立的表格适合按行切分，须连同表头字段语义。",
+      "distractors": {
+        "A": "父子规则排除xlsx等表格。",
+        "C": "通用规则排除xlsx等表格。",
+        "D": "合并后按字符截断可能破坏SKU记录边界。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M3-029",
+    "module": "M3",
+    "topic": "切片内表格格式",
+    "decision": "修订",
+    "finding": "官方文档所述格式取舍不等于任意文本的普遍结论，最终仍用业务样本比较。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "5f8dcf60775e8e5a077f22eec3922de85189c144d36b2baa1ae78aa6a1a6cc3f",
+    "afterHash": "37730b2e9d8258943db2a82aa2bbeaf25e62f0174b29abc7828ecb03b3af4f24",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "before": {
+      "explanation": "文档支持将切片内表格设置为Markdown或HTML；其经验说明是Markdown效果更好、HTML消耗Token较少。因此按题设优先考虑HTML，并仍应实测质量。"
+    },
+    "after": {
+      "explanation": "文档支持将切片内表格设置为Markdown或HTML；其经验说明是Markdown效果更好、HTML消耗Token较少。因此按题设优先考虑HTML，并仍应实测质量。 判断要点：官方文档所述格式取舍不等于任意文本的普遍结论，最终仍用业务样本比较。"
+    }
+  },
+  {
+    "id": "FDE-M3-031",
+    "module": "M3",
+    "topic": "切分策略边界",
+    "decision": "修订",
+    "finding": "规则适配与片段质量分开，片段越大不保证越准。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "3a58736e8a4bd465c7c8344ee5efb4613214aa0dcd25919f0f33402481069b72",
+    "afterHash": "b2cfee31b80daa277980ac5d1b94a6b0fcb8f729908a477be85f228404e62009",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "before": {
+      "options": {
+        "A": "默认切分支持全部可导入文档类型",
+        "B": "自定义规则包含通用、父子和按行切分",
+        "C": "片段越大检索精度必定越高",
+        "D": "所有自定义规则都适合xlsx"
+      },
+      "distractors": {
+        "C": "大切片可能混入无关信息。",
+        "D": "通用和父子排除xlsx等表格。"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "默认切分支持全部可导入文档类型",
+        "B": "自定义规则包含通用、父子和按行切分",
+        "C": "增大切片即可同时提高精度并降低输入消耗",
+        "D": "所有自定义规则都适合xlsx"
+      },
+      "distractors": {
+        "C": "大切片可能引入噪声并增加输入消耗，应依据业务样本验证。",
+        "D": "通用和父子排除xlsx等表格。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M3-041",
+    "module": "M3",
+    "topic": "兜底意图",
+    "decision": "修订",
+    "finding": "必须安排其他意图兜底，不能以第一个业务意图接纳未知请求。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "7c2928bfe4bd7608e1f305a6f4a3a502527f6fb74a102c27b459a10585cd4164",
+    "afterHash": "54b9cfe1fced4cdae16680e12f0fd61aa271dc8d3d9d910d5049ca8fac4896c8",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/115747"
+    ],
+    "before": {
+      "stem": "用户输入不匹配任何已定义意图时流向哪里？",
+      "explanation": "默认其他意图承接未命中自定义分类的输入，需为它设计后续处理。"
+    },
+    "after": {
+      "stem": "助手只定义了退款和物流两类意图，用户却提出账户注销。若均未匹配，该请求应进入哪条分支？",
+      "explanation": "默认其他意图承接未命中自定义分类的输入，需为它设计后续处理。 判断要点：必须安排其他意图兜底，不能以第一个业务意图接纳未知请求。"
+    }
+  },
+  {
+    "id": "FDE-M3-056",
+    "module": "M3",
+    "topic": "检索与生成分工",
+    "decision": "修订",
+    "finding": "先取原始片段再自有处理时选检索节点，问答节点已包含生成。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "7f0636b147d593e40be5c34cb131b90cdad16286fa93e8412fd101235230715a",
+    "afterHash": "d8858b39a4e01ec4ac1f3d07fe526d50ca0eac0ad541281f88f41b18ee0e6c8f",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966"
+    ],
+    "before": {
+      "stem": "后续自有代码需要原始检索片段而不是已生成答案，选哪个节点？",
+      "explanation": "知识检索节点返回检索到的知识片段，可供后续独立处理。"
+    },
+    "after": {
+      "stem": "团队已有独立引用校验代码，需先取得原始知识片段，再决定如何生成答案。工作流应优先选哪个节点提供这些片段？",
+      "explanation": "知识检索节点返回检索到的知识片段，可供后续独立处理。 判断要点：先取原始片段再自有处理时选检索节点，问答节点已包含生成。"
+    }
+  },
+  {
+    "id": "FDE-M3-087",
+    "module": "M3",
+    "topic": "条件输入来源",
+    "decision": "修订",
+    "finding": "变量引用要基于已执行祖先，不读取未来分支的未知值。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "5743e4a0dba6a48187927cfd92ed7891e3e1f5862fd92e0a4569bd7cd18ac983",
+    "afterHash": "6f66097d4c2b7ae7eca71f93674e4a7c5bebbe09f3c0e868594e6292f0d242a9",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "before": {
+      "options": {
+        "A": "只引用后继节点尚未执行的输出",
+        "B": "只能引用SYS.UserQuery全文",
+        "C": "引用祖先节点输出或手填固定值",
+        "D": "只能填固定值而不能引用变量"
+      },
+      "distractors": {
+        "A": "未执行后继没有可用结果。",
+        "B": "并非只能使用用户文本。",
+        "D": "支持祖先输出引用。"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "只引用后继节点尚未执行的输出",
+        "B": "只能引用直接相连上一节点，不能引用更早的祖先节点",
+        "C": "引用祖先节点输出或手填固定值",
+        "D": "只能填固定值而不能引用变量"
+      },
+      "distractors": {
+        "A": "未执行后继没有可用结果。",
+        "B": "文档允许祖先节点输出，不限于直接上一节点。",
+        "D": "支持祖先输出引用。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M3-095",
+    "module": "M3",
+    "topic": "子流程入参",
+    "decision": "修订",
+    "finding": "子流程契约决定入参，父流程已有变量不会自动合并为子流程接口。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "5066ddf41f348b8218fd519046a3e25d07d3da2f1694fbaf8ee191fd7bbdee46",
+    "afterHash": "1521c3fca7e3f8efe1d53ba7a77707fceb40519562c874de364b999942b05b6a",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749"
+    ],
+    "before": {
+      "options": {
+        "A": "被引入工作流所需输入",
+        "B": "父工作流所有变量自动合并",
+        "C": "父流程最近一个节点的全部输出",
+        "D": "节点创建时随机推断参数"
+      },
+      "distractors": {
+        "B": "入参由被引子流程接口决定。",
+        "C": "前序输出可作来源，不定义子流程参数表。",
+        "D": "不是运行时随机推断。"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "被引入工作流所需输入",
+        "B": "父工作流所有变量自动合并",
+        "C": "父流程最近一个节点的全部输出",
+        "D": "以父流程最近一次调用成功的参数集合替代子流程定义"
+      },
+      "distractors": {
+        "B": "入参由被引子流程接口决定。",
+        "C": "前序输出可作来源，不定义子流程参数表。",
+        "D": "历史调用成功不能改变当前被引入流程的输入契约。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M3-122",
+    "module": "M3",
+    "topic": "工具默认值与模型可见",
+    "decision": "修订",
+    "finding": "固定环境参数由配置决定，隐藏模型可见不等于无需真实授权校验。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "ffae68b7e3cc5e3624658df4c28dd1ceefdf15db592ac7d5a070f38984e53856",
+    "afterHash": "cef8bdf2c064f5289ce7276cd1a2173dff6a60a777e2f8c840d0743c2661d23f",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/117856"
+    ],
+    "before": {
+      "stem": "工具的固定环境参数不希望模型自行决定，应怎样配置？",
+      "explanation": "输入可预设默认值并对模型隐藏，工具按默认值调用，提高稳定性。"
+    },
+    "after": {
+      "stem": "生产工具的环境参数已有批准的默认值，当前只需阻止模型自行推测或改写该输入。参数配置应怎样设置？",
+      "explanation": "输入可预设默认值并对模型隐藏，工具按默认值调用，提高稳定性。 判断要点：固定环境参数由配置决定，隐藏模型可见不等于无需真实授权校验。"
+    }
+  },
+  {
+    "id": "FDE-M3-144",
+    "module": "M3",
+    "topic": "技能包允许内容",
+    "decision": "修订",
+    "finding": "题干限定当前ADP文件规范，不能推断其他Skill平台均禁止二进制。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "47d0dd2d57dde50eff02432855c20dac9bed24454899cbc15d47390d5d0b4175",
+    "afterHash": "83d49b4eb7ac6be9e5684fc7679518d5e316d4f85772013c6e28d5c5058acd01",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/134602"
+    ],
+    "before": {
+      "explanation": "技能包允许纯文本代码、文档与配置，任意位置均禁止二进制文件。"
+    },
+    "after": {
+      "explanation": "技能包允许纯文本代码、文档与配置，任意位置均禁止二进制文件。 判断要点：题干限定当前ADP文件规范，不能推断其他Skill平台均禁止二进制。"
+    }
+  },
+  {
+    "id": "FDE-M3-154",
+    "module": "M3",
+    "topic": "更换记忆库",
+    "decision": "修订",
+    "finding": "改绑改变读写范围，迁移旧数据必须另行设计和验证。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "8938c80791ea84886bca6101ec4e46e1b9fe358d8cad8b51b2bf898d34802199",
+    "afterHash": "b33e3a85c1482e56eafadedeb67528310bfbd72da7820565a69da11390eb79a1",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "before": {
+      "stem": "应用从旧库改绑同类型新库，旧记忆会自动迁移吗？",
+      "explanation": "改绑切换到新库，旧库数据不会自动迁移。数据搬迁应另行处理。"
+    },
+    "after": {
+      "stem": "客服助手改绑同类型新记忆库后，老用户偏好不再出现。团队认为旧记忆应自动随应用转移，这一判断是否成立？",
+      "explanation": "改绑切换到新库，旧库数据不会自动迁移。数据搬迁应另行处理。 判断要点：改绑改变读写范围，迁移旧数据必须另行设计和验证。"
+    }
+  },
+  {
+    "id": "FDE-M3-166",
+    "module": "M3",
+    "topic": "AgenticRAG反思轮数与检索行为",
+    "decision": "修订",
+    "finding": "将默认数字记忆改为诊断零反思配置，重点理解是否迭代。",
+    "changedFields": [
+      "topic",
+      "stem",
+      "options",
+      "explanation",
+      "distractors"
+    ],
+    "beforeHash": "f4f446d1b4b2d2952b09bdfd4f2ec773d192fde5f0a0122bd4581a825b097bde",
+    "afterHash": "6ccbdcd54a322dc5a024caedc02ded0c600dee144a37e5c6a83333a264785662",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/132211"
+    ],
+    "before": {
+      "topic": "AgenticRAG反思配置默认值",
+      "stem": "配置AgenticRAGSearch时，团队准备先保留官方默认反思轮数再调优；默认值与允许范围的正确组合是什么？",
+      "options": {
+        "A": "默认1轮，允许1至3轮",
+        "B": "默认3轮，允许1至10轮",
+        "C": "默认3轮，允许0至10轮",
+        "D": "默认10轮，允许0至10轮"
+      },
+      "explanation": "工具的反思轮数默认3轮，允许0至10轮。文档建议从默认3轮出发结合效果与成本调整；推荐区间不等于允许配置范围。",
+      "distractors": {
+        "A": "1至3轮是推荐区间，并非完整允许范围，默认也不是1轮。",
+        "B": "允许范围包含0，不能把下限改为1。",
+        "D": "10轮是允许上限，不是默认值。"
+      }
+    },
+    "after": {
+      "topic": "AgenticRAG反思轮数与检索行为",
+      "stem": "复杂问答配置了AgenticRAGSearch却始终只做一次检索。若反思轮数设为0，下列哪个判断最准确？",
+      "options": {
+        "A": "0轮表示采用默认3轮，仍会反思",
+        "B": "0轮表示不允许任何知识检索",
+        "C": "0轮不进行反思，仅执行一次标准检索",
+        "D": "0轮表示不限制反思轮数"
+      },
+      "explanation": "反思轮数控制追加检索的迭代预算。设为0时不进行自我反思，按一次标准检索处理；复杂场景应结合准确性、耗时和Token成本验证是否增加轮数。",
+      "distractors": {
+        "A": "0是明确配置，不会自动替换为默认3。",
+        "B": "不反思仍可进行首次检索。",
+        "D": "0不表示无限轮次，文档范围为0至10。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M3-186",
+    "module": "M3",
+    "topic": "跨工作流传值",
+    "decision": "修订",
+    "finding": "应用变量可跨同应用流程使用，但不应据此推断跨用户可共享私密状态。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "f5a85c22b6dfe61015cfd184f4a4dd62684822e63748f8366aa7c951812c1b2b",
+    "afterHash": "06dc3a2211418237c0ae5ef5e6c6739a6e1db95c30d0cee4a0e23ed0e2ad1465",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "before": {
+      "explanation": "APP变量可在应用各模块间传递，适合跨工作流共享运行数据。"
+    },
+    "after": {
+      "explanation": "APP变量可在应用各模块间传递，适合跨工作流共享运行数据。 判断要点：应用变量可跨同应用流程使用，但不应据此推断跨用户可共享私密状态。"
+    }
+  },
+  {
+    "id": "FDE-M3-199",
+    "module": "M3",
+    "topic": "图谱来源查看",
+    "decision": "修订",
+    "finding": "关系溯源需要边详情证据，图谱统计和类型名不能证明事实。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "d3c455c37afeb3fc3059f2a70d4de27d37417873972b2e2f43f0707fe9032d38",
+    "afterHash": "3d213aa004261d2de461494ce055f7c06f72b46f7221081c5cbcd60171f67057",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/128202"
+    ],
+    "before": {
+      "stem": "想核对某条关系依据哪份知识形成，应该看哪里？",
+      "explanation": "节点与关系详情提供文档名称及切片内容，便于回查图谱知识依据。"
+    },
+    "after": {
+      "stem": "知识图谱给出一条供应关系，业务审核员要求核对其原始依据。应优先查看哪里？",
+      "explanation": "节点与关系详情提供文档名称及切片内容，便于回查图谱知识依据。 判断要点：关系溯源需要边详情证据，图谱统计和类型名不能证明事实。"
+    }
+  },
+  {
+    "id": "FDE-M3-202",
+    "module": "M3",
+    "topic": "图谱Schema配置路径",
+    "decision": "修订",
+    "finding": "GraphSchema与已下架知识库Schema不同，保留手工、模板、AI扩展三种方式。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "f75903a3ccc14304fd4eabc858f66bfd6b2131c23333fcb53f59f05a80cfa55c",
+    "afterHash": "6a0acb0c9bc02213ef0cd4bbfb7c7e18e926473456636aecc19212c6a540a117",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/128202"
+    ],
+    "before": {
+      "explanation": "图谱结构可用模板、自定义或AI扩展；不应混淆GraphSchema与旧知识库Schema。"
+    },
+    "after": {
+      "explanation": "图谱结构可用模板、自定义或AI扩展；不应混淆GraphSchema与旧知识库Schema。 判断要点：GraphSchema与已下架知识库Schema不同，手工、模板、AI扩展三种方式。"
+    }
+  },
+  {
+    "id": "FDE-M4-002",
+    "module": "M4",
+    "topic": "最小验证路径",
+    "decision": "修订",
+    "finding": "首轮Demo应匹配已确认边界，接全系统与多团队编排均超出当前验证目标。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "c31eb8a0b77e43577381dcb581ae9675d263ec3f60a1775f3fc5bbd2e2899199",
+    "afterHash": "10fb6286e2d3f654f5dbd5221bb7cf985822195dfcac1ade88e2114ff7d0cf3a",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/126433"
+    ],
+    "before": {
+      "options": {
+        "A": "先建设多团队协作网络",
+        "B": "先用代表材料验证三类问答",
+        "C": "先承诺全部问题正确率100%",
+        "D": "一次接入所有生产系统"
+      },
+      "distractors": {
+        "A": "协作复杂度没有依据",
+        "C": "没有测试依据支持保证",
+        "D": "增加无关依赖"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "先设计覆盖全部业务的Agent分工，再用现有材料演示",
+        "B": "先用代表材料验证三类问答",
+        "C": "只选三条最容易命中的问题演示，并据此作为效果验收",
+        "D": "先完成所有查询接口的字段映射，再开始知识问答验证"
+      },
+      "distractors": {
+        "A": "当前只验证三类咨询，全面编排增加了尚未确认的范围。",
+        "C": "演示问题不能代表三类咨询的真实覆盖，应包含不同问法和资料不足情形。",
+        "D": "业务系统接入属于后续阶段，当前应先验证材料能否支撑问题。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-005",
+    "module": "M4",
+    "topic": "多系统返回结构适配",
+    "decision": "修订",
+    "finding": "金额单位转换与字段对齐必须先于排序，字段改名不代表完成口径统一。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "0d3bb2584428ae2a1b79e1d88e5759cded1228256fe61fb6c299885dee2dd6c9",
+    "afterHash": "256706207d849501dd77ac340a94d882bbfa3265d5ad27ca1edfa0fa5f340281",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/115872",
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "before": {
+      "options": {
+        "A": "分别调用接口，显式统一单位和字段，再排序输出",
+        "B": "把两份金额字段直接按原值混排",
+        "C": "只把字段都重命名为amount，不改变单位",
+        "D": "让接口工具随机选择一个系统代表全部结果"
+      },
+      "distractors": {
+        "B": "原始数值不在同一单位",
+        "C": "重命名没有改变数值含义",
+        "D": "丢失另一系统数据"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "分别调用接口，显式统一单位和字段，再排序输出",
+        "B": "把两份金额字段直接按原值混排",
+        "C": "只把字段都重命名为amount，不改变单位",
+        "D": "先分别在各系统内排序，再按两个列表的顺序合并"
+      },
+      "distractors": {
+        "B": "原始数值不在同一单位",
+        "C": "重命名没有改变数值含义",
+        "D": "各自有序不等于合并后按统一金额有序，仍须换算并全局比较。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-010",
+    "module": "M4",
+    "topic": "新旧功能边界",
+    "decision": "修订",
+    "finding": "保留考纲与产品版本冲突，Schema考点仍在考纲但新建方案应核实已下架路径。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "ae595c6a5934a99c438b4254c2ea5c07d50322c10e487783d6ae261b48c9e8a3",
+    "afterHash": "247df5e785d2c77415cf83f7081eabc61d3727b92619e0dfb4e00eed0d80ee49",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/123555",
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "before": {
+      "explanation": "产品文档明确下架日期并给出替代方向，新场景不能默认沿用旧步骤。考纲仍含Schema，应将产品现状与考试范围差异单独说明。"
+    },
+    "after": {
+      "explanation": "产品文档明确下架日期并给出替代方向，新场景不能默认沿用旧步骤。考纲仍含Schema，应将产品现状与考试范围差异单独说明。 判断要点：考纲与产品版本冲突，Schema考点仍在考纲但新建方案应核实已下架路径。"
+    }
+  },
+  {
+    "id": "FDE-M4-013",
+    "module": "M4",
+    "topic": "数据形态选型",
+    "decision": "修订",
+    "finding": "按字段聚合优先验证结构化查询，语义召回不能当作精确统计。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "42e0c45d9d51316c616195b09093fc3ec5095b9aea3fefccabf4d34f5bb82b73",
+    "afterHash": "bc035c715e17a73e9670e85cf5f626b5b08315fbd0bc834128c4ba682069b685",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/119291"
+    ],
+    "before": {
+      "options": {
+        "A": "只把表截图交给模型猜数",
+        "B": "数据库问答与查询能力",
+        "C": "把每种可能答案手工写成FAQ",
+        "D": "让模型从常识推算内部数据"
+      },
+      "distractors": {
+        "A": "难以保持结构与实时性",
+        "C": "组合数量膨胀且会过时",
+        "D": "没有内部事实"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "先按部门召回几条台账片段，再据片段汇总全量月报",
+        "B": "数据库问答与查询能力",
+        "C": "把每种可能答案手工写成FAQ",
+        "D": "沿用上月统计结果，只让模型修改报告中的月份"
+      },
+      "distractors": {
+        "A": "片段检索可能漏行，不能证明覆盖全量结构化记录。",
+        "C": "组合数量膨胀且会过时",
+        "D": "历史结果不能代表本月事实，需读取对应时间范围数据。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-020",
+    "module": "M4",
+    "topic": "必填与可选",
+    "decision": "修订",
+    "finding": "必填应由业务执行依赖决定，备注可选不代表编号也可缺失。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "299f7dbcc9e4e16c7cc474116c4745a4114e5ed8a8af7eba6124af73ff5afb1f",
+    "afterHash": "771f55794aa49d314e9c8785f74c65cfe24db6a496d8626b2147616cbe167f9b",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112962"
+    ],
+    "before": {
+      "options": {
+        "A": "由模型猜测业务编号",
+        "B": "两者都设必填",
+        "C": "两者都设可选",
+        "D": "仅业务编号设必填"
+      },
+      "distractors": {
+        "A": "猜测不满足真实编号",
+        "B": "造成无必要追问",
+        "C": "缺少关键编号仍继续"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "为减少追问，将缺失业务编号统一填成演示编号",
+        "B": "两者都设必填",
+        "C": "两者都设可选",
+        "D": "仅业务编号设必填"
+      },
+      "distractors": {
+        "A": "演示编号不代表当前对象，可能导致查询或办理错误。",
+        "B": "造成无必要追问",
+        "C": "缺少关键编号仍继续"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-023",
+    "module": "M4",
+    "topic": "动态选项后续路由",
+    "decision": "修订",
+    "finding": "动态选项不自动产生固定分支，应读取选择后明确路由。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "1f82ab482c5383d6747e18066c604f77277b8f62db1a551f548d3b3407901c55",
+    "afterHash": "eef9ba7bbac2b83ebf36d0e8292725e016129836e8e11332b19c519537fd894c",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/115756"
+    ],
+    "before": {
+      "options": {
+        "A": "删除前序接口，硬编码过期列表",
+        "B": "所有选项都走结束且不保留选择",
+        "C": "假设动态选项自动为每项建立固定分支",
+        "D": "动态选项后接条件或意图分流"
+      },
+      "distractors": {
+        "A": "损失实时性",
+        "B": "丢失业务分流",
+        "C": "与动态分支机制不符"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "先复制一份接口列表到静态卡片，上线后不再同步",
+        "B": "展示动态选项，后续仍统一使用默认方案参数",
+        "C": "假设动态选项自动为每项建立固定分支",
+        "D": "动态选项后接条件或意图分流"
+      },
+      "distractors": {
+        "A": "静态副本会失去前序接口的动态更新能力。",
+        "B": "用户选择未进入业务路径，不能满足按所选方案分流。",
+        "C": "与动态分支机制不符"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-032",
+    "module": "M4",
+    "topic": "图片输入选型",
+    "decision": "修订",
+    "finding": "输入模态支持是前提，图片URL不使纯文本模型自然具备视觉理解。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "8d7b456ea8df590c7393644bbf2d7c0557c7bf78268b9d8d2135e8a7edf98b4d",
+    "afterHash": "2fe236e02d44328478ec5aa94208411faf67c1c9c73ce0444ec35576ed4364b8",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112963"
+    ],
+    "before": {
+      "options": {
+        "A": "先把温度调高代替视觉能力",
+        "B": "任何文本模型接URL就必然能看图",
+        "C": "只按输出Token上限选模型",
+        "D": "先确认所选模型支持所需视觉输入"
+      },
+      "distractors": {
+        "A": "随机性不能增加视觉能力",
+        "B": "URL不保证视觉能力",
+        "C": "长度上限不代表视觉支持"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "先用既有文本模型试调提示词，再假定可处理同一图片输入",
+        "B": "任何文本模型接URL就必然能看图",
+        "C": "优先选文本任务得分最高的模型，暂不验证照片输入",
+        "D": "先确认所选模型支持所需视觉输入"
+      },
+      "distractors": {
+        "A": "提示词调整不能替代对模型输入模态能力的确认。",
+        "B": "URL不保证视觉能力",
+        "C": "文本任务表现不足以证明视觉输入可用。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-035",
+    "module": "M4",
+    "topic": "复合诉求",
+    "decision": "修订",
+    "finding": "保留否定问法，不能为单一路由丢失明确的组合诉求。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "ff376c045c127972811e250551558151965f954877cec6e0a2dbed34b4822ed1",
+    "afterHash": "8aba7ccb741b4d9f006c0186b4f42ffba3121d7d60c2edf870f8c0ecc87b9992",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/115747"
+    ],
+    "before": {
+      "explanation": "单选意图只保留唯一最匹配项，不符合同时处理两个诉求的要求。应识别组合并显式规划如何执行各部分。"
+    },
+    "after": {
+      "explanation": "单选意图只保留唯一最匹配项，不符合同时处理两个诉求的要求。应识别组合并显式规划如何执行各部分。 判断要点：否定问法，不能为单一路由丢失明确的组合诉求。"
+    }
+  },
+  {
+    "id": "FDE-M4-043",
+    "module": "M4",
+    "topic": "确定性计算",
+    "decision": "修订",
+    "finding": "确定公式和舍入规则适合代码校验，模型表达能力不替代确定计算。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "a1b0861141f1959b7ce0b3b5b3863365d5e2a0a66ed2e9fe286e9cadfeaf07db",
+    "afterHash": "158081c35a70f4bd73ef96b53aca57938502504fbc0590343ecb1bc3e970d55b",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "before": {
+      "options": {
+        "A": "只检索历史相似金额",
+        "B": "提高生成温度",
+        "C": "让大模型每次自由估算",
+        "D": "使用代码节点实现已明确计算规则"
+      },
+      "distractors": {
+        "A": "历史金额不等于本次结果",
+        "B": "增加随机性不解决计算",
+        "C": "不能保证规则执行"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "检索最相近的历史优惠订单，将其结果作为本次金额",
+        "B": "把温度降到0，由模型按提示词口算全部金额",
+        "C": "让模型重复计算三次，取出现次数最多的金额",
+        "D": "使用代码节点实现已明确计算规则"
+      },
+      "distractors": {
+        "A": "历史金额不能满足本次输入和给定公式。",
+        "B": "降低随机性不保证严格运算和舍入契约。",
+        "C": "重复一致仍可能计算错误，不能替代确定公式实现。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-047",
+    "module": "M4",
+    "topic": "子流程入参",
+    "decision": "修订",
+    "finding": "前置客户编号显式映射子流程入参，避免二次猜值。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "114b85fa34b396c1bd5e1e106363ccb00a88afb296810c18cf0b2ae945680cf0",
+    "afterHash": "592bd487807cc03e7d5cb44ba15ed05069ce3623105dee23a030d754bafbc5d4",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749"
+    ],
+    "before": {
+      "options": {
+        "A": "把前序输出映射到子流程输入",
+        "B": "不传参数，假设子流程自动知道",
+        "C": "再次让模型猜编号",
+        "D": "把任何固定编号写进调用"
+      },
+      "distractors": {
+        "B": "不能无依据假设共享数据",
+        "C": "忽略真实已知值",
+        "D": "会查询错误对象"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "把前序输出映射到子流程输入",
+        "B": "不传参数，假设子流程自动知道",
+        "C": "重新询问用户编号，不再使用已经验证的前序输出",
+        "D": "保留子流程测试时的默认编号，以便保持接口稳定"
+      },
+      "distractors": {
+        "B": "不能无依据假设共享数据",
+        "C": "增加不必要追问并产生口径冲突，题设已取得有效编号。",
+        "D": "默认测试值不是当前业务对象。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-055",
+    "module": "M4",
+    "topic": "严格业务规则",
+    "decision": "修订",
+    "finding": "严格小于与材料齐全是两个同时成立的条件，应包括边界500的测试。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "115ea372cf45e09603167403166337f248b34b6ea32fb013c9d98f04e1161949",
+    "afterHash": "850e2d7bdf0b64074679629267ebb3d1cfb546c2fa4c02a09aa0b4b61f918c91",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "before": {
+      "options": {
+        "A": "只要用户说着急就通过",
+        "B": "任选其中一个条件成立即通过",
+        "C": "仅让模型凭语气判断",
+        "D": "精准条件判断并用与连接两个要求"
+      },
+      "distractors": {
+        "A": "题设没有该条件",
+        "B": "把同时满足改成任一",
+        "C": "不能代表确定规则"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "只要金额小于500就进入快速通道，再补材料",
+        "B": "任选其中一个条件成立即通过",
+        "C": "将500也纳入快速通道，因为它接近金额上限",
+        "D": "精准条件判断并用与连接两个要求"
+      },
+      "distractors": {
+        "A": "把题设要求同时成立改为事后补齐。",
+        "B": "把同时满足改成任一",
+        "C": "严格小于不包含500，边界等号会改变业务规则。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-058",
+    "module": "M4",
+    "topic": "有依赖的重复任务",
+    "decision": "修订",
+    "finding": "前后依赖和提前停止指向循环，不能改成相互独立并行任务。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "6b5548352e9a0a6b88d5fed70591083c7a1492ba1661e88d90c1eb6d5d7bcf4c",
+    "afterHash": "72f2104a8fa8a43253aaeb588cbe8316570152bc19525be93c9d1aa8a9993438",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/115750"
+    ],
+    "before": {
+      "options": {
+        "A": "循环节点配合退出条件",
+        "B": "仅提高并行上限",
+        "C": "删除中间结果",
+        "D": "将所有章节互不相干地并行批处理"
+      },
+      "distractors": {
+        "B": "不解决依赖和停止",
+        "C": "损失依赖信息",
+        "D": "违反前后依赖"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "循环节点配合退出条件",
+        "B": "提高并行上限，并按章节编号对最终结果重新排序",
+        "C": "设置固定重试次数，让每次从同一初始输入重新生成",
+        "D": "将所有章节互不相干地并行批处理"
+      },
+      "distractors": {
+        "B": "最终排序不能使各章在执行时读取上一章结果。",
+        "C": "独立重试既未承接上一轮结果，也未表达完成条件。",
+        "D": "违反前后依赖"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-061",
+    "module": "M4",
+    "topic": "独立任务并行",
+    "decision": "修订",
+    "finding": "任务彼此独立可批处理，仍需按项保存状态与结果。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "909107482fe118d000cbf78c5699f7fe3c71d2e5d5e86bfe93e1bf9402ba97ca",
+    "afterHash": "56de48d72bcbc14f4bce1e83cbd902150515a62548423a74661553d0fc324140",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/119290"
+    ],
+    "before": {
+      "options": {
+        "A": "把所有结果串成前后依赖",
+        "B": "批处理节点并行调用处理子流程",
+        "C": "只处理第一篇并复用答案",
+        "D": "每篇必须等待用户回复后再继续"
+      },
+      "distractors": {
+        "A": "人为增加依赖",
+        "C": "没有实际处理其他输入",
+        "D": "题设无该交互需求"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "使用单条循环并强制把前篇标签作为后篇判断依据",
+        "B": "批处理节点并行调用处理子流程",
+        "C": "先按篇幅分组，每组只处理代表文本并复用标签",
+        "D": "每篇都建立一次人工确认交互，再继续下一篇"
+      },
+      "distractors": {
+        "A": "无依赖文本被人为耦合，可能造成错误传播且增加串行等待。",
+        "C": "相同篇幅不代表相同内容，不能满足每篇独立标签要求。",
+        "D": "题设未要求逐篇人工交互，阻碍独立批处理目标。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-062",
+    "module": "M4",
+    "topic": "并行上限含义",
+    "decision": "修订",
+    "finding": "并行上限限定同时在途数量，不减少待处理总量或保证固定加速比例。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "be34886470886bdff20edda1087ca4d50113d60c92d5e9021dd185a90cf78e76",
+    "afterHash": "2966937b28effc83f04e8b8dea0e7625efc75acb41a94a1defcab3744867f2a8",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/119290"
+    ],
+    "before": {
+      "options": {
+        "A": "其余27项立即丢弃",
+        "B": "控制同时执行数量，其余排队继续",
+        "C": "保证总耗时恰为单项耗时三分之一",
+        "D": "只能处理前三项"
+      },
+      "distractors": {
+        "A": "文档说明会排队",
+        "C": "没有严格耗时保证",
+        "D": "把并发当总量"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "只提交前三项，余项需要管理员手工重新建任务",
+        "B": "控制同时执行数量，其余排队继续",
+        "C": "保证总耗时恰为单项耗时三分之一",
+        "D": "把输入列表裁剪成3项，视为平台已自动保存其余项"
+      },
+      "distractors": {
+        "A": "并行上限控制在途数量，不要求管理员拆出其余输入。",
+        "C": "没有严格耗时保证",
+        "D": "应用裁剪会丢掉未提交数据，平台的排队只针对已提交任务。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-106",
+    "module": "M4",
+    "topic": "文档图片过滤取舍",
+    "decision": "修订",
+    "finding": "过滤小图可能丢关键符号，需按实际解析内容验证。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "428058d0a2ff45f6bc2e106190d7c72e33ca07392b89cedd7b3a26effc001bd6",
+    "afterHash": "a0a86e47a55e0e3edaf782c5987de78c641e0a8b11dea82d862e72b4e5c5b5f9",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "before": {
+      "options": {
+        "A": "以所有小图都是装饰为前提直接过滤",
+        "B": "只提高生成模型温度补回被滤图信息",
+        "C": "只检查文档总页数就确认过滤无损",
+        "D": "检查拟过滤尺寸是否覆盖关键图，避免一并排除"
+      },
+      "distractors": {
+        "A": "小尺寸不等于无业务含义",
+        "B": "被排除证据不能靠随机性恢复",
+        "C": "总页数不反映关键图是否保留"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "以所有小图都是装饰为前提直接过滤",
+        "B": "保留尺寸过滤，增加图片描述Prompt来补充被滤内容",
+        "C": "只确认图片总数减少，再据此验收解析降噪效果",
+        "D": "检查拟过滤尺寸是否覆盖关键图，避免一并排除"
+      },
+      "distractors": {
+        "A": "小尺寸不等于无业务含义",
+        "B": "模型无法可靠重建未进入解析输入的电路符号。",
+        "C": "数量减少不证明保留了业务关键证据。"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-107",
+    "module": "M4",
+    "topic": "工作流作为工具",
+    "decision": "修订",
+    "finding": "自由转交工具调用与指定单工作流模式不同，仍需核实流程节点适用性。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "a6840db461425cbc03e8efc75e557f233215f64c6b1d672a400117a9930dab10",
+    "afterHash": "7640abab3e597b89215582c962790d899447b57c6b57be5e6e3d0281f005e2d8",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/122556"
+    ],
+    "before": {
+      "options": {
+        "A": "每次手工更换唯一运行流程代替自主选择",
+        "B": "删除工作流只保留最终样例回答",
+        "C": "自由转交下把多个工作流作为工具",
+        "D": "工作流编排下同时指定多个全局运行工作流"
+      },
+      "distractors": {
+        "A": "不满足运行时自主选择",
+        "B": "失去真实流程能力",
+        "D": "该协同只选一个整体运行工作流"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "把所有流程串成固定入口，每次都完整执行",
+        "B": "只保留每个流程的说明文档，交给Agent输出处理建议",
+        "C": "自由转交下把多个工作流作为工具",
+        "D": "工作流编排下同时指定多个全局运行工作流"
+      },
+      "distractors": {
+        "A": "固定全跑不满足按问题自主选择流程，也可能执行不需要的步骤。",
+        "B": "说明文档不能替代实际流程调用与执行结果。",
+        "D": "该协同只选一个整体运行工作流"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-112",
+    "module": "M4",
+    "topic": "切片粒度取舍",
+    "decision": "修订",
+    "finding": "先保留条件和例外的完整上下文，再用原问法及变式回归。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "aa9fa27ee09f3a5ee542d1d19901a0358129c4d0e1c5bb1dbf12740d3601e0d7",
+    "afterHash": "bc37c7398daff52a819d00d236439437326e5ceaf4ce014f7a44578cc6794f08",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "before": {
+      "options": {
+        "A": "删去例外条款避免遗漏",
+        "B": "继续减小全部切片",
+        "C": "调整切分以保留必要上下文；用原问题复测",
+        "D": "只增大最终回答字数"
+      },
+      "distractors": {
+        "A": "改变业务知识",
+        "B": "加重上下文缺失",
+        "D": "生成长度不补齐输入依据"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "只为当前问法补一条FAQ，不检查条件和例外的切片组织",
+        "B": "继续减小全部切片",
+        "C": "调整切分以保留必要上下文；用原问题复测",
+        "D": "只增大最终回答字数"
+      },
+      "distractors": {
+        "A": "可补救单例，但题设已定位系统性切分缺口，应先修复证据组织并回归同类问题。",
+        "B": "加重上下文缺失",
+        "D": "生成长度不补齐输入依据"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-115",
+    "module": "M4",
+    "topic": "人工修正知识",
+    "decision": "修订",
+    "finding": "少量错误片段应对照原文干预，不能用无证据的最终答案覆盖根因。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "e065a7ffd3c84c52cfba60d1c5694d95cbe1fa838cabe396a447277f6073512e",
+    "afterHash": "2d0479f2b62553c7bec62ef6dba8c88ac0009e6a449627b97c09ed7c49bebe39",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/119287"
+    ],
+    "before": {
+      "options": {
+        "A": "删除所有原文证据只留模型总结",
+        "B": "提高召回数量覆盖错误",
+        "C": "只修改最终答案，保留错误片段",
+        "D": "解析切分干预，核原文后修正切片"
+      },
+      "distractors": {
+        "A": "丢失核验依据",
+        "B": "更多召回不等于纠正错误",
+        "C": "掩盖而未修复错误依据"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "由另一模型重述错误片段后直接覆盖，不核对原始资料",
+        "B": "提高召回数量覆盖错误",
+        "C": "只修改最终答案，保留错误片段",
+        "D": "解析切分干预，核原文后修正切片"
+      },
+      "distractors": {
+        "A": "重新生成不提供事实依据，可能引入更多偏差。",
+        "B": "更多召回不等于纠正错误",
+        "C": "掩盖而未修复错误依据"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-139",
+    "module": "M4",
+    "topic": "多轮需求指代还原",
+    "decision": "修订",
+    "finding": "指代与省略需结合已选对象补全，文档解析和回复字数不解决查询语义。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "29b3e904160679fc487bfcf0042a741412dcf0f691a42893699cc53092c85806",
+    "afterHash": "2058ad8ed35a9937a49783a64f620248cac66a066ccf2eace1d9fbcc5a790c14",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112876"
+    ],
+    "before": {
+      "options": {
+        "A": "仅把全部问答改成固定欢迎语",
+        "B": "仅替换实时文档解析模型",
+        "C": "Prompt 改写对指代和省略的完整语义还原",
+        "D": "只增加最终回答字数"
+      },
+      "distractors": {
+        "A": "固定问答不能表示动态对象",
+        "B": "没有文件解析故障前提",
+        "D": "字数不恢复对象"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "扩展同主题FAQ数量，但不给检索提供已选方案信息",
+        "B": "仅替换实时文档解析模型",
+        "C": "Prompt 改写对指代和省略的完整语义还原",
+        "D": "只增加最终回答字数"
+      },
+      "distractors": {
+        "A": "缺口是当前对象与指代解析，增加资料不直接修复问题语义。",
+        "B": "没有文件解析故障前提",
+        "D": "字数不恢复对象"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-144",
+    "module": "M4",
+    "topic": "有效期约束与业务承诺",
+    "decision": "修订",
+    "finding": "明确不可超期检索时测试时间边界，上传时间不能代替业务有效期。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "ed013898cf77105e1a1cfcda6066896067b2a2c26320ab8d40438cf099673ad9",
+    "afterHash": "38d5c2a817e167e24544d76cec5ec54b10403837c85d9f18d51a1771f2626a84",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/138380"
+    ],
+    "before": {
+      "explanation": "结论依赖已配置的过期过滤策略，不能把所有有效期外知识都一概视为不可读。验收要围绕实际开始结束日期。"
+    },
+    "after": {
+      "explanation": "结论依赖已配置的过期过滤策略，不能把所有有效期外知识都一概视为不可读。验收要围绕实际开始结束日期。 判断要点：明确不可超期检索时测试时间边界，上传时间不能代替业务有效期。"
+    }
+  },
+  {
+    "id": "FDE-M4-152",
+    "module": "M4",
+    "topic": "证据与回复双产物",
+    "decision": "修订",
+    "finding": "归档保存原始片段，不能从生成答案逆推完整原文。",
+    "changedFields": [
+      "options",
+      "distractors"
+    ],
+    "beforeHash": "dd7fd60cc447b283507c1acfcb6d8809f5ac51d63185fb0837c5a2ec09475b79",
+    "afterHash": "beb6a9906992997eebfbab8bd09e351cc36822aca6b7351f48612d8a6513bba2",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966",
+      "https://cloud.tencent.com/document/product/1759/112964"
+    ],
+    "before": {
+      "options": {
+        "A": "只增加回答字数，认为原片段自然完整保留",
+        "B": "检索输出片段进入归档分支，并以证据生成回答",
+        "C": "只用最终回答再反推原文片段",
+        "D": "让归档程序把回复中的每句话都当原文"
+      },
+      "distractors": {
+        "A": "长度不保证原文保真",
+        "C": "生成可能改写或压缩原文",
+        "D": "转述不是原片段"
+      }
+    },
+    "after": {
+      "options": {
+        "A": "仅把最终回答和引用链接归档，声明等同完整原始片段",
+        "B": "检索输出片段进入归档分支，并以证据生成回答",
+        "C": "只用最终回答再反推原文片段",
+        "D": "让归档程序把回复中的每句话都当原文"
+      },
+      "distractors": {
+        "A": "链接和生成转述不能替代题设要求保存的原始证据内容。",
+        "C": "生成可能改写或压缩原文",
+        "D": "转述不是原片段"
+      }
+    }
+  },
+  {
+    "id": "FDE-M4-198",
+    "module": "M4",
+    "topic": "接口协议成功与业务状态",
+    "decision": "修订",
+    "finding": "HTTP200只说明传输层成功，确认单应以业务结果为依据。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "d779f5e8a0ce0e7414498847aa8090132807d4eed736af704d58b6b3e009add0",
+    "afterHash": "86114bf28c163f0a1bb368cf227fd2a85fc15c9add3a4037a561279c9f1c10c3",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112968",
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "before": {
+      "explanation": "传输成功只说明拿到了响应。题设业务状态否定时，后续不能发出成功产物，应按业务契约判定。"
+    },
+    "after": {
+      "explanation": "传输成功只说明拿到了响应。题设业务状态否定时，后续不能发出成功产物，应按业务契约判定。 判断要点：HTTP200只说明传输层成功，确认单应以业务结果为依据。"
+    }
+  },
+  {
+    "id": "FDE-M4-217",
+    "module": "M4",
+    "topic": "保留协作模式时的授权架构替代",
+    "decision": "修订",
+    "finding": "明确业务服务先核权的替代架构，不虚构Multi-Agent内置权限能力。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "619cd8b7abb8c375f089e31f3255bd5c267f71a71e64c0a1813f62090910feb7",
+    "afterHash": "bac127872968f64d17b85c92f0421042d6de39324efce3fa03884567e11abab5",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281",
+      "https://cloud.tencent.com/document/product/1759/115872"
+    ],
+    "before": {
+      "explanation": "官方明确Multi-Agent不支持所述内置应用端权限，但允许自定义连接器或工具接入业务服务。题设已批准开发授权后才返回数据的接口，因此可评估这条替代架构；核权逻辑由客户服务实现并验证，不能冒称ADP自动提供。"
+    },
+    "after": {
+      "explanation": "官方明确Multi-Agent不支持所述内置应用端权限，但允许自定义连接器或工具接入业务服务。题设已批准开发授权后才返回数据的接口，因此可评估这条替代架构；核权逻辑由客户服务实现并验证，不能冒称ADP自动提供。 判断要点：明确业务服务先核权的替代架构，不虚构Multi-Agent内置权限能力。"
+    }
+  },
+  {
+    "id": "FDE-M4-237",
+    "module": "M4",
+    "topic": "内容审核与数据授权双重约束",
+    "decision": "修订",
+    "finding": "内容风险审核与知识授权独立；正常措辞也可能提出越权查询。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "7563df0040b545cae10851e09b616ad5159e894c056aa899bf99be564382e701",
+    "afterHash": "fbd9ee5e172779272d25024f9d563c4765397b6c88097fb3c0a38159708c2724",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070",
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "before": {
+      "explanation": "内容安全处理输入输出的风险，应用端权限控制谁可检索哪些知识。题设含两类独立约束，因此验收用例也要分别覆盖合法内容中的越权问题和有权范围内的风险内容。"
+    },
+    "after": {
+      "explanation": "内容安全处理输入输出的风险，应用端权限控制谁可检索哪些知识。题设含两类独立约束，因此验收用例也要分别覆盖合法内容中的越权问题和有权范围内的风险内容。 判断要点：内容风险审核与知识授权独立；正常措辞也可能提出越权查询。"
+    }
+  },
+  {
+    "id": "FDE-M4-241",
+    "module": "M4",
+    "topic": "知识权限撤销与其他上下文渠道",
+    "decision": "修订",
+    "finding": "知识权限撤销不代表旧记忆自动清除，需检查全部生成上下文来源。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "8afbbc56925cb04d8a63cdd2f98af491f173a35e7bcff0dd8da8b4e8564ccf87",
+    "afterHash": "1b177028941075989eb7e7c02cb57c7e9c8e703b069f95a9994be2428926d7be",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281",
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "before": {
+      "explanation": "知识访问权限控制检索范围，记忆由独立模块积累和管理。题设要求影响回答的信息全面停止使用，需沿输入渠道检查；这是一项基于两个官方机制的方案推理，不承诺自动联动删除。"
+    },
+    "after": {
+      "explanation": "知识访问权限控制检索范围，记忆由独立模块积累和管理。题设要求影响回答的信息全面停止使用，需沿输入渠道检查；这是一项基于两个官方机制的方案推理，不承诺自动联动删除。 判断要点：知识权限撤销不代表旧记忆自动清除，需检查全部生成上下文来源。"
+    }
+  },
+  {
+    "id": "FDE-M4-245",
+    "module": "M4",
+    "topic": "自动生成测试与客户验收条件",
+    "decision": "修订",
+    "finding": "总分高不证明缺字段分支已覆盖，必须加入明确失败样本及期望。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "231b8cbc5db207ccdcde39a70bf450c4a425f86c62bca21947ed1c8cf125d9db",
+    "afterHash": "ffd69d563cc250a6dc1bc480fb8d9a3db4f52b6286104c2cda73e908744798f0",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/137902"
+    ],
+    "before": {
+      "explanation": "官方支持按预期输入输出验证路径，并要求查看配置、验证后发布。题设的特定禁执行约束应落实为可观察用例；自动生成评测可协助覆盖，但不是所有客户条件自动满足的保证。"
+    },
+    "after": {
+      "explanation": "官方支持按预期输入输出验证路径，并要求查看配置、验证后发布。题设的特定禁执行约束应落实为可观察用例；自动生成评测可协助覆盖，但不是所有客户条件自动满足的保证。 判断要点：总分高不证明缺字段分支已覆盖，必须加入明确失败样本及期望。"
+    }
+  },
+  {
+    "id": "FDE-M4-247",
+    "module": "M4",
+    "topic": "外部权限异常行为的待核契约",
+    "decision": "修订",
+    "finding": "文档未说明超时默认行为应约定并测试，不能断言默认拒绝或默认放行。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "be418ba40fd422c7331e85ec22c317b28cc8ce6a8cec31daf629fe60f6d56014",
+    "afterHash": "0ba4014b3e7054b60c4718e6467796f46fe07661c85f2ee9c7674df033402611",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "before": {
+      "explanation": "官方说外部权限接口的参数、返回和鉴权需约定，但所读页未给题设超时处理保证。FDE应把客户硬要求变成待核接口和异常用例，既不虚构默认拒绝，也不虚构默认放行。"
+    },
+    "after": {
+      "explanation": "官方说外部权限接口的参数、返回和鉴权需约定，但所读页未给题设超时处理保证。FDE应把客户硬要求变成待核接口和异常用例，既不虚构默认拒绝，也不虚构默认放行。 判断要点：文档未说明超时默认行为应约定并测试，不能断言默认拒绝或默认放行。"
+    }
+  },
+  {
+    "id": "FDE-M4-248",
+    "module": "M4",
+    "topic": "可信身份与自报业务属性",
+    "decision": "修订",
+    "finding": "授权身份来自可信认证映射，自报部门仅作业务上下文不授新权限。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "921fbd3a578f92f81bd24e42efbeded355a326078ca9a7149d62fc7381a04727",
+    "afterHash": "ec02e32ab89cd2e7a1fbe83331334a5ad8cc08c13c84d0060d72f37dbaa9cb16",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281",
+      "https://cloud.tencent.com/document/product/1759/133870"
+    ],
+    "before": {
+      "explanation": "官方权限流程依赖用户标识及配置好的授权关系；自定义变量只是上下文透传。题设已有认证系统，工程方案应把可信身份与用户可编辑属性分开，不把方便生成的文本输入当作授权来源。"
+    },
+    "after": {
+      "explanation": "官方权限流程依赖用户标识及配置好的授权关系；自定义变量只是上下文透传。题设已有认证系统，工程方案应把可信身份与用户可编辑属性分开，不把方便生成的文本输入当作授权来源。 判断要点：授权身份来自可信认证映射，自报部门仅作业务上下文不授新权限。"
+    }
+  },
+  {
+    "id": "FDE-M5-008",
+    "module": "M5",
+    "topic": "金融／客户案例·海港人寿",
+    "decision": "修订",
+    "finding": "材料要经业务确认并标明适用范围；营销话术和个人笔记不能替代制度依据。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "49c191cd74a296982e9be0192a9429dacee780e4241b27e5cc7eabd7f3c5b6ca",
+    "afterHash": "497ea62c1684f5cc67e7c5794c91297b5646b37bbd43f343689236e83600bcc3",
+    "sourceUrls": [
+      "https://cloud.tencent.com/product/adp"
+    ],
+    "before": {
+      "stem": "假设保险公司要支持代理人查询应知应会，适合优先整理哪类材料？",
+      "explanation": "海港人寿案例覆盖代理人应知应会；假设项目应有经过确认的业务知识基础。 因此，本题应选择“公司确认的代理人业务知识”。"
+    },
+    "after": {
+      "stem": "保险代理人助手在“可否承诺某项权益”上回答不一致。若优先补齐知识依据，应首先整理哪类材料？",
+      "explanation": "海港人寿案例覆盖代理人应知应会；假设项目应有经过确认的业务知识基础。 因此，本题应选择“公司确认的代理人业务知识”。 判断要点：材料要经业务确认并标明适用范围；营销话术和个人笔记不能替代制度依据。"
+    }
+  },
+  {
+    "id": "FDE-M5-009",
+    "module": "M5",
+    "topic": "金融／2.6 使用规则",
+    "decision": "修订",
+    "finding": "题目需明确所依据服务条款；专业审核与AI身份及限制告知不能互相替代。",
+    "changedFields": [
+      "stem",
+      "options",
+      "explanation",
+      "distractors"
+    ],
+    "beforeHash": "3b15d06e93617539552feb382ebb0a3047b13d869f85845232dd7f4dfcc8121d",
+    "afterHash": "c4993b70f810dd41198a9abe0d94aea8aaa6aca83027576d5728abb2f90eb684",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/301/97822"
+    ],
+    "before": {
+      "stem": "假设项目明确采用该大模型服务条款，要向客户提供专业金融咨询，不能省略什么？",
+      "options": {
+        "A": "专业人士审核并告知AI使用及限制",
+        "B": "保证模型永不出错",
+        "C": "以用户点击次数替代审核",
+        "D": "只告知AI身份但不安排专业审核"
+      },
+      "explanation": "条款对专业金融咨询要求专业审核与技术告知，两项不能互相替代。 因此，本题应选择“专业人士审核并告知AI使用及限制”。",
+      "distractors": {
+        "B": "无此保证",
+        "C": "点击不能验证专业内容",
+        "D": "两项条款要求不能互相替代"
+      }
+    },
+    "after": {
+      "stem": "某金融咨询助手项目明确采用腾讯云大模型服务条款，准备直接向客户展示模型建议。上线方案不能省略什么？",
+      "options": {
+        "A": "专业人士审核并告知AI使用及限制",
+        "B": "仅安排一次高分自动评测，再直接向客户提供建议",
+        "C": "只展示历史客户采纳率，作为专业审核已经完成的证明",
+        "D": "只告知AI身份但不安排专业审核"
+      },
+      "explanation": "条款对专业金融咨询要求专业审核与技术告知，两项不能互相替代。 因此，本题应选择“专业人士审核并告知AI使用及限制”。 判断要点：题目需明确所依据服务条款；专业审核与AI身份及限制告知不能互相替代。",
+      "distractors": {
+        "B": "自动评测不能替代条款要求的专业审核和技术告知。",
+        "C": "采纳率不构成专业审核记录，也不完成AI使用及限制告知。",
+        "D": "两项条款要求不能互相替代"
+      }
+    }
+  },
+  {
+    "id": "FDE-M5-031",
+    "module": "M5",
+    "topic": "政务／评估政企智能体，不能只看回答准确率",
+    "decision": "修订",
+    "finding": "增加分母和业务链路意识，咨询量不能证明办结量。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "445a698482838641a9f990ffdbbcde908fcfa5ae8f9f5e26063095afa16ca1b9",
+    "afterHash": "7b59afc03d33e43c04026c292f55dcbd3009b6b26910bca37b37ecad774d38bd",
+    "sourceUrls": [
+      "https://adp.tencent.com/zh/blog/government-enterprise-ai-agents-practice"
+    ],
+    "before": {
+      "stem": "假设报告有300次咨询、12笔办结，正确的业务表达是什么？",
+      "explanation": "咨询量与事项办结量是不同指标，官方明确不能混用。 因此，本题应选择“咨询和办结分别统计”。"
+    },
+    "after": {
+      "stem": "政务助手试点记录300次咨询、12笔实际办结。汇报成效时，怎样表达才不混淆服务触达与业务结果？",
+      "explanation": "咨询量与事项办结量是不同指标，官方明确不能混用。 因此，本题应选择“咨询和办结分别统计”。 判断要点：增加分母和业务链路意识，咨询量不能证明办结量。"
+    }
+  },
+  {
+    "id": "FDE-M5-061",
+    "module": "M5",
+    "topic": "制造／客户案例·零售酒品外观",
+    "decision": "修订",
+    "finding": "复用的验收单位是新SKU差异；相似瓶型只是起点。",
+    "changedFields": [
+      "stem",
+      "options",
+      "explanation",
+      "distractors"
+    ],
+    "beforeHash": "86241ebfa43091f3d29aa3b7a00f428b97a81df544c9976bc2c288688bec7402",
+    "afterHash": "fc384a8654ae5e2ec21b14f713a8b227d57c71fa864a6dd2e1dd2662e3079278",
+    "sourceUrls": [
+      "https://adp.tencent.com/solutions/qc"
+    ],
+    "before": {
+      "stem": "假设酒瓶新SKU需上线，已有相似瓶型方案，复用的正确理解是什么？",
+      "options": {
+        "A": "沿用旧检测点位而不核对新瓶型差异",
+        "B": "以相似方案为起点核对新SKU差异",
+        "C": "完全放弃可复用资产从零开始",
+        "D": "旧方案无需校验即可保证适用"
+      },
+      "explanation": "酒品案例复用相似方案支持换品；题设仍须对新瓶型差异进行验证。 因此，本题应选择“以相似方案为起点核对新SKU差异”。",
+      "distractors": {
+        "A": "方案复用仍需适配产品变化",
+        "C": "未利用相似方案",
+        "D": "案例复用不代表所有差异都无影响"
+      }
+    },
+    "after": {
+      "stem": "酒瓶产线切换新SKU，团队已有相似瓶型检测方案，希望缩短交付周期。如何理解方案复用？",
+      "options": {
+        "A": "沿用旧检测点位而不核对新瓶型差异",
+        "B": "以相似方案为起点核对新SKU差异",
+        "C": "为了消除差异风险，统一要求每个SKU完全重建全部方案",
+        "D": "旧方案无需校验即可保证适用"
+      },
+      "explanation": "酒品案例复用相似方案支持换品；题设仍须对新瓶型差异进行验证。 因此，本题应选择“以相似方案为起点核对新SKU差异”。 判断要点：复用的验收单位是新SKU差异；相似瓶型只是起点。",
+      "distractors": {
+        "A": "方案复用仍需适配产品变化",
+        "C": "可以复用相似方案，但必须核对差异；全部重建并非唯一可靠路径。",
+        "D": "案例复用不代表所有差异都无影响"
+      }
+    }
+  },
+  {
+    "id": "FDE-M5-136",
+    "module": "M5",
+    "topic": "法务／按立场逐条审查",
+    "decision": "修订",
+    "finding": "审查立场和规则需要显式确定，报告模板不能代替业务规则。",
+    "changedFields": [
+      "stem",
+      "options",
+      "explanation",
+      "distractors"
+    ],
+    "beforeHash": "ce1a3d9c3526628d041c221ced50db66311e964c5a20cd1403424db3df8ef4d4",
+    "afterHash": "2c8c26d9fa58e89336f98b7d3d085dd7dcc06404718f2713b9b7bd4654b56315",
+    "sourceUrls": [
+      "https://adp.tencent.com/solutions/legal"
+    ],
+    "before": {
+      "stem": "假设同一采购合同需分别从买方和卖方视角审查，开始前应明确什么？",
+      "options": {
+        "A": "只按文件创建时间选择立场",
+        "B": "审查立场和适用Playbook规则",
+        "C": "始终采用同一无差别口径",
+        "D": "只确定报告模板而不设置审查立场"
+      },
+      "explanation": "官方法务方案支持选择审查立场并引用Playbook，题设应显式确定角色和规则。 因此，本题应选择“审查立场和适用Playbook规则”。",
+      "distractors": {
+        "A": "与合同角色无关",
+        "C": "忽略双方关注点",
+        "D": "形式不决定买卖方风险判断"
+      }
+    },
+    "after": {
+      "stem": "同一采购合同要分别提供买方与卖方审查意见，两次报告模板完全相同。为避免判断口径混淆，执行前应明确什么？",
+      "options": {
+        "A": "先沿用上次报告采用的立场，结束后再让业务方确认",
+        "B": "审查立场和适用Playbook规则",
+        "C": "合并双方规则并只输出两套规则共同认可的条款",
+        "D": "只确定报告模板而不设置审查立场"
+      },
+      "explanation": "官方法务方案支持选择审查立场并引用Playbook，题设应显式确定角色和规则。 因此，本题应选择“审查立场和适用Playbook规则”。 判断要点：审查立场和规则需要显式确定，报告模板不能代替业务规则。",
+      "distractors": {
+        "A": "审查立场决定适用规则，应在执行前确认。",
+        "C": "掩盖两种立场的具体风险，不能替代分别按立场审查。",
+        "D": "形式不决定买卖方风险判断"
+      }
+    }
+  },
+  {
+    "id": "FDE-M6-003",
+    "module": "M6",
+    "topic": "评测数据／上传评测集",
+    "decision": "修订",
+    "finding": "自定义列需与样本逐行关联，参考结论不能仅写在文件名。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "35fe57c247b8b16b450f655347493f910985d29ea4bafe57f5c500c5b0a46790",
+    "afterHash": "395035e919f93a994712603393574c50802d4641e86c491a31894550df06b0e9",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "before": {
+      "stem": "某验收集需要保存产品线和参考结论，应放在哪里供评分规则引用？",
+      "explanation": "评测集自定义列可存额外信息并作为评分变量。 因此，本题应选择“评测集自定义列”。"
+    },
+    "after": {
+      "stem": "同一句咨询在不同产品线有不同答案，验收集还要让评分规则读取产品线和参考结论。这些信息应放在哪里？",
+      "explanation": "评测集自定义列可存额外信息并作为评分变量。 判断要点：自定义列需与样本逐行关联，参考结论不能仅写在文件名。"
+    }
+  },
+  {
+    "id": "FDE-M6-004",
+    "module": "M6",
+    "topic": "评测数据／基准评测配置",
+    "decision": "修订",
+    "finding": "保留列名一致性排错，同名文件不等于同样本结构。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "f7bbf045fc7355d09059c0811bd3e2837d022c9b78cb71d51e1a023acfd7dc90",
+    "afterHash": "2c0c33d65d7479f6f84e6386eef0f589f6a5e0823f82b77ded92fc581935dc31",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "before": {
+      "explanation": "同一次任务所选评测集的列名须一致。 因此，本题应选择“统一评测集列名”。"
+    },
+    "after": {
+      "explanation": "同一次任务所选评测集的列名须一致。 判断要点：列名一致性排错，同名文件不等于同样本结构。"
+    }
+  },
+  {
+    "id": "FDE-M6-009",
+    "module": "M6",
+    "topic": "配置实验／对比评测配置",
+    "decision": "修订",
+    "finding": "对比评测入口支持范围与项目是否需要验收是两回事；不支持入口仍须另设计验证。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "7609d2fd14f85419ab4b0387d2e4751c72cf961bcedee3cc358feb03da500ef3",
+    "afterHash": "85b8a36b71c1ff2ff21b0f7a68bef589712bac5b5981345b930279e173c4c045",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "before": {
+      "explanation": "应用评测文档将对比评测功能限定为标准模式。 因此，本题应选择“该对比功能文档限定标准模式”。"
+    },
+    "after": {
+      "explanation": "应用评测文档将对比评测功能限定为标准模式。 判断要点：对比评测入口支持范围与项目是否需要验收是两回事；不支持入口仍须另设计验证。"
+    }
+  },
+  {
+    "id": "FDE-M6-013",
+    "module": "M6",
+    "topic": "评测可比性／注意事项",
+    "decision": "修订",
+    "finding": "测试必须绑定稳定知识版本；变更后重跑，不能把不同版本分数拼接。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "7855557ef6085afd26d94e4cf0f33d8d2da570a2500d28129274b556154a1942",
+    "afterHash": "cdffe37cd32c2363a8882fddf49b7a1ada29ae9d35ca4f7f0960311ad25efd6b",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "before": {
+      "stem": "连续运行的验收测试中，维护人员准备更改知识库，最妥当的做法是？",
+      "explanation": "官方评测说明要求避免评测过程中更改知识，以免影响结果。 因此，本题应选择“保持测试期知识稳定，变更后另行评测”。"
+    },
+    "after": {
+      "stem": "评测跑到一半发现制度文档过期，维护人员准备立即修改知识库并继续统计同一份报告。怎样安排更妥当？",
+      "explanation": "官方评测说明要求避免评测过程中更改知识，以免影响结果。 判断要点：测试必须绑定稳定知识版本；变更后重跑，不能把不同版本分数拼接。"
+    }
+  },
+  {
+    "id": "FDE-M6-014",
+    "module": "M6",
+    "topic": "复杂模式／注意事项",
+    "decision": "修订",
+    "finding": "自动入口覆盖不足时补充任务路径、工具与端到端验证，不能仅测主Agent。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "0472b1aeab30d5c6dff2868ac9523833108161e9e66a9bf0544cc8e098da5575",
+    "afterHash": "0e8390740db82dbc38dfc416eac01bc4b1c4fbdf1ea7d50758e6fc8f642306c5",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "before": {
+      "stem": "验收计划使用Plan-and-Execute协同的Multi-Agent，评测覆盖应如何描述？",
+      "explanation": "文档不建议对Plan-and-Execute进行该应用评测，因为无法完整评测。 因此，本题应选择“现有应用评测不能完整覆盖该协同方式”。"
+    },
+    "after": {
+      "stem": "项目采用Plan-and-Execute，团队希望只凭平台应用评测报告宣布整条协作链验收通过。覆盖说明应如何修正？",
+      "explanation": "文档不建议对Plan-and-Execute进行该应用评测，因为无法完整评测。 判断要点：自动入口覆盖不足时补充任务路径、工具与端到端验证，不能仅测主Agent。"
+    }
+  },
+  {
+    "id": "FDE-M6-015",
+    "module": "M6",
+    "topic": "检索诊断／功能说明",
+    "decision": "修订",
+    "finding": "先定位召回还是生成问题，召回测试只验证证据能否取到。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "c4595522be478bceed975654a4a02c95cdc83624b57b2b29e05b454203194cfb",
+    "afterHash": "78f3ecee97325d5ac2d5ac9ce234e94d1f2b1a2a2ce0ddb0a8d39719aa009698",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "before": {
+      "stem": "回答异常时想先确认正确资料能否被检索，应该运行什么？",
+      "explanation": "召回测试验证提问能否得到预期知识切片。 因此，本题应选择“知识库召回测试”。"
+    },
+    "after": {
+      "stem": "用户答案错误，尚不清楚是缺少依据还是生成时误读。为了先确认适用制度片段能否被检索，应运行什么？",
+      "explanation": "召回测试验证提问能否得到预期知识切片。 判断要点：先定位召回还是生成问题，召回测试只验证证据能否取到。"
+    }
+  },
+  {
+    "id": "FDE-M6-016",
+    "module": "M6",
+    "topic": "实验隔离／功能说明",
+    "decision": "修订",
+    "finding": "调参试验与正式配置分离；有效参数需显式应用并回归验证。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "a09bd3712445bec6dec3a07a4005c6b7665a439726f9218ae96807797740099b",
+    "afterHash": "32980a6e4caa6db647bfb5bc213b88edf1db0a83b2b008516cddcdaab43bbce2",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "before": {
+      "stem": "在召回测试中调好了阈值，线上应用配置会怎样？",
+      "explanation": "召回测试中的规则只对本次测试生效。 因此，本题应选择“不会自动同步改变”。"
+    },
+    "after": {
+      "stem": "召回测试调低阈值后效果改善，工程师未修改应用配置就向客户宣布上线已优化。线上配置实际会怎样？",
+      "explanation": "召回测试中的规则只对本次测试生效。 判断要点：调参试验与正式配置分离；有效参数需显式应用并回归验证。"
+    }
+  },
+  {
+    "id": "FDE-M6-020",
+    "module": "M6",
+    "topic": "检索实验／对比测试",
+    "decision": "修订",
+    "finding": "固定问题和知识版本比较，避免用不同样本为阈值效果背书。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "42be88b56c5219ac4381a4a6abe80b22855b9cb35e0386aed0027a54de7ee23f",
+    "afterHash": "b01727984a478646a4d82f0e92aba1cc847136bf5caf599c23e944a882622b44",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "before": {
+      "explanation": "对比测试在同一问题下返回多组配置的召回结果。 因此，本题应选择“对同一问题并行比较不同配置”。"
+    },
+    "after": {
+      "explanation": "对比测试在同一问题下返回多组配置的召回结果。 判断要点：固定问题和知识版本比较，避免用不同样本为阈值效果背书。"
+    }
+  },
+  {
+    "id": "FDE-M6-021",
+    "module": "M6",
+    "topic": "阈值诊断／配置检索与召回规则",
+    "decision": "修订",
+    "finding": "阈值是候选过滤条件，先检查阈值前后结果再决定是否放宽。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "4f3e435711ed2e3317de30f0012c762977360fae74a28f95c84faa6c5ec35e28",
+    "afterHash": "98ceef26b1fcc9ec3a284c73f0aa230a7a1c01dc33637a85902fe3f33e331125",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "before": {
+      "explanation": "文档检索匹配度规定最低阈值，低于阈值的切片不进入结果。 因此，本题应选择“被过滤”。"
+    },
+    "after": {
+      "explanation": "文档检索匹配度规定最低阈值，低于阈值的切片不进入结果。 判断要点：阈值是候选过滤条件，先检查阈值前后结果再决定是否放宽。"
+    }
+  },
+  {
+    "id": "FDE-M6-024",
+    "module": "M6",
+    "topic": "版本追溯／发布历史",
+    "decision": "修订",
+    "finding": "发布历史用于追溯配置版本；知识、共享工具和凭证还要分别核对。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "64441f3e15ba854dda101922df0f3d9fd671498a2ea45ca653395658c00b5c82",
+    "afterHash": "036470f957b2ae212efcbaffb7669138b3a12c0a1c4f50b2cb568f903a2a41c5",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "before": {
+      "stem": "线上回答变化，需要确定某次正式配置变更，应优先查哪里？",
+      "explanation": "发布历史保存每次发布记录，完成发布后生成唯一版本号。 因此，本题应选择“发布历史的版本记录”。"
+    },
+    "after": {
+      "stem": "客户反馈“昨天同样问题答得不同”，你已确认需要追溯某次正式应用配置发布。应优先查哪里？",
+      "explanation": "发布历史保存每次发布记录，完成发布后生成唯一版本号。 判断要点：发布历史用于追溯配置版本；知识、共享工具和凭证还要分别核对。"
+    }
+  },
+  {
+    "id": "FDE-M6-025",
+    "module": "M6",
+    "topic": "回退流程／发布历史与版本还原",
+    "decision": "修订",
+    "finding": "恢复调试态后要核对依赖、回归并发布，点击还原不等于生产回退。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "5855a7e115a8a16b175a57d85c2c3ba06d1c1420e384c022ee452b1430ba9768",
+    "afterHash": "553c8a0e4d85bdd082a4ef1ef789b9a89540638362158b01d6d756ef8627e31c",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "before": {
+      "explanation": "版本还原先覆盖调试配置，经确认发布后才替换线上版本。 因此，本题应选择“尚未，核对后还需发布”。"
+    },
+    "after": {
+      "explanation": "版本还原先覆盖调试配置，经确认发布后才替换线上版本。 判断要点：恢复调试态后要核对依赖、回归并发布，点击还原不等于生产回退。"
+    }
+  },
+  {
+    "id": "FDE-M6-026",
+    "module": "M6",
+    "topic": "回退保护／发布历史与版本还原",
+    "decision": "修订",
+    "finding": "保留未保存变更保护，导出旧线上包不能保存当前未保存编辑。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "21db339b359c894df0d4c8a7cba5927389139f9a16d6c17ae3b22646eea3f10b",
+    "afterHash": "29bdf8d2313a671ed698c3b039df94344c7bd498a86dcf2d28cfc748120474b1",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "before": {
+      "explanation": "官方要求还原前检查重要未保存变更，避免覆盖。 因此，本题应选择“先保存并妥善留存重要变更”。"
+    },
+    "after": {
+      "explanation": "官方要求还原前检查重要未保存变更，避免覆盖。 判断要点：未保存变更保护，导出旧线上包不能保存当前未保存编辑。"
+    }
+  },
+  {
+    "id": "FDE-M6-027",
+    "module": "M6",
+    "topic": "资源依赖／版本还原后异常情况处理",
+    "decision": "修订",
+    "finding": "保留全局依赖删除的回退边界，还原快照不会凭空恢复已删除工具。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "c1daf6fe408780b9fc85e84ef8e0f942cc5c76fce3d92cc5f2fa130fabd7fbe1",
+    "afterHash": "9f561d18dc692633f99cb8cc17694711108317e6edb8ba98985fbb8abc88b97e",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "before": {
+      "explanation": "旧版本引用的全局资源被彻底删除后，回退组件会失效，需要处理依赖。 因此，本题应选择“重新配置依赖或移除失效组件”。"
+    },
+    "after": {
+      "explanation": "旧版本引用的全局资源被彻底删除后，回退组件会失效，需要处理依赖。 判断要点：全局依赖删除的回退边界，还原快照不会凭空恢复已删除工具。"
+    }
+  },
+  {
+    "id": "FDE-M6-028",
+    "module": "M6",
+    "topic": "回退范围／随版本回退的内容说明",
+    "decision": "修订",
+    "finding": "知识数据需单独备份或重建，应用版本不等于全量知识快照。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "7f5525ce8648f7c86a7c46bff61b477a61f2235404572dd5e447bf66f2593b5a",
+    "afterHash": "d47a5df583a047b83aa9966530485a2f871e0265ebbe9ce26234b6759df53bbc",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "before": {
+      "explanation": "知识库数据不随应用版本回退，因此交付须另行考虑数据保存。 因此，本题应选择“不能把版本还原当作知识数据恢复”。"
+    },
+    "after": {
+      "explanation": "知识库数据不随应用版本回退，因此交付须另行考虑数据保存。 判断要点：知识数据需单独备份或重建，应用版本不等于全量知识快照。"
+    }
+  },
+  {
+    "id": "FDE-M6-030",
+    "module": "M6",
+    "topic": "渠道切换／发布渠道",
+    "decision": "修订",
+    "finding": "保留绑定迁移导致服务中断的交付安排。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "4dc98b6e68a3789582fcaa33434a1f9b992943abdb092d9bd5edf2fb545f1ca3",
+    "afterHash": "1373b1d22d3314177c29dec120be6ea618a5be01312fb4a2bd6eeebd554d7f0d",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "before": {
+      "explanation": "官方说明更换绑定需先解绑，解绑会中断服务。 因此，本题应选择“先解绑原应用并安排服务中断窗口”。"
+    },
+    "after": {
+      "explanation": "官方说明更换绑定需先解绑，解绑会中断服务。 判断要点：绑定迁移导致服务中断的交付安排。"
+    }
+  },
+  {
+    "id": "FDE-M6-036",
+    "module": "M6",
+    "topic": "迁移时点／应用包导出",
+    "decision": "修订",
+    "finding": "发布中版本不能直接导出，发布状态需先稳定。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "2c47bd5cf5dd27b71ed6bdac8ac01f262828c2972399c51790c8b18949ee3c27",
+    "afterHash": "f56435d0126d739c112ccafd75f7e192a57200ec7aebf1f96f6f17b5a74d0cb9",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "before": {
+      "explanation": "处于发布流程中的版本不支持导出。 因此，本题应选择“不支持，应待发布完成”。"
+    },
+    "after": {
+      "explanation": "处于发布流程中的版本不支持导出。 判断要点：发布中版本不能直接导出，发布状态需先稳定。"
+    }
+  },
+  {
+    "id": "FDE-M6-037",
+    "module": "M6",
+    "topic": "迁移依赖／应用包导出",
+    "decision": "修订",
+    "finding": "工作流导出要随附引用依赖，但不代表全空间知识都被导出。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "0b3be938a5ab63c6e622605215844436ef7953ae81c71c164d8c11074090e5b1",
+    "afterHash": "52b378d4445376c24676cd8879a21b911f75be0c195911c471bb575eb4b41647",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "before": {
+      "explanation": "已选工作流所引用工具、知识库必须一起导出。 因此，本题应选择“引用依赖需随该工作流导出”。"
+    },
+    "after": {
+      "explanation": "已选工作流所引用工具、知识库必须一起导出。 判断要点：工作流导出要随附引用依赖，但不代表全空间知识都被导出。"
+    }
+  },
+  {
+    "id": "FDE-M6-038",
+    "module": "M6",
+    "topic": "数据迁移／应用包导出",
+    "decision": "修订",
+    "finding": "数据库连接配置和实际表内容不同，应用包不能当数据库备份。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "38a63e9d2386910d9c340a582f3c8b75dade80704c5ace3f8b7cd2b92e8cd003",
+    "afterHash": "9d5926ddce0c50666099c3ca60b7b6468596145eda828e16fde580fe273530e0",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "before": {
+      "explanation": "知识库导出含设置及知识条目，排除直连数据库获取的表内容。 因此，本题应选择“不包含，需要另行处理数据库连接”。"
+    },
+    "after": {
+      "explanation": "知识库导出含设置及知识条目，排除直连数据库获取的表内容。 判断要点：数据库连接配置和实际表内容不同，应用包不能当数据库备份。"
+    }
+  },
+  {
+    "id": "FDE-M6-041",
+    "module": "M6",
+    "topic": "网页知识迁移／需要在目标环境重新配置的内容",
+    "decision": "修订",
+    "finding": "迁移验收不仅看内容是否存在，也验证来源连接与后续更新。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "648f1a3e9700c3e7dd34f53913a757f848e7993ce225571e2c8e25de708a9f78",
+    "afterHash": "e0d4a98a509c8b24d8aa87efec6cdb3e18493c52be39786875387ec5a492ff63",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "before": {
+      "stem": "迁移后网页知识内容还在，却不再定时更新，应检查什么？",
+      "explanation": "网页导出保留内容，不保留网页来源和定时更新能力。 因此，本题应选择“重新配置网页地址及更新依赖”。"
+    },
+    "after": {
+      "stem": "知识助手迁移后首日回答正常，次周仍使用旧网页内容。应用包中的文档存在，但定时同步失效，应检查什么？",
+      "explanation": "网页导出保留内容，不保留网页来源和定时更新能力。 判断要点：迁移验收不仅看内容是否存在，也验证来源连接与后续更新。"
+    }
+  },
+  {
+    "id": "FDE-M6-042",
+    "module": "M6",
+    "topic": "导入行为／应用包导入",
+    "decision": "修订",
+    "finding": "保留导入同名不覆盖的行为，名称相同不能证明已替换线上服务。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "d637832bc303ff87eeea0e842a8d2528a8d74e220622cb313b894478b84fbba7",
+    "afterHash": "60309d13f21accd949b4b623f90bf023860f18baf52cf210d731d971c01a4bc8",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "before": {
+      "explanation": "导入创建新应用，同名时自动加副本后缀。 因此，本题应选择“创建名称带副本后缀的新应用”。"
+    },
+    "after": {
+      "explanation": "导入创建新应用，同名时自动加副本后缀。 判断要点：导入同名不覆盖的行为，名称相同不能证明已替换线上服务。"
+    }
+  },
+  {
+    "id": "FDE-M6-043",
+    "module": "M6",
+    "topic": "上线交接／应用包导入",
+    "decision": "修订",
+    "finding": "导入到开发域后需核对依赖和权限，再发布并做正式链路验收。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "3f6d078dcdfe8290c0e8f5c5a3cee57b4ccb367553f7b850e8f511dc4e6dc4d8",
+    "afterHash": "6117fadef58f854f5d5a619b9a77b6b0649e25c0b65573b2902818be83611ee6",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "before": {
+      "stem": "成功导入目标环境后，能否立即按线上应用验收？",
+      "explanation": "应用包导入开发域后仍未发布，需发布才生效到发布域。 因此，本题应选择“还需发布到发布域”。"
+    },
+    "after": {
+      "stem": "迁移包已成功导入，项目经理准备立即把它作为目标环境线上应用验收。还缺少哪项关键步骤？",
+      "explanation": "应用包导入开发域后仍未发布，需发布才生效到发布域。 判断要点：导入到开发域后需核对依赖和权限，再发布并做正式链路验收。"
+    }
+  },
+  {
+    "id": "FDE-M6-045",
+    "module": "M6",
+    "topic": "运营分类／对话记录智能分类",
+    "decision": "修订",
+    "finding": "增量聚类只整理反馈，不代表完成问题修复和回归。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "442b915dd6a8b235ec5da363738bfee4cce1ac39f683dc83e661092b9ce6fd0f",
+    "afterHash": "1b9360f461ae0745138794f05cfbd71a8d90fbc872b6f0f5fcbb6fd01d40e28e",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "before": {
+      "explanation": "新记录可增量聚类与历史分类去重合并，无须每次全量重建。 因此，本题应选择“增量聚类并与已有分类去重合并”。"
+    },
+    "after": {
+      "explanation": "新记录可增量聚类与历史分类去重合并，无须每次全量重建。 判断要点：增量聚类只整理反馈，不代表完成问题修复和回归。"
+    }
+  },
+  {
+    "id": "FDE-M6-047",
+    "module": "M6",
+    "topic": "用户计数／数据分析",
+    "decision": "修订",
+    "finding": "跨渠道统计口径要先定义，同一昵称不能证明完成身份去重。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "275f5578dd160f00f496e7554f31d81123a08a6abb9e9dfc5341c794aa1762e9",
+    "afterHash": "670c63d6863244b9bc88ff1b34febd4efd2125b94a997e635850bf36fca87697",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "before": {
+      "explanation": "运营用户数暂不能识别同一人在不同渠道的重复访问。 因此，本题应选择“不能，跨渠道同人暂无法识别去重”。"
+    },
+    "after": {
+      "explanation": "运营用户数暂不能识别同一人在不同渠道的重复访问。 判断要点：跨渠道统计口径要先定义，同一昵称不能证明完成身份去重。"
+    }
+  },
+  {
+    "id": "FDE-M6-048",
+    "module": "M6",
+    "topic": "反馈口径／数据分析",
+    "decision": "修订",
+    "finding": "用数值场景检查分母，点赞率不应把未评价当负面或正面。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "cc9319f482da573bc26d1ce5817e418934001cff932dd456df2df37dea31316e",
+    "afterHash": "4ec679d29851dfd61b057cf3173d3e212426cbe8d37b6f4afbb4889dbedf7c7e",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "before": {
+      "stem": "点赞率的分母应怎样理解？",
+      "explanation": "文档将点赞占比定义为点赞消息相对所有已评价消息。 因此，本题应选择“所有已评价消息数”。"
+    },
+    "after": {
+      "stem": "某天有20条点赞、5条点踩、75条未评价消息。按平台点赞率口径，应使用哪个分母类别？",
+      "explanation": "文档将点赞占比定义为点赞消息相对所有已评价消息。 判断要点：用数值场景检查分母，点赞率不应把未评价当负面或正面。"
+    }
+  },
+  {
+    "id": "FDE-M6-050",
+    "module": "M6",
+    "topic": "评测回流／对话记录",
+    "decision": "修订",
+    "finding": "真实问题需脱敏、去重、补期望与边界；原模型答案不能直接当标准答案。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "a884f6bcebd69654dbda979d6c2c16e4f82ae9b0ba8f50f44ba312d98cb32a14",
+    "afterHash": "dff36fdcfec61ed3e632434b56da1de7323260ba4d67d79773051e608754959c",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "before": {
+      "stem": "想将生产真实问题纳入下一次回归评测，应怎样操作？",
+      "explanation": "运营对话可导出为评测集文件，经修改再导入评测。 因此，本题应选择“导出为评测集，整理后上传应用评测”。"
+    },
+    "after": {
+      "stem": "线上出现知识盲区和口语化问法，现有评测只有演示问题。要把这些真实问题纳入下一轮回归，应怎样操作？",
+      "explanation": "运营对话可导出为评测集文件，经修改再导入评测。 判断要点：真实问题需脱敏、去重、补期望与边界；原模型答案不能直接当标准答案。"
+    }
+  },
+  {
+    "id": "FDE-M6-052",
+    "module": "M6",
+    "topic": "反馈处理／忽略",
+    "decision": "修订",
+    "finding": "忽略仅变更列表状态；如果根因未修复，同类问题仍会复发。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "f34a01d4770a2a2e9a757296c88ec7d1a86d6cd2eed00efbd65319b151d19cb4",
+    "afterHash": "5e5673a33a80a40cfbe870d0ce21e6b68ffb2469adc681e88ecb320579a2ea5e",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "before": {
+      "stem": "运营人员忽略一条不满意问题，代表什么？",
+      "explanation": "忽略只将问题移出不满意问题列表。 因此，本题应选择“该问题从不满意列表移除”。"
+    },
+    "after": {
+      "stem": "运营人员将一条不满意反馈标为“忽略”，随后称相关能力已修好。该操作实际只代表什么？",
+      "explanation": "忽略只将问题移出不满意问题列表。 判断要点：忽略仅变更列表状态；如果根因未修复，同类问题仍会复发。"
+    }
+  },
+  {
+    "id": "FDE-M6-054",
+    "module": "M6",
+    "topic": "启用流程／准则来源",
+    "decision": "修订",
+    "finding": "自动建议先审核，再启用和回归；生成完成不代表上线生效。 补充Claw适用范围，避免把调优准则泛化到所有模式。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "325c993d0799fea49649633d5f52cfced8d37ae56aa32c55aa6b3fc73622c56c",
+    "afterHash": "db235e3b1b5f26cd4cda3a07c70fed796d36cc16e3cb5e8dcbf438b0f0578d3b",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "before": {
+      "stem": "系统从反馈生成了准则，为什么应用仍未遵守？",
+      "explanation": "评测或调试自动生成准则先进入待启用列表。 因此，本题应选择“自动生成的准则先待审核启用”。"
+    },
+    "after": {
+      "stem": "在 ADP Claw 模式应用中，系统从反馈生成了准则，为什么应用仍未遵守？",
+      "explanation": "适用范围：官方应用运营文档将调优准则限定为 Claw 模式。评测或调试自动生成准则先进入待启用列表。 判断要点：自动建议先审核，再启用和回归；生成完成不代表上线生效。"
+    }
+  },
+  {
+    "id": "FDE-M6-055",
+    "module": "M6",
+    "topic": "评测反馈／前提条件",
+    "decision": "修订",
+    "finding": "已完成标注是评测驱动生成准则的前提，不能用未判定结果直接学习。 补充Claw适用范围，避免把调优准则泛化到所有模式。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "45996977a9e84f09ac44a71a1c0f4f8eeeadfa17be2d93b91be18e2d6b981a24",
+    "afterHash": "2fd549cb0abe0d5ee0a4b74e6c8a0fb088fb4ea29eb09e6194028bc0774fd401",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "before": {
+      "stem": "从评测驱动生成准则前，哪个条件必须满足？",
+      "explanation": "评测驱动要求对应评测及标注完成。 因此，本题应选择“评测和标注均已完成”。"
+    },
+    "after": {
+      "stem": "在 ADP Claw 模式应用中，从评测驱动生成准则前，哪个条件必须满足？",
+      "explanation": "适用范围：官方应用运营文档将调优准则限定为 Claw 模式。评测驱动要求对应评测及标注完成。 判断要点：已完成标注是评测驱动生成准则的前提，不能用未判定结果直接学习。"
+    }
+  },
+  {
+    "id": "FDE-M6-057",
+    "module": "M6",
+    "topic": "人工规范／手动添加准则",
+    "decision": "修订",
+    "finding": "明确规范可手动配置，但启用后仍需回归与冲突检查。 补充Claw适用范围，避免把调优准则泛化到所有模式。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "ebaea63698fc4c2bbb283b2cb9e668172d1977cd83d45013d84f2af1a1e1d9bb",
+    "afterHash": "9b8bf1d94c855d6bee6cd8d00153de74d182fa44b86c707d671165669b527c97",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "before": {
+      "stem": "业务已有明确回答规范，不想先制造一次错误，应该怎样添加？",
+      "explanation": "已明确要求可直接手动添加，无需先评测或调试。 因此，本题应选择“直接手动输入并保存启用”。"
+    },
+    "after": {
+      "stem": "在 ADP Claw 模式应用中，业务已有明确回答规范，不想先制造一次错误，应该怎样添加？",
+      "explanation": "适用范围：官方应用运营文档将调优准则限定为 Claw 模式。已明确要求可直接手动添加，无需先评测或调试。 判断要点：明确规范可手动配置，但启用后仍需回归与冲突检查。"
+    }
+  },
+  {
+    "id": "FDE-M6-058",
+    "module": "M6",
+    "topic": "状态管理／准则状态",
+    "decision": "修订",
+    "finding": "保留停用和删除的区别，暂不生效不要求销毁原文。 补充Claw适用范围，避免把调优准则泛化到所有模式。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "17a07baa7ad67c91aebfbf15dbae136e08fa35eeadf08aa783459bc17e287934",
+    "afterHash": "41b3cac0217ee6347879e868e7f5e1382f336bf32911678add2a775f7c07c471",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "before": {
+      "stem": "某准则暂不适用，但需保留文本供将来复查，应选择什么？",
+      "explanation": "已停用准则保留内容，不再指导后续行为。 因此，本题应选择“停用准则”。"
+    },
+    "after": {
+      "stem": "在 ADP Claw 模式应用中，某准则暂不适用，但需保留文本供将来复查，应选择什么？",
+      "explanation": "适用范围：官方应用运营文档将调优准则限定为 Claw 模式。已停用准则保留内容，不再指导后续行为。 判断要点：停用和删除的区别，暂不生效不要求销毁原文。"
+    }
+  },
+  {
+    "id": "FDE-M6-060",
+    "module": "M6",
+    "topic": "客户培训／如何写清楚调优要求",
+    "decision": "修订",
+    "finding": "规范要有场景、依据和可验收行为，不要求所有问题机械输出合同编号。 补充Claw适用范围，避免把调优准则泛化到所有模式。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "455fedb68bd7523a331ab5c809040cb4b213ff1b2dd468d7c36316627a2de109",
+    "afterHash": "b4f49fac804ed04d28e064cdcb53867fe0743ff0fb181b95810d864f5d29de67",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/138789"
+    ],
+    "before": {
+      "stem": "哪条培训示例更适合作为可维护的准则？",
+      "explanation": "调优要求应明确场景及具体做法，避免笼统评价。 因此，本题应选择“回答报销问题时列明适用制度版本”。"
+    },
+    "after": {
+      "stem": "在 ADP Claw 模式应用中，哪条培训示例更适合作为可维护的准则？",
+      "explanation": "适用范围：官方应用运营文档将调优准则限定为 Claw 模式。调优要求应明确场景及具体做法，避免笼统评价。 判断要点：规范要有场景、依据和可验收行为，不要求所有问题机械输出合同编号。"
+    }
+  },
+  {
+    "id": "FDE-M6-063",
+    "module": "M6",
+    "topic": "变更保护／功能入口",
+    "decision": "修订",
+    "finding": "切分重建会覆盖人工干预，变更前保存差异，后续回归关键片段。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "b73d6e8203ca5835d63617ceab919af12ec40c0334765219ca992e2a004bd917",
+    "afterHash": "fdeb694cf2cb00407c7eb00c0cb4fd433b8fa38457fa187874989adb763cc6f8",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "before": {
+      "explanation": "重新设置规则会按原文档切分，覆盖既有干预结果。 因此，本题应选择“原干预结果会被重新切分覆盖”。"
+    },
+    "after": {
+      "explanation": "重新设置规则会按原文档切分，覆盖既有干预结果。 判断要点：切分重建会覆盖人工干预，变更前保存差异，后续回归关键片段。"
+    }
+  },
+  {
+    "id": "FDE-M6-065",
+    "module": "M6",
+    "topic": "知识范围／文档导入设置",
+    "decision": "修订",
+    "finding": "仅调试域只是环境范围，不等于所有用户均已有独立授权。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "978db62dbf5a4cce30530e1efae391e2375a68d1aa49f28aecbdc9ef4dba658f",
+    "afterHash": "5b54c8eef15335e8785e8ae4877acf2e4dc6423d1c8c1103c067bd6fd1ced829",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "before": {
+      "explanation": "文档可单独设置仅调试生效，控制开发域可检索范围。 因此，本题应选择“仅调试生效”。"
+    },
+    "after": {
+      "explanation": "文档可单独设置仅调试生效，控制开发域可检索范围。 判断要点：仅调试域只是环境范围，不等于所有用户均已有独立授权。"
+    }
+  },
+  {
+    "id": "FDE-M6-067",
+    "module": "M6",
+    "topic": "依赖清理／文档操作",
+    "decision": "修订",
+    "finding": "旧文档与衍生问答需联动核查，否则可能继续返回旧口径。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "3a5a38a60efa0a53c8c036bc0bbbbe91b94909670cff97b78100f4dbabecf960",
+    "afterHash": "60b39fa3332fd7e9b5e9c17bc29c9eeb9e64b5be7ba60f807af9465276970866",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "before": {
+      "stem": "删除旧文档后，其生成过的问答是否随之删除？",
+      "explanation": "删除文档不会删除由其生成的问答，清理应检查衍生知识。 因此，本题应选择“不会，应单独检查关联问答”。"
+    },
+    "after": {
+      "stem": "旧制度文件已删除，助手仍通过一条历史生成问答给出旧政策。删除源文件会自动清理该问答吗？",
+      "explanation": "删除文档不会删除由其生成的问答，清理应检查衍生知识。 判断要点：旧文档与衍生问答需联动核查，否则可能继续返回旧口径。"
+    }
+  },
+  {
+    "id": "FDE-M6-068",
+    "module": "M6",
+    "topic": "到期恢复／文档概述",
+    "decision": "修订",
+    "finding": "购入容量和恢复失效知识是不同步骤，先检查状态再操作。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "6ba6883677a9e78114bb9644d213f7c683ed9e870515f5f097e30fdc5bd8ae30",
+    "afterHash": "5651f3fe119d962a07315ac6d34b1f4f9998e00787f9850fc88c7604729aca65",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "before": {
+      "explanation": "超量失效的知识购资源后需要手动恢复。 因此，本题应选择“检查并手动批量恢复”。"
+    },
+    "after": {
+      "explanation": "超量失效的知识购资源后需要手动恢复。 判断要点：购入容量和恢复失效知识是不同步骤，先检查状态再操作。"
+    }
+  },
+  {
+    "id": "FDE-M6-072",
+    "module": "M6",
+    "topic": "定时排障／新建定时触发",
+    "decision": "修订",
+    "finding": "计划时间要按企业时区理解，跨地区交接应写明换算。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "3f63a6f79a61caefabe8eb4b474cdc4b1781651f4b34c947766c5ad2c49304ca",
+    "afterHash": "0b1613d92010cce3ae7c4a82eb19220fad4910159388d23e72d0b249130f4841",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "before": {
+      "explanation": "定时规则按应用所属企业设置的时区解析，跨地区交付应明确换算。 因此，本题应选择“应用所属企业的设置时区”。"
+    },
+    "after": {
+      "explanation": "定时规则按应用所属企业设置的时区解析，跨地区交付应明确换算。 判断要点：计划时间要按企业时区理解，跨地区交接应写明换算。"
+    }
+  },
+  {
+    "id": "FDE-M6-073",
+    "module": "M6",
+    "topic": "触发器联调／新建触发器",
+    "decision": "修订",
+    "finding": "事件输入与结果推送是两条链路，触发成功不代表消息送达。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "2e84b6035abc0d7c2913078d7b814c34ff27ddc26250f1066c91b36990dac7bd",
+    "afterHash": "48e0819763c47529c5f4b5f3641f42e98353c6ab1f98dc0e1ad40b2fad26655e",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "before": {
+      "explanation": "事件Webhook与企微群推送Webhook是两套独立地址，应分别配置。 因此，本题应选择“分别配置事件请求和企微群结果推送地址”。"
+    },
+    "after": {
+      "explanation": "事件Webhook与企微群推送Webhook是两套独立地址，应分别配置。 判断要点：事件输入与结果推送是两条链路，触发成功不代表消息送达。"
+    }
+  },
+  {
+    "id": "FDE-M6-077",
+    "module": "M6",
+    "topic": "任务管理／评测任务管理",
+    "decision": "修订",
+    "finding": "保留复制配置与下载运行结果的区别，复制任务不会复制既有结果。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "da58a1851d5f14bf474bd215661efd22d937c1e46a4649d91a00398561701548",
+    "afterHash": "160c5785c74554d3acde3cdcb80ba1cf74e70ab27ddc7dc8b65b55fd21606dbf",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "before": {
+      "explanation": "复制可保留基准和对比配置，完成运行后可下载结果。 因此，本题应选择“复制任务保留评测配置；下载运行后的结果”。"
+    },
+    "after": {
+      "explanation": "复制可保留基准和对比配置，完成运行后可下载结果。 判断要点：复制配置与下载运行结果的区别，复制任务不会复制既有结果。"
+    }
+  },
+  {
+    "id": "FDE-M6-078",
+    "module": "M6",
+    "topic": "配置比较／对比评测配置",
+    "decision": "修订",
+    "finding": "仅输出与裁判评分是两种配置，自动输出不等于已得出优劣结论。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "ae764b01e8daa1b26f62fc85ccb78cce354911518d75160f7c490c602bc673da",
+    "afterHash": "d42b2c3165af838ad6cd6a76c17077cc870b16b548c6b88940593b2b3bce20c1",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104208"
+    ],
+    "before": {
+      "explanation": "对比评测支持多结果输出或裁判模型比较评分。 因此，本题应选择“可只输出多组结果；可用裁判模型比较结果”。"
+    },
+    "after": {
+      "explanation": "对比评测支持多结果输出或裁判模型比较评分。 判断要点：仅输出与裁判评分是两种配置，自动输出不等于已得出优劣结论。"
+    }
+  },
+  {
+    "id": "FDE-M6-083",
+    "module": "M6",
+    "topic": "测试配置／对比测试",
+    "decision": "修订",
+    "finding": "保留固定基础范围比较检索参数的前提，避免把换库效果误判为规则效果。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "95189375d8fc39d839533c666a45c6b8d2310994d65ebf44f898575f6eb47348",
+    "afterHash": "00a8e12d19566ea5e130a8d54dacdc7669f5b2309ebfc4b6d7933708f53d3ba1",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "before": {
+      "explanation": "对比模式固定基础范围，并配置最多三组不同检索规则。 因此，本题应选择“每组分别设置检索召回规则；各组配置不完全相同”。"
+    },
+    "after": {
+      "explanation": "对比模式固定基础范围，并配置最多三组不同检索规则。 判断要点：固定基础范围比较检索参数的前提，避免把换库效果误判为规则效果。"
+    }
+  },
+  {
+    "id": "FDE-M6-085",
+    "module": "M6",
+    "topic": "回退范围／随版本回退的内容说明",
+    "decision": "修订",
+    "finding": "保留本地配置与知识数据的恢复范围差异。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "82b68c0b3b350b703a2ce15fe09a7d4f6090f1cd8302613a98f58d9b15e93e0f",
+    "afterHash": "db9b51118553b5d94e743d902b5e56ad386c480c07eae7f9a105251c9ca714b1",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "before": {
+      "explanation": "应用本地模型参数、Agent设置和工作流配置可回退，知识数据不在此范围。 因此，本题应选择“模型温度等参数；Agent提示词；工作流画布配置”。"
+    },
+    "after": {
+      "explanation": "应用本地模型参数、Agent设置和工作流配置可回退，知识数据不在此范围。 判断要点：本地配置与知识数据的恢复范围差异。"
+    }
+  },
+  {
+    "id": "FDE-M6-089",
+    "module": "M6",
+    "topic": "版本差异／随版本回退的内容说明",
+    "decision": "修订",
+    "finding": "保留共享资源与本地参数的版本边界，工具地址未回退不代表所有恢复失败。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "0e10e52d7f920ac5161b3e3dc024d732aeee9eedec44f0b2f5649077cb49e1e3",
+    "afterHash": "77932ff2b54baff4fe44d012859c231eee3d61029edfe23074caae7533e88e24",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "before": {
+      "explanation": "本地检索参数和共享工具地址的回退规则不同，应按组件范围诊断。 因此，本题应选择“本地检索设置可回退；工具地址是不可回退的共享设置”。"
+    },
+    "after": {
+      "explanation": "本地检索参数和共享工具地址的回退规则不同，应按组件范围诊断。 判断要点：共享资源与本地参数的版本边界，工具地址未回退不代表所有恢复失败。"
+    }
+  },
+  {
+    "id": "FDE-M6-090",
+    "module": "M6",
+    "topic": "迁移清单／不会被导出的内容",
+    "decision": "修订",
+    "finding": "应用包不等于全套运行环境，渠道、画像和运营数据需单独交接。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "230f18867c22ff163fff3637ef0e6ce690268ffef3d376ec5207ba040691c6e0",
+    "afterHash": "c3d1b9ed9e406cac597ce39116fb180dadff4ce87603920cdd15b2d80e93b523",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "before": {
+      "explanation": "应用包排除运营、渠道及长期记忆用户画像，交接需单独核查。 因此，本题应选择“对话记录和运营分析；发布渠道；长期记忆用户画像”。"
+    },
+    "after": {
+      "explanation": "应用包排除运营、渠道及长期记忆用户画像，交接需单独核查。 判断要点：应用包不等于全套运行环境，渠道、画像和运营数据需单独交接。"
+    }
+  },
+  {
+    "id": "FDE-M6-091",
+    "module": "M6",
+    "topic": "目标配置／需要在目标环境重新配置的内容",
+    "decision": "修订",
+    "finding": "迁移后需验证凭证及接口，不得假定源环境API密钥自动继承。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "e7ff802fc655841e4ddc003e7bfc93f0790e7643c1dea5940960010582361461",
+    "afterHash": "54393abfd64a96108a43267088a00bc97c73192c5e2bfee6e48fc429d5659910",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "before": {
+      "explanation": "三方数据库、API key模型和CAM授权工具属于目标环境重配内容。 因此，本题应选择“已连接三方数据库；API key接入第三方模型；CAM授权工具”。"
+    },
+    "after": {
+      "explanation": "三方数据库、API key模型和CAM授权工具属于目标环境重配内容。 判断要点：迁移后需验证凭证及接口，不得假定源环境API密钥自动继承。"
+    }
+  },
+  {
+    "id": "FDE-M6-094",
+    "module": "M6",
+    "topic": "迁移边界／不会被导出的内容",
+    "decision": "修订",
+    "finding": "内容安全与应用端权限不随包交付时，上线必须补配并验证。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "09fa7aa619328ec8f8d36d2ffa9c410c2bc85358f7523fac6bab6578c4aea6c9",
+    "afterHash": "366e9bf6a4b3e13e09578aecab5765ffee66675939857e10105a96ee65befef0",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/130990"
+    ],
+    "before": {
+      "explanation": "应用包排除端用户权限与内容安全设置，不等于完整环境备份。 因此，本题应选择“应用端权限设置；应用内容安全设置”。"
+    },
+    "after": {
+      "explanation": "应用包排除端用户权限与内容安全设置，不等于完整环境备份。 判断要点：内容安全与应用端权限不随包交付时，上线必须补配并验证。"
+    }
+  },
+  {
+    "id": "FDE-M6-097",
+    "module": "M6",
+    "topic": "排障素材／对话记录",
+    "decision": "修订",
+    "finding": "失败复现需输入、上下文和组件调用，统计总数不足以复现。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "90048bcc277d8c2ce6bbf7554cc6bc9ca89a9b883844f8fd133a673960a55e4f",
+    "afterHash": "57bc7ba6c23eda230611d55ea1f6de7f0dc70a7efe81fbdae11ead18b988817d",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/104210"
+    ],
+    "before": {
+      "explanation": "对话记录能查看调用链并导出为评测集，但有文档展示边界。 因此，本题应选择“查看上下文和组件调用；将对话导出为评测集”。"
+    },
+    "after": {
+      "explanation": "对话记录能查看调用链并导出为评测集，但有文档展示边界。 判断要点：失败复现需输入、上下文和组件调用，统计总数不足以复现。"
+    }
+  },
+  {
+    "id": "FDE-M6-104",
+    "module": "M6",
+    "topic": "解析排障／文档图片解析",
+    "decision": "修订",
+    "finding": "过滤条件为或，需检查关键图片是否被尺寸规则误排除。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "c1562704c6ec1d5a646faf8cb606fad45f6d7480418644001a9949c5a264f81e",
+    "afterHash": "1400103b62ddb3b481872248a13cb8ea20373245b0c458b355a04a7abd3c1d38",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "before": {
+      "explanation": "过滤条件是或关系，且名称过滤有格式限制，应检查小图是否被当装饰图排除。 因此，本题应选择“符合任一条件即可被过滤；应核查尺寸是否误覆盖关键图”。"
+    },
+    "after": {
+      "explanation": "过滤条件是或关系，且名称过滤有格式限制，应检查小图是否被当装饰图排除。 判断要点：过滤条件为或，需检查关键图片是否被尺寸规则误排除。"
+    }
+  },
+  {
+    "id": "FDE-M6-107",
+    "module": "M6",
+    "topic": "知识生命周期／文档操作",
+    "decision": "修订",
+    "finding": "区分平台已过期失效状态与时效性检索配置，避免按一个日期武断判断。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "784ee1478db683629a043e8b20fc99c96ef8b30da29a20d997cf6f45b3153b3f",
+    "afterHash": "0992d7b9163776266b2ae04e76e70581fa94df79d3793c6e5d5ee8eb64419e06",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702",
+      "https://cloud.tencent.com/document/product/1759/138380"
+    ],
+    "before": {
+      "explanation": "平台已过期失效、停用和学习失败会妨碍问答。应区分已过期失效状态与时效性检索允许超有效期仍被检索的配置，不能仅按日期判定不可用。"
+    },
+    "after": {
+      "explanation": "平台已过期失效、停用和学习失败会妨碍问答。应区分已过期失效状态与时效性检索允许超有效期仍被检索的配置，不能仅按日期判定不可用。 判断要点：区分平台已过期失效状态与时效性检索配置，避免按一个日期武断判断。"
+    }
+  },
+  {
+    "id": "FDE-M6-108",
+    "module": "M6",
+    "topic": "生成准备／从文档生成问答步骤",
+    "decision": "修订",
+    "finding": "保留文档导入与生成问答格式限制两项前提。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "2390df6d4d206c0f20e605dfb3ad69dc2ed3a704a61fd845c4da531a1b20546f",
+    "afterHash": "28cac85b8240ec256eb8358c34e4a5fe36c419aa0fdfe86ac10482818237d75c",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "before": {
+      "explanation": "生成问答有源文档导入及格式两项前提，不能只看知识库支持的文件范围。 因此，本题应选择“PDF先导入再用于生成；表格形式暂不支持该生成入口”。"
+    },
+    "after": {
+      "explanation": "生成问答有源文档导入及格式两项前提，不能只看知识库支持的文件范围。 判断要点：文档导入与生成问答格式限制两项前提。"
+    }
+  },
+  {
+    "id": "FDE-M6-109",
+    "module": "M6",
+    "topic": "元数据交接／使用前提",
+    "decision": "修订",
+    "finding": "元数据配置需编辑权限及既有来源，不应凭空增设独立权限位。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "f7b37cce7d9aaf131d21f7910e3988aa09d8207b2669229c457ad7148935c9d2",
+    "afterHash": "9fac6a3d1b156595b22d9b6bb92c5ed4cab976ba4d8fa99127ee7ffbf6cf235d",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240"
+    ],
+    "before": {
+      "explanation": "元数据以标签和分类为来源，管理权限跟随知识库，不新增独立权限位。 因此，本题应选择“已有标签或分类可作为来源；人员具备知识库编辑权限”。"
+    },
+    "after": {
+      "explanation": "元数据以标签和分类为来源，管理权限跟随知识库，不新增独立权限位。 判断要点：元数据配置需编辑权限及既有来源，不应凭空增设独立权限位。"
+    }
+  },
+  {
+    "id": "FDE-M7-011",
+    "module": "M7",
+    "topic": "模式安全边界",
+    "decision": "修订",
+    "finding": "限定2026-02-26文档所述内置权限能力；不泛化为Multi-Agent项目无法通过其他设计隔离数据。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "60009a27d817192c7d2681742942f0b920a6f1f4b65169b58fb70377f5b3494a",
+    "afterHash": "adaa07b27fecb3480b54d92aed76f1cdc43a42e1978e317371173d2923935bfb",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "before": {
+      "stem": "方案依赖 ADP 应用端用户权限实现知识隔离。按核实版本，哪种应用模式明确不支持该能力？",
+      "explanation": "这是产品能力边界，不能因为另一个模式能使用知识库，就推断它支持同一权限机制。"
+    },
+    "after": {
+      "stem": "方案拟用Multi-Agent并直接依赖平台“应用端用户权限”隔离知识。按该功能2026-02-26文档，哪个模式明确不支持这项内置能力？",
+      "explanation": "这是产品能力边界，不能因为另一个模式能使用知识库，就推断它支持同一权限机制。 判断要点：限定2026-02-26文档所述内置权限能力；不泛化为Multi-Agent项目无法通过其他设计隔离数据。"
+    }
+  },
+  {
+    "id": "FDE-M7-013",
+    "module": "M7",
+    "topic": "用户标识对应",
+    "decision": "修订",
+    "finding": "visitor_biz_id对应权限主体，但服务端应保证它代表已认证用户。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "3418f0b6f10e3fb90599226e6e63fb7e089370c33554f59f9d97c0c15bf16d84",
+    "afterHash": "ad0bafe8f802800cbda036c86ab2689364547aeee0fee4e3b9140dcb9b1660b2",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "before": {
+      "stem": "平台已设置用户 ID 为 emp42；应用 API 应通过哪个参数传入该标识以套用权限？",
+      "explanation": "用户 ID 必须与请求中的 visitor_biz_id 对应；仅显示昵称不足以让权限系统识别授权主体。"
+    },
+    "after": {
+      "stem": "控制台已配置用户emp42及知识范围，对话接口却只传了昵称，权限没有按预期识别。应使用哪个参数传入对应用户ID？",
+      "explanation": "用户 ID 必须与请求中的 visitor_biz_id 对应；仅显示昵称不足以让权限系统识别授权主体。 判断要点：visitor_biz_id对应权限主体，但服务端应保证它代表已认证用户。"
+    }
+  },
+  {
+    "id": "FDE-M7-014",
+    "module": "M7",
+    "topic": "外部授权过滤位置",
+    "decision": "修订",
+    "finding": "无权片段必须在进入模型前过滤，事后删引用无法撤回已暴露上下文。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "c5b4ef142dabd3b8ed2837b9499df7369527929e494a7732e9ea783ce7f69e1c",
+    "afterHash": "ed1ade02006a94fda415ad085845719fb1e1af284f7406ccfff6005c99f5b1c7",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "before": {
+      "stem": "外部权限系统判断候选切片不可访问后，ADP 文档描述的处理是什么？",
+      "explanation": "关键边界是生成前过滤检索结果，而非答案生成后删掉引用链接。"
+    },
+    "after": {
+      "stem": "外部授权服务已判定部分召回片段无权访问。为了避免这些内容参与生成，平台描述的正确处理位置是什么？",
+      "explanation": "关键边界是生成前过滤检索结果，而非答案生成后删掉引用链接。 判断要点：无权片段必须在进入模型前过滤，事后删引用无法撤回已暴露上下文。"
+    }
+  },
+  {
+    "id": "FDE-M7-027",
+    "module": "M7",
+    "topic": "凭证编辑影响",
+    "decision": "修订",
+    "finding": "共享凭证变更影响已发布依赖，需先查看引用范围再验证调用。",
+    "changedFields": [
+      "stem",
+      "explanation"
+    ],
+    "beforeHash": "908879cbe693578deaf46f1644c58fbf048a4234cafe58c86c1ebd11384f6814",
+    "afterHash": "2bb923400028bf14e4c264d49e5300ac1cad347b120ab2a5c6f27b8fcd955b22",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "before": {
+      "stem": "已发布应用仍引用一条统一凭证；保存该凭证的新授权内容后会怎样？",
+      "explanation": "凭证并非固定嵌入发布快照的副本，变更前应检查引用依赖，避免线上调用突然改变。"
+    },
+    "after": {
+      "stem": "维护人员直接修改一条多应用共用的凭证，认为已发布版本不会受影响。哪项判断符合授权凭证文档？",
+      "explanation": "凭证并非固定嵌入发布快照的副本，变更前应检查引用依赖，避免线上调用突然改变。 判断要点：共享凭证变更影响已发布依赖，需先查看引用范围再验证调用。"
+    }
+  },
+  {
+    "id": "FDE-M7-081",
+    "module": "M7",
+    "topic": "原生Skills API凭证",
+    "decision": "修订",
+    "finding": "原生Skills依赖API鉴权，扫描合格不替代调用身份；文档入口不应解读为每个终端用户须持主账号密钥。",
+    "changedFields": [
+      "explanation"
+    ],
+    "beforeHash": "24c72de8b4355e7796c0759ba37b719de71326965ed97ec7cb187af8f3a17f9b",
+    "afterHash": "0d3d14e0bb2446428a34c876613462b1104dc09d4780253d5146c37c1049c142",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "before": {
+      "explanation": "原生技能审核解决上架可信性，接口密钥解决调用身份；两层要求不能互相替代。"
+    },
+    "after": {
+      "explanation": "原生技能审核解决上架可信性，接口密钥解决调用身份；两层要求不能互相替代。 判断要点：原生Skills依赖API鉴权，扫描合格不替代调用身份；文档入口不应解读为每个终端用户须持主账号密钥。"
+    }
+  }
+]

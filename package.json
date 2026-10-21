@@ -1,0 +1,8 @@
+{
+  "name": "fde-learning",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs tests/store.test.mjs tests/round1.test.mjs"
+  }
+}

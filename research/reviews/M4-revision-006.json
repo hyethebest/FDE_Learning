@@ -1,0 +1,130 @@
+[
+  {
+    "id": "FDE-M4-040",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "题设已明确上游提供经确认的稳定片段标识及来源映射，不再假设检索原生承诺稳定ID；按身份去重后生成满足计数和出处两约束。"
+    ],
+    "reason": "题设已明确上游提供经确认的稳定片段标识及来源映射，不再假设检索原生承诺稳定ID；按身份去重后生成满足计数和出处两约束。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966",
+      "https://cloud.tencent.com/document/product/1759/112967",
+      "https://cloud.tencent.com/document/product/1759/112963"
+    ],
+    "contentHash": "1d23f3748cd9387c30cfb693c831333debb3d148ac4cc10d695b14117abd4eba",
+    "stem": "上游已为检索片段提供经确认稳定的片段标识及来源映射。两轮检索有重叠片段，客户要求报告只计算一次同一证据的出现，并保留出处。哪条处理顺序满足要求？",
+    "answer": [
+      "B"
+    ],
+    "revision": 6,
+    "supersedesHash": "13e7fa2bffa81c9292006509ff8faef063f10b299b88e45af0de7b7fc242db1d"
+  },
+  {
+    "id": "FDE-M4-151",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已改为当前接口与指定日期历史快照的时间口径对齐，区别原知识/API边界题；分别取得再按对象键计算有充分来源及题设支持。"
+    ],
+    "reason": "已改为当前接口与指定日期历史快照的时间口径对齐，区别原知识/API边界题；分别取得再按对象键计算有充分来源及题设支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119291",
+      "https://cloud.tencent.com/document/product/1759/115872",
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "contentHash": "6f48eae7c5c0d14ef9ab944fd53db6f930a80166b2aab39732e4967080cdd807",
+    "stem": "客户要比较本月实时库存与上月末数量。现有接口仅返回当前库存，历史快照另存于可查询台账。哪种方案能满足证据要求？",
+    "answer": [
+      "C"
+    ],
+    "revision": 6,
+    "supersedesHash": "7a41e3b73c92bdf215c901cc27880c00a54b4cf0730962fc0ae68d3f762c5b05"
+  },
+  {
+    "id": "FDE-M4-163",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已改为字段均已提取但跨字段关系非法，提取与业务合法性分层是独立故障；代码校验日期顺序正确。"
+    ],
+    "reason": "已改为字段均已提取但跨字段关系非法，提取与业务合法性分层是独立故障；代码校验日期顺序正确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112962",
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "contentHash": "630ec760a4ee7ec5a051532e6e3f601898fb41d131f6e1dfc683354a500f102c",
+    "stem": "用户已明确给出开始日和结束日，两字段均成功提取，但结束日早于开始日。客户要求拒绝这种区间。应怎样补链路？",
+    "answer": [
+      "C"
+    ],
+    "revision": 6,
+    "supersedesHash": "54479da9fc28ab82d487673c78a783f8883d77b68d7750f53214954b34b2e67d"
+  },
+  {
+    "id": "FDE-M4-167",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已改为两专家结论冲突后的证据汇总及未决分流，区别动态工具选择；未声称存在自动事实仲裁能力。"
+    ],
+    "reason": "已改为两专家结论冲突后的证据汇总及未决分流，区别动态工具选择；未声称存在自动事实仲裁能力。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122554",
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "contentHash": "05ef616fcca980a2bb34edbaec3ee1370fddc5c900d1514fdc76d293c20be890",
+    "stem": "两个专家Agent分别从材料得出相互冲突结论，客户要求未解决前不能输出确定结论。应如何设计汇总路径？",
+    "answer": [
+      "C"
+    ],
+    "revision": 6,
+    "supersedesHash": "06c20eb7b47d74d6da4c87e9f6d848cee3e318f5559f44a5f3b8bf55359f4568"
+  },
+  {
+    "id": "FDE-M4-169",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已改共享知识库的库维度元数据变更对两应用影响验证；来源支持平台库共享及库维度设置，正确项是合理变更评审。"
+    ],
+    "reason": "已改共享知识库的库维度元数据变更对两应用影响验证；来源支持平台库共享及库维度设置，正确项是合理变更评审。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138240",
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "90de8dbafbf04065bdc01aa823fe935218eb94238ae1b262a5178f6f617c0005",
+    "stem": "两个应用共享一套知识库。方案拟把文档分类设为元数据，客户甲依赖原召回表现，客户乙需要按分类检索。哪项评审最完整？",
+    "answer": [
+      "A"
+    ],
+    "revision": 6,
+    "supersedesHash": "dff58071421154096e6a3be7abba4887856b58e5336b26a177656e87aae913d6"
+  },
+  {
+    "id": "FDE-M4-173",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已限定Claw已挂载且可读指令，故障为脚本依赖缺失，明确针对执行环境而非安装入口；两官方技能页面支持。"
+    ],
+    "reason": "已限定Claw已挂载且可读指令，故障为脚本依赖缺失，明确针对执行环境而非安装入口；两官方技能页面支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134602",
+      "https://cloud.tencent.com/document/product/1759/129563"
+    ],
+    "contentHash": "b0592c5c3500518887b434b261da391eae60097481d2e4e0ce5646b478a3cee7",
+    "stem": "Claw应用已正确挂载一个Skill，能读到指令，但执行其中脚本时报告缺少所需依赖。应优先检查什么？",
+    "answer": [
+      "A"
+    ],
+    "revision": 6,
+    "supersedesHash": "b85c8282b93dc86001324807c6861db4c5bee17b0e3f417c52b9c23ef5bea59a"
+  }
+]

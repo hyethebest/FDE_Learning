@@ -1,0 +1,71 @@
+[
+  {
+    "id": "FDE-M7-062",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "reviewMethod": "independent_ai_review_not_human_expert",
+    "notes": [
+      "独立AI复审，非人工专家审校；作者safety与复审者foundations_modes不同。",
+      "实际读取国内官方96157正文；升级说明第30及35行明确适用于所有主账号和子账号，自2023-11-30起SecretKey只能创建时查看保存。正确项A、解析及三项干扰一致。",
+      "页面更新时间2023-11-28与题源一致；不依赖无法访问的37140或搜索摘要。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/96157"
+    ],
+    "contentHash": "4d33f4cf13587f385da354a769d461b17ae8488467ef530d4188dc76ebd7ae77",
+    "previousContentHash": "9f77ca9878258a9688359c440a46c36f16532ba5dcfe829f06c32db5e607f6fa"
+  },
+  {
+    "id": "FDE-M7-063",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "reviewMethod": "independent_ai_review_not_human_expert",
+    "notes": [
+      "独立AI复审，非人工专家审校；作者safety与复审者foundations_modes不同。",
+      "实际读取国内官方40488正文；第105至107行明确主账号密钥禁用后拒绝该密钥所有请求，支持C并排除仅限制新引用、控制台密码及只读降权。",
+      "题干已限定清理已有主账号密钥，未将主账号流程套用子账号；第48行支持解析对日常使用主账号密钥的提醒，版本2026-05-09一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/40488"
+    ],
+    "contentHash": "7d387cde3ee92f232f46cce68aa07a960e918686e552000efc00e4ebd3f4c10b",
+    "previousContentHash": "15fec0116dd29ecfbd006a7f60f38eb6c82999963a945f0e05b07add08fa8ffc"
+  },
+  {
+    "id": "FDE-M7-098",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "reviewMethod": "independent_ai_review_not_human_expert",
+    "notes": [
+      "独立AI复审，非人工专家审校；作者safety与复审者foundations_modes不同。",
+      "实际读取国内官方123925正文第58至64行：业务切换后禁用旧子用户密钥，观察无异常再删除，是轮转建议而非删除API强制前置规则。",
+      "实际读取国内官方82369正文第40至41及59至61行：删除指定AccessKeyId且不可恢复，操作对象是凭证而非账号和资源。答案C、D和解析相符；两页版本2025-10-10与2025-09-12一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/123925",
+      "https://cloud.tencent.com/document/product/598/82369"
+    ],
+    "contentHash": "36b98460cc9b81b19ee1bb2918a783dd0d4e7f116173235e13c06d07c9a6df82",
+    "previousContentHash": "199127a0cb775802d9687ca9be09cb0a78ac8e711f1e115a410a3a26d79f6e3c"
+  },
+  {
+    "id": "FDE-M7-099",
+    "status": "approved",
+    "reviewer": "foundations_modes",
+    "reviewMethod": "independent_ai_review_not_human_expert",
+    "notes": [
+      "独立AI复审，非人工专家审校；作者safety与复审者foundations_modes不同。",
+      "实际读取国内官方40488正文第38至44行的通用API密钥定义：SecretId标识、SecretKey验证调用者身份。答案A、C及干扰解析相符。",
+      "该定义在主账号管理页中仍为API密钥字段通用定义，本题未外推具体主账号流程到其他身份；版本2026-05-09一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/598/40488"
+    ],
+    "contentHash": "7c4a5f18c64383ff5928f467b7e2223b1fc707ccefe391d2afd96b57bb131053",
+    "previousContentHash": "f8665ed68b2a8294e2e5bee62af9e9da602a45c8b6e52184f368a8456febca70"
+  }
+]

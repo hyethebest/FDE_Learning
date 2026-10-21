@@ -1,0 +1,36 @@
+{
+  "changedQuestion": "FDE-M4-178",
+  "contentHash": "76c128072c12d5ef503b96419bc54bd967245265b40fc192a3171cbac004f9af",
+  "reviewReport": "research/reviews/M4-audit-source-fix.json",
+  "independentAIApproved": 250,
+  "questionCount": 250,
+  "single": 166,
+  "multiple": 84,
+  "reviewScope": "独立AI代理复核；非腾讯官方或人工专家审校。",
+  "originalReportsPreserved": true,
+  "validation": {
+    "total": 250,
+    "errors": [],
+    "nearDuplicates": [],
+    "counts": {
+      "M4/multiple": 84,
+      "M4/single": 166
+    },
+    "answerDistribution": {
+      "B": 51,
+      "A/B/C": 23,
+      "C": 35,
+      "A": 42,
+      "A/C/D": 18,
+      "D": 38,
+      "B/C": 3,
+      "B/C/D": 14,
+      "A/B/D": 12,
+      "C/D": 4,
+      "A/D": 3,
+      "A/B": 4,
+      "B/D": 2,
+      "A/C": 1
+    }
+  }
+}

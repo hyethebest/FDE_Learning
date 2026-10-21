@@ -1,0 +1,67 @@
+[
+  {
+    "id": "FDE-M3-005",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "重核112702可下载文档章节，FileUrl/CosUrl二选一且同传Cos优先。新接口参数目标独立。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "8b3dd0963c1f5a1d4a22a138d97fcc38c2ac7f8fb3931b2d7dcbe4c7bdafba65"
+  },
+  {
+    "id": "FDE-M3-009",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "重核112702网页导入，xlsx最多500条/15MB，与逐条20URL区分准确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "75e9b5aa62468c0499e2cbdc24c92ce690eed8a8b141b27e1008fc91a79b182c"
+  },
+  {
+    "id": "FDE-M3-013",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "重核112703：来源不可改、关联文档可选，二者独立属性。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "8a79ef333f238212ed6189707bfbbdff33fc9110af9804615e933add6ec19621"
+  },
+  {
+    "id": "FDE-M3-014",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "重核112703状态说明审核中不可编辑；不再重复问答采纳。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "b8cb5d680b646fb1fa15290058ffcdcad08c66f4e0f4caa816ca37a7eef5d158"
+  },
+  {
+    "id": "FDE-M3-016",
+    "status": "approved",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "重核112703问答分类最多10层；层级规划任务独立。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "30f79288b949c36f7145af8cd876b0b1c8597eda380669f7b3e11affc9e07a7e"
+  }
+]

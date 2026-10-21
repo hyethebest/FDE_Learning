@@ -1,0 +1,82 @@
+[
+  {
+    "id": "FDE-M4-068",
+    "reason": "两题都是MCP已连接且tools/list为空意味着无工具；方案字样没有新增判断。",
+    "duplicateOf": "FDE-M3-111"
+  },
+  {
+    "id": "FDE-M5-037",
+    "reason": "异步正文不能标准抓取的同一事实，仅政策源与客户网页称谓不同。",
+    "duplicateOf": "FDE-M4-071"
+  },
+  {
+    "id": "FDE-M4-057",
+    "reason": "两题均选择严格阈值精准判断、语义用模型；场景文字和验证句未形成新决策。",
+    "duplicateOf": "FDE-M3-091"
+  },
+  {
+    "id": "FDE-M4-046",
+    "reason": "两题都将多个流程重复公共逻辑封装为子工作流复用，无新制约。",
+    "duplicateOf": "FDE-M3-092"
+  },
+  {
+    "id": "FDE-M7-034",
+    "reason": "SkillHub自动检测更新的同一事实；安全复核版本的附加措辞未增加实质决策。",
+    "duplicateOf": "FDE-M3-130"
+  },
+  {
+    "id": "FDE-M2-056",
+    "reason": "两题均列举自定义工具描述、输入输出、调用方式，拆成不同选项不独立。",
+    "duplicateOf": "FDE-M1-076"
+  },
+  {
+    "id": "FDE-M4-092",
+    "reason": "两题均将长说明辅助文档放references供按需加载，只改成客户方案语气。",
+    "duplicateOf": "FDE-M3-143"
+  },
+  {
+    "id": "FDE-M3-033",
+    "reason": "最大回复Token限制生成长度的概念与选参数题互为同义问法。",
+    "duplicateOf": "FDE-M1-014"
+  },
+  {
+    "id": "FDE-M3-179",
+    "reason": "非Claw模式互切集合和标准可切其他非Claw模式重复同一边界。",
+    "duplicateOf": "FDE-M2-019"
+  },
+  {
+    "id": "FDE-M4-145",
+    "reason": "均凭自主运行代码与文件产物选择Claw独立空间；清洗/图表仅任务包装。",
+    "duplicateOf": "FDE-M2-015"
+  },
+  {
+    "id": "FDE-M3-155",
+    "reason": "关闭长期记忆停止读写但保留内容，题干问法不同、判断完全相同。",
+    "duplicateOf": "FDE-M1-058"
+  },
+  {
+    "id": "FDE-M4-097",
+    "reason": "已上架自定义Skill经审批成为企业共享同一路径，无新增限制。",
+    "duplicateOf": "FDE-M2-034"
+  },
+  {
+    "id": "FDE-M4-044",
+    "reason": "不可序列化代码输出转JSON表达结果，两题的触发与解决完全相同。",
+    "duplicateOf": "FDE-M3-082"
+  },
+  {
+    "id": "FDE-M6-064",
+    "reason": "网页无登录授权前提一题正向选页面、一题反向判失败，未增加诊断证据。",
+    "duplicateOf": "FDE-M3-006"
+  },
+  {
+    "id": "FDE-M3-180",
+    "reason": "默认库仅当前应用、跨应用需平台库是同一共享边界，M2多一句替代方案未改变核心。",
+    "duplicateOf": "FDE-M2-037"
+  },
+  {
+    "id": "FDE-M4-079",
+    "reason": "同用户同库记忆一致与要一致就绑定同库互为正反问法，无新增工程约束。",
+    "duplicateOf": "FDE-M1-057"
+  }
+]

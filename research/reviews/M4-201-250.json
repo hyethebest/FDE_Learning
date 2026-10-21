@@ -1,0 +1,940 @@
+[
+  {
+    "id": "FDE-M4-201",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "会话隔离WF变量的选择需题干明确两笔申请各用独立Session。当前“独立申请”未保证不同会话，不能仅凭作用域表证明同Session并发请求临时清单互不混用；请补独立Session前提。"
+    ],
+    "reason": "会话隔离WF变量的选择需题干明确两笔申请各用独立Session。当前“独立申请”未保证不同会话，不能仅凭作用域表证明同Session并发请求临时清单互不混用；请补独立Session前提。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "contentHash": "7e56d11569e76b8441f40125609fc45f9b8c310a795b23638dc7ba6f6fd70b67",
+    "stem": "同一员工可同时办理两笔独立申请。题设要求两笔申请的临时清单互不混用，但该员工的偏好可供应用内多个流程使用。依据变量作用域，哪种划分更合适？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-202",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "API传入后端属性与APP可读写处理状态职责分开，SYS只读及节点局部范围排除其余选项；未把上下文透传当鉴权。"
+    ],
+    "reason": "API传入后端属性与APP可读写处理状态职责分开，SYS只读及节点局部范围排除其余选项；未把上下文透传当鉴权。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "contentHash": "4fbb7649c03b679045c662dfc0c9d15cb8ba02b33a03b6e9cc23127dc239af0b",
+    "stem": "某标准模式应用由业务后端传入客户等级，流程又会生成可修改的处理备注，多个工作流都要读取。团队要求不把后端等级当作流程随意改写的状态。哪种契约最清楚？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-203",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "不可覆盖SYS原文且需要规范化派生文本，输出独立传给检索同时满足审计和检索约束，区别单纯变量名记忆。"
+    ],
+    "reason": "不可覆盖SYS原文且需要规范化派生文本，输出独立传给检索同时满足审计和检索约束，区别单纯变量名记忆。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "contentHash": "6e87f67366b43b69b4b5b72cafad30cec61f485ea02d010fe876b2349ac48fad",
+    "stem": "审计要求保留用户原始文本，检索步骤又需要去掉多余格式后的规范化内容。团队拟覆盖SYS.UserQuery来节省一个字段。哪个设计更符合接口边界？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-204",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "共享平台知识内容不改变APP变量的应用边界，跨应用笔记同步需要独立契约；未套用已更新的长期记忆隔离旧结论。"
+    ],
+    "reason": "共享平台知识内容不改变APP变量的应用边界，跨应用笔记同步需要独立契约；未套用已更新的长期记忆隔离旧结论。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457",
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "7ded9d1110840b8ce7a266bf3a7fb4697915a6c2f99ff3a063c6e618f9d9b3c3",
+    "stem": "两套标准模式应用引用同一制度知识库，业务方因此要求它们自动共享APP.Notes中的用户笔记。题设不允许未经验证的同步承诺，应怎样修订方案？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-205",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与M7-016两用户同昵称须不同用户ID，以及M7-013的visitor_biz_id映射实质同任务；友好称呼未增加决定性约束。请替换独立身份接入故障或多条件契约任务。"
+    ],
+    "reason": "与M7-016两用户同昵称须不同用户ID，以及M7-013的visitor_biz_id映射实质同任务；友好称呼未增加决定性约束。请替换独立身份接入故障或多条件契约任务。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281",
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "contentHash": "504ab25aaab3c29cbd943c4466d41e0ca5ed7047ed879e10633989c74e33b113",
+    "stem": "门户里两名员工昵称相同，权限系统的员工编号不同。应用按角色限制知识，页面还要友好称呼员工。哪种接入契约同时满足两个要求？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-206",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "清洗后单一值供接口与摘要两个消费者，显式输出可核对一致数据流；不同于M3-190只列变量范围的事实判断。"
+    ],
+    "reason": "清洗后单一值供接口与摘要两个消费者，显式输出可核对一致数据流；不同于M3-190只列变量范围的事实判断。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "contentHash": "c090116a6e386f8c65fdab6f287d9de00b90b854d0482a0499e27544a9c575fc",
+    "stem": "一个节点清洗出客户编号，下游既要用它查接口，也要把它写入处理摘要。当前编号仅存于清洗节点的内部输入字段。哪项修订能形成可检查的数据流？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-207",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "题设排除AgentId错误后，核总开关尚未发布针对实际故障；133870区分开关需发布与启用后动态更新无需重发。"
+    ],
+    "reason": "题设排除AgentId错误后，核总开关尚未发布针对实际故障；133870区分开关需发布与启用后动态更新无需重发。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133870"
+    ],
+    "contentHash": "bf1b3b4f0308105f21ad960a429aa2d2677677053791cc3be1b0b1467e15c855",
+    "stem": "Claw应用已上线。开发者刚在草稿开启动态配置，复制用户级Agent并更换模型，但正式会话仍用旧配置。题设确认AgentId传递正确，下一步优先核对什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-208",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "不同用户需不同能力配置且互不覆盖，复制用户级Agent并分别绑定会话完整满足对象和接入两约束。"
+    ],
+    "reason": "不同用户需不同能力配置且互不覆盖，复制用户级Agent并分别绑定会话完整满足对象和接入两约束。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133870"
+    ],
+    "contentHash": "4c82b1024564abe6e2e652790f4c9cacc2da89ba1e20ed6a94da656c1d117893",
+    "stem": "客户希望同一Claw应用中甲用适合代码的模型、乙用适合写作的模型，且互不覆盖。已启用并发布动态配置开关。哪条路径符合要求？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-209",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "模型工具不变仅透传业务上下文，Contents自定义变量可免复制修改Agent，解析保留总开关前提。"
+    ],
+    "reason": "模型工具不变仅透传业务上下文，Contents自定义变量可免复制修改Agent，解析保留总开关前提。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133870"
+    ],
+    "contentHash": "44614f986ef481329aed9ee5f4f4cb5f6b2a396358776b9535629b58f9b884a6",
+    "stem": "Claw应用的模型和工具固定，只需每次传入不同部门与本次报告月份。题设允许启用动态配置，但不要求给每个用户维护独立能力组合。最简符合文档的路线是什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-210",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已排除开关及块类型后，对象数组先序列化是133870正文明确要求；未采用文档代码样例拼写疑点。"
+    ],
+    "reason": "已排除开关及块类型后，对象数组先序列化是133870正文明确要求；未采用文档代码样例拼写疑点。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133870"
+    ],
+    "contentHash": "81299d49b957d6f6bdac008582b52cd36ed87b3dd45e77467e33de6bc7818cac",
+    "stem": "按Claw新版接口传入一个部门对象和一组已授权项目编号，文本消息能收到，结构化内容却无法正确接收。题设确认开关和字段块类型正确，应优先修正什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-211",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "只换模型且保留技能工具要求UpdateMask仅Model；空SkillList会清空而非忽略，正确项唯一。"
+    ],
+    "reason": "只换模型且保留技能工具要求UpdateMask仅Model；空SkillList会清空而非忽略，正确项唯一。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133870"
+    ],
+    "contentHash": "31760f1c46333b10a6bb2ebcb0429187cc5c2a6f91d5b84137230e3d6676b19b",
+    "stem": "某用户级Agent已配置专业Skill和查询工具，现只更换模型，要求其他能力保持。依据动态配置文档，应怎样约束更新请求？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-212",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "追加技能并保留原有集合需要全量列表A/B/C，直接[C]的增量误读被明确纠正。"
+    ],
+    "reason": "追加技能并保留原有集合需要全量列表A/B/C，直接[C]的增量误读被明确纠正。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133870"
+    ],
+    "contentHash": "11c3a6a46b0d4943186bc42e78ed3faaa9fbd89b149e1de0f2f844be18e218ea",
+    "stem": "用户级Agent已装A、B两个Skill，现在只想追加C并保留原技能。工程师准备只提交[C]。哪项修改符合官方列表语义？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-213",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "双界面并发与全量覆盖产生独立协调需求，题目将串行化/集合核对责任放集成层，未虚构平台并发合并保证。"
+    ],
+    "reason": "双界面并发与全量覆盖产生独立协调需求，题目将串行化/集合核对责任放集成层，未虚构平台并发合并保证。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133870"
+    ],
+    "contentHash": "9ad7a3e5e72a7d8e5eb4cc6c091c11314615646764962490edd15b4c9d484cae",
+    "stem": "同一用户级Agent由两个管理界面维护Skills：界面甲要加一个技能，界面乙要移除另一个。产品文档只说明全量覆盖，未给出冲突自动合并保证。方案最应新增哪项约束？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-214",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "Claw模型可配置目录与业务代码效果是两项证据，先查场景可用再代表任务验证符合来源与题设。"
+    ],
+    "reason": "Claw模型可配置目录与业务代码效果是两项证据，先查场景可用再代表任务验证符合来源与题设。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133870",
+      "https://cloud.tencent.com/document/product/1759/137902"
+    ],
+    "contentHash": "c0acc0b169e291afdad1338122503863a767324fa5828fa800157155f692485e",
+    "stem": "集成页面允许用户选择Claw运行模型。客户既要求列表中确实可用，又要求对其代码任务有足够效果。哪种设计能覆盖两个要求？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-215",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "插件内多操作但只许查询，需要显式精确绑定Tool及认证参数；133868直接证明注册Plugin不等于开放全部Tool。"
+    ],
+    "reason": "插件内多操作但只许查询，需要显式精确绑定Tool及认证参数；133868直接证明注册Plugin不等于开放全部Tool。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133868"
+    ],
+    "contentHash": "09925c3b173382f47432951b7776b7ab7cb50dcca15cf63855a0cfae47ed7a8d",
+    "stem": "一个插件内同时有查询、创建和删除操作，题设本次Claw助手只需查询，其他操作禁止接入。已经注册插件并设置认证，下一步怎样设计？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-216",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "独立会话解决上下文与工作区通道，长期记忆另核库用户通道，双通道隔离任务与直接新会话清空误解有明确来源。"
+    ],
+    "reason": "独立会话解决上下文与工作区通道，长期记忆另核库用户通道，双通道隔离任务与直接新会话清空误解有明确来源。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133868",
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "06680232e77df7f3b5fba5b87cb435eefeee9a25c4e0ef77391a9a9508fc888b",
+    "stem": "同一用户要对两份保密程度不同的材料分别做独立实验，要求第二次不沿用第一次上下文或工作区文件。Claw接口将同一会话多轮共享上下文与工作空间。应如何记录方案？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-217",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与M7-011同为仅凭Multi-Agent不支持应用端权限作答；改成评审措辞未新增实质独立判断。需把真实角色/模式/流程约束组合为不同方案取舍。"
+    ],
+    "reason": "与M7-011同为仅凭Multi-Agent不支持应用端权限作答；改成评审措辞未新增实质独立判断。需把真实角色/模式/流程约束组合为不同方案取舍。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "28594125801ebdd8b6a644aca78783536aae798d00ef48865feee6bf377c8207",
+    "stem": "客户要求同一应用按员工角色限制知识，并限定本次只能使用文档所述内置应用端用户权限，不接受额外自建权限后端。方案选了Multi-Agent模式。评审最应怎样处理？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-218",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已有动态权限中心且不重复维护名单，外部ACL对候选过滤后生成同时满足授权来源与生成证据链；解析不虚构任意URL即接入。"
+    ],
+    "reason": "已有动态权限中心且不重复维护名单，外部ACL对候选过滤后生成同时满足授权来源与生成证据链；解析不虚构任意URL即接入。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "d91e3e8dcb3ae94403c0fa17afe65105a74dcf0cb5b84a23baccaf4811138022",
+    "stem": "企业已有按员工和文档动态变化的权限服务，不想在ADP重复维护角色名单；助手还需用授权证据生成解释。哪种方案最符合已核机制？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-219",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "迁移的关键缺口为候选切片标识映射而非HTTP联通，先验证映射再切换唯一生效方案；与单纯记忆切换规则不同。"
+    ],
+    "reason": "迁移的关键缺口为候选切片标识映射而非HTTP联通，先验证映射再切换唯一生效方案；与单纯记忆切换规则不同。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "58736cd270f371606d4e7188fdc433de4f8f56cd5b663271f9a6fc07ba0dd707",
+    "stem": "应用准备从角色权限切换到企业外部ACL。旧角色列表完整，但新系统尚未验证切片标识映射。客户要求切换后不能因为映射错误漏掉授权。最合理的上线条件是什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-220",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "共享知识资产与两个入口不同受众授权是组合设计任务，分别配置验证应用权限有来源支持，未假定共享库自动继承角色。"
+    ],
+    "reason": "共享知识资产与两个入口不同受众授权是组合设计任务，分别配置验证应用权限有来源支持，未假定共享库自动继承角色。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551",
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "6a8ef7af8afda9295e66570788e11bd4548693f7dfc984319f668800393b8c2d",
+    "stem": "两个应用共享同一制度库，一个面向员工，一个面向外部合作方；题设允许复用原始资料，但合作方只能访问其中已授权范围。哪种组合正确？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-221",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "平台审核专家与门户客户是不同权限主体和操作面，分别配置平台数据/功能与应用知识范围正确。"
+    ],
+    "reason": "平台审核专家与门户客户是不同权限主体和操作面，分别配置平台数据/功能与应用知识范围正确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281",
+      "https://cloud.tencent.com/document/product/1759/122574"
+    ],
+    "contentHash": "48458f4c1ead34cb99d892bef5e74034fb17482ec6e770d1ca25a9757a78b0c9",
+    "stem": "企业专家只负责核对知识，不允许修改应用；最终客户仅通过业务门户问答。项目经理打算给两者同一种“只读角色”解决所有问题。哪项方案澄清最必要？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-222",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已有广角色时加窄角色无法撤销并集权限，修订原授权再用目标身份验证为独立收权诊断，区别直接问并集定义。"
+    ],
+    "reason": "已有广角色时加窄角色无法撤销并集权限，修订原授权再用目标身份验证为独立收权诊断，区别直接问并集定义。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "6833b3e9a4158a8d0b98d154d350e6fd852e8f75e4b8ac58277fc75b21592e5a",
+    "stem": "项目成员已有“全资料”角色，准备临时只让其访问一份审核材料。管理员拟再给他增加一个仅该材料的角色。客户要求其他资料停止可见，哪项评审意见正确？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-223",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "题设暂停个性化又保留数据且维持知识授权，关闭记忆读写并留绑定正确，未把记忆和ACL联动。"
+    ],
+    "reason": "题设暂停个性化又保留数据且维持知识授权，关闭记忆读写并留绑定正确，未把记忆和ACL联动。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162",
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "a2ee37cbd8ddf0ec4409cc47f45f5c8e604db0da8d37092356441d66109b873f",
+    "stem": "企业要暂停助手使用员工偏好排查问题，但要求保留历史以便恢复，并维持既有知识访问权限。哪种处理符合这两个不同控制面？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-224",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "测试/生产共享凭证变更不会被应用发布快照隔离，分设凭证检查引用可避免生产受影响，来源明确编辑影响已发布应用。"
+    ],
+    "reason": "测试/生产共享凭证变更不会被应用发布快照隔离，分设凭证检查引用可避免生产受影响，来源明确编辑影响已发布应用。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107",
+      "https://cloud.tencent.com/document/product/1759/133868"
+    ],
+    "contentHash": "8a6911d5b50b3bf4e1ed107e92d34f6323b2b69d76abd1ae24744bbeab6280ee",
+    "stem": "测试与生产应用共用一个工具凭证。团队只想更换测试账号，却计划直接编辑该凭证，并认为生产应用未发布新版本就不会受影响。应怎样改方案？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-225",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "OAuth尚未完成及业务Body缺失是两个独立阻塞，授权有效与参数/实际查询均验证方完整；凭证不会补订单号。"
+    ],
+    "reason": "OAuth尚未完成及业务Body缺失是两个独立阻塞，授权有效与参数/实际查询均验证方完整；凭证不会补订单号。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "0f3bfb2870244d4d6a5c70ca06e2591931833650c7705b4eea3f61343df85724",
+    "stem": "工作流已选择OAuth凭证，但尚未跳转完成账号授权；节点也缺少查询所需的订单号Body参数。哪项交付计划完整？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-226",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "工具可见与个人凭证可引用是两个共享范围，核是否随工具共享目标凭证及空间正确；管理员不能任意引用个人凭证。"
+    ],
+    "reason": "工具可见与个人凭证可引用是两个共享范围，核是否随工具共享目标凭证及空间正确；管理员不能任意引用个人凭证。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "d1ca5c1d3f51ca19f023e3bce3483da4b3c54cebed0c6c362f23f5fe7d481701",
+    "stem": "一个自定义查询工具已共享到另一个空间，接收方看得到工具但看不到维护者的个人凭证。题设允许使用企业统一账号，最合理的下一步是什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-227",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "轮换影响工作流/应用/知识源多消费路径，引用详情建依赖再逐类验证是完整设计，区别只问删除前检查入口。"
+    ],
+    "reason": "轮换影响工作流/应用/知识源多消费路径，引用详情建依赖再逐类验证是完整设计，区别只问删除前检查入口。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "55733efece26286a5dc691ed1279be8bed02f637211744ce78e87a6c452276f2",
+    "stem": "同一凭证支撑一个工作流、两个应用和知识库数据源。业务要求计划轮换时明确所有受影响入口，而不仅核对聊天页面。方案优先补充什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-228",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "使用授权能力但不交付明文密钥，可评估共享可引用凭证并验证管理边界；未声称底层数据访问自动限权。"
+    ],
+    "reason": "使用授权能力但不交付明文密钥，可评估共享可引用凭证并验证管理边界；未声称底层数据访问自动限权。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107"
+    ],
+    "contentHash": "e260ea1ceb19f9c1b61c271ac5b0cd839c7d52556f87c9608b50de7c16a41f14",
+    "stem": "合作团队需要在目标空间用已授权连接器执行查询，但企业要求不把明文密钥交给他们。依据共享凭证机制，哪种方案可优先评估？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-229",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "从独立召回实验迁移到生产需记录规则、配置应用、验证及发布，测试结果不自动上线；来源分别支持实验与交付步骤。"
+    ],
+    "reason": "从独立召回实验迁移到生产需记录规则、配置应用、验证及发布，测试结果不自动上线；来源分别支持实验与交付步骤。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538",
+      "https://cloud.tencent.com/document/product/1759/137902"
+    ],
+    "contentHash": "103894f9527a73eba17af3e4b608a89725b995c11c959ba9354ae8a67486d00b",
+    "stem": "两组召回测试选出了更好的检索参数，测试中未改应用。客户要求下周线上采用该方案且保留上线前验证。正确的交付链是什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-230",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "局部候选与总证据预算需同时配置每库规则及跨库最终召回数量/排序，题设预算不冒充官方额度。"
+    ],
+    "reason": "局部候选与总证据预算需同时配置每库规则及跨库最终召回数量/排序，题设预算不冒充官方额度。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "33219f95804cb41f2574a4964cc07dbf6fe99a017a7b85916de88aec50e46d12",
+    "stem": "助手从三类知识库找证据。每库候选设置较多，但生成步骤有题设规定的证据总条数预算，不能简单把所有候选拼接。官方召回测试中哪组设置能帮助验证方案？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-231",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与M6-017排除套餐权限知识后查相关检索模型资源是同一故障判断；聊天仍正常并未增加独立决定条件。请换不同组件故障或多条件资源设计。"
+    ],
+    "reason": "与M6-017排除套餐权限知识后查相关检索模型资源是同一故障判断；聊天仍正常并未增加独立决定条件。请换不同组件故障或多条件资源设计。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538"
+    ],
+    "contentHash": "303a4068737f35746d3a255ecf11bee56cdae64d308eb54bec8e400d3b0491a8",
+    "stem": "Demo中的生成模型仍能正常聊天，但包含表格查询的召回测试无法运行。题设已确认知识和权限就绪，团队准备只加生成模型资源。应先补哪项检查？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-232",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "130637明确编辑后模型可能使用历史文件记忆，保存并通知当前版本重新核摘要直接针对故障，不把温度当版本刷新。"
+    ],
+    "reason": "130637明确编辑后模型可能使用历史文件记忆，保存并通知当前版本重新核摘要直接针对故障，不把温度当版本刷新。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130637"
+    ],
+    "contentHash": "2b4ccf14cd0d0b21492f1e40b7cd8e4b27684a2da35fa1e6fef7403562af9b9f",
+    "stem": "分析师在工作台手动修正了一份生成报告，随后让模型继续制作摘要，却发现摘要仍含旧内容。题设要求保留已修订文件，下一步更合理的是？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-233",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "文件生成预览与客户既有生产部署是不同交付状态，来源仅支持预览下载用于后续部署，正确项不夸大交付。"
+    ],
+    "reason": "文件生成预览与客户既有生产部署是不同交付状态，来源仅支持预览下载用于后续部署，正确项不夸大交付。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130637"
+    ],
+    "contentHash": "59fb653efb3b429f879abd600f305f389b1f5f5ca0d3b35ea9bab6ed63facfe2",
+    "stem": "工作台已生成HTML文件并能预览。客户要求以后由业务系统正式提供服务，且必须通过其既有部署流程。最准确的交付范围说明是什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-234",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "138162明确编辑下一轮生效、在途可能旧值并有操作日志；CD分别覆盖正确性和审计，未承诺在途重算。"
+    ],
+    "reason": "138162明确编辑下一轮生效、在途可能旧值并有操作日志；CD分别覆盖正确性和审计，未承诺在途重算。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "10eec0d5f7130758154b35326afff0cbce582e620c4971b89a5437455933779a",
+    "stem": "员工记忆中的岗位已错误，管理员正在修正；同时该员工有一轮回答还在生成。客户要求证明后续会用新岗位，并保留人工修正记录。哪些设计合理？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-235",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "两Claw共享库但选择性注入及成本三约束，需要库生成+各应用引用分开并计Token；与M3-157单问两开关不同。"
+    ],
+    "reason": "两Claw共享库但选择性注入及成本三约束，需要库生成+各应用引用分开并计Token；与M3-157单问两开关不同。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "6ae278ada007469153630066aee42d068e66919d3bb5793d872a4c2b58726cce",
+    "stem": "两个Claw应用绑定同一记忆库。客户只希望应用甲将用户摘要加入提示词，乙仍不引用摘要，同时要知道产生摘要是否耗资源。哪些判断正确？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-236",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "选定记录保留与共享库退役需先导出及核所有依赖解绑，删除不可恢复直接有138162支持。"
+    ],
+    "reason": "选定记录保留与共享库退役需先导出及核所有依赖解绑，删除不可恢复直接有138162支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "a221d8a38fe345e4d73e9030af28e3882ed0f384e0016b54dda012cfbd79e4e8",
+    "stem": "客户拟退役一个仍被多个应用绑定的记忆库，要求先保留选定的合规记录，并明确不再使用旧库。哪些方案步骤与官方机制一致？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-237",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "正常但未授权知识与有权但有风险内容是两类边界，AB要求分层配置与验收，内容审核不能替代ACL。"
+    ],
+    "reason": "正常但未授权知识与有权但有风险内容是两类边界，AB要求分层配置与验收，内容审核不能替代ACL。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070",
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "7563df0040b545cae10851e09b616ad5159e894c056aa899bf99be564382e701",
+    "stem": "企业助手既要阻止风险输入输出，又只允许客户查到自己授权的知识。有人提出“开内容安全后便无需应用知识权限”。哪些评审结论正确？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-238",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "脱敏显示与授权工具需要完整字段的衔接未被来源保证，AB列为通道契约及端到端验证，不臆断原值或掩码必传。"
+    ],
+    "reason": "脱敏显示与授权工具需要完整字段的衔接未被来源保证，AB列为通道契约及端到端验证，不臆断原值或掩码必传。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070",
+      "https://cloud.tencent.com/document/product/1759/115872"
+    ],
+    "contentHash": "f316f55e99031f6e1589d85f0ab5d850c826d8d98e93a80ab07b5484e2bc7dfc",
+    "stem": "客户要在对话显示中脱敏手机号，但一个经授权的业务接口又要求完整手机号精确匹配。所读页面只说明输入输出脱敏，未保证所有下游字段的具体形态。哪些需求澄清合理？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-239",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "共现规则加变形词风险是两种条件，组合词与匹配模式独立安排且验误拦，CD符合单库单模式与组合命中机制。"
+    ],
+    "reason": "共现规则加变形词风险是两种条件，组合词与匹配模式独立安排且验误拦，CD符合单库单模式与组合命中机制。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/125070"
+    ],
+    "contentHash": "c536dc373c33f027e0e1f46d60b69039fb29ca9767ad48aa0e0486c2ddf0b69e",
+    "stem": "某行业有经常单独出现的正常术语，客户只希望两个指定词组共同出现时触发该关键词规则；另有变形拼写风险需要独立测试。哪些安排符合已核机制？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-240",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "第三方产物授权范围和人工归档门槛均由题设明确，BD保留两种责任，工具成功不等同事实获批。"
+    ],
+    "reason": "第三方产物授权范围和人工归档门槛均由题设明确，BD保留两种责任，工具成功不等同事实获批。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115872",
+      "https://cloud.tencent.com/document/product/1759/130637"
+    ],
+    "contentHash": "d3fbb7c14cf2e712f13354d8c2453aad3fc1a810076d931973f2619e6a107205",
+    "stem": "客户选中能生成报告的第三方工具，要求产物进入企业正式归档前经过人工核对，同时资料有保密范围。哪些组合方案合理？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-241",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "知识权限撤销不证明独立记忆渠道已清理，AB检查其他输入通道并按下一轮生效验收，未虚构联动删除。"
+    ],
+    "reason": "知识权限撤销不证明独立记忆渠道已清理，AB检查其他输入通道并按下一轮生效验收，未虚构联动删除。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281",
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "8afbbc56925cb04d8a63cdd2f98af491f173a35e7bcff0dd8da8b4e8564ccf87",
+    "stem": "员工的某类知识权限已被撤销，但他过去相关的偏好或信息仍在应用绑定的记忆库中。客户要求不再让这类信息影响回答。哪些评审动作必要？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-242",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "129200明确Skill Plan工作台不含应用创建发布，资源余额与功能权益分开，AD准确限定试点及后续前提。"
+    ],
+    "reason": "129200明确Skill Plan工作台不含应用创建发布，资源余额与功能权益分开，AD准确限定试点及后续前提。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129200"
+    ],
+    "contentHash": "0c23d5e427a45828c56d8459a198ce72e245eaa85642b341d1301c93c5716174",
+    "stem": "客户当前使用Skill Plan，可在工作台完成个人资料整理，下一阶段却要求创建并发布面向团队的Claw应用。题设预算尚未批准升级。哪些交付表述准确？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-243",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "130637分别列模型、部分工具与实际执行时长，等待下一轮用户回复不计运行时间；AD不用过期单价保证。"
+    ],
+    "reason": "130637分别列模型、部分工具与实际执行时长，等待下一轮用户回复不计运行时间；AD不用过期单价保证。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/130637"
+    ],
+    "contentHash": "77f6b4c91ccfc41627d2a1d23f684d6876315f7d2ee7f2339f1bbef870f1daaa",
+    "stem": "客户要评估“模型分析资料→调用若干工具→生成文件”的工作台任务成本，且交互中可能等待用户补充信息。题设只要求列成本口径，不采用历史页面的具体价格。哪些口径应纳入？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-244",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已独立打开134194确认Claw不能直接模式切换，结合138162两类记忆不可互绑和知识复用组成资产迁移清单，BC完整。"
+    ],
+    "reason": "已独立打开134194确认Claw不能直接模式切换，结合138162两类记忆不可互绑和知识复用组成资产迁移清单，BC完整。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134194",
+      "https://cloud.tencent.com/document/product/1759/138162",
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "1abc9aba80708ca163968a167b4b5e27eb4d36ea0d5e40240f717dbf262ada93",
+    "stem": "客户准备把标准模式助手重构为Claw，仍要使用已有知识内容，并继续提供个性化体验。哪些迁移边界必须单独列出？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-245",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "总评分不能证明特定禁执行路径覆盖，AB把题设缺字段行为变成可观察测试再发布，来源支持按预期输入输出路径验证。"
+    ],
+    "reason": "总评分不能证明特定禁执行路径覆盖，AB把题设缺字段行为变成可观察测试再发布，来源支持按预期输入输出路径验证。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/137902"
+    ],
+    "contentHash": "231b8cbc5db207ccdcde39a70bf450c4a425f86c62bca21947ed1c8cf125d9db",
+    "stem": "工作台已自动生成评测集并给出较高分。客户另规定必须覆盖“某分支缺字段时不可执行后续操作”。哪些补充设计直接针对验收要求？",
+    "answer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-246",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "管理V3凭证与终端对话身份分离，并由集成层约束批准模型及目标实例，CD未假设ADP自动业务审批。"
+    ],
+    "reason": "管理V3凭证与终端对话身份分离，并由集成层约束批准模型及目标实例，CD未假设ADP自动业务审批。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133868",
+      "https://cloud.tencent.com/document/product/1759/133870"
+    ],
+    "contentHash": "c5193b89e74f18432f888a2668b72ee088af38b87f6e09c2f7d925d56052c4c4",
+    "stem": "门户允许用户从企业批准的模型列表选择个人配置，但不允许他们修改全局应用或代替开发者发布。哪些设计符合API角色边界？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-247",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "官方正常ACL流程未明确超时默认，BD要求协议约定与异常验收，不编造默认放行或拒绝。"
+    ],
+    "reason": "官方正常ACL流程未明确超时默认，BD要求协议约定与异常验收，不编造默认放行或拒绝。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281"
+    ],
+    "contentHash": "be418ba40fd422c7331e85ec22c317b28cc8ce6a8cec31daf629fe60f6d56014",
+    "stem": "企业要求接入外部ACL，且当权限服务超时必须停止受保护知识回答。已读页面描述正常过滤流程，但没有明确超时的默认行为。哪些方案决定正确？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-248",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已认证身份绑定权限主体，自报部门只作上下文，CD清晰分离可信身份与可编辑业务属性，未把变量当授权。"
+    ],
+    "reason": "已认证身份绑定权限主体，自报部门只作上下文，CD清晰分离可信身份与可编辑业务属性，未把变量当授权。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281",
+      "https://cloud.tencent.com/document/product/1759/133870"
+    ],
+    "contentHash": "921fbd3a578f92f81bd24e42efbeded355a326078ca9a7149d62fc7381a04727",
+    "stem": "企业门户已完成登录认证，客户端还能提交任意部门文本。题设要求不能凭自报部门扩大知识权限，但允许部门用于报告措辞。哪些设计符合这一目标？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-249",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已失效的工具凭证构成执行阻塞，AC恢复验证业务返回且保留仅能解释规则状态，区别074仅导入文档是否有执行能力。"
+    ],
+    "reason": "已失效的工具凭证构成执行阻塞，AC恢复验证业务返回且保留仅能解释规则状态，区别074仅导入文档是否有执行能力。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138107",
+      "https://cloud.tencent.com/document/product/1759/115872",
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "9b18d44f87bddcd6e3a23d08c4b6187c18188cc732d36dfe16eabb23c234f784",
+    "stem": "助手能从操作手册回答退款规则，但实际退款工具的授权凭证已失效。客户只允许给出已验证的执行结果。哪些方案调整必要？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-250",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "用户级副本与发布快照的升级联动未被来源承诺，BC分别验证旧实例/新会话并列待核行为，不把未说明反推不支持。"
+    ],
+    "reason": "用户级副本与发布快照的升级联动未被来源承诺，BC分别验证旧实例/新会话并列待核行为，不把未说明反推不支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/133868",
+      "https://cloud.tencent.com/document/product/1759/133870"
+    ],
+    "contentHash": "da3b6e43d901a3c66b6a96891c4e101c880c0dd458225341d09e94491d1588ee",
+    "stem": "Claw应用已存在多个用户级Agent，团队发布新的全局配置，客户希望所有旧用户实例自动继承新Skill。已读文档分别描述复制实例和发布快照，却未明确此继承保证。哪些评审结论成立？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  }
+]

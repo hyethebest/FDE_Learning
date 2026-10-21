@@ -1,0 +1,126 @@
+[
+  {
+    "id": "FDE-M4-080",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "改为CSV旧用户键与新门户终端身份不一致的隔离故障；138162同时支持导入用户字段与库用户隔离，映射核对是明确决定项。"
+    ],
+    "reason": "改为CSV旧用户键与新门户终端身份不一致的隔离故障；138162同时支持导入用户字段与库用户隔离，映射核对是明确决定项。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "a70e7e17309e7fcc2e9fd013aa4f44d14b409d57fb61d226508fdf46c8525fa6",
+    "stem": "客户把已授权历史偏好按旧系统用户编号导入新记忆库，但新门户向应用传的是另一套终端用户ID，库内能看到记录却不能供对应员工使用。方案应先核什么？",
+    "answer": [
+      "B"
+    ],
+    "revision": 9,
+    "supersedesHash": "49a3f4d9d50db91ab0556fc1896cf8c2a2a535999a611cea38b01c888952c140"
+  },
+  {
+    "id": "FDE-M4-081",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "改为同应用多部门独立库和仅需用户隔离两种需求澄清；单应用单库与库内按用户隔离共同决定ABC，区别原类型不兼容事实题。"
+    ],
+    "reason": "改为同应用多部门独立库和仅需用户隔离两种需求澄清；单应用单库与库内按用户隔离共同决定ABC，区别原类型不兼容事实题。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "a39bd21a9cefb2cbe8dd09766f946c2fb2f778c398bf19bedf074d62c509585d",
+    "stem": "客户提出“一个标准应用同时绑定多个部门记忆库，按访客自动选库”，又表示可能只需要员工之间记忆互相隔离。哪些澄清与设计判断合理？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "revision": 9,
+    "supersedesHash": "5ddf5a8d655e8a6a9797e0f6e91b18cde1c06966a5324ded59708197741dbb45"
+  },
+  {
+    "id": "FDE-M4-201",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已明确每申请不同Session，WF会话隔离与APP用户共享可以满足两个状态生命周期，不再从业务申请独立推断会话独立。"
+    ],
+    "reason": "已明确每申请不同Session，WF会话隔离与APP用户共享可以满足两个状态生命周期，不再从业务申请独立推断会话独立。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "contentHash": "c05ac91e0f65842738293731053343ba473f491dcd082601e8e850f07afd8344",
+    "stem": "同一员工可同时办理两笔独立申请，接入层已明确为每笔申请建立不同Session。题设要求两笔申请的临时清单互不混用，但该员工的偏好可供应用内多个流程使用。依据变量作用域，哪种划分更合适？",
+    "answer": [
+      "B"
+    ],
+    "revision": 9,
+    "supersedesHash": "7e56d11569e76b8441f40125609fc45f9b8c310a795b23638dc7ba6f6fd70b67"
+  },
+  {
+    "id": "FDE-M4-205",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已改共享secret环境密钥与逐用户API地区参数分层，两个变量的用户隔离范围共同决定设计，区别昵称主键题。"
+    ],
+    "reason": "已改共享secret环境密钥与逐用户API地区参数分层，两个变量的用户隔离范围共同决定设计，区别昵称主键题。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "contentHash": "0758a78e255d08643f6c3cf37c7ec9668e098062089d33758dfce234c406f7ec",
+    "stem": "标准模式应用用同一企业服务密钥调用报价接口，但每位用户的地区由可信业务后端分别传入。题设禁止一位用户的地区覆盖其他用户的地区。哪种变量设计更清楚？",
+    "answer": [
+      "B"
+    ],
+    "revision": 9,
+    "supersedesHash": "504ab25aaab3c29cbd943c4466d41e0ca5ed7047ed879e10633989c74e33b113"
+  },
+  {
+    "id": "FDE-M4-217",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已改必须保留Multi-Agent且批准自建受控查询接口的替代架构决策；先服务核权再返回工具内容不冒称内置权限支持，题设责任明确。"
+    ],
+    "reason": "已改必须保留Multi-Agent且批准自建受控查询接口的替代架构决策；先服务核权再返回工具内容不冒称内置权限支持，题设责任明确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119281",
+      "https://cloud.tencent.com/document/product/1759/115872"
+    ],
+    "contentHash": "619cd8b7abb8c375f089e31f3255bd5c267f71a71e64c0a1813f62090910feb7",
+    "stem": "客户必须保留Multi-Agent协作，已有统一授权服务，并明确批准开发一个受控业务接口来查询资料。要求模型只能收到该员工有权取得的内容，且不得承诺Multi-Agent支持内置应用端用户权限。哪条方案可进入验证？",
+    "answer": [
+      "A"
+    ],
+    "revision": 9,
+    "supersedesHash": "28594125801ebdd8b6a644aca78783536aae798d00ef48865feee6bf377c8207"
+  },
+  {
+    "id": "FDE-M4-231",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已换12库需求与单次测试10库上限，局部分组测试不等于全范围组合验证，B覆盖两层证据；明确是验证计划而非保证应用配置任意无限绑定。"
+    ],
+    "reason": "已换12库需求与单次测试10库上限，局部分组测试不等于全范围组合验证，B覆盖两层证据；明确是验证计划而非保证应用配置任意无限绑定。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/135538",
+      "https://cloud.tencent.com/document/product/1759/137902"
+    ],
+    "contentHash": "d3578fe40f449ebcaf88be04de03f2bfc1e6d429cba2ed6e42256b792f76b339",
+    "stem": "客户方案必须覆盖12个知识库，拟先用召回测试调优；官方该工具一次最多选择10个库。客户又要求最终证明全部来源一起使用时的效果。哪种验证计划最完整？",
+    "answer": [
+      "B"
+    ],
+    "revision": 9,
+    "supersedesHash": "303a4068737f35746d3a255ecf11bee56cdae64d308eb54bec8e400d3b0491a8"
+  }
+]

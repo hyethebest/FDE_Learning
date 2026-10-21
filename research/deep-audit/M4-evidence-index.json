@@ -1,0 +1,464 @@
+{
+  "flow": {
+    "url": "https://cloud.tencent.com/document/product/1759/126433",
+    "section": "第三至五步",
+    "locator": "L60–96；内部系统 API、搭建逻辑、关键场景测试",
+    "shortFact": "知识、工具与工作流按业务组合并调试。",
+    "version": "2026-07-03"
+  },
+  "rag": {
+    "url": "https://cloud.tencent.com/document/product/1759/132211",
+    "section": "适用场景；工作流中使用",
+    "locator": "L33–55、L170–182；复杂条件、首响时间",
+    "shortFact": "多轮检索适合复杂综合，增加耗时与Token。",
+    "version": "2026-08-21"
+  },
+  "schema": {
+    "url": "https://cloud.tencent.com/document/product/1759/123555",
+    "section": "下架提示；创建方式",
+    "locator": "L28、L76；正在使用、生成费用",
+    "shortFact": "功能已下架；存量可用，生成按规模与模型耗费。",
+    "version": "2026-09-16"
+  },
+  "db": {
+    "url": "https://cloud.tencent.com/document/product/1759/119291",
+    "section": "添加数据库；数据表操作",
+    "locator": "L59、L133–149；Host、字段描述",
+    "shortFact": "接入需公网Host；表列语义帮助查询。",
+    "version": "2026-08-21"
+  },
+  "time": {
+    "url": "https://cloud.tencent.com/document/product/1759/138380",
+    "section": "功能生效逻辑；知识有效时间",
+    "locator": "L50–56、L81–99；最新、真实有效时间",
+    "shortFact": "明确时间过滤；最新意图加权，时间指适用期。",
+    "version": "2026-09-18"
+  },
+  "expiry": {
+    "url": "https://cloud.tencent.com/document/product/1759/138380",
+    "section": "超过有效时间的生效策略",
+    "locator": "L155–193；超过有效时间后仍可被检索",
+    "shortFact": "超期可检索与失效状态不同，需核实际配置。",
+    "version": "2026-09-18"
+  },
+  "param": {
+    "url": "https://cloud.tencent.com/document/product/1759/112962",
+    "section": "收集参数/参数信息",
+    "locator": "L195–204、L241–264；概念、要求、示例、必填",
+    "shortFact": "结构化提取与缺失追问需配置字段要求。",
+    "version": "2026-01-26"
+  },
+  "card": {
+    "url": "https://cloud.tencent.com/document/product/1759/115756",
+    "section": "选项设置；输出变量",
+    "locator": "L73–95、L114–139；手动、动态、唯一分支",
+    "shortFact": "支持点击或文本选择，动态选项需后续路由。",
+    "version": "2026-01-13"
+  },
+  "file": {
+    "url": "https://cloud.tencent.com/document/product/1759/123744",
+    "section": "节点功能；文件设置；输出变量",
+    "locator": "L33、L66–70；FileList、地址、大小",
+    "shortFact": "指定环节收集文件；失败可为空，输出元信息。",
+    "version": "2025-09-25"
+  },
+  "text": {
+    "url": "https://cloud.tencent.com/document/product/1759/126594",
+    "section": "文本收集节点与参数提取节点的区别",
+    "locator": "L61、L74–83；单轮、资源 URL",
+    "shortFact": "文本收集保留文本，不作结构化追问；附件为URL。",
+    "version": "2025-12-19"
+  },
+  "llm": {
+    "url": "https://cloud.tencent.com/document/product/1759/112963",
+    "section": "输入变量；模型；多模态输入；输出变量",
+    "locator": "L55–73、L104–128；温度、视觉输入、JSON",
+    "shortFact": "模型处理显式输入；参数、模态、输出契约须配置。",
+    "version": "2026-08-18"
+  },
+  "intent": {
+    "url": "https://cloud.tencent.com/document/product/1759/115747",
+    "section": "意图模式；意图；输出变量",
+    "locator": "L68–107、L125–127、L186–192；单意图、多意图",
+    "shortFact": "识别后按意图连线；多意图输出不同于单意图。",
+    "version": "2026-02-10"
+  },
+  "qa": {
+    "url": "https://cloud.tencent.com/document/product/1759/112964",
+    "section": "问题；知识检索范围；输出变量；常见问题",
+    "locator": "L66–81、L109、L191、L246–248；检索到的知识片段",
+    "shortFact": "问答节点检索后生成；检索节点仅返回片段。",
+    "version": "2026-03-31"
+  },
+  "code": {
+    "url": "https://cloud.tencent.com/document/product/1759/112967",
+    "section": "代码；输出变量",
+    "locator": "L35、L70–76、L154–168；main、JSON",
+    "shortFact": "支持Python/JS；输出需序列化并声明，不支持任意依赖。",
+    "version": "2026-06-01"
+  },
+  "sub": {
+    "url": "https://cloud.tencent.com/document/product/1759/115749",
+    "section": "引用工作流；输入变量；输出变量",
+    "locator": "L35、L61–64；引入工作流、数据来源",
+    "shortFact": "子流程复用需映射输入并沿用其输出。",
+    "version": "2026-01-29"
+  },
+  "agent": {
+    "url": "https://cloud.tencent.com/document/product/1759/122554",
+    "section": "节点功能；引用 Agent；启动输入",
+    "locator": "L35–45、L59–66、L79–81；当前应用、SYS.UserQuery",
+    "shortFact": "节点引用应用内Agent，需明确输入与工具目标。",
+    "version": "2026-02-12"
+  },
+  "agg": {
+    "url": "https://cloud.tencent.com/document/product/1759/117358",
+    "section": "聚合",
+    "locator": "L46–49；第一个不为空、类型",
+    "shortFact": "同组类型一致，按顺序取首个非空值。",
+    "version": "2025-08-17"
+  },
+  "cond": {
+    "url": "https://cloud.tencent.com/document/product/1759/112970",
+    "section": "设置条件",
+    "locator": "L60–66；与、或、精准判断、else",
+    "shortFact": "严格条件用精准判断；支持逻辑组合和兜底。",
+    "version": "2026-01-16"
+  },
+  "loop": {
+    "url": "https://cloud.tencent.com/document/product/1759/115750",
+    "section": "循环方式；输出变量；使用场景建议",
+    "locator": "L60、L78–112、L159；Item、退出条件",
+    "shortFact": "循环可依赖前次结果并按条件或上限退出。",
+    "version": "2026-04-28"
+  },
+  "batch": {
+    "url": "https://cloud.tencent.com/document/product/1759/119290",
+    "section": "节点功能；批处理设置；输出变量",
+    "locator": "L37–41、L66–94、L156；独立、排队",
+    "shortFact": "批处理适合独立项，控制并发且收集全部结果。",
+    "version": "2026-01-26"
+  },
+  "mcp": {
+    "url": "https://cloud.tencent.com/document/product/1759/115873",
+    "section": "填写基本信息；授权方式",
+    "locator": "L63–80、L106–127、L191；initialize、tools/list",
+    "shortFact": "MCP需初始化、发现、调用；空列表不生成工具。",
+    "version": "2026-05-27"
+  },
+  "doc": {
+    "url": "https://cloud.tencent.com/document/product/1759/112702",
+    "section": "导入文档；文档操作",
+    "locator": "L99–143、L218、L298、L323；异步加载、导入完成",
+    "shortFact": "导入有格式与爬取限制；COS需授权；完成后生成问答。",
+    "version": "2026-09-16"
+  },
+  "kb": {
+    "url": "https://cloud.tencent.com/document/product/1759/123551",
+    "section": "数据类型；知识库层级说明",
+    "locator": "L40–59、L89；文档、问答、数据库、共享",
+    "shortFact": "知识库容纳多类资料，平台库可复用。",
+    "version": "2025-09-22"
+  },
+  "faq": {
+    "url": "https://cloud.tencent.com/document/product/1759/112703",
+    "section": "生成问答；问答设置",
+    "locator": "L151、L204–206；表格、相似问",
+    "shortFact": "相似问共用答案；表格不支持生成问答。",
+    "version": "2026-02-06"
+  },
+  "memory": {
+    "url": "https://cloud.tencent.com/document/product/1759/138162",
+    "section": "隔离维度；记忆库类型与绑定规则",
+    "locator": "L41、L71–81、L131–133；记忆库×终端用户",
+    "shortFact": "同库同用户跨应用共享；类型限制、关闭不删除。",
+    "version": "2026-09-15"
+  },
+  "memoryedit": {
+    "url": "https://cloud.tencent.com/document/product/1759/138162",
+    "section": "管理记忆内容；操作日志",
+    "locator": "L204–243、L271–288；下一轮、不可恢复",
+    "shortFact": "手工改动下一轮生效；导出、解绑删除及日志可审计。",
+    "version": "2026-09-15"
+  },
+  "summary": {
+    "url": "https://cloud.tencent.com/document/product/1759/138162",
+    "section": "记忆摘要",
+    "locator": "L136、L148、L171；两个开关、Token",
+    "shortFact": "库生成摘要与应用引用分别控制，生成有消耗。",
+    "version": "2026-09-15"
+  },
+  "graph": {
+    "url": "https://cloud.tencent.com/document/product/1759/128202",
+    "section": "适用场景；核心概念；知识图谱查看",
+    "locator": "L39–80、L258；实体、关系、参考来源",
+    "shortFact": "图谱支持关系多跳，三元组与来源可核。",
+    "version": "2026-02-12"
+  },
+  "parse": {
+    "url": "https://cloud.tencent.com/document/product/1759/127312",
+    "section": "知识处理模型说明；向量模型更换注意事项",
+    "locator": "L42–46、L66、L83–85；文档解析、清空",
+    "shortFact": "解析处理结构；非空库不能直接更换向量模型。",
+    "version": "2026-01-13"
+  },
+  "meta": {
+    "url": "https://cloud.tencent.com/document/product/1759/138240",
+    "section": "元数据与标签检索区别；使用方式",
+    "locator": "L43、L63–67、L113–117、L159–161；软召回、硬过滤",
+    "shortFact": "标签硬过滤；元数据软匹配，可选传给生成。",
+    "version": "2026-09-18"
+  },
+  "skillfile": {
+    "url": "https://cloud.tencent.com/document/product/1759/134602",
+    "section": "description；compatibility；Markdown正文",
+    "locator": "L159、L176、L180–203；触发场景、相对路径",
+    "shortFact": "技能描述注明任务与触发，依赖和参考资料需组织。",
+    "version": "2026-07-20"
+  },
+  "trigger": {
+    "url": "https://cloud.tencent.com/document/product/1759/104209",
+    "section": "触发器/新建触发器",
+    "locator": "L223–231、L262–281、L306–311；两套独立地址",
+    "shortFact": "触发基于发布版本；交互工作流排除，入口出口不同。",
+    "version": "2026-08-11"
+  },
+  "skilltype": {
+    "url": "https://cloud.tencent.com/document/product/1759/129561",
+    "section": "Skills三种类别；安全审核机制",
+    "locator": "L37–50、L80–88；上架、审批",
+    "shortFact": "自定义空间内用；企业共享需审批，仍需验证业务。",
+    "version": "2026-07-14"
+  },
+  "skilluse": {
+    "url": "https://cloud.tencent.com/document/product/1759/129563",
+    "section": "工作台中使用；Claw应用；导出",
+    "locator": "L45–50、L281、L331–379；互相独立、原生",
+    "shortFact": "工作台与应用技能清单独立；原生技能可导出。",
+    "version": "2026-09-10"
+  },
+  "handoff": {
+    "url": "https://cloud.tencent.com/document/product/1759/122598",
+    "section": "转交描述；转交关系配置",
+    "locator": "L68–92、L189、L201–208；主Agent、澄清",
+    "shortFact": "角色选择依赖描述和可达关系；新轮与澄清不同。",
+    "version": "2026-06-15"
+  },
+  "orchestrate": {
+    "url": "https://cloud.tencent.com/document/product/1759/122556",
+    "section": "工作流编排；调试步骤",
+    "locator": "L29–39、L54–104；唯一运行工作流",
+    "shortFact": "固定编排绑定运行流，自由转交可把多个流作工具。",
+    "version": "2026-01-22"
+  },
+  "pe": {
+    "url": "https://cloud.tencent.com/document/product/1759/122553",
+    "section": "Agent设置；对话测试",
+    "locator": "L75–95；不可编辑、不可删除、确认执行",
+    "shortFact": "PE预置角色可改范围有限，先确认计划再执行。",
+    "version": "2025-09-22"
+  },
+  "split": {
+    "url": "https://cloud.tencent.com/document/product/1759/122551",
+    "section": "切分规则对比；文档图片解析；功能说明",
+    "locator": "L44–47、L89–105、L118–149；子级检索、父级召回",
+    "shortFact": "切分要保留语义；父子切片兼顾定位与上下文。",
+    "version": "2026-08-04"
+  },
+  "intervene": {
+    "url": "https://cloud.tencent.com/document/product/1759/119287",
+    "section": "调整切分结果",
+    "locator": "L52–78；永久更改、表格文档",
+    "shortFact": "干预需备份；表格切片可改，不支持新增和定位。",
+    "version": "2025-12-30"
+  },
+  "table": {
+    "url": "https://cloud.tencent.com/document/product/1759/119288",
+    "section": "结构化改写；高级设置；检索方式",
+    "locator": "L66–97、L118；表头释义、SQL",
+    "shortFact": "表结构可改写核验；表格增强使用SQL查询。",
+    "version": "2025-12-29"
+  },
+  "diff": {
+    "url": "https://cloud.tencent.com/document/product/1759/116451",
+    "section": "触发；处理文档对比任务",
+    "locator": "L33–64、L109–126；手动创建、问答操作",
+    "shortFact": "文档差异与衍生问答需分别处理。",
+    "version": "2025-12-29"
+  },
+  "sse": {
+    "url": "https://cloud.tencent.com/document/product/1759/129202",
+    "section": "参数说明；返回事件",
+    "locator": "L94–103、L333起；StreamingThrottle、text.replace",
+    "shortFact": "回包频率不加快模型；增量仍须处理替换。",
+    "version": "2026-09-18"
+  },
+  "ws": {
+    "url": "https://cloud.tencent.com/document/product/1759/129365",
+    "section": "获取连接Token；支持的事件",
+    "locator": "L101–109、L175–186；一次会话连接",
+    "shortFact": "WebSocket连接凭证一次使用且有有效期。",
+    "version": "2026-09-18"
+  },
+  "oldapi": {
+    "url": "https://cloud.tencent.com/document/product/1759/105561",
+    "section": "旧版提示",
+    "locator": "L41–43；2026年12月31日",
+    "shortFact": "旧SSE不支持Claw且公告年底下线。",
+    "version": "2026-06-04"
+  },
+  "model": {
+    "url": "https://cloud.tencent.com/document/product/1759/112876",
+    "section": "标准模式/模型分工",
+    "locator": "L33–43；思考、生成、多模态、Prompt改写",
+    "shortFact": "理解上传图片、阅读检索图片及改写职责不同。",
+    "version": "2026-05-06"
+  },
+  "async": {
+    "url": "https://cloud.tencent.com/document/product/1759/126856",
+    "section": "异步调用；取消任务；交互说明",
+    "locator": "L27、L58、L75、L85；等待输入",
+    "shortFact": "异步受理不等于完成；交互需提交输入，成功不可取消。",
+    "version": "2026-02-10"
+  },
+  "prompt": {
+    "url": "https://cloud.tencent.com/document/product/1759/120901",
+    "section": "新建模板；复制模板",
+    "locator": "L60、L99、L128；变量与模板一致",
+    "shortFact": "模板变量须一致，使用时替换成实际值。",
+    "version": "2026-02-11"
+  },
+  "recall": {
+    "url": "https://cloud.tencent.com/document/product/1759/123554",
+    "section": "检索召回设置",
+    "locator": "L76–84；阈值、二次排序",
+    "shortFact": "阈值与召回有权衡；重排只整理召回候选。",
+    "version": "2026-02-06"
+  },
+  "clawdemo": {
+    "url": "https://cloud.tencent.com/document/product/1759/131653",
+    "section": "设置应用；调试应用",
+    "locator": "L145–157、L205–241、L289–305；实际文件、工具",
+    "shortFact": "可组合代码工具处理数据；成果需实际测试。",
+    "version": "2026-06-30"
+  },
+  "vars": {
+    "url": "https://cloud.tencent.com/document/product/1759/122457",
+    "section": "变量类型；适用范围",
+    "locator": "L39–50、L55–69；SYS、ENV、API、APP、WF",
+    "shortFact": "变量读写范围及用户/会话隔离不同。",
+    "version": "2025-11-18"
+  },
+  "dynamic": {
+    "url": "https://cloud.tencent.com/document/product/1759/133870",
+    "section": "前提条件；绑定会话；动态配置",
+    "locator": "L40–66、L85–152、L226–248；CreateRelease、UpdateMask",
+    "shortFact": "开关需发布；用户实例和上下文透传分开。",
+    "version": "2026-07-13"
+  },
+  "replace": {
+    "url": "https://cloud.tencent.com/document/product/1759/133870",
+    "section": "装卸Skill",
+    "locator": "L151–152；全量覆盖",
+    "shortFact": "SkillList是完整替换；并发合并不在此承诺。",
+    "version": "2026-07-13"
+  },
+  "api": {
+    "url": "https://cloud.tencent.com/document/product/1759/133868",
+    "section": "核心概念；开发者与使用者；发布关系",
+    "locator": "L48、L63–83、L98–102；Tool、AppKey、快照",
+    "shortFact": "会话有独立空间；绑定具体工具，管理与对话鉴权不同。",
+    "version": "2026-07-13"
+  },
+  "acl": {
+    "url": "https://cloud.tencent.com/document/product/1759/119281",
+    "section": "应用端权限；外部权限；注意事项",
+    "locator": "L58–66、L133、L175–211；并集、生成前过滤",
+    "shortFact": "权限按应用独立；多角色并集，外部授权先过滤。",
+    "version": "2026-02-26"
+  },
+  "admin": {
+    "url": "https://cloud.tencent.com/document/product/1759/122574",
+    "section": "功能说明；权限管理",
+    "locator": "L27、L103–130、L179–182；功能权限、数据权限",
+    "shortFact": "平台权限控制空间成员操作和数据范围。",
+    "version": "2026-07-10"
+  },
+  "cred": {
+    "url": "https://cloud.tencent.com/document/product/1759/138107",
+    "section": "授权与使用；共享；安全说明；常见问题",
+    "locator": "L70–71、L127、L156–162、L228、L265–269、L359–368；引用",
+    "shortFact": "凭证复用和共享有边界；改动影响所有引用。",
+    "version": "2026-09-14"
+  },
+  "test": {
+    "url": "https://cloud.tencent.com/document/product/1759/135538",
+    "section": "功能说明；检索召回规则",
+    "locator": "L33、L43、L102、L161–165；最终召回数量",
+    "shortFact": "测试配置不改应用；每库和总召回分层，最多10库。",
+    "version": "2026-08-05"
+  },
+  "studio": {
+    "url": "https://cloud.tencent.com/document/product/1759/137902",
+    "section": "能力范围；注意事项",
+    "locator": "L54–58、L83、L164–168；待发布配置、预期输入输出",
+    "shortFact": "对话调优评测用草稿；仍需核客户场景和发布。",
+    "version": "2026-09-21"
+  },
+  "workbench": {
+    "url": "https://cloud.tencent.com/document/product/1759/130637",
+    "section": "计费说明；工作区",
+    "locator": "L44–46、L187–223；下载、历史文件版本",
+    "shortFact": "文件可编辑预览下载；模型可能沿用旧记忆；多项计费。",
+    "version": "2026-06-22"
+  },
+  "safety": {
+    "url": "https://cloud.tencent.com/document/product/1759/125070",
+    "section": "概念定义；关键词库；信息脱敏",
+    "locator": "L31–36、L137–176、L235–248；一种匹配模式",
+    "shortFact": "安全审核与脱敏不是知识授权；组合词需共同命中。",
+    "version": "2025-11-14"
+  },
+  "plan": {
+    "url": "https://cloud.tencent.com/document/product/1759/129200",
+    "section": "套餐功能对比",
+    "locator": "L49、L57–58；Skill Plan、不含创建发布",
+    "shortFact": "工作台可用与创建应用权益不同。",
+    "version": "2026-06-30"
+  },
+  "clawmode": {
+    "url": "https://cloud.tencent.com/document/product/1759/134194",
+    "section": "关键概念；模式切换",
+    "locator": "L34–45、L98–103；不支持模式切换",
+    "shortFact": "Claw有独立执行环境，不可与其他模式直接切换。",
+    "version": "2026-07-15"
+  },
+  "badintro": {
+    "url": "https://cloud.tencent.com/document/product/1759/115872",
+    "section": "本轮正文不可获取",
+    "locator": "web多次Internal Error；普通公开HTTP读取DNS失败",
+    "shortFact": "未用旧题库fact作为本次证据。",
+    "version": "2026-10-09访问失败；未核到本轮正文"
+  },
+  "badtool": {
+    "url": "https://cloud.tencent.com/document/product/1759/117855",
+    "section": "本轮正文不可获取",
+    "locator": "web多次Internal Error；普通公开HTTP读取DNS失败",
+    "shortFact": "未用旧题库fact作为本次证据。",
+    "version": "2026-10-09访问失败；未核到本轮正文"
+  },
+  "badnode": {
+    "url": "https://cloud.tencent.com/document/product/1759/112968",
+    "section": "本轮正文不可获取",
+    "locator": "web多次Internal Error；普通公开HTTP读取DNS失败",
+    "shortFact": "未用旧题库fact作为本次证据。",
+    "version": "2026-10-09访问失败；未核到本轮正文"
+  },
+  "badretrieve": {
+    "url": "https://cloud.tencent.com/document/product/1759/112966",
+    "section": "本轮正文不可获取",
+    "locator": "web多次Internal Error；普通公开HTTP读取DNS失败",
+    "shortFact": "未用旧题库fact作为本次证据。",
+    "version": "2026-10-09访问失败；未核到本轮正文"
+  }
+}

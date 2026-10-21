@@ -1,0 +1,618 @@
+[
+  {
+    "id": "FDE-M4-031",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "输入要点齐备且无外部查询，生成指令验证契合；选择排除不必要外部依赖。"
+    ],
+    "reason": "输入要点齐备且无外部查询，生成指令验证契合；选择排除不必要外部依赖。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112963"
+    ],
+    "contentHash": "035d7393917d413369046df99c9812989690b2c028bf9c328866719e32955489",
+    "stem": "客户要求根据已提供要点写三种不同风格的宣传草稿，不要求查询外部事实。最应首先验证什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-032",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "视觉模态前提有官方依据，URL本身不能使文本模型获得视觉能力。"
+    ],
+    "reason": "视觉模态前提有官方依据，URL本身不能使文本模型获得视觉能力。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112963"
+    ],
+    "contentHash": "5b7fabedbeff70f3421e7e5c399f643c3883a4797591e708721cc4063f490757",
+    "stem": "客户Demo的关键输入是现场照片。关于模型选择最准确的是？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-033",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "参数职责有明示，最大输出Token不保证事实正确，答案集合清楚。"
+    ],
+    "reason": "参数职责有明示，最大输出Token不保证事实正确，答案集合清楚。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112963"
+    ],
+    "contentHash": "4e7ec4e34d0da62a09b83a318a83ba76fe152fdc8637a9853c46d10106bf96ff",
+    "stem": "Demo要同时比较“较稳定的说明文”与“较多样的创意稿”。哪些参数认识有依据？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-034",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "自由描述语义路由与意图节点契合，其余确为不同节点职责。"
+    ],
+    "reason": "自由描述语义路由与意图节点契合，其余确为不同节点职责。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115747"
+    ],
+    "contentHash": "0e61569c527c3a422de03f7a3670de14b75d39b06485480edbd02f39c9fd82f0",
+    "stem": "客户的入口允许自由描述，需区分“咨询规则”“查询进度”“修改申请”。哪个组件适合识别其潜在目标？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-035",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "复合诉求决定多意图，单选最高匹配会丢失诉求，负向题答案唯一。"
+    ],
+    "reason": "复合诉求决定多意图，单选最高匹配会丢失诉求，负向题答案唯一。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115747"
+    ],
+    "contentHash": "ff376c045c127972811e250551558151965f954877cec6e0a2dbed34b4822ed1",
+    "stem": "用户一句话同时请求“查进度并补充材料”，客户要求两项诉求都不能丢。设计首先应避免什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-036",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "类别描述、复合样例及其它分支都受意图文档支持，身份不代替诉求。"
+    ],
+    "reason": "类别描述、复合样例及其它分支都受意图文档支持，身份不代替诉求。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115747"
+    ],
+    "contentHash": "c6a5e24ed48957d4c3403ccba233f7c34e06811faca869266bb750056ae404a2",
+    "stem": "客户列出几个业务入口让助手自动分流。哪些准备能直接支撑路由设计？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-037",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "直接生成回答的目标区别纯检索，节点能力有直接证据。"
+    ],
+    "reason": "直接生成回答的目标区别纯检索，节点能力有直接证据。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112964"
+    ],
+    "contentHash": "2ab6085e6533ccc75bcccf12bdeb7e3d63691c21f1b6acc14664fa3ef947c187",
+    "stem": "客户仅要求根据指定材料返回一段可读解释，无需把片段交给其他模型二次加工。哪个节点更直接？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-038",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "来源正文已使用“前序设备型号+保修期”同一示例；目前只是加代词的近复刻，原创性不足，应换独立约束或数据依赖。"
+    ],
+    "reason": "来源正文已使用“前序设备型号+保修期”同一示例；目前只是加代词的近复刻，原创性不足，应换独立约束或数据依赖。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112964"
+    ],
+    "contentHash": "850ed90f249089a9a4ee9685c8132e2ec49bd0b414398965733400cb5d1c759d",
+    "stem": "上游已确认设备型号，用户只问“这个保修多久”。知识问答步骤怎样避免丢失指代？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-039",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "结构提示与检索范围是两项配置，题设均有明确要求，验证为合理工程推理。"
+    ],
+    "reason": "结构提示与检索范围是两项配置，题设均有明确要求，验证为合理工程推理。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112964"
+    ],
+    "contentHash": "1392c2fb0dd2a960392a5db8df1934c7175ccda468102cd35fa64a819f6f2798",
+    "stem": "客户要求答案按“结论、依据、注意事项”排列，并限定知识范围。哪些设计应进入方案？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-040",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "检索片段能力正确，但结束/温度/无来源三个干扰不构成真实知识组件比较；改用问答节点等合理候选。"
+    ],
+    "reason": "检索片段能力正确，但结束/温度/无来源三个干扰不构成真实知识组件比较；改用问答节点等合理候选。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966"
+    ],
+    "contentHash": "f9257d3934bac7f59fe050dd682ade0ff9ec965b94d546fe353ba46d0b771e54",
+    "stem": "客户要先取出相关片段，经自定义合并规则处理后再生成结论。首个知识组件选什么更贴合？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-041",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "变量标签检索范围有支持，解析明确不等于完整权限；建议补未标标签例外作为边界提示。"
+    ],
+    "reason": "变量标签检索范围有支持，解析明确不等于完整权限；建议补未标标签例外作为边界提示。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966"
+    ],
+    "contentHash": "75d704b1f45404aa34711f42772652a8dd254099134f032a2fc651a961e1d580",
+    "stem": "同一平台有研发与销售两类知识，Demo只服务已确认部门的用户。如何表达检索边界更合适？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-042",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "题干仅限定知识范围，未要求后续加工；C传给后续处理不是由范围约束必然推出，需补客户要求分步加工或改问。"
+    ],
+    "reason": "题干仅限定知识范围，未要求后续加工；C传给后续处理不是由范围约束必然推出，需补客户要求分步加工或改问。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112966"
+    ],
+    "contentHash": "e4ec0d4b8e1425d5c8ed54af1aebb6090b166191b8605fd682f5946467a2be1d",
+    "stem": "客户只允许本次Demo使用指定手册与一个已选数据库。哪些方案步骤符合需求？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-043",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "固定公式及舍入使确定代码计算优于生成估算，官方支持代码计算转换。"
+    ],
+    "reason": "固定公式及舍入使确定代码计算优于生成估算，官方支持代码计算转换。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "contentHash": "a1b0861141f1959b7ce0b3b5b3863365d5e2a0a66ed2e9fe286e9cadfeaf07db",
+    "stem": "客户要求按给定公式计算折扣后金额，并原样遵循舍入规则。最合适的核心实现选择是？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-044",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "不可序列化对象是明确故障，JSON结果契约有正文支持。"
+    ],
+    "reason": "不可序列化对象是明确故障，JSON结果契约有正文支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "contentHash": "78a191a2ff1b17559575dbd411e5fcb24cda0c5afcf08d520b29bcb98516b23e",
+    "stem": "自定义处理完成后要把结果交给下游节点，开发者拟返回一个不可序列化对象。应怎样调整？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-045",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "语言、依赖和main输入输出均存在官方约束，未凭空假设任意依赖可装。"
+    ],
+    "reason": "语言、依赖和main输入输出均存在官方约束，未凭空假设任意依赖可装。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112967"
+    ],
+    "contentHash": "7589e6c1c740e68bc6f833177be8e33798e77179616a6a478f64b8d197b5c8e8",
+    "stem": "客户已有算法脚本想直接搬入代码节点。哪些核对有必要？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-046",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "集中维护与子工作流复用匹配，复制各自维护是有意义的方案误区。"
+    ],
+    "reason": "集中维护与子工作流复用匹配，复制各自维护是有意义的方案误区。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749"
+    ],
+    "contentHash": "d5214bc19a42f97830c5e91885d0bdd6f09b049f9e22039958c34e0a4d0e277d",
+    "stem": "三个业务流程都需执行同一段资料校验，客户希望集中维护。更合适的组合是什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-047",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已得客户编号且子流程需要该值，前序映射是唯一符合契约的选项。"
+    ],
+    "reason": "已得客户编号且子流程需要该值，前序映射是唯一符合契约的选项。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749"
+    ],
+    "contentHash": "114b85fa34b396c1bd5e1e106363ccb00a88afb296810c18cf0b2ae945680cf0",
+    "stem": "公共子流程需要客户编号，主流程此前已经取得该值。合理的数据连接是？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-048",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "子流程契约和公共边界为合理方案推理，输入输出能力有支持。"
+    ],
+    "reason": "子流程契约和公共边界为合理方案推理，输入输出能力有支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115749"
+    ],
+    "contentHash": "8e5a13daa8496a72366f544909a8406a2897a2c278b46d51e95b8a1e0e7fee16",
+    "stem": "评审可复用子工作流方案时，哪些事项应明确？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-049",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "固定流程加局部自主与Agent节点契合，未声称工作流全部随机化。"
+    ],
+    "reason": "固定流程加局部自主与Agent节点契合，未声称工作流全部随机化。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122554"
+    ],
+    "contentHash": "cd8e8d6e77d1a73c0ec6832d631760990bfe8100eb272e5142c13fb21a7167bd",
+    "stem": "客户整体流程固定，但中间资料整理步骤需要自主选择工具。哪种架构更贴合？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-050",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "本应用内Agent范围有正文明确支持，未擅自声称跨应用绝对无其它复用途径。"
+    ],
+    "reason": "本应用内Agent范围有正文明确支持，未擅自声称跨应用绝对无其它复用途径。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122554"
+    ],
+    "contentHash": "07c183b5bef7bcda78618a326cb05a43b1838101eb3b558317cc229f78e9f6fa",
+    "stem": "方案想把任意其他应用里的Agent直接当成本工作流的Agent节点引用。按已核文档应怎样处理？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-051",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "子任务指令工具与结果衔接有依据，目标完成验证从题设合理推出。"
+    ],
+    "reason": "子任务指令工具与结果衔接有依据，目标完成验证从题设合理推出。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122554"
+    ],
+    "contentHash": "5bff1528f0496f21705c929899e880dfb8b4446ef2cab3320dca2d84301bff8c",
+    "stem": "客户把“整理材料”委托给Agent，同时仍要可控地进入后续流程。设计中应关注哪些内容？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-052",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "互斥分支统一出口匹配变量聚合选择非空值语义。"
+    ],
+    "reason": "互斥分支统一出口匹配变量聚合选择非空值语义。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117358"
+    ],
+    "contentHash": "eeb7adb7461a55ec5d4eab8ed470de4e98aa052d81374e8b019fc552986fa826",
+    "stem": "流程每次只执行一种处理分支，但下游都需要一个统一的“处理结果”。适合增加什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-053",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "首个非空与完整合并区别清楚，是真实易混需求；应明确同组以进一步收紧。"
+    ],
+    "reason": "首个非空与完整合并区别清楚，是真实易混需求；应明确同组以进一步收紧。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117358"
+    ],
+    "contentHash": "aca8ac61cee54db6906fe15733c17f63b1e3a3c9ff0e5fd6cb6b8861fed61f84",
+    "stem": "两个并行任务都会产生有效结果，客户要把两份结果完整拼接。能否仅靠变量聚合节点保证？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-054",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "题干未指定采用变量聚合节点，仅说统一结果出口，不能推出所有方案同组必须同类型；须补“用变量聚合节点”。"
+    ],
+    "reason": "题干未指定采用变量聚合节点，仅说统一结果出口，不能推出所有方案同组必须同类型；须补“用变量聚合节点”。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117358"
+    ],
+    "contentHash": "4b1110a382a744808d0e0c0987f83bc01a55f92d822c1a207eb826feff32fc46",
+    "stem": "客户准备给统一结果出口加入多个候选变量。哪些设计需要核对？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-055",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "严格阈值与同时满足使精准判断及逻辑与唯一，未把语义推断当确定规则。"
+    ],
+    "reason": "严格阈值与同时满足使精准判断及逻辑与唯一，未把语义推断当确定规则。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "contentHash": "115ea372cf45e09603167403166337f248b34b6ea32fb013c9d98f04e1161949",
+    "stem": "客户规定只有金额严格小于500且材料齐全才走快速通道。怎样实现最符合约束？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-056",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "所有已知条件不满足对应else兜底有直接支持。"
+    ],
+    "reason": "所有已知条件不满足对应else兜底有直接支持。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "contentHash": "fdf004b6ab7c3c09b47a29fbe726d28241ce37e45c18374211d21804d38a99e8",
+    "stem": "客户列出的已知分支都不满足时，希望解释无法继续的原因。应怎样安排？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-057",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "值比较与语义条件区分正确，测试两类边界由场景合理推出。"
+    ],
+    "reason": "值比较与语义条件区分正确，测试两类边界由场景合理推出。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112970"
+    ],
+    "contentHash": "f3fd92be004e0eff5fe2aadb9c01bcd5556576d4dfe377312f6980d008099e13",
+    "stem": "同一方案同时处理数值阈值与含义相近的自然语言描述。哪些判断合理？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-058",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "任务依赖与提前退出正是循环适用限制，区别批处理合理。"
+    ],
+    "reason": "任务依赖与提前退出正是循环适用限制，区别批处理合理。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115750"
+    ],
+    "contentHash": "6b5548352e9a0a6b88d5fed70591083c7a1492ba1661e88d90c1eb6d5d7bcf4c",
+    "stem": "客户要依次处理章节，每章必须参考前一章结果，而且可在达到要求后停止。哪个方向更合适？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-059",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "完成条件题正确但随机终止/永远运行/欢迎语三个无效干扰，需给可比较的可测验收条件。"
+    ],
+    "reason": "完成条件题正确但随机终止/永远运行/欢迎语三个无效干扰，需给可比较的可测验收条件。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115750"
+    ],
+    "contentHash": "83deeb82fe6078baebc57640beff6967922ef71acb44c847600070b75e92a72e",
+    "stem": "客户说“反复改写直到满足要求”，但没有说明怎么判断满足。方案最需要补充什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-060",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "逐项输入、异常退出及次数输出有证据，处理范围解释是合理设计。"
+    ],
+    "reason": "逐项输入、异常退出及次数输出有证据，处理范围解释是合理设计。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115750"
+    ],
+    "contentHash": "4757c964765f6b9433fec0c9d23522b78b7e02b5d40b8094eeef33eee456f3ae",
+    "stem": "客户要求对列表逐项处理并在异常出现时结束。哪些内容应纳入方案？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-061",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "无依赖文本支持批处理，相比串行依赖有明确场景约束。"
+    ],
+    "reason": "无依赖文本支持批处理，相比串行依赖有明确场景约束。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119290"
+    ],
+    "contentHash": "909107482fe118d000cbf78c5699f7fe3c71d2e5d5e86bfe93e1bf9402ba97ca",
+    "stem": "客户有一批互不依赖的短文本，每篇都要独立打标签。最适合优先验证哪种方案？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-062",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "并行上限不等于总处理数，排队与无精确耗时保证表述合理。"
+    ],
+    "reason": "并行上限不等于总处理数，排队与无精确耗时保证表述合理。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119290"
+    ],
+    "contentHash": "be34886470886bdff20edda1087ca4d50113d60c92d5e9021dd185a90cf78e76",
+    "stem": "客户有30项数据，并行上限设置为3。方案解释中哪项正确？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-063",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "无依赖全量遍历及受控并行支持批处理，未误称全量遍历是批处理独占能力。"
+    ],
+    "reason": "无依赖全量遍历及受控并行支持批处理，未误称全量遍历是批处理独占能力。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119290"
+    ],
+    "contentHash": "898baffb90a8fd29e524605c099612243a0e78c54cb670771c4655d804731032",
+    "stem": "哪些条件支持选用批处理而不是要求中途判断停止的串行循环？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  }
+]

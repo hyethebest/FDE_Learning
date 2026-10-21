@@ -1,0 +1,67 @@
+[
+  {
+    "id": "FDE-M3-005",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "跨模块最终复核：与FDE-M2-036实质判断任务相同，需改不同配置约束或诊断目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123551"
+    ],
+    "contentHash": "3277bf9ebc19dc48dfe0999a142a02ddf5dda5b9a44a6dea77766ab918230c0a"
+  },
+  {
+    "id": "FDE-M3-009",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "跨模块最终复核：与FDE-M6-065实质判断任务相同，需改不同配置约束或诊断目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112702"
+    ],
+    "contentHash": "a8279b2b679d69136dffc8b6b094416e093a7951cc304352ad960a275ba4471a"
+  },
+  {
+    "id": "FDE-M3-013",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "跨模块最终复核：与FDE-M4-076实质判断任务相同，需改不同配置约束或诊断目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "3e853e467708363c3d96323e0a6dfc5214b8a90d17ed67bf26911d259573f2a0"
+  },
+  {
+    "id": "FDE-M3-014",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "跨模块最终复核：与FDE-M6-069实质判断任务相同，需改不同配置约束或诊断目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "9408571c002e1f1a7570db62b4b4f9fba67aed8d3c19582faa9fcba687b119d1"
+  },
+  {
+    "id": "FDE-M3-016",
+    "status": "rejected",
+    "reviewer": "root-independent-review",
+    "notes": [
+      "跨模块最终复核：与FDE-M6-070实质判断任务相同，需改不同配置约束或诊断目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112703"
+    ],
+    "contentHash": "3f8e9e5b99cf04b49d4e6d80c9a999e1ca385322a63f14c9d73ce2aa51eb84a3"
+  }
+]

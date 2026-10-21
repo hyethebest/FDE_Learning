@@ -1,0 +1,54 @@
+{
+  "reviewer": "root-independent-review",
+  "checkedAt": "2026-10-09",
+  "method": "全库题干三元字符相似与同源答案二元字符相似低阈值候选，再逐对判断实质任务。更早发现的实质重复已退回更换考点，详见各模块审校修订记录。",
+  "decisions": [
+    {
+      "ids": [
+        "FDE-M1-091",
+        "FDE-M3-197"
+      ],
+      "decision": "retain",
+      "reason": "前题检查实体/属性/关系的建模语义约束；后题识别核心结构分类。共用概念但考察任务不同。"
+    },
+    {
+      "ids": [
+        "FDE-M1-091",
+        "FDE-M3-202"
+      ],
+      "decision": "retain",
+      "reason": "建模语义规则与控制台手工/模板/AI扩展配置路径是不同任务。"
+    },
+    {
+      "ids": [
+        "FDE-M2-019",
+        "FDE-M7-011"
+      ],
+      "decision": "retain",
+      "reason": "模式之间切换条件与应用端用户权限支持边界完全不同；模式名称相同触发答案相似，不构成同题。"
+    },
+    {
+      "ids": [
+        "FDE-M2-022",
+        "FDE-M6-053"
+      ],
+      "decision": "retain",
+      "reason": "Skills挂载支持与调优准则适用模式是不同能力矩阵项，仅模式名相同。"
+    },
+    {
+      "ids": [
+        "FDE-M2-036",
+        "FDE-M3-196"
+      ],
+      "decision": "retain",
+      "reason": "知识类型概念与标签配置可作用的知识对象是不同配置边界，虽然枚举名称相同。"
+    }
+  ],
+  "reviewerType": "AI agent, not human or Tencent certification",
+  "fixedSampleFinding": {
+    "retired": "FDE-M1-060",
+    "duplicates": "FDE-M3-154",
+    "replacement": "FDE-M1-101",
+    "note": "语义任务相同，自动阈值漏检；固定种子抽样发现后退役旧题，保留历史。"
+  }
+}

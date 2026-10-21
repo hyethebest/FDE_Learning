@@ -1,0 +1,2107 @@
+[
+  {
+    "id": "FDE-M3-101",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "异常流程保留运行并转入指定分支，符合工具失败后的登记需求。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115748"
+    ],
+    "contentHash": "43fedf64d198372a2fce0aaa5dd0d1cabc4ff5b7f23d63321648c0c0f8984794",
+    "stem": "工具失败需转人工登记子流程而保持工作流运行，适合哪种异常方式？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-102",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "Header元数据与Body载荷职责明确，错误项混淆请求位置。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115748"
+    ],
+    "contentHash": "109f4e6856c2a9f9a5932a35a5b305fa226f8a0c2fa98b409b1438c4cecd984b",
+    "stem": "关于Header与Body的用途，哪些符合节点说明？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-103",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "官方、自定义及连接器具体工具均可引用；节点不能任意改签名。 已复核修订后同配置阶段干扰，答案与解析一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115748"
+    ],
+    "contentHash": "330e95ebff5caad93e180247cf9216f189ab73ff2e9e3740ccc96e51c7154eb4",
+    "stem": "连接器与工具节点支持引用哪些来源的工具？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-104",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "Bearer认证的APIKey值需包含前缀，输出字段或无关query不替代鉴权。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112968"
+    ],
+    "contentHash": "2ac8fdb92338adb18d1cb71d9a27da8270e82156198643450f6fc0c8fb0ab530",
+    "stem": "工具节点调用Bearer认证接口，密钥值应怎样配置？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-105",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "该工具节点后台拼接SSE再统一输出，非每事件直接展示。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112968"
+    ],
+    "contentHash": "d9e029a21a04f1969362e3e082f710485e1247fa47c14baed1ecb68a0468b654",
+    "stem": "工具节点调用SSE流式接口后，对外输出怎样组织？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-106",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "分离文本片段应用增量拼接，与累计全文覆盖不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112968"
+    ],
+    "contentHash": "ed932e1a789b722f99cd9160f300984ef4430dcc5c9bf4c5df6c339630b01921",
+    "stem": "接口依次返回“订单”“已”“完成”，应按什么方式解析？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-107",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "累计全文反复追加导致重复，覆盖解析对应症状。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112968"
+    ],
+    "contentHash": "cde2ef5f6027f852330eb50d9859a274e46d276eec236d937bc83e4c00f0effd",
+    "stem": "工具节点合并SSE响应后出现“订订单订单完成”的重复前缀；服务端每个事件返回当前累计全文。应采用哪种解析策略？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-108",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "基础信息导入明确支持cURL、JSON与YAML。 已复核修订后同配置阶段干扰，答案与解析一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112968"
+    ],
+    "contentHash": "dfeabec8f567b1309c7bd2b9ac4b25427ec0a54956a2b15565a1ca68a7906018",
+    "stem": "工具节点支持用哪些格式辅助添加基础信息？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-109",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "APIKey可配置header或query，响应及节点输出不是请求鉴权位置。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112968"
+    ],
+    "contentHash": "b4d8465c14bf27b36403bd95da3e448187e141ea955be61c853947777150f572",
+    "stem": "APIKey认证参数支持放置在哪些位置？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-110",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "初始化需协议版本、能力和服务信息；工具列表是后续步骤。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115873"
+    ],
+    "contentHash": "eee966b21b5812bb0bfe08ac4f57dfa9c86745aef86e909d492cef7e3db7fefc",
+    "stem": "MCP初始化方法需返回哪组核心信息？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-111",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "空工具列表允许接入但不生成可用工具，不能由名称臆造定义。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115873"
+    ],
+    "contentHash": "5bcbb8c6fa1823076468c2685a6bef589ec724a62ac6b82711cc6c6a17adf942",
+    "stem": "MCP的tools/list返回空数组，ADP可能出现什么结果？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-112",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "作为工具使用要求声明非空tools能力，resources或prompts不替代。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115873"
+    ],
+    "contentHash": "dface8bf9d600837ff23891bbdf015325d377dd7698ca2324366ae2746985ec1",
+    "stem": "MCP要作为工作流或Multi-Agent工具，capabilities必须声明什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-113",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "OAuth第三方回调须配置ADP重定向地址，超时与Scope不能修复地址错配。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115873"
+    ],
+    "contentHash": "b1e7c817ee257b26ad2ea5bb1396df3b27b9729f45b4c25dd014814cdd028bc3",
+    "stem": "MCP连接器OAuth授权失败且回调URL不匹配，应先检查哪里？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-114",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "initialize、tools/list与tools/call构成文档列明的三个服务流程。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115873"
+    ],
+    "contentHash": "8f9fcde0b27a14c264c8eae54de918a5319270ea6bf1a887aa6758754471d843",
+    "stem": "MCP工具服务需要支持哪些流程方法？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-115",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "普通HTTP超时、SSE超时、Header可分别配置，HTTP200不足以证明MCP实现完整。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/115873"
+    ],
+    "contentHash": "1831de6b784ff7d38a1785a2f8ad8aad48de4a68fa1271f4e12c2b6f5102b3ec",
+    "stem": "接入MCP时可按服务要求配置哪些项目？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-116",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "工具必须通过试运行校验才可保存，字段完整不替代实际校验。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117855"
+    ],
+    "contentHash": "20f757ce5e049ae956de9a55885e31f761787832042e70f837a1a6b580ad27a8",
+    "stem": "API工具配置完成但未通过试运行校验，能直接保存吗？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-117",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "修订为OpenAPI 3基础URL字段，官方表明确servers建议填写；info、paths、components用途不混同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117855"
+    ],
+    "contentHash": "68054bf0073b12940514a1b1185251460957ea976bc62fd54e525a8195506c5e",
+    "stem": "按ADP新建工具的OpenAPI 3规范导入说明，哪项用于定义API的基础URL列表，并建议填写以生成有效URL？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-118",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "封装单工作流的接口由开始输入与结束输出提供。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117855"
+    ],
+    "contentHash": "c25e2b05f33ad1a1f0717b91bde32c26eebf8e50126b2efb84fb6ad7b3e60ced",
+    "stem": "单工作流应用封装工具，其输入输出参数来自哪里？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-119",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "创建阶段OAuth校验为一次性且不保存，不能当作生产授权。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117855"
+    ],
+    "contentHash": "b92184dbe4da50ff46d882696ba6b02cdcacae3731006cc1768e042c097d7aea",
+    "stem": "新建工具时OAuth校验阶段的授权状态会长期保存吗？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-120",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "源应用已发布、避免交互依赖、零上下文调试三项均有官方明确提示。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117855"
+    ],
+    "contentHash": "858fc416b7bfcd7a61fbc8c6aadc375024bdc8a285c36ce5fa362a7a72681a84",
+    "stem": "把应用封装为工具时，哪些做法符合官方提示？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-121",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "封装参数名称与类型不可改、描述可改，描述不会改变类型。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117855"
+    ],
+    "contentHash": "9375787ed3de4d658c69cb40ede3b7980aed34c416d5d9d74727cdec7bec55f7",
+    "stem": "基于已发布应用创建工具的输入参数，哪些陈述正确？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-122",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "默认值加模型不可见可固定输入，不只是禁止追问提示。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117856"
+    ],
+    "contentHash": "ffae68b7e3cc5e3624658df4c28dd1ceefdf15db592ac7d5a070f38984e53856",
+    "stem": "工具的固定环境参数不希望模型自行决定，应怎样配置？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-123",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "API参数由custom_variables传入后可引用，其他字段不是变量容器。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117856"
+    ],
+    "contentHash": "d7f9513b26d1d5e74dddaf954d9b43f3958ea3c051ffb5745d5a59482151744b",
+    "stem": "工具默认值引用API参数变量，调用端应通过什么字段传入？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-124",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "输出模型可见性独立配置，改输入或Token上限不能等价隐藏输出。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117856"
+    ],
+    "contentHash": "89a3e5a336dd14d80caf704df004ee9b692df93f9746c6d90a28d77d0792139b",
+    "stem": "某输出是模型不需要理解的辅助信息，可怎样处理？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-125",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "工具更新刷新列表最新配置，知识索引和旧快照测试不执行此动作。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117856"
+    ],
+    "contentHash": "308b7c4bbdeefe2a9ec111401efafc886e71076b3e31d277087b895a526007a7",
+    "stem": "自定义工具定义已经更新，应用工具列表如何刷新最新配置？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-126",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "提示词@工具及作用/调用条件有助选择，与仅名称不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117856"
+    ],
+    "contentHash": "03935830b2cea1ec05e4dd7ca07c3af91059aad4f8f130d0972c021768e2187e",
+    "stem": "为了让模型更准确调用已添加工具，哪些操作合适？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-127",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "工具删除失效提示、输入检查与单独测试均直接支持集成诊断。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117856"
+    ],
+    "contentHash": "90baa4e91e0749158f25c75ed3ac38636f2a99b0f57bef522ac46004ea74de3c",
+    "stem": "工作流集成自定义工具后，哪些动作有直接帮助？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-128",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "修订为Skills场景分类，平台运维创建对应ADP平台能力，区别于搜索及办公分类。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "9342df2d354d912ee63ffab9da5d5a08be3e6a167af545d4efd89e4a864c893e",
+    "stem": "在Skills广场寻找用于知识库运维和工作流创建的原生技能，应优先查看哪个场景分类？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-129",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "修订为票据结构字段提取的分类，文字识别对应OCR，不是图像增强。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "a96fe3b3204a2dfa9c67dd6ccffab40ee7d32240b5261814ff2a2bfcbaa6f930",
+    "stem": "需要将票据和表单图片中的文字与字段提取成可编辑数据，在Skills场景分类中最直接对应哪项？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-130",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "来自SkillHub的内置技能由平台自动检测更新，题目限定此来源。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "5064a664c450c96f36f8f78ea82b8c6fd23dac2d91aec4d3fc370e98896fe3d7",
+    "stem": "Skills介绍说明，来自SkillHub的内置Skills有新版本时怎样更新广场？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-131",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "平台与腾讯生态预置对应内置技能，与自定义导入和企业审批来源区别。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "5f908fff36782e954eeb0664ff422aef57e09843fc610dabc5c495ee953f20bf",
+    "stem": "由平台和腾讯生态预置并提供的技能属于哪类？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-132",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "三类技能来源可见范围与安全审核关系符合分类表。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "ef2808b3484f1d79b3d6ba5bc4add40baa1ac112dd06997b7c681cd6dc4867d4",
+    "stem": "关于三类Skills，哪些表述正确？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-133",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "官方新建Skills提交后状态明确申请人进度及取消均从详情悬浮提示进入，审批中心属于审批人视角；与共享前置审核要求属于独立操作目标。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129562"
+    ],
+    "contentHash": "7aed49ac6ee6b908e10eb744532e167d386d0bff8f283fd604a3902d71684666",
+    "stem": "自定义Skill已提交企业共享审批，申请人要查看进度或取消申请。哪些入口判断符合当前文档？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-134",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "非技术用户可通过智能工作台自然语言创建，与安装已有技能不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129562"
+    ],
+    "contentHash": "14fff2c8d4a767bd3f6d2dcab14bfe206ce3aceaab1a4b839e8aecba38a0586a",
+    "stem": "业务用户不会组装文件，可采用哪种官方创建方式？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-135",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "标识企业内唯一且提交后不可改，显示名称修改不改变标识。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129562"
+    ],
+    "contentHash": "45c916d4370df90ff76a942878d48d964fd13de28ebb1cda6839d30d9217e261",
+    "stem": "Skill提交后，企业内唯一标识能否随意修改？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-136",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "同标识版本唯一且新版本更高，变更说明不使重复版本合法。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129562"
+    ],
+    "contentHash": "fbe7ffe4b077a2ac3244f8c11ed3689ca2ff4b11e361f77ef527fce59f23b83d",
+    "stem": "同一Skill更新版本号应满足什么条件？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-137",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "生成包可下载审查再导入，下载或本地检查均不免平台审核。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129562"
+    ],
+    "contentHash": "a96983e657f4844f89dea221575dfe006306c694810b5b70c71fd8e373b1b43d",
+    "stem": "智能工作台生成Skill包后，用户希望先审查内容，支持怎样继续？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-138",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "审核包括包结构、YAML必填与代码脚本安全检测。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129562"
+    ],
+    "contentHash": "e151d3302205a4e5789fdb23f26b11b65e6625e441109aa5e2e563f5cc33f6fd",
+    "stem": "新建Skill上传后的审核包含哪些步骤？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-139",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "作者和获编辑权限的空间用户可申请共享，查看或终端使用权不足。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129562"
+    ],
+    "contentHash": "e5d0ec3c1c189c513ad19cc8bd6ebc81619a8f29c554ff87cd8e6af85f89d550",
+    "stem": "谁可以发起已上架Skill的企业共享申请？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-140",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "入口须根目录SKILL.md且兼具YAML与Markdown正文，大小写与层级明确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134602"
+    ],
+    "contentHash": "1ff47415abf19b28f8abfd33913026335890365f2d2f4889c7f5921735d6038c",
+    "stem": "符合文件规范主规则的技能包入口是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-141",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "invoice-reader符合小写单连字符规则，其他项分别违反首字符、大小写下划线或连续连字符。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134602"
+    ],
+    "contentHash": "f1a0d0b3828d875fe5d4ee52b99ad34d05b76b82646e04752fdb7184f7015c19",
+    "stem": "以下哪个name符合所列命名字符规则且首尾正确？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-142",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "description需功能与触发场景，依赖作者许可证不能代替选择依据。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134602"
+    ],
+    "contentHash": "62a2e371a966d483f3919e28e0a0318ffe45e5f06a842090a997cc3c4dfcf2b9",
+    "stem": "Skill难以被正确选中，description应怎样改进？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-143",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "references按正文引用按需加载，不自动全部预载或代替入口。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134602"
+    ],
+    "contentHash": "18184f5139b7f0056fdecd8fc08b028d755d42588cde62b1a9c7150051c0fee3",
+    "stem": "正文过长时，将细节放references并引用的目的是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-144",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "现行规范只允许纯文本，PythonJSONMarkdown可用、PNG二进制不可用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134602"
+    ],
+    "contentHash": "47d0dd2d57dde50eff02432855c20dac9bed24454899cbc15d47390d5d0b4175",
+    "stem": "根据当前文件规范，哪些内容可放入技能ZIP？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-145",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "name和description必填，license与compatibility可选。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/134602"
+    ],
+    "contentHash": "b0d2a08674652ad94ac431b94aa88da0d491d2e764f7f670a14e6a53dccd6a34",
+    "stem": "SKILL.md的YAML元数据必填哪些字段？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-146",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "工作台和Claw应用各自维护技能清单，安装不自动同步另一方。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129563"
+    ],
+    "contentHash": "3b4788ef17a5592805278372e20289be3285227ae9301a35d322962741a24cb2",
+    "stem": "智能工作台已装技能是否自动等同Claw应用挂载清单？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-147",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "卸载引用与删除广场本体不同，卸载后可再安装。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129563"
+    ],
+    "contentHash": "621ff76598160aa4b53582c9b175968705455293841b30539431b8f4f81796f7",
+    "stem": "在智能工作台删除已安装Skill，广场中的Skill本体如何？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-148",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "调试@选择Skills插入技能资源，不能混淆与工具或其他入口。 已复核修订后同配置阶段干扰，答案与解析一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129563"
+    ],
+    "contentHash": "ee3e70bcf2af6f6924240f7642ccaa8e2794ed38b15a6dbd142d5475a08dbf76",
+    "stem": "Claw调试中，要通过资源选择器显式插入一个已配置Skill，应使用哪种操作？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-149",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "工作台技能环境变量按当前用户配置，非空间共享或自动与应用ENV通用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129563"
+    ],
+    "contentHash": "720b78bba600faa27b1f5650a58187bbc54d148241921b3e67c72a40a71faf1d",
+    "stem": "智能工作台为Skill配置的API密钥环境变量作用范围是？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-150",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "原生技能可导出ZIP，其他来源需回其平台取得，目标导入与密钥仍依环境配置。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129563"
+    ],
+    "contentHash": "ab4365d38a40554e82b29a1ae6340cfdb0c5f64ebff4798b7c3ab08dfaded387",
+    "stem": "关于将技能导出到其他平台，哪些说法正确？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-151",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "Claw支持添加、查看版本描述、移除，清单不保证每轮全部执行。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129563"
+    ],
+    "contentHash": "0c2d265f127ca6045c39f5d5998ec5c41ba9557a44e38bb5ccce476b4ef306a3",
+    "stem": "Claw应用技能区域支持哪些操作？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-152",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "一个应用仅绑定一个记忆库，但多个兼容应用可共用，不要求独占。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "99df5fd1d5a84a2574e37335d40b908043e192ff0860a97e3fe1d675db6ba250",
+    "stem": "依据2026-09-15记忆库说明，一个应用可同时绑定几个记忆库？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-153",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "Claw与其他三模式记忆库类型不互通，同用户或同名不能转换。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "6e349b3b6e444e5dc5c6985283133940f2f7d791a05ae5c380d955d0a941f37c",
+    "stem": "Claw应用能直接绑定标准/单工作流/Multi-Agent类型记忆库吗？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-154",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "同类型改绑只切换读写范围，原数据不自动迁移或同步。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "8938c80791ea84886bca6101ec4e46e1b9fe358d8cad8b51b2bf898d34802199",
+    "stem": "应用从旧库改绑同类型新库，旧记忆会自动迁移吗？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-155",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "关闭开关保留记忆且停止读写，不解除绑定。 已复核修订后同配置阶段干扰，答案与解析一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "4bce72d3a3c0ec8c236a8183f6397c4011e0c58b6b6a27eaea2618a9410d3d53",
+    "stem": "关闭应用长期记忆开关后，已有库内容会怎样？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-156",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "2026-09记忆库文档明确库与终端用户隔离；同用户跨绑定同库应用一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "afc2de52283ca1def5fba937da21e3ffc82556b011eb5dc34a0d504c54ac4728",
+    "stem": "依据新版记忆库文档，哪些说法正确？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-157",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "库级摘要生成与应用引用同时生效；仅开其一不能完成摘要注入。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/138162"
+    ],
+    "contentHash": "1811cd017cfe117986ca8aef93e50bc0dbd3a644a8baf035972e8e7856350cfd",
+    "stem": "Claw应用实际引用记忆摘要需满足哪些条件？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-158",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "修订为事件受理返回值，instance_id标识执行并用于后续查询，不保证业务完成。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "ad44eccb9e76d1635155be5f526ea5b86b55b61ec339f88b805a3347307be13f",
+    "stem": "事件触发Webhook的POST调用返回instance_id，应怎样解释该返回值？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-159",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "同Webhook URL以GET携带instance_id及Bearer查询，POST会新触发任务。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "bf1f91ba2696efabd7aa4212b37aa0d34b7eee9df3497c1ab71975a4ca2020ae",
+    "stem": "已取得某次事件触发的instance_id，查询该次状态与结果应怎样请求？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-160",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "不推送只关闭主动消息，任务仍调度并留执行日志。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "23479475dc195e6cdb842adf4609431aa6660a3233be7532d52a45af8f80d566",
+    "stem": "触发器的任务结果推送渠道设置为“不推送”，其执行行为是哪项？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-161",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "立即运行只手工触发一次，不改既有时间规则。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "7fea29999044ddfa31b28a8f9b706214085ef76759b67bb575e14e73b3fcfe3f",
+    "stem": "每日定时触发器当前已启用，管理员点击“立即运行”测试一次后，原调度计划会怎样？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-162",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "每周可多选星期、单次指定日期，间隔最小一小时且Cron可输入表达式。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "96b1c36d493ddabd08aef5b80e548e7a9c9ed6ce0d51c9f905da34c2748e6209",
+    "stem": "关于定时触发器的执行频率设置，哪些配置方式符合文档？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-163",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "编辑、最近执行与删除分别对应配置、诊断及URL/Token立即失效，暂停不等删除。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "4574600d72c9d6b43b685c974b1ba88c6d6271e26489775b7e249d2899e3f6ca",
+    "stem": "关于事件触发器的维护，哪些说法符合文档列明的行为？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-164",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "官方高级设置明确问答与工作流高度相似时可用意图达成优先级解决选择冲突；其他选项分别处理长度、语义补全、术语统一，干扰合理。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104206"
+    ],
+    "contentHash": "587380e65b81c23b0315e27589386e44bc8ba2dab817d512f4e67b55fcf42806",
+    "stem": "标准模式应用同时配置问答和工作流，二者意图高度相似导致调用选择不稳定。应用高级设置中哪项直接针对这种冲突？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-165",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "轻量youtu-rerank对应速度定位，LLM型对应精度；未承诺全场景绝对性能。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132211"
+    ],
+    "contentHash": "717d89898881b2029dae247ae8722b0ea2eb54145390e9a673e2fc88eb2077a6",
+    "stem": "AgenticRAG配置重排序模型时，团队更看重重排阶段响应速度，文档列明的轻量级选项是？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-166",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "修订为默认3轮与允许0至10轮的组合，区别默认、推荐区间及上限；官方配置表明确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132211"
+    ],
+    "contentHash": "f4f446d1b4b2d2952b09bdfd4f2ec773d192fde5f0a0122bd4581a825b097bde",
+    "stem": "配置AgenticRAGSearch时，团队准备先保留官方默认反思轮数再调优；默认值与允许范围的正确组合是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-167",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "Agentic工具可进一步选择库内指定知识范围，无须删除库内其他文档。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132211"
+    ],
+    "contentHash": "11fbbb930aae32777ef4bc783bdac98497916d8d77798176ad719675e49916c0",
+    "stem": "AgenticRAGSearch只应查某库中的部分资料，如何配置？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-168",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "反思轮数调整同时涉及Token响应与效果，正确项不保证无错或必降成本。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132211"
+    ],
+    "contentHash": "5d6c46c9b7e07f690d6f508709c13f06a096828b20cf506d54e7f7195ff3e3e0",
+    "stem": "增加反思轮数时，应关注哪些配置后果？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-169",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "官方工作流引导支持知识问答节点与复杂路径工具组合、按意图分流。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132211"
+    ],
+    "contentHash": "ec2dbefabaae502d881adbf23f1a4bf0f24c93820d009b9ec928fdb1089b600d",
+    "stem": "依据Agentic RAG文档，哪些配置方向受支持？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-170",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "精确日期下架且存量继续使用的说明属已核事实；替代方向AgenticRAG。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123555"
+    ],
+    "contentHash": "8440c18418a0070f5c9723e694c4fc1bb0b98b016b8d103d5b19bef1a0d797f0",
+    "stem": "2026-09-16知识库Schema文档对该功能的状态怎么说明？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-171",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "题设限定存量旧功能，数据库无需知识库Schema，与GraphSchema区别。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123555"
+    ],
+    "contentHash": "bed41031b1f941b9a9e12b0149c4de3aeb8df5110deb34c8aedcadb7c318e35d",
+    "stem": "仅针对仍使用旧功能的存量用户，知识库引入数据库是否需要生成知识库Schema？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-172",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "存量文档Schema有文件名摘要及可选标签，不含数据库密钥。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/123555"
+    ],
+    "contentHash": "dd06a86518d30a984e30cd2c293efbb3fa6ade13c61f8d253fa8a9f08d7f4e87",
+    "stem": "仅针对存量知识库Schema，其文档类信息包含哪些内容？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-173",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "标准模式思考模型主要影响意图识别，未外推其他模式。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112876"
+    ],
+    "contentHash": "2f370f4cbf483cdf38ffedfc275d81c0261e9340fa57582f686c8a5bef667491",
+    "stem": "标准模式主要由哪类模型影响意图识别？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-174",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "生成模型对应阅读理解与答案生成，区分检索与意图环节。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112876"
+    ],
+    "contentHash": "03f5e4054e5595e312ecf128503c8ac04b81e7127d9de26fd468d93cb1ad1325",
+    "stem": "用户提问后，阅读理解并组织最终回复主要由什么模型承担？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-175",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "用户上传图片理解和知识库召回图文解析分别由两类多模态模型承担。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112876"
+    ],
+    "contentHash": "dc502960a51c75a56fff37101dd19c17857ec5f9bfede34a87670e878746baff",
+    "stem": "用户在对话中直接上传一张图片，希望应用理解图中内容，对应哪类模型？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-176",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "实时文档解析模型专用于对话上传文档，与离线库解析任务区分。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112876"
+    ],
+    "contentHash": "0284f3c4bc0e91ff62a1b90753adb824a9182e8a365536f856b0f2dd84a40a66",
+    "stem": "用户在问答中临时上传文档，其解析由哪类模型负责？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-177",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "问题改写、AI一键优化与多模态阅读职责匹配官方模型列表。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112876"
+    ],
+    "contentHash": "00a9e92d44ef2c2e2c4d0d8ed5e2a921efc119b855e81dfc44bdb1e7a6d63034",
+    "stem": "哪些职责配对符合模型介绍？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-178",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "上下文改写利用历史补全指代，不修改知识或授予数据权限。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112876"
+    ],
+    "contentHash": "6fdb3389b5afc4e3384187b7208a4ffb72c8948a176541a40a8e58e827bd265c",
+    "stem": "面对“那它呢”这类依赖上文的问题，哪些认识正确？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-179",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "非Claw三模式可互切而Claw不支持切换，文档边界明确。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104206"
+    ],
+    "contentHash": "b9bd51852d07d8b18cee643db2d331920d3ce2b06ed70f6aaff8229c5d76bffd",
+    "stem": "现有标准模式应用想切换模式，哪项符合应用设置说明？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-180",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "默认库仅当前应用使用，发布与关闭不改变共享属性。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104206"
+    ],
+    "contentHash": "7f8cb9923bd02059cbbf6319eed45fb9e16f091e938b134a9070c891336bb573",
+    "stem": "一个应用的默认知识库能直接被另一个应用共用吗？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-181",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "同义词设置在检索前统一Query业务术语，与扩上下文或候选数量不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104206"
+    ],
+    "contentHash": "825224e1e40bdbe936cad24f00c7be2dd7e40ff3ecc7ea4fa40383f11e4ed7b6",
+    "stem": "用户常说行业别称而知识使用规范名，哪个高级设置直接针对该问题？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-182",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "图片知识问答开关加兜底开关共同开启、无命中时使用兜底文案。 已复核修订后同配置阶段干扰，答案与解析一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104206"
+    ],
+    "contentHash": "f79a97f80946b1a293ce598e580d5faf61cabbd6f68e048af77c1e072f35aeba",
+    "stem": "已开启知识库回答图片问题及兜底回复，但无相关知识命中，按说明应怎样回复？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-183",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "非默认库在相同主账号下支持多应用关联，不需逐应用复制。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104206"
+    ],
+    "contentHash": "67aab1fbf7fab9c845ba46b1e2bc0e7ccd5cf67adb3ce7f9acba0e49c3b2c933",
+    "stem": "关于应用与非默认知识库的关联，哪些表述正确？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-184",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "上下文改写和歧义下优先级设置有据，通常无须手工优先级且搜索可能计费。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104206"
+    ],
+    "contentHash": "8c55b39cc2b83d2a6ea7bf42f68aae38aa7257218903aef37a595fde2d950f65",
+    "stem": "哪些描述符合应用设置？",
+    "answer": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-185",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "SYS.UserQuery对应本轮输入，其他系统字段的对象不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "contentHash": "81e226977c5654d6fb8ad28e7e97b018ae0c7232a5056f490d959f7e6bfca185",
+    "stem": "要获取用户本轮输入，应引用哪个系统变量？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-186",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "APP用于同应用模块间传递；WF和节点输入范围不足。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "contentHash": "f5a85c22b6dfe61015cfd184f4a4dd62684822e63748f8366aa7c951812c1b2b",
+    "stem": "同一应用里流程A写入笔记、流程B读取，适合用哪类变量？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-187",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "WF在开始定义，通过变量赋值节点赋值，描述或回复文本不能代替。 已复核修订后同配置阶段干扰，答案与解析一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "contentHash": "e3ce77377b8c4abdb1df5a0f30a4a2d919f44990f85933deb641d5b4541ec844",
+    "stem": "已在开始节点定义WF变量，业务运行中要显式更新该变量，应使用哪种配置？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-188",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "ENV在变量与记忆维护并支持secret保护，其他字段不是管理入口。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "contentHash": "0b8611babbd6195fed9d4660389c74ce3af3be479769ff280e952dbae74d1a90",
+    "stem": "应用中ENV变量用于保存敏感配置，按说明应在哪维护？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-189",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "ENV/SYS/API前缀类型正确，WF不跨应用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "contentHash": "72e8173e5cd4dfa20bb2c63f92842992cf376b9889e5940a0e36141c65def82a",
+    "stem": "哪些变量前缀与类型匹配？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-190",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "节点输入局部，输出供后续读取；未运行后继无已产生值。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122457"
+    ],
+    "contentHash": "c44dbf0d0292752900641bd3f4c48ae88e3113337f75e47bf7217d914d27478a",
+    "stem": "哪些表述符合节点级变量规则？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-191",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "销售区域为业务字段名、华北为值，问题判断标签名称。 已复核修订后同配置阶段干扰，答案与解析一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112956"
+    ],
+    "contentHash": "28576855e4503c7a46b1c8f27cd45f9b64a95aaafac9cd3b8c4516cefb1f8e4e",
+    "stem": "“销售区域=华北”中，哪部分应作为标签名称？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-192",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "高级版是产品等级字段的标准值，区别名和同义词。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112956"
+    ],
+    "contentHash": "82ea96d6c1a29f8c09f3f7dac2021eac3aa0f4c87b2b19c9331bdc233ed45ef7",
+    "stem": "“产品等级”标签中的“高级版”最合适视为什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-193",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "标签同义词表达标准词的别名关系，分类和问答相似问是不同功能。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112956"
+    ],
+    "contentHash": "54e16e1b9af2b87114ea65e49e26471628ff421aeb1eb5a90b233a9b6251bd01",
+    "stem": "希望把同一业务值的不同说法统一管理，应在标签中设置什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-194",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "被文档问答引用的标签不能直接删除，未假设自动解除引用。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112956"
+    ],
+    "contentHash": "ef710017c14d450587ffcc918ff22b5d787c813fe30484c4d5d5f8ca08aba449",
+    "stem": "某标签已被文档或问答使用，平台允许直接删除吗？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-195",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "标签可手动新建或按模板导入，分类提示词不自动建立标签记录。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112956"
+    ],
+    "contentHash": "5eabc498ae008fbe126bc653d368f190f68ea4f2fcbc5c75674ce9eec120c931",
+    "stem": "标签管理支持哪些建立方式？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-196",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "知识标签适用于文档及问答，题目考标签对象而非泛问知识类型。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112956"
+    ],
+    "contentHash": "d2b5dab35683d0a317a829c4849dae73867e928bd9ef6e29f3b941e93f63433f",
+    "stem": "标签名称和值用于哪些知识对象？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-197",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "GraphSchema实体属性关系三元素明确，不混同向量检索或QA结构。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128202"
+    ],
+    "contentHash": "dca08a718cbe452debb41b5d2a064f25f1f2c6c60d314bb7336aeb3d2fff89eb",
+    "stem": "GraphSchema需要定义的核心结构是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-198",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "仅保存设置暂存配置，生成图谱是独立动作。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128202"
+    ],
+    "contentHash": "cf8ab724907fb924c6feb79fced54ac07d2577623be28d060e4dd04873b41233",
+    "stem": "配置好图谱后只点“仅保存设置”，意味着什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-199",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "关系边详情提供文档及切片来源，总节点数或类型名不提供实例证据。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128202"
+    ],
+    "contentHash": "d3c455c37afeb3fc3059f2a70d4de27d37417873972b2e2f43f0707fe9032d38",
+    "stem": "想核对某条关系依据哪份知识形成，应该看哪里？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-200",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "新增文档提示需要确认更新图谱，提示不等于构建完成。 已复核修订后同配置阶段干扰，答案与解析一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128202"
+    ],
+    "contentHash": "aaf2c0588fd8070043032ec7b1e0c1ee56344891ad4d98baddc5489afcdfd3e0",
+    "stem": "知识库新增文档后收到图谱更新提示，应怎样将新知识纳入图谱？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-201",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "图谱支持全部文档、指定文档及标签范围，未导入远程网页不默认参与。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128202"
+    ],
+    "contentHash": "cacbc42b66a52279a385c9bff4f9490a9f0d4859b6fa4ea731306a906fa8cba4",
+    "stem": "GraphRAG构建支持哪些知识范围选择？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-202",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "模板、自定义及AI扩展三种GraphSchema方式有据，不依赖已下架旧Schema。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/128202"
+    ],
+    "contentHash": "f75903a3ccc14304fd4eabc858f66bfd6b2131c23333fcb53f59f05a80cfa55c",
+    "stem": "哪些是官方列出的GraphSchema配置方式？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-203",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "文档对比覆盖名称、内容和生成问答差异，非仅向量排序或自动覆盖。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116451"
+    ],
+    "contentHash": "aba7137670670e7ccf07c80684af722ff7024d7c6b05d13d94e11245de8a3abc",
+    "stem": "文档对比任务的直接目的是什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-204",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "处理中为异步执行临时状态，与待处理完成失效不同。 已复核修订后同配置阶段干扰，答案与解析一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116451"
+    ],
+    "contentHash": "1014bdeed8f762bc3a907b1a3a92f3ac451771eebc7377ce757da727be02e74f",
+    "stem": "文档对比任务在执行中显示“处理中”，应怎样理解？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-205",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "相关文档删除使依赖它的对比任务失效，不等于正常完成。 已复核修订后同配置阶段干扰，答案与解析一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116451"
+    ],
+    "contentHash": "ec5ce1741f295d71c171f9e2fa2a79789c03dab54a0257369a58fe34c6cfb833",
+    "stem": "对比任务相关文档被删除后，任务会怎样？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-206",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "可基于新文档差异片段生成问答，与全量重生不同。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116451"
+    ],
+    "contentHash": "cc90cb557eb6f2ed34070412af18bc41884262c001a790ed9574015b62e4eaa4",
+    "stem": "仅想为新版文档新增部分建立问答，文档对比功能提供哪种操作？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-207",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "支持查看差异、逐条与批量处理，不要求删除两份原文。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116451"
+    ],
+    "contentHash": "5f667da6bb28de37c70ee69e37b00d7e9178de9d9147046699a1333643325509",
+    "stem": "对待处理的文档对比任务，哪些操作受支持？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-208",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "差异生成和问答重关联是两种明确操作，删除文档不必强制删除衍生QA。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116451"
+    ],
+    "contentHash": "63d102a3380d7ac5339886bab92e484bff6d6590e359eca9fdda3923141702dc",
+    "stem": "处理有生成问答的文档对比时，哪些能力被明确提供？",
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-209",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "同组多个非空按顺序取第一个，X优先，不拼接或随机。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117358"
+    ],
+    "contentHash": "40ada47f921265dd1438f462cc823a1cc6dfc87f0794bffa0ae1a72475a55240",
+    "stem": "同一Group中变量X和Y都非空，顺序X在前，返回什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-210",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "组类型由首变量决定，后续需同类型。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117358"
+    ],
+    "contentHash": "7637c0acd7ac08eb7d7f6c888b8aad2ed03621e8e0d1f7f168bd82cd2271f1a4",
+    "stem": "Group首变量为string，后续变量应满足什么条件？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-211",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "互斥分支聚合提供下游统一接口，区别全部拼接或伪造未执行结果。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117358"
+    ],
+    "contentHash": "8f45633ede76374bba245d6d951e3ddf6bff73b3c573f28a47c5b1a8a134aa08",
+    "stem": "互斥分支各自产生同类结果，下游想统一引用，应怎样配置？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-212",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "业务输出字段由Group确定，不凭文本内容推断或独立任意添加。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117358"
+    ],
+    "contentHash": "991cd410490788f45cf5015fd5977ae3938dda38d8ee447a9e16214283b42da4",
+    "stem": "变量聚合节点输出的业务字段由什么决定？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M3-213",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "支持多Group且每组独立首非空，与209单组求值不同，覆盖组间行为。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/117358"
+    ],
+    "contentHash": "9aa0bf4810ac6ced4c79b77437ae976dc634fc3c7e0b08bbc357b83bf288f683",
+    "stem": "哪些说法符合变量聚合节点？",
+    "answer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-214",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "修订为变量赋值节点输出；isSuccess为bool，Error为object，不等业务变量内容。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122550"
+    ],
+    "contentHash": "b000b7373c3544cd6b2117decc91d8e995d1132b77feb4c607e1fe389bb339c3",
+    "stem": "工作流已用变量赋值节点更新全局变量，下游要确认赋值是否成功，哪些输出使用方式正确？",
+    "answer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-215",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "必填参数缺失主动追问，不能当可选跳过。 已复核修订后同配置阶段干扰，答案与解析一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112962"
+    ],
+    "contentHash": "06516fbcff6d27e244aa29b90ab326ee62839a6d99d034f91235a254c65b4a03",
+    "stem": "参数提取节点把订单号设为必填，用户未提供时会怎样？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-216",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "非必填缺失不会单独导致反问，配置不自动改必填。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112962"
+    ],
+    "contentHash": "f2babc1b91f11ee1540faa435cfcde5bb77d2a88dff54d4d5f0dbfa2fb04606e",
+    "stem": "参数设置为非必填且本轮未提供，节点会因此追问吗？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M3-217",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "参数描述需概念定义与取值要求，孤立示例或无条件合法不够。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112962"
+    ],
+    "contentHash": "0af7e7ea80f64b15e9d80c0ee1f11b914e8c5596a3a1ff1a0cca3e81df14a8ba",
+    "stem": "参数描述怎样写更有利于提取？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-218",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "三次问询内未收齐全部必填为异常条件，不把可选缺失当错误。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112962"
+    ],
+    "contentHash": "78bc052695a60536d875b024adad3bd64e25be5302235f4323b40db2af891798",
+    "stem": "官方说明何种参数提取情形可视为异常？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M3-219",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "正例提示有效可提取值，反例排除值，不替代真实用户数据。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112962"
+    ],
+    "contentHash": "407648002e0b2fb652335b5c59e2b4b85b1bfe01488e1583dd7ddbcf7967c6ed",
+    "stem": "参数收集示例中的正例与反例有什么作用？",
+    "answer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M3-220",
+    "status": "approved",
+    "reviewer": "industry_delivery",
+    "notes": [
+      "默认上下文含本轮、历史和时间，不含所有前序任意信息。 已复核修订后同配置阶段干扰，答案与解析一致。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/112962"
+    ],
+    "contentHash": "6f26195f75d8b095f8cd21c8210fe12ec9e7ab6e78be041c83e14aaf3cd6305a",
+    "stem": "参数提取节点默认传入哪些上下文用于提取？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  }
+]

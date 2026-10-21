@@ -1,0 +1,42 @@
+# Personal study data and exports
+local-data/
+*progress*.json
+fde-backup-*.json
+*.log
+*.zip
+*.zip.sha256
+*.mov
+*.mp4
+*.webm
+*.har
+*.sqlite*
+*.db
+
+# Local credentials, machine data, caches and test output
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+__pycache__/
+*.py[cod]
+node_modules/
+.test-artifacts/
+outputs/
+research/qa/
+
+# Private evidence and historical delivery backups
+research/migration/
+research/releases/
+research/round1/private-recording-evidence/
+research/round1/before/
+research/original400/before/
+generated_images/
+research/round1/confirmed-mistakes.json
+research/round1/recording-observations.json
+research/round1/wrong-evidence*.json
+research/round1/*deployment*.json
+research/round1/*verification*.json
+research/original400/deployment.json
+research/original400/browser-verification.json

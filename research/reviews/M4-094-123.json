@@ -1,0 +1,562 @@
+[
+  {
+    "id": "FDE-M4-094",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "事件输入与结果推送的方向、地址职责不同；官方发布触发器说明支持这个区别，三个错误对应真实集成混淆。"
+    ],
+    "reason": "事件输入与结果推送的方向、地址职责不同；官方发布触发器说明支持这个区别，三个错误对应真实集成混淆。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "d76822ddf7b787e0a6c656a5d992849f26f9eb0d431d9b2fbf9ac78108ca2b14",
+    "stem": "客户要求在外部系统发出告警后启动分析，并将结果送到指定群。应怎样区分两条集成链路？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-095",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "定时触发事实正确，但与M6-088日报与告警的定时/事件匹配目标重复，没有增加独立决策约束。"
+    ],
+    "reason": "定时触发事实正确，但与M6-088日报与告警的定时/事件匹配目标重复，没有增加独立决策约束。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "19d97954c1e20d2b51da31d505f2c979f560a44e4a8841f2ec774a2193659450",
+    "stem": "客户只要每日汇总，不要求系统事件一发生就处理。何种启动机制更贴合？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-096",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "已发布版本与输入参数、按需推送配置均可核查；条件式“要推送时”没有把推送误当所有任务必需。"
+    ],
+    "reason": "已发布版本与输入参数、按需推送配置均可核查；条件式“要推送时”没有把推送误当所有任务必需。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/104209"
+    ],
+    "contentHash": "395bb92e884969bcfef11e62f2845f994b0258c70273f6bfc4a06ef92de800ed",
+    "stem": "客户准备展示已配置的自动任务。哪些事项与真实自动运行直接相关？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-097",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "自定义技能默认仅当前空间，已上架后编辑者可申请企业共享审批；题设已上架，前提充分。"
+    ],
+    "reason": "自定义技能默认仅当前空间，已上架后编辑者可申请企业共享审批；题设已上架，前提充分。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "dec65da7c7afa56f3fd3d4e8710fa75f7b1ce5a51dd4e01e0a2b5237ec9005ee",
+    "stem": "某团队整理的自定义Skill已上架，现在希望企业其他空间也能使用。哪条路径最符合文档？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-098",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "官方现成内置能力与安全质量验证支持先验证适配再开发的推理；审核不代替客户任务验收，答案唯一。"
+    ],
+    "reason": "官方现成内置能力与安全质量验证支持先验证适配再开发的推理；审核不代替客户任务验收，答案唯一。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "efd8097fe3b15835122eaec0ccda64fa63dc79493310cff7b2e7c1609097a24c",
+    "stem": "客户任务已被一个内置Skill覆盖，且没有独特流程要求。第一轮能力验证怎样安排更经济？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-099",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "导入格式、安全扫描及上架条件明确；题目没有误称自定义技能需要企业管理员共享审批才能在本空间使用。"
+    ],
+    "reason": "导入格式、安全扫描及上架条件明确；题目没有误称自定义技能需要企业管理员共享审批才能在本空间使用。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "0f1a6e86d0e43df0966869696316494c93d0b2cabbf2397d980532c369f9b6d4",
+    "stem": "客户准备导入内部自定义Skill并演示使用。哪些前提应纳入计划？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-100",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "工作台安装清单与Claw应用挂载清单独立，按需调用和持久配置区分准确。"
+    ],
+    "reason": "工作台安装清单与Claw应用挂载清单独立，按需调用和持久配置区分准确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129563"
+    ],
+    "contentHash": "9202dd7610afad0c8987c65150abcfd93a52abb550a8ddb65289aa356df61f4e",
+    "stem": "客户一方面需要员工偶尔调用某技能，另一方面要让Claw应用长期具备它。合理区分是？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-101",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "当前129563明确仅ADP原生Skills可导出，SkillHub等其它来源暂不支持；题干“已有Skill”缺来源前提，不能无条件选择导出ZIP。需限定ADP原生技能并说明依赖验证。"
+    ],
+    "reason": "当前129563明确仅ADP原生Skills可导出，SkillHub等其它来源暂不支持；题干“已有Skill”缺来源前提，不能无条件选择导出ZIP。需限定ADP原生技能并说明依赖验证。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129563"
+    ],
+    "contentHash": "69091279ad04581124c133c95cca03a2c3bdcd0a9fcbbbaba4c8355347418609",
+    "stem": "客户想把已有Skill移到另一支持技能包的平台。文档给出的复用形式是什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-102",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "工作台显式选择已装Skill并输入诉求有官方路径，最终产物核验为合理验收要求。"
+    ],
+    "reason": "工作台显式选择已装Skill并输入诉求有官方路径，最终产物核验为合理验收要求。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129563"
+    ],
+    "contentHash": "53abc7f74a35196b8605b1917422f80ae62c7c6ee265b233985bab42e2d4e000",
+    "stem": "客户想证明某已安装Skill能完成任务，避免只靠模型猜测要用哪个。哪些演示安排有依据？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-103",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "功能及转交描述作用正确，但其它三项同名、删关系、增加含糊角色均明显无效；应使用具体的职责重叠与转交条件表述作干扰。"
+    ],
+    "reason": "功能及转交描述作用正确，但其它三项同名、删关系、增加含糊角色均明显无效；应使用具体的职责重叠与转交条件表述作干扰。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122598"
+    ],
+    "contentHash": "c5f3966aa2428bff500682212edb2c9344d5872229896fd5d73a37bcca344d78",
+    "stem": "多Agent方案中“资料查找”和“文稿整理”常被混淆转交。最应先改进什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-104",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "游离Agent需与主Agent形成单层或多层转交关系才能激活，有官方直接证据；可达关系表达准确。"
+    ],
+    "reason": "游离Agent需与主Agent形成单层或多层转交关系才能激活，有官方直接证据；可达关系表达准确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122598"
+    ],
+    "contentHash": "ee416582c73f30ca0ceab4456f9b07d4259f06bf8d120d4d8d8f823c0831530b",
+    "stem": "Demo新加了一个专家Agent，却从未被主Agent激活。除描述外，设计首先要核什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-105",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "任务完成后的接管配置与反问澄清有官方明确区分；答案未将澄清当新任务，集合准确。"
+    ],
+    "reason": "任务完成后的接管配置与反问澄清有官方明确区分；答案未将澄清当新任务，集合准确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122598"
+    ],
+    "contentHash": "98fe631432c27b363ed86e20af8d65a6c9903e6912aa0568b990be6dd14d68e8",
+    "stem": "客户希望每完成一个专门任务，新一轮诉求先回到总入口重新分配。哪些方案判断正确？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-106",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "固定流程+Agent局部自主与M4-049同一决定性约束和正确方案，仅扩展Agent数量，不应计为独立有效题。"
+    ],
+    "reason": "固定流程+Agent局部自主与M4-049同一决定性约束和正确方案，仅扩展Agent数量，不应计为独立有效题。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122556"
+    ],
+    "contentHash": "99816b0d34cf53742a3080ccc26115dd13d574c49f919491ca5d4020a368e751",
+    "stem": "客户要求多个Agent按固定审批顺序执行，但各自可自主调用工具。何种协同设计匹配？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-107",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "自由转交支持多个工作流作为工具，与编排协同唯一运行工作流形成真实易混边界。"
+    ],
+    "reason": "自由转交支持多个工作流作为工具，与编排协同唯一运行工作流形成真实易混边界。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122556"
+    ],
+    "contentHash": "a6840db461425cbc03e8efc75e557f233215f64c6b1d672a400117a9930dab10",
+    "stem": "客户希望Agent遇到不同问题时自行选择多个已建工作流，并非每次都跑同一条主流程。应优先评估什么？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-108",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "单Agent、工作流及全局三个调试层级有来源直接支持，组合成功不能从一个角色测试推出。"
+    ],
+    "reason": "单Agent、工作流及全局三个调试层级有来源直接支持，组合成功不能从一个角色测试推出。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122556"
+    ],
+    "contentHash": "7f3a9ae429f6181ae53bb21ba7c1d8c0e56489c002a7399147dc555e56d38233",
+    "stem": "客户要展示一个由多个Agent组成的固定流程。哪些验证阶段能帮助确认组合可行？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-109",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "PE适用性事实正确，但固定FAQ、只收集不处理、取消拆解均明显不能完成报告；应与其它可行协同模式比较计划确认、定制限制及延迟需求。"
+    ],
+    "reason": "PE适用性事实正确，但固定FAQ、只收集不处理、取消拆解均明显不能完成报告；应与其它可行协同模式比较计划确认、定制限制及延迟需求。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122553"
+    ],
+    "contentHash": "e71d84b100746900f87427c7554a60e61af82d072e211a96fbf49875ee11942a",
+    "stem": "客户要生成细节丰富的专题报告，可接受较长等待，且任务需要规划和多角色分工。哪种协同值得优先验证？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-110",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "执行前可反馈修改计划再确认有官方操作证据；遗漏比较维度为有效确认阶段故障。"
+    ],
+    "reason": "执行前可反馈修改计划再确认有官方操作证据；遗漏比较维度为有效确认阶段故障。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122553"
+    ],
+    "contentHash": "c016054684d560e504c6a414d6c2f17824a9c512694215c426976327d89a6de8",
+    "stem": "Plan-and-Execute演示中，生成的计划遗漏客户指定比较维度。开始执行前应怎样处理？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-111",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "官方当前只开放Executor提示词等有限设置，不能替换全部角色模型，亦不能删除预置Agent；答案准确。"
+    ],
+    "reason": "官方当前只开放Executor提示词等有限设置，不能替换全部角色模型，亦不能删除预置Agent；答案准确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122553"
+    ],
+    "contentHash": "f7a876c16a731454a59f5d771c9808b2cf6bcd28380cb2abf410ec742515964f",
+    "stem": "客户要用PE，并要求替换全部预置执行Agent和模型。哪些设计判断符合当前文档？",
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-112",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "孤立片段丢失规则上下文有依据，明确以原问题复测避免把更长输出误当数据修复；与已退回M6-062同考点，请只保留一题通过版本。"
+    ],
+    "reason": "孤立片段丢失规则上下文有依据，明确以原问题复测避免把更长输出误当数据修复；与已退回M6-062同考点，请只保留一题通过版本。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "aa9fa27ee09f3a5ee542d1d19901a0358129c4d0e1c5bb1dbf12740d3601e0d7",
+    "stem": "客户的答案常遗漏同一规则的例外条款，检查发现正文被切得很碎。优先验证哪项改进？",
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-113",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "父子切分事实正确且考点独立，但一字符、整库一片、温度三项缺乏合理可比性；应比较等长、递归与父子粒度及召回策略。"
+    ],
+    "reason": "父子切分事实正确且考点独立，但一字符、整库一片、温度三项缺乏合理可比性；应比较等长、递归与父子粒度及召回策略。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "f0310843f0e1021b66f0565e73917fe1557c405daaeeb6969af5953cf0ed997a",
+    "stem": "客户想用较小单元定位问题，但回答时保留所在章节的上下文。哪种切分思路最贴合？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-114",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "与已审通过M6-105同一表格按行切分的表头/粒度/格式集合，未新增独立考查目标，应合并或换跨行依赖情境。"
+    ],
+    "reason": "与已审通过M6-105同一表格按行切分的表头/粒度/格式集合，未新增独立考查目标，应合并或换跨行依赖情境。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/122551"
+    ],
+    "contentHash": "e307bf9615986449b391014d9497b74e8c007ce9de79b5eae5701f593975bcb7",
+    "stem": "客户的表格每行是独立记录，无需关联相邻行。选择按行切分时哪些事项有依据？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-115",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "官方可对照原文干预切片，错误数据源修复和召回/输出层掩盖区别清楚。"
+    ],
+    "reason": "官方可对照原文干预切片，错误数据源修复和召回/输出层掩盖区别清楚。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119287"
+    ],
+    "contentHash": "e065a7ffd3c84c52cfba60d1c5694d95cbe1fa838cabe396a447277f6073512e",
+    "stem": "少量关键片段解析有误，但原始资料正确，客户希望在Demo前明确修正。应评估哪个入口？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-116",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "切片修改删除永久变更，备份必要性有官方明确提示，未假设平台自动撤销。"
+    ],
+    "reason": "切片修改删除永久变更，备份必要性有官方明确提示，未假设平台自动撤销。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119287"
+    ],
+    "contentHash": "2ce42d35c218906243ffff71f06e2fa035548f05e60d74c169306b0ea40388ad",
+    "stem": "客户准备批量修改或删除切片，但还未保存原数据。方案中最应补充什么？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-117",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "表格切片可改内容，但不支持原文定位或新增切片，来源直接支持答案集合。"
+    ],
+    "reason": "表格切片可改内容，但不支持原文定位或新增切片，来源直接支持答案集合。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119287"
+    ],
+    "contentHash": "01c6bc78791cc9058f2354b4548f66d5e0f0cdfba0a18e14f7d818f9cd9c2316",
+    "stem": "客户用普通文档的操作经验规划表格修正Demo。哪些边界应事先说明？",
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-118",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "先核字段行记录事实正确，但总文件数、无保留删标题、先保证准确均无可比较诊断价值；需要具体结构问题与允许的改写能力作干扰。"
+    ],
+    "reason": "先核字段行记录事实正确，但总文件数、无保留删标题、先保证准确均无可比较诊断价值；需要具体结构问题与允许的改写能力作干扰。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119288"
+    ],
+    "contentHash": "a4fd0e6a0ecfc00a81711531260c3ecc9f158015fdc6561984dba8e9746670a2",
+    "stem": "客户交付表格有多级合并表头、各行列数不一致，计划直接做精确查询。最应先验证什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-119",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "SQL表格增强事实正确，但改名SQL、关闭检索、摘要长度均显然不提供SQL能力；应与数据库接入及语义切片检索等真实方案比较。"
+    ],
+    "reason": "SQL表格增强事实正确，但改名SQL、关闭检索、摘要长度均显然不提供SQL能力；应与数据库接入及语义切片检索等真实方案比较。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119288"
+    ],
+    "contentHash": "38a887a14a3222b27a217026ffa3d45759169715f9b31e89d0cb5f83e48ea065",
+    "stem": "客户想对已正确结构化的表格做自然语言计算，希望采用SQL路径。应评估什么？",
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "FDE-M4-120",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "编辑重传及单表关闭增强保留语义召回有直接证据，表头释义辅助理解有支持；未错误宣称关闭全部问答。"
+    ],
+    "reason": "编辑重传及单表关闭增强保留语义召回有直接证据，表头释义辅助理解有支持；未错误宣称关闭全部问答。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/119288"
+    ],
+    "contentHash": "6f3ed6c59eebc864b64623826b3b790dbd00b4280294ee44846cce51bca52e0f",
+    "stem": "模型对表格结构改写有误，客户仍希望保留语义问答能力。哪些方案有官方依据？",
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "FDE-M4-121",
+    "status": "rejected",
+    "reviewer": "reviewer",
+    "notes": [
+      "文档对比能力正确，但直接删、只比大小、随机混合三项不能构成有效方案比较；应考自动/手动触发和状态约束。"
+    ],
+    "reason": "文档对比能力正确，但直接删、只比大小、随机混合三项不能构成有效方案比较；应考自动/手动触发和状态约束。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116451"
+    ],
+    "contentHash": "3f7a4c641b9e75f3d60d924849e93a02426edbdf99efe77e4a9af087a60d941d",
+    "stem": "客户新交一版资料，要求先知道它与旧版及衍生问答有哪些差异，再决定取舍。应优先评估哪项能力？",
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "FDE-M4-122",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "源文档与衍生问答独立处理、关联迁移有官方证据，删除文件不必然清掉全部问答的边界正确。"
+    ],
+    "reason": "源文档与衍生问答独立处理、关联迁移有官方证据，删除文件不必然清掉全部问答的边界正确。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116451"
+    ],
+    "contentHash": "8c07dc1c1e46df508f643814faa85742d60c2fd9dc19b0c94b489b2f54104437",
+    "stem": "客户计划保留新版文档并处理旧版衍生问答，不能只看文件替换。为什么？",
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "FDE-M4-123",
+    "status": "approved",
+    "reviewer": "reviewer",
+    "notes": [
+      "业务正确性不能从导入时间推出，差异检查、问答关联与删除依赖有官方依据。"
+    ],
+    "reason": "业务正确性不能从导入时间推出，差异检查、问答关联与删除依赖有官方依据。",
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/116451"
+    ],
+    "contentHash": "3250619d11b7bef8130812e4f9322396aa00237637991ae5365c2cf7c2bd7980",
+    "stem": "客户希望确认差异后选择保留哪份资料，并保留有用问答。哪些动作应纳入方案评审？",
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ]
+  }
+]

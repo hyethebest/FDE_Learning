@@ -1,0 +1,24 @@
+{
+  "courseAccess": "公开浏览器可见正文；直接HTTP获取被站点脚本拦截，未使用该拦截页作为事实依据",
+  "courses": [
+    {
+      "url": "https://cloud.tencent.com/edu/learning/course-4742-84529-84539",
+      "sections": [
+        "3.1 方案设计方法及行业方案判断",
+        "3.2 标准模式实战",
+        "3.3 单工作流实战"
+      ],
+      "checkedAt": "2026-10-13"
+    },
+    {
+      "url": "https://cloud.tencent.com/edu/learning/course-4742-84530-84545",
+      "sections": [
+        "4.1 调试与评测",
+        "4.3 知识库质量与RAG调优",
+        "4.4 Workflow调优",
+        "4.5 Multi-Agent调优"
+      ],
+      "checkedAt": "2026-10-13"
+    }
+  ]
+}

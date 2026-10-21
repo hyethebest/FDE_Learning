@@ -1,0 +1,28 @@
+[
+  {
+    "id": "FDE-M3-133",
+    "status": "rejected",
+    "reviewer": "root-cross-module",
+    "notes": [
+      "最终跨模块认知目标复核：分别与M7-033共享报告审批、M1-088反思职责重叠，需改不同实质配置任务。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/129561"
+    ],
+    "contentHash": "9b2dec752a187cefa2f618a5c888f3b256e235855c2b6e93ecacf6c5b6e1e621"
+  },
+  {
+    "id": "FDE-M3-164",
+    "status": "rejected",
+    "reviewer": "root-cross-module",
+    "notes": [
+      "最终跨模块认知目标复核：分别与M7-033共享报告审批、M1-088反思职责重叠，需改不同实质配置任务。"
+    ],
+    "checkedAt": "2026-10-09",
+    "verifiedUrls": [
+      "https://cloud.tencent.com/document/product/1759/132211"
+    ],
+    "contentHash": "a71853ba164b2ee41b607c7d20c6b86a4f11487c6494510ee8a9b0665f74a1ab"
+  }
+]

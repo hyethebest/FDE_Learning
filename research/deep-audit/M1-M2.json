@@ -1,0 +1,5124 @@
+[
+  {
+    "id": "FDE-M1-001",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D把部署服务与任务优化分开，A颠倒职责、B混入上下文、C混入检索；可作大模型基础的训练/推理区分。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/109354",
+        "section": "概述／发起部署和精调",
+        "locator": "L33–35、L69–71：在线服务／精调训练",
+        "shortFact": "部署提供在线调用；精调改善特定任务表现。",
+        "version": "2026-06-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "基础辨析，尚未检验工程权衡。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "7049dc9556a10aa6f82bff8787b112d830c58158adb633455c4263064d811289",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-002",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C有正文支持，但只是001中精调用途的单独再问；需新增参数训练与外部知识更新的实际取舍。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/109354",
+        "section": "概述／发起部署和精调",
+        "locator": "L33–35、L69–71：在线服务／精调训练",
+        "shortFact": "部署提供在线调用；精调改善特定任务表现。",
+        "version": "2026-06-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "与001共享同一最小事实，独立覆盖有限。",
+    "duplicateGroup": "M1-001/002-精调用途",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "640c82c3d0433cd0988be7ab27d373335a854ffa2e7edb11cf93ce93d56ad19a",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-003",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B是原文列出的例子；其他项是基础设施动作。考的是TI-ONE列举名称，不足证明FDE大模型原理覆盖。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/109354",
+        "section": "概述",
+        "locator": "L33：覆盖各类下游任务",
+        "shortFact": "列举对话、推理、内容创作。",
+        "version": "2026-06-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "列表记忆、易排除，建议学习卡。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "d276778fe61531af06914bd69a0d5495b295f6e2d807350aa4ecee47a50ef974",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-004",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A对应assistant的样本回答；B/C/D分别为证据、用户、系统角色，答案一致。虽取材训练文档，考点可映射消息角色基础。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "section": "监督微调（SFT）数据",
+        "locator": "L48–59：messages及角色表",
+        "shortFact": "system设定角色，user提供输入，assistant提供回答。",
+        "version": "2025-11-19",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "基础角色区分，未涉及TI格式硬背。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "31ad0eaf639a2a4d16f180f0f80bfcc2c51b5f5274dbc565f8c397ec3da11b60",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-005",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D为系统角色设定，A/B/C不对应该角色；可映射提示词概念。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "section": "监督微调（SFT）数据",
+        "locator": "L48–59：messages及角色表",
+        "shortFact": "system设定角色，user提供输入，assistant提供回答。",
+        "version": "2025-11-19",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "系统提示词",
+        "locator": "L104：角色、行为、风格",
+        "shortFact": "系统提示词预置角色行为与输出要求。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "基础定义题。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "135c37fc6e99addfad3fc7b3438cf3f46c4b1c222a9ce2bd368692294161c30d",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-006",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C可由messages多角色连续样本推得；但A/B/D均荒谬且解释未讨论角色或顺序丢失的具体后果。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "section": "监督微调（SFT）数据",
+        "locator": "L48–59：messages及角色表",
+        "shortFact": "system设定角色，user提供输入，assistant提供回答。",
+        "version": "2025-11-19",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "改成两组合理消息序列及上下文误解对比；当前仅学习。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "322c8a3dfae6f718606d675d7e723a791e11336326b333d456e4d80229e6340b",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-007",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B符合任务语言标签用途；A/C/D被“只/仅”限定为片面依据，无需知道平台即可排除。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/109354",
+        "section": "浏览内置大模型",
+        "locator": "L55：模型标签",
+        "shortFact": "标签按任务、语言、框架分类。",
+        "version": "2026-06-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "TI-ONE浏览操作，M1关联弱；改实际任务能力选择。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "9f0b706fe3b1a95843dc310d0431466055e4b717630d5b56c58f9159a3e02556",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-008",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A符合外部知识进入生成上下文，B/C/D均是参数训练；对应RAG与训练的概念差异。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "section": "知识检索流程",
+        "locator": "L31–39：三个步骤",
+        "shortFact": "导入切分索引向量化，检索相关块，再结合上下文生成。",
+        "version": "2025-09-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "基础概念辨析。",
+    "duplicateGroup": "M1-008/043-RAG上下文",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "3876cf934bb94053bc2b9d1b1c7330b118aba3699a89b14ea2fe11f460335daa",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-009",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D与Token词条一致；字节、请求次数、参数量三类干扰有明确不同含义。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104495",
+        "section": "Token词条",
+        "locator": "L6531–6533：词元",
+        "shortFact": "Token是文本处理单位，中文切分不固定等于字数。",
+        "version": "抓取页未显示独立更新时间；2026-10-09读取",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "适合作基础题，不代表考试难度经校准。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "d48804b0410721737b29cccd7052f5e83443e42f1ecda827487376bf7f1dec68",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-010",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C符合中文切分可跨字词标点，A/B/D固定映射均不成立。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104495",
+        "section": "Token词条",
+        "locator": "L6531–6533：词元",
+        "shortFact": "Token是文本处理单位，中文切分不固定等于字数。",
+        "version": "抓取页未显示独立更新时间；2026-10-09读取",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "基础Token计数认识。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "31ef82fb5983f7780c3959b49cb7327438d3346abbbdfdd242638b75e010f1ce",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-011",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B算术正确，Usage示例亦为输入加输出；但800+200只测加法，其他算法明显不成立。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/101838",
+        "section": "Usage",
+        "locator": "L825–838：PromptTokens、CompletionTokens、TotalTokens",
+        "shortFact": "分别统计输入、输出及总Token。",
+        "version": "2026-02-12",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "应给多轮消息或上下文预算决策，当前仅学习。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "697e1c463555556aceacba367a3559fc50277fa97813ad1de20824dd9507185b",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-012",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A成立：再次传入历史仍属输入；B/C/D混淆历史重传与输出/持久记忆。题未声称缓存计费规则，边界可接受。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/111007",
+        "section": "多轮对话",
+        "locator": "L230–232：拼接历史",
+        "shortFact": "多轮请求携带之前的用户和助手消息。",
+        "version": "2026-04-27",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/101838",
+        "section": "Usage",
+        "locator": "L825–838：PromptTokens、CompletionTokens、TotalTokens",
+        "shortFact": "分别统计输入、输出及总Token。",
+        "version": "2026-02-12",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "基础上下文预算。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "7eddee4c1e1db2a741477076047611d2f463649786926cf6cb211fc4a139c3fe",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-013",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D由max_tokens总窗口约束推出；历史和召回片段送入请求后都占输入。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/111007",
+        "section": "OpenAI兼容参数",
+        "locator": "L1930–1932：messages、max_tokens",
+        "shortFact": "输入输出总Token受模型上下文长度约束。",
+        "version": "2026-04-27",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "考总窗口预算，区别于输出上限定义。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "1d5c467432085e07bed102fc04f264b241dad4d3819e8c878583582766dc69de",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-014",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C是参数原义；与M3-033同一生成长度约束知识点，不能计两个独立目标。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "模型",
+        "locator": "L69：最大回复Token",
+        "shortFact": "约束生成长度。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "重写成超长输入时预算处理，避免只交换问法。",
+    "duplicateGroup": "M1-014/M3-033-输出上限",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "4b08e028bcfe1954e60b17a9a51f6d65eb51e580e05788ec6d8fa4f096159f7c",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-015",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B正确但其他选项把Token计数解释成权限之外的无关统计；未考实际用量分析。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/101838",
+        "section": "Usage",
+        "locator": "L825–838：PromptTokens、CompletionTokens、TotalTokens",
+        "shortFact": "分别统计输入、输出及总Token。",
+        "version": "2026-02-12",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "C/D/A过弱，宜加入缓存输入、上下文与输出的可信误解。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "c56b788cbc5153c7d5487541ab8071e121db2450fc05a278c3cc53f3b34c999d",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-016",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A为合理边界推理；B/C/D都声称长度能自动核验事实，三项同类极端错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "模型",
+        "locator": "L69：最大回复Token",
+        "shortFact": "约束生成长度。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "改有证据完整性与截断两种真实故障的诊断。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "a51fa4238c41903c8f6bdde887397c19e172fd8f88a7a03e5cdc74c5b605145a",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-017",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D符合官方额外Token提示；A/B/C均以不处理或零输入否定模型处理。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "section": "注意",
+        "locator": "L53–55：更多Token／简单问答",
+        "shortFact": "多轮检索开销较大；简单问答推荐传统RAG。",
+        "version": "2026-08-21",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "高频“自动为零”弱干扰；偏M3/M6成本配置。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "8681684aa23969aa01e0eaf47856b896bf9636f0b016bbd0ff238908e4909fc8",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-018",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C由Usage字段直接证实；三个干扰均把没有自然语言误作没有输入处理，且有“按页数/跳过”等不可信断言。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1772/115343",
+        "section": "输出参数",
+        "locator": "L75–76：Data、Usage",
+        "shortFact": "向量结果同时返回Token消耗。",
+        "version": "2026-05-25",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "仅学习；可改向量和生成两阶段用量归因。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "42e2c1bb79677c7897adcdab353216cca020c1a1e51be3beea514b91ebbfdbda",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-019",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B角色风格设定正确，但与020/028及005构成重复角色归类系列；A/D纯数值干扰过弱。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "系统提示词",
+        "locator": "L104：角色、行为、风格",
+        "shortFact": "系统提示词预置角色行为与输出要求。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "用互相冲突的系统和用户要求考边界可提高质量。",
+    "duplicateGroup": "M1-019/020/028-角色与任务",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "c037be78a494a5587385d6bcc28f7a0159befbf74973dba58219ba0a17426fd5",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-020",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A是本轮请求；B/C/D均不在同一任务层次。与028后半句为同一判断。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "用户提示词",
+        "locator": "L118：具体指令请求",
+        "shortFact": "用户提示词承载具体请求。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "换请求内容不足以成为独立目标。",
+    "duplicateGroup": "M1-019/020/028-角色与任务",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "03b6a8819adc4f6354e3813244df8f69dbdae18590dd72196896c8d522667cc6",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-021",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D具体可执行输出要求有支持；A/B/C把指令夸成训练、概率控制或真实性保证。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "系统提示词",
+        "locator": "L104：角色、行为、风格",
+        "shortFact": "系统提示词预置角色行为与输出要求。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "三项过弱；需比较两个均合理但约束不同的prompt。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "1605e9dc819d455f5ac159501d8d395313ae65614b4be952cb575cae8a2e08c0",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-022",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C符合反馈转自然语言准则；不是全参数训练。属于Claw调优机制，宜归M3/M6而不是M1基本原理。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "section": "功能概述",
+        "locator": "L42–48：可复用行为要求",
+        "shortFact": "将反馈形成后续同类任务的自然语言要求。",
+        "version": "2026-09-24",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "选项B/D过于显眼，不能以综合题计。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "3d79b7f774fb6784fe544c86654a2090d367b60075ef19c3c386e75b8e2b4d01",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-023",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B符合正文例子，A/C/D都接受无依据确定答复；题干几乎沿用官方合同缺条款示例。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "section": "功能概述",
+        "locator": "L42–48：可复用行为要求",
+        "shortFact": "将反馈形成后续同类任务的自然语言要求。",
+        "version": "2026-09-24",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "浅层复述和过弱干扰；需原创证据冲突场景，不可声称贴近真题。",
+    "duplicateGroup": "M1-023-官方合同缺据示例",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "864cf1f7bdd31e08a5d4a727d5765088746e9e65b4694ec0dba151e61e35cd04",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-024",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A针对多个Agent协作，B/C/D是不同配置对象；事实清楚但为Claw配置边界，宜移M3。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "section": "各配置项职责与边界",
+        "locator": "L302–315：约束对象",
+        "shortFact": "成员执行用提示词，跨成员协作写团队规则，复杂产物规范可用Skill。",
+        "version": "2026-08-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "M1概念配额被具体配置占用。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "fca4ff58c65b7e5e65bffc68ee8139f3ec6e800e90044f3e935764a0a0333547",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-025",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D符合路由用途；A/B/C均不能合理解释成员描述。又与075考相同职责描述。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "section": "添加子Agent",
+        "locator": "L134–146：名称与描述",
+        "shortFact": "描述帮助路由，执行方法写提示词。",
+        "version": "2026-08-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "换成两个职责交叠成员的具体路由误差才有区分度。",
+    "duplicateGroup": "M1-025/075-成员描述路由",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "891c40f093969efa5d1e5f55b0411ca7f7eae668f28ea4d92972db785223652c",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-026",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C在复杂可复用产物规范下有明文依据；题考Claw推荐配置而非AI基础。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "section": "各配置项职责与边界",
+        "locator": "L302–315：约束对象",
+        "shortFact": "成员执行用提示词，跨成员协作写团队规则，复杂产物规范可用Skill。",
+        "version": "2026-08-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "其他选项都不提供规范模块，宜作功能学习。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "d77b76a594df50f528964c54d5212f43eb8da863154f8509cdaeef776ae3d28d",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-027",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B符合视觉内容约束；A/C/D涉及种子、训练集、文件大小，与所给自然语言不近似。与085同一目标。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/106530",
+        "section": "文生图说明／物品类模板",
+        "locator": "L33；L91–93：文本描述、材质、镜头",
+        "shortFact": "文本描述引导图像生成，可描述主体、材质、场景与构图。",
+        "version": "2026-04-27",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "改成内容构图与随机性参数的可行组合比较。",
+    "duplicateGroup": "M1-027/085-图像提示要素",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "665f80d4993ce9c9765e589f2780866ab0b1528fae8e1100f1766ed02756d29f",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-028",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确区分角色和任务，但019/020已拆问同一知识；B/C/D均跨层混淆。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "系统提示词",
+        "locator": "L104：角色、行为、风格",
+        "shortFact": "系统提示词预置角色行为与输出要求。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "用户提示词",
+        "locator": "L118：具体指令请求",
+        "shortFact": "用户提示词承载具体请求。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "组合成一句未增加实质判断，保留为复习变体。",
+    "duplicateGroup": "M1-019/020/028-角色与任务",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "0edb22baf553f38f74dac10f0736ebdf5a2166c76feb0146c474717d3a7d365b",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-029",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D契约帮助选择和调用成立；本轮原115872页失败，已用官方117855正文补证。与076及M2-056同契约目标。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117855",
+        "section": "新建工具／引言及基于API和代码新建",
+        "locator": "名称、描述、输入参数、输出参数和调用方式（本轮搜索正文）",
+        "shortFact": "工具需声明可调用能力及参数；代码类型支持Python函数。",
+        "version": "2026-08-20",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      }
+    ],
+    "difficultyConcern": "需解释参数不明如何导致错误调用，而非列清单。",
+    "duplicateGroup": "M1-029/076/M2-056-工具契约",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "a15840fe2be710e76fd2575ef01986062acd0f842a751248b5499e28d44358a0",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-030",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C是写明局部场景的目的；A/B/D都把范围规则误作覆盖一切或忽略内容。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "section": "如何写清楚调优要求",
+        "locator": "L313–319：场景、做法、聚焦",
+        "shortFact": "写明适用场景和具体行动，拆开不同要求。",
+        "version": "2026-09-24",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "干扰过弱且偏调优准则；建议具体重叠条件冲突。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "7bae64e8472a8507e8bbf884ced52fd6effc5bbeec1016c9c1c44e4c6e5310f3",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-031",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B为数值向量，其他项分别是排序、生成或定位结果；对应Embedding基础原理。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1772/115343",
+        "section": "接口描述",
+        "locator": "L41：数值向量",
+        "shortFact": "文本向量可用于检索、推荐与知识挖掘。",
+        "version": "2026-05-25",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "基础定义题，可保留少量。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "43fa55166d56f2ec7cb30dbb686ed1d0164c30884068cf9847a8bd3896b97f77",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-032",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A符合该接口TextType的效果建议；不能把特定API参数规则当所有Embedding的普遍要求。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1772/115343",
+        "section": "输入参数／TextType",
+        "locator": "L67：query、document",
+        "shortFact": "检索建议区分查询和文档；对称任务可默认document。",
+        "version": "2026-05-25",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "改题干显式限定GetEmbedding，或改成查询与文档匹配概念。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "a3aa15005dee431a3dda2b1efa7b19f6195c8ed7cf1ddd9b47a915b504427d1d",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-033",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D正确，但测的是GetEmbedding对称任务默认参数，考纲未明确要求此接口默认值。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1772/115343",
+        "section": "输入参数／TextType",
+        "locator": "L67：query、document",
+        "shortFact": "检索建议区分查询和文档；对称任务可默认document。",
+        "version": "2026-05-25",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "TI/原子能力细节；M1配额关联弱且干扰明显。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "d7ed0c276b0ee7110c903bea3c0a5e4d38df70b7ebc38d7558ddd955b2cfb9d9",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-034",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C是重排相关性；A/B/D分别对应向量、改写、解析，均为链路内可混淆机制。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/106206",
+        "section": "原子能力表",
+        "locator": "L27–29：embedding、改写、重排序",
+        "shortFact": "向量表示、问题补全及相关性排序为不同环节。",
+        "version": "2025-05-20",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "基本但有同链路可信干扰。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "c581934132128c276e9315e94c339e397463b3a17511b856e20f81c5caab91ae",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-035",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B解决历史指代，A/C/D分别记忆、重排、向量化，依据明确。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/106206",
+        "section": "原子能力表",
+        "locator": "L28：多轮改写",
+        "shortFact": "利用历史处理指代与省略。",
+        "version": "2025-05-20",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "有具体代词场景，属RAG上下文概念。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "b8fbfe46f668137cbd60cfb2c4875e688b0206815dc5b39b053c07d96072f5d1",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-036",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A将格式元素组织为可读内容，B/C/D是检索重排生成；概念和答案清楚。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/106206",
+        "section": "原子能力表",
+        "locator": "L24–25：文档解析",
+        "shortFact": "解析文件元素并整理阅读顺序。",
+        "version": "2025-05-20",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "基础RAG处理阶段辨析。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "c17f8d07d47b757b896bd24c4351ce4d2409b17208a33e766dfe4b1c1558f0be",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-037",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D解释切片粒度正确，但A复制全文、B分配权限、C每次训练均与切片不构成真实取舍。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/106206",
+        "section": "原子能力表",
+        "locator": "L26：文档解析拆分",
+        "shortFact": "语义拆分结果供召回及阅读理解。",
+        "version": "2025-05-20",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "需加入切片长度、语义边界、上下文完整性的合理干扰。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "c9fc702f109592726bb5b07df854e2d0c9ecde4852119f75418eb0bbcf1c82b6",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-038",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C对应召回定义；其他选项代表训练、发布、生成，解答一致。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "section": "功能说明",
+        "locator": "L29、L38：召回",
+        "shortFact": "测试检索能否找回知识切片。",
+        "version": "2026-08-05",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "入门定义题；难度低但术语在考纲RAG内。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "804b53ee9be3e4e889b13ee8e70169fc5e68f92c147a1c210487b38ae9ecbe16",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-039",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B从检索与生成阶段分工可推出；A/C/D都是必然正确式极端断言。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "section": "功能说明",
+        "locator": "L29、L38：召回",
+        "shortFact": "测试检索能否找回知识切片。",
+        "version": "2026-08-05",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "section": "知识检索流程",
+        "locator": "L31–39：三个步骤",
+        "shortFact": "导入切分索引向量化，检索相关块，再结合上下文生成。",
+        "version": "2025-09-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "应加入召回完整但生成误用、部分召回等对照，不宜作当前模拟题。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "da5bc1686701d19c8cf73e89ef70713cfa6466c34374ca78eeb45a762fed2ceb",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-040",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确但与098同为高相似度仍需核内容来源；干扰仍为分数万能、无结果等不存在。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "section": "功能说明",
+        "locator": "L46：查看召回结果",
+        "shortFact": "结果展示内容、分值、来源和原文入口。",
+        "version": "2026-08-05",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "同目标正反提问，不应重复计数。",
+    "duplicateGroup": "M1-040/098-分数与证据",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "e057129870f3a51dc78885fca13e5b23ced2dd9c31bbbfb1b9b307aa7b8964c7",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-041",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D由关键词或语义召回证实；A/B/C只是逐字/按日期/全塞三项极端做法。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "section": "知识检索流程",
+        "locator": "L31–39：三个步骤",
+        "shortFact": "导入切分索引向量化，检索相关块，再结合上下文生成。",
+        "version": "2025-09-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "需比较关键词、语义及混合在同一任务的取舍。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "126ead38257f8d79af101099976e4cde558d59d5559c3c6a64392f0bb0fa1786",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-042",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C是官方应用列举；A/B/D混为生成、全对保证及事务执行。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1772/115343",
+        "section": "接口描述",
+        "locator": "L41：数值向量",
+        "shortFact": "文本向量可用于检索、推荐与知识挖掘。",
+        "version": "2026-05-25",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "字面列表且干扰过弱，Embedding原理覆盖有限。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "152eb77d8e2b695e785f96d50e57a7a196f4466c86f777671f6e2856197f9f59",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-043",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B为外部上下文增强，与008完全同一训练vs上下文知识判断。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "section": "知识检索流程",
+        "locator": "L31–39：三个步骤",
+        "shortFact": "导入切分索引向量化，检索相关块，再结合上下文生成。",
+        "version": "2025-09-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "换称“增强”没有引入独立目标，学习变体。",
+    "duplicateGroup": "M1-008/043-RAG上下文",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "80d604f4c598534f7ac9c5f6c26bb2c1ac6bd3b723d9f27eeab8aa562976ff3d",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-044",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A是检索后生成，但与008/043共用流程入门；B/C/D是反向证据、每次微调、直接显示向量。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "section": "知识检索流程",
+        "locator": "L31–39：三个步骤",
+        "shortFact": "导入切分索引向量化，检索相关块，再结合上下文生成。",
+        "version": "2025-09-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "需要一个真实链路故障来检验顺序影响，当前干扰过弱。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "3030b100f7be49b17bd2b3f2b9de54eb67035de1385180650060b761333ffb71",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-045",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D的评估后再检索成立；B仅重排与反思循环构成可比较差异。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "section": "传统RAG对比／反思模型",
+        "locator": "L34–37、L83：完整性",
+        "shortFact": "反思检查检索充分性并决定是否重新检索。",
+        "version": "2026-08-21",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "映射RAG进阶概念；不能把此例外推全业务必优。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "23c3d771b026c28f76eb592ccd4b5ff9c8800106357a19cc678a36341419b1f3",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-046",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C符合简单问答成本速度建议；A/D明显过度设计，B违背文档问答，形成提示答案。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "section": "注意",
+        "locator": "L53–55：更多Token／简单问答",
+        "shortFact": "多轮检索开销较大；简单问答推荐传统RAG。",
+        "version": "2026-08-21",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "应比较具有限定检索范围或相同模型的两方案，偏M4选型。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "b0398de27327856dd7f6e7e2fecc264c970f2f48fbcfa380b39757936c7622c9",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-047",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B为图谱实体关系推理特征，事实有直接支持；GraphRAG可作RAG延伸，但不应让此专题大量占M1。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "什么是GraphRAG",
+        "locator": "L39：实体关系与多跳",
+        "shortFact": "结合图谱关系和语义检索。",
+        "version": "2026-02-12",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "A/C/D均只改表面参数，区分度低。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "08c49fc5d618e73dd3df620d3d4b4950be98e19a45672ae2c18122d9f75f6f87",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-048",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A正确；识别对象为实体是图谱术语，而非大模型核心机制。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "GraphSchema",
+        "locator": "L65：实体",
+        "shortFact": "实体是独立对象。",
+        "version": "2026-02-12",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "与049–052形成密集词义卡组，建议合并情境建模题；实体与属性不是已证实同目标重复。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "d50807c4e6cadf75c4c11753a7ccd2eaa3882877a02335faf239165b33ac8368",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-049",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D正确表示设备特征，A/B/C分别关系/实体/检索分；宜图谱专题学习。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "GraphSchema",
+        "locator": "L67：属性",
+        "shortFact": "属性描述特征，属性之间不直接建立关系。",
+        "version": "2026-02-12",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "连续术语拆问、主题密集；不因与实体同源就认定两题重复。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "e595c158e6c14b28aa963bf58ffb6dc86ccc26e1f0081e9eb05b40bfd7a3fccc",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-050",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C正确；设备维护为实体关系。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "GraphSchema／图",
+        "locator": "L69、L80：关系、边",
+        "shortFact": "关系连接实体或属性；边表达关系。",
+        "version": "2026-02-12",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "与052同关系语义，图谱专题过密。",
+    "duplicateGroup": "M1-050/052-图谱关系",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "38ea9df5b9eeb1868a13db0b91cbabe435e9fa50b92d044d2e4b076fb9cf6a15",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-051",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B符合主体-谓词-对象结构；其余仅交换词序。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "三元组",
+        "locator": "L72–76：两类三元组",
+        "shortFact": "关系三元组为实体-关系-实体；属性关系用has_attribute。",
+        "version": "2026-02-12",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "符号排列题过易，建议给多关系路径再判断；与实体属性词义相关但不直接判为同题。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "a97e6fbb8d647af48848c905536e5a4038172e3707f8247fe58a1001b255322f",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-052",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A正确，但与050仅将“关系”改问成图的“边”，同一认知任务。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "GraphSchema／图",
+        "locator": "L69、L80：关系、边",
+        "shortFact": "关系连接实体或属性；边表达关系。",
+        "version": "2026-02-12",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "存储路径、向量维数等干扰跨层明显。",
+    "duplicateGroup": "M1-050/052-图谱关系",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "3beb9cbeb161254c2118eaec049e061d5ba2fad8d53a67d01c2335f2d84535b1",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-053",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D个性化上下文成立；A/B/C都是全部逐字/覆盖所有/全用户等绝对化错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134719",
+        "section": "记忆内容",
+        "locator": "L33–45：摘要、当前关注",
+        "shortFact": "记忆提炼个人背景，摘要可持续更新和人工编辑。",
+        "version": "2026-08-13",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "改成偏好与短期对话事实是否应持续记忆的取舍。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "8f866c2842e3f0fe40228f5f3adcd2698431f6aae945fc103435df5ef0749d60",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-054",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C对应“当前关注”分区；只是工作台摘要UI字段，不是长期记忆原理。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134719",
+        "section": "记忆内容",
+        "locator": "L33–45：摘要、当前关注",
+        "shortFact": "记忆提炼个人背景，摘要可持续更新和人工编辑。",
+        "version": "2026-08-13",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "栏目释义背诵，宜学习说明。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "c294dd61526781158c39f38a25c975a0dd733448821920b8bf9f3bb0d1fc68b4",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-055",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B符合人工校准；A/C/D均否定人工编辑或假定天然正确，且092/094重考同点。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134719",
+        "section": "记忆内容",
+        "locator": "L33–45：摘要、当前关注",
+        "shortFact": "记忆提炼个人背景，摘要可持续更新和人工编辑。",
+        "version": "2026-08-13",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "缺具体错误记忆修复目标；重写为与历史冲突的记忆处理。",
+    "duplicateGroup": "M1-055/092/094-人工校准记忆",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "23db16405894e7c9f637e73a6b9677d10f1a5724bf175de0f1c25336c5b9b53d",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-056",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A符合9月新版，B旧边界排除有版本依据；该规则是产品记忆库配置，宜M3/M7。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "section": "功能介绍前说明",
+        "locator": "L41：记忆库×终端用户",
+        "shortFact": "按库和终端用户隔离；同库同用户可跨应用一致。",
+        "version": "2026-09-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "不能当通用记忆理论；题已限定版本是优点。",
+    "duplicateGroup": "M1-056/057-同库用户隔离",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "ca205df17864c1bb710581e65f25d25139b6df3f90b6d3de0f050c0aa5fd1f25",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-057",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D由056隔离维度直接推出，缺少额外绑定类型或迁移条件判断。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "section": "功能介绍前说明",
+        "locator": "L41：记忆库×终端用户",
+        "shortFact": "按库和终端用户隔离；同库同用户可跨应用一致。",
+        "version": "2026-09-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "同一规则换正向场景，重复计数风险。",
+    "duplicateGroup": "M1-056/057-同库用户隔离",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "b1f46b8d1f24b63e9cb62019764d6a46ab79a0da7abb0a819c401aefc80a9a56",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-058",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C与9月文档一致；与M3-155题干、选项及结论实质相同。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "section": "应用中开启长期记忆",
+        "locator": "L131：关闭后",
+        "shortFact": "关闭停止读写但保留内容和绑定。",
+        "version": "2026-09-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "保留一题移M3，另一题换独立概念。",
+    "duplicateGroup": "M1-058/M3-155-停用记忆",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "c48c35f6c7657f0f1d131b43d29e83cd61d421530e92422fb4d3224d759b13cb",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-059",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B区分交互记录与提炼信息，C全部逐字不符，A本轮问题不符，D互斥不符。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134719",
+        "section": "常见问题1",
+        "locator": "L125–127：历史与记忆",
+        "shortFact": "历史是完整记录，记忆是提炼出的用户信息。",
+        "version": "2026-08-13",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "M1记忆核心概念，可保留。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "8ab035decb3b846df516bf02ad154e0e1fbf4c2773e4e59118a2a99d202ccc4b",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-061",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D符合图生文输入输出，三项干扰是其他模态或向量任务。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/111007",
+        "section": "图生文",
+        "locator": "L458–464：ImageUrl.Url",
+        "shortFact": "图片与文本输入产生文本；图片可用URL或带MIME的base64。",
+        "version": "2026-04-27",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "基础模态辨析；来源有迁移通知不影响该概念。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "39979b4f1d233c573078c7079b0df8cf4c922fd90fdebe5dc0b7d95675d5a7c6",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-062",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C定义成立，但仅凭“文字生成海报”可直接复述文生图；与066同生成vs检索。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/106530",
+        "section": "文生图说明／物品类模板",
+        "locator": "L33；L91–93：文本描述、材质、镜头",
+        "shortFact": "文本描述引导图像生成，可描述主体、材质、场景与构图。",
+        "version": "2026-04-27",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "与其他模态基本名称成组可作学习，增加实际能力约束。",
+    "duplicateGroup": "M1-062/066-生图与检索",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "38efdbc79470afd60047811f0d77f70d9b9c20af8f2731f1aa7252e19441bf96",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-063",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B依模型能力成立；A/C/D把Token、节点或文字路径当自动赋予模态能力。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "多模态输入",
+        "locator": "L73、L86、L95：根据模型能力",
+        "shortFact": "支持何种视觉或音频任务依赖所选模型。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "三个明显魔法式干扰，应改模型标签与输入类型的真实搭配。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "7b931acae4b65d2f4be1843d9d9019a9da977d2e8727c4cd5fc3873e9f780d23",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-064",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A在相应生成模型成立；B/C/D均涉及强制训练或永久权重。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "视觉输入",
+        "locator": "L86：生成的参考输入",
+        "shortFact": "视觉输入也可作为生图参考。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "题干未明确生图模型，解析泛泛；宜说明能力前提并用同模态干扰。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "4f6000dc3b7d4f8ef4f308f295fb4f193635eaae0c43c6fd39a7e98f7653d92c",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-065",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D方向正确；其余三项全部离开语音识别/合成，只需识字即可排除。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "音频输入",
+        "locator": "L95：识别、理解、合成",
+        "shortFact": "文档区分语音识别、音频理解和语音合成能力。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "改为语音转写、翻译、说话人识别、TTS等邻近任务。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "59bcb3804ac1ee8fe071c86c7c5a358b8e09931e6b60cb4abf970f0cd2a141fb",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-066",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C生成与已有对象检索之别成立，与062的干扰A及解析同一判断。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/106530",
+        "section": "文生图说明／物品类模板",
+        "locator": "L33；L91–93：文本描述、材质、镜头",
+        "shortFact": "文本描述引导图像生成，可描述主体、材质、场景与构图。",
+        "version": "2026-04-27",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "A/B完全错误机制、D倒置定义，宜合并062。",
+    "duplicateGroup": "M1-062/066-生图与检索",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "6fc80a60c6bc1de5a381deffc3fe06e504b20d3f8f4d1db398e946d49269d8a6",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-067",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B符合ImageUrl两种载荷；A/C/D不提供规范图像数据。属于混元接口实现细节，M1关联弱。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/111007",
+        "section": "图生文",
+        "locator": "L458–464：ImageUrl.Url",
+        "shortFact": "图片与文本输入产生文本；图片可用URL或带MIME的base64。",
+        "version": "2026-04-27",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "API图像载荷不是多模态基本原理，建议专题补充。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "69526d5afdf06c4ee70b565dedfb7365ef86d387953a78e0954339cdf8bf27e1",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-068",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ABC是定义列举，D无限权限显然不是能力；虽正确但多选只需删一项。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104495",
+        "section": "AI Agent词条",
+        "locator": "L81–83：AI智能体",
+        "shortFact": "智能体可承担流程、分析和决策任务。",
+        "version": "抓取页未显示独立更新时间；2026-10-09读取",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "不能以“综合”难度标注；需任务可执行性与授权条件。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "24469cc2ece7a6f078fcf4d90011a024aeff490cc10dc186c89f4b726b79d425",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-069",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "AD为外部查询执行；B将请求参数当操作成功，C当训练均错误。原页失败但官方连接器和Function Calling正文独立补证。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115874",
+        "section": "使用连接器／引言",
+        "locator": "正文首段：查询数据、调用系统、执行任务（本轮搜索正文）",
+        "shortFact": "连接器接入外部系统及业务数据以执行操作。",
+        "version": "2026-05-27",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/111007",
+        "section": "Function Calling",
+        "locator": "L785–797：客户侧调用函数",
+        "shortFact": "模型选函数和参数，外部代码执行后再提供结果。",
+        "version": "2026-04-27",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "语言计划与真实执行区分可对应Agent原理。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "3a9ec6e10a43fd8029cbab489ef386d72f96f36aeb76833252b2c2c3ccd10b45",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-070",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "CD为开放协议及统一接口，AB是权重或自动授权，不构成协议间真实混淆。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115873",
+        "section": "MCP简介",
+        "locator": "开放协议、统一接口规范（本轮搜索正文）",
+        "shortFact": "MCP统一外部数据与工具的接入。",
+        "version": "2026-05-27",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      }
+    ],
+    "difficultyConcern": "偏M3 MCP；需换标准协议与认证职责的可信干扰。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "6912cc6e65e95285257d93064994cdbf05259cf203f783bd5e075c1b339d4e04",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-071",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "BC可由连接器系统接入和独立API工具支持；AD为只读文件名/必须长期登录的过度限定。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115874",
+        "section": "使用连接器／引言",
+        "locator": "正文首段：查询数据、调用系统、执行任务（本轮搜索正文）",
+        "shortFact": "连接器接入外部系统及业务数据以执行操作。",
+        "version": "2026-05-27",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115748",
+        "section": "节点功能／常见问题",
+        "locator": "一个连接器中可能包含一个及以上工具（本轮搜索正文）",
+        "shortFact": "工具是具体API能力，连接器可含多个工具；支持API和MCP。",
+        "version": "2026-05-27",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      }
+    ],
+    "difficultyConcern": "偏产品能力边界，建议M2；非基础AI原理。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "d0f3f5fe673f41e3abae2109396f5099d57330e7659e8fc6e4c4d35d7f56b11b",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-072",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "AB符合Claw默认委派，C成员通信不符，D交回用户明显无关；题干应明确Claw以免泛化所有Agent框架。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "section": "单向委派工作原理",
+        "locator": "L86–96：调度中心",
+        "shortFact": "主Agent分派并整合，成员不能直接通信。",
+        "version": "2026-08-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "产品默认机制题；M3归属更合理。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "13be0a354866977bbeb3f68aec81ab7a4d4046f0a61850e563cd6f295e114668",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-073",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "AD分别对应需互动与独立并行；BC混淆具备能力与必须启用、并行与通信。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "section": "快速选择／概述",
+        "locator": "L59–80：独立任务、成员互动",
+        "shortFact": "独立子任务用委派；需互动可组队且有额外开销。",
+        "version": "2026-08-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "section": "单向委派工作原理",
+        "locator": "L86–96：调度中心",
+        "shortFact": "主Agent分派并整合，成员不能直接通信。",
+        "version": "2026-08-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "有实质协作维度差别；属于Agent机制延伸。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "dfdfc7c8937603ad24abefc6ea0eff25164810dc04b5a950a528b2df0c8d5f7d",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-074",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "CD符合协调成本和简单任务不组队；AB宣称成员越多成本越低、人数证明真实性。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "section": "快速选择／概述",
+        "locator": "L59–80：独立任务、成员互动",
+        "shortFact": "独立子任务用委派；需互动可组队且有额外开销。",
+        "version": "2026-08-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "只有两个显然合理选项，综合难度虚高。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "7160fab570eb6b2e47415682d107c1e194b0299ff54fd88eede0c83192b1e594",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-075",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "BC职责及不处理边界正确；与025仍为描述用于路由，AD是名称塞全部细节或相同描述。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134193",
+        "section": "添加子Agent",
+        "locator": "L134–146：名称与描述",
+        "shortFact": "描述帮助路由，执行方法写提示词。",
+        "version": "2026-08-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "实质重复且弱干扰。",
+    "duplicateGroup": "M1-025/075-成员描述路由",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "32da8e5f12ab1a47025efa4d7ff95700d59a04bcb71cee14a685f68e66d14171",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-076",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ABC与自定义工具引言一致；与M2-056完全同契约清单，29亦同目标；D万能工具非常明显。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117855",
+        "section": "新建工具／引言及基于API和代码新建",
+        "locator": "名称、描述、输入参数、输出参数和调用方式（本轮搜索正文）",
+        "shortFact": "工具需声明可调用能力及参数；代码类型支持Python函数。",
+        "version": "2026-08-20",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      }
+    ],
+    "difficultyConcern": "替换同层参数/描述歧义，而非万能工具反例。",
+    "duplicateGroup": "M1-029/076/M2-056-工具契约",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "4995b1c93743e1ace8a0ba4b96b04ccaa3054f59e4548ea09795fe2a8805e2e2",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-077",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "AD是路径自主规划与预设步骤；BC误把自主等同无工具、工作流等同无模型。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "模式名称表",
+        "locator": "L27–32：四种模式",
+        "shortFact": "四模式分别面向自主代码、预设问答、固定流程和自主规划。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "可作为Agent与流程基础区别。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "9845a11e61315960613d1fe659e5fca6e572c2bc455f0a788d07685657cfe713",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-078",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "CD支持随机性变化，AB却是知识范围和上下文大小两个无关配置。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "模型",
+        "locator": "L67：温度",
+        "shortFact": "温度影响随机性与输出稳定程度。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "应换温度极低仍可幻觉或重复运行差异判断，当前多选过易。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "17d0ad64227c439bbd75cd5b79a74cbd196ca093c38bd2b7f4f1d6bf1a779bd7",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-079",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "BCD与原文一致，A文档数量与采样参数不近似。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "模型",
+        "locator": "L68：Top_P",
+        "shortFact": "影响生成多样性；较大值可能引入无关词。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "只剔除跨层选项，综合难度不成立。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "6e51195348b7f5fcaa7875fdff268f35f19ad0cac8482eb0ac7dd9a4143328f1",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-080",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "AB分别对应text和messages；事实正确但考TI-ONE训练数据字段，未找到FDE要求此格式的证据。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "section": "总体说明／预训练数据",
+        "locator": "L37；L172–174：text",
+        "shortFact": "文档区分SFT、PT和Embedding精调；PT用无标签文本。",
+        "version": "2025-11-19",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "section": "监督微调（SFT）数据",
+        "locator": "L48–59：messages及角色表",
+        "shortFact": "system设定角色，user提供输入，assistant提供回答。",
+        "version": "2025-11-19",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "宜改成预训练与指令示例的概念差异，不占模拟配额。",
+    "duplicateGroup": "M1-080/081-TI训练格式",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "e82f8bd688547760055f30a73f1152394e83b0aa4ff26571e6aae87cf7107734",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-081",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ABD只是训练文档目录，C所有任务同结构明显错误；与080同一任务分类材料。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "section": "总体说明／预训练数据",
+        "locator": "L37；L172–174：text",
+        "shortFact": "文档区分SFT、PT和Embedding精调；PT用无标签文本。",
+        "version": "2025-11-19",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "题库凑目录项风险；偏离FDE基础应替换。",
+    "duplicateGroup": "M1-080/081-TI训练格式",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "7839c0aa225d874020be2097101174daf40334898ab89877e30f86ec3f39f7aa",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-082",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "CD区分请求和结果成立，但tool_call是该训练格式角色而非所有API通用命名；需显式TI-ONE范围。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "section": "含工具调用的数据集",
+        "locator": "L84–91：tool_call、tool",
+        "shortFact": "调用名称参数与实际返回分属不同角色。",
+        "version": "2025-11-19",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/111007",
+        "section": "Function Calling",
+        "locator": "L785–797：客户侧调用函数",
+        "shortFact": "模型选函数和参数，外部代码执行后再提供结果。",
+        "version": "2026-04-27",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "大模型基础可考执行边界，字段背诵应移补充学习。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "758b26651791b1a72e76f2c28892bf5bb747178f4e0aba11f7182b8f0c5294a0",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-083",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "BC符合单项拆分建议，AD是不写做法或混所有场景的极端反例。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "section": "如何写清楚调优要求",
+        "locator": "L313–319：场景、做法、聚焦",
+        "shortFact": "写明适用场景和具体行动，拆开不同要求。",
+        "version": "2026-09-24",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "规则写作常识，偏M6调优且选项过弱。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "f62ddd22e47787669a2559c920421f97914a594e2299576656744bfd1da0a765",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-084",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ABC为明文检查项；D规则越多越好且不管矛盾是明显错项。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "section": "准则来源／管理操作",
+        "locator": "L60、L279–287：审核、冲突",
+        "shortFact": "生成准则经检查启用，检查清晰性范围与冲突。",
+        "version": "2026-09-24",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "“综合”只需排除常识错误，改有真实冲突的两条准则。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "436930229d91bd0595381d98dde013929579955a34e9003c0d72fb6641d13d55",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-085",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ABD可引导画面；与027同一视觉要素知识，C文字Token指定镜头明显无关。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1729/106530",
+        "section": "文生图说明／物品类模板",
+        "locator": "L33；L91–93：文本描述、材质、镜头",
+        "shortFact": "文本描述引导图像生成，可描述主体、材质、场景与构图。",
+        "version": "2026-04-27",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "场景要素拆成多选没有新增目标。",
+    "duplicateGroup": "M1-027/085-图像提示要素",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "d7910921900931e155c2e90dec381ff1e92438bf777a7964a4418411e8017904",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-086",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ACD与原子能力表一致；B重排自动审批权限明显跨领域。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/106206",
+        "section": "原子能力表",
+        "locator": "L27–29：embedding、改写、重排序",
+        "shortFact": "向量表示、问题补全及相关性排序为不同环节。",
+        "version": "2025-05-20",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "034/035/031已有定义，本题只是重打包，需链路定位新任务。",
+    "duplicateGroup": "M1-031/034/035/086-原子能力定义复包",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "9477a96318b348e7886c579bfea5656888b9820f474be9e716383fb4213fdac2",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-087",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "BCD为导入处理环节，A授予全部权限明显不是数据处理。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "section": "知识检索流程",
+        "locator": "L31–39：三个步骤",
+        "shortFact": "导入切分索引向量化，检索相关块，再结合上下文生成。",
+        "version": "2025-09-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "单错项多选区分度低；应加入检索期与入库期混淆。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "1ee0850ca1deeeb2ba4284a82d196b4915380c4894e720298a8a513b82992db3",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-088",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "AB明确两模型职责；CD对重排范围和反思作用的混淆可由正文排除。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "section": "步骤二／步骤三",
+        "locator": "L83、L110：反思、二次排序",
+        "shortFact": "反思决定再检索；重排调整候选次序。",
+        "version": "2026-08-21",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "有功能边界，关联RAG机制。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "97ca158bbaa1c064c24cbb067988c0ac3f41f3909155f0d7262293404022b3e2",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-089",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ABD为场景表，C把最快FAQ提示为反例；本质是列举支持场景。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "section": "适用场景",
+        "locator": "L41–49：整合、筛选、验证",
+        "shortFact": "适合跨文档、复杂条件和多源验证。",
+        "version": "2026-08-21",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "section": "注意",
+        "locator": "L53–55：更多Token／简单问答",
+        "shortFact": "多轮检索开销较大；简单问答推荐传统RAG。",
+        "version": "2026-08-21",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "已由046反向问简单场景；宜增加相同需求下成本约束。",
+    "duplicateGroup": "M1-046/089-RAG适用场景",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "dd496d4828ef93a170f4cbc1cd6c6f2af64d66579b5de859eb79849cc5524bbf",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-090",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "CD符合两类三元组；AB否定属性特征。属于GraphSchema具体表示法，非M1重点。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "三元组",
+        "locator": "L72–76：两类三元组",
+        "shortFact": "关系三元组为实体-关系-实体；属性关系用has_attribute。",
+        "version": "2026-02-12",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "图谱专题学习；相邻词义题过密，属性三元组仍是不同于关系三元组的新细节。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "d75ec4f127d3cc8fb4fd1a7d45f908a7e2e0ddfb5a143c586ba66cd5c4c0607a",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-091",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "BCD复述GraphSchema词条，A关系只能相似显然错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "GraphSchema",
+        "locator": "L65：实体",
+        "shortFact": "实体是独立对象。",
+        "version": "2026-02-12",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/128202",
+        "section": "GraphSchema",
+        "locator": "L67：属性",
+        "shortFact": "属性描述特征，属性之间不直接建立关系。",
+        "version": "2026-02-12",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "重复048/049的定义并加属性关系一句，不足以算综合目标。",
+    "duplicateGroup": "M1-048/049/091-实体属性定义",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "af7b78a63960a1888ee58afc1e5b91700df27d74c6783973a76eb8d6644781f2",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-092",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ABC符合持续更新和可编辑；055已考人工校准，D停止更新显然错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134719",
+        "section": "记忆内容",
+        "locator": "L33–45：摘要、当前关注",
+        "shortFact": "记忆提炼个人背景，摘要可持续更新和人工编辑。",
+        "version": "2026-08-13",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "应考摘要不同状态变化，避免正向罗列加一个绝对反例。",
+    "duplicateGroup": "M1-055/092/094-人工校准记忆",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "9ef8ae4a0a5012921668d9ee333e6e4a9d1c6d6bf4a8db78bb273dd9708597ef",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-093",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "AD为两个SYS字段；BC是记忆摘要和训练，与字段含义不同。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122457",
+        "section": "应用级变量",
+        "locator": "L39：SYS.UserQuery、SYS.ChatHistory",
+        "shortFact": "系统变量分别表示本轮输入和对话历史。",
+        "version": "2025-11-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "属于ADP变量功能，M3较适合，非通用AI基础。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "261a9b121b2524cb4c17318f2999753df36e79f8c7a90f55e32a2122a741ac08",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-094",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "CD是冷启动与校准用途，但D与055重复，AB再用权重与全员共享明显反例。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138162",
+        "section": "功能介绍",
+        "locator": "L35：手动新增、导入导出",
+        "shortFact": "人工管理用于冷启动和记忆校准。",
+        "version": "2026-09-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "新增冷启动不足改善整体弱多选；可改导入背景与当前偏好冲突。",
+    "duplicateGroup": "M1-055/092/094-人工校准记忆",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "3610a3babee5c24422b9e485c3fbc415981cc7a85caa2226b09b6b4bcce813b4",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-095",
+    "status": "needs_revision",
+    "examUse": "hold",
+    "rationale": "BCD理解任务与A生成任务区分正确；但distractors.A写“最后一项是生成任务”，现最后一项D实际为理解。需改指代并核答案打乱后的全部解析。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "多模态输入",
+        "locator": "L73、L86、L95：根据模型能力",
+        "shortFact": "支持何种视觉或音频任务依赖所选模型。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/112963",
+        "section": "音频输入",
+        "locator": "L95：识别、理解、合成",
+        "shortFact": "文档区分语音识别、音频理解和语音合成能力。",
+        "version": "2026-08-18",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "明确解析错误，修前隔离；题目本身只考模态分类。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "94e9dfeb5f7afe502da811b57e2d215801d5066779b69272e7e1fabe04ee7bb1",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-096",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "AB是相关/不相关监督样本，C词面命中不等于语义相关、D全部正例不符。事实支持。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "section": "Embedding／检索（IR）任务数据",
+        "locator": "L303–314：positives、negatives",
+        "shortFact": "检索样本分别标记相关和不相关文档。",
+        "version": "2025-11-19",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "TI-ONE检索精调数据标注，未证实属于本认证M1要求，作为扩展。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "6a9afa85dfe43baf50ace02befbcac796f42ffa0e386b726ed125b4dc80531a9",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-097",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ABD为内容切分与配置问题，C以措辞推知识不存在明显不成立。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "section": "使用场景",
+        "locator": "L53、L57：内容缺失、配置调优",
+        "shortFact": "可检查知识缺失、切分及检索参数问题。",
+        "version": "2026-08-05",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "改成召回日志可观察证据，当前只罗列可能原因且属M6。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "743d0cc72b1e1912bd74ea801e217c94bfd1d7eb136e2607fed7ad18dfe4544f",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-098",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "CD检查实际内容与来源是合理推理；与040相同相似度非证据充分判断。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/135538",
+        "section": "功能说明",
+        "locator": "L46：查看召回结果",
+        "shortFact": "结果展示内容、分值、来源和原文入口。",
+        "version": "2026-08-05",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "近重复已实质核实，不应双计。",
+    "duplicateGroup": "M1-040/098-分数与证据",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "dbc4593e5b0bfcc7526a686d1da0d1735e5bf81116cb97bba22824653be0f675",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-099",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "BC符合检查编辑后启用；AD自动影响全部应用/天然无错过弱。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/138789",
+        "section": "准则来源／管理操作",
+        "locator": "L60、L279–287：审核、冲突",
+        "shortFact": "生成准则经检查启用，检查清晰性范围与冲突。",
+        "version": "2026-09-24",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "具体Claw运营审核，归M6；换错误准则如何处理的情境。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "ff54a87959a4f95027c6d8efb19dab16dade9a6783d535451bef77ced25d641e",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-100",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "AB符合0轮规则，CD与单次检索/无反思冲突。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/132211",
+        "section": "检索设置",
+        "locator": "L150、L159：0轮",
+        "shortFact": "0轮执行单次检索且不反思。",
+        "version": "2026-08-21",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "具体Agentic参数档位属于M3，不宜填M1基础配额。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "b5e40f71fb28e65660c692e40827adca8dce7c61a78dd911996b1b50de22fbe3",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M1-101",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A符合句对语义相似性监督；B/C/D区分词面、生成概率和可信度，干扰比其他训练题合理。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/851/123443",
+        "section": "语义文本相似度（STS）任务数据",
+        "locator": "L321–327：positive_scores",
+        "shortFact": "句子对监督分数表达语义相似性。",
+        "version": "2025-11-19",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "仍以TI-ONE STS训练任务为题设；仅Embedding延伸，未获直接考纲证明。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L62：AI 与生成式 AI 基础",
+      "shortFact": "基础概念和原理占10%，含Token、提示词、记忆、Embedding、RAG、Agent、多模态、幻觉。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "b9fbd16672af8d83d098f441b351eb22a6141ec9fe767530f7824de130e214e4",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-001",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D是产品官方定位；A/B/C分别收窄为训练、文件或网关，能识别平台范围。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "section": "产品概述",
+        "locator": "L32–34：面向企业",
+        "shortFact": "平台供业务及技术团队构建和集成AI应用。",
+        "version": "2026-06-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "基础定位，可少量保留。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "81ebc2749c4b753ac9f06ffb044f446a8f9b3ee510172d81e5e2925e73c51780",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-002",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C业务技术皆可且可视化优先成立，但A/B/D全部剥夺业务用户开发能力。与008同低代码目标。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "section": "产品概述",
+        "locator": "L32–34：面向企业",
+        "shortFact": "平台供业务及技术团队构建和集成AI应用。",
+        "version": "2026-06-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "section": "完整的一站式开发与运营框架",
+        "locator": "L62–68：生命周期、低代码",
+        "shortFact": "覆盖开发至运营，可视化优先并能补充代码。",
+        "version": "2026-06-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "改具体无代码与自定义接口边界，避免“都要求手写”反例。",
+    "duplicateGroup": "M2-002/008-低代码",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "0d598c0ca08bac1e9cf19ee186e2aaca3c7e77613d26111fcf5546a41112ba85",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-003",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B为API/SDK和渠道接入，其他项限制只能控制台/迁移全部/静态提示词均不符合能力范围。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "section": "产品概述",
+        "locator": "L32–34：面向企业",
+        "shortFact": "平台供业务及技术团队构建和集成AI应用。",
+        "version": "2026-06-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "section": "灵活的模型与开放生态",
+        "locator": "L75–79：多模型、集成",
+        "shortFact": "支持主流及自建模型与API/SDK集成。",
+        "version": "2026-06-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "基础集成边界，未宣称任何系统零适配。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "9757a03bd404fceed81de146d069fe0fcab7c6048d7da93192a88d497db1585b",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-004",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A外部系统查单正确，知识副本或模型权重不能提供实时订单；典型传统固定问答与工具能力区别。原源抓取失败已补同产品正文。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115874",
+        "section": "使用连接器／引言",
+        "locator": "正文首段：查询数据、调用系统、执行任务（本轮搜索正文）",
+        "shortFact": "连接器接入外部系统及业务数据以执行操作。",
+        "version": "2026-05-27",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      }
+    ],
+    "difficultyConcern": "贴合M2与Chatbot关系，不代表真实试题形态。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "cd9557671cb849f5638a0629b4bca5c70ddea3d26b81389dcff7cf9d091e8145",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-005",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D区分总体能力与套餐权限，A/B/C分别混权益、适配和评测，资料相互补足。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "section": "灵活的模型与开放生态",
+        "locator": "L75–79：多模型、集成",
+        "shortFact": "支持主流及自建模型与API/SDK集成。",
+        "version": "2026-06-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "section": "说明／功能对比",
+        "locator": "L32–40、L57–63：不同权益",
+        "shortFact": "产品能力与账号套餐权益有别。",
+        "version": "2026-06-30",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "实际能力边界题；避免记具体额度。",
+    "duplicateGroup": "M2-005/045-能力与权益",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "332f947cc69aba1e8a18c1d109ae172794b82e33f92cd20b6f1cfd0ea59902da",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-006",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C一站式生命周期成立，其他项都用“仅/只”将平台压缩到单项。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "section": "完整的一站式开发与运营框架",
+        "locator": "L62–68：生命周期、低代码",
+        "shortFact": "覆盖开发至运营，可视化优先并能补充代码。",
+        "version": "2026-06-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "定义复述，难以区分真实模型API与平台选型，建议加入交付约束。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "692f78e6422cdb5d1f32c3f7c475e6fd2b12c6d54cdc67d4ad3398c1db253526",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-007",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B正确；A/C/D直接否定RAG和切分影响，错误过明显。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "section": "更精准的对话效果",
+        "locator": "L52：不仅取决于大模型",
+        "shortFact": "文档理解和检索也影响回答效果。",
+        "version": "2026-06-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "应给模型正确读取却召回缺片段的日志证据，当前学习题。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "f1e2630ba7cec7385b991285fe60515416b8408eff6510b02317a6c4e3f51092",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-008",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A符合可视化优先补代码，与002同一门槛认识；B/D更是无流程或自动免授权。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "section": "完整的一站式开发与运营框架",
+        "locator": "L62–68：生命周期、低代码",
+        "shortFact": "覆盖开发至运营，可视化优先并能补充代码。",
+        "version": "2026-06-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "重复目标且干扰过弱。",
+    "duplicateGroup": "M2-002/008-低代码",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "638a7fcdfd878bfa9a1d3ce842ab511f468b9d21a357b2115e3f351b05c680c7",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-009",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D预设流程及双模型为标准特征；其余分别偏多体、自主、单工作流，均是可混模式机制。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "模式名称表",
+        "locator": "L27–32：四种模式",
+        "shortFact": "四模式分别面向自主代码、预设问答、固定流程和自主规划。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "M2模式辨析直接相关。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "51b74e27d533fa6d46f2db8c8a55a981bab4c5a7159f0c93e0633cca1b788c42",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-010",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C有明确入门建议；A只要知识就必须工作流、B无法切Claw、D预建完整团队过明显。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/126433",
+        "section": "第二步创建应用并选择模式",
+        "locator": "L46：最小功能集",
+        "shortFact": "标准模式可从基础问答起步并逐步扩展。",
+        "version": "2026-07-03",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "需要两个均可实现轻量需求的合理方案比较。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "d6eef443c15253a2ce3df2e5a76145e5cbcdc8f59d6898b4a036b7f1e0f508bd",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-011",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B指定流程处理全部对话是核心区别，C意图触发而非全部是可信模式混淆。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "模式名称表",
+        "locator": "L27–32：四种模式",
+        "shortFact": "四模式分别面向自主代码、预设问答、固定流程和自主规划。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "执行入口约束与12的场景选择可区分。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "5ba86d4d970eb33593e3f361f834e7c05de68a4fc3d08c6a918317632282f8bf",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-012",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A目标明确流程统一，BCD均描写动态自主/协作，能比较执行结构。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "模式名称表",
+        "locator": "L27–32：四种模式",
+        "shortFact": "四模式分别面向自主代码、预设问答、固定流程和自主规划。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "模式选择入门题。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "93fcf9338b22ef7f7480021117753fa5e2e9d41bf994264bc48759423cdf94d8",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-013",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D自主规划工具为差别；A双模型不等多Agent，B是固定流程，C知识库数不等Agent数。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "模式名称表",
+        "locator": "L27–32：四种模式",
+        "shortFact": "四模式分别面向自主代码、预设问答、固定流程和自主规划。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "模式关系清楚。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "ab103c3e79d7377e332667bcf92855114b68f8f8ea7cca130801a5ee623fd04c",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-014",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C分工正确，但题干已经列研究计算审查写作，ABD只换成文件名/用户数/无分工复制。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "section": "产品能力／多智能体模式",
+        "locator": "L43：分工协作",
+        "shortFact": "不同职责的子智能体可以协作完成复杂任务。",
+        "version": "2026-06-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "答案高度暗示，需增加职责交叠或是否必要组队的约束。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "c01e0feaa4853b182a5c988def6e678b532078133bb20612adc69f888af9e5ec",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-015",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B工作空间匹配代码文件任务；其他项却刻意不添加实现任务所必需能力，比较不公平。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "section": "关键概念／模式比较",
+        "locator": "L34、L45、L63–67：工作空间",
+        "shortFact": "Claw有代码与文件执行空间及原生Skills能力。",
+        "version": "2026-07-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "改为完整可行方案间权衡，而不是“只调Token”。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "35e007bda82226e60eddf6ef3248b1efef640bb4d4a3388474aecca74f9eeb95",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-016",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A四模式完整，其他选项混能力/组件与模式；版本包含Claw与官方考纲一致。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "模式名称表",
+        "locator": "L27–32：四种模式",
+        "shortFact": "四模式分别面向自主代码、预设问答、固定流程和自主规划。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/658/137832",
+        "section": "知识点占比与考核重点",
+        "locator": "L63：ADP 产品定位与能力边界",
+        "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+        "version": "2026-09-10",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "必要基本清单题，但不表示深度掌握。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "90e07639dfa03f07b058ca70ec821ac74bd273522c86b47f769ddc4e4afd65be",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-017",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D需新建有明文；ABC试图通过配置解除模式限制，均不支持。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "说明／应用模式切换",
+        "locator": "L47–61：Claw不支持切换",
+        "shortFact": "非Claw三模式可互切；涉及Claw需新建。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "明确产品边界，可保留一题。",
+    "duplicateGroup": "M2-017/018-Claw不可互切",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "bebc0414b05ff91d874a15b41970db1ad28d200e3fa19ed62830aae95530a4be",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-018",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C正确但与017只是切换方向倒置，同条不可互切边界。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "说明／应用模式切换",
+        "locator": "L47–61：Claw不支持切换",
+        "shortFact": "非Claw三模式可互切；涉及Claw需新建。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "应替换成迁移工作拆分而非再次选新建。",
+    "duplicateGroup": "M2-017/018-Claw不可互切",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "c1cadb44347c5c38c423a901e4c2da40a3e255a2feeadd213b16f622ba2f4df6",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-019",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "B是非Claw三模式互切，与017/018共用同一模式图；其他项皆是名单真假。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "说明／应用模式切换",
+        "locator": "L47–61：Claw不支持切换",
+        "shortFact": "非Claw三模式可互切；涉及Claw需新建。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "支持事实但独立认知增量低；模式切换系列应缩减。",
+    "duplicateGroup": "M2-017/018/019-模式互切集合",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "3c7d75f4eb3c445681704acba5ea87464445b5a0fcba3ed5f470aa9996a693b1",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-020",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A不继承提示词模型为重要边界，B/C/D与独立模式设置冲突。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "模式切换",
+        "locator": "L73、L87–90：配置原则",
+        "shortFact": "资产范围与状态保留，角色模型等模式设置不继承。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "对迁移检查有作用，可保留。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "308a0f64e879fab5d0ea2b67f4cfe9ce70bd927527436e4851fb712ac1000abd",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-021",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D分清资产保留与消费方式变化，B“保留等于配置继承”是可信误解。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "模式切换",
+        "locator": "L73、L87–90：配置原则",
+        "shortFact": "资产范围与状态保留，角色模型等模式设置不继承。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "与20考配置、21考资产不同层次，可区分。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "d85fb9fb3ffb80261db98e24e0d938941282df078b1a05e78a84456b57abd1ef",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-022",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "C原生Skills只在Claw，其他模式不等同挂载机制；关键词“原生”避免把工具间接调用误禁。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "section": "关键概念／模式比较",
+        "locator": "L34、L45、L63–67：工作空间",
+        "shortFact": "Claw有代码与文件执行空间及原生Skills能力。",
+        "version": "2026-07-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "模式能力差异直接相关。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "d12111e76524fc073fa9f2fb7ddf9415fe0a95518782c5c89e658aeed66de6a9",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-023",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B按工具计数有明文；A按连接器个数是合理干扰。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "section": "关键概念",
+        "locator": "L44：以工具为单位",
+        "shortFact": "连接器按其中工具数计入配额。",
+        "version": "2026-07-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "具体配额计数属于M3配置；与M2宏观定位关系弱。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "bf5734d6075921628846cb839510af9bd434f8dad6e68e88adc4ad1e90d64c3d",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-024",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A按需调用工作流，B/C/D把自主模式错误理解为不能调用流程或永久绑定。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "section": "常见问题",
+        "locator": "L101–103：是否支持工作流",
+        "shortFact": "工作流可作为工具按需调用。",
+        "version": "2026-07-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "直接考自主Agent与工作流的关系。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "f864fce86ad410041431e2a8ff6686419016216cdf22594fabdc990a9b759c73",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-025",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D入口名称与官方路径吻合；不是工作台到应用能力不存在。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "section": "核心流程／创建方式选择",
+        "locator": "L54–60、L79：前往应用开发",
+        "shortFact": "可从工作台进入开发；配置调试发布为不同阶段。",
+        "version": "2026-07-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "按钮位置背诵，宜M3使用手册；BCD等离谱路径显眼。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "56fc66439f8ab78099816b915deca91324d849b98738b112d02943ed2b7fbad0",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-026",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C成员独立模型配置正确，A/B/D不成立。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "section": "关键概念／模型",
+        "locator": "L41：各子Agent",
+        "shortFact": "成员可独立选择模型。",
+        "version": "2026-07-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "具体子Agent配置宜M3；非模式选择原则。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "97836cdfaa90dd8a451ba69bfe8268fbd4a165f773344c4c7a092f002ab0587f",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-027",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B插件含一个或多个工具且显式绑定，A/C反转对象、D自动全授权不成立。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/133868",
+        "section": "核心概念",
+        "locator": "L60–76：Application、Agent、Plugin、Tool",
+        "shortFact": "应用对外服务；Agent配置能力；插件包含需显式绑定的工具。",
+        "version": "2026-07-13",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "与插件关系属于M2明确考纲。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "6ee6eef5bf7676781cc23a79b27aef513eb1131150dc1e8032074f4f7e0ab146",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-028",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A自定义扩展成立，但B/C/D均完全否认可执行接入，原115872页不可读已用替代官方正文。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117855",
+        "section": "新建工具／引言及基于API和代码新建",
+        "locator": "名称、描述、输入参数、输出参数和调用方式（本轮搜索正文）",
+        "shortFact": "工具需声明可调用能力及参数；代码类型支持Python函数。",
+        "version": "2026-08-20",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115873",
+        "section": "MCP简介",
+        "locator": "开放协议、统一接口规范（本轮搜索正文）",
+        "shortFact": "MCP统一外部数据与工具的接入。",
+        "version": "2026-05-27",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      }
+    ],
+    "difficultyConcern": "建议给接口协议与鉴权约束再选扩展方式。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "c0595a8c68af5c84da3013359f4b2b00bc0602a3789401e948771282fceb27ff",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-029",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "题答D的HTTP服务方向可被API定义旁证，但本轮未取得原页OpenAPI3.0精确断言；替代117855仅有部分搜索正文，无该版本完整定义。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "section": "连接器与工具介绍",
+        "locator": "直接打开及官方站内链接均抓取失败",
+        "shortFact": "原引用页未取得可定位正文，不能以题内fact补证。",
+        "version": "本轮未能核得页面版本",
+        "retrievalScope": "本轮页面未读取成功；此条仅标记证据缺口，不是支持性证据。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117855",
+        "section": "新建工具／引言及基于API和代码新建",
+        "locator": "名称、描述、输入参数、输出参数和调用方式（本轮搜索正文）",
+        "shortFact": "工具需声明可调用能力及参数；代码类型支持Python函数。",
+        "version": "2026-08-20",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      }
+    ],
+    "difficultyConcern": "补精确协议证据再放行，不能以常识替代ADP规范。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "796f764ee07a2947e3d220d31e39e946806f7b50ea8954ff4663e8203cbbb08d",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-030",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C用Python函数的正文已核，ABD不对应代码工具。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117855",
+        "section": "新建工具／引言及基于API和代码新建",
+        "locator": "名称、描述、输入参数、输出参数和调用方式（本轮搜索正文）",
+        "shortFact": "工具需声明可调用能力及参数；代码类型支持Python函数。",
+        "version": "2026-08-20",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      }
+    ],
+    "difficultyConcern": "实现语言细节偏M3，干扰亦过弱。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "556fbfb797716a4ee380e3b3835facdd1707ac773365b145fab2131c2c3682e0",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-031",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "可核已发布应用能封装工具；但本轮未获得“仅单轮、不支持多轮”的当前官方正文，不能凭原fact或另一PE页面拼接。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "section": "连接器与工具介绍",
+        "locator": "直接打开及官方站内链接均抓取失败",
+        "shortFact": "原引用页未取得可定位正文，不能以题内fact补证。",
+        "version": "本轮未能核得页面版本",
+        "retrievalScope": "本轮页面未读取成功；此条仅标记证据缺口，不是支持性证据。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117855",
+        "section": "新建工具／引言及基于API和代码新建",
+        "locator": "名称、描述、输入参数、输出参数和调用方式（本轮搜索正文）",
+        "shortFact": "工具需声明可调用能力及参数；代码类型支持Python函数。",
+        "version": "2026-08-20",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      }
+    ],
+    "difficultyConcern": "具体限制必须补证；暂隔离。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "0ab76b31fa5a880361ca5809a86e6ab91f45d6e4cd81fc169627a9e8b3c5c367",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-032",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "A三来源类正确，B业务场景、C模式、D组件是不同分类维度。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "概述／三种类别",
+        "locator": "L30、L35–39：三类",
+        "shortFact": "Skill扩展专业能力，来源分内置、共享、自定义。",
+        "version": "2026-07-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "广场分类目录记忆宜M3；不直接说明产品选择边界。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "9c8e32cf5e869adce5fc2d50691d466ba04a613923e87a8df9dcff1ba9d67226",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-033",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "D当前空间可见有明文，A企业全开放、B仅本人、C跨企业均不符。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "三种类别",
+        "locator": "L38–50：已上架、当前空间",
+        "shortFact": "自定义限当前空间；已上架技能经审批转企业共享。",
+        "version": "2026-07-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "权限范围属于M3/M7，事实正确但不占M2定位额度。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "ebbb1b98a5a7b5706bc961d79a66387e12b64df8d4c8444f4b38a6e8ec865214",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-034",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C已上架自定义经审批成立，B同名知识库、A改名内置过弱，D省审批稍有干扰。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "三种类别",
+        "locator": "L38–50：已上架、当前空间",
+        "shortFact": "自定义限当前空间；已上架技能经审批转企业共享。",
+        "version": "2026-07-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "需改上架/安全审核/共享审批三个真实阶段的组合。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "89f345c2aa2bb2f08882ef9ccc593190352675a18c001a93301f72d4a22d655e",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-035",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B知识库提供上下文，应用组合能力服务用户；A权重训练、C无需应用、D只存名称不成立。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "section": "知识检索流程",
+        "locator": "L31–39：三个步骤",
+        "shortFact": "导入切分索引向量化，检索相关块，再结合上下文生成。",
+        "version": "2025-09-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "知识库和应用关系是M2明确要求。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "ad40416ed0ffc9c60c0b98806a8c0349aa0f67f6ecaa205b62e36fdf1eb83a41",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-036",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A官方三类型正确；B把问答转权重、C个人记忆、D训练集都是明显错分类。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "section": "知识库数据类型",
+        "locator": "L42–48：文档、问答、数据库",
+        "shortFact": "知识支持文档、问答和数据库。",
+        "version": "2025-09-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "应在可召回知识对象中加入易混来源类型，当前只学习。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "c25fe1e65bacdc50e492dcd98efe75f280fce67be485bc44262321261565e445",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-037",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "D默认库限当前应用并可引用平台库，ABC错误理解复制/一对一/自动共享。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/123551",
+        "section": "知识库层级说明",
+        "locator": "L52：默认知识库",
+        "shortFact": "默认库限本应用；可引用平台知识库共享。",
+        "version": "2025-09-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "知识复用边界有业务意义。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "39b56a1debdc5921cd7bac68da84635f4a15149b9009fb92f454c4e6bd5b2feb",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-038",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "C即开箱任务助手，但A/B/D预先削掉所需功能；未比较可成立的模式或入口。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130637",
+        "section": "引言／对话功能",
+        "locator": "L33、L85、L120、L146：上传、授权、知识库",
+        "shortFact": "工作台可规划任务，使用上传资料、授权连接器和有权知识。",
+        "version": "2026-06-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "改用户角色和交付复用需求权衡。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "b1232fddd40c0e9421e0177939de97efe417622d0dd55ab45b69420c1f984718",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-039",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B历史流程与产物保存成立，A自动发布和C/D不留内容不成立。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130637",
+        "section": "任务列表",
+        "locator": "L176：完整的任务对话与流程",
+        "shortFact": "历史任务保留流程与可下载产物。",
+        "version": "2026-06-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "界面功能学习，偏M3/M6，不是模式选择。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "bdd1e4c95412a90f3931cac8eebb984c327b27d3805198ebb60272bee64e5bba",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-040",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "A文件代码工作区正确，B/D禁止文件或执行、C改所有权重显然错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130637",
+        "section": "工作区",
+        "locator": "L187、L199、L209、L219、L242",
+        "shortFact": "支持代码文件操作、预览下载、文本编辑及保存到知识库。",
+        "version": "2026-06-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "建议改文件状态、预览与执行的真实边界；当前学习。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "4eba3889d91fa5b3080e51b527f864bdf43e3b67b2979cf2c884df20415d8d74",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-041",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D确有对话式构建，A/B/C三种绝对否定令答案显眼；65又列同功能。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/137902",
+        "section": "支持的能力范围",
+        "locator": "L40–60：四模式、工作流、评测",
+        "shortFact": "对话式构建覆盖四模式、工作流、评测和记录分析。",
+        "version": "2026-09-21",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "应改构建后草稿/评测/发布责任的判断，当前泛是否支持。",
+    "duplicateGroup": "M2-041/065-对话式开发范围",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "0e0a52a691efe8f36d0ff038b1157710addc76c1dd4b62a2aca63f426b30b21b",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-042",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C四模式可创建且受权益限制，两页一致；不存在所有账号都可用的断言。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/137902",
+        "section": "支持的能力范围",
+        "locator": "L40–60：四模式、工作流、评测",
+        "shortFact": "对话式构建覆盖四模式、工作流、评测和记录分析。",
+        "version": "2026-09-21",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "section": "说明／功能对比",
+        "locator": "L32–40、L57–63：不同权益",
+        "shortFact": "产品能力与账号套餐权益有别。",
+        "version": "2026-06-30",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "具体工作台功能范围，M3更合适；与16、45组合复问。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "c482f8da349a977b4d5a9a84c94ff1a6d775746b3aab4e224a0736349b696aed",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-043",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "B自动化批量API管理适用，A混开发者终端、C/D否认全流程；M2接入价值可直接映射。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/133868",
+        "section": "概览／接入方式",
+        "locator": "L35–41：API接入",
+        "shortFact": "Claw可用API完成管理流程并嵌入系统。",
+        "version": "2026-07-13",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "场景具体，API与可视化的选择有实质性。",
+    "duplicateGroup": "M2-043/068-API与可视化",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "ef05aa392dcfb0c64f70aeb68921ef54cb15d2b81ab84aa34bf96e0118dda3e1",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-044",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "A应用服务单元与Agent内部配置区分正确；B/C/D混对象层级。原API页主Agent数量有前后矛盾，但本题未考数量。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/133868",
+        "section": "核心概念",
+        "locator": "L60–76：Application、Agent、Plugin、Tool",
+        "shortFact": "应用对外服务；Agent配置能力；插件包含需显式绑定的工具。",
+        "version": "2026-07-13",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "保留对象关系，不外推数量。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "62965978071b2c8600244ff763bd610759d3353d094222c581a641962411b1df",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-045",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "D核套餐有效功能正确，与005同“总体能力不等账号权益”；ABC均无依据自动开放。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "section": "说明／功能对比",
+        "locator": "L32–40、L57–63：不同权益",
+        "shortFact": "产品能力与账号套餐权益有别。",
+        "version": "2026-06-30",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "换成具体组合不兼容的方案判断，避免重复一般原则。",
+    "duplicateGroup": "M2-005/045-能力与权益",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "65e088126e2c8580ba5469e0ed27e97deb2a20bcc75470a6dfb04faea1616ab5",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-046",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "C符合套餐工作台行，A/B/D错误。当前版本事实可证。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "section": "功能对比",
+        "locator": "L57–59：智能工作台",
+        "shortFact": "Skill Plan工作台不含应用创建发布。",
+        "version": "2026-06-30",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "购买权益细节时效强，非考纲明示重点；作为版本学习。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "d422473bf34c8f8c21ab7cedb84b2b78f57e6553865ad1e4e4fd0c214a94af86",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-047",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "B两项能力及停止新购边界正确，ACD把ClawPro与Claw模式混同。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "section": "套餐版本／功能对比",
+        "locator": "L49、L57–59：停止新购",
+        "shortFact": "ClawPro另列且停止新购，不等于Claw应用模式停用。",
+        "version": "2026-06-30",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "有真实命名混淆但商业SKU变化强，宜补充材料而非M2核心题。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "ff75551be62296de61771857f9115be896f5629fa69d09082f6ece4ef320b2a7",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-048",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "AC符合切换表协同方式与单流程限制；BD无配置或无限主流程不符。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "差异表／工作流管理",
+        "locator": "L90：协同方式",
+        "shortFact": "Multi-Agent选择工作流编排后添加单个流程。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "M3配置边界更恰当，非只问模式定位。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "ae768753280c21d4706224fae685174155930a12bf02ae21d01e8d8a4a071e89",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-049",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "AD为标准与单流程差别；BC“不能用知识/不能流程”是常见过度区分，文档可证伪。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "模式名称表",
+        "locator": "L27–32：四种模式",
+        "shortFact": "四模式分别面向自主代码、预设问答、固定流程和自主规划。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "差异表／知识管理",
+        "locator": "L89：节点、知识库问答工具",
+        "shortFact": "单工作流通过知识节点；Multi-Agent需知识问答工具。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "组合比较比仅模式名称更有意义。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "db7d8eaeeb15591a77ef3af461b8bed6ae9007ccb6b46dc63c0c3f525bb1b270",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-050",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "BC转交关系及描述时机明确，A新增即生效不成立，D欢迎语替代关系过弱。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122573",
+        "section": "设置转交描述／设置Agent转交关系",
+        "locator": "L115、L300–302：不会立即生效",
+        "shortFact": "需关联主Agent；描述帮助判断职责和转交时机。",
+        "version": "2026-06-30",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "操作配置属于M3，题干已限制快速入门避免泛化Claw。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "097161f34a56ac7d7e3263d7addd8a2aaaaead455bcdfde8727348c909fd97f4",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-051",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "AC结束变量与回复展示有明文，B是可信输出混淆，D必成后续提示词不符。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122572",
+        "section": "编排回复节点／编排结束节点",
+        "locator": "L201、L237–243：仅作为输出变量",
+        "shortFact": "回复节点展示内容；结束节点返回流程变量。",
+        "version": "2026-06-30",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "好功能边界但应该归M3工作流节点，不填M2配额。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "6797bca600382de093e5dec4bf0b60c91133c80e0d6dc095cd0a504f45293ac4",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-052",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "AC用户/会话动态模型技能工具受开关控制，B/D与无需发布相矛盾。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "section": "关键概念／高级设置",
+        "locator": "L49：动态修改配置",
+        "shortFact": "开启后可通过API按用户或会话调整能力而不重新发布。",
+        "version": "2026-07-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "运行时API配置属于M3，版本题需保留日期。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "182d0ba1f8adc6010380a37ad693850edb82a2651d2bfd3b2e7d143474c64858",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-053",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ABD基本信息保留，C指令自动合并不成立。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "模式切换",
+        "locator": "L73、L87–90：配置原则",
+        "shortFact": "资产范围与状态保留，角色模型等模式设置不继承。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "只列名称头像欢迎语，偏UI记忆且一项明显假；不宜标综合。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "a0dce9b494cb80583bd5b3cee3733f6c575372f9af09b6ba2864c5045fabb82e",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-054",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "CD不同模式知识入口正确；AB全部自动/清空资产不符。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/122549",
+        "section": "差异表／知识管理",
+        "locator": "L89：节点、知识库问答工具",
+        "shortFact": "单工作流通过知识节点；Multi-Agent需知识问答工具。",
+        "version": "2026-08-04",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "归M3应用搭建；与21不是完全重复，分别考资产与使用方式。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "38592ea3bfbff9f9d30c927770af892768b4ef26065f724201770fca20419adf",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-055",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "AC配置辅助与调试对比为不同阶段，B/D自动发布推断错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/134194",
+        "section": "核心流程／创建方式选择",
+        "locator": "L54–60、L79：前往应用开发",
+        "shortFact": "可从工作台进入开发；配置调试发布为不同阶段。",
+        "version": "2026-07-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "偏M3/M6调试发布而非定位；双否定发布模板干扰偏易。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "55e1e8339d05035eaf13a0b053100b76abb3b610568fac0a9ae49b8402ec5be1",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-056",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "AC完整契约有官方引言支持，但与M1-076逐项同目标、M1-029同概念。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/117855",
+        "section": "新建工具／引言及基于API和代码新建",
+        "locator": "名称、描述、输入参数、输出参数和调用方式（本轮搜索正文）",
+        "shortFact": "工具需声明可调用能力及参数；代码类型支持Python函数。",
+        "version": "2026-08-20",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      }
+    ],
+    "difficultyConcern": "跨模块重复；BD省描述或只上传说明都显眼。",
+    "duplicateGroup": "M1-029/076/M2-056-工具契约",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "3cbcc3df81ec0dde215daecd3726a19f3e7ae589c18f35ef31b2ac48ba1d5a9d",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-057",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "D的MCP标准接入和API/MCP并存有官方正文，但A采用OpenAPI的原引用本轮未获取，不能将一般API标准自动替代平台能力。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "section": "连接器与工具介绍",
+        "locator": "直接打开及官方站内链接均抓取失败",
+        "shortFact": "原引用页未取得可定位正文，不能以题内fact补证。",
+        "version": "本轮未能核得页面版本",
+        "retrievalScope": "本轮页面未读取成功；此条仅标记证据缺口，不是支持性证据。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115873",
+        "section": "MCP简介",
+        "locator": "开放协议、统一接口规范（本轮搜索正文）",
+        "shortFact": "MCP统一外部数据与工具的接入。",
+        "version": "2026-05-27",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115748",
+        "section": "节点功能／常见问题",
+        "locator": "一个连接器中可能包含一个及以上工具（本轮搜索正文）",
+        "shortFact": "工具是具体API能力，连接器可含多个工具；支持API和MCP。",
+        "version": "2026-05-27",
+        "retrievalScope": "官方搜索返回的多段正文摘录，含标题和所列章节；不是全页读取。仅可见段落用于本题支持，不外推未返回部分。"
+      }
+    ],
+    "difficultyConcern": "多选任一正确项缺直接证据则整题暂hold。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "4d553d86d7e04d0aa3859a48f32079da0ba9eb215008d4dff9be0de9a540dab8",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-058",
+    "status": "unverified",
+    "examUse": "hold",
+    "rationale": "原115872正文未获取；国际官方搜索有自甄别数据保护摘要，但未足以核大陆版稳定性担保完整表述。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/115872",
+        "section": "连接器与工具介绍",
+        "locator": "直接打开及官方站内链接均抓取失败",
+        "shortFact": "原引用页未取得可定位正文，不能以题内fact补证。",
+        "version": "本轮未能核得页面版本",
+        "retrievalScope": "本轮页面未读取成功；此条仅标记证据缺口，不是支持性证据。"
+      }
+    ],
+    "difficultyConcern": "需精确官方页正文补证；常识合理不等于该文档已核。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "a6d345b162ed9752458f0df06457e0c7760dccefdf8fb5d937c86c7c8916a382",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-059",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "BC专业模块及自定义正确，AD公网开源/必须独立应用显然不成立。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "概述／三种类别",
+        "locator": "L30、L35–39：三类",
+        "shortFact": "Skill扩展专业能力，来源分内置、共享、自定义。",
+        "version": "2026-07-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "需比较Skill、工具、应用的可信复用方案，当前多选过易。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "0c2db64187918831abc3db8cb6dd86a67112eb828d90cb3d0e127ea82648c6a1",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-060",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "AB来源与场景正交，CD误以为互斥或必然自定义；两套官方分类证据完整。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "概述／三种类别",
+        "locator": "L30、L35–39：三类",
+        "shortFact": "Skill扩展专业能力，来源分内置、共享、自定义。",
+        "version": "2026-07-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      },
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129561",
+        "section": "分类体系",
+        "locator": "L59–70：财税法务",
+        "shortFact": "场景分类独立于来源类别，含合同审核。",
+        "version": "2026-07-14",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "可用于插件能力组织边界，区分度优于目录记忆。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "f64d62a58ca927ad19c6c89e61fcaa3fc9ee50c2efe67f7fce0126d5a2ffcd6b",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-061",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "AB是监控技术指标；CD把消耗与质量等同明显错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "section": "企业级安全、性能与可观测性",
+        "locator": "L89：监控与告警",
+        "shortFact": "监控请求、成功率、延迟和Token。",
+        "version": "2026-06-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "应改成功率高但解决率低的实测诊断，当前只列指标偏M6。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "748d2bde29a8079022728d00d7cbc26803077edab89909e26f7582b8a76803b4",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-062",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ACD符合小场景迭代，B先换全系统再考虑需求属于极端反例。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "section": "产品能力／说明",
+        "locator": "L48：小场景试点",
+        "shortFact": "基于已有系统先试点再扩展流程。",
+        "version": "2026-06-15",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "一错项多选不具综合难度，需约束试点范围及验收证据。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "54861ff080c01d2ae9b91e68dd8f2a9fe6e1c597148d7b14d8489169259feb65",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-063",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "BCD预览下载入库成立，A预览即部署明显错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130637",
+        "section": "工作区",
+        "locator": "L187、L199、L209、L219、L242",
+        "shortFact": "支持代码文件操作、预览下载、文本编辑及保存到知识库。",
+        "version": "2026-06-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "工作区操作菜单记忆宜学习，不能以多选包装综合题。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "2a08abbc0b7a203a1a98c67ec25f1cff7a2b025416af1827ce473fb2c6ab834a",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-064",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ABC对应上传、有权知识和授权连接器，D任意企业全数据无授权显眼。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/130637",
+        "section": "引言／对话功能",
+        "locator": "L33、L85、L120、L146：上传、授权、知识库",
+        "shortFact": "工作台可规划任务，使用上传资料、授权连接器和有权知识。",
+        "version": "2026-06-22",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "应加入不同空间或未授权连接器的具体边界，而非全世界数据。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "b7474628f154648dfcc9e11950e1d5bf09dbb517ff0e7b98b728f8dcc5b9f1a5",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-065",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ABD均在能力范围，C说完成就跳过检查明显错误；与41同支持范围。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/137902",
+        "section": "支持的能力范围",
+        "locator": "L40–60：四模式、工作流、评测",
+        "shortFact": "对话式构建覆盖四模式、工作流、评测和记录分析。",
+        "version": "2026-09-21",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "列功能多选重复且干扰过弱，建议独立故障分析任务。",
+    "duplicateGroup": "M2-041/065-对话式开发范围",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "9fc576e44390787eb37c9c3eaf3addfec7d31223fc4d6d76a178cee96f50a3ea",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-066",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "CD草稿与待发布调试成立，AB立即生效/永远一致不符。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/137902",
+        "section": "场景一／注意事项",
+        "locator": "L132、L164：草稿／待发布配置",
+        "shortFact": "构建先存草稿；调试配置可能不同于线上。",
+        "version": "2026-09-21",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "版本行为属于M3/M6，题目未新增M2模式选择。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "843337618606940c469669b49a78b5bb2ade10ac1f3013f2c95bf5435a9362b1",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-067",
+    "status": "supported",
+    "examUse": "eligible",
+    "rationale": "BC开发管理和用户对话相分离，A会对话即管理、D人人持管理密钥均与权限表不符。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/133868",
+        "section": "开发者与使用者",
+        "locator": "L82–85：管理、对话",
+        "shortFact": "开发者管理应用，终端用户发起对话，两者权限分开。",
+        "version": "2026-07-13",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "API能力边界与角色划分有明确相关性。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "2b49d5f9b403e0833b12dbeaed578cd5b4829d109663e9abb6d65e1461d8fcce",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-068",
+    "status": "needs_revision",
+    "examUse": "learning_only",
+    "rationale": "ABC可视化/API选择组合成立，与43相同全流程自动化价值，D互斥禁查看唯一错项。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/133868",
+        "section": "概览／接入方式",
+        "locator": "L35–41：API接入",
+        "shortFact": "Claw可用API完成管理流程并嵌入系统。",
+        "version": "2026-07-13",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "正向重包既有目标，改两种接入方式下状态同步问题。",
+    "duplicateGroup": "M2-043/068-API与可视化",
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "eb99e1d13bd87231c94011593e5d9f21b0f9e471a93c654a04490b7108643c58",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-069",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "BC用尽不能用及企业增购明文，AD将有效期替代资源错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "section": "版本升级与到期",
+        "locator": "L79、L92：PU用尽",
+        "shortFact": "企业版PU耗尽无法使用，可增购预付费资源。",
+        "version": "2026-06-30",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "计费状态诊断可作运维扩展，M2核心关联较弱。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "4869efea2d7df70983d008d8147ae6ebf2f90285f14c1bac3a853e15365ef420",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  },
+  {
+    "id": "FDE-M2-070",
+    "status": "supported",
+    "examUse": "learning_only",
+    "rationale": "AB补差价升级保留到期续费，CD重置周期或不改版本错误。",
+    "sourceEvidence": [
+      {
+        "url": "https://cloud.tencent.com/document/product/1759/129200",
+        "section": "版本升级与到期",
+        "locator": "L73：升级",
+        "shortFact": "补差价升级不重置到期时间及续费设置。",
+        "version": "2026-06-30",
+        "retrievalScope": "直接打开官方页面，读取所列章节及工具行号。"
+      }
+    ],
+    "difficultyConcern": "纯订阅商业规则，未发现考试要求，应作为学习附录。",
+    "duplicateGroup": null,
+    "syllabusEvidence": {
+      "url": "https://cloud.tencent.com/document/product/658/137832",
+      "section": "知识点占比与考核重点",
+      "locator": "L63：ADP 产品定位与能力边界",
+      "shortFact": "定位及边界占7%，涉及四模式选择和与知识库、工作流、插件的关系。",
+      "version": "2026-09-10"
+    },
+    "reviewer": "industry_delivery (AI，非原作者；非考试专家背书)",
+    "verifiedAt": "2026-10-09",
+    "questionHash": "b1bcd6ebd5ff6f59d87cd780575fbd9f2542f3722fa9dcd8de2a7e99ef86b0e9",
+    "examEligibilityMeaning": "eligible仅表示本轮AI判断事实证据、基本质量及当前模块关联可接受；不代表官方题型相似度、考试命中率或人工专家认证。"
+  }
+]
