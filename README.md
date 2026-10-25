@@ -28,7 +28,9 @@ python3 server.py
 - **从电脑迁移**：在电脑版“数据备份”导出 JSON，传到手机后在手机版“数据备份”导入合并即可。两边格式相同，也可以反向导入。
 - **题库更新**：推送新版本后，手机下次联网打开会在后台下载完整新题库，再下次打开时切换；进行中的模拟考试按开考时快照计分。
 
-本地构建与测试：`sh scripts/build_static.sh` 生成 `_site/`（只包含运行所需文件，不含 `research/`）；`node tests/phone.browser.mjs` 以 iPhone 视口验证子路径托管、本机存储、离线、导入导出和模拟考试。电脑版 `python3 server.py` 的行为不变。
+- **跟随上游更新**：`.github/workflows/sync-upstream.yml` 每天北京时间 03:17 把上游 `lusouldepth-ai/FDE_Learning` 的 `main` 合并进来，测试通过后推送并重新发布手机版；也可在 Actions 页手动运行。若上游改动与手机版冲突或测试失败，不会推送任何内容，GitHub 会发邮件通知，需要手动合并。
+
+本地构建与测试：`sh scripts/build_static.sh` 生成 `_site/`（只包含运行所需文件，不含 `research/`）；`sh scripts/ci_test.sh` 运行发布前的全部检查；`node tests/phone.browser.mjs` 以 iPhone 视口验证子路径托管、本机存储、离线、导入导出和模拟考试。电脑版 `python3 server.py` 的行为不变。
 
 ## 题库与功能
 

@@ -1,0 +1,67 @@
+name: Sync upstream question bank
+
+# Daily: merge lusouldepth-ai/FDE_Learning main into this fork, keep the iPhone
+# changes, test, push, then redeploy the phone version. On a merge conflict or a
+# failing test nothing is pushed and the run fails (GitHub emails you).
+on:
+  schedule:
+    - cron: '17 19 * * *'   # 03:17 Beijing time
+  workflow_dispatch:
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+env:
+  UPSTREAM: https://github.com/lusouldepth-ai/FDE_Learning.git
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.merge.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - id: merge
+        name: Merge upstream main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --no-tags "$UPSTREAM" main
+          if git merge-base --is-ancestor FETCH_HEAD HEAD; then
+            echo "上游没有新提交。"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git log --oneline HEAD..FETCH_HEAD
+          if ! git merge --no-edit -m "Merge upstream lusouldepth-ai/FDE_Learning" FETCH_HEAD; then
+            git diff --name-only --diff-filter=U
+            git merge --abort
+            echo "::error::上游更新与手机版改动有冲突，未推送任何内容。需要手动合并：在本地 git fetch 上游后 git merge，解决冲突再推送。"
+            exit 1
+          fi
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Test merged result
+        if: steps.merge.outputs.changed == 'true'
+        run: sh scripts/ci_test.sh
+      - name: Push to main
+        if: steps.merge.outputs.changed == 'true'
+        run: git push origin HEAD:main
+
+  # Pushes made with the workflow token don't trigger other workflows, so deploy explicitly.
+  deploy:
+    needs: sync
+    if: needs.sync.outputs.changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/pages.yml

@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: read
@@ -21,14 +22,18 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # Always publish the latest main (also when called right after an upstream sync).
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Test
-        run: npm test
+      - name: Test (unit, bank validation, iPhone viewport)
+        run: sh scripts/ci_test.sh
       - name: Build static site
-        run: sh scripts/build_static.sh "${GITHUB_SHA::12}"
+        # The build id changes with every commit, so phones pick up the new version.
+        run: sh scripts/build_static.sh "$(git rev-parse --short=12 HEAD)"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
