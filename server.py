@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Offline-only study server. Standard library; binds loopback exclusively."""
 import argparse, json, os, tempfile, threading, mimetypes, urllib.parse
+mimetypes.add_type('application/manifest+json', '.webmanifest')
 from pathlib import Path
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 ROOT = Path(__file__).resolve().parent
@@ -58,9 +59,9 @@ class Handler(BaseHTTPRequestHandler):
                 return self.reply(200, state)
             except Exception: return self.reply(500, {'error':'本地记录文件无法读取，请先备份 local-data 目录，不会自动覆盖。'})
         if path == '/api/health': return self.reply(200, {'app':'fde-study','version':'1.2.0','root':str(ROOT),'dataPath':str(STATE_PATH.resolve()),'pid':os.getpid()})
-        allowed = {'/':'index.html', '/index.html':'index.html', '/data/questions.json':'data/questions.json', '/data/manifest.json':'data/manifest.json', '/data/quality.json':'data/quality.json', '/evidence.html':'evidence.html', '/data/rounds.json':'data/rounds.json'}
+        allowed = {'/':'index.html', '/index.html':'index.html', '/data/questions.json':'data/questions.json', '/data/manifest.json':'data/manifest.json', '/data/quality.json':'data/quality.json', '/evidence.html':'evidence.html', '/data/rounds.json':'data/rounds.json', '/manifest.webmanifest':'manifest.webmanifest'}
         rel = allowed.get(path)
-        if path.startswith('/src/'): rel = path.lstrip('/')
+        if path.startswith('/src/') or path.startswith('/icons/'): rel = path.lstrip('/')
         if not rel: return self.reply(404, {'error':'未找到'})
         file = (ROOT / rel).resolve()
         if not file.is_relative_to(ROOT) or not file.is_file(): return self.reply(404, {'error':'未找到'})
