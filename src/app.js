@@ -22,7 +22,7 @@ function render(){
  $('#app').innerHTML=`<div class="shell"><aside class="sidebar"><a class="brand" href="#study">FDE 备考</a><nav aria-label="主导航">${nav.map(([id,label],n)=>`<button class="nav-button ${page===id?'active':''}" data-page="${id}" ${page===id?'aria-current="page"':''}>${icon(n)}<span>${label}</span>${id==='review'&&due?`<small>${due}</small>`:''}</button>`).join('')}</nav><div class="side-footer"><span class="local-dot"></span>本地离线学习<br><span id="save-status">已保存到本机</span><small>题库 ${esc(manifest.version)}<br>保留 ${questions.length} 题 · 可组卷 ${questions.filter(q=>q.quality?.examUse==='eligible').length} 题</small></div></aside><main id="main"><header><h1>${nav.find(x=>x[0]===page)?.[1]}</h1><p>${subtitle[page]}</p></header>${deviceNotices()}${store.recoverySnapshot?'<div class="recovery-notice" role="status">发现与磁盘不同的浏览器应急副本，已另外保留。<button id="recovery-link">查看并恢复</button></div>':''}<div class="recovery-notice bank-notice">原创题库：核心 500 题 · 原 400 题已复核、修订 118 题 · 另重写 100 题 · 提供 15 道原创专项练习。<a href="evidence.html" target="_blank">查看题库版本与质量分级</a></div><div id="content"></div><footer>依据官方资料编写的原创模拟题，非官方真题，不保证押中。<br><a href="https://cloud.tencent.com/document/product/658/137832" target="_blank" rel="noopener noreferrer">官方考试指南</a> · 来源核实 ${esc(manifest.verifiedAt)}</footer></main><aside class="outline"><h2>考试模块与官方占比</h2>${MODULES.map(([id,name,weight],i)=>`<button class="module-row ${module===id?'active':''}" data-module="${id}"><span class="module-number">${i+1}</span><span>${name}</span><b>${weight}%</b></button>`).join('')}<p class="muted">占比用于学习覆盖规划；随机模拟组卷尽量按比例分配，实际考试题目分布以官方为准。</p><details class="version-note"><summary>考纲与产品版本差异</summary><p>2026-09-10 考纲含 Schema；产品文档标记其于 2026-08-27 下架，存量用户仍可使用。新版长期记忆以记忆库和终端用户隔离，勿沿用旧版应用级隔离结论。</p><a href="https://cloud.tencent.com/document/product/1759/123555" target="_blank" rel="noopener">查看 Schema 说明</a><br><a href="https://cloud.tencent.com/document/product/1759/138162" target="_blank" rel="noopener">查看新版长期记忆</a></details></aside></div>`;
  if($('#recovery-link'))$('#recovery-link').onclick=()=>navigate('backup');
  if($('#backup-link'))$('#backup-link').onclick=()=>navigate('backup');
- if($('#install-dismiss'))$('#install-dismiss').onclick=()=>{try{localStorage.setItem(INSTALL_TIP,'1');}catch{}$('#install-tip').remove();};
+ bindInstallTip();
  document.querySelectorAll('[data-page]').forEach(b=>b.onclick=()=>navigate(b.dataset.page));
  document.querySelectorAll('[data-module]').forEach(b=>b.onclick=()=>{if(state().activeExam){toast('模拟考试进行中，请先交卷再进入章节学习');return;}module=b.dataset.module;page='study';index=0;resetQuestion();render();});
  if(['study','review','wrong','favorites'].includes(page))renderStudy();
@@ -31,7 +31,7 @@ function render(){
  if(store.pending)store.onStatus('正在保存…');
  if(store.failed)store.onStatus('磁盘保存失败，请导出备份',true);
 }
-function navigate(next){if(state().activeExam&&['study','review','wrong','favorites','rounds'].includes(next)){toast('模拟考试进行中，请先交卷再查看练习与解析');return;}page=next;index=0;resetQuestion();examResult=null;render();}
+function navigate(next){if(state().activeExam&&['study','review','wrong','favorites','rounds'].includes(next)){toast('模拟考试进行中，请先交卷再查看练习与解析');return;}if(next!==page)history.pushState({page:next},'');page=next;index=0;resetQuestion();examResult=null;render();}
 function resetQuestion(){answers=[];submitted=false;}
 function renderStudy(){
  selectedList=filtered();index=Math.min(index,Math.max(0,selectedList.length-1));
@@ -87,24 +87,46 @@ function renderProgress(){
  $('#target-date').onchange=e=>{state().settings={...state().settings,targetDate:e.target.value};save();};
 }
 function download(filename,data){const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);}
+const UA=navigator.userAgent;
+const isIOS=/iPad|iPhone|iPod/.test(UA)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+const isAndroid=/Android/i.test(UA);
+const inWeChat=/MicroMessenger/i.test(UA);
+let installPrompt=null;
+// Android Chrome/Edge/Samsung offer a real install dialog; keep the event so our own button can open it.
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;refreshInstallTip();});
+window.addEventListener('appinstalled',()=>{installPrompt=null;try{localStorage.setItem(INSTALL_TIP,'1');}catch{}$('#install-tip')?.remove();});
 // On iPhone the share sheet ("存储到文件"/AirDrop) is the dependable way to get a file out of a home-screen app.
+// On Android a normal download lands in the「下载」folder, which is easier to find than share targets.
 async function exportFile(filename,data){
- if(store.mode==='device'&&navigator.canShare){const file=new File([JSON.stringify(data,null,2)],filename,{type:'application/json'});if(navigator.canShare({files:[file]})){try{await navigator.share({files:[file],title:filename});return true;}catch(e){if(e.name==='AbortError')return false;}}}
+ if(store.mode==='device'&&isIOS&&navigator.canShare){const file=new File([JSON.stringify(data,null,2)],filename,{type:'application/json'});if(navigator.canShare({files:[file]})){try{await navigator.share({files:[file],title:filename});return true;}catch(e){if(e.name==='AbortError')return false;}}}
  download(filename,data);return true;
 }
 const INSTALL_TIP='fde-install-tip-dismissed';
+function installTipContent(){
+ if(inWeChat)return `微信内置浏览器不能安装到桌面，记录也容易丢失。请点右上角「···」→「${isIOS?'在 Safari 中打开':'在浏览器打开'}」。`;
+ const dismiss='<button id="install-dismiss">知道了</button>';
+ if(isIOS)return `建议在 Safari 点「分享」→「添加到主屏幕」，从主屏幕图标打开：可离线刷题，记录也不易被系统清理。${dismiss}`;
+ if(installPrompt)return `安装到手机桌面，像 App 一样打开，离线也能刷题。<span class="tip-actions"><button id="install-app" class="primary">安装</button>${dismiss}</span>`;
+ if(isAndroid)return `建议在浏览器菜单（⋮ 或 ≡）中选「添加到主屏幕」或「安装应用」，从桌面图标打开：可离线刷题。推荐使用 Chrome、Edge 或手机自带浏览器。${dismiss}`;
+ return `建议用浏览器的「添加到主屏幕」功能，从桌面图标打开：可离线刷题。${dismiss}`;
+}
+function bindInstallTip(){
+ if($('#install-dismiss'))$('#install-dismiss').onclick=()=>{try{localStorage.setItem(INSTALL_TIP,'1');}catch{}$('#install-tip').remove();};
+ if($('#install-app'))$('#install-app').onclick=async()=>{const prompt=installPrompt;if(!prompt)return;installPrompt=null;prompt.prompt();try{const choice=await prompt.userChoice;if(choice?.outcome==='accepted'){try{localStorage.setItem(INSTALL_TIP,'1');}catch{}$('#install-tip')?.remove();return;}}catch{}refreshInstallTip();};
+}
+function refreshInstallTip(){const tip=$('#install-tip');if(tip){tip.innerHTML=installTipContent();bindInstallTip();}}
 const standalone=()=>navigator.standalone===true||matchMedia('(display-mode: standalone)').matches;
 function deviceNotices(){
  if(store.mode!=='device')return '';let html='';
  let dismissed=false;try{dismissed=!!localStorage.getItem(INSTALL_TIP);}catch{}
- if(!standalone()&&!dismissed&&matchMedia('(pointer: coarse)').matches)html+=`<div class="recovery-notice" id="install-tip">建议在 Safari 点「分享」→「添加到主屏幕」，从主屏幕图标打开：可离线刷题，记录也不易被系统清理。<button id="install-dismiss">知道了</button></div>`;
+ if(!standalone()&&(inWeChat||!dismissed&&matchMedia('(pointer: coarse)').matches))html+=`<div class="recovery-notice" id="install-tip">${installTipContent()}</div>`;
  const attempts=Object.values(state().records).flatMap(r=>r.attempts).map(a=>a.at);const lastExport=state().settings?.lastExportAt||0;
  if(attempts.length&&Math.max(...attempts)>lastExport){const since=lastExport||Math.min(...attempts),days=Math.floor((Date.now()-since)/86400000);if(days>=7)html+=`<div class="recovery-notice" role="status">学习记录只保存在这台手机上，${lastExport?`距上次导出备份已 ${days} 天`:'还没有导出过备份'}。<button id="backup-link">去备份</button></div>`;}
  return html;
 }
 function renderBackup(){
- $('#content').innerHTML=`<section class="reading-block"><h2>保留你的学习历史</h2>${store.mode==='device'?`<p>答题、收藏、复习时间和模拟试卷自动保存在这台设备的浏览器存储中，不上传任何服务器。题库升级按稳定题目 ID 关联，不会清空已有记录。</p><p>清除 Safari 网站数据、删除主屏幕图标或长期不打开都可能导致记录丢失，请定期导出备份（可存到“文件”或用 AirDrop 发到电脑）。电脑版导出的备份也可以在这里导入合并。</p>`:`<p>答题、收藏、复习时间和模拟试卷会自动写入 <code>local-data/progress.json</code>。题库升级按稳定题目 ID 关联，不会清空已有记录。浏览器还保留一份应急副本。</p>`}<div class="backup-actions"><button id="export" class="primary">导出学习备份</button><label class="file-button" for="import-file">导入并合并备份</label><input id="import-file" class="sr-only" type="file" accept="application/json,.json">${store.mode==='device'?'':'<button id="recover">恢复浏览器应急副本</button>'}</div><p class="muted">${store.mode==='device'?(state().settings?.lastExportAt?'上次导出：'+new Date(state().settings.lastExportAt).toLocaleString('zh-CN')+'。':'尚未导出过备份。')+'导入会合并作答历史和收藏，只增加不删除，重复记录去重；当前进行中的试卷优先保留。':'导入会合并作答历史和收藏，重复记录去重；当前进行中的试卷优先保留。导入前自动下载当前记录快照。恢复应急副本时，同一场未交卷考试采用应急答案；会同时下载磁盘快照与应急原件。'}</p></section><section class="reading-block"><h2>题库与来源</h2><p>发布版本 ${esc(manifest.version)}；保留 ${questions.length} 题，分级结果见<a href="evidence.html" target="_blank">题库版本与质量分级</a>。待修订题不进入普通学习与新组卷；历史记录保留。</p>${(manifest.notes||[]).map(n=>`<p>${esc(n)}</p>`).join('')}<button id="export-bank">导出当前题库</button><p>${store.mode==='device'?'题库已缓存在本机，离线也能练习；打开官方来源链接需要联网。':'仅本机访问；学习时不访问云端。打开官方来源链接需要联网。'}</p></section>`;
- $('#export').onclick=async()=>{if(await exportFile('FDE-学习备份-'+new Date().toISOString().slice(0,10)+'.json',state())&&store.mode==='device'){state().settings={...state().settings,lastExportAt:Date.now()};save();renderBackup();toast('已导出学习备份');}};
+ $('#content').innerHTML=`<section class="reading-block"><h2>保留你的学习历史</h2>${store.mode==='device'?`<p>答题、收藏、复习时间和模拟试卷自动保存在这台设备的浏览器存储中，不上传任何服务器。题库升级按稳定题目 ID 关联，不会清空已有记录。</p><p>${isIOS?'清除 Safari 网站数据、删除主屏幕图标或长期不打开都可能导致记录丢失，请定期导出备份（可存到“文件”或用 AirDrop 发到电脑）。':'清除浏览器数据、卸载桌面应用时选择清除数据、或用手机管家清理浏览器，都会导致记录丢失。请定期导出备份：文件保存在「下载」文件夹，可再用微信、QQ 或数据线传到电脑。'}电脑版导出的备份也可以在这里导入合并。</p>`:`<p>答题、收藏、复习时间和模拟试卷会自动写入 <code>local-data/progress.json</code>。题库升级按稳定题目 ID 关联，不会清空已有记录。浏览器还保留一份应急副本。</p>`}<div class="backup-actions"><button id="export" class="primary">导出学习备份</button><label class="file-button" for="import-file">导入并合并备份</label><input id="import-file" class="sr-only" type="file" accept="application/json,.json">${store.mode==='device'?'':'<button id="recover">恢复浏览器应急副本</button>'}</div><p class="muted">${store.mode==='device'?(state().settings?.lastExportAt?'上次导出：'+new Date(state().settings.lastExportAt).toLocaleString('zh-CN')+'。':'尚未导出过备份。')+'导入会合并作答历史和收藏，只增加不删除，重复记录去重；当前进行中的试卷优先保留。':'导入会合并作答历史和收藏，重复记录去重；当前进行中的试卷优先保留。导入前自动下载当前记录快照。恢复应急副本时，同一场未交卷考试采用应急答案；会同时下载磁盘快照与应急原件。'}</p></section><section class="reading-block"><h2>题库与来源</h2><p>发布版本 ${esc(manifest.version)}；保留 ${questions.length} 题，分级结果见<a href="evidence.html" target="_blank">题库版本与质量分级</a>。待修订题不进入普通学习与新组卷；历史记录保留。</p>${(manifest.notes||[]).map(n=>`<p>${esc(n)}</p>`).join('')}<button id="export-bank">导出当前题库</button><p>${store.mode==='device'?'题库已缓存在本机，离线也能练习；打开官方来源链接需要联网。':'仅本机访问；学习时不访问云端。打开官方来源链接需要联网。'}</p></section>`;
+ $('#export').onclick=async()=>{if(await exportFile('FDE-学习备份-'+new Date().toISOString().slice(0,10)+'.json',state())&&store.mode==='device'){state().settings={...state().settings,lastExportAt:Date.now()};save();renderBackup();toast(isIOS?'已导出学习备份':'已导出到「下载」文件夹');}};
  $('#export-bank').onclick=()=>exportFile('FDE-原创模拟题-'+manifest.version+'.json',{manifest,questions});
  const merge=value=>{validateBackup(value);if(store.mode!=='device')download('FDE-导入前快照-'+Date.now()+'.json',state());store.state=mergeBackup(state(),value);save();toast('已合并学习备份');};
  $('#import-file').onchange=async e=>{try{const file=e.target.files[0];if(!file)return;if(file.size>20_000_000)throw new Error('文件超过20MB，请检查备份');merge(JSON.parse(await file.text()));}catch(error){toast(error.message);}finally{e.target.value='';}};
@@ -123,6 +145,9 @@ async function init(){try{
  const responses=await Promise.all([fetch('./data/questions.json'),fetch('./data/manifest.json'),fetch('./data/quality.json'),fetch('./data/rounds.json')]);
  rounds=(await responses[3].json()).rounds;questions=await responses[0].json();manifest=await responses[1].json();const quality=await responses[2].json();const audit=new Map(quality.questions.map(q=>[q.id,q]));questions=questions.map(q=>({...q,quality:audit.get(q.id)||{examUse:'hold',rationale:'缺少本轮质量记录'}}));questions=questions.filter(q=>q.review?.status==='approved');byId=new Map(questions.map(q=>[q.id,q]));
  await store.load();if(state().activeExam)page='exam';render();tick();setInterval(tick,1000);
+ history.replaceState({page},'');
+ // Android back button / gesture returns to the previous section instead of closing the app.
+ window.addEventListener('popstate',e=>{const target=e.state?.page;if(!target||target===page)return;if(state().activeExam&&['study','review','wrong','favorites','rounds'].includes(target)){history.pushState({page},'');toast('模拟考试进行中，请先交卷再查看练习与解析');return;}page=target;index=0;resetQuestion();examResult=null;render();});
  if(store.mode==='device'){requestPersistence();if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});}
  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')tick();});
  }catch(error){$('#app').innerHTML=`<main class="fatal"><h1>暂时无法加载本地学习软件</h1><p>${esc(error.message)}</p><p>${['127.0.0.1','localhost'].includes(location.hostname)?'请从“启动备考.command”启动；如果是记录文件损坏，请先备份 local-data 目录。':'首次打开需要联网下载题库；之后可离线使用。请检查网络后重试。'}</p><button onclick="location.reload()">重试</button></main>`;}}

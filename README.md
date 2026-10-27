@@ -18,19 +18,21 @@ python3 server.py
 
 服务只监听本机。学习操作不调用外部 API；点击题目中的官方来源链接需要联网。
 
-## iPhone 使用（离线网页版）
+## 手机使用（iPhone / Android 离线网页版）
 
-同一套代码可以发布成静态网页，在 iPhone 上“添加到主屏幕”后像 App 一样使用：
+同一套代码可以发布成静态网页，iPhone 和 Android 打开同一个链接，添加到主屏幕后像 App 一样使用：
 
 - **首次启用**：在 GitHub 仓库 Settings → Pages 中把 Source 设为 “GitHub Actions”。之后每次推送到 `main`，`.github/workflows/pages.yml` 会运行测试并发布到 `https://<用户名>.github.io/FDE_Learning/`。
-- **安装**：用 iPhone 的 Safari 打开上述地址，点“分享”→“添加到主屏幕”，以后从主屏幕图标打开。首次打开需联网下载题库（约 4MB），之后可离线刷题。
-- **记录保存**：手机版没有本地服务，学习记录保存在这台设备的浏览器存储（IndexedDB）中，不上传任何服务器，也不与电脑版自动同步。清除 Safari 网站数据或删除主屏幕图标会丢失记录，请在“数据备份”页定期导出（可存到“文件”或用 AirDrop 发到电脑）；超过 7 天未备份时页面会提醒。
+- **安装（iPhone）**：用 Safari 打开上述地址，点“分享”→“添加到主屏幕”，以后从主屏幕图标打开。
+- **安装（Android）**：用 Chrome、Edge 或手机自带浏览器打开，点页面上的“安装”按钮；没有按钮时在浏览器菜单选“添加到主屏幕”或“安装应用”。不要在微信内打开，先选“在浏览器打开”。
+- 首次打开需联网下载题库（约 4MB），之后可离线刷题。Android 上返回键会回到上一个栏目，模拟考试中不会因此离开试卷。
+- **记录保存**：手机版没有本地服务，学习记录保存在这台设备的浏览器存储（IndexedDB）中，不上传任何服务器，也不与电脑版自动同步。清除 Safari 网站数据或删除主屏幕图标会丢失记录，请在“数据备份”页定期导出（iPhone 可存到“文件”或用 AirDrop 发到电脑；Android 保存在「下载」文件夹）；超过 7 天未备份时页面会提醒。
 - **从电脑迁移**：在电脑版“数据备份”导出 JSON，传到手机后在手机版“数据备份”导入合并即可。两边格式相同，也可以反向导入。
 - **题库更新**：推送新版本后，手机下次联网打开会在后台下载完整新题库，再下次打开时切换；进行中的模拟考试按开考时快照计分。
 
 - **跟随上游更新**：`.github/workflows/sync-upstream.yml` 每天北京时间 03:17 把上游 `lusouldepth-ai/FDE_Learning` 的 `main` 合并进来，测试通过后推送并重新发布手机版；也可在 Actions 页手动运行。若上游改动与手机版冲突或测试失败，不会推送任何内容，GitHub 会发邮件通知，需要手动合并。
 
-本地构建与测试：`sh scripts/build_static.sh` 生成 `_site/`（只包含运行所需文件，不含 `research/`）；`sh scripts/ci_test.sh` 运行发布前的全部检查；`node tests/phone.browser.mjs` 以 iPhone 视口验证子路径托管、本机存储、离线、导入导出和模拟考试。电脑版 `python3 server.py` 的行为不变。
+本地构建与测试：`sh scripts/build_static.sh` 生成 `_site/`（只包含运行所需文件，不含 `research/`）；`sh scripts/ci_test.sh` 运行发布前的全部检查；`node tests/phone.browser.mjs` 以 iPhone 和 Android 视口验证子路径托管、本机存储、离线、导入导出和模拟考试。电脑版 `python3 server.py` 的行为不变。
 
 ## 题库与功能
 

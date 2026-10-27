@@ -98,6 +98,40 @@ try{
  assert.equal(await sp.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);await sp.screenshot({path:path.join(out,'phone-se.png')});await se.close();
  results.push('iPhone SE 375px 无横向溢出');
 
+ // Android (Chromium is the engine of Android Chrome).
+ const android=await browser.newContext({...devices['Pixel 7'],acceptDownloads:true});const ap=await android.newPage();
+ ap.on('pageerror',e=>errors.push(e.message));ap.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+ ap.on('request',r=>{if(!r.url().startsWith(base)&&!r.url().startsWith('data:'))external.push(r.url());});
+ await ap.goto(base);await ap.locator('#stem').waitFor();
+ assert.equal(await ap.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+ const androidTip=await ap.locator('#install-tip').textContent();assert(androidTip.includes('添加到主屏幕')&&!androidTip.includes('Safari'));
+ // Simulate Chrome's install offer and check our button opens it.
+ await ap.evaluate(()=>{const e=new Event('beforeinstallprompt',{cancelable:true});e.prompt=()=>{window.__prompted=true;};e.userChoice=Promise.resolve({outcome:'accepted'});dispatchEvent(e);});
+ await ap.locator('#install-app').tap();await ap.waitForFunction(()=>window.__prompted===true);
+ await ap.locator('#install-tip').waitFor({state:'detached'});
+ await ap.reload();await ap.locator('#stem').waitFor();assert.equal(await ap.locator('#install-tip').count(),0);
+ await ap.screenshot({path:path.join(out,'android-study.png')});
+ results.push('Android：安装按钮调起系统安装，安装后不再提示');
+ await ap.locator('[data-page=wrong]').tap();await ap.locator('[data-page=progress]').tap();
+ await ap.goBack();assert.equal(await ap.locator('.nav-button.active').getAttribute('data-page'),'wrong');
+ await ap.goBack();assert.equal(await ap.locator('.nav-button.active').getAttribute('data-page'),'study');
+ results.push('Android：返回键回到上一个栏目而不是退出');
+ await ap.locator('label.option').first().tap();await ap.locator('#submit').tap();
+ await ap.waitForFunction(()=>document.querySelector('#save-status')?.textContent==='已保存到本机');
+ await ap.locator('[data-page=backup]').tap();assert((await ap.locator('.reading-block').first().textContent()).includes('「下载」文件夹'));
+ const adl=ap.waitForEvent('download');await ap.locator('#export').tap();const afile=path.join(temp,'android-backup.json');await (await adl).saveAs(afile);
+ assert.equal(Object.keys(JSON.parse(await fs.readFile(afile,'utf8')).records).length,1);
+ await ap.getByText('已导出到「下载」文件夹',{exact:true}).waitFor();
+ results.push('Android：导出备份直接下载到「下载」文件夹');
+ await ap.locator('[data-page=study]').tap();await ap.locator('[data-page=exam]').tap();await ap.locator('#start-short').tap();await ap.locator('#timer').waitFor();
+ await ap.goBack();assert.equal(await ap.locator('.nav-button.active').getAttribute('data-page'),'exam');
+ page.once('dialog',d=>d.accept());ap.once('dialog',d=>d.accept());await ap.locator('#finish').tap();await ap.locator('.score').waitFor();
+ results.push('Android：模拟考试中按返回键不会离开试卷');
+ await android.close();
+ const wechat=await browser.newContext({...devices['Pixel 7'],userAgent:devices['Pixel 7'].userAgent+' MicroMessenger/8.0.50'});const wp=await wechat.newPage();
+ await wp.goto(base);await wp.locator('#stem').waitFor();assert((await wp.locator('#install-tip').textContent()).includes('在浏览器打开'));await wechat.close();
+ results.push('微信内打开时提示改用浏览器');
+
  assert.deepEqual(errors,[]);results.push('无 JS 错误');
  assert.deepEqual(external,[]);results.push('无外部网络请求');
  console.log(JSON.stringify({ok:true,results,artifacts:out},null,2));

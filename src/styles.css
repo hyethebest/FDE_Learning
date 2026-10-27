@@ -19,7 +19,7 @@ html{-webkit-text-size-adjust:100%}button,.option,.file-button,.nav-button{touch
  .filters{display:grid;grid-template-columns:1fr 1fr;gap:8px}.filters input{grid-column:1/-1}.filters:not(:has(#pool)) select{grid-column:1/-1}.filters select{padding:12px 8px}
  .option{padding:14px 12px;min-height:52px}.option input{width:20px;height:20px;margin-top:4px}
  .question-actions button{min-height:46px}
- .recovery-notice{font-size:14px;line-height:1.7}.recovery-notice button{margin:8px 0 0;display:block}
+ .recovery-notice{font-size:14px;line-height:1.7}.recovery-notice button{margin:8px 0 0;display:block}.tip-actions{display:flex;gap:8px}.tip-actions .primary{min-width:96px}
  #toast{bottom:calc(24px + env(safe-area-inset-bottom))}
  #exam-map-buttons button{min-height:40px}
  .exam-bar{position:sticky;top:0;z-index:4;background:#fff;padding:calc(8px + env(safe-area-inset-top)) 0 8px;margin-top:-8px;border-bottom:1px solid var(--line)}

@@ -29,7 +29,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Test (unit, bank validation, iPhone viewport)
+      - name: Test (unit, bank validation, iPhone and Android viewports)
         run: sh scripts/ci_test.sh
       - name: Build static site
         # The build id changes with every commit, so phones pick up the new version.

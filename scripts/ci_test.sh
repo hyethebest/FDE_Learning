@@ -1,5 +1,5 @@
 #!/bin/sh
-# CI checks used before publishing: unit tests, bank validation, and the phone build in an iPhone viewport.
+# CI checks used before publishing: unit tests, bank validation, and the phone build in iPhone and Android viewports.
 set -eu
 cd "$(dirname "$0")/.."
 npm test
