@@ -14,4 +14,13 @@ cp data/questions.json data/manifest.json data/quality.json data/rounds.json _si
 cp icons/*.png _site/icons/
 sed "s/__BUILD__/$BUILD/" sw.js > _site/sw.js
 touch _site/.nojekyll
+# AI FDE (腾讯云人工智能前沿部署工程师, type=CID) bank at cid/
+if [ -f cid/data/questions.json ]; then
+  mkdir -p _site/cid/src _site/cid/data _site/cid/icons
+  cp cid/index.html cid/manifest.webmanifest _site/cid/
+  cp cid/src/*.js cid/src/*.css _site/cid/src/
+  cp cid/data/questions.json cid/data/manifest.json cid/data/notes.json _site/cid/data/
+  cp cid/icons/*.png _site/cid/icons/
+  sed "s/__BUILD__/$BUILD/" cid/sw.js > _site/cid/sw.js
+fi
 echo "Built _site (build $BUILD)"

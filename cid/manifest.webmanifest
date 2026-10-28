@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "AI FDE 备考（腾讯云人工智能前沿部署工程师）",
+  "short_name": "AI FDE 备考",
+  "description": "腾讯云人工智能前沿部署工程师 (FDE) 原创模拟题库，离线刷题",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f6fa",
+  "theme_color": "#ffffff",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

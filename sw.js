@@ -27,6 +27,8 @@ self.addEventListener('fetch', event => {
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
   if (url.origin !== self.location.origin || url.pathname.includes('/api/')) return;
+  // The AI FDE bank under cid/ has its own worker and cache.
+  if (url.pathname.startsWith(new URL('cid/', self.registration.scope).pathname)) return;
   event.respondWith(
     caches.open(CACHE).then(cache =>
       cache.match(request, {ignoreSearch: true}).then(hit =>
