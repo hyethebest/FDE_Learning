@@ -15,7 +15,9 @@ cp icons/*.png _site/icons/
 sed "s/__BUILD__/$BUILD/" sw.js > _site/sw.js
 touch _site/.nojekyll
 # AI FDE (腾讯云人工智能前沿部署工程师, type=CID) bank at cid/
-if [ -f cid/data/questions.json ]; then
+# Generated from cid/authoring/; published only once all 10 modules are written.
+if [ "$(ls cid/authoring/C*.json 2>/dev/null | wc -l)" -eq 10 ]; then
+  python3 scripts/build_cid_bank.py
   mkdir -p _site/cid/src _site/cid/data _site/cid/icons
   cp cid/index.html cid/manifest.webmanifest _site/cid/
   cp cid/src/*.js cid/src/*.css _site/cid/src/

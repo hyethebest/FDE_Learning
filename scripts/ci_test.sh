@@ -11,3 +11,4 @@ if [ -z "${PLAYWRIGHT_MODULE:-}" ]; then
 fi
 sh scripts/build_static.sh ci
 node tests/phone.browser.mjs
+if [ -d _site/cid ]; then node tests/cid.browser.mjs; fi

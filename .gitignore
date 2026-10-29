@@ -41,3 +41,4 @@ research/round1/*verification*.json
 research/original400/deployment.json
 research/original400/browser-verification.json
 _site/
+cid/data/

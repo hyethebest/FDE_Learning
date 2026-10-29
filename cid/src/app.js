@@ -137,7 +137,7 @@ function renderNotes(){
  const mods=MODULES.filter(([id])=>module==='all'||id===module);
  $('#content').innerHTML=`<div class="filters"><label class="sr-only" for="module">考纲模块</label><select id="module"><option value="all">全部模块</option>${MODULES.map(([id,name])=>`<option value="${id}" ${module===id?'selected':''}>${name}</option>`).join('')}</select></div>${mods.map(([id,name,weight])=>{const m=notes.modules.find(x=>x.id===id);if(!m)return '';return `<section class="notes-module"><h2>${esc(name)} <small>${weight}%</small></h2>${m.intro?`<p class="muted">${esc(m.intro)}</p>`:''}${m.sections.map(s=>{const count=questions.filter(q=>q.section===s.id).length;return `<details class="note"><summary>${esc(s.id)} ${esc(s.title)}</summary><ul>${s.points.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>${count?`<button class="practice-section" data-section="${esc(s.id)}" data-module="${id}">练这一节 · ${count} 题</button>`:''}</details>`;}).join('')}</section>`;}).join('')}<p class="muted">要点为根据官方课程整理的学习摘要，用自己的话概括，不替代课程原文。</p>`;
  $('#module').onchange=e=>{module=e.target.value;render();};
- document.querySelectorAll('.practice-section').forEach(b=>b.onclick=()=>{module=b.dataset.module;history.pushState({page:'study'},'');page='study';section=b.dataset.section;index=0;resetQuestion();render();scrollTo(0,0);});
+ document.querySelectorAll('.practice-section').forEach(b=>b.onclick=()=>{module=b.dataset.module;history.pushState({page:'study'},'');page='study';section=b.dataset.section;query='';index=0;resetQuestion();render();scrollTo(0,0);});
 }
 store.onStatus=(message,error=false)=>{const el=$('#save-status');if(el){el.textContent=message;el.classList.toggle('error',error);}};
 document.addEventListener('keydown',e=>{
