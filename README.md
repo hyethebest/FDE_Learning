@@ -34,6 +34,15 @@ python3 server.py
 
 本地构建与测试：`sh scripts/build_static.sh` 生成 `_site/`（只包含运行所需文件，不含 `research/`）；`sh scripts/ci_test.sh` 运行发布前的全部检查；`node tests/phone.browser.mjs` 以 iPhone 和 Android 视口验证子路径托管、本机存储、离线、导入导出和模拟考试。电脑版 `python3 server.py` 的行为不变。
 
+## AI FDE 题库（腾讯云人工智能前沿部署工程师，type=CID）
+
+同一站点下的第二个独立 App：`https://<用户名>.github.io/FDE_Learning/cid/`，紫色「AI FDE」图标，与上面的 ADP 题库分开保存学习记录和离线缓存，互不影响。
+
+- 对应认证：[腾讯云人工智能前沿部署工程师 (FDE)](https://cloud.tencent.com/edu/training/cert/detail?type=CID)（TCCP，线下理论考试，60 题、120 分钟、70/100 分通过），10 个考纲模块按官方占比组卷。
+- 500 道原创单选/多选题，依据官方在线课程（2026-10-27 版）12 章内容编写，每题附解析、逐项干扰项理由和对应课时链接；另有「要点速览」按模块阅读课程要点，可一键练对应小节。
+- 由 AI 编写并对照课程核对答案，非官方真题，也不是人工专家审校；不含官方模拟题。课程原文未存入仓库，题目与要点均为改写。
+- 编写源文件在 `cid/authoring/`（每模块一个 JSON），`scripts/build_cid_bank.py` 负责校验（选项数、答案、干扰项理由覆盖、重复题干、各模块题量）并生成 `cid/data/`；10 个模块齐全时 `build_static.sh` 才会发布 `cid/`。`tests/cid.browser.mjs` 覆盖 iPhone/Android 下的作答、要点速览、60 题模拟、记录与缓存隔离。
+
 ## 题库与功能
 
 - 完整保留 1000 道原创题：500 道核心可组卷题、458 道仅学习题、42 道待修订题。待修订题不进入普通练习与新组卷。
